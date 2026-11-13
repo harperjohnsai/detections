@@ -9,6 +9,9 @@ Recovers from code patterns (not hardcoded RVAs):
   * API table          : {mod_idx, ptr, len} entries, names XOR 4-byte key, resolved via GetProcAddress
 Then RC4-decrypts the payload container and writes the inner PE (mode 0400).
 
+Builds 26/27: name/key loops as above. Build 25: name is a cleartext stack string, key XOR is a helper (scalar or SSE
+loop over two .data arrays) and the API-name key pointer sits in rsi instead of r10.
+
 usage: sideload_extract.py <version.dll> <payload_container> [out.bin]
 """
 import hashlib, json, os, re, struct, sys
@@ -71,8 +74,8 @@ def extract(dll_path):
                 kr = int(x.op_str.split('0x')[-1].rstrip(']'), 16)
                 dr = int(y.op_str.split('0x')[-1].rstrip(']'), 16)
                 for z in ins[k:k + 8]:
-                    if z.mnemonic == 'cmp' and z.op_str.startswith('edx, 0x'):
-                        ln = int(z.op_str.split(', ')[1], 16)
+                    if z.mnemonic == 'cmp' and re.match(r'edx, (0x[0-9a-f]+|\d+)$', z.op_str):
+                        ln = int(z.op_str.split(', ')[1], 0)
                         key = img[kr:kr + 4]
                         cfg['payload_name'] = bytes(img[dr + i] ^ key[i % 4] for i in range(ln)).decode()
         # 32-byte key: mov al,[rdx+r8+A]; xor al,[rdx+r8+B]; ...; cmp rdx,0x20
@@ -83,11 +86,39 @@ def extract(dll_path):
                 a = int(x.op_str.split('0x')[-1].rstrip(']'), 16)
                 b = int(y.op_str.split('0x')[-1].rstrip(']'), 16)
                 cfg['rc4_key'] = bytes(img[a + i] ^ img[b + i] for i in range(32)).hex()
+        # build-25 variant: payload name is a cleartext stack string built from imm32/imm16 stores
+        # (mov dword [rsp+X],0x666e6f63 ...) right before the CreateFileA call
+        if n == 'CreateFileA' and 'payload_name' not in cfg:
+            parts = {}
+            for w in ins[max(0, k - 60):k]:
+                m = re.match(r'(dword|word) ptr \[rsp \+ (0x[0-9a-f]+)\], (0x[0-9a-f]+)$', w.op_str)
+                if w.mnemonic == 'mov' and m:
+                    raw = int(m.group(3), 16).to_bytes(4 if m.group(1) == 'dword' else 2, 'little')
+                    if re.fullmatch(rb'[\x20-\x7e]+', raw):  # skips mov [rsp+0x28],0x80 style arguments
+                        parts[int(m.group(2), 16)] = raw
+            name = b''
+            for off in sorted(parts):
+                if not name or off == min(parts) + len(name):
+                    name += parts[off]
+            if len(name) >= 4:
+                cfg['payload_name'] = name.decode()
+        # build-25 variant of the key derivation: not a 0x20-byte loop over [rdx+r8+A]/[rdx+r8+B] but a helper
+        # that XORs two RIP-relative .data arrays (scalar or SSE loop, `cmp rax|rdx,0x20`)
+        if x.mnemonic == 'cmp' and re.match(r'r[ad]x, 0x20$', x.op_str) and 'rc4_key' not in cfg:
+            blk = ins[max(0, k - 24):k + 1]
+            if any(z.mnemonic == 'xor' and re.match(r'(cl|al), byte ptr \[r[ad]x \+ r\d+\]$', z.op_str) for z in blk):
+                tg = [rip_target(z) for z in ins[max(0, k - 60):k] if z.mnemonic == 'lea' and 'rip' in z.op_str]
+                tg = sorted({t - base for t in tg if t and 0 < t - base < len(img) - 32})
+                pair = [(a, b) for a in tg for b in tg if b - a == 0x20]
+                if pair:
+                    a, b = pair[0]
+                    cfg['rc4_key'] = bytes(img[a + i] ^ img[b + i] for i in range(32)).hex()
         # API name table: lea rbx,[rip+T] ... lea r10,[rip+KEY] ... GetProcAddress
         if x.mnemonic == 'lea' and x.op_str.startswith('rbx, [rip') and 'api_table' not in cfg:
-            look = ins[k:k + 24]
+            look = ins[k:k + 64]
             if any(call_name(z) == 'GetProcAddress' for z in look):
-                kv = next((rip_target(z) for z in look if z.mnemonic == 'lea' and z.op_str.startswith('r10, [rip')), None)
+                # key pointer sits in r10 (builds 26/27) or rsi (build 25)
+                kv = next((rip_target(z) for z in look if z.mnemonic == 'lea' and re.match(r'(r10|rsi), \[rip', z.op_str)), None)
                 if kv:
                     t = rip_target(x) - base; key = img[kv - base:kv - base + 4]; names = []
                     while True:

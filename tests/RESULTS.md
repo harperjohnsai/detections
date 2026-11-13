@@ -102,3 +102,52 @@ ALL CHECKS PASS
 ## Sigma, MioLab macOS rules added (2026-11-13)
 
 `tests/test_sigma_synthetic.py`: 16 new hand-made events for the four MioLab rules (fire and silent cases), all PASS. On a SigmaHQ master 54967d6 checkout with the four files under `rules-emerging-threats/2026/Malware/MioLab/`: `python tests/test_logsource.py` OK (3 tests), `python tests/test_rules.py` OK (11 tests), `sigma check --fail-on-error --fail-on-issues --validation-config tests/sigma_cli_conf.yml` with the SigmaHQ validators: 0 errors, 0 issues. Upstream pull request: https://github.com/SigmaHQ/sigma/pull/6614.
+
+## YARA, Setup Center loader rule v2 (2026-11-13, yara-python 4.5.4 and YARA-X 1.23.0)
+
+`SetupCenter_ProxyVersionDll_Loader` v1 missed the build-25 `version.dll`; v2 matches builds 25, 26 and 27. Samples: the three `version.dll` files, the three payload containers (`config.dat`, `sync.dat`, `localdata.db`), the three decrypted inner payloads, the ABE helper DLL and decrypted-strings artefacts. Negatives, 1,478 files, 0 hits in both engines: the 1,443 PE files (DLLs and EXEs, all unsigned, including Wine's own unsigned `version.dll`, which exports the same function names) of two Wine builds (10.0 and 8.0, `x86_64-windows`), the 34 files of the python.org 3.12 embeddable distribution, and the genuine signed OneDrive client renamed `Installer.exe`. A wider scan of 6,778 files of the case folders (containers, payloads, helper DLLs, archives, scripts) hit only the `version.dll` files. Per-string check: every build matches on the hollowing-API-table pattern alone and on the code patterns alone. Output of the harness (the other rule files' samples were not provided and are skipped):
+
+```
+PASS at least one YARA engine available
+PASS 14 rule files compiled together
+ENGINE yara-python 4.5.4
+ENGINE yara-x 1.23.0
+PASS [yara-python 4.5.4] 3c6330d06b57 -> REVSTEALER_ABE_Helper_DLL
+PASS [yara-x 1.23.0] 3c6330d06b57 -> REVSTEALER_ABE_Helper_DLL
+PASS [yara-python 4.5.4] 673feccbcec6 -> REVSTEALER_x64_Core_SetupCenter
+PASS [yara-x 1.23.0] 673feccbcec6 -> REVSTEALER_x64_Core_SetupCenter
+PASS [yara-python 4.5.4] 193f259776d3 -> SetupCenter_FakeCab_PayloadContainer
+PASS [yara-x 1.23.0] 193f259776d3 -> SetupCenter_FakeCab_PayloadContainer
+PASS [yara-python 4.5.4] 973ad2986d6e -> SetupCenter_ProxyVersionDll_Loader
+PASS [yara-x 1.23.0] 973ad2986d6e -> SetupCenter_ProxyVersionDll_Loader
+PASS [yara-python 4.5.4] b484561cc81d -> SetupCenter_FakeCab_PayloadContainer
+PASS [yara-x 1.23.0] b484561cc81d -> SetupCenter_FakeCab_PayloadContainer
+PASS [yara-python 4.5.4] 2903e5e3363c -> SetupCenter_ProxyVersionDll_Loader
+PASS [yara-x 1.23.0] 2903e5e3363c -> SetupCenter_ProxyVersionDll_Loader
+PASS [yara-python 4.5.4] ca82cb69da22 -> SetupCenter_FakeCab_PayloadContainer
+PASS [yara-x 1.23.0] ca82cb69da22 -> SetupCenter_FakeCab_PayloadContainer
+PASS [yara-python 4.5.4] 0a48e7ed139a -> REVSTEALER_Decrypted_Strings_Memory, REVSTEALER_x64_Core_SetupCenter
+PASS [yara-x 1.23.0] 0a48e7ed139a -> REVSTEALER_Decrypted_Strings_Memory, REVSTEALER_x64_Core_SetupCenter
+PASS [yara-python 4.5.4] c6859833796f -> REVSTEALER_x64_Core_SetupCenter
+PASS [yara-x 1.23.0] c6859833796f -> REVSTEALER_x64_Core_SetupCenter
+PASS [yara-python 4.5.4] e472b895f15e -> REVSTEALER_x64_Core_SetupCenter
+PASS [yara-x 1.23.0] e472b895f15e -> REVSTEALER_x64_Core_SetupCenter
+PASS [yara-python 4.5.4] b371d2e01562 -> SetupCenter_ProxyVersionDll_Loader
+PASS [yara-x 1.23.0] b371d2e01562 -> SetupCenter_ProxyVersionDll_Loader
+PASS [yara-python 4.5.4] negative corpus: 1478 files, 0 hits []
+PASS [yara-x 1.23.0] negative corpus: 1478 files, 0 hits []
+PASS [yara-python 4.5.4] real CAB (compress=False) -> no hit
+PASS [yara-x 1.23.0] real CAB (compress=False) -> no hit
+PASS [yara-python 4.5.4] real CAB (compress=True) -> no hit
+PASS [yara-x 1.23.0] real CAB (compress=True) -> no hit
+ALL CHECKS PASS
+```
+
+`tests/test_setup_center_extractor.py` (tools/setup-center-extractor on the three builds):
+
+```
+PASS 973ad2986d6e -> config.dat off=0xdc size=0x6b610 payload=e472b895f15e apis=17
+PASS 2903e5e3363c -> sync.dat off=0xcf size=0x69810 payload=673feccbcec6 apis=17
+PASS b371d2e01562 -> localdata.db off=0x9b size=0x69c10 payload=c6859833796f apis=17
+ALL CHECKS PASS
+```
