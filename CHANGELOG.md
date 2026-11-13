@@ -13,3 +13,8 @@
 
 ### 2026-11-13 (SigmaHQ conventions)
 - Sigma rules aligned with the SigmaHQ conventions (same as PR #6613): renamed OneDrive rule is now generic (`sigma/process_creation/proc_creation_win_renamed_onedrive.yml`, title "Renamed OneDrive Client Execution"), C2 DNS rule renamed "DNS Query To RevStealer C2 Domain", repository references are commit permalinks, Telegraph rule matches `return_content=false` anywhere in the URI.
+
+### 2026-11-13 (YARAhub)
+- All 5 YARA rules deployed to YARAhub (author Harper Johns, CC BY 4.0, TLP:CLEAR) and live-hunting on YARAify:
+  SetupCenter_ProxyVersionDll_Loader, SetupCenter_FakeCab_PayloadContainer, REVSTEALER_x64_Core_SetupCenter,
+  REVSTEALER_ABE_Helper_DLL, REVSTEALER_Decrypted_Strings_Memory (https://yaraify.abuse.ch/yarahub/).
