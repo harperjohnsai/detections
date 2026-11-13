@@ -1,0 +1,845 @@
+{
+ "_warning": "MACHINE-READABLE, NOT DEFANGED: values are live indicators. Do not browse or fetch them.",
+ "case": "2026-11-cryptotrice",
+ "license": "CC0-1.0",
+ "count": 93,
+ "iocs": [
+  {
+   "type": "x-account",
+   "value": "@cryptotrice (x.com user id 71269107)",
+   "first_seen": "2026-10-09",
+   "role": "distribution (promotes cracked [brand] Premium)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "X post metadata"
+  },
+  {
+   "type": "x-post",
+   "value": "https://x.com/cryptotrice/status/2117572256079741351",
+   "first_seen": "2026-11-03",
+   "role": "example post (video lure, self-reply links the article)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "X post metadata"
+  },
+  {
+   "type": "x-post",
+   "value": "https://x.com/cryptotrice/status/2111472920241524897",
+   "first_seen": "2026-10-17",
+   "role": "article carrying the download links (X Article 2111469701197103105, 190k views)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "X post metadata; X mirror"
+  },
+  {
+   "type": "x-post",
+   "value": "https://x.com/cryptotrice/status/2110300326792429916",
+   "first_seen": "2026-10-14",
+   "role": "earlier article post (article 2110297070968184832, now unavailable)",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "X post metadata; X mirror"
+  },
+  {
+   "type": "x-post",
+   "value": "https://x.com/cryptotrice/status/2108500579790315885",
+   "first_seen": "2026-10-09",
+   "role": "earliest thread linked from self-replies (not retrievable)",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "analyst triage"
+  },
+  {
+   "type": "x-post",
+   "value": "https://x.com/cryptotrice/status/2118705306767335545",
+   "first_seen": "2026-11-06",
+   "role": "highest-reach promo post (368k views at retrieval)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "X post metadata"
+  },
+  {
+   "type": "x-post",
+   "value": "https://x.com/cryptotrice/status/2120182085600280896",
+   "first_seen": "2026-11-10",
+   "role": "most recent promo post (156k views), after public SlowMist alert",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "X post metadata"
+  },
+  {
+   "type": "url",
+   "value": "soma.or.tz/dl/",
+   "first_seen": "2026-11-11",
+   "role": "Windows download link in the article; check-host: large file served (Max message size exceeded) 2026-11-11, anonymised exits cannot reach it",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "urlscan.io; check-host.net; X mirror"
+  },
+  {
+   "type": "url",
+   "value": "https://soma.or.tz/dl/",
+   "first_seen": "2026-11-11",
+   "role": "same, full URL",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "analyst triage"
+  },
+  {
+   "type": "url",
+   "value": "halchemicals.com/mac/",
+   "first_seen": "2026-11-10",
+   "role": "macOS link in the article; serves the ClickFix '[brand] - Install' page",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "X mirror; analyst fetch"
+  },
+  {
+   "type": "url",
+   "value": "https://halchemicals.com/get/",
+   "first_seen": "2026-11-10",
+   "role": "Windows download: bot-check interstitial, then application/zip [brand]_Premium_Desktop.zip (137145574 B)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "urlscan.io; analyst fetch"
+  },
+  {
+   "type": "domain",
+   "value": "halchemicals.com",
+   "first_seen": "2026-11-10",
+   "role": "compromised legitimate site (registered 2015-07-02) used as payload gateway",
+   "verdict": "compromised-or-abused-legit",
+   "confidence": "high",
+   "source": "urlscan.io; RDAP"
+  },
+  {
+   "type": "ipv4",
+   "value": "67.208.35.237",
+   "first_seen": "2026-11-11",
+   "role": "halchemicals.com host (GreenGeeks block, abuse@greengeeks.com)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "RDAP; DNS resolution"
+  },
+  {
+   "type": "url",
+   "value": "www.arche-hypnose.com/get/",
+   "first_seen": "2026-11-06",
+   "role": "Windows download gateway (compromised French hypnosis-training site); o2switch Tiger Protect WAF blocks anonymised network",
+   "verdict": "compromised-or-abused-legit",
+   "confidence": "high",
+   "source": "urlscan.io; SlowMist TI alert"
+  },
+  {
+   "type": "url",
+   "value": "www.arche-hypnose.com/mac/",
+   "first_seen": "2026-11-07",
+   "role": "macOS ClickFix page (urlscan 2026-11-07, page title '[brand] - Install')",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "urlscan.io; SlowMist TI alert"
+  },
+  {
+   "type": "domain",
+   "value": "arche-hypnose.com",
+   "first_seen": "2026-11-06",
+   "role": "compromised legitimate site (registered 2003-03-31, registrar OVH)",
+   "verdict": "compromised-or-abused-legit",
+   "confidence": "high",
+   "source": "urlscan.io; RDAP"
+  },
+  {
+   "type": "ipv4",
+   "value": "109.234.161.20",
+   "first_seen": "2026-11-06",
+   "role": "arche-hypnose.com host (o2switch, abuse@o2switch.fr)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "RDAP; DNS resolution"
+  },
+  {
+   "type": "url",
+   "value": "joaomps.com/get/",
+   "first_seen": "2026-11-02",
+   "role": "Windows download gateway (Cloudflare-fronted, registrar PDR)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "urlscan.io"
+  },
+  {
+   "type": "url",
+   "value": "yeelen.cg/new/",
+   "first_seen": "2026-10-12",
+   "role": "Windows download gateway (compromised .cg site, LWS host)",
+   "verdict": "compromised-or-abused-legit",
+   "confidence": "high",
+   "source": "urlscan.io"
+  },
+  {
+   "type": "url",
+   "value": "yeelen.cg/tw",
+   "first_seen": "2026-10-12",
+   "role": "gateway path tagged 'tw' (campaign channel marker), redirects to the R2 zip",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "urlscan.io"
+  },
+  {
+   "type": "ipv4",
+   "value": "91.234.194.231",
+   "first_seen": "2026-10-12",
+   "role": "yeelen.cg host (LWS, abuse@lws.fr)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "RDAP; DNS resolution"
+  },
+  {
+   "type": "url",
+   "value": "ktmfoundation.org/download/",
+   "first_seen": "2026-10-14",
+   "role": "Windows download gateway (now clientHold / NXDOMAIN)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "urlscan.io"
+  },
+  {
+   "type": "url",
+   "value": "ktmfoundation.org/mac",
+   "first_seen": "2026-10-16",
+   "role": "macOS ClickFix page (now gone)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "urlscan.io"
+  },
+  {
+   "type": "ipv4",
+   "value": "185.109.170.138",
+   "first_seen": "2026-11-11",
+   "role": "soma.or.tz host (UK Dedicated Servers, abuse@ukservers.com)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "RDAP; DNS resolution"
+  },
+  {
+   "type": "domain",
+   "value": "c32f4dda3dceee6b85ba1f5f2f3308bf.r2.cloudflarestorage.com",
+   "first_seen": "2026-10-12",
+   "role": "Cloudflare R2 bucket host: /downloads/[brand]_Premium_Desktop.zip (presigned URLs seen by urlscan as redirect target of every /get/ gateway)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "urlscan.io"
+  },
+  {
+   "type": "filename",
+   "value": "TradingView_Premium_Desktop.zip",
+   "first_seen": "2026-10-12",
+   "role": "outer zip name (Content-Disposition); inner zip '[brand]_Premium_Desktop_.zip'",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "urlscan.io; analyst fetch"
+  },
+  {
+   "type": "sha256",
+   "value": "c218ac238b429b5118dc909378d50f1d96461a6326523d886d3539e8165ddae0",
+   "first_seen": "2026-11-11",
+   "role": "outer zip as served 2026-11-11 (byte-identical on two pulls via different exits, 09:06 and 09:37 UTC)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "analyst fetch"
+  },
+  {
+   "type": "sha256",
+   "value": "ca1ec0889de7ee74ccc512929e1cdc135324364295d68c3bb0e49da59fb8fbda",
+   "first_seen": "2026-11-11",
+   "role": "inner AES zip (password-protected)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "analyst fetch"
+  },
+  {
+   "type": "sha256",
+   "value": "5051009b837c24e43b34005a76a6995f0d6d875c5871d86b181bd653be434288",
+   "first_seen": "2026-11-11",
+   "role": "[brand] Premium Desktop.exe, 130028984 B, 125.8 MB zero padding (AV size-limit evasion)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "analyst fetch"
+  },
+  {
+   "type": "sha256",
+   "value": "b8c1d2399105a57046b24aeee74d2dea3250c8c8aa5502c448b8d954f1dcb17a",
+   "first_seen": "2026-11-11",
+   "role": "the 4191744 B Go PE without padding and signature",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "analyst fetch"
+  },
+  {
+   "type": "code-signing-cert",
+   "value": "CN=Nova Metric Industries, O=Nova Metric Industries, C=US (serial 112334143863723688803651078741774901895, sha1 354aae2a78138e64b83241572326f5ab4167f054)",
+   "first_seen": "2026-11-11",
+   "role": "self-signed Authenticode certificate on the exe (fake publisher)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis"
+  },
+  {
+   "type": "go-module-path",
+   "value": "NovaMetricIndustries",
+   "first_seen": "2026-11-11",
+   "role": "Go module path / build info of the exe (garble-style obfuscated, -trimpath, GOOS=windows amd64)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis"
+  },
+  {
+   "type": "go-build-id",
+   "value": "kcVv7h3TmMsRCtet-kKS/HxvD1IxnTNVS_vfK1SrK/KhQWEjH2In90xsdINOKf/eBPKrdWJPBJ6OKSDkCez",
+   "first_seen": "2026-11-11",
+   "role": "Go build ID of the exe",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis"
+  },
+  {
+   "type": "url",
+   "value": "https://xn.amanlay.org/rn/gate",
+   "first_seen": "2026-11-09",
+   "role": "Windows stealer C2 gate (reported by SlowMist 2026-11-09; not extracted from our sample)",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "SlowMist TI alert"
+  },
+  {
+   "type": "url",
+   "value": "https://xn.amanlay.org/kw/gate",
+   "first_seen": "2026-11-09",
+   "role": "Windows stealer C2 gate (SlowMist)",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "SlowMist TI alert"
+  },
+  {
+   "type": "url",
+   "value": "https://z.dak69.org/j/gate",
+   "first_seen": "2026-11-09",
+   "role": "Windows stealer C2 gate (SlowMist)",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "SlowMist TI alert"
+  },
+  {
+   "type": "domain",
+   "value": "amanlay.org",
+   "first_seen": "2026-11-08",
+   "role": "C2 apex: NameCheap, created 2026-04-29, CF NS brady/princess, changed 2026-08-12T02:29Z; urlscan subdomains f., l5. with /<1-2 chars>/gate",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "urlscan.io; RDAP"
+  },
+  {
+   "type": "domain",
+   "value": "dak69.org",
+   "first_seen": "2026-11-07",
+   "role": "C2 apex: NameCheap, created 2025-03-07, CF NS brady/princess, changed 2026-08-12T02:58Z; urlscan subdomains f., g., k., q.",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "urlscan.io; RDAP"
+  },
+  {
+   "type": "domain",
+   "value": "seohumanoid.com",
+   "first_seen": "2026-11-06",
+   "role": "macOS stage-2 + stealer C2: /curl/<token>, /dynamic?txd=, /gate, /pipeline/event (Cloudflare, Unstoppable Domains, created 2026-02-21)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "urlscan.io; analyst fetch"
+  },
+  {
+   "type": "url",
+   "value": "http://seohumanoid.com/curl/42403afd2906a8f3062e3ddb19b28572d88db9ae74b147319383bd280c6bec0a",
+   "first_seen": "2026-11-06",
+   "role": "macOS loader URL base64-embedded in the ClickFix command",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "analyst fetch"
+  },
+  {
+   "type": "url",
+   "value": "http://seohumanoid.com/dynamic?txd=42403afd2906a8f3062e3ddb19b28572d88db9ae74b147319383bd280c6bec0a",
+   "first_seen": "2026-11-11",
+   "role": "AppleScript stealer served to the loader (needs api-key header)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "analyst fetch"
+  },
+  {
+   "type": "url",
+   "value": "http://seohumanoid.com/gate?buildtxd=42403afd2906a8f3062e3ddb19b28572d88db9ae74b147319383bd280c6bec0a",
+   "first_seen": "2026-11-11",
+   "role": "exfil upload endpoint, 10 MiB chunked PUT",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "script analysis"
+  },
+  {
+   "type": "url",
+   "value": "http://seohumanoid.com/pipeline/event",
+   "first_seen": "2026-11-11",
+   "role": "stage telemetry POST (multipart: buildtxd, session_id, stage, status ...)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "script analysis"
+  },
+  {
+   "type": "build-token",
+   "value": "42403afd2906a8f3062e3ddb19b28572d88db9ae74b147319383bd280c6bec0a",
+   "first_seen": "2026-10-15",
+   "role": "macOS build/campaign token, identical on seohumanoid.com, internetmissouri.com, bismarckchiropractor.com since 2026-10-15",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "urlscan.io; script analysis"
+  },
+  {
+   "type": "file-path",
+   "value": "/tmp/osalogging.zip",
+   "first_seen": "2026-11-11",
+   "role": "macOS staging archive for exfil",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "script analysis"
+  },
+  {
+   "type": "file-path",
+   "value": "/tmp/.pregrab_<token>",
+   "first_seen": "2026-11-11",
+   "role": "macOS pre-grab dir",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "script analysis"
+  },
+  {
+   "type": "file-path",
+   "value": "/tmp/dyntrace.txt",
+   "first_seen": "2026-11-11",
+   "role": "macOS trace log",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "script analysis"
+  },
+  {
+   "type": "domain",
+   "value": "internetmissouri.com",
+   "first_seen": "2026-10-15",
+   "role": "earlier macOS stage-2 host (same token), clientHold, Unstoppable Domains",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "urlscan.io; RDAP"
+  },
+  {
+   "type": "domain",
+   "value": "bismarckchiropractor.com",
+   "first_seen": "2026-10-19",
+   "role": "earlier macOS stage-2 host (same token), clientHold, Unstoppable Domains",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "urlscan.io; RDAP"
+  },
+  {
+   "type": "domain",
+   "value": "teapawt.org",
+   "first_seen": "2026-10-21",
+   "role": "NOT malicious: Nitter-style X mirror used by SlowMist and by us to read the article links",
+   "verdict": "shared-or-legit-infrastructure",
+   "confidence": "high",
+   "source": "analyst fetch"
+  },
+  {
+   "type": "sha256",
+   "value": "062f3d64fbf943a3e804354fb19098eac681b7f9ec48fc252e485270d195ced8",
+   "first_seen": "2026-11-11",
+   "role": "libx264-142.dll genuine decoy padding (do not block)",
+   "verdict": "shared-or-legit-infrastructure",
+   "confidence": "high",
+   "source": "analyst fetch"
+  },
+  {
+   "type": "sha256",
+   "value": "d958b1c862a9579bc46840f8aa32eee1b6fb3daf2dea2f46e800c2d5c0d8ae4b",
+   "first_seen": "2026-11-11",
+   "role": "openvr_api.dll genuine decoy padding (do not block)",
+   "verdict": "shared-or-legit-infrastructure",
+   "confidence": "high",
+   "source": "analyst fetch"
+  },
+  {
+   "type": "sha256",
+   "value": "b80dd69f7c0879a950928a7e1a43aa08349ddb8d804332b7cc633d8a40166136",
+   "first_seen": "2026-11-11",
+   "role": "libswscale-8.dll genuine decoy padding (do not block)",
+   "verdict": "shared-or-legit-infrastructure",
+   "confidence": "high",
+   "source": "analyst fetch"
+  },
+  {
+   "type": "sha256",
+   "value": "3d3f24b94282c0f2311cc7cb9b87e4e84a93a51edebc581b8f31fa711d3c6eaa",
+   "first_seen": "2026-11-11",
+   "role": "AppleScript stealer as served (87483 B)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "analyst fetch"
+  },
+  {
+   "type": "sha256",
+   "value": "4e2698b61750624535ba607d27d1ef1f177057bc13f8901dac4855a84254dd2a",
+   "first_seen": "2026-11-11",
+   "role": "zsh loader (gzip+base64 'PAYLOAD' heredoc, eval)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "analyst fetch"
+  },
+  {
+   "type": "domain",
+   "value": "andora188.org",
+   "first_seen": "2026-11-10",
+   "role": "CANDIDATE gate-pattern domain (<sub>.andora188.org/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "urlscan.io"
+  },
+  {
+   "type": "domain",
+   "value": "andaltoto.org",
+   "first_seen": "2026-11-10",
+   "role": "CANDIDATE gate-pattern domain (<sub>.andaltoto.org/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "urlscan.io"
+  },
+  {
+   "type": "domain",
+   "value": "amper888.net",
+   "first_seen": "2026-11-09",
+   "role": "CANDIDATE gate-pattern domain (<sub>.amper888.net/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "urlscan.io"
+  },
+  {
+   "type": "domain",
+   "value": "amin90.org",
+   "first_seen": "2026-11-08",
+   "role": "CANDIDATE gate-pattern domain (<sub>.amin90.org/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "urlscan.io"
+  },
+  {
+   "type": "domain",
+   "value": "dav88.org",
+   "first_seen": "2026-11-08",
+   "role": "CANDIDATE gate-pattern domain (<sub>.dav88.org/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "urlscan.io"
+  },
+  {
+   "type": "domain",
+   "value": "dps69.org",
+   "first_seen": "2026-11-10",
+   "role": "CANDIDATE gate-pattern domain (<sub>.dps69.org/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "urlscan.io"
+  },
+  {
+   "type": "domain",
+   "value": "dax96.org",
+   "first_seen": "2026-11-09",
+   "role": "CANDIDATE gate-pattern domain (<sub>.dax96.org/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "urlscan.io"
+  },
+  {
+   "type": "domain",
+   "value": "amoy323.org",
+   "first_seen": "2026-11-09",
+   "role": "CANDIDATE gate-pattern domain (<sub>.amoy323.org/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "urlscan.io"
+  },
+  {
+   "type": "domain",
+   "value": "andraslotlink.org",
+   "first_seen": "2026-11-11",
+   "role": "CANDIDATE gate-pattern domain (<sub>.andraslotlink.org/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "urlscan.io"
+  },
+  {
+   "type": "domain",
+   "value": "dewa2.org",
+   "first_seen": "2026-11-10",
+   "role": "CANDIDATE gate-pattern domain (<sub>.dewa2.org/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "urlscan.io"
+  },
+  {
+   "type": "domain",
+   "value": "ampluna.com",
+   "first_seen": "2026-11-10",
+   "role": "CANDIDATE gate-pattern domain (<sub>.ampluna.com/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "urlscan.io"
+  },
+  {
+   "type": "domain",
+   "value": "amor76.com",
+   "first_seen": "2026-11-09",
+   "role": "CANDIDATE gate-pattern domain (<sub>.amor76.com/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "urlscan.io"
+  },
+  {
+   "type": "domain",
+   "value": "ampelbet.org",
+   "first_seen": "2026-11-09",
+   "role": "CANDIDATE gate-pattern domain (<sub>.ampelbet.org/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "urlscan.io"
+  },
+  {
+   "type": "domain",
+   "value": "akuntoti.net",
+   "first_seen": "2026-11-09",
+   "role": "CANDIDATE gate-pattern domain (<sub>.akuntoti.net/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "urlscan.io"
+  },
+  {
+   "type": "domain",
+   "value": "ameriktoto.org",
+   "first_seen": "2026-11-08",
+   "role": "CANDIDATE gate-pattern domain (<sub>.ameriktoto.org/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "urlscan.io"
+  },
+  {
+   "type": "domain",
+   "value": "dog69.net",
+   "first_seen": "2026-11-10",
+   "role": "CANDIDATE gate-pattern domain (<sub>.dog69.net/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "urlscan.io"
+  },
+  {
+   "type": "url",
+   "value": "https://pr.anek4d.org/qx/gate",
+   "first_seen": "2026-11-11",
+   "role": "Windows stealer C2 gate of this build (decrypted from the Telegram dead drop with the payload routine); multipart POST token/build_id/hwid",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "sandbox / dead-drop monitoring"
+  },
+  {
+   "type": "domain",
+   "value": "pr.anek4d.org",
+   "first_seen": "2026-11-11",
+   "role": "Windows stealer C2 host (Cloudflare 172.67.151.6/104.21.90.19); urlscan hybridanalysis also saw /jx/gate and /pe/gate 2026-11-11",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "urlscan.io; DNS resolution; sandbox / dead-drop monitoring"
+  },
+  {
+   "type": "domain",
+   "value": "anek4d.org",
+   "first_seen": "2026-11-11",
+   "role": "C2 apex: NameCheap, created 2026-05-12, CF NS brady/princess, last changed 2026-08-12T09:34Z (same NS pair and change day as amanlay.org/dak69.org)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "RDAP; sandbox / dead-drop monitoring"
+  },
+  {
+   "type": "url",
+   "value": "https://telegram.me/d33ttt",
+   "first_seen": "2026-11-05",
+   "role": "Telegram dead-drop resolver (channel d33ttt, created 2026-11-05; description \"k1se <hex>\" = XOR-encrypted C2)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "sandbox / dead-drop monitoring; analyst fetch"
+  },
+  {
+   "type": "dead-drop-value",
+   "value": "k1se 5d91aea4f40a239cb476f4b298f93b24",
+   "first_seen": "2026-11-11",
+   "role": "channel description at 2026-11-11 12:26Z; decrypts to pr.anek4d.org/qx)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "sandbox / dead-drop monitoring"
+  },
+  {
+   "type": "build-token",
+   "value": "14157ded6221bedf1de632abf1bbaa44",
+   "first_seen": "2026-11-11",
+   "role": "Windows build token sent as token/build_id to /gate (config version 4.2)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "sandbox / dead-drop monitoring"
+  },
+  {
+   "type": "user-agent",
+   "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:161.0) Gecko/20100101 Firefox/161.0",
+   "first_seen": "2026-11-11",
+   "role": "hardcoded UA of the Windows stealer (WinHTTP)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "sandbox / dead-drop monitoring"
+  },
+  {
+   "type": "string",
+   "value": "9ufk1cpokc3",
+   "first_seen": "2026-11-11",
+   "role": "hardcoded id in the inner payload (likely mutex/instance name, unverified)",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "sandbox / dead-drop monitoring"
+  },
+  {
+   "type": "sha256",
+   "value": "e7da373121aed34c79efb4ba8e589bb6b142c43a62f9f83c34a068451b056991",
+   "first_seen": "2026-11-11",
+   "role": "inner stealer PE as mapped in memory by the Go loader (image base 0x144e10000, relocated; not an on-disk hash)",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "sandbox / dead-drop monitoring"
+  },
+  {
+   "type": "domain",
+   "value": "qm.anek4d.org",
+   "first_seen": "2026-11-11",
+   "role": "Windows stealer C2 host seen live in HA sandbox (dead drop value at 14:15Z; resolved via Cloudflare 172.67.151.6)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "Hybrid Analysis; sandbox"
+  },
+  {
+   "type": "url",
+   "value": "https://qm.anek4d.org/wc/gate",
+   "first_seen": "2026-11-11",
+   "role": "Windows stealer C2 gate: HA sandbox saw POST multipart hwid/build_id/format=json (401 B) after GET telegram.me/d33ttt",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "Hybrid Analysis; sandbox"
+  },
+  {
+   "type": "dead-drop-value",
+   "value": "k1se 5c8eaea4f40a239cb476f4b298f92338",
+   "first_seen": "2026-11-11",
+   "role": "channel description at 2026-11-11 14:19Z; decrypts to qm.anek4d.org/id (rotated from pr.anek4d.org/qx at 12:26Z)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "sandbox / dead-drop monitoring; sandbox; analyst fetch"
+  },
+  {
+   "type": "ipv4",
+   "value": "149.154.167.99",
+   "first_seen": "2026-11-11",
+   "role": "telegram.me address contacted by sample in HA sandbox (Telegram infra, not C2)",
+   "verdict": "shared-or-legit-infrastructure",
+   "confidence": "high",
+   "source": "Hybrid Analysis; sandbox"
+  },
+  {
+   "type": "domain",
+   "value": "ik.angkajitu.org",
+   "first_seen": "2026-11-11",
+   "role": "Windows stealer C2 host from Telegram dead drop t.me/d33ttt at 2026-11-11 18:30Z (k1se 4488aea4f40823c9ba31efb5d1b9383be78d -> ik.angkajitu.org/w)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "DNS resolution; dead-drop monitoring"
+  },
+  {
+   "type": "url",
+   "value": "https://ik.angkajitu.org/w/gate",
+   "first_seen": "2026-11-11",
+   "role": "Windows stealer C2 gate (current dead-drop value 18:30Z)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "dead-drop monitoring"
+  },
+  {
+   "type": "domain",
+   "value": "angkajitu.org",
+   "first_seen": "2026-11-11",
+   "role": "C2 apex: NameCheap, registered 2026-03-13, CF NS brady/princess, last changed 2026-08-11 (same cluster as anek4d/amanlay/dak69); urlscan hybridanalysis gates on ik., d0., o54., zs. subdomains 2026-11-11",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "urlscan.io; RDAP"
+  },
+  {
+   "type": "domain",
+   "value": "c.dr108.org",
+   "first_seen": "2026-11-11",
+   "role": "Windows stealer C2 host from the Steam dead drop (profile 76561198610252751) at 2026-11-11 18:30Z -> c.dr108.org/x/gate",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "urlscan.io; dead-drop monitoring"
+  },
+  {
+   "type": "domain",
+   "value": "dr108.org",
+   "first_seen": "2026-11-11",
+   "role": "C2 apex: registered 2025-11-29, CF NS brady/princess, last changed 2026-11-09; urlscan gates c./l. subdomains 2026-11-11",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "urlscan.io; RDAP"
+  },
+  {
+   "type": "domain",
+   "value": "ap1.anek4d.org",
+   "first_seen": "2026-11-11",
+   "role": "further C2 subdomain (urlscan hybridanalysis /g/gate, /w/gate 2026-11-11 13:26-13:32Z)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "urlscan.io"
+  },
+  {
+   "type": "url",
+   "value": "https://steamcommunity.com/profiles/76561198610252751",
+   "first_seen": "2026-11-11",
+   "role": "Steam dead-drop resolver (contains k1se <hex> value; decrypts to c.dr108.org/x)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "dead-drop monitoring; analyst fetch; static analysis"
+  },
+  {
+   "type": "discord-server",
+   "value": "The Reversed Community (Discord)",
+   "first_seen": "2026-11-11",
+   "role": "new lure 2026-11-11 16:11Z post 2120549992935080315: Discord invite card with [brand] logo, claims 87,654 members; invite link not yet posted",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "analyst triage"
+  },
+  {
+   "type": "url",
+   "value": "cdn.discordapp.com/attachments/1088291502435864678",
+   "first_seen": "2026-11-02",
+   "role": "Discord CDN attachment hosting [brand]_Premium_Desktop.zip (urlscan 2026-11-02T01:32Z, scan 01a199e2-b5b5-70bc-940a-f75eaa13e17d); earlier distribution via Discord CDN, not in the article links",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "urlscan.io; dead-drop monitoring"
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+title: Suspicious Unsigned Version.dll Loaded From User-Writable Folder
+id: 34a84108-3ee6-4f4c-a538-fc0629a28f4c
+status: experimental
+description: |
+    Detects a process loading an unsigned version.dll from a user-writable folder (Downloads, Desktop, Temp, Users\Public).
+    Built from the "Setup Center" campaign, where a Microsoft-signed OneDrive client renamed Installer.exe sits next to a malicious proxy version.dll that RC4-decrypts localdata.db and hollows a suspended copy of its own host.
+    Narrower than the generic SigmaHQ rule for system DLLs loaded from non-system locations by requiring Signed=false and a user path. That generic rule already covers version.dll, so this variant was not submitted to SigmaHQ and is kept here as a lower-noise hunting option.
+references:
+    - https://www.elastic.co/security-labs/threat-command/revstealer-credential-harvesting-infostealer
+    - https://github.com/SigmaHQ/sigma/blob/54967d64e6dda2b4daa81f47f7a8bf1f591b68a0/rules/windows/image_load/image_load_side_load_from_non_system_location.yml
+    - https://github.com/harperjohnsai/detections
+author: Harper Johns
+date: 2026-11-13
+tags:
+    - attack.persistence
+    - attack.privilege-escalation
+    - attack.execution
+    - attack.stealth
+    - attack.t1574.001
+logsource:
+    category: image_load
+    product: windows
+detection:
+    selection_dll:
+        ImageLoaded|endswith: '\version.dll'
+        Signed: 'false'
+    selection_path:
+        ImageLoaded|contains:
+            - '\Downloads\'
+            - '\Desktop\'
+            - '\AppData\Local\Temp\'
+            - '\Users\Public\'
+    filter_main_system:
+        ImageLoaded|startswith:
+            - 'C:\Windows\System32\'
+            - 'C:\Windows\SysWOW64\'
+            - 'C:\Windows\WinSxS\'
+    condition: selection_dll and selection_path and not filter_main_system
+falsepositives:
+    - Portable or game tools shipping their own unsigned version.dll proxy (mod loaders); baseline first
+level: high

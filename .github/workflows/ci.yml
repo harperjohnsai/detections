@@ -1,0 +1,32 @@
+name: ci
+on:
+  push:
+  pull_request:
+jobs:
+  yara:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install yara-python yara-x cabarchive pyyaml
+      - name: Compile every YARA rule with yara-python and YARA-X
+        run: python tests/run_yara_tests.py --compile-only
+  sigma:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml sigma-cli pysigma "pySigma-validators-sigmahq==0.21.*"
+      - name: sigma check
+        run: sigma check --fail-on-error --fail-on-issues --validation-config tests/sigma_cli_conf.yml sigma/
+      - name: Sigma logic tests on synthetic events
+        run: python tests/test_sigma_synthetic.py
+  iocs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python tests/validate_iocs.py
