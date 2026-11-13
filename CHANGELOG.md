@@ -31,3 +31,4 @@
 ### 2026-11-13 (REVSTEALER builds and rotation)
 - `iocs/2026-11-revstealer-setup-center/`: builds 25 and 26 added next to build 27 (C2 domains, Telegraph dead drops, Polygon contracts, commit-pinned `Installer.zip` URLs, loader/container/payload/helper hashes), the deployer wallet and funding chain with confidence labels, the two earlier deployers seen in Elastic's contracts, 15 decoy GitLab projects, and the signed fake-app sample. 48 rows added (193 total); Cloudflare edges and the exchange hot wallet are context only (`shared-or-legit-infrastructure`).
 - New `c2_timeline.csv` and a "Builds and rotation" section in the case README. `tools/export_iocs.py` knows the `polygon-wallet` type (STIX custom observable `x-polygon-wallet`, MISP `text`, never `to_ids`).
+- Case README and `case.yml` list the ThreatFox entries submitted for the new builds (2027971 to 2027981); exports regenerated.

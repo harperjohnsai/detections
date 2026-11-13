@@ -20,6 +20,17 @@ references:
   - {source_name: MalwareBazaar, url: "https://bazaar.abuse.ch/sample/c6859833796f682e3598f65865a2853c3ecc118d7f2fb01defc24cf328e3ecad/"}
   - {source_name: MalwareBazaar, url: "https://bazaar.abuse.ch/sample/3c6330d06b57d18026efd5745245cc19e1c67983d957f42ff6a821e2b7f71632/"}
   - {source_name: MalwareBazaar, url: "https://bazaar.abuse.ch/sample/2b4f61c274bf8e4a79cf77e7b36d18d1dd265e8e894f5f2b6d8babc6323d556a/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2027971/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2027972/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2027973/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2027974/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2027975/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2027976/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2027977/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2027978/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2027979/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2027980/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2027981/"}
 indicates:
   - family: REVSTEALER
     role_match: 'REVSTEALER|sideload|Installer\.zip|localdata\.db'
