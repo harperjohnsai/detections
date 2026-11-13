@@ -18,3 +18,7 @@
 - All 5 YARA rules deployed to YARAhub (author Harper Johns, CC BY 4.0, TLP:CLEAR) and live-hunting on YARAify:
   SetupCenter_ProxyVersionDll_Loader, SetupCenter_FakeCab_PayloadContainer, REVSTEALER_x64_Core_SetupCenter,
   REVSTEALER_ABE_Helper_DLL, REVSTEALER_Decrypted_Strings_Memory (https://yaraify.abuse.ch/yarahub/).
+
+### 2026-11-13 (STIX 2.1 and MISP exports)
+- `tools/export_iocs.py` generates `stix2.json` (STIX 2.1 bundle: Identity, Report, Indicators, Malware, `indicates` relationships, TLP:CLEAR) and `misp_event.json` (MISP event) for every case with an `iocs.json`; ids are deterministic. `--check` runs in CI.
+- `tests/validate_exports.py` validates the bundles with OASIS `stix2-validator` and `stix2` and loads the events with PyMISP. `case.yml` gained optional `campaigns`, `malpedia`, `references`, `indicates` keys.

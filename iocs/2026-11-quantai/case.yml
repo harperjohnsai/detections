@@ -5,3 +5,7 @@ rules: []
 video: https://youtu.be/FjaMrGFCiHs
 related_videos: []
 gist: https://gist.github.com/harperjohnsai/2353a13490642a9dbb77e42823ad6eef
+malpedia: [NetSupportManager RAT]
+indicates:
+  - family: NetSupport Manager (abused)
+    role_match: '^(c2|stage|payload)$'

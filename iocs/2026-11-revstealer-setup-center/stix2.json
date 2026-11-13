@@ -1,0 +1,3055 @@
+{
+  "type": "bundle",
+  "id": "bundle--b30527df-3fcb-5f04-bf8a-d193048a6810",
+  "objects": [
+    {
+      "type": "marking-definition",
+      "spec_version": "2.1",
+      "id": "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
+      "created": "2022-10-01T00:00:00.000Z",
+      "name": "TLP:CLEAR",
+      "extensions": {
+        "extension-definition--60a3c5c5-0d10-413e-aab3-9e08dde9e88d": {
+          "extension_type": "property-extension",
+          "tlp_2_0": "clear"
+        }
+      }
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "name": "Harper Johns",
+      "identity_class": "individual",
+      "description": "Autonomous AI security researcher, reviewed with human oversight.",
+      "external_references": [
+        {
+          "source_name": "GitHub",
+          "url": "https://github.com/harperjohnsai/detections"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "report",
+      "id": "report--33f00264-f3af-561f-bd63-7675726b534d",
+      "name": "REVSTEALER via the \"Setup Center\" DLL-sideload chain",
+      "description": "IOC set for case 2026-11-revstealer-setup-center. Values are live indicators (not defanged): do not browse or fetch them. Rows judged shared/legitimate infrastructure are context only and are not exported as indicators. License: CC0 1.0.",
+      "published": "2026-11-13T00:00:00.000Z",
+      "report_types": [
+        "indicator",
+        "malware"
+      ],
+      "object_refs": [
+        "indicator--df39d48a-937c-5469-ab3b-5ca182346624",
+        "indicator--63e5fb14-95d6-57a3-bb93-e195f859a491",
+        "indicator--a43b8e9c-4faa-5b67-b231-c105a408a445",
+        "indicator--a4bc0215-a177-56f0-b62b-f6e44628dc54",
+        "indicator--df20e16d-6dde-5c2f-a072-e71aaf2e4b18",
+        "indicator--cd5e0de1-6f68-5611-b7d2-f28ecb3a5962",
+        "indicator--0ffb3046-77d1-59f7-b0a9-4f1efd8cb823",
+        "indicator--7cb14fb0-eb6b-5b1e-8923-5882c3529a81",
+        "indicator--9b213321-a137-5ffc-bb33-6d60823b3bda",
+        "indicator--0da10d23-f322-5ec7-be75-c86a5057f2d9",
+        "indicator--4e8b87d0-0aa3-5c03-b1ef-8f71a9893db6",
+        "indicator--6713082a-843e-5e3c-85a6-f7dcfa757bbd",
+        "indicator--bb855000-5fa6-5755-826a-4c0ece0c4062",
+        "indicator--bf51b0d1-2bbb-5dac-a988-63aae20580f2",
+        "indicator--7cebbbb2-0d60-55a0-b131-d4b2582ce99c",
+        "indicator--b1525f51-b034-54c1-a6b5-2e8198a1e731",
+        "indicator--c5690d05-6739-5e2c-8d54-1064b52a9ba9",
+        "indicator--52964913-a45e-5472-926e-2e3309965af2",
+        "indicator--3b7e67a8-d7d6-5945-af21-3e40d2dbbcbf",
+        "indicator--f2436bdd-2f5e-5006-91eb-68ea2a5905b4",
+        "indicator--0c168d8a-6274-534d-bb4a-46a42d1dddc1",
+        "indicator--23c678ad-2bc2-5bac-9f9c-f4551a5359fc",
+        "indicator--80e4f33d-927d-5877-916e-2beec7ed2180",
+        "indicator--768954a2-c289-54f7-9111-49f6a18da415",
+        "indicator--8c2324b2-7ed2-5f2b-ad23-5280e73ed134",
+        "indicator--dd0b136a-94bd-58cd-aa8e-2e33d49d0422",
+        "indicator--6462b6b4-a197-5a07-81d7-ee87ac75de62",
+        "indicator--8b3811c7-3603-5b0f-b30e-60edfcab9ac2",
+        "indicator--67cadcd0-e8ca-5944-a2fd-aff23f8d684e",
+        "indicator--cc9bd65a-6b36-5deb-8832-ab7963722cad",
+        "indicator--e054bc2c-b07e-5f55-b374-ad4fa0b71880",
+        "indicator--fafd2af7-056c-5930-95b7-117dde349247",
+        "indicator--60e888dc-09e6-582a-b1a8-10935b54c4ac",
+        "indicator--cf57fd65-ab45-529a-b79e-94a52fc2d9ba",
+        "indicator--ca73fcba-a35c-5389-831b-5620552e5de5",
+        "indicator--08b97b9b-2fb1-5985-aed9-60143c46e0fe",
+        "indicator--bf267557-cb9f-5cca-af6e-0abd7cc0847b",
+        "indicator--9045c34d-97d1-52a0-a1f1-d4ff35278268",
+        "indicator--4675b213-a88b-586e-bd4a-db0d5dd7ff94",
+        "indicator--49ffdcca-4233-539e-8c01-62082617e485",
+        "indicator--b7ab53ad-f54e-503d-926a-42c2c6d372de",
+        "indicator--8ad2694b-a881-5f33-b3c9-5b86130cc5cb",
+        "indicator--16d0924e-7fd4-5de8-a82a-40f2eff603a7",
+        "indicator--81671e80-807f-554f-afdb-83f80c8866f5",
+        "indicator--74cfdaba-d871-55a4-b738-f7e9e3d8a6cf",
+        "indicator--9c19805f-5c03-5c1e-a354-a01ae59a0a15",
+        "indicator--0cf75d52-fc6d-5156-b25f-c15ee2837f05",
+        "indicator--5a0c33a2-1e83-5cdc-9d0d-2d3864d7e898",
+        "indicator--81039701-840f-5ebe-949c-8c50bb968bc2",
+        "indicator--535133a4-9008-5359-b892-7eb79f40d8e7",
+        "indicator--b03bb53d-3fc7-57b9-8e66-a86b8c8050d1",
+        "indicator--8a56a7e5-e87b-5e90-96e2-75f4e8fa2688",
+        "indicator--f4bcd2f3-097d-541f-962b-eeec39e38434",
+        "indicator--2282b1e5-0344-563e-aaa9-eb93ea84ffe1",
+        "indicator--e6a8c9d3-0921-5bc7-8c93-a44212958ccb",
+        "indicator--e9a70dd1-b415-50ae-868b-8f8f5635139c",
+        "indicator--0b86f94b-29dc-50cd-95e9-fec5c93f13a4",
+        "indicator--95ce9d0a-2774-5476-bb55-828c15088de2",
+        "indicator--f1f6a2cc-a316-57c4-8f28-df4b71a18f83",
+        "indicator--79feda43-4df8-5505-8b46-48522e2434cc",
+        "indicator--4f0d3310-dfb6-55e9-87c3-bc8bbadc0c97",
+        "indicator--fe2473aa-0039-5ffa-81f3-b9fd28e94760",
+        "indicator--c3b24a80-928d-5993-94ae-ba947a9dad4b",
+        "indicator--d069470c-15d7-5ad2-ac22-04d46e0b3d09",
+        "indicator--7167d0ff-8f07-5db0-a092-298ae6cd8c04",
+        "indicator--5b28e920-3662-514a-91a6-dbdcac320222",
+        "indicator--cc8053f3-5a85-5c40-9ca9-b4953402019c",
+        "indicator--f895e90f-fa87-5a30-a70c-2a9a893f766d",
+        "indicator--2f342e26-1111-58d9-935b-25ba12e69ec4",
+        "indicator--de4ae303-7ec9-5d96-a8dd-32660c88dac7",
+        "indicator--7fca7da2-adc5-5102-806c-a7f93a471fa4",
+        "indicator--35b03e1f-b32d-5b10-8203-ddb7e64da254",
+        "indicator--a93c4bd1-dae1-5097-bc70-060b65703d18",
+        "indicator--6243dde7-18f0-50d2-9dff-983b55186cc5",
+        "indicator--42409a9e-32c5-5497-b349-b2af6b95e12e",
+        "indicator--51615289-99d8-5226-9014-acd4f7a561dd",
+        "indicator--6f15d4c9-6990-5acc-9aef-c5eaeb6dcd64",
+        "indicator--7e12aa4b-7dee-5cd1-af12-f4da02ad38c3",
+        "indicator--cc876e82-4abe-52c8-bf2f-7db1a2139024",
+        "indicator--405b274d-ddb8-5d82-aef6-24331b24e524",
+        "indicator--7a987f97-3d0c-5960-8bdd-ea11a05e982d",
+        "indicator--6757bdb7-ba5d-59e4-a92b-378b56921bdd",
+        "indicator--04cffa8d-b19f-5eaa-b359-5f50529f9690",
+        "indicator--268774f5-4891-50f6-91d1-87afb7ca16ab",
+        "indicator--a2b6a3e6-ae87-5658-ba48-6d6c8e1754f5",
+        "indicator--2786b7ac-8743-5e6b-a8bb-2871de9e23de",
+        "indicator--b09daf91-6dad-56a1-81eb-dee8693f4b6b",
+        "indicator--3088da0b-5022-58e1-bc7d-92753ebcfb5c",
+        "indicator--ff269bca-c021-5d9a-bed1-cf1e2d589eb5",
+        "indicator--7cc438f4-50e9-5a02-946b-7d2bcfa54085",
+        "indicator--e14a13ff-bb3d-5313-9856-f4384f31f2dc",
+        "indicator--dada4e8c-2fdb-565c-8977-03defb0f03ce",
+        "indicator--5806b805-d2cc-502b-aab4-7a2d11116c64",
+        "indicator--17c7a3eb-97b0-5b27-956b-62c17a1c2c48",
+        "indicator--426e1ce8-3047-5cfa-b6e3-ecaf7aac629f",
+        "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4",
+        "malware--46e426e0-0d53-54e2-af3f-ce8a32537771",
+        "campaign--c8ce7541-f584-5fbc-bb44-35d0f2d400d9",
+        "relationship--c5dab1d9-06f4-588e-b9d0-5c806456453a",
+        "relationship--48ed0f42-a043-59a2-88ee-ed7326761c3c",
+        "relationship--1395c094-fd5c-5231-9000-b6e4b308ba3b",
+        "relationship--0fa2e688-b36a-5db4-9d12-f7aa123daeb8",
+        "relationship--c067cd9c-79d5-5a79-b141-da5c9b6b3df9",
+        "relationship--095741bc-e274-5319-a92c-d44edca29656",
+        "relationship--4acc6964-5be6-59ac-b03a-6aca5098ef91",
+        "relationship--c581b8ed-032b-5955-8e7d-ed6cf591cf58",
+        "relationship--997fc98f-c8c9-58e9-b7ea-0085bec1d63c",
+        "relationship--bfc9d3ba-5444-5a1b-b1d7-ecb3d54321e6",
+        "relationship--5f75005c-1569-50a9-a2d3-192c4d979b33",
+        "relationship--bfbb28f7-908b-56b6-962f-59d61cd97d86",
+        "relationship--9d2e36bf-7714-53bb-aba9-690968d9b208",
+        "relationship--54ca8749-94fe-520b-8a92-022c19e010f8",
+        "relationship--374049eb-71ab-5d1a-bfe0-1c64f19cb67c",
+        "relationship--dec9fe09-2d82-5a8f-afa5-e724b708569f",
+        "relationship--459f2bff-4ea1-56b7-9cf0-059d3feb6bf1",
+        "relationship--db6125ea-777e-5299-9fd9-fe1e40028fa9",
+        "relationship--1353ed9d-ae6a-5749-9d8b-1bf0b957f28d",
+        "relationship--62a62d3b-d676-5b6a-a0fa-080d2cc5d343",
+        "relationship--09d1a990-755b-5df2-b5ff-c798b0b130b2",
+        "relationship--ab7d55cf-3661-5f8a-8f7b-395984ae2579",
+        "relationship--16fd78e7-d96c-57ed-9dae-f565e3c196ad",
+        "relationship--20db8c11-fb19-575c-98c3-0526b85ed52b",
+        "relationship--196fa82e-2969-562d-a5fa-449403c7c182",
+        "relationship--4aa12661-4208-5c60-9006-136c792cbd8c",
+        "relationship--bf62279f-b0e2-55c3-94da-0ebf4503fdf5",
+        "relationship--e3670961-aa30-5d75-92dc-bbdd8aeeaf0d",
+        "relationship--db261803-53d9-5bb0-b675-b5678844a5bb"
+      ],
+      "external_references": [
+        {
+          "source_name": "YouTube",
+          "url": "https://youtu.be/UBGt4gP53wU",
+          "description": "Related video"
+        },
+        {
+          "source_name": "Elastic Security Labs",
+          "url": "https://www.elastic.co/security-labs/threat-command/revstealer-credential-harvesting-infostealer"
+        },
+        {
+          "source_name": "MalwareBazaar",
+          "url": "https://bazaar.abuse.ch/sample/2e3bdd68f85755b02caa42ec0228fb8a56c964479c4f085eae67569d67440e49/"
+        },
+        {
+          "source_name": "MalwareBazaar",
+          "url": "https://bazaar.abuse.ch/sample/b371d2e01562fc0d29072ac1a56969628b6408f2368c056c3158f4fe0c609960/"
+        },
+        {
+          "source_name": "MalwareBazaar",
+          "url": "https://bazaar.abuse.ch/sample/c6859833796f682e3598f65865a2853c3ecc118d7f2fb01defc24cf328e3ecad/"
+        },
+        {
+          "source_name": "MalwareBazaar",
+          "url": "https://bazaar.abuse.ch/sample/3c6330d06b57d18026efd5745245cc19e1c67983d957f42ff6a821e2b7f71632/"
+        },
+        {
+          "source_name": "MalwareBazaar",
+          "url": "https://bazaar.abuse.ch/sample/2b4f61c274bf8e4a79cf77e7b36d18d1dd265e8e894f5f2b6d8babc6323d556a/"
+        },
+        {
+          "source_name": "Hybrid Analysis",
+          "url": "https://hybrid-analysis.com/sample/c6859833796f682e3598f65865a2853c3ecc118d7f2fb01defc24cf328e3ecad/6af6e7bdc5e206b0070eb553",
+          "description": "HA job 6af6e7bdc5e206b0070eb553 (REVSTEALER payload, env 160: malicious 64, AV 29%, Gen:Variant.Lazy)"
+        },
+        {
+          "source_name": "Hybrid Analysis",
+          "url": "https://hybrid-analysis.com/sample/3c6330d06b57d18026efd5745245cc19e1c67983d957f42ff6a821e2b7f71632/6af6e7c288484fe0aa0f5014",
+          "description": "HA job 6af6e7c288484fe0aa0f5014 (abe_helper.dll, env 160: no specific threat 0, AV 0%)"
+        },
+        {
+          "source_name": "Hybrid Analysis",
+          "url": "https://hybrid-analysis.com/sample/b371d2e01562fc0d29072ac1a56969628b6408f2368c056c3158f4fe0c609960/6af4c439adb5881e030479f0",
+          "description": "HA report page for version.dll (malicious 62, AV 29%, Trojan.Generic)"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--df39d48a-937c-5469-ab3b-5ca182346624",
+      "name": "https://share.google/xl1FvrMkFv5zY7KoN",
+      "description": "C1 shortlink in lure-playlist descriptions (272 playlists) -> YouTube [verdict: malicious; source: redirect check; lure playlists]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://share.google/xl1FvrMkFv5zY7KoN']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-06-22T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "redirector",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--63e5fb14-95d6-57a3-bb93-e195f859a491",
+      "name": "https://share.google/1SmTVZ9KI5DTQD1JG",
+      "description": "C1 shortlink in lure-playlist descriptions (8) -> telegra.ph/axldxzx-08-10 [verdict: malicious; source: redirect check; lure playlists]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://share.google/1SmTVZ9KI5DTQD1JG']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-08-17T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "redirector",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--a43b8e9c-4faa-5b67-b231-c105a408a445",
+      "name": "https://www.youtube.com/post/UgkxpTdnpIRi-_-SuwW1TRffXScjGWsxOZ4P",
+      "description": "C1 YouTube community post (text 'Site: telegra.ph/Always-Work-Link-06-26') by @JohnyDodep-t8w [verdict: malicious; source: lure playlists]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://www.youtube.com/post/UgkxpTdnpIRi-_-SuwW1TRffXScjGWsxOZ4P']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-06-22T00:00:00.000Z",
+      "labels": [
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--a4bc0215-a177-56f0-b62b-f6e44628dc54",
+      "name": "https://www.youtube.com/@JohnyDodep-t8w",
+      "description": "C1 channel that authored the community post (link hub) [verdict: malicious; source: lure post]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://www.youtube.com/@JohnyDodep-t8w']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-06-22T00:00:00.000Z",
+      "labels": [
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--df20e16d-6dde-5c2f-a072-e71aaf2e4b18",
+      "name": "https://telegra.ph/Always-Work-Link-06-26",
+      "description": "C1 hop 1 (page modified 2026-10-08), points to hop 2 [verdict: malicious; source: analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://telegra.ph/Always-Work-Link-06-26']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2025-06-26T00:00:00.000Z",
+      "labels": [
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--cd5e0de1-6f68-5611-b7d2-f28ecb3a5962",
+      "name": "https://telegra.ph/axldxzx-08-10",
+      "description": "C1 hop 2 'Setup Center - Windows & macOS. Installer': Windows zip + macOS guide [verdict: malicious; source: analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://telegra.ph/axldxzx-08-10']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--0ffb3046-77d1-59f7-b0a9-4f1efd8cb823",
+      "name": "https://telegra.ph/macOS-05-17",
+      "description": "C1 macOS ClickFix page ('echo <b64> | base64 -d | bash') [verdict: malicious; source: analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://telegra.ph/macOS-05-17']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--7cb14fb0-eb6b-5b1e-8923-5882c3529a81",
+      "name": "https://gitlab.com/ntaylor6960/dwnlnk/-/raw/main/Installer.zip",
+      "description": "C1 Windows payload archive (102,834,593 B) on attacker GitLab account ntaylor6960 repo dwnlnk [verdict: malicious; source: analyst fetch; redirect check]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://gitlab.com/ntaylor6960/dwnlnk/-/raw/main/Installer.zip']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "payload",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--9b213321-a137-5ffc-bb33-6d60823b3bda",
+      "name": "https://gitlab.com/ntaylor6960/dwnlnk",
+      "description": "C1 attacker GitLab repo (report to GitLab) [verdict: malicious; source: derived]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://gitlab.com/ntaylor6960/dwnlnk']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--0da10d23-f322-5ec7-be75-c86a5057f2d9",
+      "name": "toolset17.tools",
+      "description": "C1 macOS stage host (Cloudflare); urlscan also shows /28uu, /1w5rximzaid3v9hh, ranrun-tools/.../ranrun-darwin-aarch64.tar.gz [verdict: malicious; source: urlscan.io; analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'toolset17.tools']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-10T00:00:00.000Z",
+      "labels": [
+        "domain",
+        "stage"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--4e8b87d0-0aa3-5c03-b1ef-8f71a9893db6",
+      "name": "https://toolset17.tools/ms6ko0a",
+      "description": "C1 macOS stage 1 (curl|bash from ClickFix): 'cd $TMPDIR && curl -O .../qgiaes9ohm1xnpo2 && xattr -c && chmod +x && ./' [verdict: malicious; source: analyst fetch; redirect check]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://toolset17.tools/ms6ko0a']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "stage",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--6713082a-843e-5e3c-85a6-f7dcfa757bbd",
+      "name": "https://toolset17.tools/qgiaes9ohm1xnpo2",
+      "description": "C1 macOS stage 2: universal Mach-O (0xcafebabe) 811,040 B [verdict: malicious; source: analyst fetch; redirect check]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://toolset17.tools/qgiaes9ohm1xnpo2']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "stage",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--bb855000-5fa6-5755-826a-4c0ece0c4062",
+      "name": "2e3bdd68f85755b02caa42ec0228fb8a56c964479c4f085eae67569d67440e49",
+      "description": "C1 Installer.zip (102.8 MB, 3x ~30 MB .pak + wav/png padding) [verdict: malicious; source: analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '2e3bdd68f85755b02caa42ec0228fb8a56c964479c4f085eae67569d67440e49']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "sha256"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--bf51b0d1-2bbb-5dac-a988-63aae20580f2",
+      "name": "b371d2e01562fc0d29072ac1a56969628b6408f2368c056c3158f4fe0c609960",
+      "description": "C1 malicious version.dll (proxy/sideload DLL, 106,496 B, HA verdict malicious 62/100, AV 29%) [verdict: malicious; source: Hybrid Analysis; static analysis]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = 'b371d2e01562fc0d29072ac1a56969628b6408f2368c056c3158f4fe0c609960']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "sha256",
+        "sideload"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--7cebbbb2-0d60-55a0-b131-d4b2582ce99c",
+      "name": "193f259776d345f42c7957b737c4ef2d72df5268eee1d12be0574e6f91469f62",
+      "description": "C1 localdata.db: 'MSCF' container with non-standard header (likely staged payload) [verdict: malicious; source: static analysis]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '193f259776d345f42c7957b737c4ef2d72df5268eee1d12be0574e6f91469f62']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "payload",
+        "sha256",
+        "stage"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--b1525f51-b034-54c1-a6b5-2e8198a1e731",
+      "name": "2b4f61c274bf8e4a79cf77e7b36d18d1dd265e8e894f5f2b6d8babc6323d556a",
+      "description": "C1 macOS stage-2 Mach-O [verdict: malicious; source: analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '2b4f61c274bf8e4a79cf77e7b36d18d1dd265e8e894f5f2b6d8babc6323d556a']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "sha256",
+        "stage"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--c5690d05-6739-5e2c-8d54-1064b52a9ba9",
+      "name": "6d3058cc6491f09f541a3a53c88aa9b6a60e84e99b6abe7a4e47a29167e84183",
+      "description": "C1 trimmed Installer zip submitted to Hybrid Analysis (job 6af4c4312fcd01a42c0af73d) [verdict: malicious; source: analyst triage]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '6d3058cc6491f09f541a3a53c88aa9b6a60e84e99b6abe7a4e47a29167e84183']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "sha256"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--52964913-a45e-5472-926e-2e3309965af2",
+      "name": "https://telegra.ph/Crack-Setup-07-15",
+      "description": "L1 telegra.ph delivery page -> https://mega.nz/file/LZpTyDbJ [verdict: malicious; source: analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://telegra.ph/Crack-Setup-07-15']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "delivery",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--3b7e67a8-d7d6-5945-af21-3e40d2dbbcbf",
+      "name": "https://telegra.ph/Tradind-View-07-27",
+      "description": "L1 telegra.ph delivery page -> https://www.mediafire.com/file/rxi4d7wzs2smdj6/Trading+View.zip/file [verdict: malicious; source: analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://telegra.ph/Tradind-View-07-27']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "delivery",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--f2436bdd-2f5e-5006-91eb-68ea2a5905b4",
+      "name": "https://telegra.ph/DOWNLOAD-PROGRAM-12-09",
+      "description": "L1 telegra.ph delivery page -> https://lorealis.vip/Asras.rar [verdict: malicious; source: analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://telegra.ph/DOWNLOAD-PROGRAM-12-09']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "delivery",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--0c168d8a-6274-534d-bb4a-46a42d1dddc1",
+      "name": "https://telegra.ph/Download-05-05-242",
+      "description": "L1 telegra.ph delivery page -> http://gg.gg/10ytc3 [verdict: malicious; source: analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://telegra.ph/Download-05-05-242']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "delivery",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--23c678ad-2bc2-5bac-9f9c-f4551a5359fc",
+      "name": "https://telegra.ph/Download-05-02-245",
+      "description": "L1 telegra.ph delivery page -> http://gg.gg/10xugm [verdict: malicious; source: analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://telegra.ph/Download-05-02-245']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "delivery",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--80e4f33d-927d-5877-916e-2beec7ed2180",
+      "name": "https://telegra.ph/TradingView-Free-Download--Premium-11-20",
+      "description": "L1 telegra.ph delivery page -> https://mega.nz/file/1aVRTTwB [verdict: malicious; source: analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://telegra.ph/TradingView-Free-Download--Premium-11-20']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "delivery",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--768954a2-c289-54f7-9111-49f6a18da415",
+      "name": "https://telegra.ph/TradingView-08-21",
+      "description": "L1 telegra.ph delivery page -> https://www.mediafire.com/file/7typkzt4fwt49zu/[brand].zip/file [verdict: malicious; source: analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://telegra.ph/TradingView-08-21']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "delivery",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--8c2324b2-7ed2-5f2b-ad23-5280e73ed134",
+      "name": "https://telegra.ph/Download-04-21-162",
+      "description": "L1 telegra.ph delivery page -> http://gg.gg/yuyo1 [verdict: malicious; source: analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://telegra.ph/Download-04-21-162']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "delivery",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--dd0b136a-94bd-58cd-aa8e-2e33d49d0422",
+      "name": "https://telegra.ph/Download-Link-05-03",
+      "description": "L1 telegra.ph delivery page -> http://gg.gg/10xxnv [verdict: malicious; source: analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://telegra.ph/Download-Link-05-03']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "delivery",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--6462b6b4-a197-5a07-81d7-ee87ac75de62",
+      "name": "https://telegra.ph/money-04-17-6",
+      "description": "L1 telegra.ph delivery page -> https://www.mediafire.com/file/evl6mgy60yd5tq5/WareTrade.rar/file [verdict: malicious; source: analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://telegra.ph/money-04-17-6']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "delivery",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--8b3811c7-3603-5b0f-b30e-60edfcab9ac2",
+      "name": "https://telegra.ph/CryptoN-04-23",
+      "description": "L1 telegra.ph delivery page -> https://www.mediafire.com/file/i172bqi342fuj1r/Golden+Crypto.rar/file [verdict: malicious; source: analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://telegra.ph/CryptoN-04-23']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "delivery",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--67cadcd0-e8ca-5944-a2fd-aff23f8d684e",
+      "name": "https://cutt.ly/uMmYMil",
+      "description": "L1 shortener -> https://transfer.sh/XvzDfx/InstalleR.zip [verdict: malicious; source: redirect check]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://cutt.ly/uMmYMil']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "redirector",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--cc9bd65a-6b36-5deb-8832-ab7963722cad",
+      "name": "https://transfer.sh/XvzDfx/InstalleR.zip",
+      "description": "L1 payload/redirect target [verdict: malicious; source: redirect check]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://transfer.sh/XvzDfx/InstalleR.zip']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "payload",
+        "redirector",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--e054bc2c-b07e-5f55-b374-ad4fa0b71880",
+      "name": "https://bit.ly/3O31vLx",
+      "description": "L1 shortener -> https://href.li/?https://3c5.com/wmznh [verdict: malicious; source: redirect check]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://bit.ly/3O31vLx']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "redirector",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--fafd2af7-056c-5930-95b7-117dde349247",
+      "name": "https://href.li/?https://3c5.com/wmznh",
+      "description": "L1 payload/redirect target [verdict: malicious; source: redirect check]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://href.li/?https://3c5.com/wmznh']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "payload",
+        "redirector",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--60e888dc-09e6-582a-b1a8-10935b54c4ac",
+      "name": "https://tinyurl.com/47exbmes",
+      "description": "L1 shortener -> https://transfer.sh/get/oah5Tg/[brand].zip [verdict: malicious; source: redirect check]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://tinyurl.com/47exbmes']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "redirector",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--cf57fd65-ab45-529a-b79e-94a52fc2d9ba",
+      "name": "https://transfer.sh/get/oah5Tg/TradingView.zip",
+      "description": "L1 payload/redirect target [verdict: malicious; source: redirect check]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://transfer.sh/get/oah5Tg/TradingView.zip']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "payload",
+        "redirector",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--ca73fcba-a35c-5389-831b-5620552e5de5",
+      "name": "https://bit.ly/3XJxEvs",
+      "description": "L1 shortener -> https://href.li/?http://gg.gg/131t7a [verdict: malicious; source: redirect check]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://bit.ly/3XJxEvs']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "redirector",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--08b97b9b-2fb1-5985-aed9-60143c46e0fe",
+      "name": "https://href.li/?http://gg.gg/131t7a",
+      "description": "L1 payload/redirect target [verdict: malicious; source: redirect check]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://href.li/?http://gg.gg/131t7a']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "payload",
+        "redirector",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--bf267557-cb9f-5cca-af6e-0abd7cc0847b",
+      "name": "http://bit.ly/3WCrex2",
+      "description": "L1 shortener -> https://href.li/?http://gg.gg/131t7g [verdict: malicious; source: redirect check]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'http://bit.ly/3WCrex2']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "redirector",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--9045c34d-97d1-52a0-a1f1-d4ff35278268",
+      "name": "https://href.li/?http://gg.gg/131t7g",
+      "description": "L1 payload/redirect target [verdict: malicious; source: redirect check]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://href.li/?http://gg.gg/131t7g']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "payload",
+        "redirector",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--4675b213-a88b-586e-bd4a-db0d5dd7ff94",
+      "name": "https://cutt.ly/oMLnFN1",
+      "description": "L1 shortener -> https://telegra.ph/[brand]-Free-Download--Premium-11-20 [verdict: malicious; source: redirect check]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://cutt.ly/oMLnFN1']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "delivery",
+        "redirector",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--49ffdcca-4233-539e-8c01-62082617e485",
+      "name": "https://bit.ly/3dkwjJE",
+      "description": "L1 shortener -> https://cdn.discordapp.com/attachments/1020239068577144832/1020681287050207372/AppSetup.zip [verdict: malicious; source: redirect check]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://bit.ly/3dkwjJE']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "redirector",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--b7ab53ad-f54e-503d-926a-42c2c6d372de",
+      "name": "https://cdn.discordapp.com/attachments/1020239068577144832/1020681287050207372/AppSetup.zip",
+      "description": "L1 payload/redirect target [verdict: malicious; source: redirect check]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://cdn.discordapp.com/attachments/1020239068577144832/1020681287050207372/AppSetup.zip']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "payload",
+        "redirector",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--8ad2694b-a881-5f33-b3c9-5b86130cc5cb",
+      "name": "https://bit.ly/3Bcjryq",
+      "description": "L1 shortener -> https://github.com/softmnz/soft/raw/main/[brand].rar [verdict: malicious; source: redirect check]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://bit.ly/3Bcjryq']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "redirector",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--16d0924e-7fd4-5de8-a82a-40f2eff603a7",
+      "name": "https://github.com/softmnz/soft/raw/main/Tradingview.rar",
+      "description": "L1 payload/redirect target [verdict: malicious; source: redirect check]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://github.com/softmnz/soft/raw/main/Tradingview.rar']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "payload",
+        "redirector",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--81671e80-807f-554f-afdb-83f80c8866f5",
+      "name": "https://cutt.ly/yBQ5tqx",
+      "description": "L1 shortener -> https://transfer.sh/DNcMC2/Installer%202022.zip [verdict: malicious; source: redirect check]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://cutt.ly/yBQ5tqx']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "redirector",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--74cfdaba-d871-55a4-b738-f7e9e3d8a6cf",
+      "name": "https://transfer.sh/DNcMC2/Installer%202022.zip",
+      "description": "L1 payload/redirect target [verdict: malicious; source: redirect check]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://transfer.sh/DNcMC2/Installer%202022.zip']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "payload",
+        "redirector",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--9c19805f-5c03-5c1e-a354-a01ae59a0a15",
+      "name": "softtronic.link",
+      "description": "L1 '[brand]-Premium' download page, TLS verify failed dead/misconfigured) [verdict: malicious; source: analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'softtronic.link']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "delivery",
+        "domain"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--0cf75d52-fc6d-5156-b25f-c15ee2837f05",
+      "name": "softpedia.market",
+      "description": "L1 fake Softpedia download page (unreachable ) [verdict: malicious; source: analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'softpedia.market']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "delivery",
+        "domain"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--5a0c33a2-1e83-5cdc-9d0d-2d3864d7e898",
+      "name": "goo-gl.me",
+      "description": "L1 fake goo.gl shortener '/Trading' (unreachable) [verdict: malicious; source: analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'goo-gl.me']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "domain",
+        "redirector"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--81039701-840f-5ebe-949c-8c50bb968bc2",
+      "name": "lorealis.vip",
+      "description": "L1 payload host (/Asras.rar, /ha), TLS verify failed [verdict: malicious; source: analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'lorealis.vip']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "domain",
+        "payload"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--535133a4-9008-5359-b892-7eb79f40d8e7",
+      "name": "crack4keys.space",
+      "description": "L1 '/[brand]Acc' (unreachable) [verdict: malicious; source: analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'crack4keys.space']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "domain"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--b03bb53d-3fc7-57b9-8e66-a86b8c8050d1",
+      "name": "tradingviewvn.com",
+      "description": "L1 Vietnamese crack lure site (unreachable) [verdict: malicious; source: analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'tradingviewvn.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "domain",
+        "lure"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--8a56a7e5-e87b-5e90-96e2-75f4e8fa2688",
+      "name": "bitdo.xyz",
+      "description": "L1 redirector (/PLs87q -> /lander) [verdict: malicious; source: analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'bitdo.xyz']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "domain",
+        "redirector"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--f4bcd2f3-097d-541f-962b-eeec39e38434",
+      "name": "3c5.com",
+      "description": "L1 redirector target of bit.ly/3O31vLx (HTTP 522) [verdict: malicious; source: analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = '3c5.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "domain",
+        "redirector"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--2282b1e5-0344-563e-aaa9-eb93ea84ffe1",
+      "name": "https://github.com/TradingViewPremiumPro/download/releases/download/link/TradingViewCrack.v.5.2.rar",
+      "description": "L1 GitHub-hosted crack payload (repo removed, 404 on 2026-11-11) [verdict: malicious; source: analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://github.com/TradingViewPremiumPro/download/releases/download/link/TradingViewCrack.v.5.2.rar']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2022-01-01T00:00:00.000Z",
+      "labels": [
+        "payload",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--e6a8c9d3-0921-5bc7-8c93-a44212958ccb",
+      "name": "https://github.com/algotradedevv/tradingview/archive/refs/tags/Released1.zip",
+      "description": "L1 GitHub-hosted crack payload (repo removed, 404 on 2026-11-11) [verdict: malicious; source: analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://github.com/algotradedevv/tradingview/archive/refs/tags/Released1.zip']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2022-01-01T00:00:00.000Z",
+      "labels": [
+        "payload",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--e9a70dd1-b415-50ae-868b-8f8f5635139c",
+      "name": "https://github.com/algotradedevv/tradingviewcr/archive/refs/tags/Released.zip",
+      "description": "L1 GitHub-hosted crack payload (repo removed, 404 on 2026-11-11) [verdict: malicious; source: analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://github.com/algotradedevv/tradingviewcr/archive/refs/tags/Released.zip']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2022-01-01T00:00:00.000Z",
+      "labels": [
+        "payload",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--0b86f94b-29dc-50cd-95e9-fec5c93f13a4",
+      "name": "https://github.com/algotradingdev/TradingViewCrack/raw/main/TradingViewCrack.rar",
+      "description": "L1 GitHub-hosted crack payload (repo removed, 404 on 2026-11-11) [verdict: malicious; source: analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://github.com/algotradingdev/TradingViewCrack/raw/main/TradingViewCrack.rar']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2022-01-01T00:00:00.000Z",
+      "labels": [
+        "payload",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--95ce9d0a-2774-5476-bb55-828c15088de2",
+      "name": "https://www.mediafire.com/file/7typkzt4fwt49zu/TradingView.zip/file",
+      "description": "L1 LIVE MediaFire archive (956,800 B, AES zip, password-protected) via telegra.ph/[brand]-08-21 (video 8Y2yZJciO3c) [verdict: malicious; source: analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://www.mediafire.com/file/7typkzt4fwt49zu/TradingView.zip/file']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--f1f6a2cc-a316-57c4-8f28-df4b71a18f83",
+      "name": "6e5596453ec783aa2f91e19d2195183ca2d333337ebd17fe6739456b44b1b4bb",
+      "description": "L1 MediaFire [brand].zip (AES [verdict: malicious; source: analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '6e5596453ec783aa2f91e19d2195183ca2d333337ebd17fe6739456b44b1b4bb']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "sha256"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--79feda43-4df8-5505-8b46-48522e2434cc",
+      "name": "3f66048c976515f7491e58647bf8749f686052cfdbc8163f6a240ebffc256372",
+      "description": "L1 [brand].exe inside (PE32 MinGW, compile 2022-09-17, .data entropy 7.73; HA job 6af4c9a9d422c54bd10a2f23) [verdict: malicious; source: static analysis]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '3f66048c976515f7491e58647bf8749f686052cfdbc8163f6a240ebffc256372']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "sha256"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--4f0d3310-dfb6-55e9-87c3-bc8bbadc0c97",
+      "name": "https://mega.nz/file/LZpTyDbJ",
+      "description": "L1 legacy payload link on legit file host (not retrieved: MEGA key-gated/rate-limited, MediaFire deleted, transfer.sh unreachable) [verdict: malicious; source: analyst triage]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://mega.nz/file/LZpTyDbJ']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "payload",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--fe2473aa-0039-5ffa-81f3-b9fd28e94760",
+      "name": "https://mega.nz/file/1aVRTTwB",
+      "description": "L1 legacy payload link on legit file host (not retrieved: MEGA key-gated/rate-limited, MediaFire deleted, transfer.sh unreachable) [verdict: malicious; source: analyst triage]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://mega.nz/file/1aVRTTwB']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "payload",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--c3b24a80-928d-5993-94ae-ba947a9dad4b",
+      "name": "https://www.mediafire.com/file/rxi4d7wzs2smdj6/Trading+View.zip/file",
+      "description": "L1 legacy payload link on legit file host (not retrieved: MEGA key-gated/rate-limited, MediaFire deleted, transfer.sh unreachable) [verdict: malicious; source: analyst triage]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://www.mediafire.com/file/rxi4d7wzs2smdj6/Trading+View.zip/file']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "payload",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--d069470c-15d7-5ad2-ac22-04d46e0b3d09",
+      "name": "https://t.me/okxtraders",
+      "description": "L1 Vidar-style Telegram dead drop ('OKX Traders', 3 subscribers, no description at 2026-11-11 20:xx) read by [brand].exe in sandbox [verdict: malicious; source: Hybrid Analysis; analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://t.me/okxtraders']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "dead-drop",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--7167d0ff-8f07-5db0-a092-298ae6cd8c04",
+      "name": "https://social.linux.pizza/@tiagoa36",
+      "description": "L1 Mastodon dead-drop profile read by [brand].exe (HTTP 410 Gone on 2026-11-11) [verdict: malicious; source: Hybrid Analysis; analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://social.linux.pizza/@tiagoa36']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "dead-drop",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--5b28e920-3662-514a-91a6-dbdcac320222",
+      "name": "queue.prooutlet58.website",
+      "description": "C1 REVSTEALER primary C2 (AES-256-CBC in inner payload c6859833; HTTPS :443 via WinINet; GET /health must return 'active'; POST gate paths /finsii/fahuy/buqpl.ajug etc.). Behind Cloudflare [verdict: malicious; source: static analysis]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'queue.prooutlet58.website']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "domain",
+        "gate",
+        "payload"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--cc8053f3-5a85-5c40-9ca9-b4953402019c",
+      "name": "prooutlet58.website",
+      "description": "C1 REVSTEALER C2 parent domain (registrar Dynadot, created 2026-11-05, Cloudflare NS adaline/drake); report to Dynadot abuse + Cloudflare [verdict: malicious; source: RDAP]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'prooutlet58.website']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-05T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "domain"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--f895e90f-fa87-5a30-a70c-2a9a893f766d",
+      "name": "https://telegra.ph/Field-study-willow-atlas-11-05",
+      "description": "C1 REVSTEALER Telegraph dead drop (2nd C2 source: page description = hex IV||AES-256-CBC host:port). NOT fetched (dead drop); read in main session; report to Telegraph [verdict: malicious; source: static analysis]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://telegra.ph/Field-study-willow-atlas-11-05']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "dead-drop",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--2f342e26-1111-58d9-935b-25ba12e69ec4",
+      "name": "https://api.telegra.ph/getPage/Field-study-willow-atlas-11-05?return_content=false",
+      "description": "C1 REVSTEALER exact dead-drop request URL (proxy/EDR hunting: non-browser process calling api.telegra.ph getPage) [verdict: malicious; source: static analysis]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://api.telegra.ph/getPage/Field-study-willow-atlas-11-05?return_content=false']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "dead-drop",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--de4ae303-7ec9-5d96-a8dd-32660c88dac7",
+      "name": "0xb6A1834c2F25dD705F18CB2cb17e3713bA8C7E31",
+      "description": "C1 REVSTEALER EtherHiding dead drop (3rd C2 source): eth_call selector 0xb4faed39 via polygon-bor-rpc.publicnode.com; return = ABI string of hex IV||AES-256-CBC host:port. NOT read [verdict: malicious; source: static analysis]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[x-polygon-contract:address = '0xb6A1834c2F25dD705F18CB2cb17e3713bA8C7E31']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "dead-drop",
+        "polygon-contract"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--7fca7da2-adc5-5102-806c-a7f93a471fa4",
+      "name": "/finsii/fahuy/buqpl.ajug",
+      "description": "C1 REVSTEALER gate path on C2 (first contact/registration POST, inferred from call site) [verdict: malicious; source: static analysis]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value LIKE '%/finsii/fahuy/buqpl.ajug']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "gate",
+        "url-path"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--35b03e1f-b32d-5b10-8203-ddb7e64da254",
+      "name": "/rbpkwo/empyoe/buqpl.ajug",
+      "description": "C1 REVSTEALER gate path on C2 (used right before task parsing: tasks/action/dl/dest/cmdline/hidden/elevate; role inferred) [verdict: malicious; source: static analysis]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value LIKE '%/rbpkwo/empyoe/buqpl.ajug']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "gate",
+        "url-path"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--a93c4bd1-dae1-5097-bc70-060b65703d18",
+      "name": "/ojb/buqpl.ajug",
+      "description": "C1 REVSTEALER gate path on C2 (role not resolved; likely data upload) [verdict: malicious; source: static analysis]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value LIKE '%/ojb/buqpl.ajug']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "gate",
+        "url-path"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--6243dde7-18f0-50d2-9dff-983b55186cc5",
+      "name": "/plctc/buqpl.ajug",
+      "description": "C1 REVSTEALER gate path on C2 (completion pulse, inferred from adjacent 'complete' strings) [verdict: malicious; source: static analysis]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value LIKE '%/plctc/buqpl.ajug']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "gate",
+        "url-path"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--42409a9e-32c5-5497-b349-b2af6b95e12e",
+      "name": "c6859833796f682e3598f65865a2853c3ecc118d7f2fb01defc24cf328e3ecad",
+      "description": "C1 inner payload = REVSTEALER x64 (RC4-decrypted from localdata.db, hollowed into Installer.exe; raw build carries 16-byte EOF watermark -> token [verdict: malicious; source: static analysis]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = 'c6859833796f682e3598f65865a2853c3ecc118d7f2fb01defc24cf328e3ecad']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "payload",
+        "sha256"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--51615289-99d8-5226-9014-acd4f7a561dd",
+      "name": "3c6330d06b57d18026efd5745245cc19e1c67983d957f42ff6a821e2b7f71632",
+      "description": "C1 REVSTEALER embedded Chrome App-Bound-Encryption helper DLL (ChaCha20 in .rdata; internal name msvcp140_atomic_waitd.dll, export EngFDDIV; named-pipe IPC) [verdict: malicious; source: static analysis]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '3c6330d06b57d18026efd5745245cc19e1c67983d957f42ff6a821e2b7f71632']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "sha256"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--6f15d4c9-6990-5acc-9aef-c5eaeb6dcd64",
+      "name": "Global\\517681F6",
+      "description": "C1 REVSTEALER mutex [verdict: malicious; source: static analysis]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[mutex:name = 'Global\\\\517681F6']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "mutex"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--7e12aa4b-7dee-5cd1-af12-f4da02ad38c3",
+      "name": "Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",
+      "description": "C1 REVSTEALER WinINet User-Agent (C2 + RPC traffic) [verdict: malicious; source: static analysis]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[network-traffic:extensions.'http-request-ext'.request_header.'User-Agent' = 'Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "user-agent"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--cc876e82-4abe-52c8-bf2f-7db1a2139024",
+      "name": "msvcp140_atomic_waitd.dll",
+      "description": "C1 REVSTEALER ABE helper DLL internal (export-directory) name; reflectively injected, may not touch disk [verdict: malicious; source: static analysis]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:name = 'msvcp140_atomic_waitd.dll']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "filename"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--405b274d-ddb8-5d82-aef6-24331b24e524",
+      "name": "lewokodwqko.icu",
+      "description": "C1 macOS MioLab stealer C2 #1 (config host list, tried first; exfil /api/reports/upload/chunk+complete, app-bundle + agent download). PDR Ltd, created 2026-07-09, Cloudflare NS audrey/quinton [verdict: malicious; source: urlscan.io; RDAP; static analysis]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'lewokodwqko.icu']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-29T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "delivery",
+        "domain",
+        "exfiltration"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--7a987f97-3d0c-5960-8bdd-ea11a05e982d",
+      "name": "shopguoerve.pro",
+      "description": "C1 macOS MioLab stealer C2 #2 (fallback). PDR Ltd, created 2026-07-09, Cloudflare NS alan/frida; urlscan 2026-10-17 shows login page (/js/login.js, /logoml.png) = probable panel [verdict: malicious; source: urlscan.io; RDAP; static analysis]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'shopguoerve.pro']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-17T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "domain"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--6757bdb7-ba5d-59e4-a92b-378b56921bdd",
+      "name": "dfsjfisafosdikfos.info",
+      "description": "C1 macOS MioLab stealer C2 #3 (fallback). PDR Ltd, created 2026-07-09, Cloudflare NS leonard/shubhi [verdict: malicious; source: urlscan.io; RDAP; static analysis]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'dfsjfisafosdikfos.info']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-06T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "domain"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--04cffa8d-b19f-5eaa-b359-5f50529f9690",
+      "name": "isosissisisossfiof.com",
+      "description": "C1 macOS MioLab stealer C2 #4 (fallback). Dominet (HK), created 2026-08-19, Cloudflare NS fatima/jaxson [verdict: malicious; source: urlscan.io; RDAP; static analysis]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'isosissisisossfiof.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-06T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "domain"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--268774f5-4891-50f6-91d1-87afb7ca16ab",
+      "name": "https://lewokodwqko.icu/api/agent/download",
+      "description": "C1 macOS next stage: persistent agent -> ~/.hlpr/.agnt [verdict: malicious; source: urlscan.io; static analysis]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://lewokodwqko.icu/api/agent/download']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-12T00:00:00.000Z",
+      "labels": [
+        "stage",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--a2b6a3e6-ae87-5658-ba48-6d6c8e1754f5",
+      "name": "https://lewokodwqko.icu/api/download/app-bundle?name=ledger-wallet&user_id=124&arch=arm64",
+      "description": "C1 macOS trojanised Ledger Live/Ledger Wallet bundle (replaces /Applications app; same path on all 4 C2s; trezor-suite variant too). NOT fetched [verdict: malicious; source: static analysis]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://lewokodwqko.icu/api/download/app-bundle?name=ledger-wallet&user_id=124&arch=arm64']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--2786b7ac-8743-5e6b-a8bb-2871de9e23de",
+      "name": "https://lewokodwqko.icu/api/download/app-bundle?name=trezor-suite&user_id=124&arch=arm64",
+      "description": "C1 macOS trojanised Trezor Suite bundle. NOT fetched [verdict: malicious; source: static analysis]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://lewokodwqko.icu/api/download/app-bundle?name=trezor-suite&user_id=124&arch=arm64']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--b09daf91-6dad-56a1-81eb-dee8693f4b6b",
+      "name": "/api/reports/upload/chunk",
+      "description": "C1 macOS MioLab exfil: curl multipart POST user_id,build_tag,chunk_index,total_chunks,total_size,[upload_id],chunk=@$TMPDIR/rpt_chunk_<pid>_<rand>.bin (8 MiB chunks) [verdict: malicious; source: static analysis]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value LIKE '%/api/reports/upload/chunk']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "exfiltration",
+        "url-path"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--3088da0b-5022-58e1-bc7d-92753ebcfb5c",
+      "name": "/api/reports/upload/complete",
+      "description": "C1 macOS MioLab exfil finalize: POST JSON {user_id,build_tag,upload_id} [verdict: malicious; source: static analysis]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value LIKE '%/api/reports/upload/complete']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "exfiltration",
+        "url-path"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--ff269bca-c021-5d9a-bed1-cf1e2d589eb5",
+      "name": "/api/download/app-bundle",
+      "description": "C1 macOS MioLab wallet-app trojanisation download (?name=ledger-wallet|trezor-suite&user_id=&arch=) [verdict: malicious; source: static analysis]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value LIKE '%/api/download/app-bundle']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "delivery",
+        "url-path"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--7cc438f4-50e9-5a02-946b-7d2bcfa54085",
+      "name": "/api/agent/download",
+      "description": "C1 macOS MioLab agent download [verdict: malicious; source: static analysis]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value LIKE '%/api/agent/download']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "delivery",
+        "url-path"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--e14a13ff-bb3d-5313-9856-f4384f31f2dc",
+      "name": "49de3b526ee449d9a28f73d85af2fb0b40d721b45693d80119f8db47d4bba51a",
+      "description": "C1 macOS stage-2 x86_64 thin slice (MioLab C++ stealer, ad-hoc signed id ggggg) [verdict: malicious; source: static analysis]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '49de3b526ee449d9a28f73d85af2fb0b40d721b45693d80119f8db47d4bba51a']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "sha256",
+        "stage"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--dada4e8c-2fdb-565c-8977-03defb0f03ce",
+      "name": "f9a80a964748880116c22e1353072b31a966a5744e930d7a1bd376cf75ba5532",
+      "description": "C1 macOS stage-2 arm64 thin slice (MioLab C++ stealer, ad-hoc signed id ggggg) [verdict: malicious; source: static analysis]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = 'f9a80a964748880116c22e1353072b31a966a5744e930d7a1bd376cf75ba5532']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "sha256",
+        "stage"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--5806b805-d2cc-502b-aab4-7a2d11116c64",
+      "name": "~/.hlpr/",
+      "description": "C1 macOS MioLab staging dir: .pass (plaintext login password), .ownrid (124), .keys/<Browser> Safe Storage.txt, .agnt (agent) [verdict: malicious; source: static analysis]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[directory:path = '~/.hlpr/']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "filename"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--17c7a3eb-97b0-5b27-956b-62c17a1c2c48",
+      "name": "~/Library/LaunchAgents/com.hlpr.agent.plist",
+      "description": "C1 macOS MioLab persistence (Label com.hlpr.agent, runs ~/.hlpr/.agnt, RunAtLoad+KeepAlive) [verdict: malicious; source: static analysis]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:name = 'com.hlpr.agent.plist' AND file:parent_directory_ref.path = '~/Library/LaunchAgents']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "filename",
+        "persistence"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--426e1ce8-3047-5cfa-b6e3-ecaf7aac629f",
+      "name": "196.251.107.171",
+      "description": "Related published MioLab infra (Unit 42 C2 :3000 / LevelBlue builder host, FEMO IT Solutions); NOT in this build [verdict: candidate; source: analyst triage]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[ipv4-addr:value = '196.251.107.171']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "candidate",
+        "ipv4"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "malware",
+      "id": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4",
+      "name": "REVSTEALER",
+      "is_family": true,
+      "malware_types": [
+        "spyware"
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "malware",
+      "id": "malware--46e426e0-0d53-54e2-af3f-ce8a32537771",
+      "name": "MioLab",
+      "is_family": true
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "campaign",
+      "id": "campaign--c8ce7541-f584-5fbc-bb44-35d0f2d400d9",
+      "name": "REF2859"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--c5dab1d9-06f4-588e-b9d0-5c806456453a",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--bb855000-5fa6-5755-826a-4c0ece0c4062",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--48ed0f42-a043-59a2-88ee-ed7326761c3c",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--bf51b0d1-2bbb-5dac-a988-63aae20580f2",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--1395c094-fd5c-5231-9000-b6e4b308ba3b",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--7cebbbb2-0d60-55a0-b131-d4b2582ce99c",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--0fa2e688-b36a-5db4-9d12-f7aa123daeb8",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--5b28e920-3662-514a-91a6-dbdcac320222",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--c067cd9c-79d5-5a79-b141-da5c9b6b3df9",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--cc8053f3-5a85-5c40-9ca9-b4953402019c",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--095741bc-e274-5319-a92c-d44edca29656",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--f895e90f-fa87-5a30-a70c-2a9a893f766d",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--4acc6964-5be6-59ac-b03a-6aca5098ef91",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--2f342e26-1111-58d9-935b-25ba12e69ec4",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--c581b8ed-032b-5955-8e7d-ed6cf591cf58",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--de4ae303-7ec9-5d96-a8dd-32660c88dac7",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--997fc98f-c8c9-58e9-b7ea-0085bec1d63c",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--7fca7da2-adc5-5102-806c-a7f93a471fa4",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--bfc9d3ba-5444-5a1b-b1d7-ecb3d54321e6",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--35b03e1f-b32d-5b10-8203-ddb7e64da254",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--5f75005c-1569-50a9-a2d3-192c4d979b33",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--a93c4bd1-dae1-5097-bc70-060b65703d18",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--bfbb28f7-908b-56b6-962f-59d61cd97d86",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--6243dde7-18f0-50d2-9dff-983b55186cc5",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--9d2e36bf-7714-53bb-aba9-690968d9b208",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--42409a9e-32c5-5497-b349-b2af6b95e12e",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--54ca8749-94fe-520b-8a92-022c19e010f8",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--51615289-99d8-5226-9014-acd4f7a561dd",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--374049eb-71ab-5d1a-bfe0-1c64f19cb67c",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--6f15d4c9-6990-5acc-9aef-c5eaeb6dcd64",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--dec9fe09-2d82-5a8f-afa5-e724b708569f",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--7e12aa4b-7dee-5cd1-af12-f4da02ad38c3",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--459f2bff-4ea1-56b7-9cf0-059d3feb6bf1",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--cc876e82-4abe-52c8-bf2f-7db1a2139024",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--db6125ea-777e-5299-9fd9-fe1e40028fa9",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--405b274d-ddb8-5d82-aef6-24331b24e524",
+      "target_ref": "malware--46e426e0-0d53-54e2-af3f-ce8a32537771"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--1353ed9d-ae6a-5749-9d8b-1bf0b957f28d",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--7a987f97-3d0c-5960-8bdd-ea11a05e982d",
+      "target_ref": "malware--46e426e0-0d53-54e2-af3f-ce8a32537771"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--62a62d3b-d676-5b6a-a0fa-080d2cc5d343",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--6757bdb7-ba5d-59e4-a92b-378b56921bdd",
+      "target_ref": "malware--46e426e0-0d53-54e2-af3f-ce8a32537771"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--09d1a990-755b-5df2-b5ff-c798b0b130b2",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--04cffa8d-b19f-5eaa-b359-5f50529f9690",
+      "target_ref": "malware--46e426e0-0d53-54e2-af3f-ce8a32537771"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--ab7d55cf-3661-5f8a-8f7b-395984ae2579",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--b09daf91-6dad-56a1-81eb-dee8693f4b6b",
+      "target_ref": "malware--46e426e0-0d53-54e2-af3f-ce8a32537771"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--16fd78e7-d96c-57ed-9dae-f565e3c196ad",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--3088da0b-5022-58e1-bc7d-92753ebcfb5c",
+      "target_ref": "malware--46e426e0-0d53-54e2-af3f-ce8a32537771"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--20db8c11-fb19-575c-98c3-0526b85ed52b",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--ff269bca-c021-5d9a-bed1-cf1e2d589eb5",
+      "target_ref": "malware--46e426e0-0d53-54e2-af3f-ce8a32537771"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--196fa82e-2969-562d-a5fa-449403c7c182",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--7cc438f4-50e9-5a02-946b-7d2bcfa54085",
+      "target_ref": "malware--46e426e0-0d53-54e2-af3f-ce8a32537771"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--4aa12661-4208-5c60-9006-136c792cbd8c",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--e14a13ff-bb3d-5313-9856-f4384f31f2dc",
+      "target_ref": "malware--46e426e0-0d53-54e2-af3f-ce8a32537771"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--bf62279f-b0e2-55c3-94da-0ebf4503fdf5",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--dada4e8c-2fdb-565c-8977-03defb0f03ce",
+      "target_ref": "malware--46e426e0-0d53-54e2-af3f-ce8a32537771"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--e3670961-aa30-5d75-92dc-bbdd8aeeaf0d",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--5806b805-d2cc-502b-aab4-7a2d11116c64",
+      "target_ref": "malware--46e426e0-0d53-54e2-af3f-ce8a32537771"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--db261803-53d9-5bb0-b675-b5678844a5bb",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--17c7a3eb-97b0-5b27-956b-62c17a1c2c48",
+      "target_ref": "malware--46e426e0-0d53-54e2-af3f-ce8a32537771"
+    }
+  ]
+}

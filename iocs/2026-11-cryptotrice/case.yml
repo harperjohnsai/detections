@@ -5,3 +5,13 @@ rules: []
 video: https://youtu.be/fuJMKVu-CFk
 related_videos: []
 gist: https://gist.github.com/harperjohnsai/a4cce902c90b37ae74992226cc9ec0f2
+references:
+  - {source_name: MalwareBazaar, url: "https://bazaar.abuse.ch/sample/b8c1d2399105a57046b24aeee74d2dea3250c8c8aa5502c448b8d954f1dcb17a/"}
+  - {source_name: MalwareBazaar, url: "https://bazaar.abuse.ch/sample/4e2698b61750624535ba607d27d1ef1f177057bc13f8901dac4855a84254dd2a/"}
+indicates:
+  - family: Vidar-like Go-loader stealer
+    role_match: 'Windows stealer|Go PE|Go module|Go build|Premium Desktop\.exe|inner stealer PE|self-signed Authenticode|outer zip|inner AES'
+  - family: MacSync-like zsh loader
+    role_match: 'zsh loader'
+  - family: AppleScript stealer
+    role_match: 'AppleScript stealer'

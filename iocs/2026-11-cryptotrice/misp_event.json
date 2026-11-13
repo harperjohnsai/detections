@@ -1,0 +1,1551 @@
+{
+  "Event": {
+    "uuid": "c3efe15f-2c12-595f-93cf-685be299cc75",
+    "info": "cryptotrice, a fake cracked trading app with Telegram and Steam dead-drop C2",
+    "date": "2026-11-11",
+    "threat_level_id": "2",
+    "analysis": "2",
+    "distribution": "3",
+    "published": false,
+    "timestamp": "1794355200",
+    "Orgc": {
+      "uuid": "b641827b-b56f-53c3-b356-359fddd6e73f",
+      "name": "Harper Johns"
+    },
+    "Tag": [
+      {
+        "name": "tlp:clear"
+      }
+    ],
+    "Attribute": [
+      {
+        "uuid": "1f590e70-4809-5fef-88a2-89bf14ce79dc",
+        "type": "twitter-id",
+        "category": "Social network",
+        "value": "71269107",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "@cryptotrice (x.com user id 71269107); distribution (promotes cracked [brand] Premium) [type: x-account; verdict: malicious; source: X post metadata]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-10-09T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "3a708a0e-e93a-5517-a803-e5e40b63faf7",
+        "type": "url",
+        "category": "Social network",
+        "value": "https://x.com/cryptotrice/status/2117572256079741351",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "example post (video lure, self-reply links the article) [type: x-post; verdict: malicious; source: X post metadata]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-03T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "bc719b62-e212-5aaf-8cb2-3d0bcc756b98",
+        "type": "url",
+        "category": "Social network",
+        "value": "https://x.com/cryptotrice/status/2111472920241524897",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "article carrying the download links (X Article 2111469701197103105, 190k views) [type: x-post; verdict: malicious; source: X post metadata; X mirror]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-10-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "ae546dc9-b28c-58cd-b8f2-56c7a04433f0",
+        "type": "url",
+        "category": "Social network",
+        "value": "https://x.com/cryptotrice/status/2110300326792429916",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "earlier article post (article 2110297070968184832, now unavailable) [type: x-post; verdict: malicious; source: X post metadata; X mirror]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-10-14T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "1fd0fdc2-cacc-5fa5-9347-b38523e8f14a",
+        "type": "url",
+        "category": "Social network",
+        "value": "https://x.com/cryptotrice/status/2108500579790315885",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "earliest thread linked from self-replies (not retrievable) [type: x-post; verdict: malicious; source: analyst triage]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-10-09T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "be5265d6-7478-5abc-a5a5-b9a10ee6622c",
+        "type": "url",
+        "category": "Social network",
+        "value": "https://x.com/cryptotrice/status/2118705306767335545",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "highest-reach promo post (368k views at retrieval) [type: x-post; verdict: malicious; source: X post metadata]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-06T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "811e3b1b-830c-5960-9d00-27cbf426e2e6",
+        "type": "url",
+        "category": "Social network",
+        "value": "https://x.com/cryptotrice/status/2120182085600280896",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "most recent promo post (156k views), after public SlowMist alert [type: x-post; verdict: malicious; source: X post metadata]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-10T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "36cc9333-8b5d-559e-9d59-5b439c75779f",
+        "type": "url",
+        "category": "Network activity",
+        "value": "soma.or.tz/dl/",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Windows download link in the article; check-host: large file served (Max message size exceeded) 2026-11-11, anonymised exits cannot reach it [type: url; verdict: malicious; source: urlscan.io; check-host.net; X mirror]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "e57f1ce5-cf28-5ccc-a397-bbac18540eef",
+        "type": "url",
+        "category": "Network activity",
+        "value": "https://soma.or.tz/dl/",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "same, full URL [type: url; verdict: malicious; source: analyst triage]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "25793cca-4714-5327-adc9-6c38f7edce9e",
+        "type": "url",
+        "category": "Network activity",
+        "value": "halchemicals.com/mac/",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "macOS link in the article; serves the ClickFix '[brand] - Install' page [type: url; verdict: malicious; source: X mirror; analyst fetch]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-10T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "6b4d1c2e-ef7e-5d56-aaac-cb43551acae0",
+        "type": "url",
+        "category": "Network activity",
+        "value": "https://halchemicals.com/get/",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Windows download: bot-check interstitial, then application/zip [brand]_Premium_Desktop.zip (137145574 B) [type: url; verdict: malicious; source: urlscan.io; analyst fetch]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-10T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "22b35d6b-8ec0-53c1-9a0a-8bdbf6de2908",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "halchemicals.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "compromised legitimate site (registered 2015-07-02) used as payload gateway [type: domain; verdict: compromised-or-abused-legit; source: urlscan.io; RDAP]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-10T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "34e29bd1-05e6-5999-925a-ce418b2d59c6",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "67.208.35.237",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "halchemicals.com host (GreenGeeks block, abuse@greengeeks.com) [type: ipv4; verdict: malicious; source: RDAP; DNS resolution]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "9f83bd6b-9850-5aa4-bb5f-998befe00450",
+        "type": "url",
+        "category": "Network activity",
+        "value": "www.arche-hypnose.com/get/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Windows download gateway (compromised French hypnosis-training site); o2switch Tiger Protect WAF blocks anonymised network [type: url; verdict: compromised-or-abused-legit; source: urlscan.io; SlowMist TI alert]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-06T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "6144ea21-d025-5f47-856b-5f1baa3c2a33",
+        "type": "url",
+        "category": "Network activity",
+        "value": "www.arche-hypnose.com/mac/",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "macOS ClickFix page (urlscan 2026-11-07, page title '[brand] - Install') [type: url; verdict: malicious; source: urlscan.io; SlowMist TI alert]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-07T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "4d1a21f3-1b2a-5554-8f4b-4c4ce137153f",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "arche-hypnose.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "compromised legitimate site (registered 2003-03-31, registrar OVH) [type: domain; verdict: compromised-or-abused-legit; source: urlscan.io; RDAP]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-06T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "ca24c485-cea9-5c8c-b788-1dc1a74cbd18",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "109.234.161.20",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "arche-hypnose.com host (o2switch, abuse@o2switch.fr) [type: ipv4; verdict: malicious; source: RDAP; DNS resolution]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-06T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "0fc1f727-2324-5ad0-8169-053781101bd9",
+        "type": "url",
+        "category": "Network activity",
+        "value": "joaomps.com/get/",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Windows download gateway (Cloudflare-fronted, registrar PDR) [type: url; verdict: malicious; source: urlscan.io]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-02T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "e3b3d16b-c353-5bc5-bffd-13d5bf6a7dde",
+        "type": "url",
+        "category": "Network activity",
+        "value": "yeelen.cg/new/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Windows download gateway (compromised .cg site, LWS host) [type: url; verdict: compromised-or-abused-legit; source: urlscan.io]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-10-12T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "b9986831-7f21-5b24-8b7e-e391f09b4278",
+        "type": "url",
+        "category": "Network activity",
+        "value": "yeelen.cg/tw",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "gateway path tagged 'tw' (campaign channel marker), redirects to the R2 zip [type: url; verdict: malicious; source: urlscan.io]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-10-12T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "daecbbf4-1b33-5728-9b2a-43cde49ce569",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "91.234.194.231",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "yeelen.cg host (LWS, abuse@lws.fr) [type: ipv4; verdict: malicious; source: RDAP; DNS resolution]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-10-12T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "04a40226-6e41-5385-a977-67d05f1bcfce",
+        "type": "url",
+        "category": "Network activity",
+        "value": "ktmfoundation.org/download/",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Windows download gateway (now clientHold / NXDOMAIN) [type: url; verdict: malicious; source: urlscan.io]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-10-14T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "6761ecdc-a593-5d24-9977-29abcd892821",
+        "type": "url",
+        "category": "Network activity",
+        "value": "ktmfoundation.org/mac",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "macOS ClickFix page (now gone) [type: url; verdict: malicious; source: urlscan.io]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-10-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "3feca202-b7d4-553c-85eb-1ac8d94b432a",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "185.109.170.138",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "soma.or.tz host (UK Dedicated Servers, abuse@ukservers.com) [type: ipv4; verdict: malicious; source: RDAP; DNS resolution]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "19ba08b4-2a54-5263-b0bb-a146a82e5a03",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "c32f4dda3dceee6b85ba1f5f2f3308bf.r2.cloudflarestorage.com",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Cloudflare R2 bucket host: /downloads/[brand]_Premium_Desktop.zip (presigned URLs seen by urlscan as redirect target of every /get/ gateway) [type: domain; verdict: malicious; source: urlscan.io]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-10-12T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "c95cc7f1-ccdd-59f7-91af-f9bef96115c6",
+        "type": "filename",
+        "category": "Artifacts dropped",
+        "value": "TradingView_Premium_Desktop.zip",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "outer zip name (Content-Disposition); inner zip '[brand]_Premium_Desktop_.zip' [type: filename; verdict: malicious; source: urlscan.io; analyst fetch]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-10-12T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "a83e1f3a-8a1b-5ace-92c7-707330720174",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "c218ac238b429b5118dc909378d50f1d96461a6326523d886d3539e8165ddae0",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "outer zip as served 2026-11-11 (byte-identical on two pulls via different exits, 09:06 and 09:37 UTC) [type: sha256; verdict: malicious; source: analyst fetch]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "3aeecbba-7b4b-5342-926e-960f5806c48d",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "ca1ec0889de7ee74ccc512929e1cdc135324364295d68c3bb0e49da59fb8fbda",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "inner AES zip (password-protected) [type: sha256; verdict: malicious; source: analyst fetch]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "ab62d8fd-8988-51f3-9d3c-8350fafeb492",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "5051009b837c24e43b34005a76a6995f0d6d875c5871d86b181bd653be434288",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "[brand] Premium Desktop.exe, 130028984 B, 125.8 MB zero padding (AV size-limit evasion) [type: sha256; verdict: malicious; source: analyst fetch]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "daf27846-e2f9-5caf-a31b-e56d91cf9cde",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "b8c1d2399105a57046b24aeee74d2dea3250c8c8aa5502c448b8d954f1dcb17a",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "the 4191744 B Go PE without padding and signature [type: sha256; verdict: malicious; source: analyst fetch]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "66fd230b-1f4f-5a6c-bef4-7c08c8848034",
+        "type": "text",
+        "category": "Payload delivery",
+        "value": "CN=Nova Metric Industries, O=Nova Metric Industries, C=US (serial 112334143863723688803651078741774901895, sha1 354aae2a78138e64b83241572326f5ab4167f054)",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "self-signed Authenticode certificate on the exe (fake publisher) [type: code-signing-cert; verdict: malicious; source: static analysis]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "b9185285-a9d6-5040-bb7d-a5a1600ec0b1",
+        "type": "text",
+        "category": "Other",
+        "value": "NovaMetricIndustries",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Go module path / build info of the exe (garble-style obfuscated, -trimpath, GOOS=windows amd64) [type: go-module-path; verdict: malicious; source: static analysis]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "57aa0182-8954-546e-a82c-18774ff72dc8",
+        "type": "text",
+        "category": "Other",
+        "value": "kcVv7h3TmMsRCtet-kKS/HxvD1IxnTNVS_vfK1SrK/KhQWEjH2In90xsdINOKf/eBPKrdWJPBJ6OKSDkCez",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Go build ID of the exe [type: go-build-id; verdict: malicious; source: static analysis]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "4051c244-713f-592e-bca4-72c9681d49c3",
+        "type": "url",
+        "category": "Network activity",
+        "value": "https://xn.amanlay.org/rn/gate",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Windows stealer C2 gate (reported by SlowMist 2026-11-09; not extracted from our sample) [type: url; verdict: malicious; source: SlowMist TI alert]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-09T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "8486dbb1-72e3-5284-b9e6-7f4fe0a74d36",
+        "type": "url",
+        "category": "Network activity",
+        "value": "https://xn.amanlay.org/kw/gate",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Windows stealer C2 gate (SlowMist) [type: url; verdict: malicious; source: SlowMist TI alert]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-09T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "ca760873-30fd-5c7a-92cd-3b860d3c588c",
+        "type": "url",
+        "category": "Network activity",
+        "value": "https://z.dak69.org/j/gate",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Windows stealer C2 gate (SlowMist) [type: url; verdict: malicious; source: SlowMist TI alert]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-09T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "ab90d69e-44e3-5051-9f32-f9cab8264c14",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "amanlay.org",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C2 apex: NameCheap, created 2026-04-29, CF NS brady/princess, changed 2026-08-12T02:29Z; urlscan subdomains f., l5. with /<1-2 chars>/gate [type: domain; verdict: malicious; source: urlscan.io; RDAP]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-08T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "935927df-48df-5631-b24a-6351f6a51fa1",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "dak69.org",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C2 apex: NameCheap, created 2025-03-07, CF NS brady/princess, changed 2026-08-12T02:58Z; urlscan subdomains f., g., k., q. [type: domain; verdict: malicious; source: urlscan.io; RDAP]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-07T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "916d704c-b5f2-5242-bc00-25e13ea8a03e",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "seohumanoid.com",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "macOS stage-2 + stealer C2: /curl/<token>, /dynamic?txd=, /gate, /pipeline/event (Cloudflare, Unstoppable Domains, created 2026-02-21) [type: domain; verdict: malicious; source: urlscan.io; analyst fetch]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-06T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "68cc8634-739c-552a-9f56-7d6b16917f50",
+        "type": "url",
+        "category": "Network activity",
+        "value": "http://seohumanoid.com/curl/42403afd2906a8f3062e3ddb19b28572d88db9ae74b147319383bd280c6bec0a",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "macOS loader URL base64-embedded in the ClickFix command [type: url; verdict: malicious; source: analyst fetch]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-06T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "f12e0e6a-7993-5980-88f3-b48a43fc5934",
+        "type": "url",
+        "category": "Network activity",
+        "value": "http://seohumanoid.com/dynamic?txd=42403afd2906a8f3062e3ddb19b28572d88db9ae74b147319383bd280c6bec0a",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "AppleScript stealer served to the loader (needs api-key header) [type: url; verdict: malicious; source: analyst fetch]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "aac0dae3-e37a-5faf-b304-d90a0924905d",
+        "type": "url",
+        "category": "Network activity",
+        "value": "http://seohumanoid.com/gate?buildtxd=42403afd2906a8f3062e3ddb19b28572d88db9ae74b147319383bd280c6bec0a",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "exfil upload endpoint, 10 MiB chunked PUT [type: url; verdict: malicious; source: script analysis]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "91e01b61-d2c7-5bf6-a6af-317eea2c4c76",
+        "type": "url",
+        "category": "Network activity",
+        "value": "http://seohumanoid.com/pipeline/event",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "stage telemetry POST (multipart: buildtxd, session_id, stage, status ...) [type: url; verdict: malicious; source: script analysis]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "f1d37a81-06bb-58cd-8d94-7944e610cc8a",
+        "type": "text",
+        "category": "Other",
+        "value": "42403afd2906a8f3062e3ddb19b28572d88db9ae74b147319383bd280c6bec0a",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "macOS build/campaign token, identical on seohumanoid.com, internetmissouri.com, bismarckchiropractor.com since 2026-10-15 [type: build-token; verdict: malicious; source: urlscan.io; script analysis]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-10-15T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "76a4040c-cb58-596f-968b-f60b95e70716",
+        "type": "filename",
+        "category": "Artifacts dropped",
+        "value": "/tmp/osalogging.zip",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "macOS staging archive for exfil [type: file-path; verdict: malicious; source: script analysis]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "df047b6f-7772-5aff-8a6b-e5c19142068a",
+        "type": "filename",
+        "category": "Artifacts dropped",
+        "value": "/tmp/.pregrab_<token>",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "macOS pre-grab dir [type: file-path; verdict: malicious; source: script analysis]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "9235e11d-08c1-58fd-aca6-154f0d522f45",
+        "type": "filename",
+        "category": "Artifacts dropped",
+        "value": "/tmp/dyntrace.txt",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "macOS trace log [type: file-path; verdict: malicious; source: script analysis]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "ac9ecf38-fd92-5988-a933-425bfa2d4885",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "internetmissouri.com",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "earlier macOS stage-2 host (same token), clientHold, Unstoppable Domains [type: domain; verdict: malicious; source: urlscan.io; RDAP]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-10-15T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "777727a7-5a1a-5e4d-b7e4-84d8329faf74",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "bismarckchiropractor.com",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "earlier macOS stage-2 host (same token), clientHold, Unstoppable Domains [type: domain; verdict: malicious; source: urlscan.io; RDAP]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-10-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "d8908ec8-d776-5fc0-a222-e517d0d617f8",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "teapawt.org",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "NOT malicious: Nitter-style X mirror used by SlowMist and by us to read the article links [type: domain; verdict: shared-or-legit-infrastructure; source: analyst fetch]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-10-21T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "73352e96-d514-518a-8b62-235a16519b64",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "062f3d64fbf943a3e804354fb19098eac681b7f9ec48fc252e485270d195ced8",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "libx264-142.dll genuine decoy padding (do not block) [type: sha256; verdict: shared-or-legit-infrastructure; source: analyst fetch]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "c723164c-ea3a-5243-86b6-353fdde317c2",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "d958b1c862a9579bc46840f8aa32eee1b6fb3daf2dea2f46e800c2d5c0d8ae4b",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "openvr_api.dll genuine decoy padding (do not block) [type: sha256; verdict: shared-or-legit-infrastructure; source: analyst fetch]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "c596fdfc-da47-5c58-a171-a67527390413",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "b80dd69f7c0879a950928a7e1a43aa08349ddb8d804332b7cc633d8a40166136",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "libswscale-8.dll genuine decoy padding (do not block) [type: sha256; verdict: shared-or-legit-infrastructure; source: analyst fetch]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "5147026f-a31d-55df-8d51-939201cab3f2",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "3d3f24b94282c0f2311cc7cb9b87e4e84a93a51edebc581b8f31fa711d3c6eaa",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "AppleScript stealer as served (87483 B) [type: sha256; verdict: malicious; source: analyst fetch]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "eb9b5c54-8856-5169-b7c8-01a2eb18de74",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "4e2698b61750624535ba607d27d1ef1f177057bc13f8901dac4855a84254dd2a",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "zsh loader (gzip+base64 'PAYLOAD' heredoc, eval) [type: sha256; verdict: malicious; source: analyst fetch]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "d68923e1-2020-55fd-8319-b960c243a57a",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "andora188.org",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "CANDIDATE gate-pattern domain (<sub>.andora188.org/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed [type: domain; verdict: candidate; source: urlscan.io]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-10T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "5c9d5a4f-d0b1-54a0-b121-53f1365b6307",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "andaltoto.org",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "CANDIDATE gate-pattern domain (<sub>.andaltoto.org/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed [type: domain; verdict: candidate; source: urlscan.io]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-10T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "6f90afdb-f832-5ec4-a195-568178154e9d",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "amper888.net",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "CANDIDATE gate-pattern domain (<sub>.amper888.net/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed [type: domain; verdict: candidate; source: urlscan.io]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-09T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "16020bc9-a6dd-5c10-89fa-e5a62ba93087",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "amin90.org",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "CANDIDATE gate-pattern domain (<sub>.amin90.org/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed [type: domain; verdict: candidate; source: urlscan.io]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-08T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "aad22244-036f-5d36-bf43-958e1f23a016",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "dav88.org",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "CANDIDATE gate-pattern domain (<sub>.dav88.org/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed [type: domain; verdict: candidate; source: urlscan.io]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-08T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "5e352dac-72d7-56b2-86e0-17d48537980b",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "dps69.org",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "CANDIDATE gate-pattern domain (<sub>.dps69.org/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed [type: domain; verdict: candidate; source: urlscan.io]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-10T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "50cd8618-4d2a-58a1-b72d-5bf604205016",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "dax96.org",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "CANDIDATE gate-pattern domain (<sub>.dax96.org/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed [type: domain; verdict: candidate; source: urlscan.io]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-09T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "5bc8294b-aeae-5dfb-ae28-2e7b8de81f8c",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "amoy323.org",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "CANDIDATE gate-pattern domain (<sub>.amoy323.org/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed [type: domain; verdict: candidate; source: urlscan.io]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-09T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "fde7362f-d447-58d2-9786-d88cae9e4b88",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "andraslotlink.org",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "CANDIDATE gate-pattern domain (<sub>.andraslotlink.org/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed [type: domain; verdict: candidate; source: urlscan.io]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "26d00c26-b3b3-5308-9a22-c31c7aa8faea",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "dewa2.org",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "CANDIDATE gate-pattern domain (<sub>.dewa2.org/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed [type: domain; verdict: candidate; source: urlscan.io]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-10T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "53898afc-0568-533a-bf8d-337c924fcd9b",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "ampluna.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "CANDIDATE gate-pattern domain (<sub>.ampluna.com/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed [type: domain; verdict: candidate; source: urlscan.io]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-10T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "489bb3cf-eb6b-52e3-abd1-e6396ae7fdfc",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "amor76.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "CANDIDATE gate-pattern domain (<sub>.amor76.com/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed [type: domain; verdict: candidate; source: urlscan.io]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-09T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "392b8f95-c65d-5096-86f7-3bd357920fbe",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "ampelbet.org",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "CANDIDATE gate-pattern domain (<sub>.ampelbet.org/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed [type: domain; verdict: candidate; source: urlscan.io]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-09T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "b65a12d2-694e-52ee-91dd-094ef5e3ea3a",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "akuntoti.net",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "CANDIDATE gate-pattern domain (<sub>.akuntoti.net/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed [type: domain; verdict: candidate; source: urlscan.io]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-09T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "8f911317-7b67-5635-8c5a-ea4e57b60f6e",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "ameriktoto.org",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "CANDIDATE gate-pattern domain (<sub>.ameriktoto.org/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed [type: domain; verdict: candidate; source: urlscan.io]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-08T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "111240ca-6929-5a1e-89e9-615dd865cea9",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "dog69.net",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "CANDIDATE gate-pattern domain (<sub>.dog69.net/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed [type: domain; verdict: candidate; source: urlscan.io]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-10T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "daca727d-b10f-513d-be99-3476d48c546e",
+        "type": "url",
+        "category": "Network activity",
+        "value": "https://pr.anek4d.org/qx/gate",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Windows stealer C2 gate of this build (decrypted from the Telegram dead drop with the payload routine); multipart POST token/build_id/hwid [type: url; verdict: malicious; source: sandbox / dead-drop monitoring]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "d3b37e2c-f761-507b-b86f-f86c94975ce5",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "pr.anek4d.org",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Windows stealer C2 host (Cloudflare 172.67.151.6/104.21.90.19); urlscan hybridanalysis also saw /jx/gate and /pe/gate 2026-11-11 [type: domain; verdict: malicious; source: urlscan.io; DNS resolution; sandbox / dead-drop monitoring]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "dd21eede-beee-53b0-94ca-b3584d532057",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "anek4d.org",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C2 apex: NameCheap, created 2026-05-12, CF NS brady/princess, last changed 2026-08-12T09:34Z (same NS pair and change day as amanlay.org/dak69.org) [type: domain; verdict: malicious; source: RDAP; sandbox / dead-drop monitoring]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "c7a2880d-c6ed-501b-a86e-eb82fa1eb818",
+        "type": "url",
+        "category": "Network activity",
+        "value": "https://telegram.me/d33ttt",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Telegram dead-drop resolver (channel d33ttt, created 2026-11-05; description \"k1se <hex>\" = XOR-encrypted C2) [type: url; verdict: malicious; source: sandbox / dead-drop monitoring; analyst fetch]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-05T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "b61c2b87-be92-5c3c-9219-24a0ebee99c5",
+        "type": "text",
+        "category": "Network activity",
+        "value": "k1se 5d91aea4f40a239cb476f4b298f93b24",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "channel description at 2026-11-11 12:26Z; decrypts to pr.anek4d.org/qx) [type: dead-drop-value; verdict: malicious; source: sandbox / dead-drop monitoring]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "107584ab-8f2a-5692-91e8-4966b2319040",
+        "type": "text",
+        "category": "Other",
+        "value": "14157ded6221bedf1de632abf1bbaa44",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Windows build token sent as token/build_id to /gate (config version 4.2) [type: build-token; verdict: malicious; source: sandbox / dead-drop monitoring]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "78a8cece-104b-5a63-af0c-5882ef3e75d0",
+        "type": "user-agent",
+        "category": "Network activity",
+        "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:161.0) Gecko/20100101 Firefox/161.0",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "hardcoded UA of the Windows stealer (WinHTTP) [type: user-agent; verdict: malicious; source: sandbox / dead-drop monitoring]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "adaff8a2-8e59-563f-a7dd-b8fe61cd8d50",
+        "type": "text",
+        "category": "Other",
+        "value": "9ufk1cpokc3",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "hardcoded id in the inner payload (likely mutex/instance name, unverified) [type: string; verdict: malicious; source: sandbox / dead-drop monitoring]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "7d666ebe-2434-558d-8c63-84e92b5f321c",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "e7da373121aed34c79efb4ba8e589bb6b142c43a62f9f83c34a068451b056991",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "inner stealer PE as mapped in memory by the Go loader (image base 0x144e10000, relocated; not an on-disk hash) [type: sha256; verdict: malicious; source: sandbox / dead-drop monitoring]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "412ed739-6175-510d-95da-0e11c77736b9",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "qm.anek4d.org",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Windows stealer C2 host seen live in HA sandbox (dead drop value at 14:15Z; resolved via Cloudflare 172.67.151.6) [type: domain; verdict: malicious; source: Hybrid Analysis; sandbox]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "f5e64a95-9af3-5fed-aad4-da1168dc8aa3",
+        "type": "url",
+        "category": "Network activity",
+        "value": "https://qm.anek4d.org/wc/gate",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Windows stealer C2 gate: HA sandbox saw POST multipart hwid/build_id/format=json (401 B) after GET telegram.me/d33ttt [type: url; verdict: malicious; source: Hybrid Analysis; sandbox]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "4b2fb71c-17e2-52fe-9ed3-d317210fef73",
+        "type": "text",
+        "category": "Network activity",
+        "value": "k1se 5c8eaea4f40a239cb476f4b298f92338",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "channel description at 2026-11-11 14:19Z; decrypts to qm.anek4d.org/id (rotated from pr.anek4d.org/qx at 12:26Z) [type: dead-drop-value; verdict: malicious; source: sandbox / dead-drop monitoring; sandbox; analyst fetch]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "4cb1b712-c077-5f87-80cf-12bf2961f2a1",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "149.154.167.99",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "telegram.me address contacted by sample in HA sandbox (Telegram infra, not C2) [type: ipv4; verdict: shared-or-legit-infrastructure; source: Hybrid Analysis; sandbox]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "9db028dd-641a-52c7-83c8-45eb8c5b9924",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "ik.angkajitu.org",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Windows stealer C2 host from Telegram dead drop t.me/d33ttt at 2026-11-11 18:30Z (k1se 4488aea4f40823c9ba31efb5d1b9383be78d -> ik.angkajitu.org/w) [type: domain; verdict: malicious; source: DNS resolution; dead-drop monitoring]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "8f272386-4433-5f9e-a6a5-2309712e582c",
+        "type": "url",
+        "category": "Network activity",
+        "value": "https://ik.angkajitu.org/w/gate",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Windows stealer C2 gate (current dead-drop value 18:30Z) [type: url; verdict: malicious; source: dead-drop monitoring]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "91069a80-2331-5f6a-a743-b50f1659c632",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "angkajitu.org",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C2 apex: NameCheap, registered 2026-03-13, CF NS brady/princess, last changed 2026-08-11 (same cluster as anek4d/amanlay/dak69); urlscan hybridanalysis gates on ik., d0., o54., zs. subdomains 2026-11-11 [type: domain; verdict: malicious; source: urlscan.io; RDAP]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "f472433d-6dde-53a3-9bea-8891ab9e59f6",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "c.dr108.org",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Windows stealer C2 host from the Steam dead drop (profile 76561198610252751) at 2026-11-11 18:30Z -> c.dr108.org/x/gate [type: domain; verdict: malicious; source: urlscan.io; dead-drop monitoring]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "47398dce-9974-5032-b07b-d07bd8746af2",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "dr108.org",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C2 apex: registered 2025-11-29, CF NS brady/princess, last changed 2026-11-09; urlscan gates c./l. subdomains 2026-11-11 [type: domain; verdict: malicious; source: urlscan.io; RDAP]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "22a5b491-77b2-5760-9416-654562ba5b80",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "ap1.anek4d.org",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "further C2 subdomain (urlscan hybridanalysis /g/gate, /w/gate 2026-11-11 13:26-13:32Z) [type: domain; verdict: malicious; source: urlscan.io]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "1379588f-4563-51dc-af83-5dc793593ef6",
+        "type": "url",
+        "category": "Network activity",
+        "value": "https://steamcommunity.com/profiles/76561198610252751",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Steam dead-drop resolver (contains k1se <hex> value; decrypts to c.dr108.org/x) [type: url; verdict: malicious; source: dead-drop monitoring; analyst fetch; static analysis]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "78698a56-c0a3-5846-8396-ed12bc8b9ddd",
+        "type": "text",
+        "category": "Social network",
+        "value": "The Reversed Community (Discord)",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "new lure 2026-11-11 16:11Z post 2120549992935080315: Discord invite card with [brand] logo, claims 87,654 members; invite link not yet posted [type: discord-server; verdict: malicious; source: analyst triage]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "446635f2-37fa-5073-a4f8-961785078f12",
+        "type": "url",
+        "category": "Network activity",
+        "value": "cdn.discordapp.com/attachments/1088291502435864678",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Discord CDN attachment hosting [brand]_Premium_Desktop.zip (urlscan 2026-11-02T01:32Z, scan 01a199e2-b5b5-70bc-940a-f75eaa13e17d); earlier distribution via Discord CDN, not in the article links [type: url; verdict: malicious; source: urlscan.io; dead-drop monitoring]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-02T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "e1edc155-9fef-597a-98e4-a85c6d7e2115",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://youtu.be/fuJMKVu-CFk",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "YouTube",
+        "timestamp": "1794355200"
+      },
+      {
+        "uuid": "9fab06d8-6708-532b-bdd5-32fa958877c7",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://gist.github.com/harperjohnsai/a4cce902c90b37ae74992226cc9ec0f2",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "GitHub Gist",
+        "timestamp": "1794355200"
+      },
+      {
+        "uuid": "0683f03e-e91d-51df-885a-b5d0de497f6a",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://bazaar.abuse.ch/sample/b8c1d2399105a57046b24aeee74d2dea3250c8c8aa5502c448b8d954f1dcb17a/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "MalwareBazaar",
+        "timestamp": "1794355200"
+      },
+      {
+        "uuid": "16f602bf-db06-5040-81f5-3821d1136a56",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://bazaar.abuse.ch/sample/4e2698b61750624535ba607d27d1ef1f177057bc13f8901dac4855a84254dd2a/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "MalwareBazaar",
+        "timestamp": "1794355200"
+      }
+    ]
+  }
+}

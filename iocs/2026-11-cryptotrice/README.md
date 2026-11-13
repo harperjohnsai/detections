@@ -1,5 +1,7 @@
 # 2026-11 "cryptotrice": a fake cracked trading app that hides its C2 in Telegram and Steam
 
+Formats: CSV, JSON, STIX 2.1, MISP
+
 October to November 2026. An aged X account (created 2009, re-skinned 1 Oct 2026, 41 near-identical promotions from 9 Oct, about 2.1 million views) promotes a fake "reverse-engineered, cracked premium" desktop app imitating a popular trading platform; the platform is not named and is not involved. Whether the account was hijacked or sold is unknown.
 
 - **Windows:** download gateways on compromised websites (hidden paths such as `/get/`, `/dl/`, `/mac/`) redirect to a password-protected zip in a Cloudflare R2 bucket. It holds a roughly 130 MB executable (about 4 MB of Go code plus about 126 MB of zeros, self-signed by an invented company). The Go loader maps an encrypted blob in memory: a C/C++ stealer for browser data, wallets and sessions. The server address is read from dead drops (a Telegram channel description and a Steam profile) and was rotated across three NameCheap zones and ten hostnames in about seven hours on 2026-11-11.

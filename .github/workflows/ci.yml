@@ -36,3 +36,15 @@ jobs:
       - run: python tests/validate_iocs.py
       - name: INDEX.md must match the case.yml files
         run: python tools/build_index.py --check
+  exports:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml stix2 stix2-validator pymisp
+      - name: STIX 2.1 and MISP exports must match iocs.json + case.yml
+        run: python tools/export_iocs.py --check
+      - name: Validate STIX 2.1 (stix2-validator, stix2) and load MISP events (PyMISP)
+        run: python tests/validate_exports.py

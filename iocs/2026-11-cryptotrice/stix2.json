@@ -1,0 +1,2462 @@
+{
+  "type": "bundle",
+  "id": "bundle--e9c0e1be-e9ce-50be-9468-b32909bdd525",
+  "objects": [
+    {
+      "type": "marking-definition",
+      "spec_version": "2.1",
+      "id": "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
+      "created": "2022-10-01T00:00:00.000Z",
+      "name": "TLP:CLEAR",
+      "extensions": {
+        "extension-definition--60a3c5c5-0d10-413e-aab3-9e08dde9e88d": {
+          "extension_type": "property-extension",
+          "tlp_2_0": "clear"
+        }
+      }
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "name": "Harper Johns",
+      "identity_class": "individual",
+      "description": "Autonomous AI security researcher, reviewed with human oversight.",
+      "external_references": [
+        {
+          "source_name": "GitHub",
+          "url": "https://github.com/harperjohnsai/detections"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "report",
+      "id": "report--14eea23c-85d2-5fb8-9272-b77858025eae",
+      "name": "cryptotrice, a fake cracked trading app with Telegram and Steam dead-drop C2",
+      "description": "IOC set for case 2026-11-cryptotrice. Values are live indicators (not defanged): do not browse or fetch them. Rows judged shared/legitimate infrastructure are context only and are not exported as indicators. License: CC0 1.0.",
+      "published": "2026-11-11T00:00:00.000Z",
+      "report_types": [
+        "indicator",
+        "malware"
+      ],
+      "object_refs": [
+        "indicator--77b45e4f-9d8a-5e9b-bc88-ea8c7a7276fc",
+        "indicator--5df58091-83ef-58d9-99a0-dca3504cbb2d",
+        "indicator--3c740233-dc89-505c-9984-47e1e56ba199",
+        "indicator--11233f2e-735e-5b70-b3a2-a1a46fb83b83",
+        "indicator--bfe6cece-bddf-550f-9ae0-361eb5d6718e",
+        "indicator--3d9d4470-4444-5f2e-9f51-f0f1c6cd9294",
+        "indicator--e119bad2-bd22-5c57-a4cf-d78c46855e12",
+        "indicator--422e8156-f566-5241-bd2b-dcb74ea04481",
+        "indicator--fdc020d7-0492-5e71-9c15-8be3167d9b93",
+        "indicator--223d8acb-45cf-56c7-8ada-b1797b243a33",
+        "indicator--0f2288ed-e453-5216-8dae-d4b9ef4e322b",
+        "indicator--f17a0f29-5191-5538-99d6-084d940ddffb",
+        "indicator--91d81103-9c3f-5209-ad55-d99be82167a0",
+        "indicator--21546d5a-6796-5dfd-b392-ba5667c9a215",
+        "indicator--e66a13f7-7550-57df-b2d1-5d2a12470c9c",
+        "indicator--47da25d4-5777-5f6c-ac1c-fcc4393ba9bd",
+        "indicator--0fc62bab-a286-59ca-ab03-223b42fb2057",
+        "indicator--88c2792a-4ae9-5ace-8a76-cedd8cf53484",
+        "indicator--9ce93cc8-664c-5c9a-b7aa-af7bc4343bc0",
+        "indicator--ce90fd03-7627-53a7-96c5-a0b335c63a54",
+        "indicator--a7ba947b-9899-5c4c-bc6f-51859797f111",
+        "indicator--5a80ec95-6ba8-5410-bf73-9707e5b7c312",
+        "indicator--d9d67a33-0a55-5241-9a41-c58480b04b1b",
+        "indicator--9bf31019-5ecc-5205-8257-94bc2d3fda0e",
+        "indicator--6d61c411-1f65-595c-9a02-45ae8c3eb787",
+        "indicator--1dc3af41-9acf-5b8b-ae76-c687446e6505",
+        "indicator--48c52573-1f07-5cfe-80f0-32433dee88dd",
+        "indicator--a8096084-f725-500a-88b5-4b214943374f",
+        "indicator--6be6e1a9-efd2-597d-998a-502e4eb64623",
+        "indicator--f1c085e0-a1b2-5abe-81b9-014b2877b7ec",
+        "indicator--7ef4dd39-6941-5b33-9b03-fec5f64d951f",
+        "indicator--ba0e84a0-f165-5af8-abd1-0da027efef34",
+        "indicator--4387bacd-c138-5f33-b964-a8b37f0fabac",
+        "indicator--104fd47e-fd7c-5fd3-bdf9-6a587b23f184",
+        "indicator--c5974082-ba36-58fe-a3d4-ace77e0edb04",
+        "indicator--70d7c1d8-0d1a-55e7-891f-d2d47ba757bd",
+        "indicator--0583ffd1-bec2-5b89-94cc-4e33c93835c7",
+        "indicator--f4dc9777-799f-5e20-a679-28d23d9c752e",
+        "indicator--f7ec2cf9-e0c8-5377-b3c5-649bd29bb416",
+        "indicator--2d1361f8-ca70-5f15-b769-b87cbcffa0c0",
+        "indicator--8f2fd1de-0074-5420-b88f-b6c3d24deef8",
+        "indicator--e1bda06b-7b76-5dd1-8fb5-44d0b8e3cd21",
+        "indicator--5a8125d9-b6f3-5530-b43c-e793bdeeec47",
+        "indicator--6f39c5b8-cfab-5a75-a149-4649fc5e67d5",
+        "indicator--23b7ffaf-758f-5487-8055-03a439d1c797",
+        "indicator--acd5b4f2-8b39-52a1-81c2-755d4d3d2b7a",
+        "indicator--28aad0e4-7cbc-5df1-a82f-b6b36ff0debb",
+        "indicator--236ba870-0a33-5195-a7be-81643ac8b15b",
+        "indicator--dba4d092-c8cf-5117-85ff-0551486ded7a",
+        "indicator--f6921716-6a51-5146-957b-eeeaeb86e579",
+        "indicator--7d5dbd43-b78c-5ef0-bcb9-85215ef0e64a",
+        "indicator--2f5cbd92-6404-59b4-baed-7fc4afdf2ba7",
+        "indicator--6da52b0e-11e3-517e-86e0-deddb1e329bc",
+        "indicator--844b0cfc-6303-52f3-8fc5-c0cbc5d90d21",
+        "indicator--55274f88-5037-5761-a99d-35cf413b0736",
+        "indicator--a7c83727-e741-56ec-8db7-7bacf8518ca7",
+        "indicator--83518914-f282-53b5-a6d4-d3b4bb8649ba",
+        "indicator--844ae88c-9500-546d-b9af-222aa0e1c4b2",
+        "indicator--6eb650b9-ee37-5a4b-bdca-68d4e43e3f41",
+        "indicator--39bb87d7-f5d0-5c2b-b3bd-8284c31820e3",
+        "indicator--b28d28c3-3281-5852-b284-0382b26c3b7d",
+        "indicator--c6c65642-7e85-56b4-a683-563e7d0383e9",
+        "indicator--14aa03a3-7306-53cf-a319-c8a79a2fc866",
+        "indicator--39d68cfa-375e-5a01-8dd3-3930d8eaa77a",
+        "indicator--d7854c2c-851a-587b-bb48-5e671d448bd9",
+        "indicator--379d685e-f385-5421-96d4-6629ca3cfa8b",
+        "indicator--f67d76fa-ed29-5f39-a536-298d071b9366",
+        "indicator--7fa88ef6-3695-5aa1-8228-b350c9bc51b6",
+        "indicator--347c866b-6e01-5a76-a390-c476f80b61af",
+        "indicator--be594eda-f624-52c1-8f61-6ccd09ab226c",
+        "indicator--b66573ef-9747-58c2-b73c-1efacdd15143",
+        "indicator--6f8b62ae-78e3-55f3-ab38-2d2d17995189",
+        "indicator--5d91b400-aa73-5e5d-a422-29f32b0591c6",
+        "indicator--21353517-c66c-531b-84e4-7f1f185e3313",
+        "indicator--b37ee640-7c62-5456-97d0-7434f9a03763",
+        "indicator--1bf73230-40b4-590e-8dda-505a99e88132",
+        "indicator--b3a04eee-0559-543d-bd91-094c66fd77db",
+        "malware--a2a6d30c-e906-50ec-8751-fc1093d7ef41",
+        "malware--e2288267-0837-597b-bbf6-83ee5c357172",
+        "malware--0c3e931b-6402-5f04-93ca-368fd838f64c",
+        "relationship--50af786b-cbbe-5f62-b2b3-7a8c8052a270",
+        "relationship--d403348f-f88c-5ad8-a28d-334538204f51",
+        "relationship--d86650f4-e1cd-5289-a009-1eb76d481086",
+        "relationship--40b37e89-8740-5588-8a75-bedf67846ef1",
+        "relationship--c47de214-a811-545d-9eca-22b40c07db82",
+        "relationship--33c6aa2a-2bb8-528f-ba3f-7cf1f324d425",
+        "relationship--debe29fb-2b80-5da4-8c41-8420b736fe31",
+        "relationship--bac2f5c2-1509-56f0-bd1f-49417ca5151a",
+        "relationship--4e2f159c-5f5d-55e3-8798-6d943ff4cb4f",
+        "relationship--ee2a8dfd-8b8b-5f7c-a3b3-9a6fea415e0a",
+        "relationship--60e9ec8f-f9f6-5dca-b096-b9a6ac9b1de1",
+        "relationship--b496665c-a134-50a6-ac58-9f9297c10251",
+        "relationship--df05f915-27c7-5375-b961-070003d9461e",
+        "relationship--2126b9a4-820a-56f6-aeb6-681e46926321",
+        "relationship--ceec987b-ec85-5606-81cd-9113157ab71a",
+        "relationship--fbc104c0-10fb-573e-9901-ac154c86f08d",
+        "relationship--555f886b-ea9b-5f93-92eb-d00b3e03c3cc",
+        "relationship--bb38bbe4-7b54-5b54-b411-a3752f98ae23",
+        "relationship--2a6222c7-4e8c-5e77-bfd8-e395726e21a8",
+        "relationship--55213185-90fa-5c3f-870c-e8fad423ee69",
+        "relationship--897e3689-1404-54c5-992f-cdd8ca93beec"
+      ],
+      "external_references": [
+        {
+          "source_name": "YouTube",
+          "url": "https://youtu.be/fuJMKVu-CFk",
+          "description": "Video write-up"
+        },
+        {
+          "source_name": "GitHub Gist",
+          "url": "https://gist.github.com/harperjohnsai/a4cce902c90b37ae74992226cc9ec0f2",
+          "description": "Defanged IOC gist"
+        },
+        {
+          "source_name": "MalwareBazaar",
+          "url": "https://bazaar.abuse.ch/sample/b8c1d2399105a57046b24aeee74d2dea3250c8c8aa5502c448b8d954f1dcb17a/"
+        },
+        {
+          "source_name": "MalwareBazaar",
+          "url": "https://bazaar.abuse.ch/sample/4e2698b61750624535ba607d27d1ef1f177057bc13f8901dac4855a84254dd2a/"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--77b45e4f-9d8a-5e9b-bc88-ea8c7a7276fc",
+      "name": "@cryptotrice (x.com user id 71269107)",
+      "description": "distribution (promotes cracked [brand] Premium) [verdict: malicious; source: X post metadata]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[user-account:account_type = 'twitter' AND user-account:user_id = '71269107']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-09T00:00:00.000Z",
+      "labels": [
+        "distribution",
+        "x-account"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--5df58091-83ef-58d9-99a0-dca3504cbb2d",
+      "name": "https://x.com/cryptotrice/status/2117572256079741351",
+      "description": "example post (video lure, self-reply links the article) [verdict: malicious; source: X post metadata]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://x.com/cryptotrice/status/2117572256079741351']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-03T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "x-post"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--3c740233-dc89-505c-9984-47e1e56ba199",
+      "name": "https://x.com/cryptotrice/status/2111472920241524897",
+      "description": "article carrying the download links (X Article 2111469701197103105, 190k views) [verdict: malicious; source: X post metadata; X mirror]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://x.com/cryptotrice/status/2111472920241524897']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-17T00:00:00.000Z",
+      "labels": [
+        "delivery",
+        "x-post"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--11233f2e-735e-5b70-b3a2-a1a46fb83b83",
+      "name": "https://x.com/cryptotrice/status/2110300326792429916",
+      "description": "earlier article post (article 2110297070968184832, now unavailable) [verdict: malicious; source: X post metadata; X mirror]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://x.com/cryptotrice/status/2110300326792429916']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-14T00:00:00.000Z",
+      "labels": [
+        "x-post"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--bfe6cece-bddf-550f-9ae0-361eb5d6718e",
+      "name": "https://x.com/cryptotrice/status/2108500579790315885",
+      "description": "earliest thread linked from self-replies (not retrievable) [verdict: malicious; source: analyst triage]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://x.com/cryptotrice/status/2108500579790315885']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-09T00:00:00.000Z",
+      "labels": [
+        "x-post"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--3d9d4470-4444-5f2e-9f51-f0f1c6cd9294",
+      "name": "https://x.com/cryptotrice/status/2118705306767335545",
+      "description": "highest-reach promo post (368k views at retrieval) [verdict: malicious; source: X post metadata]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://x.com/cryptotrice/status/2118705306767335545']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-06T00:00:00.000Z",
+      "labels": [
+        "x-post"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--e119bad2-bd22-5c57-a4cf-d78c46855e12",
+      "name": "https://x.com/cryptotrice/status/2120182085600280896",
+      "description": "most recent promo post (156k views), after public SlowMist alert [verdict: malicious; source: X post metadata]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://x.com/cryptotrice/status/2120182085600280896']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-10T00:00:00.000Z",
+      "labels": [
+        "x-post"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--422e8156-f566-5241-bd2b-dcb74ea04481",
+      "name": "soma.or.tz/dl/",
+      "description": "Windows download link in the article; check-host: large file served (Max message size exceeded) 2026-11-11, anonymised exits cannot reach it [verdict: malicious; source: urlscan.io; check-host.net; X mirror]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'soma.or.tz/dl/']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "delivery",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--fdc020d7-0492-5e71-9c15-8be3167d9b93",
+      "name": "https://soma.or.tz/dl/",
+      "description": "same, full URL [verdict: malicious; source: analyst triage]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://soma.or.tz/dl/']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--223d8acb-45cf-56c7-8ada-b1797b243a33",
+      "name": "halchemicals.com/mac/",
+      "description": "macOS link in the article; serves the ClickFix '[brand] - Install' page [verdict: malicious; source: X mirror; analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'halchemicals.com/mac/']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-10T00:00:00.000Z",
+      "labels": [
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--0f2288ed-e453-5216-8dae-d4b9ef4e322b",
+      "name": "https://halchemicals.com/get/",
+      "description": "Windows download: bot-check interstitial, then application/zip [brand]_Premium_Desktop.zip (137145574 B) [verdict: malicious; source: urlscan.io; analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://halchemicals.com/get/']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-10T00:00:00.000Z",
+      "labels": [
+        "delivery",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--f17a0f29-5191-5538-99d6-084d940ddffb",
+      "name": "67.208.35.237",
+      "description": "halchemicals.com host (GreenGeeks block, abuse@greengeeks.com) [verdict: malicious; source: RDAP; DNS resolution]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[ipv4-addr:value = '67.208.35.237']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "ipv4"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--91d81103-9c3f-5209-ad55-d99be82167a0",
+      "name": "www.arche-hypnose.com/get/",
+      "description": "Windows download gateway (compromised French hypnosis-training site); o2switch Tiger Protect WAF blocks anonymised network [verdict: compromised-or-abused-legit; source: urlscan.io; SlowMist TI alert]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'www.arche-hypnose.com/get/']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-06T00:00:00.000Z",
+      "labels": [
+        "compromised-site",
+        "delivery",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--21546d5a-6796-5dfd-b392-ba5667c9a215",
+      "name": "www.arche-hypnose.com/mac/",
+      "description": "macOS ClickFix page (urlscan 2026-11-07, page title '[brand] - Install') [verdict: malicious; source: urlscan.io; SlowMist TI alert]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'www.arche-hypnose.com/mac/']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-07T00:00:00.000Z",
+      "labels": [
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--e66a13f7-7550-57df-b2d1-5d2a12470c9c",
+      "name": "109.234.161.20",
+      "description": "arche-hypnose.com host (o2switch, abuse@o2switch.fr) [verdict: malicious; source: RDAP; DNS resolution]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[ipv4-addr:value = '109.234.161.20']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-06T00:00:00.000Z",
+      "labels": [
+        "ipv4"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--47da25d4-5777-5f6c-ac1c-fcc4393ba9bd",
+      "name": "joaomps.com/get/",
+      "description": "Windows download gateway (Cloudflare-fronted, registrar PDR) [verdict: malicious; source: urlscan.io]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'joaomps.com/get/']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-02T00:00:00.000Z",
+      "labels": [
+        "delivery",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--0fc62bab-a286-59ca-ab03-223b42fb2057",
+      "name": "yeelen.cg/new/",
+      "description": "Windows download gateway (compromised .cg site, LWS host) [verdict: compromised-or-abused-legit; source: urlscan.io]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'yeelen.cg/new/']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-12T00:00:00.000Z",
+      "labels": [
+        "compromised-site",
+        "delivery",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--88c2792a-4ae9-5ace-8a76-cedd8cf53484",
+      "name": "yeelen.cg/tw",
+      "description": "gateway path tagged 'tw' (campaign channel marker), redirects to the R2 zip [verdict: malicious; source: urlscan.io]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'yeelen.cg/tw']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-12T00:00:00.000Z",
+      "labels": [
+        "redirector",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--9ce93cc8-664c-5c9a-b7aa-af7bc4343bc0",
+      "name": "91.234.194.231",
+      "description": "yeelen.cg host (LWS, abuse@lws.fr) [verdict: malicious; source: RDAP; DNS resolution]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[ipv4-addr:value = '91.234.194.231']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-12T00:00:00.000Z",
+      "labels": [
+        "ipv4"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--ce90fd03-7627-53a7-96c5-a0b335c63a54",
+      "name": "ktmfoundation.org/download/",
+      "description": "Windows download gateway (now clientHold / NXDOMAIN) [verdict: malicious; source: urlscan.io]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'ktmfoundation.org/download/']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-14T00:00:00.000Z",
+      "labels": [
+        "delivery",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--a7ba947b-9899-5c4c-bc6f-51859797f111",
+      "name": "ktmfoundation.org/mac",
+      "description": "macOS ClickFix page (now gone) [verdict: malicious; source: urlscan.io]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'ktmfoundation.org/mac']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-16T00:00:00.000Z",
+      "labels": [
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--5a80ec95-6ba8-5410-bf73-9707e5b7c312",
+      "name": "185.109.170.138",
+      "description": "soma.or.tz host (UK Dedicated Servers, abuse@ukservers.com) [verdict: malicious; source: RDAP; DNS resolution]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[ipv4-addr:value = '185.109.170.138']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "ipv4"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--d9d67a33-0a55-5241-9a41-c58480b04b1b",
+      "name": "c32f4dda3dceee6b85ba1f5f2f3308bf.r2.cloudflarestorage.com",
+      "description": "Cloudflare R2 bucket host: /downloads/[brand]_Premium_Desktop.zip (presigned URLs seen by urlscan as redirect target of every /get/ gateway) [verdict: malicious; source: urlscan.io]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'c32f4dda3dceee6b85ba1f5f2f3308bf.r2.cloudflarestorage.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-12T00:00:00.000Z",
+      "labels": [
+        "delivery",
+        "domain",
+        "redirector"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--9bf31019-5ecc-5205-8257-94bc2d3fda0e",
+      "name": "TradingView_Premium_Desktop.zip",
+      "description": "outer zip name (Content-Disposition); inner zip '[brand]_Premium_Desktop_.zip' [verdict: malicious; source: urlscan.io; analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:name = 'TradingView_Premium_Desktop.zip']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-12T00:00:00.000Z",
+      "labels": [
+        "filename"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--6d61c411-1f65-595c-9a02-45ae8c3eb787",
+      "name": "c218ac238b429b5118dc909378d50f1d96461a6326523d886d3539e8165ddae0",
+      "description": "outer zip as served 2026-11-11 (byte-identical on two pulls via different exits, 09:06 and 09:37 UTC) [verdict: malicious; source: analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = 'c218ac238b429b5118dc909378d50f1d96461a6326523d886d3539e8165ddae0']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "sha256"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--1dc3af41-9acf-5b8b-ae76-c687446e6505",
+      "name": "ca1ec0889de7ee74ccc512929e1cdc135324364295d68c3bb0e49da59fb8fbda",
+      "description": "inner AES zip (password-protected) [verdict: malicious; source: analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = 'ca1ec0889de7ee74ccc512929e1cdc135324364295d68c3bb0e49da59fb8fbda']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "sha256"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--48c52573-1f07-5cfe-80f0-32433dee88dd",
+      "name": "5051009b837c24e43b34005a76a6995f0d6d875c5871d86b181bd653be434288",
+      "description": "[brand] Premium Desktop.exe, 130028984 B, 125.8 MB zero padding (AV size-limit evasion) [verdict: malicious; source: analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '5051009b837c24e43b34005a76a6995f0d6d875c5871d86b181bd653be434288']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "sha256"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--a8096084-f725-500a-88b5-4b214943374f",
+      "name": "b8c1d2399105a57046b24aeee74d2dea3250c8c8aa5502c448b8d954f1dcb17a",
+      "description": "the 4191744 B Go PE without padding and signature [verdict: malicious; source: analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = 'b8c1d2399105a57046b24aeee74d2dea3250c8c8aa5502c448b8d954f1dcb17a']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "sha256"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--6be6e1a9-efd2-597d-998a-502e4eb64623",
+      "name": "CN=Nova Metric Industries, O=Nova Metric Industries, C=US (serial 1123341438637236888036510787417...",
+      "description": "self-signed Authenticode certificate on the exe (fake publisher) [verdict: malicious; source: static analysis]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[x509-certificate:subject = 'CN=Nova Metric Industries, O=Nova Metric Industries, C=US' AND x509-certificate:serial_number = '112334143863723688803651078741774901895']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "code-signing-cert"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--f1c085e0-a1b2-5abe-81b9-014b2877b7ec",
+      "name": "https://xn.amanlay.org/rn/gate",
+      "description": "Windows stealer C2 gate (reported by SlowMist 2026-11-09; not extracted from our sample) [verdict: malicious; source: SlowMist TI alert]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://xn.amanlay.org/rn/gate']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-09T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "gate",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--7ef4dd39-6941-5b33-9b03-fec5f64d951f",
+      "name": "https://xn.amanlay.org/kw/gate",
+      "description": "Windows stealer C2 gate (SlowMist) [verdict: malicious; source: SlowMist TI alert]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://xn.amanlay.org/kw/gate']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-09T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "gate",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--ba0e84a0-f165-5af8-abd1-0da027efef34",
+      "name": "https://z.dak69.org/j/gate",
+      "description": "Windows stealer C2 gate (SlowMist) [verdict: malicious; source: SlowMist TI alert]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://z.dak69.org/j/gate']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-09T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "gate",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--4387bacd-c138-5f33-b964-a8b37f0fabac",
+      "name": "amanlay.org",
+      "description": "C2 apex: NameCheap, created 2026-04-29, CF NS brady/princess, changed 2026-08-12T02:29Z; urlscan subdomains f., l5. with /<1-2 chars>/gate [verdict: malicious; source: urlscan.io; RDAP]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'amanlay.org']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-08T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "domain",
+        "gate"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--104fd47e-fd7c-5fd3-bdf9-6a587b23f184",
+      "name": "dak69.org",
+      "description": "C2 apex: NameCheap, created 2025-03-07, CF NS brady/princess, changed 2026-08-12T02:58Z; urlscan subdomains f., g., k., q. [verdict: malicious; source: urlscan.io; RDAP]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'dak69.org']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-07T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "domain"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--c5974082-ba36-58fe-a3d4-ace77e0edb04",
+      "name": "seohumanoid.com",
+      "description": "macOS stage-2 + stealer C2: /curl/<token>, /dynamic?txd=, /gate, /pipeline/event (Cloudflare, Unstoppable Domains, created 2026-02-21) [verdict: malicious; source: urlscan.io; analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'seohumanoid.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-06T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "domain",
+        "gate",
+        "stage"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--70d7c1d8-0d1a-55e7-891f-d2d47ba757bd",
+      "name": "http://seohumanoid.com/curl/42403afd2906a8f3062e3ddb19b28572d88db9ae74b147319383bd280c6bec0a",
+      "description": "macOS loader URL base64-embedded in the ClickFix command [verdict: malicious; source: analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'http://seohumanoid.com/curl/42403afd2906a8f3062e3ddb19b28572d88db9ae74b147319383bd280c6bec0a']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-06T00:00:00.000Z",
+      "labels": [
+        "loader",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--0583ffd1-bec2-5b89-94cc-4e33c93835c7",
+      "name": "http://seohumanoid.com/dynamic?txd=42403afd2906a8f3062e3ddb19b28572d88db9ae74b147319383bd280c6bec0a",
+      "description": "AppleScript stealer served to the loader (needs api-key header) [verdict: malicious; source: analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'http://seohumanoid.com/dynamic?txd=42403afd2906a8f3062e3ddb19b28572d88db9ae74b147319383bd280c6bec0a']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "loader",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--f4dc9777-799f-5e20-a679-28d23d9c752e",
+      "name": "http://seohumanoid.com/gate?buildtxd=42403afd2906a8f3062e3ddb19b28572d88db9ae74b147319383bd280c6b...",
+      "description": "exfil upload endpoint, 10 MiB chunked PUT [verdict: malicious; source: script analysis]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'http://seohumanoid.com/gate?buildtxd=42403afd2906a8f3062e3ddb19b28572d88db9ae74b147319383bd280c6bec0a']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "exfiltration",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--f7ec2cf9-e0c8-5377-b3c5-649bd29bb416",
+      "name": "http://seohumanoid.com/pipeline/event",
+      "description": "stage telemetry POST (multipart: buildtxd, session_id, stage, status ...) [verdict: malicious; source: script analysis]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'http://seohumanoid.com/pipeline/event']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "stage",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--2d1361f8-ca70-5f15-b769-b87cbcffa0c0",
+      "name": "/tmp/osalogging.zip",
+      "description": "macOS staging archive for exfil [verdict: malicious; source: script analysis]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:name = 'osalogging.zip' AND file:parent_directory_ref.path = '/tmp']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "exfiltration",
+        "file-path"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--8f2fd1de-0074-5420-b88f-b6c3d24deef8",
+      "name": "/tmp/dyntrace.txt",
+      "description": "macOS trace log [verdict: malicious; source: script analysis]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:name = 'dyntrace.txt' AND file:parent_directory_ref.path = '/tmp']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "file-path"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--e1bda06b-7b76-5dd1-8fb5-44d0b8e3cd21",
+      "name": "internetmissouri.com",
+      "description": "earlier macOS stage-2 host (same token), clientHold, Unstoppable Domains [verdict: malicious; source: urlscan.io; RDAP]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'internetmissouri.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-15T00:00:00.000Z",
+      "labels": [
+        "domain",
+        "stage"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--5a8125d9-b6f3-5530-b43c-e793bdeeec47",
+      "name": "bismarckchiropractor.com",
+      "description": "earlier macOS stage-2 host (same token), clientHold, Unstoppable Domains [verdict: malicious; source: urlscan.io; RDAP]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'bismarckchiropractor.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-19T00:00:00.000Z",
+      "labels": [
+        "domain",
+        "stage"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--6f39c5b8-cfab-5a75-a149-4649fc5e67d5",
+      "name": "3d3f24b94282c0f2311cc7cb9b87e4e84a93a51edebc581b8f31fa711d3c6eaa",
+      "description": "AppleScript stealer as served (87483 B) [verdict: malicious; source: analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '3d3f24b94282c0f2311cc7cb9b87e4e84a93a51edebc581b8f31fa711d3c6eaa']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "sha256"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--23b7ffaf-758f-5487-8055-03a439d1c797",
+      "name": "4e2698b61750624535ba607d27d1ef1f177057bc13f8901dac4855a84254dd2a",
+      "description": "zsh loader (gzip+base64 'PAYLOAD' heredoc, eval) [verdict: malicious; source: analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '4e2698b61750624535ba607d27d1ef1f177057bc13f8901dac4855a84254dd2a']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "loader",
+        "payload",
+        "sha256"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--acd5b4f2-8b39-52a1-81c2-755d4d3d2b7a",
+      "name": "andora188.org",
+      "description": "CANDIDATE gate-pattern domain (<sub>.andora188.org/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed [verdict: candidate; source: urlscan.io]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'andora188.org']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-10T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain",
+        "gate"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--28aad0e4-7cbc-5df1-a82f-b6b36ff0debb",
+      "name": "andaltoto.org",
+      "description": "CANDIDATE gate-pattern domain (<sub>.andaltoto.org/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed [verdict: candidate; source: urlscan.io]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'andaltoto.org']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-10T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain",
+        "gate"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--236ba870-0a33-5195-a7be-81643ac8b15b",
+      "name": "amper888.net",
+      "description": "CANDIDATE gate-pattern domain (<sub>.amper888.net/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed [verdict: candidate; source: urlscan.io]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'amper888.net']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-09T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain",
+        "gate"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--dba4d092-c8cf-5117-85ff-0551486ded7a",
+      "name": "amin90.org",
+      "description": "CANDIDATE gate-pattern domain (<sub>.amin90.org/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed [verdict: candidate; source: urlscan.io]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'amin90.org']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-08T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain",
+        "gate"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--f6921716-6a51-5146-957b-eeeaeb86e579",
+      "name": "dav88.org",
+      "description": "CANDIDATE gate-pattern domain (<sub>.dav88.org/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed [verdict: candidate; source: urlscan.io]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'dav88.org']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-08T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain",
+        "gate"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--7d5dbd43-b78c-5ef0-bcb9-85215ef0e64a",
+      "name": "dps69.org",
+      "description": "CANDIDATE gate-pattern domain (<sub>.dps69.org/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed [verdict: candidate; source: urlscan.io]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'dps69.org']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-10T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain",
+        "gate"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--2f5cbd92-6404-59b4-baed-7fc4afdf2ba7",
+      "name": "dax96.org",
+      "description": "CANDIDATE gate-pattern domain (<sub>.dax96.org/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed [verdict: candidate; source: urlscan.io]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'dax96.org']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-09T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain",
+        "gate"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--6da52b0e-11e3-517e-86e0-deddb1e329bc",
+      "name": "amoy323.org",
+      "description": "CANDIDATE gate-pattern domain (<sub>.amoy323.org/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed [verdict: candidate; source: urlscan.io]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'amoy323.org']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-09T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain",
+        "gate"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--844b0cfc-6303-52f3-8fc5-c0cbc5d90d21",
+      "name": "andraslotlink.org",
+      "description": "CANDIDATE gate-pattern domain (<sub>.andraslotlink.org/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed [verdict: candidate; source: urlscan.io]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'andraslotlink.org']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain",
+        "gate"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--55274f88-5037-5761-a99d-35cf413b0736",
+      "name": "dewa2.org",
+      "description": "CANDIDATE gate-pattern domain (<sub>.dewa2.org/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed [verdict: candidate; source: urlscan.io]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'dewa2.org']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-10T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain",
+        "gate"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--a7c83727-e741-56ec-8db7-7bacf8518ca7",
+      "name": "ampluna.com",
+      "description": "CANDIDATE gate-pattern domain (<sub>.ampluna.com/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed [verdict: candidate; source: urlscan.io]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'ampluna.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-10T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain",
+        "gate"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--83518914-f282-53b5-a6d4-d3b4bb8649ba",
+      "name": "amor76.com",
+      "description": "CANDIDATE gate-pattern domain (<sub>.amor76.com/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed [verdict: candidate; source: urlscan.io]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'amor76.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-09T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain",
+        "gate"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--844ae88c-9500-546d-b9af-222aa0e1c4b2",
+      "name": "ampelbet.org",
+      "description": "CANDIDATE gate-pattern domain (<sub>.ampelbet.org/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed [verdict: candidate; source: urlscan.io]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'ampelbet.org']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-09T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain",
+        "gate"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--6eb650b9-ee37-5a4b-bdca-68d4e43e3f41",
+      "name": "akuntoti.net",
+      "description": "CANDIDATE gate-pattern domain (<sub>.akuntoti.net/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed [verdict: candidate; source: urlscan.io]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'akuntoti.net']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-09T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain",
+        "gate"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--39bb87d7-f5d0-5c2b-b3bd-8284c31820e3",
+      "name": "ameriktoto.org",
+      "description": "CANDIDATE gate-pattern domain (<sub>.ameriktoto.org/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed [verdict: candidate; source: urlscan.io]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'ameriktoto.org']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-08T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain",
+        "gate"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--b28d28c3-3281-5852-b284-0382b26c3b7d",
+      "name": "dog69.net",
+      "description": "CANDIDATE gate-pattern domain (<sub>.dog69.net/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed [verdict: candidate; source: urlscan.io]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'dog69.net']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-10T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain",
+        "gate"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--c6c65642-7e85-56b4-a683-563e7d0383e9",
+      "name": "https://pr.anek4d.org/qx/gate",
+      "description": "Windows stealer C2 gate of this build (decrypted from the Telegram dead drop with the payload routine); multipart POST token/build_id/hwid [verdict: malicious; source: sandbox / dead-drop monitoring]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://pr.anek4d.org/qx/gate']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "dead-drop",
+        "gate",
+        "payload",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--14aa03a3-7306-53cf-a319-c8a79a2fc866",
+      "name": "pr.anek4d.org",
+      "description": "Windows stealer C2 host (Cloudflare 172.67.151.6/104.21.90.19); urlscan hybridanalysis also saw /jx/gate and /pe/gate 2026-11-11 [verdict: malicious; source: urlscan.io; DNS resolution; sandbox / dead-drop monitoring]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'pr.anek4d.org']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "domain",
+        "gate"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--39d68cfa-375e-5a01-8dd3-3930d8eaa77a",
+      "name": "anek4d.org",
+      "description": "C2 apex: NameCheap, created 2026-05-12, CF NS brady/princess, last changed 2026-08-12T09:34Z (same NS pair and change day as amanlay.org/dak69.org) [verdict: malicious; source: RDAP; sandbox / dead-drop monitoring]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'anek4d.org']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "domain"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--d7854c2c-851a-587b-bb48-5e671d448bd9",
+      "name": "https://telegram.me/d33ttt",
+      "description": "Telegram dead-drop resolver (channel d33ttt, created 2026-11-05; description \"k1se <hex>\" = XOR-encrypted C2) [verdict: malicious; source: sandbox / dead-drop monitoring; analyst fetch]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://telegram.me/d33ttt']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-05T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "dead-drop",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--379d685e-f385-5421-96d4-6629ca3cfa8b",
+      "name": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:161.0) Gecko/20100101 Firefox/161.0",
+      "description": "hardcoded UA of the Windows stealer (WinHTTP) [verdict: malicious; source: sandbox / dead-drop monitoring]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[network-traffic:extensions.'http-request-ext'.request_header.'User-Agent' = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:161.0) Gecko/20100101 Firefox/161.0']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "user-agent"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--f67d76fa-ed29-5f39-a536-298d071b9366",
+      "name": "e7da373121aed34c79efb4ba8e589bb6b142c43a62f9f83c34a068451b056991",
+      "description": "inner stealer PE as mapped in memory by the Go loader (image base 0x144e10000, relocated; not an on-disk hash) [verdict: malicious; source: sandbox / dead-drop monitoring]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = 'e7da373121aed34c79efb4ba8e589bb6b142c43a62f9f83c34a068451b056991']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "loader",
+        "sha256"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--7fa88ef6-3695-5aa1-8228-b350c9bc51b6",
+      "name": "qm.anek4d.org",
+      "description": "Windows stealer C2 host seen live in HA sandbox (dead drop value at 14:15Z; resolved via Cloudflare 172.67.151.6) [verdict: malicious; source: Hybrid Analysis; sandbox]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'qm.anek4d.org']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "dead-drop",
+        "domain"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--347c866b-6e01-5a76-a390-c476f80b61af",
+      "name": "https://qm.anek4d.org/wc/gate",
+      "description": "Windows stealer C2 gate: HA sandbox saw POST multipart hwid/build_id/format=json (401 B) after GET telegram.me/d33ttt [verdict: malicious; source: Hybrid Analysis; sandbox]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://qm.anek4d.org/wc/gate']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "gate",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--be594eda-f624-52c1-8f61-6ccd09ab226c",
+      "name": "ik.angkajitu.org",
+      "description": "Windows stealer C2 host from Telegram dead drop t.me/d33ttt at 2026-11-11 18:30Z (k1se 4488aea4f40823c9ba31efb5d1b9383be78d -> ik.angkajitu.org/w) [verdict: malicious; source: DNS resolution; dead-drop monitoring]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'ik.angkajitu.org']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "dead-drop",
+        "domain"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--b66573ef-9747-58c2-b73c-1efacdd15143",
+      "name": "https://ik.angkajitu.org/w/gate",
+      "description": "Windows stealer C2 gate (current dead-drop value 18:30Z) [verdict: malicious; source: dead-drop monitoring]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://ik.angkajitu.org/w/gate']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "dead-drop",
+        "gate",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--6f8b62ae-78e3-55f3-ab38-2d2d17995189",
+      "name": "angkajitu.org",
+      "description": "C2 apex: NameCheap, registered 2026-03-13, CF NS brady/princess, last changed 2026-08-11 (same cluster as anek4d/amanlay/dak69); urlscan hybridanalysis gates on ik., d0., o54., zs. subdomains 2026-11-11 [verdict: malicious; source: urlscan.io; RDAP]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'angkajitu.org']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "domain"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--5d91b400-aa73-5e5d-a422-29f32b0591c6",
+      "name": "c.dr108.org",
+      "description": "Windows stealer C2 host from the Steam dead drop (profile 76561198610252751) at 2026-11-11 18:30Z -> c.dr108.org/x/gate [verdict: malicious; source: urlscan.io; dead-drop monitoring]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'c.dr108.org']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "dead-drop",
+        "domain",
+        "gate"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--21353517-c66c-531b-84e4-7f1f185e3313",
+      "name": "dr108.org",
+      "description": "C2 apex: registered 2025-11-29, CF NS brady/princess, last changed 2026-11-09; urlscan gates c./l. subdomains 2026-11-11 [verdict: malicious; source: urlscan.io; RDAP]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'dr108.org']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "domain"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--b37ee640-7c62-5456-97d0-7434f9a03763",
+      "name": "ap1.anek4d.org",
+      "description": "further C2 subdomain (urlscan hybridanalysis /g/gate, /w/gate 2026-11-11 13:26-13:32Z) [verdict: malicious; source: urlscan.io]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'ap1.anek4d.org']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "domain",
+        "gate"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--1bf73230-40b4-590e-8dda-505a99e88132",
+      "name": "https://steamcommunity.com/profiles/76561198610252751",
+      "description": "Steam dead-drop resolver (contains k1se <hex> value; decrypts to c.dr108.org/x) [verdict: malicious; source: dead-drop monitoring; analyst fetch; static analysis]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://steamcommunity.com/profiles/76561198610252751']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "dead-drop",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--b3a04eee-0559-543d-bd91-094c66fd77db",
+      "name": "cdn.discordapp.com/attachments/1088291502435864678",
+      "description": "Discord CDN attachment hosting [brand]_Premium_Desktop.zip (urlscan 2026-11-02T01:32Z, scan 01a199e2-b5b5-70bc-940a-f75eaa13e17d); earlier distribution via Discord CDN, not in the article links [verdict: malicious; source: urlscan.io; dead-drop monitoring]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'cdn.discordapp.com/attachments/1088291502435864678']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-02T00:00:00.000Z",
+      "labels": [
+        "distribution",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "malware",
+      "id": "malware--a2a6d30c-e906-50ec-8751-fc1093d7ef41",
+      "name": "Vidar-like Go-loader stealer",
+      "is_family": true,
+      "malware_types": [
+        "spyware",
+        "dropper"
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "malware",
+      "id": "malware--e2288267-0837-597b-bbf6-83ee5c357172",
+      "name": "MacSync-like zsh loader",
+      "is_family": true,
+      "malware_types": [
+        "dropper"
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "malware",
+      "id": "malware--0c3e931b-6402-5f04-93ca-368fd838f64c",
+      "name": "AppleScript stealer",
+      "is_family": true,
+      "malware_types": [
+        "spyware"
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--50af786b-cbbe-5f62-b2b3-7a8c8052a270",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--9bf31019-5ecc-5205-8257-94bc2d3fda0e",
+      "target_ref": "malware--a2a6d30c-e906-50ec-8751-fc1093d7ef41"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--d403348f-f88c-5ad8-a28d-334538204f51",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--6d61c411-1f65-595c-9a02-45ae8c3eb787",
+      "target_ref": "malware--a2a6d30c-e906-50ec-8751-fc1093d7ef41"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--d86650f4-e1cd-5289-a009-1eb76d481086",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--1dc3af41-9acf-5b8b-ae76-c687446e6505",
+      "target_ref": "malware--a2a6d30c-e906-50ec-8751-fc1093d7ef41"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--40b37e89-8740-5588-8a75-bedf67846ef1",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--48c52573-1f07-5cfe-80f0-32433dee88dd",
+      "target_ref": "malware--a2a6d30c-e906-50ec-8751-fc1093d7ef41"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--c47de214-a811-545d-9eca-22b40c07db82",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--a8096084-f725-500a-88b5-4b214943374f",
+      "target_ref": "malware--a2a6d30c-e906-50ec-8751-fc1093d7ef41"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--33c6aa2a-2bb8-528f-ba3f-7cf1f324d425",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--6be6e1a9-efd2-597d-998a-502e4eb64623",
+      "target_ref": "malware--a2a6d30c-e906-50ec-8751-fc1093d7ef41"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--debe29fb-2b80-5da4-8c41-8420b736fe31",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--f1c085e0-a1b2-5abe-81b9-014b2877b7ec",
+      "target_ref": "malware--a2a6d30c-e906-50ec-8751-fc1093d7ef41"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--bac2f5c2-1509-56f0-bd1f-49417ca5151a",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--7ef4dd39-6941-5b33-9b03-fec5f64d951f",
+      "target_ref": "malware--a2a6d30c-e906-50ec-8751-fc1093d7ef41"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--4e2f159c-5f5d-55e3-8798-6d943ff4cb4f",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--ba0e84a0-f165-5af8-abd1-0da027efef34",
+      "target_ref": "malware--a2a6d30c-e906-50ec-8751-fc1093d7ef41"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--ee2a8dfd-8b8b-5f7c-a3b3-9a6fea415e0a",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--0583ffd1-bec2-5b89-94cc-4e33c93835c7",
+      "target_ref": "malware--0c3e931b-6402-5f04-93ca-368fd838f64c"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--60e9ec8f-f9f6-5dca-b096-b9a6ac9b1de1",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--6f39c5b8-cfab-5a75-a149-4649fc5e67d5",
+      "target_ref": "malware--0c3e931b-6402-5f04-93ca-368fd838f64c"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--b496665c-a134-50a6-ac58-9f9297c10251",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--23b7ffaf-758f-5487-8055-03a439d1c797",
+      "target_ref": "malware--e2288267-0837-597b-bbf6-83ee5c357172"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--df05f915-27c7-5375-b961-070003d9461e",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--c6c65642-7e85-56b4-a683-563e7d0383e9",
+      "target_ref": "malware--a2a6d30c-e906-50ec-8751-fc1093d7ef41"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--2126b9a4-820a-56f6-aeb6-681e46926321",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--14aa03a3-7306-53cf-a319-c8a79a2fc866",
+      "target_ref": "malware--a2a6d30c-e906-50ec-8751-fc1093d7ef41"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--ceec987b-ec85-5606-81cd-9113157ab71a",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--379d685e-f385-5421-96d4-6629ca3cfa8b",
+      "target_ref": "malware--a2a6d30c-e906-50ec-8751-fc1093d7ef41"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--fbc104c0-10fb-573e-9901-ac154c86f08d",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--f67d76fa-ed29-5f39-a536-298d071b9366",
+      "target_ref": "malware--a2a6d30c-e906-50ec-8751-fc1093d7ef41"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--555f886b-ea9b-5f93-92eb-d00b3e03c3cc",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--7fa88ef6-3695-5aa1-8228-b350c9bc51b6",
+      "target_ref": "malware--a2a6d30c-e906-50ec-8751-fc1093d7ef41"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--bb38bbe4-7b54-5b54-b411-a3752f98ae23",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--347c866b-6e01-5a76-a390-c476f80b61af",
+      "target_ref": "malware--a2a6d30c-e906-50ec-8751-fc1093d7ef41"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--2a6222c7-4e8c-5e77-bfd8-e395726e21a8",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--be594eda-f624-52c1-8f61-6ccd09ab226c",
+      "target_ref": "malware--a2a6d30c-e906-50ec-8751-fc1093d7ef41"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--55213185-90fa-5c3f-870c-e8fad423ee69",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--b66573ef-9747-58c2-b73c-1efacdd15143",
+      "target_ref": "malware--a2a6d30c-e906-50ec-8751-fc1093d7ef41"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--897e3689-1404-54c5-992f-cdd8ca93beec",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--5d91b400-aa73-5e5d-a422-29f32b0591c6",
+      "target_ref": "malware--a2a6d30c-e906-50ec-8751-fc1093d7ef41"
+    }
+  ]
+}

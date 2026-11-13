@@ -12,15 +12,15 @@ Per-case facts (summary, samples, video, MalwareBazaar / ThreatFox links, status
 |---|---|
 | `yara/<family-or-campaign>/` | YARA rules, one rule per file or a small family file, plus a README describing the rules and their reference samples |
 | `sigma/<category>/` | Sigma rules in SigmaHQ-style category folders (`dns_query/`, `proxy/`, `process_creation/`, `image_load/`, ...) |
-| `iocs/<YYYY-MM-case-slug>/` | `README.md` (case summary, samples, links), `case.yml` (machine-readable case metadata), `iocs.csv` (defanged), `iocs.json` (machine-readable, NOT defanged) |
-| `tools/<name>/` | Static config extractors and unpackers used to derive the rules; `tools/build_index.py` generates `INDEX.md` |
+| `iocs/<YYYY-MM-case-slug>/` | `README.md` (case summary, samples, links), `case.yml` (machine-readable case metadata), `iocs.csv` (defanged), `iocs.json` (machine-readable, NOT defanged), plus generated `stix2.json` (STIX 2.1) and `misp_event.json` (MISP) |
+| `tools/<name>/` | Static config extractors and unpackers used to derive the rules; `tools/build_index.py` generates `INDEX.md`, `tools/export_iocs.py` generates the STIX 2.1 and MISP exports |
 | `tests/` | YARA test harness (yara-python and YARA-X), Sigma logic tests, IOC validation, recorded results |
 
 ## How the rules are tested
 
 - **YARA:** every rule file must compile with yara-python and YARA-X (CI). Rules are also run against their reference samples (each must match exactly the rules it is meant to match) and against a corpus of benign and unrelated PE files (0 hits required). A generated, spec-conformant file of the format a rule imitates is used as a synthetic negative where relevant. The harness is `tests/run_yara_tests.py`; the most recent recorded run is `tests/RESULTS.md`.
 - **Sigma:** `sigma check --fail-on-error --fail-on-issues` with the SigmaHQ validators (CI), plus `tests/test_sigma_synthetic.py`, which runs each rule's logic on hand-made events.
-- **IOCs:** `tests/validate_iocs.py` checks that CSV and JSON agree, that the CSV is defanged and that hashes are well-formed.
+- **IOCs:** `tests/validate_iocs.py` checks that CSV and JSON agree, that the CSV is defanged and that hashes are well-formed; `tests/validate_exports.py` validates the STIX 2.1 bundles (OASIS `stix2-validator`, `stix2`) and loads the MISP events with PyMISP.
 
 Limits, stated plainly: rules are derived from static analysis. Unless a rule says otherwise there is no regression EVTX or pcap, and no rule has been measured on production telemetry. Levels are the author's estimate; baseline before alerting. Samples are malware and are not stored here; each case README links to the public copies.
 
@@ -30,6 +30,7 @@ uv venv && uv pip install yara-python yara-x cabarchive pyyaml
 .venv/bin/python tests/run_yara_tests.py --samples <dir-with-samples> --negatives <dir-with-benign-files>
 .venv/bin/python tests/test_sigma_synthetic.py
 .venv/bin/python tests/validate_iocs.py
+uv pip install stix2 stix2-validator pymisp && .venv/bin/python tools/export_iocs.py --check && .venv/bin/python tests/validate_exports.py
 ```
 
 ## Licenses

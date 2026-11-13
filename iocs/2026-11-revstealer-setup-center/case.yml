@@ -9,3 +9,17 @@ video: null
 related_videos:
   - https://youtu.be/UBGt4gP53wU
 gist: null
+campaigns: [REF2859]
+malpedia: [RevStealer]
+references:
+  - {source_name: Elastic Security Labs, url: "https://www.elastic.co/security-labs/threat-command/revstealer-credential-harvesting-infostealer"}
+  - {source_name: MalwareBazaar, url: "https://bazaar.abuse.ch/sample/2e3bdd68f85755b02caa42ec0228fb8a56c964479c4f085eae67569d67440e49/"}
+  - {source_name: MalwareBazaar, url: "https://bazaar.abuse.ch/sample/b371d2e01562fc0d29072ac1a56969628b6408f2368c056c3158f4fe0c609960/"}
+  - {source_name: MalwareBazaar, url: "https://bazaar.abuse.ch/sample/c6859833796f682e3598f65865a2853c3ecc118d7f2fb01defc24cf328e3ecad/"}
+  - {source_name: MalwareBazaar, url: "https://bazaar.abuse.ch/sample/3c6330d06b57d18026efd5745245cc19e1c67983d957f42ff6a821e2b7f71632/"}
+  - {source_name: MalwareBazaar, url: "https://bazaar.abuse.ch/sample/2b4f61c274bf8e4a79cf77e7b36d18d1dd265e8e894f5f2b6d8babc6323d556a/"}
+indicates:
+  - family: REVSTEALER
+    role_match: 'REVSTEALER|sideload|Installer\.zip|localdata\.db'
+  - family: MioLab
+    role_match: 'MioLab'
