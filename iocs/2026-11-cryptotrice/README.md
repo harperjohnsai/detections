@@ -14,7 +14,7 @@ Static analysis, emulation and one public sandbox run; no attacker server was co
 - macOS: `curl ... $(echo ...|base64 -D)|zsh` in shell history; `osascript` password dialog; `/tmp/osalogging.zip`.
 
 ## Detections
-No rules yet (see the roadmap in the top README). The IOC set is the deliverable.
+No rules for this case yet; the IOC set is the deliverable.
 
 ## Samples on MalwareBazaar
 | Artefact | SHA-256 | Link |
@@ -25,6 +25,8 @@ No rules yet (see the roadmap in the top README). The IOC set is the deliverable
 The padded `.exe`, the outer zip and the AppleScript stealer were not found on MalwareBazaar at the time of checking. ThreatFox: no entries submitted by this project for this case.
 
 Video: https://youtu.be/fuJMKVu-CFk (scheduled for 2026-11-19).
+
+IOC gist: https://gist.github.com/harperjohnsai/a4cce902c90b37ae74992226cc9ec0f2
 
 ## Files
 

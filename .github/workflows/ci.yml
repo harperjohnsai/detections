@@ -29,4 +29,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml
       - run: python tests/validate_iocs.py
+      - name: INDEX.md must match the case.yml files
+        run: python tools/build_index.py --check

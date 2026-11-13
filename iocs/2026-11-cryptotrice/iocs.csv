@@ -1,15 +1,15 @@
 type,value_defanged,first_seen,role,verdict,confidence,source
 x-account,@cryptotrice (x[.]com user id 71269107),2026-10-09,distribution (promotes cracked [brand] Premium),malicious,high,X post metadata
-x-post,hxxps://x.com/cryptotrice/status/2117572256079741351,2026-11-03,"example post (video lure, self-reply links the article)",malicious,high,X post metadata
-x-post,hxxps://x.com/cryptotrice/status/2111472920241524897,2026-10-17,"article carrying the download links (X Article 2111469701197103105, 190k views)",malicious,high,X post metadata; X mirror
-x-post,hxxps://x.com/cryptotrice/status/2110300326792429916,2026-10-14,"earlier article post (article 2110297070968184832, now unavailable)",malicious,medium,X post metadata; X mirror
-x-post,hxxps://x.com/cryptotrice/status/2108500579790315885,2026-10-09,earliest thread linked from self-replies (not retrievable),malicious,medium,analyst triage
-x-post,hxxps://x.com/cryptotrice/status/2118705306767335545,2026-11-06,highest-reach promo post (368k views at retrieval),malicious,high,X post metadata
-x-post,hxxps://x.com/cryptotrice/status/2120182085600280896,2026-11-10,"most recent promo post (156k views), after public SlowMist alert",malicious,high,X post metadata
+x-post,hxxps://x[.]com/cryptotrice/status/2117572256079741351,2026-11-03,"example post (video lure, self-reply links the article)",malicious,high,X post metadata
+x-post,hxxps://x[.]com/cryptotrice/status/2111472920241524897,2026-10-17,"article carrying the download links (X Article 2111469701197103105, 190k views)",malicious,high,X post metadata; X mirror
+x-post,hxxps://x[.]com/cryptotrice/status/2110300326792429916,2026-10-14,"earlier article post (article 2110297070968184832, now unavailable)",malicious,medium,X post metadata; X mirror
+x-post,hxxps://x[.]com/cryptotrice/status/2108500579790315885,2026-10-09,earliest thread linked from self-replies (not retrievable),malicious,medium,analyst triage
+x-post,hxxps://x[.]com/cryptotrice/status/2118705306767335545,2026-11-06,highest-reach promo post (368k views at retrieval),malicious,high,X post metadata
+x-post,hxxps://x[.]com/cryptotrice/status/2120182085600280896,2026-11-10,"most recent promo post (156k views), after public SlowMist alert",malicious,high,X post metadata
 url,soma[.]or[.]tz/dl/,2026-11-11,"Windows download link in the article; check-host: large file served (Max message size exceeded) 2026-11-11, anonymised exits cannot reach it",malicious,high,urlscan.io; check-host.net; X mirror
-url,hxxps://soma.or.tz/dl/,2026-11-11,"same, full URL",malicious,high,analyst triage
+url,hxxps://soma[.]or[.]tz/dl/,2026-11-11,"same, full URL",malicious,high,analyst triage
 url,halchemicals[.]com/mac/,2026-11-10,macOS link in the article; serves the ClickFix '[brand] - Install' page,malicious,high,X mirror; analyst fetch
-url,hxxps://halchemicals.com/get/,2026-11-10,"Windows download: bot-check interstitial, then application/zip [brand]_Premium_Desktop.zip (137145574 B)",malicious,high,urlscan.io; analyst fetch
+url,hxxps://halchemicals[.]com/get/,2026-11-10,"Windows download: bot-check interstitial, then application/zip [brand]_Premium_Desktop.zip (137145574 B)",malicious,high,urlscan.io; analyst fetch
 domain,halchemicals[.]com,2026-11-10,compromised legitimate site (registered 2015-07-02) used as payload gateway,compromised-or-abused-legit,high,urlscan.io; RDAP
 ipv4,67[.]208[.]35[.]237,2026-11-11,"halchemicals[.]com host (GreenGeeks block, abuse@greengeeks.com)",malicious,high,RDAP; DNS resolution
 url,www[.]arche-hypnose[.]com/get/,2026-11-06,Windows download gateway (compromised French hypnosis-training site); o2switch Tiger Protect WAF blocks anonymised network,compromised-or-abused-legit,high,urlscan.io; SlowMist TI alert
@@ -32,16 +32,16 @@ sha256,b8c1d2399105a57046b24aeee74d2dea3250c8c8aa5502c448b8d954f1dcb17a,2026-11-
 code-signing-cert,"CN=Nova Metric Industries, O=Nova Metric Industries, C=US (serial 112334143863723688803651078741774901895, sha1 354aae2a78138e64b83241572326f5ab4167f054)",2026-11-11,self-signed Authenticode certificate on the exe (fake publisher),malicious,high,static analysis
 go-module-path,NovaMetricIndustries,2026-11-11,"Go module path / build info of the exe (garble-style obfuscated, -trimpath, GOOS=windows amd64)",malicious,high,static analysis
 go-build-id,kcVv7h3TmMsRCtet-kKS/HxvD1IxnTNVS_vfK1SrK/KhQWEjH2In90xsdINOKf/eBPKrdWJPBJ6OKSDkCez,2026-11-11,Go build ID of the exe,malicious,high,static analysis
-url,hxxps://xn.amanlay.org/rn/gate,2026-11-09,Windows stealer C2 gate (reported by SlowMist 2026-11-09; not extracted from our sample),malicious,medium,SlowMist TI alert
-url,hxxps://xn.amanlay.org/kw/gate,2026-11-09,Windows stealer C2 gate (SlowMist),malicious,medium,SlowMist TI alert
-url,hxxps://z.dak69.org/j/gate,2026-11-09,Windows stealer C2 gate (SlowMist),malicious,medium,SlowMist TI alert
+url,hxxps://xn[.]amanlay[.]org/rn/gate,2026-11-09,Windows stealer C2 gate (reported by SlowMist 2026-11-09; not extracted from our sample),malicious,medium,SlowMist TI alert
+url,hxxps://xn[.]amanlay[.]org/kw/gate,2026-11-09,Windows stealer C2 gate (SlowMist),malicious,medium,SlowMist TI alert
+url,hxxps://z[.]dak69[.]org/j/gate,2026-11-09,Windows stealer C2 gate (SlowMist),malicious,medium,SlowMist TI alert
 domain,amanlay[.]org,2026-11-08,"C2 apex: NameCheap, created 2026-04-29, CF NS brady/princess, changed 2026-08-12T02:29Z; urlscan subdomains f., l5. with /<1-2 chars>/gate",malicious,high,urlscan.io; RDAP
 domain,dak69[.]org,2026-11-07,"C2 apex: NameCheap, created 2025-03-07, CF NS brady/princess, changed 2026-08-12T02:58Z; urlscan subdomains f., g., k., q.",malicious,high,urlscan.io; RDAP
 domain,seohumanoid[.]com,2026-11-06,"macOS stage-2 + stealer C2: /curl/<token>, /dynamic?txd=, /gate, /pipeline/event (Cloudflare, Unstoppable Domains, created 2026-02-21)",malicious,high,urlscan.io; analyst fetch
-url,hxxp://seohumanoid.com/curl/42403afd2906a8f3062e3ddb19b28572d88db9ae74b147319383bd280c6bec0a,2026-11-06,macOS loader URL base64-embedded in the ClickFix command,malicious,high,analyst fetch
-url,hxxp://seohumanoid.com/dynamic?txd=42403afd2906a8f3062e3ddb19b28572d88db9ae74b147319383bd280c6bec0a,2026-11-11,AppleScript stealer served to the loader (needs api-key header),malicious,high,analyst fetch
-url,hxxp://seohumanoid.com/gate?buildtxd=42403afd2906a8f3062e3ddb19b28572d88db9ae74b147319383bd280c6bec0a,2026-11-11,"exfil upload endpoint, 10 MiB chunked PUT",malicious,high,script analysis
-url,hxxp://seohumanoid.com/pipeline/event,2026-11-11,"stage telemetry POST (multipart: buildtxd, session_id, stage, status ...)",malicious,high,script analysis
+url,hxxp://seohumanoid[.]com/curl/42403afd2906a8f3062e3ddb19b28572d88db9ae74b147319383bd280c6bec0a,2026-11-06,macOS loader URL base64-embedded in the ClickFix command,malicious,high,analyst fetch
+url,hxxp://seohumanoid[.]com/dynamic?txd=42403afd2906a8f3062e3ddb19b28572d88db9ae74b147319383bd280c6bec0a,2026-11-11,AppleScript stealer served to the loader (needs api-key header),malicious,high,analyst fetch
+url,hxxp://seohumanoid[.]com/gate?buildtxd=42403afd2906a8f3062e3ddb19b28572d88db9ae74b147319383bd280c6bec0a,2026-11-11,"exfil upload endpoint, 10 MiB chunked PUT",malicious,high,script analysis
+url,hxxp://seohumanoid[.]com/pipeline/event,2026-11-11,"stage telemetry POST (multipart: buildtxd, session_id, stage, status ...)",malicious,high,script analysis
 build-token,42403afd2906a8f3062e3ddb19b28572d88db9ae74b147319383bd280c6bec0a,2026-10-15,"macOS build/campaign token, identical on seohumanoid[.]com, internetmissouri[.]com, bismarckchiropractor[.]com since 2026-10-15",malicious,high,urlscan.io; script analysis
 file-path,/tmp/osalogging.zip,2026-11-11,macOS staging archive for exfil,malicious,high,script analysis
 file-path,/tmp/.pregrab_<token>,2026-11-11,macOS pre-grab dir,malicious,medium,script analysis
@@ -70,25 +70,25 @@ domain,ampelbet[.]org,2026-11-09,"CANDIDATE gate-pattern domain (<sub>.ampelbet.
 domain,akuntoti[.]net,2026-11-09,"CANDIDATE gate-pattern domain (<sub>.akuntoti.net/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed",candidate,low,urlscan.io
 domain,ameriktoto[.]org,2026-11-08,"CANDIDATE gate-pattern domain (<sub>.ameriktoto.org/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed",candidate,low,urlscan.io
 domain,dog69[.]net,2026-11-10,"CANDIDATE gate-pattern domain (<sub>.dog69.net/<1-3 chars>/gate behind Cloudflare, origin 521); same shape as the reported C2s; family/operator link NOT confirmed",candidate,low,urlscan.io
-url,hxxps://pr.anek4d.org/qx/gate,2026-11-11,Windows stealer C2 gate of this build (decrypted from the Telegram dead drop with the payload routine); multipart POST token/build_id/hwid,malicious,high,sandbox / dead-drop monitoring
+url,hxxps://pr[.]anek4d[.]org/qx/gate,2026-11-11,Windows stealer C2 gate of this build (decrypted from the Telegram dead drop with the payload routine); multipart POST token/build_id/hwid,malicious,high,sandbox / dead-drop monitoring
 domain,pr[.]anek4d[.]org,2026-11-11,Windows stealer C2 host (Cloudflare 172[.]67[.]151[.]6/104[.]21[.]90[.]19); urlscan hybridanalysis also saw /jx/gate and /pe/gate 2026-11-11,malicious,high,urlscan.io; DNS resolution; sandbox / dead-drop monitoring
 domain,anek4d[.]org,2026-11-11,"C2 apex: NameCheap, created 2026-05-12, CF NS brady/princess, last changed 2026-08-12T09:34Z (same NS pair and change day as amanlay[.]org/dak69.org)",malicious,high,RDAP; sandbox / dead-drop monitoring
-url,hxxps://telegram.me/d33ttt,2026-11-05,"Telegram dead-drop resolver (channel d33ttt, created 2026-11-05; description ""k1se <hex>"" = XOR-encrypted C2)",malicious,high,sandbox / dead-drop monitoring; analyst fetch
+url,hxxps://telegram[.]me/d33ttt,2026-11-05,"Telegram dead-drop resolver (channel d33ttt, created 2026-11-05; description ""k1se <hex>"" = XOR-encrypted C2)",malicious,high,sandbox / dead-drop monitoring; analyst fetch
 dead-drop-value,k1se 5d91aea4f40a239cb476f4b298f93b24,2026-11-11,channel description at 2026-11-11 12:26Z; decrypts to pr[.]anek4d[.]org/qx),malicious,high,sandbox / dead-drop monitoring
 build-token,14157ded6221bedf1de632abf1bbaa44,2026-11-11,Windows build token sent as token/build_id to /gate (config version 4.2),malicious,high,sandbox / dead-drop monitoring
 user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:161.0) Gecko/20100101 Firefox/161.0,2026-11-11,hardcoded UA of the Windows stealer (WinHTTP),malicious,high,sandbox / dead-drop monitoring
 string,9ufk1cpokc3,2026-11-11,"hardcoded id in the inner payload (likely mutex/instance name, unverified)",malicious,medium,sandbox / dead-drop monitoring
 sha256,e7da373121aed34c79efb4ba8e589bb6b142c43a62f9f83c34a068451b056991,2026-11-11,"inner stealer PE as mapped in memory by the Go loader (image base 0x144e10000, relocated; not an on-disk hash)",malicious,medium,sandbox / dead-drop monitoring
 domain,qm[.]anek4d[.]org,2026-11-11,Windows stealer C2 host seen live in HA sandbox (dead drop value at 14:15Z; resolved via Cloudflare 172[.]67[.]151[.]6),malicious,high,Hybrid Analysis; sandbox
-url,hxxps://qm.anek4d.org/wc/gate,2026-11-11,Windows stealer C2 gate: HA sandbox saw POST multipart hwid/build_id/format=json (401 B) after GET telegram[.]me/d33ttt,malicious,high,Hybrid Analysis; sandbox
+url,hxxps://qm[.]anek4d[.]org/wc/gate,2026-11-11,Windows stealer C2 gate: HA sandbox saw POST multipart hwid/build_id/format=json (401 B) after GET telegram[.]me/d33ttt,malicious,high,Hybrid Analysis; sandbox
 dead-drop-value,k1se 5c8eaea4f40a239cb476f4b298f92338,2026-11-11,channel description at 2026-11-11 14:19Z; decrypts to qm[.]anek4d[.]org/id (rotated from pr[.]anek4d[.]org/qx at 12:26Z),malicious,high,sandbox / dead-drop monitoring; sandbox; analyst fetch
 ipv4,149[.]154[.]167[.]99,2026-11-11,"telegram[.]me address contacted by sample in HA sandbox (Telegram infra, not C2)",shared-or-legit-infrastructure,high,Hybrid Analysis; sandbox
 domain,ik[.]angkajitu[.]org,2026-11-11,Windows stealer C2 host from Telegram dead drop t[.]me/d33ttt at 2026-11-11 18:30Z (k1se 4488aea4f40823c9ba31efb5d1b9383be78d -> ik[.]angkajitu[.]org/w),malicious,high,DNS resolution; dead-drop monitoring
-url,hxxps://ik.angkajitu.org/w/gate,2026-11-11,Windows stealer C2 gate (current dead-drop value 18:30Z),malicious,high,dead-drop monitoring
+url,hxxps://ik[.]angkajitu[.]org/w/gate,2026-11-11,Windows stealer C2 gate (current dead-drop value 18:30Z),malicious,high,dead-drop monitoring
 domain,angkajitu[.]org,2026-11-11,"C2 apex: NameCheap, registered 2026-03-13, CF NS brady/princess, last changed 2026-08-11 (same cluster as anek4d/amanlay/dak69); urlscan hybridanalysis gates on ik., d0., o54., zs. subdomains 2026-11-11",malicious,high,urlscan.io; RDAP
 domain,c[.]dr108[.]org,2026-11-11,Windows stealer C2 host from the Steam dead drop (profile 76561198610252751) at 2026-11-11 18:30Z -> c[.]dr108[.]org/x/gate,malicious,high,urlscan.io; dead-drop monitoring
 domain,dr108[.]org,2026-11-11,"C2 apex: registered 2025-11-29, CF NS brady/princess, last changed 2026-11-09; urlscan gates c./l. subdomains 2026-11-11",malicious,high,urlscan.io; RDAP
 domain,ap1[.]anek4d[.]org,2026-11-11,"further C2 subdomain (urlscan hybridanalysis /g/gate, /w/gate 2026-11-11 13:26-13:32Z)",malicious,high,urlscan.io
-url,hxxps://steamcommunity.com/profiles/76561198610252751,2026-11-11,Steam dead-drop resolver (contains k1se <hex> value; decrypts to c[.]dr108[.]org/x),malicious,high,dead-drop monitoring; analyst fetch; static analysis
+url,hxxps://steamcommunity[.]com/profiles/76561198610252751,2026-11-11,Steam dead-drop resolver (contains k1se <hex> value; decrypts to c[.]dr108[.]org/x),malicious,high,dead-drop monitoring; analyst fetch; static analysis
 discord-server,The Reversed Community (Discord),2026-11-11,"new lure 2026-11-11 16:11Z post 2120549992935080315: Discord invite card with [brand] logo, claims 87,654 members; invite link not yet posted",malicious,medium,analyst triage
 url,cdn[.]discordapp[.]com/attachments/1088291502435864678,2026-11-02,"Discord CDN attachment hosting [brand]_Premium_Desktop.zip (urlscan 2026-11-02T01:32Z, scan 01a199e2-b5b5-70bc-940a-f75eaa13e17d); earlier distribution via Discord CDN, not in the article links",malicious,medium,urlscan.io; dead-drop monitoring

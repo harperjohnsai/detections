@@ -14,6 +14,9 @@ def check(c, m):
 
 for d in sorted(glob.glob(os.path.join(HERE, '..', 'iocs', '*', ''))):
     name = os.path.basename(os.path.dirname(d))
+    if not os.path.exists(d + 'iocs.json'):
+        check(os.path.exists(d + 'README.md') and os.path.exists(d + 'case.yml'), f'{name}: notes-only case has README.md and case.yml')
+        continue
     j = json.load(open(d + 'iocs.json', encoding='utf-8'))
     rows = list(csv.DictReader(open(d + 'iocs.csv', encoding='utf-8')))
     check(j.get('_warning', '').startswith('MACHINE-READABLE'), f'{name}: json carries the not-defanged warning')
@@ -22,6 +25,6 @@ for d in sorted(glob.glob(os.path.join(HERE, '..', 'iocs', '*', ''))):
     check(not live, f'{name}: no live http(s) URLs in the defanged csv {live[:2]}')
     bad = [r['value_defanged'] for r in rows if r['type'] == 'sha256' and not re.fullmatch(r'[0-9a-f]{64}', r['value_defanged'])]
     check(not bad, f'{name}: all sha256 values are 64 hex chars {bad[:2]}')
-    check(os.path.exists(d + 'README.md'), f'{name}: README.md present')
+    check(os.path.exists(d + 'README.md') and os.path.exists(d + 'case.yml'), f'{name}: README.md and case.yml present')
 print('ALL CHECKS PASS' if ok else 'SOME CHECKS FAILED')
 sys.exit(0 if ok else 1)

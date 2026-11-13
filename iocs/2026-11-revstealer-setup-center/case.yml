@@ -1,0 +1,11 @@
+title: REVSTEALER via the "Setup Center" DLL-sideload chain
+date: 2026-11-13
+families: [REVSTEALER, REF2859]
+rules:
+  - yara/setup-center-loader
+  - yara/revstealer
+  - sigma
+video: null
+related_videos:
+  - https://youtu.be/UBGt4gP53wU
+gist: null

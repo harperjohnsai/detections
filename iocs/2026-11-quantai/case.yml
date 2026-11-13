@@ -1,0 +1,7 @@
+title: quantai, a fake AI trading tool installing a NetSupport RAT
+date: 2026-11-09
+families: [NetSupport Manager (abused)]
+rules: []
+video: https://youtu.be/FjaMrGFCiHs
+related_videos: []
+gist: https://gist.github.com/harperjohnsai/2353a13490642a9dbb77e42823ad6eef

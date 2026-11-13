@@ -9,15 +9,15 @@ Rules for the loader stage of the "Setup Center" chain: a Microsoft-signed OneDr
 
 ## Samples (SHA-256)
 
-| Artefact | SHA-256 | MalwareBazaar |
-|---|---|---|
-| `version.dll` | `b371d2e01562fc0d29072ac1a56969628b6408f2368c056c3158f4fe0c609960` | [entry](https://bazaar.abuse.ch/sample/b371d2e01562fc0d29072ac1a56969628b6408f2368c056c3158f4fe0c609960/) |
-| `localdata.db` | `193f259776d345f42c7957b737c4ef2d72df5268eee1d12be0574e6f91469f62` | uploaded but not listed by MalwareBazaar |
-| `Installer.zip` (all of the above) | `2e3bdd68f85755b02caa42ec0228fb8a56c964479c4f085eae67569d67440e49` | [entry](https://bazaar.abuse.ch/sample/2e3bdd68f85755b02caa42ec0228fb8a56c964479c4f085eae67569d67440e49/) |
+| Artefact | SHA-256 |
+|---|---|
+| `version.dll` | `b371d2e01562fc0d29072ac1a56969628b6408f2368c056c3158f4fe0c609960` |
+| `localdata.db` | `193f259776d345f42c7957b737c4ef2d72df5268eee1d12be0574e6f91469f62` |
+| `Installer.zip` (all of the above) | `2e3bdd68f85755b02caa42ec0228fb8a56c964479c4f085eae67569d67440e49` |
 
-## Test results (2026-11-13)
+## Testing
 
-yara-python 4.5.4 and YARA-X 1.23.0: `version.dll` matches only the loader rule; `localdata.db` matches only the fake-CAB rule; 0 hits on 34 benign / unrelated PE files (including the genuine signed OneDrive `Installer.exe` and the python.org embeddable distribution); a real CAB (uncompressed and MSZIP) does not match the fake-CAB rule. Full log: [../../tests/RESULTS.md](../../tests/RESULTS.md).
+Run `tests/run_yara_tests.py` (see the top README). Reference samples must match exactly the rules listed above; benign and unrelated PE files must not match. Recorded runs: [`tests/RESULTS.md`](../../tests/RESULTS.md).
 
 ## Notes
 

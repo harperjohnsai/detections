@@ -10,15 +10,15 @@ Rules for REVSTEALER (Elastic REF2859) as seen in the "Setup Center" campaign ([
 
 ## Samples (SHA-256)
 
-| Artefact | SHA-256 | MalwareBazaar |
-|---|---|---|
-| REVSTEALER payload (RC4-decrypted `localdata.db`) | `c6859833796f682e3598f65865a2853c3ecc118d7f2fb01defc24cf328e3ecad` | [entry](https://bazaar.abuse.ch/sample/c6859833796f682e3598f65865a2853c3ecc118d7f2fb01defc24cf328e3ecad/) |
-| `abe_helper.dll` (ChaCha20-decrypted from the payload) | `3c6330d06b57d18026efd5745245cc19e1c67983d957f42ff6a821e2b7f71632` | [entry](https://bazaar.abuse.ch/sample/3c6330d06b57d18026efd5745245cc19e1c67983d957f42ff6a821e2b7f71632/) |
-| payload with strings decrypted (artefact) | `0a48e7ed139a1cbe38c4ccb98edf2ff99bc53933f07942fa02fcf054dc14e0a6` | not uploaded |
+| Artefact | SHA-256 |
+|---|---|
+| REVSTEALER payload (RC4-decrypted `localdata.db`) | `c6859833796f682e3598f65865a2853c3ecc118d7f2fb01defc24cf328e3ecad` |
+| `abe_helper.dll` (ChaCha20-decrypted from the payload) | `3c6330d06b57d18026efd5745245cc19e1c67983d957f42ff6a821e2b7f71632` |
+| payload with strings decrypted (artefact) | `0a48e7ed139a1cbe38c4ccb98edf2ff99bc53933f07942fa02fcf054dc14e0a6` |
 
-## Test results (2026-11-13)
+## Testing
 
-yara-python 4.5.4 and YARA-X 1.23.0: the payload matches only `REVSTEALER_x64_Core_SetupCenter`; the helper DLL matches only `REVSTEALER_ABE_Helper_DLL`; the strings-decrypted artefact matches `REVSTEALER_x64_Core_SetupCenter` + `REVSTEALER_Decrypted_Strings_Memory`; 0 hits on 34 benign / unrelated PE files. Full log: [../../tests/RESULTS.md](../../tests/RESULTS.md).
+Run `tests/run_yara_tests.py` (see the top README). Reference samples must match exactly the rules listed above; benign and unrelated PE files must not match. Recorded runs: [`tests/RESULTS.md`](../../tests/RESULTS.md).
 
 ## Notes
 

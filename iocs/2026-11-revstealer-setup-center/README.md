@@ -26,7 +26,9 @@ Static analysis only; no sample was executed and no attacker infrastructure or d
 | `abe_helper.dll` | `3c6330d06b57d18026efd5745245cc19e1c67983d957f42ff6a821e2b7f71632` | [MalwareBazaar](https://bazaar.abuse.ch/sample/3c6330d06b57d18026efd5745245cc19e1c67983d957f42ff6a821e2b7f71632/) |
 | macOS stage-2 Mach-O | `2b4f61c274bf8e4a79cf77e7b36d18d1dd265e8e894f5f2b6d8babc6323d556a` | [MalwareBazaar](https://bazaar.abuse.ch/sample/2b4f61c274bf8e4a79cf77e7b36d18d1dd265e8e894f5f2b6d8babc6323d556a/) |
 
-ThreatFox: no entries submitted by this project for this case. Video: https://youtu.be/UBGt4gP53wU (ClickFix episode, case 3).
+ThreatFox: no entries submitted by this project for this case. Related video: https://youtu.be/UBGt4gP53wU (ClickFix episode, case 3). Combined IOC gist: https://gist.github.com/harperjohnsai/1f9053f7450c99ea4c1a4ece91876fc9
+
+Status: 5 Sigma rules submitted to SigmaHQ (https://github.com/SigmaHQ/sigma/pull/6613). YARA rules not yet deployed to YARAhub (abuse.ch account link pending).
 
 ## Files
 

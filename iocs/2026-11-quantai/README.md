@@ -15,12 +15,14 @@ Static analysis only; nobody connected to the attacker's servers. Not establishe
 - `stservice.lnk` in the Startup folder. If NetSupport is not used in your environment, block it by publisher or hash.
 
 ## Detections
-No rules yet (see the roadmap in the top README). The IOC set is the deliverable.
+No rules for this case yet; the IOC set is the deliverable.
 
 ## Samples
 None of the hashes in this case were on MalwareBazaar at the time of checking, and none were submitted by this project. The signed NetSupport binaries (`stservice.exe`, `vh.exe`) are legitimate software abused by the operator, so hash-blocking them alone is not advised. ThreatFox: no entries submitted by this project for this case.
 
 Video: https://youtu.be/FjaMrGFCiHs (scheduled for 2026-11-26).
+
+IOC gist: https://gist.github.com/harperjohnsai/2353a13490642a9dbb77e42823ad6eef
 
 ## Files
 
