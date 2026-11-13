@@ -1,9 +1,10 @@
-title: REVSTEALER via the "Setup Center" DLL-sideload chain
+title: '"Setup Center" lures: REVSTEALER (Windows DLL sideload) and MioLab (macOS ClickFix)'
 date: 2026-11-13
-families: [REVSTEALER, REF2859]
+families: [REVSTEALER, REF2859, MioLab]
 rules:
   - yara/setup-center-loader
   - yara/revstealer
+  - yara/miolab-macos
   - sigma
 video: null
 related_videos:
@@ -12,6 +13,7 @@ gist: null
 campaigns: [REF2859]
 malpedia: [RevStealer]
 references:
+  - {source_name: Palo Alto Networks Unit 42, url: "https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/47b53a06affd56b4fefbbcb1fb9fdaf88e3cca5e/2026-06-20-ClickFix-campaign-delivers-macOS-infostealer-via-DMG.txt"}
   - {source_name: Elastic Security Labs, url: "https://www.elastic.co/security-labs/threat-command/revstealer-credential-harvesting-infostealer"}
   - {source_name: MalwareBazaar, url: "https://bazaar.abuse.ch/sample/2e3bdd68f85755b02caa42ec0228fb8a56c964479c4f085eae67569d67440e49/"}
   - {source_name: MalwareBazaar, url: "https://bazaar.abuse.ch/sample/b371d2e01562fc0d29072ac1a56969628b6408f2368c056c3158f4fe0c609960/"}

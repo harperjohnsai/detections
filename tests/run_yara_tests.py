@@ -22,6 +22,19 @@ EXPECTED = {
     'c6859833796f682e3598f65865a2853c3ecc118d7f2fb01defc24cf328e3ecad': ['REVSTEALER_x64_Core_SetupCenter'],                # inner payload
     '3c6330d06b57d18026efd5745245cc19e1c67983d957f42ff6a821e2b7f71632': ['REVSTEALER_ABE_Helper_DLL'],                       # ABE helper DLL
     '0a48e7ed139a1cbe38c4ccb98edf2ff99bc53933f07942fa02fcf054dc14e0a6': ['REVSTEALER_Decrypted_Strings_Memory', 'REVSTEALER_x64_Core_SetupCenter'],  # strings-decrypted artefact
+    # MioLab macOS chain (yara/miolab-macos)
+    '2b4f61c274bf8e4a79cf77e7b36d18d1dd265e8e894f5f2b6d8babc6323d556a': ['MAL_macOS_MioLab_Cpp_Stealer_ConfigDecrypt'],  # stage-2 universal Mach-O
+    '49de3b526ee449d9a28f73d85af2fb0b40d721b45693d80119f8db47d4bba51a': ['MAL_macOS_MioLab_Cpp_Stealer_ConfigDecrypt'],  # x86_64 slice
+    'f9a80a964748880116c22e1353072b31a966a5744e930d7a1bd376cf75ba5532': ['MAL_macOS_MioLab_Cpp_Stealer_ConfigDecrypt'],  # arm64 slice
+    '5a2bef675eae4b80db636a17f5a2ef1e67ee56c4b841ef995ce3ce52a739be5e': ['MAL_macOS_MioLab_Agent_Backdoor_Clipper'],      # agent, universal
+    '8281c8dc3f595064d5edad2ab479727358ac84af83ffb5604ab56929a5cd0c1b': ['MAL_macOS_MioLab_Agent_Backdoor_Clipper'],      # agent arm64 slice
+    '77a41f1a86f3bd778fd4febda4d2dc7ff77b53ec16f5e1ea52c29f2fc642d1ee': ['MAL_macOS_MioLab_Agent_Backdoor_Clipper'],      # agent x86_64 slice
+    'b6e9f44926dda38bdd080e6cf23001546aee34f4b5f5eaf94e54ebcd73afa44a': ['MAL_JS_MioLab_Trojanised_LedgerLive_SeedPhrase_Modal', 'MAL_MioLab_Trojanised_Wallet_Locale_Strings'],  # Ledger app.asar
+    '05ca25705ce7acffc20bbbf74ed4ec9fcd0b9a19307cb08f46e2d73d53b8802b': ['MAL_JS_MioLab_Trojanised_TrezorSuite_SeedPhrase_Modal'],  # Trezor app.asar
+    'c383789cf9809290ae2a194ed44176e4fc36fbceb0260958e481a8562b0f16c9': ['SUSP_Electron_AppUpdate_Yml_NonVendor_Feed_Wallet'],  # Ledger app-update.yml
+    '31a4f6a8aecd2b18107dfff5e68581804a68e9d61fc68e3ccf01d54225ae5cde': ['HUNT_macOS_MioLab_Cpp_Stealer_Plaintext_Artifacts'],  # decoded string dump (artefact)
+    '978c98b401a6124e0522043b983911f7f57fc7b64868164cc158439ae5b07dd9': ['HUNT_macOS_MioLab_Agent_Plaintext_Artifacts'],       # decoded agent strings (artefact)
+    '3bf97f7e851e3bfb9c16872a55364af1e6a95455d24b8d25e8dfc57e4c587a56': ['HUNT_MioLab_Agent_C2_Body'],                          # sandbox curl command lines (artefact)
 }
 ok = True
 
@@ -86,7 +99,7 @@ def main():
     a = ap.parse_args()
     E = Engines()
     check(E.eng, 'at least one YARA engine available')
-    check(len(E.files) >= 5, f'{len(E.files)} rule files compiled together')
+    check(len(E.files) >= 14, f'{len(E.files)} rule files compiled together')
     for name in E.eng:
         print('ENGINE', name)
     if a.compile_only:

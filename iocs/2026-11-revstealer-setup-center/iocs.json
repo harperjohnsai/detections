@@ -2,7 +2,7 @@
  "_warning": "MACHINE-READABLE, NOT DEFANGED: values are live indicators. Do not browse or fetch them.",
  "case": "2026-11-revstealer-setup-center",
  "license": "CC0-1.0",
- "count": 119,
+ "count": 143,
  "iocs": [
   {
    "type": "url",
@@ -1074,6 +1074,222 @@
    "verdict": "candidate",
    "confidence": "low",
    "source": "analyst triage"
+  },
+  {
+   "type": "url",
+   "value": "https://isosissisisossfiof.com/api/agent/download",
+   "first_seen": "2026-11-13",
+   "role": "C1 macOS MioLab stage: agent ~/.hlpr/.agnt served 2026-11-13 (200, 330208 B, sha256 5a2bef67...). lewokodwqko.icu same path = 200 empty; shopguoerve.pro 522; dfsjfisafosdikfos.info 521",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "analyst fetch"
+  },
+  {
+   "type": "url",
+   "value": "https://isosissisisossfiof.com/api/download/app-bundle?name=ledger-wallet&user_id=124&arch=arm64",
+   "first_seen": "2026-11-13",
+   "role": "C1 macOS MioLab stage: trojanised Ledger Wallet 2.133.0 zip served 2026-11-13 (251393464 B, sha256 c69c55e3...)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "analyst fetch"
+  },
+  {
+   "type": "url",
+   "value": "https://isosissisisossfiof.com/api/download/app-bundle?name=trezor-suite&user_id=124&arch=arm64",
+   "first_seen": "2026-11-13",
+   "role": "C1 macOS MioLab stage: trojanised Trezor Suite 26.3.3 dev-build zip served 2026-11-13 (150487132 B, sha256 96b91784...)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "analyst fetch"
+  },
+  {
+   "type": "url",
+   "value": "https://owqkoqoqoqoqoqqoqoo.info/api/trezor/seed",
+   "first_seen": "2026-11-13",
+   "role": "C1 MioLab seed-phrase exfil from trojanised Trezor Suite: POST JSON {seedPhrase,userId} (12/20/24 words, BIP39/SLIP39)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis"
+  },
+  {
+   "type": "sha256",
+   "value": "96b9178496ed37d63e34b7df925f79fd6a7acb4e78bf551acd978b0cb8c7097c",
+   "first_seen": "2026-11-13",
+   "role": "C1 MioLab trojanised Trezor Suite 26.3.3 bundle zip (io.trezor.TrezorSuite.dev, ad-hoc, seed-phrase phishing)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "analyst fetch"
+  },
+  {
+   "type": "sha256",
+   "value": "05ca25705ce7acffc20bbbf74ed4ec9fcd0b9a19307cb08f46e2d73d53b8802b",
+   "first_seen": "2026-11-13",
+   "role": "C1 trojanised Trezor Suite Contents/Resources/app.asar",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis"
+  },
+  {
+   "type": "sha256",
+   "value": "1bea6a55625802bf4cdcbe5e70fa323286206df8f498bd3de80b0095d0eb8256",
+   "first_seen": "2026-11-13",
+   "role": "C1 trojanised Trezor Suite build/main.8354a95b.js (injected recovery-phrase form)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis"
+  },
+  {
+   "type": "sha256",
+   "value": "261e7c9d7dd92b5353a3f73df7c362359ddc7dea63d7d49d98b40a08115868d0",
+   "first_seen": "2026-11-13",
+   "role": "C1 trojanised Trezor Suite dist/app.js (IPC user-data/get-id reads ~/.hlpr/.ownrid)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis"
+  },
+  {
+   "type": "sha256",
+   "value": "bc5533f8fdcb9866a4abb0646b97daafa28c46e287c494391801c5acc7ad16f4",
+   "first_seen": "2026-11-13",
+   "role": "C1 trojanised Trezor Suite Contents/MacOS/Trezor Suite (arm64, ad-hoc)",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "static analysis"
+  },
+  {
+   "type": "url",
+   "value": "https://dfsjfisafosdikfos.info/api/agnt",
+   "first_seen": "2026-11-13",
+   "role": "C1 MioLab agent C2 (only C2 hard-coded in .agnt): POST text/plain via curl every 10 s, body custom-alphabet hex starting OOzVBOVS; origin 521 on 2026-11-13",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis; VirusTotal sandbox (public)"
+  },
+  {
+   "type": "url",
+   "value": "https://owqkoqoqoqoqoqqoqoo.info/api/ledger/seed",
+   "first_seen": "2026-11-13",
+   "role": "C1 MioLab seed-phrase exfil from trojanised Ledger Wallet: POST JSON {seedPhrase,userId}",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis"
+  },
+  {
+   "type": "domain",
+   "value": "owqkoqoqoqoqoqqoqoo.info",
+   "first_seen": "2026-11-13",
+   "role": "C1 MioLab seed-phrase exfil domain (trojanised Ledger app). PDR Ltd, created 2026-02-10; clientHold/suspended (NS suspended-domain.com) as of 2026-11-13",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis; RDAP"
+  },
+  {
+   "type": "domain",
+   "value": "miov2iaiaoubqosiqoiajwowiwjso.online",
+   "first_seen": "2026-11-13",
+   "role": "C1 MioLab update feed in trojanised Ledger app Resources/app-update.yml (electron-updater generic). WebNic, created 2025-11-20; clientHold as of 2026-11-13",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis; RDAP"
+  },
+  {
+   "type": "domain",
+   "value": "mioisiskwowiwjowuwjwolab.club",
+   "first_seen": "2026-11-13",
+   "role": "Probable MioLab panel (urlscan /login 2026-10-20, title owqkoqoqoqoqoqqoqoo.info). WebNic, created 2025-11-20 17:22 (same day as update domain), Cloudflare; active 2026-11-13",
+   "verdict": "candidate",
+   "confidence": "medium",
+   "source": "urlscan public search; RDAP; DoH"
+  },
+  {
+   "type": "sha256",
+   "value": "5a2bef675eae4b80db636a17f5a2ef1e67ee56c4b841ef995ce3ce52a739be5e",
+   "first_seen": "2026-11-13",
+   "role": "C1 MioLab agent ~/.hlpr/.agnt (universal Mach-O, ad-hoc id macos-agent-55554944...; backdoor: reverse shell /bin/zsh -i, self-update, password/ownrid/system_profiler tasks, regex clipboard hijacker). VT first seen 2026-10-07",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "analyst fetch"
+  },
+  {
+   "type": "sha256",
+   "value": "8281c8dc3f595064d5edad2ab479727358ac84af83ffb5604ab56929a5cd0c1b",
+   "first_seen": "2026-11-13",
+   "role": "C1 MioLab agent arm64 slice",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis"
+  },
+  {
+   "type": "sha256",
+   "value": "77a41f1a86f3bd778fd4febda4d2dc7ff77b53ec16f5e1ea52c29f2fc642d1ee",
+   "first_seen": "2026-11-13",
+   "role": "C1 MioLab agent x86_64 slice",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis"
+  },
+  {
+   "type": "sha256",
+   "value": "c69c55e37a3b7325a7892d9af6ce91e2e719b32a40c6c9e07c7222f1d876e95a",
+   "first_seen": "2026-11-13",
+   "role": "C1 MioLab trojanised Ledger Wallet 2.133.0 bundle zip (ad-hoc re-signed, seed-phrase phishing modal)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "analyst fetch"
+  },
+  {
+   "type": "sha256",
+   "value": "b6e9f44926dda38bdd080e6cf23001546aee34f4b5f5eaf94e54ebcd73afa44a",
+   "first_seen": "2026-11-13",
+   "role": "C1 trojanised Ledger Wallet Contents/Resources/app.asar",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis"
+  },
+  {
+   "type": "sha256",
+   "value": "979e1ba3034f153f2c0b3b91cdc027c281cecbd5234fa69f54ce716a6568dd6a",
+   "first_seen": "2026-11-13",
+   "role": "C1 trojanised Ledger Wallet .webpack/renderer.bundle.js (injected MODAL_GENUINE_CHECK + MODAL_SEED_PHRASE)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis"
+  },
+  {
+   "type": "sha256",
+   "value": "d067af16f5c101025913410c48b5327b37e8aa236903f6b52122c164930a3cc5",
+   "first_seen": "2026-11-13",
+   "role": "C1 trojanised Ledger Wallet Contents/MacOS/Ledger Wallet (Electron stub, ad-hoc re-signed)",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "static analysis"
+  },
+  {
+   "type": "filename",
+   "value": "~/.hlpr/.guid",
+   "first_seen": "2026-11-13",
+   "role": "C1 MioLab agent id file (task 2); also ~/.hlpr/.upd (self-update temp) and ~/.hlpr/.passwd (password read by task 4)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis"
+  },
+  {
+   "type": "filename",
+   "value": "/Applications/Ledger Wallet.app/Contents/Resources/app-update.yml",
+   "first_seen": "2026-11-13",
+   "role": "Trojanised Ledger app indicator: generic feed url not on ledger.com/ledger.app; bundle ad-hoc signed without TeamIdentifier",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis"
+  },
+  {
+   "type": "process",
+   "value": "curl --fail --header \"Content-Type: text/plain\" --data \"OOzVBOVS...",
+   "first_seen": "2026-11-13",
+   "role": "C1 MioLab agent beacon command line (parent ~/.hlpr/.agnt); also /bin/zsh -i on a TCP socket (reverse shell) and system_profiler -json SPSoftwareDataType SPHardwareDataType",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis; VirusTotal sandbox (public)"
   }
  ]
 }

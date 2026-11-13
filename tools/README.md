@@ -6,6 +6,8 @@ Static helpers used to derive the rules. They parse and decrypt files only; noth
 |---|---|
 | [`setup-center-extractor/`](setup-center-extractor/) | recovers the config of the proxy `version.dll` from code patterns and RC4-decrypts `localdata.db` into the inner PE |
 | [`revstealer-unpacker/`](revstealer-unpacker/) | decrypts REVSTEALER's strings (CPU emulation of its own leaf routines), the embedded helper DLL and the AES-256-CBC C2 config |
+| [`miolab-macos-config-extractor/`](miolab-macos-config-extractor/) | parses the MioLab macOS stealer's rotating-XOR config blob (affiliate id, build tag, C2 hosts, dialogs) from a Mach-O |
+| [`miolab-agent-wire-decoder/`](miolab-agent-wire-decoder/) | decodes the beacon body of the MioLab macOS agent from logged curl command lines |
 | [`build_index.py`](build_index.py) | generates `INDEX.md` from `iocs/*/case.yml` (`--check` in CI) |
 | [`export_iocs.py`](export_iocs.py) | generates `iocs/<case>/stix2.json` (STIX 2.1) and `iocs/<case>/misp_event.json` (MISP) from `iocs.json` + `case.yml`; deterministic (uuid5 ids), `--check` fails on stale files |
 

@@ -6,5 +6,6 @@ One folder per family or campaign. Every rule file carries `author`, `date`, a `
 |---|---|
 | [`setup-center-loader/`](setup-center-loader/) | proxy `version.dll` sideload loader, fake-CAB payload container |
 | [`revstealer/`](revstealer/) | REVSTEALER x64 core, Chrome App-Bound-Encryption helper DLL, decrypted-strings (memory) |
+| [`miolab-macos/`](miolab-macos/) | MioLab macOS stealer (C++ build) and agent, trojanised Ledger / Trezor apps, hunting rules for decrypted artefacts |
 
 Test: `python tests/run_yara_tests.py --compile-only` (CI) or with `--samples` / `--negatives` (see the top README).
