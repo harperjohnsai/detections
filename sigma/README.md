@@ -1,6 +1,6 @@
 # sigma/
 
-Sigma rules in SigmaHQ-style category folders. File names and UUIDs match the versions proposed upstream to SigmaHQ/sigma (`rules-emerging-threats/2026/Malware/RevStealer/`); see CHANGELOG.md for pull request links.
+Sigma rules in SigmaHQ-style category folders. File names and UUIDs match the versions proposed upstream to SigmaHQ/sigma (`rules-emerging-threats/2026/Malware/RevStealer/` and `.../MioLab/`); see CHANGELOG.md for pull request links.
 
 | Rule | File | Level |
 |---|---|---|
@@ -9,6 +9,10 @@ Sigma rules in SigmaHQ-style category folders. File names and UUIDs match the ve
 | Potential RevStealer Telegraph Dead Drop Resolver Request - Proxy | [proxy/proxy_malware_revstealer_telegraph_dead_drop.yml](proxy/proxy_malware_revstealer_telegraph_dead_drop.yml) | medium |
 | Potential RevStealer Polygon RPC Dead Drop Resolver Query By Non-Browser | [dns_query/dns_query_win_malware_revstealer_polygon_rpc_non_browser.yml](dns_query/dns_query_win_malware_revstealer_polygon_rpc_non_browser.yml) | medium |
 | Renamed OneDrive Client Execution | [process_creation/proc_creation_win_renamed_onedrive.yml](process_creation/proc_creation_win_renamed_onedrive.yml) | medium |
+| Suspicious MioLab Agent Process Activity | [process_creation/proc_creation_macos_malware_miolab_agent_activity.yml](process_creation/proc_creation_macos_malware_miolab_agent_activity.yml) | high |
+| Suspicious MioLab LaunchAgent Or Staging File Creation | [file_event/file_event_macos_malware_miolab_persistence_indicators.yml](file_event/file_event_macos_malware_miolab_persistence_indicators.yml) | high |
+| DNS Query To MioLab Stealer Domains | [dns/net_dns_miolab_stealer_c2_domains.yml](dns/net_dns_miolab_stealer_c2_domains.yml) | high |
+| Potential MioLab Stealer C2 Communication | [proxy/proxy_malware_miolab_c2_communication.yml](proxy/proxy_malware_miolab_c2_communication.yml) | medium |
 | Suspicious Unsigned Version.dll Loaded From User-Writable Folder (narrower hunting variant; SigmaHQ's generic side-load rule already lists `version.dll`, so it is not proposed upstream) | [image_load/image_load_win_susp_unsigned_version_dll_user_path.yml](image_load/image_load_win_susp_unsigned_version_dll_user_path.yml) | high |
 
 Derived from static reversing; no regression EVTX is included because no live detonation was possible. Validation: `sigma check --fail-on-error --fail-on-issues` with the SigmaHQ validators, plus `tests/test_sigma_synthetic.py` (hand-made events).

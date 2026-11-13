@@ -98,3 +98,7 @@ PASS [yara-x 1.23.0] negative corpus: 1683 files, 0 hits []
 SKIP synthetic CAB test (pip install cabarchive)
 ALL CHECKS PASS
 ```
+
+## Sigma, MioLab macOS rules added (2026-11-13)
+
+`tests/test_sigma_synthetic.py`: 16 new hand-made events for the four MioLab rules (fire and silent cases), all PASS. On a SigmaHQ master 54967d6 checkout with the four files under `rules-emerging-threats/2026/Malware/MioLab/`: `python tests/test_logsource.py` OK (3 tests), `python tests/test_rules.py` OK (11 tests), `sigma check --fail-on-error --fail-on-issues --validation-config tests/sigma_cli_conf.yml` with the SigmaHQ validators: 0 errors, 0 issues. Upstream pull request: https://github.com/SigmaHQ/sigma/pull/6614.

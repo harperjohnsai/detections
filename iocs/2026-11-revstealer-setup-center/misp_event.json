@@ -2267,6 +2267,38 @@
         "first_seen": "2026-11-13T00:00:00.000000+00:00"
       },
       {
+        "uuid": "02267522-a62f-503c-aa70-0fae382822cd",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://bazaar.abuse.ch/sample/5a2bef675eae4b80db636a17f5a2ef1e67ee56c4b841ef995ce3ce52a739be5e/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "MalwareBazaar entry (MioLab agent .agnt), uploaded earlier by another reporter [type: reference; verdict: malicious; source: analyst triage]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-13T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "d1a19935-a9a0-519a-83bc-39e804fe5d06",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://bazaar.abuse.ch/sample/96b9178496ed37d63e34b7df925f79fd6a7acb4e78bf551acd978b0cb8c7097c/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "MalwareBazaar entry (trojanised Trezor Suite bundle zip), uploaded by harperjohns [type: reference; verdict: malicious; source: analyst triage]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-13T00:00:00.000000+00:00"
+      },
+      {
         "uuid": "6fc3c21d-da54-5382-9a11-583cfe33d9da",
         "type": "link",
         "category": "External analysis",

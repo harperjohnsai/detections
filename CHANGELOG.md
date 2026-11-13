@@ -22,3 +22,8 @@
 ### 2026-11-13 (STIX 2.1 and MISP exports)
 - `tools/export_iocs.py` generates `stix2.json` (STIX 2.1 bundle: Identity, Report, Indicators, Malware, `indicates` relationships, TLP:CLEAR) and `misp_event.json` (MISP event) for every case with an `iocs.json`; ids are deterministic. `--check` runs in CI.
 - `tests/validate_exports.py` validates the bundles with OASIS `stix2-validator` and `stix2` and loads the events with PyMISP. `case.yml` gained optional `campaigns`, `malpedia`, `references`, `indicates` keys.
+
+### 2026-11-13 (MioLab macOS)
+- Added `yara/miolab-macos/` (9 YARA rules: C++ stealer, agent, trojanised Ledger/Trezor apps, three hunting rules), `tools/miolab-macos-config-extractor`, `tools/miolab-agent-wire-decoder`, 24 IOC rows in `iocs/2026-11-revstealer-setup-center/`, and four Sigma rules (`sigma/`): agent process, persistence files, C2 domains, C2 proxy URIs. Test results are in `tests/RESULTS.md`; `tests/test_sigma_synthetic.py` gained `contains|all` support.
+- All nine YARA rules deployed to YARAhub (author Harper Johns, CC BY 4.0, TLP:CLEAR) and listed by `recent_yararules`.
+- SigmaHQ/sigma PR for the four MioLab rules: https://github.com/SigmaHQ/sigma/pull/6614

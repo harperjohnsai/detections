@@ -28,7 +28,7 @@ Hunting pivots (macOS): a process whose image or parent is `~/.hlpr/.agnt`; `~/L
 
 ## Detections
 - YARA: [`yara/setup-center-loader`](../../yara/setup-center-loader/), [`yara/revstealer`](../../yara/revstealer/), [`yara/miolab-macos`](../../yara/miolab-macos/)
-- Sigma: [`sigma/`](../../sigma/) (5 rules submitted to SigmaHQ, 1 extra hunting rule)
+- Sigma: [`sigma/`](../../sigma/) (5 RevStealer + 4 MioLab rules submitted to SigmaHQ, 1 extra hunting rule)
 - Tools: [`tools/`](../../tools/)
 
 ## Samples on MalwareBazaar (reporter `harperjohns`)
@@ -39,10 +39,13 @@ Hunting pivots (macOS): a process whose image or parent is `~/.hlpr/.agnt`; `~/L
 | REVSTEALER payload | `c6859833796f682e3598f65865a2853c3ecc118d7f2fb01defc24cf328e3ecad` | [MalwareBazaar](https://bazaar.abuse.ch/sample/c6859833796f682e3598f65865a2853c3ecc118d7f2fb01defc24cf328e3ecad/) |
 | `abe_helper.dll` | `3c6330d06b57d18026efd5745245cc19e1c67983d957f42ff6a821e2b7f71632` | [MalwareBazaar](https://bazaar.abuse.ch/sample/3c6330d06b57d18026efd5745245cc19e1c67983d957f42ff6a821e2b7f71632/) |
 | macOS stage-2 Mach-O | `2b4f61c274bf8e4a79cf77e7b36d18d1dd265e8e894f5f2b6d8babc6323d556a` | [MalwareBazaar](https://bazaar.abuse.ch/sample/2b4f61c274bf8e4a79cf77e7b36d18d1dd265e8e894f5f2b6d8babc6323d556a/) |
+| MioLab agent `.agnt` (universal Mach-O) | `5a2bef675eae4b80db636a17f5a2ef1e67ee56c4b841ef995ce3ce52a739be5e` | [MalwareBazaar](https://bazaar.abuse.ch/sample/5a2bef675eae4b80db636a17f5a2ef1e67ee56c4b841ef995ce3ce52a739be5e/) (uploaded earlier by another reporter) |
+| Trojanised Trezor Suite 26.3.3 bundle zip | `96b9178496ed37d63e34b7df925f79fd6a7acb4e78bf551acd978b0cb8c7097c` | [MalwareBazaar](https://bazaar.abuse.ch/sample/96b9178496ed37d63e34b7df925f79fd6a7acb4e78bf551acd978b0cb8c7097c/) |
+| Trojanised Ledger Wallet 2.133.0 bundle zip | `c69c55e37a3b7325a7892d9af6ce91e2e719b32a40c6c9e07c7222f1d876e95a` | not on MalwareBazaar when this was written (hash only) |
 
 ThreatFox: no entries submitted by this project for this case. Related video: https://youtu.be/UBGt4gP53wU (ClickFix episode, case 3). Combined IOC gist: https://gist.github.com/harperjohnsai/1f9053f7450c99ea4c1a4ece91876fc9
 
-Status: 5 Sigma rules submitted to SigmaHQ (https://github.com/SigmaHQ/sigma/pull/6613). All YARA rules are on YARAhub (author Harper Johns).
+Status: 5 RevStealer Sigma rules submitted to SigmaHQ (https://github.com/SigmaHQ/sigma/pull/6613), 4 MioLab macOS rules submitted (https://github.com/SigmaHQ/sigma/pull/6614). All YARA rules are on YARAhub (author Harper Johns).
 
 ## Files
 

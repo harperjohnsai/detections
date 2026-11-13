@@ -2,7 +2,7 @@
  "_warning": "MACHINE-READABLE, NOT DEFANGED: values are live indicators. Do not browse or fetch them.",
  "case": "2026-11-revstealer-setup-center",
  "license": "CC0-1.0",
- "count": 143,
+ "count": 145,
  "iocs": [
   {
    "type": "url",
@@ -1290,6 +1290,24 @@
    "verdict": "malicious",
    "confidence": "high",
    "source": "static analysis; VirusTotal sandbox (public)"
+  },
+  {
+   "type": "reference",
+   "value": "https://bazaar.abuse.ch/sample/5a2bef675eae4b80db636a17f5a2ef1e67ee56c4b841ef995ce3ce52a739be5e/",
+   "first_seen": "2026-11-13",
+   "role": "MalwareBazaar entry (MioLab agent .agnt), uploaded earlier by another reporter",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "analyst triage"
+  },
+  {
+   "type": "reference",
+   "value": "https://bazaar.abuse.ch/sample/96b9178496ed37d63e34b7df925f79fd6a7acb4e78bf551acd978b0cb8c7097c/",
+   "first_seen": "2026-11-13",
+   "role": "MalwareBazaar entry (trojanised Trezor Suite bundle zip), uploaded by harperjohns",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "analyst triage"
   }
  ]
 }
