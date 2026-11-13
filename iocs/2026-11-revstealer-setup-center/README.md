@@ -41,7 +41,7 @@ Hunting pivots (macOS): a process whose image or parent is `~/.hlpr/.agnt`; `~/L
 | macOS stage-2 Mach-O | `2b4f61c274bf8e4a79cf77e7b36d18d1dd265e8e894f5f2b6d8babc6323d556a` | [MalwareBazaar](https://bazaar.abuse.ch/sample/2b4f61c274bf8e4a79cf77e7b36d18d1dd265e8e894f5f2b6d8babc6323d556a/) |
 | MioLab agent `.agnt` (universal Mach-O) | `5a2bef675eae4b80db636a17f5a2ef1e67ee56c4b841ef995ce3ce52a739be5e` | [MalwareBazaar](https://bazaar.abuse.ch/sample/5a2bef675eae4b80db636a17f5a2ef1e67ee56c4b841ef995ce3ce52a739be5e/) (uploaded earlier by another reporter) |
 | Trojanised Trezor Suite 26.3.3 bundle zip | `96b9178496ed37d63e34b7df925f79fd6a7acb4e78bf551acd978b0cb8c7097c` | [MalwareBazaar](https://bazaar.abuse.ch/sample/96b9178496ed37d63e34b7df925f79fd6a7acb4e78bf551acd978b0cb8c7097c/) |
-| Trojanised Ledger Wallet 2.133.0 bundle zip | `c69c55e37a3b7325a7892d9af6ce91e2e719b32a40c6c9e07c7222f1d876e95a` | not on MalwareBazaar when this was written (hash only) |
+| Trojanised Ledger Wallet 2.133.0 bundle zip | `c69c55e37a3b7325a7892d9af6ce91e2e719b32a40c6c9e07c7222f1d876e95a` | zip too large for MalwareBazaar; components repack [fe0329ff…](https://bazaar.abuse.ch/sample/fe0329ffb7ba73b5aebd3ece686b5cd8a0cfdcd9fbfaa7694f64c340c1a2b91b/) and trojanised renderer.bundle.js [979e1ba3…](https://bazaar.abuse.ch/sample/979e1ba3034f153f2c0b3b91cdc027c281cecbd5234fa69f54ce716a6568dd6a/) |
 
 ThreatFox: no entries submitted by this project for this case. Related video: https://youtu.be/UBGt4gP53wU (ClickFix episode, case 3). Combined IOC gist: https://gist.github.com/harperjohnsai/1f9053f7450c99ea4c1a4ece91876fc9
 
