@@ -49,8 +49,8 @@ CI ([`.github/workflows/ci.yml`](.github/workflows/ci.yml)) compiles every rule 
 
 ## Distribution status
 
-- **SigmaHQ:** the RevStealer rule set in `sigma/` (5 rules, same file names and UUIDs) was submitted to SigmaHQ/sigma; see [CHANGELOG.md](CHANGELOG.md) for the PR link. The unsigned `version.dll` image_load rule is **not** submitted because SigmaHQ's generic rule `image_load_side_load_from_non_system_location` already lists `version.dll`; it stays here as a narrower hunting variant.
-- **YARAhub (abuse.ch):** each YARA rule already carries the required `yarahub_*` meta (UUID, license, TLPs, reference MD5). Deployment status is tracked in [CHANGELOG.md](CHANGELOG.md).
+- **SigmaHQ:** the RevStealer rule set in `sigma/` (5 rules, same file names and UUIDs) was submitted to SigmaHQ/sigma; PR: https://github.com/SigmaHQ/sigma/pull/6613. The unsigned `version.dll` image_load rule is **not** submitted because SigmaHQ's generic rule `image_load_side_load_from_non_system_location` already lists `version.dll`; it stays here as a narrower hunting variant.
+- **YARAhub (abuse.ch):** each YARA rule already carries the required `yarahub_*` meta (UUID, license, TLPs, reference MD5). Not deployed yet (account link pending); status is tracked in [CHANGELOG.md](CHANGELOG.md).
 
 ## Licenses
 
