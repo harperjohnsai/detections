@@ -166,6 +166,49 @@
         "indicator--c7044ae1-9240-5a14-92de-8a7d3747b25b",
         "indicator--35f2ab75-49e9-5e6e-b14f-238c0a171c78",
         "indicator--2292f01a-d5b0-5dc3-bfed-2430779b02df",
+        "indicator--95ee441e-d127-5c13-a375-8800b2f1d15a",
+        "indicator--915e6a1a-d60b-5806-a566-98fea9d72f79",
+        "indicator--e136d8eb-9a18-54b4-9068-022dc55c0505",
+        "indicator--ff88b33f-6292-5f63-a8e1-220536011741",
+        "indicator--cfcf6c38-826a-5171-864d-9705685a5025",
+        "indicator--c97b1dd0-a617-5e50-9d1a-e14a1a314787",
+        "indicator--5b9c7816-8b16-591a-af70-e98534b212e4",
+        "indicator--8163ddb8-9212-52ff-a0c4-1fbdf278c69d",
+        "indicator--037af742-0aa6-5577-b3af-b9830216ec8d",
+        "indicator--b10780b0-b27f-5bf7-b1b1-adf6016987fc",
+        "indicator--9db42b71-07f4-5c4b-b74a-b789d2ad48fd",
+        "indicator--22734911-a843-5a0d-88ee-6028621772d2",
+        "indicator--b4c847fa-b84a-5582-99ef-cd6331f83cfd",
+        "indicator--c6bbb332-5d8b-5e0a-9127-746f722fbd15",
+        "indicator--b89bcccb-209e-5d9c-a314-df4a316926a7",
+        "indicator--9b151d7b-1fb0-5cd6-bf20-602e3d28712c",
+        "indicator--f804fad3-e7e0-5f46-b08d-2cec24b00dcb",
+        "indicator--6b7f9b78-0239-50c9-9de2-70ed9e0aacb2",
+        "indicator--9ab08b36-b5b1-56d4-87df-8689f74464c5",
+        "indicator--19128c07-a1d1-5f40-becc-1e7e6d56ff4a",
+        "indicator--50d901dc-9b10-5fed-8629-7c829900c206",
+        "indicator--4d1f5c79-cb69-5738-8fc7-217996a422f8",
+        "indicator--6b2dca0f-598e-5254-9594-ccf74b80742d",
+        "indicator--226708e7-c4fb-5caa-8660-0bb316b2190f",
+        "indicator--80fea0d0-429d-58b8-9397-4cb67a1e005f",
+        "indicator--233be16c-b0c9-599b-b528-53d87c8cd230",
+        "indicator--7df45299-c7d9-5908-a4f4-bae9d4ccfbd6",
+        "indicator--274a5841-ce1b-5434-8461-cf688b2da917",
+        "indicator--cb9bd6eb-a92d-5110-93d3-b0e6bc38306d",
+        "indicator--62ad5981-bdea-5363-a498-add87370dd19",
+        "indicator--bccd46d3-7485-53f4-984a-ef0cc6d74e36",
+        "indicator--4eb3d550-f058-5483-84ad-b047d2798665",
+        "indicator--7b4f73a5-d18b-55d3-b84c-37202a97001f",
+        "indicator--9c4f14c2-b7d9-5e19-90d7-896f8ad037cd",
+        "indicator--d9faa284-7dc6-58a4-b70b-f219f9962462",
+        "indicator--7008a279-32d4-5ee2-a1d7-93752f3a64b3",
+        "indicator--9553b327-cf50-5f07-812e-2d6fb98bf846",
+        "indicator--915078ce-8ba1-5b26-9bb0-3e3e1e1091e9",
+        "indicator--bffc1002-bc82-5fe5-83c8-c7426e380236",
+        "indicator--140c59b7-3cb9-5f6d-ab71-90d3c8577b70",
+        "indicator--c77367fe-9469-56a2-94e0-ebc206bca482",
+        "indicator--61062d42-80cd-5b6f-ad98-fe721db95b69",
+        "indicator--db37ee09-356e-5d17-a792-cf027ba4194a",
         "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4",
         "malware--46e426e0-0d53-54e2-af3f-ce8a32537771",
         "campaign--c8ce7541-f584-5fbc-bb44-35d0f2d400d9",
@@ -211,7 +254,22 @@
         "relationship--a8c98020-7bb4-5d38-ab04-bb60c2da3268",
         "relationship--233b7069-df5f-5c5a-b815-737f46034047",
         "relationship--5a66dfad-fdb9-5dba-ba95-7aa0feaa7c2e",
-        "relationship--9b942064-fe2f-56c6-92d7-90d1b987c428"
+        "relationship--9b942064-fe2f-56c6-92d7-90d1b987c428",
+        "relationship--4c9d9996-2564-5484-9300-eb2f223e0771",
+        "relationship--d3bf81ef-4363-560c-a546-a00ca492d465",
+        "relationship--cc384061-e924-5b7f-a666-ab3952392f45",
+        "relationship--c30c4da5-9c6c-56f0-9b07-5889f1a3114c",
+        "relationship--077b4f84-b604-5207-a943-f2a71ed463b4",
+        "relationship--5345c4d1-7413-520e-b451-a751cde07c02",
+        "relationship--a0e35c4d-95dd-52e7-8c83-4373823c8a52",
+        "relationship--ac9c6538-fef9-51d5-bbfc-31a0dcea2332",
+        "relationship--f631040b-d00f-5495-8f20-18d1c2bb70a3",
+        "relationship--a4814ca5-1077-5b2c-a28e-e065747af26b",
+        "relationship--1556d217-2d2c-56f9-becf-4b1f26687f22",
+        "relationship--ac73625b-8425-5e53-9b10-9176f59d84fb",
+        "relationship--0b3ef81a-1db2-5aa5-b5b8-65708236f77d",
+        "relationship--8fd2515a-7cd5-5cd6-b7e7-55ce44edc5a9",
+        "relationship--e06995bf-29ab-534e-aa47-af6f11530d73"
       ],
       "external_references": [
         {
@@ -2013,14 +2071,14 @@
       "type": "indicator",
       "id": "indicator--de4ae303-7ec9-5d96-a8dd-32660c88dac7",
       "name": "0xb6A1834c2F25dD705F18CB2cb17e3713bA8C7E31",
-      "description": "C1 REVSTEALER EtherHiding dead drop (3rd C2 source): eth_call selector 0xb4faed39 via polygon-bor-rpc.publicnode.com; return = ABI string of hex IV||AES-256-CBC host:port. NOT read [verdict: malicious; source: static analysis]",
+      "description": "C1 build 27 REVSTEALER EtherHiding dead drop (3rd C2 source), created 2026-11-05T09:15:25Z by deployer 0x8bAddf05; eth_call selector 0xb4faed39 on a public Polygon RPC; value decrypts to queue.prooutlet58.website:443, identical to the embedded config and the Telegraph page; never re-pointed [verdict: malicious; source: static analysis; eth_call read 2026-11-13; creation tx]",
       "indicator_types": [
         "malicious-activity"
       ],
       "pattern": "[x-polygon-contract:address = '0xb6A1834c2F25dD705F18CB2cb17e3713bA8C7E31']",
       "pattern_type": "stix",
       "pattern_version": "2.1",
-      "valid_from": "2026-11-13T00:00:00.000Z",
+      "valid_from": "2026-11-05T00:00:00.000Z",
       "labels": [
         "c2",
         "dead-drop",
@@ -3200,6 +3258,1080 @@
       ],
       "created": "2026-11-13T00:00:00.000Z",
       "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--95ee441e-d127-5c13-a375-8800b2f1d15a",
+      "name": "proup43.lol",
+      "description": "C1 build 25 REVSTEALER C2 parent domain (registrar Dynadot, created 2026-10-28, Cloudflare NS adaline/drake); report to Dynadot abuse + Cloudflare [verdict: malicious; source: RDAP; static config extraction]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'proup43.lol']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-28T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "domain"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--915e6a1a-d60b-5806-a566-98fea9d72f79",
+      "name": "proxy.proup43.lol",
+      "description": "C1 build 25 REVSTEALER primary C2 (HTTPS :443, behind Cloudflare); embedded config, Polygon contract value and Telegraph page agree [verdict: malicious; source: static config extraction of build-25 payload from GitLab commit 2806c0be]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'proxy.proup43.lol']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-28T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "domain"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--e136d8eb-9a18-54b4-9068-022dc55c0505",
+      "name": "ivorydisplay61.click",
+      "description": "C1 build 26 REVSTEALER C2 parent domain (registrar Dynadot, created 2026-11-02, Cloudflare NS adaline/drake); report to Dynadot abuse + Cloudflare [verdict: malicious; source: RDAP; static config extraction]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'ivorydisplay61.click']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-02T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "domain"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--ff88b33f-6292-5f63-a8e1-220536011741",
+      "name": "job.ivorydisplay61.click",
+      "description": "C1 build 26 REVSTEALER primary C2 (HTTPS :443, behind Cloudflare); embedded config, Polygon contract value and Telegraph page agree; also contacted by a signed fake app in a public sandbox run [verdict: malicious; source: static config extraction of build-26 payload from GitLab commit b5fe3195; sandbox relations]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'job.ivorydisplay61.click']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-02T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "domain"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--cfcf6c38-826a-5171-864d-9705685a5025",
+      "name": "https://telegra.ph/Garden-record-ridge-olive-10-28",
+      "description": "C1 build 25 Telegraph dead drop (page description holds the AES-encrypted C2; decrypts to proxy.proup43.lol:443); block by path, not by host [verdict: malicious; source: Telegraph API read 2026-11-13]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://telegra.ph/Garden-record-ridge-olive-10-28']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-28T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "dead-drop",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--c97b1dd0-a617-5e50-9d1a-e14a1a314787",
+      "name": "https://api.telegra.ph/getPage/Garden-record-ridge-olive-10-28?return_content=false",
+      "description": "C1 build 25 Telegraph dead-drop API read (REVSTEALER fetches the page description); block by path, not by host [verdict: malicious; source: static config extraction]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://api.telegra.ph/getPage/Garden-record-ridge-olive-10-28?return_content=false']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-28T00:00:00.000Z",
+      "labels": [
+        "dead-drop",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--5b9c7816-8b16-591a-af70-e98534b212e4",
+      "name": "https://telegra.ph/Log-canvas-11-02",
+      "description": "C1 build 26 Telegraph dead drop (page description holds the AES-encrypted C2; decrypts to job.ivorydisplay61.click:443); block by path, not by host [verdict: malicious; source: Telegraph API read 2026-11-13]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://telegra.ph/Log-canvas-11-02']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-02T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "dead-drop",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--8163ddb8-9212-52ff-a0c4-1fbdf278c69d",
+      "name": "https://api.telegra.ph/getPage/Log-canvas-11-02?return_content=false",
+      "description": "C1 build 26 Telegraph dead-drop API read (REVSTEALER fetches the page description); block by path, not by host [verdict: malicious; source: static config extraction]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://api.telegra.ph/getPage/Log-canvas-11-02?return_content=false']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-02T00:00:00.000Z",
+      "labels": [
+        "dead-drop",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--037af742-0aa6-5577-b3af-b9830216ec8d",
+      "name": "0x0F6A5efA466ED8f1fB7e148f85B599B433887049",
+      "description": "C1 build 25 REVSTEALER EtherHiding dead drop (3rd C2 source), created 2026-10-28T09:17:35Z by deployer 0x8bAddf05; eth_call selector 0x45ebfce4; value decrypts to proxy.proup43.lol:443; never re-pointed [verdict: malicious; source: static config extraction; eth_call read 2026-11-13; creation tx 0xccce6a94...ef81]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[x-polygon-contract:address = '0x0F6A5efA466ED8f1fB7e148f85B599B433887049']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-28T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "dead-drop",
+        "polygon-contract"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--b10780b0-b27f-5bf7-b1b1-adf6016987fc",
+      "name": "0xDEeA36Ea15a0fd3772A95d56DE74e8a35c968C62",
+      "description": "C1 build 26 REVSTEALER EtherHiding dead drop (3rd C2 source), created 2026-11-02T12:51:37Z by deployer 0x8bAddf05; eth_call selector 0xea9fceca; value decrypts to job.ivorydisplay61.click:443; never re-pointed [verdict: malicious; source: static config extraction; eth_call read 2026-11-13; creation tx 0xdd38db02...f19a]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[x-polygon-contract:address = '0xDEeA36Ea15a0fd3772A95d56DE74e8a35c968C62']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-02T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "dead-drop",
+        "polygon-contract"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--9db42b71-07f4-5c4b-b74a-b789d2ad48fd",
+      "name": "0x8bAddf058D11005360900a0542484eE446F2d494",
+      "description": "REVSTEALER contract-factory deployer EOA: 165 dead-drop contracts from one Solidity template (random selectors) 2026-10-08..2026-11-13, still active; deployed the build 25/26/27 contracts [verdict: malicious; source: creation txs via archive RPC; same template as Elastic REF2859 contracts]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[x-polygon-wallet:address = '0x8bAddf058D11005360900a0542484eE446F2d494']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-08T00:00:00.000Z",
+      "labels": [
+        "dead-drop",
+        "polygon-wallet"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--22734911-a843-5a0d-88ee-6028621772d2",
+      "name": "0xF311c09136Bb7CDc5EC6Bf84E82524e6890e4217",
+      "description": "single-use relay (nonce 1) that sent 65.87 POL to deployer 0x8bAddf05 on 2026-10-08; operator control inferred from the funding tx only [verdict: malicious; source: funding tx 0x0236b590...53bf]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[x-polygon-wallet:address = '0xF311c09136Bb7CDc5EC6Bf84E82524e6890e4217']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-08T00:00:00.000Z",
+      "labels": [
+        "polygon-wallet"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--b4c847fa-b84a-5582-99ef-cd6331f83cfd",
+      "name": "0xb81f4236fA866de7594646A0736DB696810acadb",
+      "description": "upstream funder of the relay (busy unlabelled EOA, ~37.5k txs); may be a service wallet - context only, do not treat as malicious without more evidence [verdict: candidate; source: funding tx 0x63eea2ab...7afe]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[x-polygon-wallet:address = '0xb81f4236fA866de7594646A0736DB696810acadb']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-09-28T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "polygon-wallet"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--c6bbb332-5d8b-5e0a-9127-746f722fbd15",
+      "name": "0x808e0a9def308b4c624e9a2105d12be25e89d6a9",
+      "description": "earlier REVSTEALER contract-deployer EOA (256 contracts 2026-02-22..2026-05-11), deployed 3 contracts published by Elastic (REF2859); funded by an exchange hot wallet [verdict: malicious; source: creation txs of the Elastic-listed contracts]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[x-polygon-wallet:address = '0x808e0a9def308b4c624e9a2105d12be25e89d6a9']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-02-22T00:00:00.000Z",
+      "labels": [
+        "polygon-wallet"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--b89bcccb-209e-5d9c-a314-df4a316926a7",
+      "name": "0x512230fdddcfc7e0d99a9860a6b8048584de574f",
+      "description": "earlier REVSTEALER contract-deployer EOA (411 contracts 2026-06-26..2026-10-05), deployed 4 contracts published by Elastic (REF2859); stopped 3 days before deployer 0x8bAddf05 started [verdict: malicious; source: creation txs of the Elastic-listed contracts]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[x-polygon-wallet:address = '0x512230fdddcfc7e0d99a9860a6b8048584de574f']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-06-26T00:00:00.000Z",
+      "labels": [
+        "polygon-wallet"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--9b151d7b-1fb0-5cd6-bf20-602e3d28712c",
+      "name": "https://gitlab.com/ntaylor6960/dwnlnk/-/raw/2806c0be90c552b60d559642f0c50f098c60ccbb/Installer.zip",
+      "description": "C1 build 25 payload archive (102,791,580 B, VERSION 25.1.0), still downloadable at its commit (pushed 2026-10-28T23:42Z) [verdict: malicious; source: GitLab commit list; member extraction by HTTP range]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://gitlab.com/ntaylor6960/dwnlnk/-/raw/2806c0be90c552b60d559642f0c50f098c60ccbb/Installer.zip']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-28T00:00:00.000Z",
+      "labels": [
+        "delivery",
+        "payload",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--f804fad3-e7e0-5f46-b08d-2cec24b00dcb",
+      "name": "https://gitlab.com/ntaylor6960/dwnlnk/-/raw/b5fe3195445d5de183ee9af3b289eeb0cbd9ffdd/Installer.zip",
+      "description": "C1 build 26 payload archive (102,856,014 B, VERSION 26.1.0), still downloadable at its commit (pushed 2026-11-02T19:02Z) [verdict: malicious; source: GitLab commit list; member extraction by HTTP range]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://gitlab.com/ntaylor6960/dwnlnk/-/raw/b5fe3195445d5de183ee9af3b289eeb0cbd9ffdd/Installer.zip']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-02T00:00:00.000Z",
+      "labels": [
+        "delivery",
+        "payload",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--6b7f9b78-0239-50c9-9de2-70ed9e0aacb2",
+      "name": "https://gitlab.com/ntaylor6960/dwnlnk/-/raw/3df34c7f1f9b30ef97403f50a8da1212cb8b84c6/Installer.zip",
+      "description": "C1 build 27 payload archive at its commit (pushed 2026-11-05T21:40Z; same content as current main, sha256 2e3bdd68...) [verdict: malicious; source: GitLab commit list; sha256 matches the main-branch download]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://gitlab.com/ntaylor6960/dwnlnk/-/raw/3df34c7f1f9b30ef97403f50a8da1212cb8b84c6/Installer.zip']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-05T00:00:00.000Z",
+      "labels": [
+        "payload",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--9ab08b36-b5b1-56d4-87df-8689f74464c5",
+      "name": "https://gitlab.com/ntaylor6960/ableton-live-desktop",
+      "description": "C1 decoy \"desktop helper\" project on the same attacker GitLab account (SEO topics; description links the Telegraph lure hop); contents not reviewed - block by path, not by host [verdict: malicious; source: GitLab public API project list 2026-11-13]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://gitlab.com/ntaylor6960/ableton-live-desktop']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-28T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--19128c07-a1d1-5f40-becc-1e7e6d56ff4a",
+      "name": "https://gitlab.com/ntaylor6960/blender-desktop",
+      "description": "C1 decoy \"desktop helper\" project on the same attacker GitLab account (SEO topics; description links the Telegraph lure hop); contents not reviewed - block by path, not by host [verdict: malicious; source: GitLab public API project list 2026-11-13]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://gitlab.com/ntaylor6960/blender-desktop']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-28T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--50d901dc-9b10-5fed-8629-7c829900c206",
+      "name": "https://gitlab.com/ntaylor6960/capcut-desktop",
+      "description": "C1 decoy \"desktop helper\" project on the same attacker GitLab account (SEO topics; description links the Telegraph lure hop); contents not reviewed - block by path, not by host [verdict: malicious; source: GitLab public API project list 2026-11-13]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://gitlab.com/ntaylor6960/capcut-desktop']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-28T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--4d1f5c79-cb69-5738-8fc7-217996a422f8",
+      "name": "https://gitlab.com/ntaylor6960/cs2-desktop",
+      "description": "C1 decoy \"desktop helper\" project on the same attacker GitLab account (SEO topics; description links the Telegraph lure hop); contents not reviewed - block by path, not by host [verdict: malicious; source: GitLab public API project list 2026-11-13]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://gitlab.com/ntaylor6960/cs2-desktop']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-28T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--6b2dca0f-598e-5254-9594-ccf74b80742d",
+      "name": "https://gitlab.com/ntaylor6960/cyberpunk-2077-desktop",
+      "description": "C1 decoy \"desktop helper\" project on the same attacker GitLab account (SEO topics; description links the Telegraph lure hop); contents not reviewed - block by path, not by host [verdict: malicious; source: GitLab public API project list 2026-11-13]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://gitlab.com/ntaylor6960/cyberpunk-2077-desktop']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-28T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--226708e7-c4fb-5caa-8660-0bb316b2190f",
+      "name": "https://gitlab.com/ntaylor6960/elden-ring-desktop",
+      "description": "C1 decoy \"desktop helper\" project on the same attacker GitLab account (SEO topics; description links the Telegraph lure hop); contents not reviewed - block by path, not by host [verdict: malicious; source: GitLab public API project list 2026-11-13]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://gitlab.com/ntaylor6960/elden-ring-desktop']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-28T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--80fea0d0-429d-58b8-9397-4cb67a1e005f",
+      "name": "https://gitlab.com/ntaylor6960/fl-studio-desktop",
+      "description": "C1 decoy \"desktop helper\" project on the same attacker GitLab account (SEO topics; description links the Telegraph lure hop); contents not reviewed - block by path, not by host [verdict: malicious; source: GitLab public API project list 2026-11-13]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://gitlab.com/ntaylor6960/fl-studio-desktop']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-28T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--233be16c-b0c9-599b-b528-53d87c8cd230",
+      "name": "https://gitlab.com/ntaylor6960/fortnite-desktop",
+      "description": "C1 decoy \"desktop helper\" project on the same attacker GitLab account (SEO topics; description links the Telegraph lure hop); contents not reviewed - block by path, not by host [verdict: malicious; source: GitLab public API project list 2026-11-13]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://gitlab.com/ntaylor6960/fortnite-desktop']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-28T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--7df45299-c7d9-5908-a4f4-bae9d4ccfbd6",
+      "name": "https://gitlab.com/ntaylor6960/gta-5-desktop",
+      "description": "C1 decoy \"desktop helper\" project on the same attacker GitLab account (SEO topics; description links the Telegraph lure hop); contents not reviewed - block by path, not by host [verdict: malicious; source: GitLab public API project list 2026-11-13]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://gitlab.com/ntaylor6960/gta-5-desktop']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-28T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--274a5841-ce1b-5434-8461-cf688b2da917",
+      "name": "https://gitlab.com/ntaylor6960/minecraft-desktop",
+      "description": "C1 decoy \"desktop helper\" project on the same attacker GitLab account (SEO topics; description links the Telegraph lure hop); contents not reviewed - block by path, not by host [verdict: malicious; source: GitLab public API project list 2026-11-13]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://gitlab.com/ntaylor6960/minecraft-desktop']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-28T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--cb9bd6eb-a92d-5110-93d3-b0e6bc38306d",
+      "name": "https://gitlab.com/ntaylor6960/notion-desktop",
+      "description": "C1 decoy \"desktop helper\" project on the same attacker GitLab account (SEO topics; description links the Telegraph lure hop); contents not reviewed - block by path, not by host [verdict: malicious; source: GitLab public API project list 2026-11-13]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://gitlab.com/ntaylor6960/notion-desktop']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-28T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--62ad5981-bdea-5363-a498-add87370dd19",
+      "name": "https://gitlab.com/ntaylor6960/obs-studio-desktop",
+      "description": "C1 decoy \"desktop helper\" project on the same attacker GitLab account (SEO topics; description links the Telegraph lure hop); contents not reviewed - block by path, not by host [verdict: malicious; source: GitLab public API project list 2026-11-13]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://gitlab.com/ntaylor6960/obs-studio-desktop']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-28T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--bccd46d3-7485-53f4-984a-ef0cc6d74e36",
+      "name": "https://gitlab.com/ntaylor6960/steam-desktop",
+      "description": "C1 decoy \"desktop helper\" project on the same attacker GitLab account (SEO topics; description links the Telegraph lure hop); contents not reviewed - block by path, not by host [verdict: malicious; source: GitLab public API project list 2026-11-13]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://gitlab.com/ntaylor6960/steam-desktop']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-28T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--4eb3d550-f058-5483-84ad-b047d2798665",
+      "name": "https://gitlab.com/ntaylor6960/telegram-desktop",
+      "description": "C1 decoy \"desktop helper\" project on the same attacker GitLab account (SEO topics; description links the Telegraph lure hop); contents not reviewed - block by path, not by host [verdict: malicious; source: GitLab public API project list 2026-11-13]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://gitlab.com/ntaylor6960/telegram-desktop']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-28T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--7b4f73a5-d18b-55d3-b84c-37202a97001f",
+      "name": "https://gitlab.com/ntaylor6960/valorant-desktop",
+      "description": "C1 decoy \"desktop helper\" project on the same attacker GitLab account (SEO topics; description links the Telegraph lure hop); contents not reviewed - block by path, not by host [verdict: malicious; source: GitLab public API project list 2026-11-13]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://gitlab.com/ntaylor6960/valorant-desktop']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-28T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--9c4f14c2-b7d9-5e19-90d7-896f8ad037cd",
+      "name": "973ad2986d6eda8a8936342ba64fda6e2909cc8527a83bb2f474c13d76c0b6e7",
+      "description": "C1 build 25 sideload proxy version.dll (109,056 B, older loader variant) [verdict: malicious; source: static extraction from the GitLab commit archives]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '973ad2986d6eda8a8936342ba64fda6e2909cc8527a83bb2f474c13d76c0b6e7']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "loader",
+        "sha256",
+        "sideload"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--d9faa284-7dc6-58a4-b70b-f219f9962462",
+      "name": "2903e5e3363c1c15725a5343d31429490ce662cdc3df3c1f0dbf8ba7863aa4c3",
+      "description": "C1 build 26 sideload proxy version.dll (106,496 B) [verdict: malicious; source: static extraction from the GitLab commit archives]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '2903e5e3363c1c15725a5343d31429490ce662cdc3df3c1f0dbf8ba7863aa4c3']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "sha256",
+        "sideload"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--7008a279-32d4-5ee2-a1d7-93752f3a64b3",
+      "name": "b484561cc81da34990824452d4ce4002d0520c71c71e3eeb2f248e57e1f5bc3f",
+      "description": "C1 build 25 RC4 payload container config.dat (fake cabinet header) [verdict: malicious; source: static extraction from the GitLab commit archives]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = 'b484561cc81da34990824452d4ce4002d0520c71c71e3eeb2f248e57e1f5bc3f']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "payload",
+        "sha256"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--9553b327-cf50-5f07-812e-2d6fb98bf846",
+      "name": "ca82cb69da221788258d659b0eb8c84b7cfe0a99710037d40edd73e8ed330827",
+      "description": "C1 build 26 RC4 payload container sync.dat (fake cabinet header) [verdict: malicious; source: static extraction from the GitLab commit archives]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = 'ca82cb69da221788258d659b0eb8c84b7cfe0a99710037d40edd73e8ed330827']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "payload",
+        "sha256"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--915078ce-8ba1-5b26-9bb0-3e3e1e1091e9",
+      "name": "e472b895f15e4e17d3d35102ac6bc3eba9f707cb1da95df3ac2e7e9113825e81",
+      "description": "C1 build 25 decrypted inner REVSTEALER x64 PE (exists as a file only after decryption; memory/dump hunting) [verdict: malicious; source: static extraction from the GitLab commit archives]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = 'e472b895f15e4e17d3d35102ac6bc3eba9f707cb1da95df3ac2e7e9113825e81']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "sha256"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--bffc1002-bc82-5fe5-83c8-c7426e380236",
+      "name": "673feccbcec6008354e4b3b7711de22953445d5314721097b041eb020e6cd231",
+      "description": "C1 build 26 decrypted inner REVSTEALER x64 PE (exists as a file only after decryption; memory/dump hunting) [verdict: malicious; source: static extraction from the GitLab commit archives]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '673feccbcec6008354e4b3b7711de22953445d5314721097b041eb020e6cd231']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "sha256"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--140c59b7-3cb9-5f6d-ab71-90d3c8577b70",
+      "name": "741240d9ec3790c19e6d6d2e39e4cedafad958da30d2c360e67d2bebca5b9b6a",
+      "description": "C1 build 25 embedded Chrome App-Bound-Encryption helper DLL [verdict: malicious; source: static extraction from the GitLab commit archives]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '741240d9ec3790c19e6d6d2e39e4cedafad958da30d2c360e67d2bebca5b9b6a']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "sha256"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--c77367fe-9469-56a2-94e0-ebc206bca482",
+      "name": "8bf6c2ec0963ff69b6bb52aba497d58a102f7ba8332b09fa88d5a1ed02acb6c6",
+      "description": "C1 build 26 embedded Chrome App-Bound-Encryption helper DLL [verdict: malicious; source: static extraction from the GitLab commit archives]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '8bf6c2ec0963ff69b6bb52aba497d58a102f7ba8332b09fa88d5a1ed02acb6c6']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "sha256"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--61062d42-80cd-5b6f-ad98-fe721db95b69",
+      "name": "e14e0247bcc1a4a7b13b7bef05d5dab159074eadf9097e325ba43f72e792c0b7",
+      "description": "signed fake app ExcelExport.exe (21 MB, VMProtect, self-made signer GlenMont Ridge Ltd. Co., signed 2026-11-02): public sandbox run contacts job.ivorydisplay61.click, api.telegra.ph and a Polygon RPC = build 26 infrastructure; not unpacked, attribution by shared C2 only [verdict: malicious; source: VirusTotal relations and file report 2026-11-13]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = 'e14e0247bcc1a4a7b13b7bef05d5dab159074eadf9097e325ba43f72e792c0b7']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-06T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "sha256"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--db37ee09-356e-5d17-a792-cf027ba4194a",
+      "name": "GlenMont Ridge Ltd. Co.",
+      "description": "self-made untrusted signer of ExcelExport.exe, certificate SHA-256 thumbprint 833BD4620056AEB2CD3133B82FEF94ACE967DA8457301F04AB2600877431EFAB [verdict: malicious; source: VirusTotal signature info]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[x509-certificate:subject = 'GlenMont Ridge Ltd. Co.']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-02T00:00:00.000Z",
+      "labels": [
+        "code-signing-cert"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
       "type": "malware",
       "id": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4",
       "name": "REVSTEALER",
@@ -3834,6 +4966,216 @@
       "relationship_type": "indicates",
       "source_ref": "indicator--35f2ab75-49e9-5e6e-b14f-238c0a171c78",
       "target_ref": "malware--46e426e0-0d53-54e2-af3f-ce8a32537771"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--4c9d9996-2564-5484-9300-eb2f223e0771",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--95ee441e-d127-5c13-a375-8800b2f1d15a",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--d3bf81ef-4363-560c-a546-a00ca492d465",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--915e6a1a-d60b-5806-a566-98fea9d72f79",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--cc384061-e924-5b7f-a666-ab3952392f45",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--e136d8eb-9a18-54b4-9068-022dc55c0505",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--c30c4da5-9c6c-56f0-9b07-5889f1a3114c",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--ff88b33f-6292-5f63-a8e1-220536011741",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--077b4f84-b604-5207-a943-f2a71ed463b4",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--c97b1dd0-a617-5e50-9d1a-e14a1a314787",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--5345c4d1-7413-520e-b451-a751cde07c02",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--8163ddb8-9212-52ff-a0c4-1fbdf278c69d",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--a0e35c4d-95dd-52e7-8c83-4373823c8a52",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--037af742-0aa6-5577-b3af-b9830216ec8d",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--ac9c6538-fef9-51d5-bbfc-31a0dcea2332",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--b10780b0-b27f-5bf7-b1b1-adf6016987fc",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--f631040b-d00f-5495-8f20-18d1c2bb70a3",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--9db42b71-07f4-5c4b-b74a-b789d2ad48fd",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--a4814ca5-1077-5b2c-a28e-e065747af26b",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--c6bbb332-5d8b-5e0a-9127-746f722fbd15",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--1556d217-2d2c-56f9-becf-4b1f26687f22",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--b89bcccb-209e-5d9c-a314-df4a316926a7",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--ac73625b-8425-5e53-9b10-9176f59d84fb",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--9c4f14c2-b7d9-5e19-90d7-896f8ad037cd",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--0b3ef81a-1db2-5aa5-b5b8-65708236f77d",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--d9faa284-7dc6-58a4-b70b-f219f9962462",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--8fd2515a-7cd5-5cd6-b7e7-55ce44edc5a9",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--915078ce-8ba1-5b26-9bb0-3e3e1e1091e9",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--e06995bf-29ab-534e-aa47-af6f11530d73",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--bffc1002-bc82-5fe5-83c8-c7426e380236",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
     }
   ]
 }

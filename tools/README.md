@@ -14,6 +14,6 @@ Static helpers used to derive the rules. They parse and decrypt files only; noth
 ## export_iocs.py rules
 
 - Optional `case.yml` keys used by the export: `campaigns` (family names that are campaigns, not malware), `malpedia` (MISP galaxy tags), `references` (`source_name` + `url`), `indicates` (`family` + `role_match` regex over the IOC role; builds Malware objects and `indicates` relationships for malicious rows only).
-- STIX: indicators only for types with a standard pattern (domain, url, IPv4, IP:port, SHA-256, URI path as `LIKE`, mutex, user agent, command line, file/path, certificate, account); the Polygon contract uses the custom observable `x-polygon-contract:address`. Candidates get `anomalous-activity` and low confidence.
+- STIX: indicators only for types with a standard pattern (domain, url, IPv4, IP:port, SHA-256, URI path as `LIKE`, mutex, user agent, command line, file/path, certificate, account); the Polygon contract and wallet use the custom observables `x-polygon-contract:address` and `x-polygon-wallet:address`. Candidates get `anomalous-activity` and low confidence.
 - MISP: `to_ids=true` only for malicious rows with high/medium confidence of type domain, url, ip, ip|port, sha256, uri, mutex. Context rows (shared infrastructure, genuine files, paths, user agents, dead-drop values) stay as attributes with `to_ids=false`.
 - STIX ids are uuid5, so the validator's UUIDv4 recommendation (103) is disabled in `tests/validate_exports.py`.

@@ -9,10 +9,32 @@ Static analysis only; no sample was executed and no attacker infrastructure or d
 **C2 design.** Three C2 sources, tried in order: a host:port embedded in the config (AES-256-CBC), a Telegraph page description, and a Polygon smart-contract value read with `eth_call` (EtherHiding). On 2026-11-13 all three decrypted to the same host, so the operator can re-point the backups without rebuilding. Block the domain, not the Cloudflare addresses.
 
 ## Hunting pivots
-- DNS/proxy: anything under `prooutlet58[.]website`; URI paths ending in `buqpl.ajug`; `GET /health` followed by `POST application/octet-stream` from a non-browser process.
+- DNS/proxy: anything under `prooutlet58[.]website`, `proup43[.]lol` or `ivorydisplay61[.]click`; URI paths ending in `buqpl.ajug`; `GET /health` followed by `POST application/octet-stream` from a non-browser process.
 - Non-browser process requesting `api.telegra.ph/getPage/*?return_content=false`, or resolving `polygon-bor-rpc.publicnode.com`.
 - Signed OneDrive client named `Installer.exe` running from a user folder and loading a `version.dll` next to it.
 - Mutex `Global\517681F6`; User-Agent `Firefox/126.0` from a process that is not Firefox.
+
+## Builds and rotation (Windows, REVSTEALER)
+
+The GitLab repository `dwnlnk` has replaced `Installer.zip` twice; earlier versions stay downloadable at their commit URLs. Each of the three builds carries its own configuration, a fresh C2 domain, a fresh Polygon dead-drop contract and a fresh Telegraph page. For every build the contract value, the Telegraph description and the embedded config decrypt to the same host (read 2026-11-13), and all three C2 hosts answered the liveness path with HTTP 200 from public check nodes on that day (Russian nodes got 403, a geo-block, not an outage). Retired builds therefore keep working for victims already infected.
+
+| Build | Installer commit (UTC) | C2 host | Dead-drop contract (Polygon) | Telegraph page |
+|---|---|---|---|---|
+| 25 (`VERSION 25.1.0`) | 2026-10-28 23:42, `2806c0be90c5` | `proxy[.]proup43[.]lol:443` | `0x0F6A5efA466ED8f1fB7e148f85B599B433887049` | `hxxps://telegra[.]ph/Garden-record-ridge-olive-10-28` |
+| 26 (`26.1.0`) | 2026-11-02 19:02, `b5fe3195445d` | `job[.]ivorydisplay61[.]click:443` | `0xDEeA36Ea15a0fd3772A95d56DE74e8a35c968C62` | `hxxps://telegra[.]ph/Log-canvas-11-02` |
+| 27 | 2026-11-05 21:40, `3df34c7f1f9b` (current `main`) | `queue[.]prooutlet58[.]website:443` | `0xb6A1834c2F25dD705F18CB2cb17e3713bA8C7E31` | `hxxps://telegra[.]ph/Field-study-willow-atlas-11-05` |
+
+Per-build dates, commits and creation transactions are in [`c2_timeline.csv`](c2_timeline.csv). The same-day pattern repeats: the domain is registered (Dynadot, Cloudflare name servers `adaline`/`drake`), the contract is created 10 to 71 minutes later, and the installer commit follows hours later. None of the three contracts was ever re-pointed: the value is set in the constructor and storage is unchanged from creation to 2026-11-13. The operator ships a new build and contract per C2 instead (three in 11 days). Per-build AES keys are deliberately not published. The build-25 loader is an older variant that the `SetupCenter_ProxyVersionDll_Loader` rule does not match; the payload, helper DLL and container rules do match builds 25 and 26.
+
+**Deployer wallet.** All three contracts come from one Polygon EOA, `0x8bAddf058D11005360900a0542484eE446F2d494` (confidence high, from the creation transactions). It deployed about 165 contracts between 2026-10-08 and 2026-11-13 (three to ten per day, mostly around 09:00 UTC) and was still active on 2026-11-13. All use one Solidity template (the same 1,337-opcode runtime, randomised function selectors), so bytecode hashes never match. Only the three above are decodable, because their keys come from samples; the C2s of the other contracts are unknown. About 45 were created after build 27, so builds exist that did not ship through this GitLab account. The same wallet also made 17 setter calls (2026-11-05 to 2026-11-09) re-pointing other contracts, none of them ours.
+
+**Funding (confidence in brackets).**
+- `0xF311c09136Bb7CDc5EC6Bf84E82524e6890e4217` sent 65.87 POL to the deployer on 2026-10-08: single-use relay (medium; operator control inferred from the transfer only).
+- `0xb81f4236fA866de7594646A0736DB696810acadb` funded that relay on 2026-09-28: busy unlabelled wallet, possibly a service wallet (low; listed as `candidate`, do not block on this alone). Further upstream is not resolved.
+
+**Comparison with Elastic's deployers.** The contracts Elastic listed for REF2859 trace to two other wallets: `0x808e0a9def308b4c624e9a2105d12be25e89d6a9` (256 contracts, 2026-02-22 to 2026-05-11, funded directly from an exchange hot wallet carrying an explorer label) and `0x512230fdddcfc7e0d99a9860a6b8048584de574f` (411 contracts, 2026-06-26 to 2026-10-05, funded by a single-use wallet). The current deployer starts three days after the previous one stops, so the operator appears to rotate the deployer every two to three months (about 830 dead-drop contracts across the three wallets). Our contracts have the same opcode skeleton as the Elastic ones, which ties them to the same kit; the C2 domains do not overlap, and none of the 317 apex domains Elastic published uses the Cloudflare name-server pair seen here, so this is the same family and tooling, not shared domain infrastructure. A single operator behind all three wallets is likely (timing, template) but not proven: there is no direct on-chain link between the funders.
+
+**Other artefacts.** A signed fake application `ExcelExport.exe` (self-made signer, signed 2026-11-02) contacts the build 26 C2 host, `api.telegra.ph` and a Polygon RPC in a public sandbox run (medium; not unpacked). The same GitLab account hosts 15 decoy "desktop helper" projects whose descriptions link the Telegraph lure hop; they are listed in `iocs.csv` at medium confidence (contents not reviewed).
 
 ## macOS branch: MioLab (Nova)
 
@@ -50,6 +72,7 @@ Status: 5 RevStealer Sigma rules submitted to SigmaHQ (https://github.com/SigmaH
 ## Files
 
 - `iocs.csv`: columns `type,value_defanged,first_seen,role,verdict,confidence,source`. Values are defanged (`hxxps://`, `[.]`); hashes are plain.
+- `c2_timeline.csv`: per build, the installer commit, domain registration, contract, Telegraph page and C2 host with dates (defanged).
 - `iocs.json`: **machine-readable, NOT defanged** (the first key `_warning` says so). Do not browse or fetch the values. Same rows as the CSV.
 - Verdict values: `malicious`, `candidate` (pattern match, link not confirmed), `compromised-or-abused-legit` (a legitimate site or brand that was hijacked or abused; block by path, not by domain), `shared-or-legit-infrastructure` (do NOT block: shared CDN edge, public RPC, genuine decoy file), `related-not-in-build`.
 - Not included on purpose: archive passwords, API keys, encryption keys and decoding recipes (the build tag and affiliate id above are identifiers, not keys). Block the C2 domains, not the shared Cloudflare or hosting addresses.
