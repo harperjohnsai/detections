@@ -71,7 +71,7 @@ rule SetupCenter_ProxyVersionDll_Loader
         uint16(0) == 0x5A4D and filesize < 1MB
         and pe.is_dll() and pe.machine == pe.MACHINE_AMD64
         and pe.exports("GetFileVersionInfoW") and pe.exports("VerQueryValueW")
-        and pe.number_of_signatures == 0
+        and pe.data_directories[pe.IMAGE_DIRECTORY_ENTRY_SECURITY].size == 0  // unsigned; portable (no OpenSSL-dependent field)
         // never in a real version.dll: loader + environment-check imports
         and pe.imports("kernel32.dll", "GetSystemDirectoryW") and pe.imports("kernel32.dll", "LoadLibraryW")
         and pe.imports("kernel32.dll", "GlobalMemoryStatusEx") and pe.imports("user32.dll", "EnumDisplayDevicesA")

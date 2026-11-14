@@ -9,7 +9,7 @@ rules:
 video: null
 related_videos:
   - https://youtu.be/UBGt4gP53wU
-gist: null
+gist: https://gist.github.com/harperjohnsai/6db91aadd35a0354652ccc3c6e363b9c
 campaigns: [REF2859]
 malpedia: [RevStealer]
 references:
