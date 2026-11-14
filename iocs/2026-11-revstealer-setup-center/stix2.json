@@ -278,6 +278,11 @@
           "description": "Related video"
         },
         {
+          "source_name": "GitHub Gist",
+          "url": "https://gist.github.com/harperjohnsai/6db91aadd35a0354652ccc3c6e363b9c",
+          "description": "Defanged IOC gist"
+        },
+        {
           "source_name": "Palo Alto Networks Unit 42",
           "url": "https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/47b53a06affd56b4fefbbcb1fb9fdaf88e3cca5e/2026-06-20-ClickFix-campaign-delivers-macOS-infostealer-via-DMG.txt"
         },
