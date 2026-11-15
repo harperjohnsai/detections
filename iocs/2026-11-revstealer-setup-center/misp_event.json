@@ -3089,7 +3089,7 @@
         "value": "0x5a73C3FE866d50A950ECF5E3e841b551628cb9Fd",
         "to_ids": false,
         "distribution": "5",
-        "comment": "C1 build yh-1101 REVSTEALER EtherHiding dead drop named in the config (3rd C2 source), created 2026-11-01T09:36:13Z by deployer 0x8bAddf05 (nonce 102); eth_call selector 0xdff866d4 matches the contract; value not read [type: polygon-contract; verdict: malicious; source: static config extraction; deployer contract list]",
+        "comment": "C1 build yh-1101 REVSTEALER EtherHiding dead drop named in the config (3rd C2 source), created 2026-11-01T09:36:13Z by deployer 0x8bAddf05 (nonce 102); eth_call selector 0xdff866d4 on a public Polygon RPC; value read 2026-11-15, decrypts to the same C2 as the embedded config [type: polygon-contract; verdict: malicious; source: static config extraction; deployer contract list]",
         "timestamp": "1794528000",
         "Tag": [
           {
@@ -3105,7 +3105,7 @@
         "value": "https://telegra.ph/Amber-draft-creek-gentle-11-01",
         "to_ids": true,
         "distribution": "5",
-        "comment": "C1 build yh-1101 Telegraph dead drop named in the config (page description holds the AES-encrypted C2); block by path, not by host; page not read [type: url; verdict: malicious; source: YARAify memory dumps 2026-11-14/15, static config extraction]",
+        "comment": "C1 build yh-1101 Telegraph dead drop named in the config (page description holds the AES-encrypted C2); block by path, not by host; page read 2026-11-15 via the Telegraph API, description decrypts to the same C2 [type: url; verdict: malicious; source: YARAify memory dumps 2026-11-14/15, static config extraction]",
         "timestamp": "1794528000",
         "Tag": [
           {
@@ -3153,7 +3153,7 @@
         "value": "0x379f4d5565AF5dE4A34c0A20f94bB4d6bA041937",
         "to_ids": false,
         "distribution": "5",
-        "comment": "C1 build yh-1107 REVSTEALER EtherHiding dead drop named in the config (3rd C2 source), created 2026-11-07T09:15:52Z by deployer 0x8bAddf05 (nonce 145); eth_call selector 0x3d7d09ca matches the contract; value not read [type: polygon-contract; verdict: malicious; source: static config extraction; deployer contract list]",
+        "comment": "C1 build yh-1107 REVSTEALER EtherHiding dead drop named in the config (3rd C2 source), created 2026-11-07T09:15:52Z by deployer 0x8bAddf05 (nonce 145); eth_call selector 0x3d7d09ca on a public Polygon RPC; value read 2026-11-15, decrypts to the same C2 as the embedded config [type: polygon-contract; verdict: malicious; source: static config extraction; deployer contract list]",
         "timestamp": "1794528000",
         "Tag": [
           {
@@ -3169,7 +3169,7 @@
         "value": "https://telegra.ph/Cedar-path-hazel-field-11-07",
         "to_ids": true,
         "distribution": "5",
-        "comment": "C1 build yh-1107 Telegraph dead drop named in the config (page description holds the AES-encrypted C2); block by path, not by host; page not read [type: url; verdict: malicious; source: YARAify memory dumps 2026-11-14/15, static config extraction]",
+        "comment": "C1 build yh-1107 Telegraph dead drop named in the config (page description holds the AES-encrypted C2); block by path, not by host; page read 2026-11-15 via the Telegraph API, description decrypts to the same C2 [type: url; verdict: malicious; source: YARAify memory dumps 2026-11-14/15, static config extraction]",
         "timestamp": "1794528000",
         "Tag": [
           {
@@ -3217,7 +3217,7 @@
         "value": "0x935A85445c76E8D6c48E7eEd31b6B2F3c9181632",
         "to_ids": false,
         "distribution": "5",
-        "comment": "C1 build yh-1110a REVSTEALER EtherHiding dead drop named in the config (3rd C2 source), created 2026-11-10T09:17:42Z by deployer 0x8bAddf05 (nonce 168); eth_call selector 0x4fcb9074 matches the contract; value not read [type: polygon-contract; verdict: malicious; source: static config extraction; deployer contract list]",
+        "comment": "C1 build yh-1110a REVSTEALER EtherHiding dead drop named in the config (3rd C2 source), created 2026-11-10T09:17:42Z by deployer 0x8bAddf05 (nonce 168); eth_call selector 0x4fcb9074 on a public Polygon RPC; value read 2026-11-15, decrypts to the same C2 as the embedded config [type: polygon-contract; verdict: malicious; source: static config extraction; deployer contract list]",
         "timestamp": "1794528000",
         "Tag": [
           {
@@ -3233,7 +3233,7 @@
         "value": "https://telegra.ph/Maple-ledger-11-10",
         "to_ids": true,
         "distribution": "5",
-        "comment": "C1 build yh-1110a Telegraph dead drop named in the config (page description holds the AES-encrypted C2); block by path, not by host; page not read [type: url; verdict: malicious; source: YARAify memory dumps 2026-11-14/15, static config extraction]",
+        "comment": "C1 build yh-1110a Telegraph dead drop named in the config (page description holds the AES-encrypted C2); block by path, not by host; page read 2026-11-15 via the Telegraph API, description decrypts to the same C2 [type: url; verdict: malicious; source: YARAify memory dumps 2026-11-14/15, static config extraction]",
         "timestamp": "1794528000",
         "Tag": [
           {
@@ -3281,7 +3281,7 @@
         "value": "0x1ee6A331881102B84d2DebdD5eefd2E591a65f14",
         "to_ids": false,
         "distribution": "5",
-        "comment": "C1 build yh-1110b REVSTEALER EtherHiding dead drop named in the config (3rd C2 source), created 2026-11-10T09:18:22Z by deployer 0x8bAddf05 (nonce 169); eth_call selector 0x72c2a800 matches the contract; value not read [type: polygon-contract; verdict: malicious; source: static config extraction; deployer contract list]",
+        "comment": "C1 build yh-1110b REVSTEALER EtherHiding dead drop named in the config (3rd C2 source), created 2026-11-10T09:18:22Z by deployer 0x8bAddf05 (nonce 169); eth_call selector 0x72c2a800 on a public Polygon RPC; value read 2026-11-15, decrypts to the same C2 as the embedded config [type: polygon-contract; verdict: malicious; source: static config extraction; deployer contract list]",
         "timestamp": "1794528000",
         "Tag": [
           {
@@ -3297,7 +3297,7 @@
         "value": "https://telegra.ph/Clear-ridge-11-10",
         "to_ids": true,
         "distribution": "5",
-        "comment": "C1 build yh-1110b Telegraph dead drop named in the config (page description holds the AES-encrypted C2); block by path, not by host; page not read [type: url; verdict: malicious; source: YARAify memory dumps 2026-11-14/15, static config extraction]",
+        "comment": "C1 build yh-1110b Telegraph dead drop named in the config (page description holds the AES-encrypted C2); block by path, not by host; page read 2026-11-15 via the Telegraph API, description decrypts to the same C2 [type: url; verdict: malicious; source: YARAify memory dumps 2026-11-14/15, static config extraction]",
         "timestamp": "1794528000",
         "Tag": [
           {

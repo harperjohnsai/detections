@@ -48,3 +48,6 @@
 - First in-the-wild hits of our YARA rules: `REVSTEALER_x64_Core_SetupCenter` matched five sandbox process-memory dumps on YARAify (first seen 2026-11-14/15). Static config extraction gives four new builds (`yh-1101`, `yh-1107`, `yh-1110a`, `yh-1110b`) with their own C2 domain, Polygon contract and Telegraph page; all four contracts come from the same deployer wallet as builds 25 to 27 (creation list, matching getter selectors).
 - `iocs/2026-11-revstealer-setup-center`: +38 IOC rows (4 domains, 4 Polygon contracts, 4 Telegraph pages, 5 dump SHA-256, 20 gate paths, 1 context-only RPC host), +4 rows in `c2_timeline.csv`, README section on the new builds and the new RPC fallback, ThreatFox references 2029842 to 2029850 in `case.yml`.
 - Not checked for the new builds: contract values, Telegraph pages and C2 liveness (nothing contacted). No AES keys or other secrets published.
+
+### 2026-11-15 (later)
+- Setup Center case: dead drops of the four `yh-*` builds read (Polygon eth_call + Telegraph API) and decrypted; all agree with the embedded configs. Rows updated (no IOCs added or removed).
