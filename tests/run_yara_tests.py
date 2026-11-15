@@ -17,17 +17,19 @@ YARA_DIR = os.path.join(HERE, '..', 'yara')
 
 # sha256 -> rules that MUST match (and no others)
 EXPECTED = {
-    'b371d2e01562fc0d29072ac1a56969628b6408f2368c056c3158f4fe0c609960': ['SetupCenter_ProxyVersionDll_Loader'],              # version.dll, build 27 (2026-11-05)
-    '973ad2986d6eda8a8936342ba64fda6e2909cc8527a83bb2f474c13d76c0b6e7': ['SetupCenter_ProxyVersionDll_Loader'],              # version.dll, build 25 (2026-10-28)
-    '2903e5e3363c1c15725a5343d31429490ce662cdc3df3c1f0dbf8ba7863aa4c3': ['SetupCenter_ProxyVersionDll_Loader'],              # version.dll, build 26 (2026-11-02)
+    'b371d2e01562fc0d29072ac1a56969628b6408f2368c056c3158f4fe0c609960': ['SetupCenter_ProxyVersionDll_Loader', 'SetupCenter_Loader_AntiVM_HashTables'],              # version.dll, build 27 (2026-11-05)
+    '973ad2986d6eda8a8936342ba64fda6e2909cc8527a83bb2f474c13d76c0b6e7': ['SetupCenter_ProxyVersionDll_Loader', 'SetupCenter_Loader_AntiVM_HashTables'],              # version.dll, build 25 (2026-10-28)
+    '2903e5e3363c1c15725a5343d31429490ce662cdc3df3c1f0dbf8ba7863aa4c3': ['SetupCenter_ProxyVersionDll_Loader', 'SetupCenter_Loader_AntiVM_HashTables'],              # version.dll, build 26 (2026-11-02)
     '193f259776d345f42c7957b737c4ef2d72df5268eee1d12be0574e6f91469f62': ['SetupCenter_FakeCab_PayloadContainer'],           # localdata.db
     'b484561cc81da34990824452d4ce4002d0520c71c71e3eeb2f248e57e1f5bc3f': ['SetupCenter_FakeCab_PayloadContainer'],           # config.dat, build 25
     'ca82cb69da221788258d659b0eb8c84b7cfe0a99710037d40edd73e8ed330827': ['SetupCenter_FakeCab_PayloadContainer'],           # sync.dat, build 26
-    'e472b895f15e4e17d3d35102ac6bc3eba9f707cb1da95df3ac2e7e9113825e81': ['REVSTEALER_x64_Core_SetupCenter'],                # inner payload, build 25
-    '673feccbcec6008354e4b3b7711de22953445d5314721097b041eb020e6cd231': ['REVSTEALER_x64_Core_SetupCenter'],                # inner payload, build 26
-    'c6859833796f682e3598f65865a2853c3ecc118d7f2fb01defc24cf328e3ecad': ['REVSTEALER_x64_Core_SetupCenter'],                # inner payload, build 27
+    'e472b895f15e4e17d3d35102ac6bc3eba9f707cb1da95df3ac2e7e9113825e81': ['REVSTEALER_x64_Core_SetupCenter', 'REVSTEALER_x64_Hashed_Evasion_Shapes'],                # inner payload, build 25
+    '673feccbcec6008354e4b3b7711de22953445d5314721097b041eb020e6cd231': ['REVSTEALER_x64_Core_SetupCenter', 'REVSTEALER_x64_Hashed_Evasion_Shapes'],                # inner payload, build 26
+    'c6859833796f682e3598f65865a2853c3ecc118d7f2fb01defc24cf328e3ecad': ['REVSTEALER_x64_Core_SetupCenter', 'REVSTEALER_x64_Hashed_Evasion_Shapes'],                # inner payload, build 27
     '3c6330d06b57d18026efd5745245cc19e1c67983d957f42ff6a821e2b7f71632': ['REVSTEALER_ABE_Helper_DLL'],                       # ABE helper DLL
-    '0a48e7ed139a1cbe38c4ccb98edf2ff99bc53933f07942fa02fcf054dc14e0a6': ['REVSTEALER_Decrypted_Strings_Memory', 'REVSTEALER_x64_Core_SetupCenter'],  # strings-decrypted artefact
+    '0a48e7ed139a1cbe38c4ccb98edf2ff99bc53933f07942fa02fcf054dc14e0a6': ['REVSTEALER_Decrypted_Strings_Memory', 'REVSTEALER_x64_Core_SetupCenter', 'REVSTEALER_x64_Hashed_Evasion_Shapes'],  # strings-decrypted artefact
+    '5e3c4ef86cd0bb65f30fc919681a07126b8d3918419446b3c88d2ccbacf3dc86': ['REVSTEALER_Decrypted_Strings_Memory', 'REVSTEALER_x64_Core_SetupCenter', 'REVSTEALER_x64_Hashed_Evasion_Shapes'],  # strings-decrypted artefact, build 25
+    'c036690cb8e6965d3d2e1091d10ca78994e4440808813db032fa121fb0517ce9': ['REVSTEALER_x64_Core_SetupCenter', 'REVSTEALER_x64_Hashed_Evasion_Shapes'],  # strings-decrypted artefact, build 26
     # MioLab macOS chain (yara/miolab-macos)
     '2b4f61c274bf8e4a79cf77e7b36d18d1dd265e8e894f5f2b6d8babc6323d556a': ['MAL_macOS_MioLab_Cpp_Stealer_ConfigDecrypt'],  # stage-2 universal Mach-O
     '49de3b526ee449d9a28f73d85af2fb0b40d721b45693d80119f8db47d4bba51a': ['MAL_macOS_MioLab_Cpp_Stealer_ConfigDecrypt'],  # x86_64 slice
@@ -105,7 +107,7 @@ def main():
     a = ap.parse_args()
     E = Engines()
     check(E.eng, 'at least one YARA engine available')
-    check(len(E.files) >= 14, f'{len(E.files)} rule files compiled together')
+    check(len(E.files) >= 16, f'{len(E.files)} rule files compiled together')
     for name in E.eng:
         print('ENGINE', name)
     if a.compile_only:

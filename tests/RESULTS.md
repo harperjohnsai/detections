@@ -151,3 +151,37 @@ PASS 2903e5e3363c -> sync.dat off=0xcf size=0x69810 payload=673feccbcec6 apis=17
 PASS b371d2e01562 -> localdata.db off=0x9b size=0x69c10 payload=c6859833796f apis=17
 ALL CHECKS PASS
 ```
+
+
+## Run 2026-11-15: anti-VM hash-table rule and hashed-evasion rule added
+
+Engines: yara-python 4.5.4, YARA-X 1.23.0. Excerpt of `tests/run_yara_tests.py --samples ... --negatives ...` (lines for the two new rules; every other expected match was unchanged and passed), plus the wider negative scan of both rules with each engine.
+
+```
+PASS 16 rule files compiled together
+ENGINE yara-python 4.5.4
+ENGINE yara-x 1.23.0
+PASS [yara-python 4.5.4] b371d2e01562 -> SetupCenter_Loader_AntiVM_HashTables, SetupCenter_ProxyVersionDll_Loader
+PASS [yara-x 1.23.0] b371d2e01562 -> SetupCenter_Loader_AntiVM_HashTables, SetupCenter_ProxyVersionDll_Loader
+PASS [yara-python 4.5.4] 2903e5e3363c -> SetupCenter_Loader_AntiVM_HashTables, SetupCenter_ProxyVersionDll_Loader
+PASS [yara-x 1.23.0] 2903e5e3363c -> SetupCenter_Loader_AntiVM_HashTables, SetupCenter_ProxyVersionDll_Loader
+PASS [yara-python 4.5.4] 673feccbcec6 -> REVSTEALER_x64_Core_SetupCenter, REVSTEALER_x64_Hashed_Evasion_Shapes
+PASS [yara-x 1.23.0] 673feccbcec6 -> REVSTEALER_x64_Core_SetupCenter, REVSTEALER_x64_Hashed_Evasion_Shapes
+PASS [yara-python 4.5.4] c036690cb8e6 -> REVSTEALER_x64_Core_SetupCenter, REVSTEALER_x64_Hashed_Evasion_Shapes
+PASS [yara-x 1.23.0] c036690cb8e6 -> REVSTEALER_x64_Core_SetupCenter, REVSTEALER_x64_Hashed_Evasion_Shapes
+PASS [yara-python 4.5.4] c6859833796f -> REVSTEALER_x64_Core_SetupCenter, REVSTEALER_x64_Hashed_Evasion_Shapes
+PASS [yara-x 1.23.0] c6859833796f -> REVSTEALER_x64_Core_SetupCenter, REVSTEALER_x64_Hashed_Evasion_Shapes
+PASS [yara-python 4.5.4] 973ad2986d6e -> SetupCenter_Loader_AntiVM_HashTables, SetupCenter_ProxyVersionDll_Loader
+PASS [yara-x 1.23.0] 973ad2986d6e -> SetupCenter_Loader_AntiVM_HashTables, SetupCenter_ProxyVersionDll_Loader
+PASS [yara-python 4.5.4] e472b895f15e -> REVSTEALER_x64_Core_SetupCenter, REVSTEALER_x64_Hashed_Evasion_Shapes
+PASS [yara-x 1.23.0] e472b895f15e -> REVSTEALER_x64_Core_SetupCenter, REVSTEALER_x64_Hashed_Evasion_Shapes
+PASS [yara-python 4.5.4] 5e3c4ef86cd0 -> REVSTEALER_Decrypted_Strings_Memory, REVSTEALER_x64_Core_SetupCenter, REVSTEALER_x64_Hashed_Evasion_Shapes
+PASS [yara-x 1.23.0] 5e3c4ef86cd0 -> REVSTEALER_Decrypted_Strings_Memory, REVSTEALER_x64_Core_SetupCenter, REVSTEALER_x64_Hashed_Evasion_Shapes
+PASS [yara-python 4.5.4] 0a48e7ed139a -> REVSTEALER_Decrypted_Strings_Memory, REVSTEALER_x64_Core_SetupCenter, REVSTEALER_x64_Hashed_Evasion_Shapes
+PASS [yara-x 1.23.0] 0a48e7ed139a -> REVSTEALER_Decrypted_Strings_Memory, REVSTEALER_x64_Core_SetupCenter, REVSTEALER_x64_Hashed_Evasion_Shapes
+PASS [yara-python 4.5.4] negative corpus: 36 files, 0 hits []
+PASS [yara-x 1.23.0] negative corpus: 36 files, 0 hits []
+ALL CHECKS PASS
+```
+
+Wider negative corpus (both engines, about 650 files per rule: unrelated PEs, DLLs, Python extension modules and other stages of the case): 0 hits outside the reference samples. `SetupCenter_Loader_AntiVM_HashTables` hit `version.dll` of builds 25, 26, 27 (3 distinct hashes); `REVSTEALER_x64_Hashed_Evasion_Shapes` hit 6 distinct payload / strings-decrypted artefacts of builds 25, 26, 27. The 59 (loader) and 69 (REVSTEALER) decoded hash-table plaintexts were re-hashed against the binaries and all match.

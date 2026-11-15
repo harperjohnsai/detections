@@ -37,3 +37,10 @@
 - `SetupCenter_ProxyVersionDll_Loader` v2 (same name and `yarahub_uuid`) now matches the `version.dll` of builds 25, 26 and 27. v1 keyed on one compiler output (key-XOR loop and RC4 bytes of builds 26/27) and missed build 25, whose loader was compiled differently. v2 uses the forwarded exports, the imports a real `version.dll` lacks, the VM-check strings, the layout of the XOR-encrypted hollowing API table (identical in all builds) and per-variant code patterns.
 - `tools/setup-center-extractor` fixed for build 25 (plain stack-string payload name, helper-based key derivation, API-table key in `rsi`) and build 26 (8-character payload name); new `tests/test_setup_center_extractor.py` runs it on all three builds.
 - `tests/run_yara_tests.py`: build 25/26 `version.dll`, `config.dat`, `sync.dat` and inner payload hashes added to the expected matches. Results: `tests/RESULTS.md`.
+
+### 2026-11-15 (hashed evasion lists)
+- New `yara/setup-center-loader/setup_center_antivm_hash_tables.yar` (`SetupCenter_Loader_AntiVM_HashTables`): keys on the loader's FNV-1a basis `0x7c4e9f2b` seed, the hash-mix code and the hashed blocklists (BIOS/vendor incl. cloud providers, user and computer names, display adapters). Matches `version.dll` of builds 25, 26, 27; 0 hits on 659 other files (yara-python 4.5.4 and YARA-X 1.23).
+- New `yara/revstealer/revstealer_hashed_evasion.yar` (`REVSTEALER_x64_Hashed_Evasion_Shapes`): code shapes of the per-build salted UTF-16 FNV-1a hashing (blinding helpers, prime getter, export-name hash). 6 of 6 distinct payload artefacts of builds 25 to 27; 0 hits on 652 other files.
+- Both READMEs gained the decoded evasion lists (loader: 59 of 59 entries; REVSTEALER: 10 of 10 CIS UI languages, 26 of 45 names, 26 of 33 process names, 7 of 9 CPUID strings, each re-hashed against the binary). `tests/run_yara_tests.py` expects the new rules on the reference samples; results in `tests/RESULTS.md`.
+- Both rules deployed to YARAhub (author Harper Johns, CC BY 4.0, TLP:CLEAR).
+
