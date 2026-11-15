@@ -44,3 +44,7 @@
 - Both READMEs gained the decoded evasion lists (loader: 59 of 59 entries; REVSTEALER: 10 of 10 CIS UI languages, 26 of 45 names, 26 of 33 process names, 7 of 9 CPUID strings, each re-hashed against the binary). `tests/run_yara_tests.py` expects the new rules on the reference samples; results in `tests/RESULTS.md`.
 - Both rules deployed to YARAhub (author Harper Johns, CC BY 4.0, TLP:CLEAR).
 
+### 2026-11-15 (REVSTEALER: four more builds from sandbox memory dumps)
+- First in-the-wild hits of our YARA rules: `REVSTEALER_x64_Core_SetupCenter` matched five sandbox process-memory dumps on YARAify (first seen 2026-11-14/15). Static config extraction gives four new builds (`yh-1101`, `yh-1107`, `yh-1110a`, `yh-1110b`) with their own C2 domain, Polygon contract and Telegraph page; all four contracts come from the same deployer wallet as builds 25 to 27 (creation list, matching getter selectors).
+- `iocs/2026-11-revstealer-setup-center`: +38 IOC rows (4 domains, 4 Polygon contracts, 4 Telegraph pages, 5 dump SHA-256, 20 gate paths, 1 context-only RPC host), +4 rows in `c2_timeline.csv`, README section on the new builds and the new RPC fallback, ThreatFox references 2029842 to 2029850 in `case.yml`.
+- Not checked for the new builds: contract values, Telegraph pages and C2 liveness (nothing contacted). No AES keys or other secrets published.

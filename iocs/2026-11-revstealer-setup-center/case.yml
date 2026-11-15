@@ -31,6 +31,15 @@ references:
   - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2027979/"}
   - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2027980/"}
   - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2027981/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2029842/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2029843/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2029844/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2029845/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2029846/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2029847/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2029848/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2029849/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2029850/"}
 indicates:
   - family: REVSTEALER
     role_match: 'REVSTEALER|sideload|Installer\.zip|localdata\.db'

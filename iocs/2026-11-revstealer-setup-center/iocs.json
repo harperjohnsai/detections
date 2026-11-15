@@ -2,7 +2,7 @@
  "_warning": "MACHINE-READABLE, NOT DEFANGED: values are live indicators. Do not browse or fetch them.",
  "case": "2026-11-revstealer-setup-center",
  "license": "CC0-1.0",
- "count": 193,
+ "count": 231,
  "iocs": [
   {
    "type": "url",
@@ -1740,6 +1740,348 @@
    "verdict": "malicious",
    "confidence": "medium",
    "source": "VirusTotal signature info"
+  },
+  {
+   "type": "domain",
+   "value": "node.tutor-lens77.xyz",
+   "first_seen": "2026-11-01",
+   "role": "C1 build yh-1101 REVSTEALER primary C2 (HTTPS :443; GET /health must return 'active'); host:port, Polygon contract and Telegraph page all taken from the embedded config of a sandbox memory dump (deployer link: contract from the same wallet as builds 25-27); contract value and Telegraph page not read.",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "YARAify memory dumps 2026-11-14/15, static config extraction"
+  },
+  {
+   "type": "polygon-contract",
+   "value": "0x5a73C3FE866d50A950ECF5E3e841b551628cb9Fd",
+   "first_seen": "2026-11-01",
+   "role": "C1 build yh-1101 REVSTEALER EtherHiding dead drop named in the config (3rd C2 source), created 2026-11-01T09:36:13Z by deployer 0x8bAddf05 (nonce 102); eth_call selector 0xdff866d4 matches the contract; value not read",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction; deployer contract list"
+  },
+  {
+   "type": "url",
+   "value": "https://telegra.ph/Amber-draft-creek-gentle-11-01",
+   "first_seen": "2026-11-01",
+   "role": "C1 build yh-1101 Telegraph dead drop named in the config (page description holds the AES-encrypted C2); block by path, not by host; page not read",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "YARAify memory dumps 2026-11-14/15, static config extraction"
+  },
+  {
+   "type": "sha256",
+   "value": "a7eb8e3159d6bb0894c507c922c53d3a5726a9fe60c9768214b9e5c6794841bd",
+   "first_seen": "2026-11-15",
+   "role": "C1 build yh-1101 REVSTEALER core: sandbox process-memory dump of a loader process holding the decrypted REVSTEALER core (Go binary, about 6 MB); matches YARA REVSTEALER_x64_Core_SetupCenter; memory/dump hunting, not a file on disk",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "YARAify (first seen); static config extraction"
+  },
+  {
+   "type": "domain",
+   "value": "stat9.wintergroup.one",
+   "first_seen": "2026-11-07",
+   "role": "C1 build yh-1107 REVSTEALER primary C2 (HTTPS :443; GET /health must return 'active'); host:port, Polygon contract and Telegraph page all taken from the embedded config of a sandbox memory dump (deployer link: contract from the same wallet as builds 25-27); contract value and Telegraph page not read.",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "YARAify memory dumps 2026-11-14/15, static config extraction"
+  },
+  {
+   "type": "polygon-contract",
+   "value": "0x379f4d5565AF5dE4A34c0A20f94bB4d6bA041937",
+   "first_seen": "2026-11-07",
+   "role": "C1 build yh-1107 REVSTEALER EtherHiding dead drop named in the config (3rd C2 source), created 2026-11-07T09:15:52Z by deployer 0x8bAddf05 (nonce 145); eth_call selector 0x3d7d09ca matches the contract; value not read",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction; deployer contract list"
+  },
+  {
+   "type": "url",
+   "value": "https://telegra.ph/Cedar-path-hazel-field-11-07",
+   "first_seen": "2026-11-07",
+   "role": "C1 build yh-1107 Telegraph dead drop named in the config (page description holds the AES-encrypted C2); block by path, not by host; page not read",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "YARAify memory dumps 2026-11-14/15, static config extraction"
+  },
+  {
+   "type": "sha256",
+   "value": "32ed319b08ee64d4bf6b71de79738f3c799db9f0087bc9d20bfb9f5c57ce5dd7",
+   "first_seen": "2026-11-14",
+   "role": "C1 build yh-1107 REVSTEALER core: sandbox process-memory dump of a loader process holding the decrypted REVSTEALER core (Go binary, about 6 MB); matches YARA REVSTEALER_x64_Core_SetupCenter; memory/dump hunting, not a file on disk",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "YARAify (first seen); static config extraction"
+  },
+  {
+   "type": "domain",
+   "value": "init1.wavefleet63.work",
+   "first_seen": "2026-11-10",
+   "role": "C1 build yh-1110a REVSTEALER primary C2 (HTTPS :443; GET /health must return 'active'); host:port, Polygon contract and Telegraph page all taken from the embedded config of a sandbox memory dump (deployer link: contract from the same wallet as builds 25-27); contract value and Telegraph page not read.",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "YARAify memory dumps 2026-11-14/15, static config extraction"
+  },
+  {
+   "type": "polygon-contract",
+   "value": "0x935A85445c76E8D6c48E7eEd31b6B2F3c9181632",
+   "first_seen": "2026-11-10",
+   "role": "C1 build yh-1110a REVSTEALER EtherHiding dead drop named in the config (3rd C2 source), created 2026-11-10T09:17:42Z by deployer 0x8bAddf05 (nonce 168); eth_call selector 0x4fcb9074 matches the contract; value not read",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction; deployer contract list"
+  },
+  {
+   "type": "url",
+   "value": "https://telegra.ph/Maple-ledger-11-10",
+   "first_seen": "2026-11-10",
+   "role": "C1 build yh-1110a Telegraph dead drop named in the config (page description holds the AES-encrypted C2); block by path, not by host; page not read",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "YARAify memory dumps 2026-11-14/15, static config extraction"
+  },
+  {
+   "type": "sha256",
+   "value": "413448876264d36960375c969e0e2ed433736ac3def2956387487dccae58334c",
+   "first_seen": "2026-11-15",
+   "role": "C1 build yh-1110a REVSTEALER core: sandbox process-memory dump of a loader process holding the decrypted REVSTEALER core (Go binary, about 6 MB); matches YARA REVSTEALER_x64_Core_SetupCenter; memory/dump hunting, not a file on disk",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "YARAify (first seen); static config extraction"
+  },
+  {
+   "type": "domain",
+   "value": "meta3.grovestack.one",
+   "first_seen": "2026-11-10",
+   "role": "C1 build yh-1110b REVSTEALER primary C2 (HTTPS :443; GET /health must return 'active'); host:port, Polygon contract and Telegraph page all taken from the embedded config of a sandbox memory dump (deployer link: contract from the same wallet as builds 25-27); contract value and Telegraph page not read. Domain uses Cloudflare name servers.",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "YARAify memory dumps 2026-11-14/15, static config extraction"
+  },
+  {
+   "type": "polygon-contract",
+   "value": "0x1ee6A331881102B84d2DebdD5eefd2E591a65f14",
+   "first_seen": "2026-11-10",
+   "role": "C1 build yh-1110b REVSTEALER EtherHiding dead drop named in the config (3rd C2 source), created 2026-11-10T09:18:22Z by deployer 0x8bAddf05 (nonce 169); eth_call selector 0x72c2a800 matches the contract; value not read",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction; deployer contract list"
+  },
+  {
+   "type": "url",
+   "value": "https://telegra.ph/Clear-ridge-11-10",
+   "first_seen": "2026-11-10",
+   "role": "C1 build yh-1110b Telegraph dead drop named in the config (page description holds the AES-encrypted C2); block by path, not by host; page not read",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "YARAify memory dumps 2026-11-14/15, static config extraction"
+  },
+  {
+   "type": "sha256",
+   "value": "0ded8309977b002cb426d6e1445125a53d4c82038168c2de8f37233d6816a156",
+   "first_seen": "2026-11-15",
+   "role": "C1 build yh-1110b REVSTEALER core: sandbox process-memory dump of an svchost.exe image holding the REVSTEALER core (446,464 B); matches YARA REVSTEALER_x64_Core_SetupCenter; memory/dump hunting, not a file on disk",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "YARAify (first seen); static config extraction"
+  },
+  {
+   "type": "sha256",
+   "value": "87ab8e5de47652d88f7ed1788b775e03b438482fa14cc19bce9cecdc567d4d48",
+   "first_seen": "2026-11-15",
+   "role": "C1 build yh-1110b REVSTEALER core: sandbox process-memory dump of a loader process holding the decrypted REVSTEALER core (Go binary, about 6 MB); matches YARA REVSTEALER_x64_Core_SetupCenter; memory/dump hunting, not a file on disk",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "YARAify (first seen); static config extraction"
+  },
+  {
+   "type": "url-path",
+   "value": "/cwfqfm/mztnd.rbes",
+   "first_seen": "2026-11-15",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1101, node[.]tutor-lens77[.]xyz; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "url-path",
+   "value": "/iex/mztnd.rbes",
+   "first_seen": "2026-11-15",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1101, node[.]tutor-lens77[.]xyz; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "url-path",
+   "value": "/orkvy/rgc/mztnd.rbes",
+   "first_seen": "2026-11-15",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1101, node[.]tutor-lens77[.]xyz; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "url-path",
+   "value": "/zric/mztnd.rbes",
+   "first_seen": "2026-11-15",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1101, node[.]tutor-lens77[.]xyz; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "url-path",
+   "value": "/btghde/zpqefk/hmpxp.qzyr",
+   "first_seen": "2026-11-15",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1107, stat9[.]wintergroup[.]one; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "url-path",
+   "value": "/ldmd/uvbd/hmpxp.qzyr",
+   "first_seen": "2026-11-15",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1107, stat9[.]wintergroup[.]one; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "url-path",
+   "value": "/tijd/hmpxp.qzyr",
+   "first_seen": "2026-11-15",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1107, stat9[.]wintergroup[.]one; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "url-path",
+   "value": "/uhgvyr/ndrq/hmpxp.qzyr",
+   "first_seen": "2026-11-15",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1107, stat9[.]wintergroup[.]one; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "url-path",
+   "value": "/czannp/ybfcf/mbmnc.xgao",
+   "first_seen": "2026-11-15",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1110a, init1[.]wavefleet63[.]work; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "url-path",
+   "value": "/esu/mbmnc.xgao",
+   "first_seen": "2026-11-15",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1110a, init1[.]wavefleet63[.]work; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "url-path",
+   "value": "/hnswn/tsqz/mbmnc.xgao",
+   "first_seen": "2026-11-15",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1110a, init1[.]wavefleet63[.]work; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "url-path",
+   "value": "/jxbp/dfzje/mbmnc.xgao",
+   "first_seen": "2026-11-15",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1110a, init1[.]wavefleet63[.]work; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "url-path",
+   "value": "/mevkhz/pqyrj/luwon.wmwh",
+   "first_seen": "2026-11-15",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1110b, meta3[.]grovestack[.]one; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "url-path",
+   "value": "/pyhe/luwon.wmwh",
+   "first_seen": "2026-11-15",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1110b, meta3[.]grovestack[.]one; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "url-path",
+   "value": "/qxs/isp/luwon.wmwh",
+   "first_seen": "2026-11-15",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1110b, meta3[.]grovestack[.]one; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "url-path",
+   "value": "/ufe/luwon.wmwh",
+   "first_seen": "2026-11-15",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1110b, meta3[.]grovestack[.]one; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "url-path",
+   "value": "/akgoro/pxpnp.rnjh",
+   "first_seen": "2026-11-15",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1110b, meta3[.]grovestack[.]one; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "url-path",
+   "value": "/vww/pxpnp.rnjh",
+   "first_seen": "2026-11-15",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1110b, meta3[.]grovestack[.]one; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "url-path",
+   "value": "/yyg/zleux/pxpnp.rnjh",
+   "first_seen": "2026-11-15",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1110b, meta3[.]grovestack[.]one; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "url-path",
+   "value": "/zixeks/pxpnp.rnjh",
+   "first_seen": "2026-11-15",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1110b, meta3[.]grovestack[.]one; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "domain",
+   "value": "polygon.gateway.tenderly.co",
+   "first_seen": "2026-11-15",
+   "role": "legit public Polygon JSON-RPC (Tenderly) listed as RPC endpoint in one build-yh-1110b memory dump of REVSTEALER; new next to polygon-bor-rpc[.]publicnode[.]com - do NOT block globally; hunt non-browser POST eth_call",
+   "verdict": "shared-or-legit-infrastructure",
+   "confidence": "medium",
+   "source": "static config extraction"
   }
  ]
 }
