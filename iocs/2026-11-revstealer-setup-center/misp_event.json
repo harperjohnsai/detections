@@ -3073,7 +3073,7 @@
         "value": "node.tutor-lens77.xyz",
         "to_ids": true,
         "distribution": "5",
-        "comment": "C1 build yh-1101 REVSTEALER primary C2 (HTTPS :443; GET /health must return 'active'); host:port, Polygon contract and Telegraph page all taken from the embedded config of a sandbox memory dump (deployer link: contract from the same wallet as builds 25-27); contract value and Telegraph page not read. [type: domain; verdict: malicious; source: YARAify memory dumps 2026-11-14/15, static config extraction]",
+        "comment": "C1 build yh-1101 REVSTEALER primary C2 (HTTPS :443; GET /health must return 'active'); host:port, Polygon contract and Telegraph page all taken from the embedded config of a sandbox memory dump (deployer link: contract from the same wallet as builds 25-27); contract value and Telegraph page read 2026-11-15 and decrypted: both give the same host:port. [type: domain; verdict: malicious; source: YARAify memory dumps 2026-11-14/15, static config extraction]",
         "timestamp": "1794528000",
         "Tag": [
           {
@@ -3137,7 +3137,7 @@
         "value": "stat9.wintergroup.one",
         "to_ids": true,
         "distribution": "5",
-        "comment": "C1 build yh-1107 REVSTEALER primary C2 (HTTPS :443; GET /health must return 'active'); host:port, Polygon contract and Telegraph page all taken from the embedded config of a sandbox memory dump (deployer link: contract from the same wallet as builds 25-27); contract value and Telegraph page not read. [type: domain; verdict: malicious; source: YARAify memory dumps 2026-11-14/15, static config extraction]",
+        "comment": "C1 build yh-1107 REVSTEALER primary C2 (HTTPS :443; GET /health must return 'active'); host:port, Polygon contract and Telegraph page all taken from the embedded config of a sandbox memory dump (deployer link: contract from the same wallet as builds 25-27); contract value and Telegraph page read 2026-11-15 and decrypted: both give the same host:port. [type: domain; verdict: malicious; source: YARAify memory dumps 2026-11-14/15, static config extraction]",
         "timestamp": "1794528000",
         "Tag": [
           {
@@ -3201,7 +3201,7 @@
         "value": "init1.wavefleet63.work",
         "to_ids": true,
         "distribution": "5",
-        "comment": "C1 build yh-1110a REVSTEALER primary C2 (HTTPS :443; GET /health must return 'active'); host:port, Polygon contract and Telegraph page all taken from the embedded config of a sandbox memory dump (deployer link: contract from the same wallet as builds 25-27); contract value and Telegraph page not read. [type: domain; verdict: malicious; source: YARAify memory dumps 2026-11-14/15, static config extraction]",
+        "comment": "C1 build yh-1110a REVSTEALER primary C2 (HTTPS :443; GET /health must return 'active'); host:port, Polygon contract and Telegraph page all taken from the embedded config of a sandbox memory dump (deployer link: contract from the same wallet as builds 25-27); contract value and Telegraph page read 2026-11-15 and decrypted: both give the same host:port. [type: domain; verdict: malicious; source: YARAify memory dumps 2026-11-14/15, static config extraction]",
         "timestamp": "1794528000",
         "Tag": [
           {
@@ -3265,7 +3265,7 @@
         "value": "meta3.grovestack.one",
         "to_ids": true,
         "distribution": "5",
-        "comment": "C1 build yh-1110b REVSTEALER primary C2 (HTTPS :443; GET /health must return 'active'); host:port, Polygon contract and Telegraph page all taken from the embedded config of a sandbox memory dump (deployer link: contract from the same wallet as builds 25-27); contract value and Telegraph page not read. Domain uses Cloudflare name servers. [type: domain; verdict: malicious; source: YARAify memory dumps 2026-11-14/15, static config extraction]",
+        "comment": "C1 build yh-1110b REVSTEALER primary C2 (HTTPS :443; GET /health must return 'active'); host:port, Polygon contract and Telegraph page all taken from the embedded config of a sandbox memory dump (deployer link: contract from the same wallet as builds 25-27); contract value and Telegraph page read 2026-11-15 and decrypted: both give the same host:port. Domain uses Cloudflare name servers. [type: domain; verdict: malicious; source: YARAify memory dumps 2026-11-14/15, static config extraction]",
         "timestamp": "1794528000",
         "Tag": [
           {
