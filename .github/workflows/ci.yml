@@ -22,7 +22,8 @@ jobs:
           python-version: "3.12"
       - run: pip install pyyaml yamllint sigma-cli pysigma "pySigma-validators-sigmahq==0.21.*"
       - name: yamllint (catches duplicate keys that the Sigma loader silently drops)
-        run: yamllint -d "{extends: relaxed, rules: {line-length: disable, key-duplicates: enable}}" --strict sigma/
+        run: >-
+          yamllint -d '{extends: relaxed, rules: {line-length: disable, key-duplicates: enable}}' --strict sigma/
       - name: sigma check
         run: sigma check --fail-on-error --fail-on-issues --validation-config tests/sigma_cli_conf.yml sigma/
       - name: Sigma logic tests on synthetic events
