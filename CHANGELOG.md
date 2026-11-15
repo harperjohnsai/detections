@@ -51,3 +51,6 @@
 
 ### 2026-11-15 (later)
 - Setup Center case: dead drops of the four `yh-*` builds read (Polygon eth_call + Telegraph API) and decrypted; all agree with the embedded configs. Rows updated (no IOCs added or removed).
+
+### 2026-11-15 (Sigma fix)
+- `proxy_malware_revstealer_telegraph_dead_drop.yml`: duplicate `c-uri|contains` key replaced by `c-uri|contains|all` (the YAML loader had silently kept only the last value). Same fix pushed to SigmaHQ PR #6613.
