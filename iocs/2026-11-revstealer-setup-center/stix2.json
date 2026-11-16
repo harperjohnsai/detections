@@ -4633,7 +4633,7 @@
       "type": "indicator",
       "id": "indicator--49b79c31-56cc-5c57-91a7-7c97d776a205",
       "name": "a7eb8e3159d6bb0894c507c922c53d3a5726a9fe60c9768214b9e5c6794841bd",
-      "description": "C1 build yh-1101 REVSTEALER core: sandbox process-memory dump of a loader process holding the decrypted REVSTEALER core (Go binary, about 6 MB); matches YARA REVSTEALER_x64_Core_SetupCenter; memory/dump hunting, not a file on disk [verdict: malicious; source: YARAify (first seen); static config extraction]",
+      "description": "C1 build yh-1101 REVSTEALER core: sandbox process-memory dump of a loader process holding the decrypted REVSTEALER core (not a Go binary: no Go build info or pclntab; about 6 MB); matches YARA REVSTEALER_x64_Core_SetupCenter; memory/dump hunting, not a file on disk [verdict: malicious; source: YARAify (first seen); static config extraction]",
       "indicator_types": [
         "malicious-activity"
       ],
@@ -4735,7 +4735,7 @@
       "type": "indicator",
       "id": "indicator--a80bfc57-8183-50bb-a1f4-3c1fb79b9e58",
       "name": "32ed319b08ee64d4bf6b71de79738f3c799db9f0087bc9d20bfb9f5c57ce5dd7",
-      "description": "C1 build yh-1107 REVSTEALER core: sandbox process-memory dump of a loader process holding the decrypted REVSTEALER core (Go binary, about 6 MB); matches YARA REVSTEALER_x64_Core_SetupCenter; memory/dump hunting, not a file on disk [verdict: malicious; source: YARAify (first seen); static config extraction]",
+      "description": "C1 build yh-1107 REVSTEALER core: sandbox process-memory dump of a loader process holding the decrypted REVSTEALER core (not a Go binary: no Go build info or pclntab; about 6 MB); matches YARA REVSTEALER_x64_Core_SetupCenter; memory/dump hunting, not a file on disk [verdict: malicious; source: YARAify (first seen); static config extraction]",
       "indicator_types": [
         "malicious-activity"
       ],
@@ -4837,7 +4837,7 @@
       "type": "indicator",
       "id": "indicator--8e080986-6846-5996-a224-d1761c667a6b",
       "name": "413448876264d36960375c969e0e2ed433736ac3def2956387487dccae58334c",
-      "description": "C1 build yh-1110a REVSTEALER core: sandbox process-memory dump of a loader process holding the decrypted REVSTEALER core (Go binary, about 6 MB); matches YARA REVSTEALER_x64_Core_SetupCenter; memory/dump hunting, not a file on disk [verdict: malicious; source: YARAify (first seen); static config extraction]",
+      "description": "C1 build yh-1110a REVSTEALER core: sandbox process-memory dump of a loader process holding the decrypted REVSTEALER core (not a Go binary: no Go build info or pclntab; about 6 MB); matches YARA REVSTEALER_x64_Core_SetupCenter; memory/dump hunting, not a file on disk [verdict: malicious; source: YARAify (first seen); static config extraction]",
       "indicator_types": [
         "malicious-activity"
       ],
@@ -4963,7 +4963,7 @@
       "type": "indicator",
       "id": "indicator--4ae9d6e7-9e6e-5fb0-aa9e-7d7b7ffb0d65",
       "name": "87ab8e5de47652d88f7ed1788b775e03b438482fa14cc19bce9cecdc567d4d48",
-      "description": "C1 build yh-1110b REVSTEALER core: sandbox process-memory dump of a loader process holding the decrypted REVSTEALER core (Go binary, about 6 MB); matches YARA REVSTEALER_x64_Core_SetupCenter; memory/dump hunting, not a file on disk [verdict: malicious; source: YARAify (first seen); static config extraction]",
+      "description": "C1 build yh-1110b REVSTEALER core: sandbox process-memory dump of a loader process holding the decrypted REVSTEALER core (not a Go binary: no Go build info or pclntab; about 6 MB); matches YARA REVSTEALER_x64_Core_SetupCenter; memory/dump hunting, not a file on disk [verdict: malicious; source: YARAify (first seen); static config extraction]",
       "indicator_types": [
         "malicious-activity"
       ],

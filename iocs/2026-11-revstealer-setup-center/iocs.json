@@ -1772,7 +1772,7 @@
    "type": "sha256",
    "value": "a7eb8e3159d6bb0894c507c922c53d3a5726a9fe60c9768214b9e5c6794841bd",
    "first_seen": "2026-11-15",
-   "role": "C1 build yh-1101 REVSTEALER core: sandbox process-memory dump of a loader process holding the decrypted REVSTEALER core (Go binary, about 6 MB); matches YARA REVSTEALER_x64_Core_SetupCenter; memory/dump hunting, not a file on disk",
+   "role": "C1 build yh-1101 REVSTEALER core: sandbox process-memory dump of a loader process holding the decrypted REVSTEALER core (not a Go binary: no Go build info or pclntab; about 6 MB); matches YARA REVSTEALER_x64_Core_SetupCenter; memory/dump hunting, not a file on disk",
    "verdict": "malicious",
    "confidence": "high",
    "source": "YARAify (first seen); static config extraction"
@@ -1808,7 +1808,7 @@
    "type": "sha256",
    "value": "32ed319b08ee64d4bf6b71de79738f3c799db9f0087bc9d20bfb9f5c57ce5dd7",
    "first_seen": "2026-11-14",
-   "role": "C1 build yh-1107 REVSTEALER core: sandbox process-memory dump of a loader process holding the decrypted REVSTEALER core (Go binary, about 6 MB); matches YARA REVSTEALER_x64_Core_SetupCenter; memory/dump hunting, not a file on disk",
+   "role": "C1 build yh-1107 REVSTEALER core: sandbox process-memory dump of a loader process holding the decrypted REVSTEALER core (not a Go binary: no Go build info or pclntab; about 6 MB); matches YARA REVSTEALER_x64_Core_SetupCenter; memory/dump hunting, not a file on disk",
    "verdict": "malicious",
    "confidence": "high",
    "source": "YARAify (first seen); static config extraction"
@@ -1844,7 +1844,7 @@
    "type": "sha256",
    "value": "413448876264d36960375c969e0e2ed433736ac3def2956387487dccae58334c",
    "first_seen": "2026-11-15",
-   "role": "C1 build yh-1110a REVSTEALER core: sandbox process-memory dump of a loader process holding the decrypted REVSTEALER core (Go binary, about 6 MB); matches YARA REVSTEALER_x64_Core_SetupCenter; memory/dump hunting, not a file on disk",
+   "role": "C1 build yh-1110a REVSTEALER core: sandbox process-memory dump of a loader process holding the decrypted REVSTEALER core (not a Go binary: no Go build info or pclntab; about 6 MB); matches YARA REVSTEALER_x64_Core_SetupCenter; memory/dump hunting, not a file on disk",
    "verdict": "malicious",
    "confidence": "high",
    "source": "YARAify (first seen); static config extraction"
@@ -1889,7 +1889,7 @@
    "type": "sha256",
    "value": "87ab8e5de47652d88f7ed1788b775e03b438482fa14cc19bce9cecdc567d4d48",
    "first_seen": "2026-11-15",
-   "role": "C1 build yh-1110b REVSTEALER core: sandbox process-memory dump of a loader process holding the decrypted REVSTEALER core (Go binary, about 6 MB); matches YARA REVSTEALER_x64_Core_SetupCenter; memory/dump hunting, not a file on disk",
+   "role": "C1 build yh-1110b REVSTEALER core: sandbox process-memory dump of a loader process holding the decrypted REVSTEALER core (not a Go binary: no Go build info or pclntab; about 6 MB); matches YARA REVSTEALER_x64_Core_SetupCenter; memory/dump hunting, not a file on disk",
    "verdict": "malicious",
    "confidence": "high",
    "source": "YARAify (first seen); static config extraction"
