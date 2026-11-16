@@ -68,3 +68,10 @@
 - New case `iocs/2026-11-grandoreiro-es-pt`: 43 rows (4 SHA-256, C2 name, derived C2 endpoint, two kit domains, MediaFire and Google-share links as abused-legit, host artefacts, references). Static analysis of the 85.6 MB Delphi loader: three-layer string scheme with a per-string seeded key, C2 port from a SHA-256 formula, Windows-only gated distribution kit.
 - New `yara/grandoreiro/` with two rules (`Grandoreiro_Loader_Delphi_StrCrypt_PortCalc`, `Grandoreiro_Loader_Delphi_BMP_Padding_Hunt`), added to `tests/run_yara_tests.py` and `tests/RESULTS.md`.
 - No Sigma rule: an `.exe` or `.vbs` written under `\Users\Public\` and script-host child processes are already covered by SigmaHQ rules.
+
+### 2026-11-16 (REVSTEALER: two more builds from YARAify memory hits)
+- `iocs/2026-11-revstealer-setup-center`: `REVSTEALER_x64_Core_SetupCenter` matched two more process-memory objects on YARAify (`3959072e`, a memory-layout image of the core from an svchost.exe process; `e29ef19d`, a 5.9 MB dump). Static config extraction gives two builds: `yh-1112` (embedded primary `auth[.]benchteam[.]website`, the C2 we listed on 2026-11-16 from re-pointed dead drops; first build that embeds it) and `yh-1114` (new C2 `bridge6[.]hazellayer76[.]website`, registered 2026-11-14), each with its own Polygon contract (deployer nonces 178 and 210) and Telegraph page. Dead drops of both read 2026-11-16: contract and Telegraph page decrypt to the embedded primary, no re-pointing seen.
+- +20 IOC rows (274 total: 1 domain, 1 context-only RPC host, 2 contracts, 2 Telegraph pages, 2 SHA-256, 8 gate paths, 2 mutexes, 2 user agents), +2 `c2_timeline.csv` rows, README section, ThreatFox references 2032113 to 2032115. No AES keys or other secrets published.
+- Update (not a retraction): the README row for `auth[.]benchteam[.]website` says it is in no embedded config we extracted; build `yh-1112` now embeds it as primary. Earlier text is left as published.
+- Observation only: deployer nonces 208, 209 and 211 to 215 are further contract creations (2026-11-14 to 2026-11-15) not tied to a sample.
+- Not checked: liveness of either C2 (nothing contacted).
