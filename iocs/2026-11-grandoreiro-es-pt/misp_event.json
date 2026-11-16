@@ -1,0 +1,724 @@
+{
+  "Event": {
+    "uuid": "ca1c39c2-f6d4-57d1-b0bc-32a90e75a30d",
+    "info": "Grandoreiro loader in a Portuguese/Spanish \"contraordenacao\" phishing wave",
+    "date": "2026-11-16",
+    "threat_level_id": "2",
+    "analysis": "2",
+    "distribution": "3",
+    "published": false,
+    "timestamp": "1794787200",
+    "Orgc": {
+      "uuid": "b641827b-b56f-53c3-b356-359fddd6e73f",
+      "name": "Harper Johns"
+    },
+    "Tag": [
+      {
+        "name": "tlp:clear"
+      },
+      {
+        "name": "misp-galaxy:malpedia=\"Grandoreiro\""
+      }
+    ],
+    "Attribute": [
+      {
+        "uuid": "279e3f56-60a5-537b-948d-378ab01fef3b",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "93845bd3c4d6cb0a15c75d82903a88776e07bf90634f8d794aca8fd476539a52",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Grandoreiro loader EXE (Delphi, 85.6 MB padded); dropped as %PUBLIC%\\fqQGYftuRrucB$Xq.exe [type: sha256; verdict: malicious; source: static analysis (this case)]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "01fe091c-6ca3-5665-a61d-f0ddaf37cce9",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "354ece2c0a664cb108f659db942feb1710bcae4a1f24a3204768c215e1492bfe",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "ZIP embedded in the VBS; contains bhaONyAnjep.hbi = the loader EXE [type: sha256; verdict: malicious; source: static analysis (this case)]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "6339d1e4-789f-561d-b58c-85e29a1074ca",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "8c43672de22541ae1a777d21c0c358342210022d3b6c08e62af6082ac69b615f",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "VBS dropper (6.2 MB, junk-comment padded) [type: sha256; verdict: malicious; source: static analysis (this case)]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "531c3e1a-2a1a-52df-b3dc-55e69eec2fdc",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "29eace99e55e2caa3d72e1b2b4a149f8699f75eccbca567323f9901fdd09af80",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "lure ZIP downloaded from MediaFire; contains the VBS dropper [type: sha256; verdict: malicious; source: static analysis (this case)]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "f8c33ae9-8611-5e16-8147-b0878eef7c59",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "guild.hopto.me",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "loader C2 name (No-IP dynamic DNS), decrypted from the string table; resolved by the loader through dns.google DoH [type: domain; verdict: malicious; source: decrypted string (static)]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "278cc32c-7e1d-5d11-a0b5-dee9671c3eec",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "3.80.57.117",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "A record of the C2 name on 2026-11-16 08:09 UTC (AWS us-east-1, TTL 60; may rotate) [type: ipv4; verdict: malicious; source: public DoH (dns.google, cloudflare-dns)]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "2de87054-162c-56bf-a17b-4ea0595f6a7e",
+        "type": "ip-dst|port",
+        "category": "Network activity",
+        "value": "3.80.57.117|9136",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "derived C2 module-server endpoint for that A record: port = (SHA256(\"SERVERMODULES\"+ip)[:8] mod 9001)+1001; never contacted, port state not checked [type: endpoint; verdict: malicious; source: derived from decrypted config]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "a2fa3642-f987-5719-9a8d-407eb401116b",
+        "type": "url",
+        "category": "Network activity",
+        "value": "http://3.80.57.117:9136/",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "derived module-server base URL (loader C2 request is GET <base>/<Base64 path>) [type: url; verdict: malicious; source: derived from decrypted config]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "c2e3bbdc-6d55-595b-a1fb-848522dc2429",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "asniqdkw.com",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "gated TDS/phishing kit hop 1 (Windows-UA gate, emoji CAPTCHA); Namecheap, registered 2026-11-15 [type: domain; verdict: malicious; source: chain walk]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "91481b97-9cbb-5e8a-8a6d-fd07e8be23d2",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "bsadbnqwic.com",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "gated TDS kit hop 2 and fake Adobe Acrobat page that returns the MediaFire link; Namecheap, registered 2026-11-09 [type: domain; verdict: malicious; source: chain walk]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "a7dbb1c4-6bfd-5da8-be93-1d55341f50f5",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "212.100.171.11",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "A record of asniqdkw.com on 2026-11-16 (OVH DE, not proxied) [type: ipv4; verdict: malicious; source: public DNS]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "a277831b-443b-5f36-aecd-e683ba8c0796",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "82.47.63.3",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "A record of bsadbnqwic.com on 2026-11-16 [type: ipv4; verdict: malicious; source: public DNS]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "f8c7d39b-7d54-54e7-9d73-34c3f8e7fcb1",
+        "type": "url",
+        "category": "Network activity",
+        "value": "https://www.mediafire.com/file/r4xs0w0g7yrxtep/file",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "lure ZIP download link returned by the fake Acrobat page (abused legitimate file host: block by path, not by domain) [type: url; verdict: compromised-or-abused-legit; source: kit response]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "31f55941-b19c-597f-b0d2-786cca3577d2",
+        "type": "url",
+        "category": "Network activity",
+        "value": "https://share.google/SXbu74PO63plE5EH2",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Google share short link used in the phishing email, redirects to asniqdkw.com (abused legitimate service: block by path, not by domain) [type: url; verdict: compromised-or-abused-legit; source: email link; redirect chain]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "73f5fa21-f2ac-5442-ac0b-b27d85bbdd7f",
+        "type": "url",
+        "category": "Network activity",
+        "value": "https://dns.google/resolve?name=guild.hopto.me",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "DoH lookup made by the loader (legitimate service: hunting pivot only, do not block) [type: url; verdict: shared-or-legit-infrastructure; source: decrypted strings (static)]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "fb0db8aa-2e58-5568-b495-a4fa97459332",
+        "type": "filename",
+        "category": "Artifacts dropped",
+        "value": "%PUBLIC%\\fqQGYftuRrucB$Xq.zip",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ZIP written by the VBS [type: path; verdict: malicious; source: static analysis (this case)]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "a768ff76-f953-5fc9-992e-bc44998b9b0a",
+        "type": "filename",
+        "category": "Artifacts dropped",
+        "value": "%PUBLIC%\\fqQGYftuRrucB$Xq.exe",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "loader EXE location (moved there by the VBS) [type: path; verdict: malicious; source: static analysis (this case)]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "cb5fbe90-de10-5710-a427-682e934ecb00",
+        "type": "filename",
+        "category": "Artifacts dropped",
+        "value": "%PUBLIC%\\dEsc9GBx8nD_eF.hbi",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "VBS re-run marker holding the EXE path [type: path; verdict: malicious; source: static analysis (this case)]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "24cf56b1-9640-56a0-aa0b-8cb1a738fbe9",
+        "type": "filename",
+        "category": "Artifacts dropped",
+        "value": "%PUBLIC%\\<id>.xml",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "loader infection marker (date dd/mm/yyyy) [type: path; verdict: malicious; source: static analysis (this case)]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "baa5b868-44f5-588d-b529-3bdfe394358c",
+        "type": "filename",
+        "category": "Artifacts dropped",
+        "value": "%PROGRAMDATA%\\<random>\\",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "payload staging directory (RC4 + ZipForge) [type: path; verdict: malicious; source: static analysis (this case)]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "050b1229-11ae-52a8-9055-4824659b6219",
+        "type": "text",
+        "category": "Other",
+        "value": "7684223510",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "payload RC4 key (same value as in public Grandoreiro loader reports) [type: string; verdict: malicious; source: decrypted string (static); IBM X-Force 2024]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "2d16a6aa-7245-577e-bb8a-7bc4802407c0",
+        "type": "text",
+        "category": "Other",
+        "value": "J4wRm9kZ3xNpL8vQ",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "string-decryption salt of this build (stored XOR 0x42 in the binary) [type: string; verdict: malicious; source: static analysis (this case)]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "6e22827b-de6f-5cbc-864f-68be2c8e821e",
+        "type": "text",
+        "category": "Other",
+        "value": "RCDATA ProcessUtilityZVkUIjEJWASEP",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "PE resource name: 76,545,078-byte single-colour BMP used as size padding [type: string; verdict: malicious; source: static analysis (this case)]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "9a57bee7-3bc1-5c4e-82c5-82fcb89113a0",
+        "type": "text",
+        "category": "Other",
+        "value": "Kofax Documents / Vertex Document Reader / PDFEnterprise 63625.6460.48119.7552",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "fake PE version info of the loader EXE [type: string; verdict: malicious; source: static analysis (this case)]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "a1b4014c-e4d8-5d7f-8094-27b19c912b43",
+        "type": "text",
+        "category": "Other",
+        "value": "GET http://<ip>:<1001-10001>/<Base64 text>",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "loader C2 request shape (encrypted path, plain HTTP, no Host-name use) [type: string; verdict: malicious; source: static analysis (this case)]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "233b37a0-93c8-5af4-993b-f0e38921e5e7",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://www.ibm.com/think/x-force/grandoreiro-banking-trojan-unleashed",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "IBM X-Force, Grandoreiro banking trojan unleashed (2024) [type: reference; verdict: reference; source: published research]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "334b2a2d-96b1-5c34-b21c-423400f51054",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://securelist.com/grandoreiro-banking-trojan/114257",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Kaspersky Securelist, Grandoreiro recent versions (2024) [type: reference; verdict: reference; source: published research]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "78277b96-4ed7-5b6c-a5d2-76a8bf527fb1",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://www.forcepoint.com/blog/x-labs/grandoreiro-trojan-targets-mexico-argentina-spain",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Forcepoint X-Labs, Grandoreiro via MediaFire (2025) [type: reference; verdict: reference; source: published research]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "d464c4b7-b501-53c7-b4f7-90c89825d2d7",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://www.watchguard.com/wgrd-security-hub/secplicity-blog/grandoreiro-malware-campaign-targets-europe-and-latin-america",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WatchGuard Secplicity, Grandoreiro campaign Europe and LATAM (2026) [type: reference; verdict: reference; source: published research]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "7bf1813e-50ce-5828-b867-3b5151c58185",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://bazaar.abuse.ch/sample/29eace99e55e2caa3d72e1b2b4a149f8699f75eccbca567323f9901fdd09af80/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "MalwareBazaar, lure ZIP [type: reference; verdict: reference; source: MalwareBazaar]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "f0d66335-660e-515c-86fb-47ae9b27f5e8",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://bazaar.abuse.ch/sample/93845bd3c4d6cb0a15c75d82903a88776e07bf90634f8d794aca8fd476539a52/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "MalwareBazaar, loader EXE [type: reference; verdict: reference; source: MalwareBazaar]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "fd65a5c0-b3b2-58af-b4d2-86d9d184eba9",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://bazaar.abuse.ch/sample/354ece2c0a664cb108f659db942feb1710bcae4a1f24a3204768c215e1492bfe/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "MalwareBazaar, ZIP embedded in the VBS [type: reference; verdict: reference; source: MalwareBazaar]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "32851b86-1d32-5071-9b36-4b2d32c24308",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2031189/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox, guild.hopto.me [type: reference; verdict: reference; source: ThreatFox]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "9332f034-70fc-599f-979d-43db87e1059b",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2031190/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox, 3.80.57.117:9136 [type: reference; verdict: reference; source: ThreatFox]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "e0c0f6d2-2bc5-5b7a-b8d3-439f6861c677",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2031191/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox, asniqdkw.com [type: reference; verdict: reference; source: ThreatFox]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "1d80da08-5ff0-52d2-821a-eafa6147acc3",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2031192/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox, bsadbnqwic.com [type: reference; verdict: reference; source: ThreatFox]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "fb0116ff-d922-5630-b0bd-e6b666e67dab",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2031193/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox, MediaFire URL [type: reference; verdict: reference; source: ThreatFox]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "44273b05-402a-588c-967a-3f5764453d49",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2031194/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox, loader EXE [type: reference; verdict: reference; source: ThreatFox]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "d87f8409-5b3f-5b64-b86a-c0a98b557878",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2031195/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox, VBS [type: reference; verdict: reference; source: ThreatFox]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "e4c5ee0b-55cd-5497-ad05-4af56fb9c5ac",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2031196/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox, lure ZIP [type: reference; verdict: reference; source: ThreatFox]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "6750b9e5-85f7-57b9-a804-2cba03ae3634",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://www.virustotal.com/gui/file/29eace99e55e2caa3d72e1b2b4a149f8699f75eccbca567323f9901fdd09af80",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "VirusTotal, lure ZIP [type: reference; verdict: reference; source: VirusTotal]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "9792c5a5-98fa-5993-ada8-6e905b3f655c",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://www.virustotal.com/gui/file/8c43672de22541ae1a777d21c0c358342210022d3b6c08e62af6082ac69b615f",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "VirusTotal, VBS dropper [type: reference; verdict: reference; source: VirusTotal]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "2548b2c2-116c-586e-b02d-af3d9558fab3",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://www.virustotal.com/gui/file/93845bd3c4d6cb0a15c75d82903a88776e07bf90634f8d794aca8fd476539a52",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "VirusTotal, loader EXE [type: reference; verdict: reference; source: VirusTotal]",
+        "timestamp": "1794787200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "1927edef-b112-5d33-a0c4-400e2e741eff",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://gist.github.com/harperjohnsai/bc552bd3ddeab55f01e3feb77ca2b412",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "GitHub Gist",
+        "timestamp": "1794787200"
+      }
+    ]
+  }
+}

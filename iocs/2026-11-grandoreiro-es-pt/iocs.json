@@ -1,0 +1,395 @@
+{
+ "_warning": "MACHINE-READABLE, NOT DEFANGED: values are live indicators. Do not browse or fetch them.",
+ "case": "2026-11-grandoreiro-es-pt",
+ "license": "CC0-1.0",
+ "count": 43,
+ "iocs": [
+  {
+   "type": "sha256",
+   "value": "93845bd3c4d6cb0a15c75d82903a88776e07bf90634f8d794aca8fd476539a52",
+   "first_seen": "2026-11-16",
+   "role": "Grandoreiro loader EXE (Delphi, 85.6 MB padded); dropped as %PUBLIC%\\fqQGYftuRrucB$Xq.exe",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "sha256",
+   "value": "354ece2c0a664cb108f659db942feb1710bcae4a1f24a3204768c215e1492bfe",
+   "first_seen": "2026-11-16",
+   "role": "ZIP embedded in the VBS; contains bhaONyAnjep.hbi = the loader EXE",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "sha256",
+   "value": "8c43672de22541ae1a777d21c0c358342210022d3b6c08e62af6082ac69b615f",
+   "first_seen": "2026-11-16",
+   "role": "VBS dropper (6.2 MB, junk-comment padded)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "sha256",
+   "value": "29eace99e55e2caa3d72e1b2b4a149f8699f75eccbca567323f9901fdd09af80",
+   "first_seen": "2026-11-16",
+   "role": "lure ZIP downloaded from MediaFire; contains the VBS dropper",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "domain",
+   "value": "guild.hopto.me",
+   "first_seen": "2026-11-16",
+   "role": "loader C2 name (No-IP dynamic DNS), decrypted from the string table; resolved by the loader through dns.google DoH",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "decrypted string (static)"
+  },
+  {
+   "type": "ipv4",
+   "value": "3.80.57.117",
+   "first_seen": "2026-11-16",
+   "role": "A record of the C2 name on 2026-11-16 08:09 UTC (AWS us-east-1, TTL 60; may rotate)",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "public DoH (dns.google, cloudflare-dns)"
+  },
+  {
+   "type": "endpoint",
+   "value": "3.80.57.117:9136",
+   "first_seen": "2026-11-16",
+   "role": "derived C2 module-server endpoint for that A record: port = (SHA256(\"SERVERMODULES\"+ip)[:8] mod 9001)+1001; never contacted, port state not checked",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "derived from decrypted config"
+  },
+  {
+   "type": "url",
+   "value": "http://3.80.57.117:9136/",
+   "first_seen": "2026-11-16",
+   "role": "derived module-server base URL (loader C2 request is GET <base>/<Base64 path>)",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "derived from decrypted config"
+  },
+  {
+   "type": "domain",
+   "value": "asniqdkw.com",
+   "first_seen": "2026-11-16",
+   "role": "gated TDS/phishing kit hop 1 (Windows-UA gate, emoji CAPTCHA); Namecheap, registered 2026-11-15",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "chain walk"
+  },
+  {
+   "type": "domain",
+   "value": "bsadbnqwic.com",
+   "first_seen": "2026-11-16",
+   "role": "gated TDS kit hop 2 and fake Adobe Acrobat page that returns the MediaFire link; Namecheap, registered 2026-11-09",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "chain walk"
+  },
+  {
+   "type": "ipv4",
+   "value": "212.100.171.11",
+   "first_seen": "2026-11-16",
+   "role": "A record of asniqdkw.com on 2026-11-16 (OVH DE, not proxied)",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "public DNS"
+  },
+  {
+   "type": "ipv4",
+   "value": "82.47.63.3",
+   "first_seen": "2026-11-16",
+   "role": "A record of bsadbnqwic.com on 2026-11-16",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "public DNS"
+  },
+  {
+   "type": "url",
+   "value": "https://www.mediafire.com/file/r4xs0w0g7yrxtep/file",
+   "first_seen": "2026-11-16",
+   "role": "lure ZIP download link returned by the fake Acrobat page (abused legitimate file host: block by path, not by domain)",
+   "verdict": "compromised-or-abused-legit",
+   "confidence": "high",
+   "source": "kit response"
+  },
+  {
+   "type": "url",
+   "value": "https://share.google/SXbu74PO63plE5EH2",
+   "first_seen": "2026-11-16",
+   "role": "Google share short link used in the phishing email, redirects to asniqdkw.com (abused legitimate service: block by path, not by domain)",
+   "verdict": "compromised-or-abused-legit",
+   "confidence": "high",
+   "source": "email link; redirect chain"
+  },
+  {
+   "type": "url",
+   "value": "https://dns.google/resolve?name=guild.hopto.me",
+   "first_seen": "2026-11-16",
+   "role": "DoH lookup made by the loader (legitimate service: hunting pivot only, do not block)",
+   "verdict": "shared-or-legit-infrastructure",
+   "confidence": "high",
+   "source": "decrypted strings (static)"
+  },
+  {
+   "type": "path",
+   "value": "%PUBLIC%\\fqQGYftuRrucB$Xq.zip",
+   "first_seen": "2026-11-16",
+   "role": "ZIP written by the VBS",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "path",
+   "value": "%PUBLIC%\\fqQGYftuRrucB$Xq.exe",
+   "first_seen": "2026-11-16",
+   "role": "loader EXE location (moved there by the VBS)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "path",
+   "value": "%PUBLIC%\\dEsc9GBx8nD_eF.hbi",
+   "first_seen": "2026-11-16",
+   "role": "VBS re-run marker holding the EXE path",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "path",
+   "value": "%PUBLIC%\\<id>.xml",
+   "first_seen": "2026-11-16",
+   "role": "loader infection marker (date dd/mm/yyyy)",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "path",
+   "value": "%PROGRAMDATA%\\<random>\\",
+   "first_seen": "2026-11-16",
+   "role": "payload staging directory (RC4 + ZipForge)",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "string",
+   "value": "7684223510",
+   "first_seen": "2026-11-16",
+   "role": "payload RC4 key (same value as in public Grandoreiro loader reports)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "decrypted string (static); IBM X-Force 2024"
+  },
+  {
+   "type": "string",
+   "value": "J4wRm9kZ3xNpL8vQ",
+   "first_seen": "2026-11-16",
+   "role": "string-decryption salt of this build (stored XOR 0x42 in the binary)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "string",
+   "value": "RCDATA ProcessUtilityZVkUIjEJWASEP",
+   "first_seen": "2026-11-16",
+   "role": "PE resource name: 76,545,078-byte single-colour BMP used as size padding",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "string",
+   "value": "Kofax Documents / Vertex Document Reader / PDFEnterprise 63625.6460.48119.7552",
+   "first_seen": "2026-11-16",
+   "role": "fake PE version info of the loader EXE",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "string",
+   "value": "GET http://<ip>:<1001-10001>/<Base64 text>",
+   "first_seen": "2026-11-16",
+   "role": "loader C2 request shape (encrypted path, plain HTTP, no Host-name use)",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "reference",
+   "value": "https://www.ibm.com/think/x-force/grandoreiro-banking-trojan-unleashed",
+   "first_seen": "2026-11-16",
+   "role": "IBM X-Force, Grandoreiro banking trojan unleashed (2024)",
+   "verdict": "reference",
+   "confidence": "high",
+   "source": "published research"
+  },
+  {
+   "type": "reference",
+   "value": "https://securelist.com/grandoreiro-banking-trojan/114257",
+   "first_seen": "2026-11-16",
+   "role": "Kaspersky Securelist, Grandoreiro recent versions (2024)",
+   "verdict": "reference",
+   "confidence": "high",
+   "source": "published research"
+  },
+  {
+   "type": "reference",
+   "value": "https://www.forcepoint.com/blog/x-labs/grandoreiro-trojan-targets-mexico-argentina-spain",
+   "first_seen": "2026-11-16",
+   "role": "Forcepoint X-Labs, Grandoreiro via MediaFire (2025)",
+   "verdict": "reference",
+   "confidence": "high",
+   "source": "published research"
+  },
+  {
+   "type": "reference",
+   "value": "https://www.watchguard.com/wgrd-security-hub/secplicity-blog/grandoreiro-malware-campaign-targets-europe-and-latin-america",
+   "first_seen": "2026-11-16",
+   "role": "WatchGuard Secplicity, Grandoreiro campaign Europe and LATAM (2026)",
+   "verdict": "reference",
+   "confidence": "high",
+   "source": "published research"
+  },
+  {
+   "type": "reference",
+   "value": "https://bazaar.abuse.ch/sample/29eace99e55e2caa3d72e1b2b4a149f8699f75eccbca567323f9901fdd09af80/",
+   "first_seen": "2026-11-16",
+   "role": "MalwareBazaar, lure ZIP",
+   "verdict": "reference",
+   "confidence": "high",
+   "source": "MalwareBazaar"
+  },
+  {
+   "type": "reference",
+   "value": "https://bazaar.abuse.ch/sample/93845bd3c4d6cb0a15c75d82903a88776e07bf90634f8d794aca8fd476539a52/",
+   "first_seen": "2026-11-16",
+   "role": "MalwareBazaar, loader EXE",
+   "verdict": "reference",
+   "confidence": "high",
+   "source": "MalwareBazaar"
+  },
+  {
+   "type": "reference",
+   "value": "https://bazaar.abuse.ch/sample/354ece2c0a664cb108f659db942feb1710bcae4a1f24a3204768c215e1492bfe/",
+   "first_seen": "2026-11-16",
+   "role": "MalwareBazaar, ZIP embedded in the VBS",
+   "verdict": "reference",
+   "confidence": "high",
+   "source": "MalwareBazaar"
+  },
+  {
+   "type": "reference",
+   "value": "https://threatfox.abuse.ch/ioc/2031189/",
+   "first_seen": "2026-11-16",
+   "role": "ThreatFox, guild.hopto.me",
+   "verdict": "reference",
+   "confidence": "high",
+   "source": "ThreatFox"
+  },
+  {
+   "type": "reference",
+   "value": "https://threatfox.abuse.ch/ioc/2031190/",
+   "first_seen": "2026-11-16",
+   "role": "ThreatFox, 3.80.57.117:9136",
+   "verdict": "reference",
+   "confidence": "high",
+   "source": "ThreatFox"
+  },
+  {
+   "type": "reference",
+   "value": "https://threatfox.abuse.ch/ioc/2031191/",
+   "first_seen": "2026-11-16",
+   "role": "ThreatFox, asniqdkw.com",
+   "verdict": "reference",
+   "confidence": "high",
+   "source": "ThreatFox"
+  },
+  {
+   "type": "reference",
+   "value": "https://threatfox.abuse.ch/ioc/2031192/",
+   "first_seen": "2026-11-16",
+   "role": "ThreatFox, bsadbnqwic.com",
+   "verdict": "reference",
+   "confidence": "high",
+   "source": "ThreatFox"
+  },
+  {
+   "type": "reference",
+   "value": "https://threatfox.abuse.ch/ioc/2031193/",
+   "first_seen": "2026-11-16",
+   "role": "ThreatFox, MediaFire URL",
+   "verdict": "reference",
+   "confidence": "high",
+   "source": "ThreatFox"
+  },
+  {
+   "type": "reference",
+   "value": "https://threatfox.abuse.ch/ioc/2031194/",
+   "first_seen": "2026-11-16",
+   "role": "ThreatFox, loader EXE",
+   "verdict": "reference",
+   "confidence": "high",
+   "source": "ThreatFox"
+  },
+  {
+   "type": "reference",
+   "value": "https://threatfox.abuse.ch/ioc/2031195/",
+   "first_seen": "2026-11-16",
+   "role": "ThreatFox, VBS",
+   "verdict": "reference",
+   "confidence": "high",
+   "source": "ThreatFox"
+  },
+  {
+   "type": "reference",
+   "value": "https://threatfox.abuse.ch/ioc/2031196/",
+   "first_seen": "2026-11-16",
+   "role": "ThreatFox, lure ZIP",
+   "verdict": "reference",
+   "confidence": "high",
+   "source": "ThreatFox"
+  },
+  {
+   "type": "reference",
+   "value": "https://www.virustotal.com/gui/file/29eace99e55e2caa3d72e1b2b4a149f8699f75eccbca567323f9901fdd09af80",
+   "first_seen": "2026-11-16",
+   "role": "VirusTotal, lure ZIP",
+   "verdict": "reference",
+   "confidence": "high",
+   "source": "VirusTotal"
+  },
+  {
+   "type": "reference",
+   "value": "https://www.virustotal.com/gui/file/8c43672de22541ae1a777d21c0c358342210022d3b6c08e62af6082ac69b615f",
+   "first_seen": "2026-11-16",
+   "role": "VirusTotal, VBS dropper",
+   "verdict": "reference",
+   "confidence": "high",
+   "source": "VirusTotal"
+  },
+  {
+   "type": "reference",
+   "value": "https://www.virustotal.com/gui/file/93845bd3c4d6cb0a15c75d82903a88776e07bf90634f8d794aca8fd476539a52",
+   "first_seen": "2026-11-16",
+   "role": "VirusTotal, loader EXE",
+   "verdict": "reference",
+   "confidence": "high",
+   "source": "VirusTotal"
+  }
+ ]
+}

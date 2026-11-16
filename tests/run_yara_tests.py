@@ -43,6 +43,9 @@ EXPECTED = {
     '31a4f6a8aecd2b18107dfff5e68581804a68e9d61fc68e3ccf01d54225ae5cde': ['HUNT_macOS_MioLab_Cpp_Stealer_Plaintext_Artifacts'],  # decoded string dump (artefact)
     '978c98b401a6124e0522043b983911f7f57fc7b64868164cc158439ae5b07dd9': ['HUNT_macOS_MioLab_Agent_Plaintext_Artifacts'],       # decoded agent strings (artefact)
     '3bf97f7e851e3bfb9c16872a55364af1e6a95455d24b8d25e8dfc57e4c587a56': ['HUNT_MioLab_Agent_C2_Body'],                          # sandbox curl command lines (artefact)
+    # Grandoreiro Delphi loader (yara/grandoreiro)
+    '93845bd3c4d6cb0a15c75d82903a88776e07bf90634f8d794aca8fd476539a52': ['Grandoreiro_Loader_Delphi_BMP_Padding_Hunt', 'Grandoreiro_Loader_Delphi_StrCrypt_PortCalc'],  # loader EXE, 85.6 MB
+    '29db0be6d95b24744259cba90c29fb34df596fb88d321dcc14e5873fd5a6ac6f': ['Grandoreiro_Loader_Delphi_StrCrypt_PortCalc'],  # same loader, padding resource stripped (derived test copy)
 }
 ok = True
 

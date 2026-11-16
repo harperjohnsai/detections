@@ -185,3 +185,16 @@ ALL CHECKS PASS
 ```
 
 Wider negative corpus (both engines, about 650 files per rule: unrelated PEs, DLLs, Python extension modules and other stages of the case): 0 hits outside the reference samples. `SetupCenter_Loader_AntiVM_HashTables` hit `version.dll` of builds 25, 26, 27 (3 distinct hashes); `REVSTEALER_x64_Hashed_Evasion_Shapes` hit 6 distinct payload / strings-decrypted artefacts of builds 25, 26, 27. The 59 (loader) and 69 (REVSTEALER) decoded hash-table plaintexts were re-hashed against the binaries and all match.
+
+## Grandoreiro rules (yara/grandoreiro), run 2026-11-16
+
+Engines: yara-python 4.5.4 and YARA-X 1.23.0, all repository rules compiled together.
+
+```
+PASS [yara-python 4.5.4] 93845bd3c4d6 -> Grandoreiro_Loader_Delphi_BMP_Padding_Hunt, Grandoreiro_Loader_Delphi_StrCrypt_PortCalc
+PASS [yara-x 1.23.0] 93845bd3c4d6 -> Grandoreiro_Loader_Delphi_BMP_Padding_Hunt, Grandoreiro_Loader_Delphi_StrCrypt_PortCalc
+PASS [yara-python 4.5.4] 29db0be6d95b -> Grandoreiro_Loader_Delphi_StrCrypt_PortCalc
+PASS [yara-x 1.23.0] 29db0be6d95b -> Grandoreiro_Loader_Delphi_StrCrypt_PortCalc
+```
+
+`29db0be6d95b` is the same loader with the padding resource stripped (a derived test copy, not a sample in the wild). Negative corpus: 611 files (606 unrelated PE files from other analyses and tools, a VBS, two ZIPs, two benign Delphi installers). Grandoreiro rules: 0 hits on all 611. The other rule sets hit 26 of those files, all of them reference artefacts of the Setup Center / REVSTEALER case (expected positives, so the generic "0 hits" line of the harness is not applicable to this corpus). Only two benign Delphi binaries are in the corpus.

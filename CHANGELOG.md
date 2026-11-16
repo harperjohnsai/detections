@@ -63,3 +63,8 @@
 
 ### 2026-11-16 (correction)
 - Retracted: Setup Center README called four 5.9-6.3 MB memory dumps "Go-binary dumps" (inferred from third-party Go YARA co-hits). Disproved: no Go build info, pclntab or runtime strings in any of them. Wording corrected; no IOC change.
+
+### 2026-11-16 (Grandoreiro loader, PT/ES phishing wave)
+- New case `iocs/2026-11-grandoreiro-es-pt`: 43 rows (4 SHA-256, C2 name, derived C2 endpoint, two kit domains, MediaFire and Google-share links as abused-legit, host artefacts, references). Static analysis of the 85.6 MB Delphi loader: three-layer string scheme with a per-string seeded key, C2 port from a SHA-256 formula, Windows-only gated distribution kit.
+- New `yara/grandoreiro/` with two rules (`Grandoreiro_Loader_Delphi_StrCrypt_PortCalc`, `Grandoreiro_Loader_Delphi_BMP_Padding_Hunt`), added to `tests/run_yara_tests.py` and `tests/RESULTS.md`.
+- No Sigma rule: an `.exe` or `.vbs` written under `\Users\Public\` and script-host child processes are already covered by SigmaHQ rules.
