@@ -1,0 +1,323 @@
+{
+  "_warning": "MACHINE-READABLE, NOT DEFANGED: values are live indicators. Do not browse or fetch them.",
+  "case": "2026-11-artex",
+  "license": "CC0-1.0",
+  "count": 35,
+  "iocs": [
+    {
+      "type": "docker-image",
+      "value": "tomicdd/artex",
+      "first_seen": "2026-10-08",
+      "role": "Docker Hub image whose /app/artex carries the pre-auth command-execution backdoor (verifyCaptcha). Repo removed; tag metadata still served on 2026-11-15; registry pulls answer 401",
+      "verdict": "malicious",
+      "confidence": "high",
+      "source": "Blackfish Security (darkfibr/artex-forensics); Docker Hub tag metadata; static analysis of the binary (this case)"
+    },
+    {
+      "type": "docker-image",
+      "value": "congdonglinux/artex",
+      "first_seen": "2026-10-20",
+      "role": "Second Docker Hub namespace serving the same backdoor build: index and manifest digests identical to tomicdd/artex (tag metadata read 2026-11-13); registry pulls answer 401 on 2026-11-15",
+      "verdict": "malicious",
+      "confidence": "high",
+      "source": "Docker Hub tag metadata (this case); The Hacker News"
+    },
+    {
+      "type": "docker-digest",
+      "value": "sha256:ce85d8369ccc1a85423f1f75d2f3afaa2fab759e580da37a6891af2f7392745e",
+      "first_seen": "2026-10-08",
+      "role": "image index digest of the backdoor image (tag latest), same under tomicdd/artex and congdonglinux/artex",
+      "verdict": "malicious",
+      "confidence": "high",
+      "source": "Docker Hub tag metadata (this case); Blackfish Security"
+    },
+    {
+      "type": "docker-digest",
+      "value": "sha256:cb85a7206290dc1813e3203e044741054b26c7a7c557c7d9d6d91af20aeb232b",
+      "first_seen": "2026-10-08",
+      "role": "amd64 manifest digest of the backdoor image",
+      "verdict": "malicious",
+      "confidence": "high",
+      "source": "Docker Hub tag metadata (this case); Blackfish Security"
+    },
+    {
+      "type": "docker-digest",
+      "value": "sha256:009e2bdd6548886a363ee06d17331c7209741273d886f1bb818bceeb416f1654",
+      "first_seen": "2026-10-08",
+      "role": "payload layer of the backdoor image (contains only /app/artex); value from Blackfish, layers were not obtainable by us",
+      "verdict": "malicious",
+      "confidence": "medium",
+      "source": "Blackfish Security (not re-derived: registry 401)"
+    },
+    {
+      "type": "sha256",
+      "value": "d5070f52262effe216b840711343bff8f2787f39208d887d8dfd9c673f8d1573",
+      "first_seen": "2026-10-08",
+      "role": "/app/artex ELF of the backdoor image (static Go, 51,210,988 B, not stripped); carries the injected verifyCaptcha backdoor",
+      "verdict": "malicious",
+      "confidence": "high",
+      "source": "Blackfish Security; MalwareBazaar copy; static analysis (this case)"
+    },
+    {
+      "type": "go-build-id",
+      "value": "GbkndSh5NcE9v-WPC6EK/zhTwXuu7zLrBQtWubAwy/1nttlJ4hppOUH--qhbjE/CzAKTzD8KXOEzN2ut0ik",
+      "first_seen": "2026-10-08",
+      "role": "Go build ID of the backdoored binary (read from the ELF note by us; equals Blackfish value)",
+      "verdict": "malicious",
+      "confidence": "high",
+      "source": "static analysis (this case); Blackfish Security"
+    },
+    {
+      "type": "go-vcs-revision",
+      "value": "5c0dbd4bec940f3c0faf20705a56d879b57d3dfe",
+      "first_seen": "2026-10-08",
+      "role": "buildinfo vcs.revision of the backdoored binary (vcs.modified=true, vcs.time 2026-10-08T13:45:50Z, version v0.3.16-0.20261008134550-5c0dbd4bec94+dirty); not in the public Autumn-27 or RuoJi6 history (765 commits checked), so the backdoor tree is unverifiable",
+      "verdict": "malicious",
+      "confidence": "high",
+      "source": "static analysis (this case)"
+    },
+    {
+      "type": "go-symbol",
+      "value": "github.com/Autumn-27/artex/server.verifyCaptcha",
+      "first_seen": "2026-10-08",
+      "role": "injected backdoor function (160 B): exec.Command(\"sh\",\"-c\",arg).CombinedOutput(); absent from every upstream tag checked; authLogin grows 1,600 to 2,112 B to call it",
+      "verdict": "malicious",
+      "confidence": "high",
+      "source": "static analysis (this case); Blackfish Security"
+    },
+    {
+      "type": "behaviour",
+      "value": "POST /api/auth/login with JSON \"captcha\" value starting with \"!\"",
+      "first_seen": "2026-10-08",
+      "role": "backdoor trigger: the rest of the value runs through sh -c and the output comes back in the JSON \"captcha\" field; the login route is exempt from authentication, so no credentials are needed",
+      "verdict": "malicious",
+      "confidence": "high",
+      "source": "static analysis (this case); Blackfish Security; The Hacker News (Badbyte)"
+    },
+    {
+      "type": "github-repo",
+      "value": "github.com/imxv/ARTEXX",
+      "first_seen": "2026-10-09",
+      "role": "distribution reference for the backdoor image: docker-compose.yml pulls tomicdd/artex; 611 of its 623 forks descend from the compose-switch commit (commit identity). Hosting account only: who authored the change is a separate question (commit author trhhubsd)",
+      "verdict": "distribution-reference",
+      "confidence": "high",
+      "source": "GitHub API and git history (this case, 2026-11-15)"
+    },
+    {
+      "type": "github-repo",
+      "value": "github.com/luoxi0615/ARTEX",
+      "first_seen": "2026-10-17",
+      "role": "distribution reference for the backdoor image: docker-compose.yml pulls tomicdd/artex; install-debian.sh downloads an unanalysed \"dirty\" binary over HTTP (see candidate rows). Hosting account only",
+      "verdict": "distribution-reference",
+      "confidence": "high",
+      "source": "GitHub API and git history (this case, 2026-11-15)"
+    },
+    {
+      "type": "git-commit",
+      "value": "a4f4d38c7b60f68abbd6a574aa59188063f2d86c",
+      "first_seen": "2026-10-08",
+      "role": "commit \"build: image changed to tomicdd/artex\": the one-line compose switch to the backdoored image; commit metadata author trhhubsd, 2026-10-08T20:33:28Z, 52 min after the Docker Hub push at 19:41Z (timing medium: commit dates are committer-set)",
+      "verdict": "distribution-reference",
+      "confidence": "high",
+      "source": "GitHub API (this case)"
+    },
+    {
+      "type": "git-commit",
+      "value": "178d250853ca743742807b74f857f5f483b3ddd7",
+      "first_seen": "2026-10-09",
+      "role": "head of imxv/ARTEXX main on 2026-11-15: original v0.3.15 tree plus README changes plus the compose line pulling tomicdd/artex; no source-code change",
+      "verdict": "distribution-reference",
+      "confidence": "high",
+      "source": "git diff against the Autumn-27 v0.3.15 commit (this case)"
+    },
+    {
+      "type": "string",
+      "value": "image: tomicdd/artex:${ARTEX_TAG:-latest}",
+      "first_seen": "2026-10-08",
+      "role": "line in docker-compose.yml of copies that pull the backdoored image; grep target for repos, mirrors and internal build files",
+      "verdict": "distribution-reference",
+      "confidence": "high",
+      "source": "GitHub API (this case)"
+    },
+    {
+      "type": "domain",
+      "value": "qiniu.joy.henanhuanyu.xin",
+      "first_seen": "2026-10-17",
+      "role": "host named by default in luoxi0615/ARTEX install-debian.sh as the download source of a \"dirty\" linux-amd64 ZIP (plain HTTP, no checksum); payload never retrieved (two attempts timed out), so its content is UNRESOLVED, not shown malicious",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "install script text (this case)"
+    },
+    {
+      "type": "url",
+      "value": "http://qiniu.joy.henanhuanyu.xin/member/avatar/018c77fa5927d35a4df3d2d8e2a89f77/artex-2511db1-dirty-linux-amd64.zip",
+      "first_seen": "2026-10-17",
+      "role": "default ZIP_URL of install-debian.sh in luoxi0615/ARTEX; payload not analysed (unresolved)",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "install script text (this case)"
+    },
+    {
+      "type": "urlscan-resource-hash",
+      "value": "96bc5a97b369b9499bac54e9856eba39025aadf08890e07ad62bd8e4e08235b1",
+      "first_seen": "2026-11-13",
+      "role": "HUNTING, not malicious: urlscan resource hash of GET /api/auth/status = sha256 of {\"initialized\":true}+LF (21 B); the unauthenticated ARTEX backend status body. Generic alone: use with the title or favicon, and expect legitimate testers and forks",
+      "verdict": "hunting-pivot",
+      "confidence": "medium",
+      "source": "urlscan result pages; ARTEX source auth.go (this case)"
+    },
+    {
+      "type": "urlscan-resource-hash",
+      "value": "058bac2a64f5e150ca6936559e93b119bb42cfed81091821ae1ab79879f2a5f6",
+      "first_seen": "2026-11-13",
+      "role": "HUNTING, not malicious: sha256 of {\"initialized\":false}+LF (22 B): status body of a console with no admin password set yet (first visitor can set it). One such unit seen",
+      "verdict": "hunting-pivot",
+      "confidence": "medium",
+      "source": "urlscan result pages; ARTEX source auth.go (this case)"
+    },
+    {
+      "type": "resource-sha256",
+      "value": "8b567c0244f2dbee787165aea9c4ddabaaafb0fdb3b29899ac898c60a589856b",
+      "first_seen": "2026-11-13",
+      "role": "HUNTING: sha256 of the ARTEX console /favicon.ico (15,086 B); urlscan hash: query. Shared by forks and legitimate deployments",
+      "verdict": "hunting-pivot",
+      "confidence": "high",
+      "source": "ARTEX web source (this case)"
+    },
+    {
+      "type": "resource-sha256",
+      "value": "30fcea978f7cef5a3b6d00df2d16b943091e043497901dc90f941d1713aed42c",
+      "first_seen": "2026-11-13",
+      "role": "HUNTING: sha256 of the console /icon.png and /logo.png (492,065 B); urlscan hash: query. Shared by forks and legitimate deployments",
+      "verdict": "hunting-pivot",
+      "confidence": "high",
+      "source": "ARTEX web source (this case)"
+    },
+    {
+      "type": "resource-sha256",
+      "value": "6064af93f8118c0b5a2e547be541cb1e72ff99df4eaaebdf77bcd3a3d64f51d1",
+      "first_seen": "2026-11-13",
+      "role": "HUNTING: sha256 of the console /logo.svg (63,981 B). Shared by forks and legitimate deployments",
+      "verdict": "hunting-pivot",
+      "confidence": "high",
+      "source": "ARTEX web source (this case)"
+    },
+    {
+      "type": "favicon-mmh3",
+      "value": "-576220750",
+      "first_seen": "2026-11-13",
+      "role": "HUNTING: Shodan-style mmh3 of the console favicon.ico",
+      "verdict": "hunting-pivot",
+      "confidence": "high",
+      "source": "ARTEX web source (this case)"
+    },
+    {
+      "type": "favicon-mmh3",
+      "value": "-1898746557",
+      "first_seen": "2026-11-13",
+      "role": "HUNTING: Shodan-style mmh3 of the console icon.png / logo.png",
+      "verdict": "hunting-pivot",
+      "confidence": "high",
+      "source": "ARTEX web source (this case)"
+    },
+    {
+      "type": "html-title",
+      "value": "ARTEX — 自主渗透测试控制台",
+      "first_seen": "2026-11-13",
+      "role": "HUNTING: console page title (Chinese build, em dash); the English UI sets \"ARTEX — Autonomous Pentesting Console\". Forks change it (see README)",
+      "verdict": "hunting-pivot",
+      "confidence": "high",
+      "source": "ARTEX web source (this case)"
+    },
+    {
+      "type": "user-agent",
+      "value": "artex-readonly/1.0",
+      "first_seen": "2026-11-09",
+      "role": "VENDOR-REPORTED by Datadog Security Labs as an ARTEX-attributed user agent in AWS activity; none of the strings occurs in the ARTEX source we read, so the agent seems to choose them per run, and anyone can set them. Low confidence, hunting only",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "Datadog Security Labs (vendor-reported, not observed by us)"
+    },
+    {
+      "type": "user-agent",
+      "value": "artex-pentest/1.0",
+      "first_seen": "2026-11-09",
+      "role": "VENDOR-REPORTED by Datadog Security Labs as an ARTEX-attributed user agent in AWS activity; none of the strings occurs in the ARTEX source we read, so the agent seems to choose them per run, and anyone can set them. Low confidence, hunting only",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "Datadog Security Labs (vendor-reported, not observed by us)"
+    },
+    {
+      "type": "user-agent",
+      "value": "artex-audit/1.0",
+      "first_seen": "2026-11-09",
+      "role": "VENDOR-REPORTED by Datadog Security Labs as an ARTEX-attributed user agent in AWS activity; none of the strings occurs in the ARTEX source we read, so the agent seems to choose them per run, and anyone can set them. Low confidence, hunting only",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "Datadog Security Labs (vendor-reported, not observed by us)"
+    },
+    {
+      "type": "user-agent",
+      "value": "Mozilla/5.0 ARTeX",
+      "first_seen": "2026-11-09",
+      "role": "VENDOR-REPORTED by Datadog Security Labs as an ARTEX-attributed user agent in AWS activity; none of the strings occurs in the ARTEX source we read, so the agent seems to choose them per run, and anyone can set them. Low confidence, hunting only",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "Datadog Security Labs (vendor-reported, not observed by us)"
+    },
+    {
+      "type": "user-agent",
+      "value": "artex-spawn/1",
+      "first_seen": "2026-11-09",
+      "role": "VENDOR-REPORTED by Datadog Security Labs as an ARTEX-attributed user agent in AWS activity; none of the strings occurs in the ARTEX source we read, so the agent seems to choose them per run, and anyone can set them. Low confidence, hunting only",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "Datadog Security Labs (vendor-reported, not observed by us)"
+    },
+    {
+      "type": "user-agent",
+      "value": "artex-verify/1.0",
+      "first_seen": "2026-11-09",
+      "role": "VENDOR-REPORTED by Datadog Security Labs as an ARTEX-attributed user agent in AWS activity; none of the strings occurs in the ARTEX source we read, so the agent seems to choose them per run, and anyone can set them. Low confidence, hunting only",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "Datadog Security Labs (vendor-reported, not observed by us)"
+    },
+    {
+      "type": "user-agent",
+      "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) ARTeX-authorized-pentest",
+      "first_seen": "2026-11-09",
+      "role": "VENDOR-REPORTED by Datadog Security Labs as an ARTEX-attributed user agent in AWS activity; none of the strings occurs in the ARTEX source we read, so the agent seems to choose them per run, and anyone can set them. Low confidence, hunting only",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "Datadog Security Labs (vendor-reported, not observed by us)"
+    },
+    {
+      "type": "user-agent",
+      "value": "Mozilla/5.0 (X11; Linux x86_64) artex-verify/1.0",
+      "first_seen": "2026-11-09",
+      "role": "VENDOR-REPORTED by Datadog Security Labs as an ARTEX-attributed user agent in AWS activity; none of the strings occurs in the ARTEX source we read, so the agent seems to choose them per run, and anyone can set them. Low confidence, hunting only",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "Datadog Security Labs (vendor-reported, not observed by us)"
+    },
+    {
+      "type": "user-agent",
+      "value": "artex-i21861-canary",
+      "first_seen": "2026-11-09",
+      "role": "VENDOR-REPORTED by Datadog Security Labs as an ARTEX-attributed user agent in AWS activity; none of the strings occurs in the ARTEX source we read, so the agent seems to choose them per run, and anyone can set them. Low confidence, hunting only",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "Datadog Security Labs (vendor-reported, not observed by us)"
+    },
+    {
+      "type": "user-agent",
+      "value": "ARTEX-worker/1.0",
+      "first_seen": "2026-11-09",
+      "role": "VENDOR-REPORTED by Datadog Security Labs as an ARTEX-attributed user agent in AWS activity; none of the strings occurs in the ARTEX source we read, so the agent seems to choose them per run, and anyone can set them. Low confidence, hunting only",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "Datadog Security Labs (vendor-reported, not observed by us)"
+    }
+  ]
+}

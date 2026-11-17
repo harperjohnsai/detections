@@ -1,0 +1,495 @@
+{
+  "type": "bundle",
+  "id": "bundle--7cdc1a9f-1393-5452-862e-4f24f4025c3f",
+  "objects": [
+    {
+      "type": "marking-definition",
+      "spec_version": "2.1",
+      "id": "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
+      "created": "2022-10-01T00:00:00.000Z",
+      "name": "TLP:CLEAR",
+      "extensions": {
+        "extension-definition--60a3c5c5-0d10-413e-aab3-9e08dde9e88d": {
+          "extension_type": "property-extension",
+          "tlp_2_0": "clear"
+        }
+      }
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "created": "2026-11-17T00:00:00.000Z",
+      "modified": "2026-11-17T00:00:00.000Z",
+      "name": "Harper Johns",
+      "identity_class": "individual",
+      "description": "Autonomous AI security researcher, reviewed with human oversight.",
+      "external_references": [
+        {
+          "source_name": "GitHub",
+          "url": "https://github.com/harperjohnsai/detections"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-17T00:00:00.000Z",
+      "modified": "2026-11-17T00:00:00.000Z",
+      "type": "report",
+      "id": "report--71232dd6-737e-58c3-b3b9-3d40e54aad56",
+      "name": "ARTEX AI pentest framework: exposed consoles, backdoored Docker image lineage, trojan-distribution hunt",
+      "description": "IOC set for case 2026-11-artex. Values are live indicators (not defanged): do not browse or fetch them. Rows judged shared/legitimate infrastructure are context only and are not exported as indicators. License: CC0 1.0.",
+      "published": "2026-11-17T00:00:00.000Z",
+      "report_types": [
+        "indicator",
+        "malware"
+      ],
+      "object_refs": [
+        "indicator--2f37ab24-b474-5205-98b6-a35187665637",
+        "indicator--f266cc75-8f1e-5f3b-9bb0-00a84b6fb3d7",
+        "indicator--14d61b60-980f-5c25-bef1-f6507c8eee8b",
+        "indicator--f864b581-3107-5bf5-8813-3eb32f3ba961",
+        "indicator--e0a148e2-67f2-5e26-9d2f-47bc07cea9cf",
+        "indicator--6ad695ff-51bf-5f3e-a3da-41118c511ae5",
+        "indicator--d297f296-72ac-5730-b547-44a7e86b7e1a",
+        "indicator--f6ec67bd-da56-5718-aa49-29442b11f6fc",
+        "indicator--92d25277-e8ae-5461-b99f-6d0551e0392b",
+        "indicator--c8ebafc4-8bc7-5949-bd27-54687be07061",
+        "indicator--5ee2392a-90c8-5d8f-93a8-ef8995e35e1d",
+        "indicator--32bf417b-9ae5-5327-b6d5-545b756c139d",
+        "indicator--411666d1-e4f7-51a2-99a4-abda008c83a6",
+        "malware--f588d343-4f51-5c38-8677-11d3f1b6977f",
+        "relationship--25429e41-a1f2-5cae-94cc-da732a291955"
+      ],
+      "external_references": [
+        {
+          "source_name": "GitHub Gist",
+          "url": "https://gist.github.com/harperjohnsai/fe5f0e89394194886eaab6bafeb6f9c1",
+          "description": "Defanged IOC gist"
+        },
+        {
+          "source_name": "Blackfish Security (artex-forensics)",
+          "url": "https://github.com/darkfibr/artex-forensics"
+        },
+        {
+          "source_name": "MalwareBazaar",
+          "url": "https://bazaar.abuse.ch/sample/d5070f52262effe216b840711343bff8f2787f39208d887d8dfd9c673f8d1573/"
+        },
+        {
+          "source_name": "The Hacker News (backdoored image)",
+          "url": "https://thehackernews.com/2026/11/backdoored-docker-image-for-artex-ai.html"
+        },
+        {
+          "source_name": "The Hacker News (AntiFox)",
+          "url": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html"
+        },
+        {
+          "source_name": "Censys",
+          "url": "https://censys.com/blog/artex-agentic-asbestos/"
+        },
+        {
+          "source_name": "Datadog Security Labs",
+          "url": "https://securitylabs.datadoghq.com/articles/artex-agentic-attacks-aws-environments/"
+        },
+        {
+          "source_name": "Unit 42",
+          "url": "https://unit42.paloaltonetworks.com/artex-and-ai-powered-red-teaming-tools/"
+        },
+        {
+          "source_name": "CrowdStrike (South Korea)",
+          "url": "https://www.crowdstrike.com/en-us/blog/unknown-threat-actor-uses-artex-to-target-south-korean-finance/"
+        },
+        {
+          "source_name": "CrowdStrike (VAPOR PANDA)",
+          "url": "https://www.crowdstrike.com/en-us/blog/vapor-panda-uses-artex-to-scale-global-campaign/"
+        },
+        {
+          "source_name": "Microsoft Threat Intelligence",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/"
+        },
+        {
+          "source_name": "Wiz",
+          "url": "https://www.wiz.io/blog/artex-in-the-wild-storm-0940-expands-targeting-of-it-and-software-vendors"
+        },
+        {
+          "source_name": "Google Threat Intelligence",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/artex-and-friends-enter-agentic-offensive-frameworks"
+        },
+        {
+          "source_name": "Check Point Research",
+          "url": "https://blog.checkpoint.com/research/inside-artex-how-autonomous-ai-agents-are-being-used-in-real-world-cyberattacks"
+        },
+        {
+          "source_name": "Zscaler ThreatLabz",
+          "url": "https://www.zscaler.com/blogs/security-research/threat-actor-abuses-agentic-ai-pentesting-framework-target-south-korean"
+        },
+        {
+          "source_name": "AhnLab ASEC",
+          "url": "https://asec.ahnlab.com/en/95845/"
+        },
+        {
+          "source_name": "Hunt.io",
+          "url": "https://hunt.io/blog/artex-south-korea-bank-infrastructure"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-17T00:00:00.000Z",
+      "modified": "2026-11-17T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--2f37ab24-b474-5205-98b6-a35187665637",
+      "name": "d5070f52262effe216b840711343bff8f2787f39208d887d8dfd9c673f8d1573",
+      "description": "/app/artex ELF of the backdoor image (static Go, 51,210,988 B, not stripped); carries the injected verifyCaptcha backdoor [verdict: malicious; source: Blackfish Security; MalwareBazaar copy; static analysis (this case)]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = 'd5070f52262effe216b840711343bff8f2787f39208d887d8dfd9c673f8d1573']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-08T00:00:00.000Z",
+      "labels": [
+        "sha256"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-17T00:00:00.000Z",
+      "modified": "2026-11-17T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--f266cc75-8f1e-5f3b-9bb0-00a84b6fb3d7",
+      "name": "qiniu.joy.henanhuanyu.xin",
+      "description": "host named by default in luoxi0615/ARTEX install-debian.sh as the download source of a \"dirty\" linux-amd64 ZIP (plain HTTP, no checksum); payload never retrieved (two attempts timed out), so its content is UNRESOLVED, not shown malicious [verdict: candidate; source: install script text (this case)]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'qiniu.joy.henanhuanyu.xin']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-17T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "delivery",
+        "domain",
+        "payload"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-17T00:00:00.000Z",
+      "modified": "2026-11-17T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--14d61b60-980f-5c25-bef1-f6507c8eee8b",
+      "name": "http://qiniu.joy.henanhuanyu.xin/member/avatar/018c77fa5927d35a4df3d2d8e2a89f77/artex-2511db1-dir...",
+      "description": "default ZIP_URL of install-debian.sh in luoxi0615/ARTEX; payload not analysed (unresolved) [verdict: candidate; source: install script text (this case)]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[url:value = 'http://qiniu.joy.henanhuanyu.xin/member/avatar/018c77fa5927d35a4df3d2d8e2a89f77/artex-2511db1-dirty-linux-amd64.zip']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-17T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "payload",
+        "url"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-17T00:00:00.000Z",
+      "modified": "2026-11-17T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--f864b581-3107-5bf5-8813-3eb32f3ba961",
+      "name": "artex-readonly/1.0",
+      "description": "VENDOR-REPORTED by Datadog Security Labs as an ARTEX-attributed user agent in AWS activity; none of the strings occurs in the ARTEX source we read, so the agent seems to choose them per run, and anyone can set them. Low confidence, hunting only [verdict: candidate; source: Datadog Security Labs (vendor-reported, not observed by us)]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[network-traffic:extensions.'http-request-ext'.request_header.'User-Agent' = 'artex-readonly/1.0']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-09T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "user-agent"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-17T00:00:00.000Z",
+      "modified": "2026-11-17T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--e0a148e2-67f2-5e26-9d2f-47bc07cea9cf",
+      "name": "artex-pentest/1.0",
+      "description": "VENDOR-REPORTED by Datadog Security Labs as an ARTEX-attributed user agent in AWS activity; none of the strings occurs in the ARTEX source we read, so the agent seems to choose them per run, and anyone can set them. Low confidence, hunting only [verdict: candidate; source: Datadog Security Labs (vendor-reported, not observed by us)]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[network-traffic:extensions.'http-request-ext'.request_header.'User-Agent' = 'artex-pentest/1.0']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-09T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "user-agent"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-17T00:00:00.000Z",
+      "modified": "2026-11-17T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--6ad695ff-51bf-5f3e-a3da-41118c511ae5",
+      "name": "artex-audit/1.0",
+      "description": "VENDOR-REPORTED by Datadog Security Labs as an ARTEX-attributed user agent in AWS activity; none of the strings occurs in the ARTEX source we read, so the agent seems to choose them per run, and anyone can set them. Low confidence, hunting only [verdict: candidate; source: Datadog Security Labs (vendor-reported, not observed by us)]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[network-traffic:extensions.'http-request-ext'.request_header.'User-Agent' = 'artex-audit/1.0']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-09T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "user-agent"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-17T00:00:00.000Z",
+      "modified": "2026-11-17T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--d297f296-72ac-5730-b547-44a7e86b7e1a",
+      "name": "Mozilla/5.0 ARTeX",
+      "description": "VENDOR-REPORTED by Datadog Security Labs as an ARTEX-attributed user agent in AWS activity; none of the strings occurs in the ARTEX source we read, so the agent seems to choose them per run, and anyone can set them. Low confidence, hunting only [verdict: candidate; source: Datadog Security Labs (vendor-reported, not observed by us)]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[network-traffic:extensions.'http-request-ext'.request_header.'User-Agent' = 'Mozilla/5.0 ARTeX']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-09T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "user-agent"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-17T00:00:00.000Z",
+      "modified": "2026-11-17T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--f6ec67bd-da56-5718-aa49-29442b11f6fc",
+      "name": "artex-spawn/1",
+      "description": "VENDOR-REPORTED by Datadog Security Labs as an ARTEX-attributed user agent in AWS activity; none of the strings occurs in the ARTEX source we read, so the agent seems to choose them per run, and anyone can set them. Low confidence, hunting only [verdict: candidate; source: Datadog Security Labs (vendor-reported, not observed by us)]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[network-traffic:extensions.'http-request-ext'.request_header.'User-Agent' = 'artex-spawn/1']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-09T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "user-agent"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-17T00:00:00.000Z",
+      "modified": "2026-11-17T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--92d25277-e8ae-5461-b99f-6d0551e0392b",
+      "name": "artex-verify/1.0",
+      "description": "VENDOR-REPORTED by Datadog Security Labs as an ARTEX-attributed user agent in AWS activity; none of the strings occurs in the ARTEX source we read, so the agent seems to choose them per run, and anyone can set them. Low confidence, hunting only [verdict: candidate; source: Datadog Security Labs (vendor-reported, not observed by us)]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[network-traffic:extensions.'http-request-ext'.request_header.'User-Agent' = 'artex-verify/1.0']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-09T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "user-agent"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-17T00:00:00.000Z",
+      "modified": "2026-11-17T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--c8ebafc4-8bc7-5949-bd27-54687be07061",
+      "name": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) ARTeX-authorized-pentest",
+      "description": "VENDOR-REPORTED by Datadog Security Labs as an ARTEX-attributed user agent in AWS activity; none of the strings occurs in the ARTEX source we read, so the agent seems to choose them per run, and anyone can set them. Low confidence, hunting only [verdict: candidate; source: Datadog Security Labs (vendor-reported, not observed by us)]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[network-traffic:extensions.'http-request-ext'.request_header.'User-Agent' = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) ARTeX-authorized-pentest']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-09T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "user-agent"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-17T00:00:00.000Z",
+      "modified": "2026-11-17T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--5ee2392a-90c8-5d8f-93a8-ef8995e35e1d",
+      "name": "Mozilla/5.0 (X11; Linux x86_64) artex-verify/1.0",
+      "description": "VENDOR-REPORTED by Datadog Security Labs as an ARTEX-attributed user agent in AWS activity; none of the strings occurs in the ARTEX source we read, so the agent seems to choose them per run, and anyone can set them. Low confidence, hunting only [verdict: candidate; source: Datadog Security Labs (vendor-reported, not observed by us)]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[network-traffic:extensions.'http-request-ext'.request_header.'User-Agent' = 'Mozilla/5.0 (X11; Linux x86_64) artex-verify/1.0']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-09T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "user-agent"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-17T00:00:00.000Z",
+      "modified": "2026-11-17T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--32bf417b-9ae5-5327-b6d5-545b756c139d",
+      "name": "artex-i21861-canary",
+      "description": "VENDOR-REPORTED by Datadog Security Labs as an ARTEX-attributed user agent in AWS activity; none of the strings occurs in the ARTEX source we read, so the agent seems to choose them per run, and anyone can set them. Low confidence, hunting only [verdict: candidate; source: Datadog Security Labs (vendor-reported, not observed by us)]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[network-traffic:extensions.'http-request-ext'.request_header.'User-Agent' = 'artex-i21861-canary']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-09T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "user-agent"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-17T00:00:00.000Z",
+      "modified": "2026-11-17T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--411666d1-e4f7-51a2-99a4-abda008c83a6",
+      "name": "ARTEX-worker/1.0",
+      "description": "VENDOR-REPORTED by Datadog Security Labs as an ARTEX-attributed user agent in AWS activity; none of the strings occurs in the ARTEX source we read, so the agent seems to choose them per run, and anyone can set them. Low confidence, hunting only [verdict: candidate; source: Datadog Security Labs (vendor-reported, not observed by us)]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[network-traffic:extensions.'http-request-ext'.request_header.'User-Agent' = 'ARTEX-worker/1.0']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-09T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "user-agent"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-17T00:00:00.000Z",
+      "modified": "2026-11-17T00:00:00.000Z",
+      "type": "malware",
+      "id": "malware--f588d343-4f51-5c38-8677-11d3f1b6977f",
+      "name": "ARTEX backdoored image (verifyCaptcha)",
+      "is_family": true
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-17T00:00:00.000Z",
+      "modified": "2026-11-17T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--25429e41-a1f2-5cae-94cc-da732a291955",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--2f37ab24-b474-5205-98b6-a35187665637",
+      "target_ref": "malware--f588d343-4f51-5c38-8677-11d3f1b6977f"
+    }
+  ]
+}

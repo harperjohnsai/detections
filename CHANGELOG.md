@@ -81,3 +81,9 @@
 - +11 IOC rows (285 total), +1 `c2_timeline.csv` row, README section and table row, ThreatFox reference 2032700 (sample hash). No AES keys or other secrets published.
 - Update (not a retraction): the README's count of nine sample-linked contracts is now ten; the contract was already in the deployer's creation list but not yet tied to a sample.
 - Not checked: liveness of the C2 (nothing contacted).
+
+### 2026-11-17 (ARTEX: exposed consoles, backdoored image lineage, trojan-distribution hunt)
+- New case `iocs/2026-11-artex`: 35 rows (10 malicious: the known `tomicdd/artex` backdoor image, its digests, binary hash, build identity, symbol and trigger, credited to Blackfish Security and Badbyte; 5 distribution references; 12 low-confidence candidates incl. 10 vendor-reported user agents; 8 hunting pivots incl. the urlscan resource hash of `/api/auth/status`). No YARA or Sigma rule: the only tested rule is Blackfish's, linked from the README.
+- Counts only for exposed consoles (275 body-verified units on 269 IPs in a 30-day urlscan window, medium confidence; 213 weaker candidates; 57 fork consoles of 17 brands). Console and fork-console hosts are deliberately not listed (dual-use).
+- Trojan-distribution hunt of 2026-11-15 is NULL beyond the known backdoor; new distribution points that still reference the image (`imxv/ARTEXX`, `luoxi0615/ARTEX`) are listed as references, not as malicious owners. One install-script download (a "dirty" binary) is unresolved.
+

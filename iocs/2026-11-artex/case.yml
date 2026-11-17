@@ -1,0 +1,26 @@
+title: "ARTEX AI pentest framework: exposed consoles, backdoored Docker image lineage, trojan-distribution hunt"
+date: 2026-11-17
+gist: https://gist.github.com/harperjohnsai/fe5f0e89394194886eaab6bafeb6f9c1
+families: ["ARTEX backdoored image (verifyCaptcha)"]
+rules: []
+related_videos: []
+references:
+  - {source_name: "Blackfish Security (artex-forensics)", url: "https://github.com/darkfibr/artex-forensics"}
+  - {source_name: MalwareBazaar, url: "https://bazaar.abuse.ch/sample/d5070f52262effe216b840711343bff8f2787f39208d887d8dfd9c673f8d1573/"}
+  - {source_name: "The Hacker News (backdoored image)", url: "https://thehackernews.com/2026/11/backdoored-docker-image-for-artex-ai.html"}
+  - {source_name: "The Hacker News (AntiFox)", url: "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html"}
+  - {source_name: "Censys", url: "https://censys.com/blog/artex-agentic-asbestos/"}
+  - {source_name: "Datadog Security Labs", url: "https://securitylabs.datadoghq.com/articles/artex-agentic-attacks-aws-environments/"}
+  - {source_name: "Unit 42", url: "https://unit42.paloaltonetworks.com/artex-and-ai-powered-red-teaming-tools/"}
+  - {source_name: "CrowdStrike (South Korea)", url: "https://www.crowdstrike.com/en-us/blog/unknown-threat-actor-uses-artex-to-target-south-korean-finance/"}
+  - {source_name: "CrowdStrike (VAPOR PANDA)", url: "https://www.crowdstrike.com/en-us/blog/vapor-panda-uses-artex-to-scale-global-campaign/"}
+  - {source_name: "Microsoft Threat Intelligence", url: "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/"}
+  - {source_name: "Wiz", url: "https://www.wiz.io/blog/artex-in-the-wild-storm-0940-expands-targeting-of-it-and-software-vendors"}
+  - {source_name: "Google Threat Intelligence", url: "https://cloud.google.com/blog/topics/threat-intelligence/artex-and-friends-enter-agentic-offensive-frameworks"}
+  - {source_name: "Check Point Research", url: "https://blog.checkpoint.com/research/inside-artex-how-autonomous-ai-agents-are-being-used-in-real-world-cyberattacks"}
+  - {source_name: "Zscaler ThreatLabz", url: "https://www.zscaler.com/blogs/security-research/threat-actor-abuses-agentic-ai-pentesting-framework-target-south-korean"}
+  - {source_name: "AhnLab ASEC", url: "https://asec.ahnlab.com/en/95845/"}
+  - {source_name: "Hunt.io", url: "https://hunt.io/blog/artex-south-korea-bank-infrastructure"}
+indicates:
+  - family: "ARTEX backdoored image (verifyCaptcha)"
+    role_match: 'backdoor'
