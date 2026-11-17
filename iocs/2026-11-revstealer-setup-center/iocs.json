@@ -2,7 +2,7 @@
  "_warning": "MACHINE-READABLE, NOT DEFANGED: values are live indicators. Do not browse or fetch them.",
  "case": "2026-11-revstealer-setup-center",
  "license": "CC0-1.0",
- "count": 274,
+ "count": 285,
  "iocs": [
   {
    "type": "url",
@@ -2466,6 +2466,105 @@
    "value": "public.blazingnode.com",
    "first_seen": "2026-11-16",
    "role": "host string decrypted next to the eth_call template, selector and contract inside the build-yh-1112 core (same routine as the Polygon read), so it is most likely that build's JSON-RPC endpoint (role INFERRED from code position, not tested); the config lists no RPC endpoint. Third-party service: do NOT block globally; hunt non-browser POST eth_call",
+   "verdict": "shared-or-legit-infrastructure",
+   "confidence": "low",
+   "source": "static config extraction (decrypted strings)"
+  },
+  {
+   "type": "domain",
+   "value": "route9.clearplaza.website",
+   "first_seen": "2026-11-12",
+   "role": "C1 build yh-1112b REVSTEALER primary C2 (HTTPS :443; GET /health must return 'active'); host:port, Polygon contract and Telegraph page all taken from the embedded config of a sandbox memory image; contract value and Telegraph page read 2026-11-17 and decrypted: both give the same host:port. Domain registered 2026-11-12T09:05:06Z (Dynadot, Cloudflare name servers, RDAP); the contract was created 28 minutes later. Host never contacted. Already on ThreatFox as 2028329 (reporter Myrtus0x0, 2026-11-14), not resubmitted",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "YARAify memory image (first seen 2026-11-17), static config extraction; eth_call and Telegraph read 2026-11-17"
+  },
+  {
+   "type": "polygon-contract",
+   "value": "0x493c9E66E1B7E620C4CBFB7A1e47Cb55FCDb0432",
+   "first_seen": "2026-11-12",
+   "role": "C1 build yh-1112b REVSTEALER EtherHiding dead drop named in the config (3rd C2 source), created 2026-11-12T09:33:19Z by deployer 0x8bAddf05 (nonce 176, tx 0xa81f464bb40f926954a19b6949ea3763122d18bd3d677d6fc5adc19c520e8c47, block 97180362); eth_call selector 0xba733bae on a public Polygon RPC; value read 2026-11-17 decrypts to route9.clearplaza.website:443, the embedded primary of this build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction; deployer contract list; eth_call read 2026-11-17"
+  },
+  {
+   "type": "url",
+   "value": "https://telegra.ph/Notes-sketch-11-12",
+   "first_seen": "2026-11-12",
+   "role": "C1 build yh-1112b Telegraph dead drop named in the config (page description holds the AES-encrypted C2); block by path, not by host; page read 2026-11-17 via the Telegraph API, description decrypts to route9.clearplaza.website:443 (embedded primary)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "YARAify memory image (first seen 2026-11-17), static config extraction"
+  },
+  {
+   "type": "sha256",
+   "value": "f230087b20c623ccfb1894d995e7e9f442eb30c614f67395f41b8ca09efaaba6",
+   "first_seen": "2026-11-17",
+   "role": "C1 build yh-1112b REVSTEALER core: sandbox process-memory image of an svchost.exe process (462,813 B = SizeOfImage, section raw offsets equal virtual addresses; YARAify file name 140000000.svchost.exe), first seen 2026-11-17 05:40 UTC; matches YARA REVSTEALER_x64_Core_SetupCenter; memory/dump hunting, not a file on disk; ThreatFox 2032700",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "YARAify (first seen); static config extraction"
+  },
+  {
+   "type": "url-path",
+   "value": "/dxd/wehtag/xnmwf.eana",
+   "first_seen": "2026-11-17",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1112b, route9.clearplaza.website; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "url-path",
+   "value": "/nmxxq/xnmwf.eana",
+   "first_seen": "2026-11-17",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1112b, route9.clearplaza.website; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "url-path",
+   "value": "/rhqcm/xnmwf.eana",
+   "first_seen": "2026-11-17",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1112b, route9.clearplaza.website; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "url-path",
+   "value": "/vozhot/xnmwf.eana",
+   "first_seen": "2026-11-17",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1112b, route9.clearplaza.website; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "mutex",
+   "value": "Global\\F72F57A2",
+   "first_seen": "2026-11-17",
+   "role": "C1 REVSTEALER mutex of build yh-1112b",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "user-agent",
+   "value": "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.7122.92 Safari/537.36 Edg/128.0.7122.92",
+   "first_seen": "2026-11-17",
+   "role": "C1 REVSTEALER WinINet User-Agent of build yh-1112b (C2 + RPC traffic); 'Windows NT 11.0' and the Chrome build number are not real",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "static config extraction"
+  },
+  {
+   "type": "domain",
+   "value": "polygon-bor-rpc.blockreq.com",
+   "first_seen": "2026-11-17",
+   "role": "public Polygon JSON-RPC host (path /v1/rpc/public) decrypted next to the eth_call template, selector and contract inside the build-yh-1112b core (same routine as the Polygon read), so it is most likely that build's JSON-RPC endpoint (role INFERRED from code position, not tested); the config lists no RPC endpoint. Third-party service: do NOT block globally; hunt non-browser POST eth_call",
    "verdict": "shared-or-legit-infrastructure",
    "confidence": "low",
    "source": "static config extraction (decrypted strings)"

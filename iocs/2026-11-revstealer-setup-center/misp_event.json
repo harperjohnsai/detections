@@ -4363,6 +4363,182 @@
         "first_seen": "2026-11-16T00:00:00.000000+00:00"
       },
       {
+        "uuid": "234f06d5-efd9-5396-b85e-c3fc8aa6674e",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "route9.clearplaza.website",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 build yh-1112b REVSTEALER primary C2 (HTTPS :443; GET /health must return 'active'); host:port, Polygon contract and Telegraph page all taken from the embedded config of a sandbox memory image; contract value and Telegraph page read 2026-11-17 and decrypted: both give the same host:port. Domain registered 2026-11-12T09:05:06Z (Dynadot, Cloudflare name servers, RDAP); the contract was created 28 minutes later. Host never contacted. Already on ThreatFox as 2028329 (reporter Myrtus0x0, 2026-11-14), not resubmitted [type: domain; verdict: malicious; source: YARAify memory image (first seen 2026-11-17), static config extraction; eth_call and Telegraph read 2026-11-17]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-12T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "875c10d4-19a5-5142-9619-10120e29011e",
+        "type": "text",
+        "category": "Network activity",
+        "value": "0x493c9E66E1B7E620C4CBFB7A1e47Cb55FCDb0432",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "C1 build yh-1112b REVSTEALER EtherHiding dead drop named in the config (3rd C2 source), created 2026-11-12T09:33:19Z by deployer 0x8bAddf05 (nonce 176, tx 0xa81f464bb40f926954a19b6949ea3763122d18bd3d677d6fc5adc19c520e8c47, block 97180362); eth_call selector 0xba733bae on a public Polygon RPC; value read 2026-11-17 decrypts to route9.clearplaza.website:443, the embedded primary of this build [type: polygon-contract; verdict: malicious; source: static config extraction; deployer contract list; eth_call read 2026-11-17]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-12T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "f6f52e02-5c20-5444-8f82-5724c46141b2",
+        "type": "url",
+        "category": "Network activity",
+        "value": "https://telegra.ph/Notes-sketch-11-12",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 build yh-1112b Telegraph dead drop named in the config (page description holds the AES-encrypted C2); block by path, not by host; page read 2026-11-17 via the Telegraph API, description decrypts to route9.clearplaza.website:443 (embedded primary) [type: url; verdict: malicious; source: YARAify memory image (first seen 2026-11-17), static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-12T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "c08016b2-b72e-59e6-b298-939330f7c983",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "f230087b20c623ccfb1894d995e7e9f442eb30c614f67395f41b8ca09efaaba6",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 build yh-1112b REVSTEALER core: sandbox process-memory image of an svchost.exe process (462,813 B = SizeOfImage, section raw offsets equal virtual addresses; YARAify file name 140000000.svchost.exe), first seen 2026-11-17 05:40 UTC; matches YARA REVSTEALER_x64_Core_SetupCenter; memory/dump hunting, not a file on disk; ThreatFox 2032700 [type: sha256; verdict: malicious; source: YARAify (first seen); static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "9ffdbe8a-76f3-57fc-9dac-754b66a8fba9",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/dxd/wehtag/xnmwf.eana",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER gate path on C2 (build yh-1112b, route9.clearplaza.website; role not resolved); suffix rotates per build [type: url-path; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "b2ffda81-f32e-5aac-91e7-8c749a3379a8",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/nmxxq/xnmwf.eana",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER gate path on C2 (build yh-1112b, route9.clearplaza.website; role not resolved); suffix rotates per build [type: url-path; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "7eaf6e7e-922c-560c-b18d-2cdb04947959",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/rhqcm/xnmwf.eana",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER gate path on C2 (build yh-1112b, route9.clearplaza.website; role not resolved); suffix rotates per build [type: url-path; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "31d6850a-4490-5e4c-81e6-0da2f560889c",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/vozhot/xnmwf.eana",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER gate path on C2 (build yh-1112b, route9.clearplaza.website; role not resolved); suffix rotates per build [type: url-path; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "d0112488-894d-5898-86f6-9975ca99f570",
+        "type": "mutex",
+        "category": "Artifacts dropped",
+        "value": "Global\\F72F57A2",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER mutex of build yh-1112b [type: mutex; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "c6423d74-3793-5d92-9918-fb11fa90a898",
+        "type": "user-agent",
+        "category": "Network activity",
+        "value": "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.7122.92 Safari/537.36 Edg/128.0.7122.92",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER WinINet User-Agent of build yh-1112b (C2 + RPC traffic); 'Windows NT 11.0' and the Chrome build number are not real [type: user-agent; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "7a8b43d5-8019-5943-9f65-e43961c52c75",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "polygon-bor-rpc.blockreq.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "public Polygon JSON-RPC host (path /v1/rpc/public) decrypted next to the eth_call template, selector and contract inside the build-yh-1112b core (same routine as the Polygon read), so it is most likely that build's JSON-RPC endpoint (role INFERRED from code position, not tested); the config lists no RPC endpoint. Third-party service: do NOT block globally; hunt non-browser POST eth_call [type: domain; verdict: shared-or-legit-infrastructure; source: static config extraction (decrypted strings)]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
         "uuid": "6fc3c21d-da54-5382-9a11-583cfe33d9da",
         "type": "link",
         "category": "External analysis",
@@ -4683,10 +4859,30 @@
         "timestamp": "1794528000"
       },
       {
+        "uuid": "f3be88c0-65a8-5620-b660-18b4e4e592ef",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2032700/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox",
+        "timestamp": "1794528000"
+      },
+      {
         "uuid": "03382062-b3b7-545b-a18e-97fdb1f634f4",
         "type": "link",
         "category": "External analysis",
         "value": "https://threatfox.abuse.ch/ioc/2016383/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox (reporter Myrtus0x0)",
+        "timestamp": "1794528000"
+      },
+      {
+        "uuid": "4377323b-6c85-540e-bc74-a5330b4a2417",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2028329/",
         "to_ids": false,
         "distribution": "5",
         "comment": "ThreatFox (reporter Myrtus0x0)",

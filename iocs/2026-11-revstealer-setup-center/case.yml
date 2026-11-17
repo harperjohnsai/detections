@@ -48,7 +48,9 @@ references:
   - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2032113/"}
   - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2032114/"}
   - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2032115/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2032700/"}
   - {source_name: ThreatFox (reporter Myrtus0x0), url: "https://threatfox.abuse.ch/ioc/2016383/"}
+  - {source_name: ThreatFox (reporter Myrtus0x0), url: "https://threatfox.abuse.ch/ioc/2028329/"}
 indicates:
   - family: REVSTEALER
     role_match: 'REVSTEALER|sideload|Installer\.zip|localdata\.db'

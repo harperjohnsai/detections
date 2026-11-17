@@ -75,3 +75,9 @@
 - Update (not a retraction): the README row for `auth[.]benchteam[.]website` says it is in no embedded config we extracted; build `yh-1112` now embeds it as primary. Earlier text is left as published.
 - Observation only: deployer nonces 208, 209 and 211 to 215 are further contract creations (2026-11-14 to 2026-11-15) not tied to a sample.
 - Not checked: liveness of either C2 (nothing contacted).
+
+### 2026-11-17 (REVSTEALER: one more build from a YARAify memory hit)
+- `iocs/2026-11-revstealer-setup-center`: `REVSTEALER_x64_Core_SetupCenter` matched another memory-layout image on YARAify (`f230087b`, svchost.exe process). Static config extraction gives build `yh-1112b`: primary C2 `route9[.]clearplaza[.]website` (already on ThreatFox as 2028329 by another reporter, credited, not resubmitted), Polygon contract `0x493c9E66E1B7E620C4CBFB7A1e47Cb55FCDb0432` (deployer nonce 176, 2026-11-12) and Telegraph page `Notes-sketch-11-12`. Dead drops read 2026-11-17: both decrypt to the embedded primary, no re-pointing.
+- +11 IOC rows (285 total), +1 `c2_timeline.csv` row, README section and table row, ThreatFox reference 2032700 (sample hash). No AES keys or other secrets published.
+- Update (not a retraction): the README's count of nine sample-linked contracts is now ten; the contract was already in the deployer's creation list but not yet tied to a sample.
+- Not checked: liveness of the C2 (nothing contacted).
