@@ -49,8 +49,18 @@ references:
   - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2032114/"}
   - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2032115/"}
   - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2032700/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2034027/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2034028/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2034029/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2034030/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2034031/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2034032/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2034033/"}
+  - {source_name: MalwareBazaar, url: "https://bazaar.abuse.ch/sample/2ee9761e96fdaa7eaf56dc8ba8b3c71a9d7a2b5d16ebf2b7559336743a84da45/"}
   - {source_name: ThreatFox (reporter Myrtus0x0), url: "https://threatfox.abuse.ch/ioc/2016383/"}
   - {source_name: ThreatFox (reporter Myrtus0x0), url: "https://threatfox.abuse.ch/ioc/2028329/"}
+  - {source_name: ThreatFox (reporter Myrtus0x0), url: "https://threatfox.abuse.ch/ioc/2004528/"}
+  - {source_name: ThreatFox (reporter Myrtus0x0), url: "https://threatfox.abuse.ch/ioc/2026071/"}
 indicates:
   - family: REVSTEALER
     role_match: 'REVSTEALER|sideload|Installer\.zip|localdata\.db'

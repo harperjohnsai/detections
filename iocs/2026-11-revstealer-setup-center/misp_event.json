@@ -4539,6 +4539,758 @@
         "first_seen": "2026-11-17T00:00:00.000000+00:00"
       },
       {
+        "uuid": "7ec75c96-a9b6-5f5e-9cc6-1a56abb057ad",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "main9.nodewest.work",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER C2 (HTTPS :443) that is not the embedded primary of any config we extracted: it is the value that both dead drops of builds yh-1112, yh-1112c and yh-1112d (Telegraph page Autumn-coast-harbor-11-12 and Polygon contract 0x307dd759...) decrypt to when read 2026-11-18 ~08:05 UTC with the build key. The same two dead drops decrypted to auth.benchteam.website when read 2026-11-17 ~08:04 UTC, so they changed in between. Domain registered 2026-11-17T09:04:59Z (Dynadot, Cloudflare name servers adaline/drake, RDAP). Host never contacted. ThreatFox 2034027 [type: domain; verdict: malicious; source: static config extraction; eth_call and Telegraph read 2026-11-18 (earlier read 2026-11-17); RDAP]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "cd4e5876-2701-5814-a1e8-8353c4fc59a5",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "registry.bakeryhub.club",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 build yh-1029 REVSTEALER primary C2 (HTTPS :443; GET /health must return 'active'); host:port, Polygon contract and Telegraph page all taken from the embedded config of a sandbox memory image; contract value and Telegraph page read 2026-11-18 and decrypted: both give the same host:port. Domain registered 2026-10-29T09:07:20Z (Dynadot, Cloudflare name servers, RDAP); the contract was created 8 minutes later. Host never contacted. Already on ThreatFox as 2004528 (reporter Myrtus0x0), not resubmitted [type: domain; verdict: malicious; source: YARAify memory image (first seen 2026-11-17 22:59 UTC), static config extraction; eth_call and Telegraph read 2026-11-18]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-10-29T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "d2a2b84c-7414-52d3-9f35-a6127c140025",
+        "type": "text",
+        "category": "Network activity",
+        "value": "0x1D73AD41d28aa6bEC8c42ed31E81caCDff9c0324",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "C1 build yh-1029 REVSTEALER EtherHiding dead drop named in the config (3rd C2 source), created 2026-10-29T09:15:16Z by deployer 0x8bAddf05 (nonce 90, tx 0x22a9e5b72cdc75d5c15f8dbd746e767e99fdf16c2000867ade792cf07c990a3b); eth_call selector 0xfef8d9f9 on a public Polygon RPC; value read 2026-11-18 decrypts to registry.bakeryhub.club:443, the embedded primary of this build [type: polygon-contract; verdict: malicious; source: static config extraction; deployer contract list; eth_call read 2026-11-18]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-10-29T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "2557c167-6471-59eb-b1d0-a77410d25673",
+        "type": "url",
+        "category": "Network activity",
+        "value": "https://telegra.ph/Record-still-notes-warm-10-29",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 build yh-1029 Telegraph dead drop named in the config (page description holds the AES-encrypted C2); block by path, not by host; page read 2026-11-18 via the Telegraph API, description decrypts to registry.bakeryhub.club:443 (embedded primary) [type: url; verdict: malicious; source: YARAify memory image (first seen 2026-11-17 22:59 UTC), static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-10-29T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "4419d69f-58aa-5b72-b88e-97c1a28edd40",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "gate5.archpark.wiki",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 build yh-1111 REVSTEALER primary C2 (HTTPS :443; GET /health must return 'active'); host:port, Polygon contract and Telegraph page all taken from the embedded config of a sandbox memory image; contract value and Telegraph page read 2026-11-18 and decrypted: both give the same host:port. Domain registered 2026-11-11T09:52:07Z (Dynadot, Cloudflare name servers, RDAP); the contract was created 10 minutes later. Host never contacted. ThreatFox 2034028 [type: domain; verdict: malicious; source: YARAify memory image (first seen 2026-11-17 14:34 UTC), static config extraction; eth_call and Telegraph read 2026-11-18]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "0b19fcf2-3ad8-503a-9cb9-9c6b6481a6c5",
+        "type": "text",
+        "category": "Network activity",
+        "value": "0xE283849430f09A83e5033f31908B494121D54122",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "C1 build yh-1111 REVSTEALER EtherHiding dead drop named in the config (3rd C2 source), created 2026-11-11T10:02:04Z by deployer 0x8bAddf05 (nonce 175, tx 0xad94044be10826010d4235b72ce065175a4d58795a95018b700117bcf4d8925f); eth_call selector 0x729d42e4 on a public Polygon RPC; value read 2026-11-18 decrypts to gate5.archpark.wiki:443, the embedded primary of this build [type: polygon-contract; verdict: malicious; source: static config extraction; deployer contract list; eth_call read 2026-11-18]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "3b7cc3e5-ae6f-5ecc-831f-8dcafc4d205a",
+        "type": "url",
+        "category": "Network activity",
+        "value": "https://telegra.ph/Clear-north-canvas-11-11",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 build yh-1111 Telegraph dead drop named in the config (page description holds the AES-encrypted C2); block by path, not by host; page read 2026-11-18 via the Telegraph API, description decrypts to gate5.archpark.wiki:443 (embedded primary) [type: url; verdict: malicious; source: YARAify memory image (first seen 2026-11-17 14:34 UTC), static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "623aaaf7-c65f-540e-ba73-4d00e7d7e56b",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "queue8.forestbrief.website",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 build yh-1112e REVSTEALER primary C2 (HTTPS :443; GET /health must return 'active'); host:port, Polygon contract and Telegraph page all taken from the embedded config of a sandbox memory image; contract value and Telegraph page read 2026-11-18 and decrypted: both give the same host:port. Domain registered 2026-11-12T09:20:08Z (Dynadot, Cloudflare name servers, RDAP); the contract was created 14 minutes later. Host never contacted. Already on ThreatFox as 2026071 (reporter Myrtus0x0), not resubmitted [type: domain; verdict: malicious; source: YARAify memory image (first seen 2026-11-18 03:44 UTC), static config extraction; eth_call and Telegraph read 2026-11-18]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-12T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "79aef570-684b-5f4c-aa4c-b535dc414c32",
+        "type": "text",
+        "category": "Network activity",
+        "value": "0x95d37EcaC0F56d5BcFDbB660E4e21a2483fa09B5",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "C1 build yh-1112e REVSTEALER EtherHiding dead drop named in the config (3rd C2 source), created 2026-11-12T09:34:15Z by deployer 0x8bAddf05 (nonce 177, tx 0x8d4d7d20921416a046b8575be0fee2741ea35c0781f7b7e5c1ec9a2746a1be3d); eth_call selector 0x9792cd2d on a public Polygon RPC; value read 2026-11-18 decrypts to queue8.forestbrief.website:443, the embedded primary of this build [type: polygon-contract; verdict: malicious; source: static config extraction; deployer contract list; eth_call read 2026-11-18]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-12T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "938c2e2f-1894-5c72-9402-f46020dd1b0d",
+        "type": "url",
+        "category": "Network activity",
+        "value": "https://telegra.ph/Hazel-meadow-slate-11-12",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 build yh-1112e Telegraph dead drop named in the config (page description holds the AES-encrypted C2); block by path, not by host; page read 2026-11-18 via the Telegraph API, description decrypts to queue8.forestbrief.website:443 (embedded primary) [type: url; verdict: malicious; source: YARAify memory image (first seen 2026-11-18 03:44 UTC), static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-12T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "6ba14bcb-95fe-525e-bea7-3a39a819f8d9",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "19028fc6c9a27117d1bab60bebc82fc0e3aa2b642d54026109457df31eb0f1c8",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 build yh-1112c REVSTEALER core: sandbox process-memory image (5,685,614 B = SizeOfImage, section raw offsets equal virtual addresses; YARAify file name 7ff72c660000.<uuid>.exe), first seen 2026-11-17 13:55 UTC; matches YARA REVSTEALER_x64_Core_SetupCenter; same C2, contract and Telegraph page as yh-1112 but a new compilation (mutex, gate paths, UA, helper DLL differ); memory/dump hunting, not a file on disk; ThreatFox 2034029 [type: sha256; verdict: malicious; source: YARAify (first seen); static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "6a766230-a068-5fd5-bd0e-2d67710d9613",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "2ee9761e96fdaa7eaf56dc8ba8b3c71a9d7a2b5d16ebf2b7559336743a84da45",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 build yh-1112d REVSTEALER core PE as a file (26,197,504 B, padded; file size differs from SizeOfImage 0x1903000, sections have a normal raw layout; YARAify task file name = md5), first seen 2026-11-17 21:15 UTC; matches YARA REVSTEALER_x64_Core_SetupCenter; same C2, contract, Telegraph page and AES key as yh-1112 and yh-1112c, new mutex; ThreatFox 2034030; MalwareBazaar [type: sha256; verdict: malicious; source: YARAify (first seen); static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "282ddf7b-1c58-549c-b2ec-b6abbda8002d",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "33a8c0937144350627649bc4a269eacc5a65758bba3bacf6454e27747eb6ce82",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 build yh-1029 REVSTEALER core: sandbox process-memory image (27,912,479 B = SizeOfImage, section raw offsets equal virtual addresses; YARAify file name 7ff6390f0000.<uuid>.exe), first seen 2026-11-17 23:00 UTC; matches YARA REVSTEALER_x64_Core_SetupCenter; memory/dump hunting, not a file on disk; ThreatFox 2034031 [type: sha256; verdict: malicious; source: YARAify (first seen); static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "b5c94e7b-438a-5772-963c-4513dd59e230",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "63692e9c688cd4e8db081893867e1cb3064092f3acd8ddded0607d2cd4a148aa",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 build yh-1111 REVSTEALER core: sandbox process-memory image (6,305,333 B = SizeOfImage, section raw offsets equal virtual addresses; YARAify file name 140000000.<random>.exe), first seen 2026-11-17 14:34 UTC; section names .themida/.boot suggest a Themida-protected build (INFERRED from section names; the core inside is the usual REVSTEALER); matches YARA REVSTEALER_x64_Core_SetupCenter; memory/dump hunting, not a file on disk; ThreatFox 2034032 [type: sha256; verdict: malicious; source: YARAify (first seen); static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "76add5de-053f-5344-8477-cdab42bfc41a",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "b35f2af2fce8f7df25453c60678dc051e78e6315ef43a5ec61157abcbc060346",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 build yh-1112e REVSTEALER core: sandbox process-memory image (8,656,515 B = SizeOfImage, section raw offsets equal virtual addresses; YARAify file name 140000000.<random>.exe), first seen 2026-11-18 03:44 UTC; section names .themida/.boot suggest a Themida-protected build (INFERRED from section names; the core inside is the usual REVSTEALER); matches YARA REVSTEALER_x64_Core_SetupCenter; memory/dump hunting, not a file on disk; ThreatFox 2034033 [type: sha256; verdict: malicious; source: YARAify (first seen); static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-18T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "9d7a6c85-5806-5175-976e-59dae7f89492",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/aruey/tjfqa/wwjqs.ekxl",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER gate path on C2 (build yh-1112c, auth.benchteam.website; role not resolved); suffix rotates per build [type: url-path; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "5830c5fe-26d1-59bc-bc91-35034a5464a7",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/dby/wwjqs.ekxl",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER gate path on C2 (build yh-1112c, auth.benchteam.website; role not resolved); suffix rotates per build [type: url-path; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "78305686-af50-5905-bf84-a486e0af1eb3",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/lqf/dhyno/wwjqs.ekxl",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER gate path on C2 (build yh-1112c, auth.benchteam.website; role not resolved); suffix rotates per build [type: url-path; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "ad72a22e-2227-5e95-a5b8-20ac52e26c76",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/puzeei/agpf/wwjqs.ekxl",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER gate path on C2 (build yh-1112c, auth.benchteam.website; role not resolved); suffix rotates per build [type: url-path; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "eb7b4a35-b1ce-5b6e-9b8b-fe6a0e85def8",
+        "type": "mutex",
+        "category": "Artifacts dropped",
+        "value": "Global\\3C9CB00B",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER mutex of build yh-1112c [type: mutex; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "63bbdd06-c009-5c17-8322-02c1300a274f",
+        "type": "user-agent",
+        "category": "Network activity",
+        "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:127.0) Gecko/20100101 Firefox/127.0",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER WinINet User-Agent of build yh-1112c (C2 + RPC traffic); the browser build number is not a real release [type: user-agent; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "b08a50b4-2ad1-5145-8be1-e2350b9d1b5b",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/jbh/idzzt.bgqn",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER gate path on C2 (build yh-1112d, auth.benchteam.website; role not resolved); suffix rotates per build [type: url-path; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "4d2b548b-6041-5771-aad9-a51d1f5d925a",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/klznr/idzzt.bgqn",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER gate path on C2 (build yh-1112d, auth.benchteam.website; role not resolved); suffix rotates per build [type: url-path; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "a459dd6e-4191-5ed4-ad66-e0b60f17cc33",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/mxue/idzzt.bgqn",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER gate path on C2 (build yh-1112d, auth.benchteam.website; role not resolved); suffix rotates per build [type: url-path; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "2634d430-ed42-532d-9e2c-dd0bd4b75e2b",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/pww/idzzt.bgqn",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER gate path on C2 (build yh-1112d, auth.benchteam.website; role not resolved); suffix rotates per build [type: url-path; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "03169882-1bf5-56de-9dbc-4eca5526c3e6",
+        "type": "mutex",
+        "category": "Artifacts dropped",
+        "value": "Global\\AEC4210F",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER mutex of build yh-1112d [type: mutex; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "8e6e91a1-8a96-5937-929f-c13c35a9be6c",
+        "type": "user-agent",
+        "category": "Network activity",
+        "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.8512.4 Safari/537.36",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER WinINet User-Agent of build yh-1112d (C2 + RPC traffic); the browser build number is not a real release [type: user-agent; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "e63ddbb8-dbad-53dc-8c15-1dfbcefd7cdb",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/msool/iyg/vpstu.hfjq",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER gate path on C2 (build yh-1029, registry.bakeryhub.club; role not resolved); suffix rotates per build [type: url-path; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "052a5cb6-bcf3-5682-bc32-758ba798c096",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/ptfflp/vpstu.hfjq",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER gate path on C2 (build yh-1029, registry.bakeryhub.club; role not resolved); suffix rotates per build [type: url-path; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "efa665fa-b8e9-5f89-ae73-b8d24b8e2609",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/yol/wrwfu/vpstu.hfjq",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER gate path on C2 (build yh-1029, registry.bakeryhub.club; role not resolved); suffix rotates per build [type: url-path; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "c7b63306-5ed1-5851-af45-62bebc147222",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/zpce/vpstu.hfjq",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER gate path on C2 (build yh-1029, registry.bakeryhub.club; role not resolved); suffix rotates per build [type: url-path; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "d885d490-257b-56e8-92e7-7461a4c29bc9",
+        "type": "mutex",
+        "category": "Artifacts dropped",
+        "value": "Global\\550F6DB1",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER mutex of build yh-1029 [type: mutex; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "50a72cec-a320-5224-960d-559cdfaff444",
+        "type": "user-agent",
+        "category": "Network activity",
+        "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.13612.47 Safari/537.36",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER WinINet User-Agent of build yh-1029 (C2 + RPC traffic); the browser build number is not a real release [type: user-agent; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "4ee7f11e-31a2-553f-b27d-6ed42b9306b5",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/ccglnh/vaqoc.ihxf",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER gate path on C2 (build yh-1111, gate5.archpark.wiki; role not resolved); suffix rotates per build [type: url-path; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "f30160a2-3825-5dcb-9a8d-6f33a60ca4d7",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/nksluk/zduoka/vaqoc.ihxf",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER gate path on C2 (build yh-1111, gate5.archpark.wiki; role not resolved); suffix rotates per build [type: url-path; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "3daf17b2-70f7-54a1-9a46-30b8857fbb47",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/yxj/vaqoc.ihxf",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER gate path on C2 (build yh-1111, gate5.archpark.wiki; role not resolved); suffix rotates per build [type: url-path; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "be6d8311-867d-5b62-abe9-a14e52597830",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/zki/vaqoc.ihxf",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER gate path on C2 (build yh-1111, gate5.archpark.wiki; role not resolved); suffix rotates per build [type: url-path; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "9d96cb9b-8341-5f6f-86a6-08459f9f57bd",
+        "type": "mutex",
+        "category": "Artifacts dropped",
+        "value": "Global\\C649133B",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER mutex of build yh-1111 [type: mutex; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "995a8121-42e0-5601-971d-ad4df60110a5",
+        "type": "user-agent",
+        "category": "Network activity",
+        "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER WinINet User-Agent of build yh-1111 (C2 + RPC traffic); the browser build number is not a real release [type: user-agent; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "161b20b2-d35d-5e8a-a574-76cbaf5979be",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/egtlqj/srgnqv/hxjdw.nerq",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER gate path on C2 (build yh-1112e, queue8.forestbrief.website; role not resolved); suffix rotates per build [type: url-path; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-18T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "3f837ecf-e68c-5af4-8dcd-66b39204b809",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/lwzia/hxjdw.nerq",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER gate path on C2 (build yh-1112e, queue8.forestbrief.website; role not resolved); suffix rotates per build [type: url-path; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-18T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "8d3c59e0-354b-56b4-b221-c8443921178c",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/snuqyl/qcvjqa/hxjdw.nerq",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER gate path on C2 (build yh-1112e, queue8.forestbrief.website; role not resolved); suffix rotates per build [type: url-path; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-18T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "d952ce94-3ba4-50ec-8446-7e52fd096657",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/zbonjc/ygxe/hxjdw.nerq",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER gate path on C2 (build yh-1112e, queue8.forestbrief.website; role not resolved); suffix rotates per build [type: url-path; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-18T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "45638416-31c4-529c-90cd-120f3ac08aff",
+        "type": "mutex",
+        "category": "Artifacts dropped",
+        "value": "Global\\820A94D1",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER mutex of build yh-1112e [type: mutex; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-18T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "c565153c-ac98-53fb-b788-8b67a7dc721c",
+        "type": "user-agent",
+        "category": "Network activity",
+        "value": "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.13849.93 Safari/537.36 Edg/131.0.13849.93",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER WinINet User-Agent of build yh-1112e (C2 + RPC traffic); the browser build number is not a real release [type: user-agent; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-18T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "c4b4022c-d7fe-5020-9262-36d749e2927d",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "rpc.hostdefi.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "public Polygon JSON-RPC host (path /api/rpc/polygon) decrypted next to the eth_call template, selector and contract inside the build-yh-1112d core; most likely that build's JSON-RPC endpoint (role INFERRED from code position, not tested); the config lists no RPC endpoint. Third-party service: do NOT block globally; hunt non-browser POST eth_call [type: domain; verdict: shared-or-legit-infrastructure; source: static config extraction (decrypted strings)]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "65339ad8-d560-5001-967b-035e82734d1b",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "rpc.swiftnodes.io",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "public Polygon JSON-RPC host (path /rpc/polygon) decrypted next to the eth_call template, selector and contract inside the build-yh-1112e core; most likely that build's JSON-RPC endpoint (role INFERRED from code position, not tested); the config lists no RPC endpoint. Third-party service: do NOT block globally; hunt non-browser POST eth_call [type: domain; verdict: shared-or-legit-infrastructure; source: static config extraction (decrypted strings)]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-18T00:00:00.000000+00:00"
+      },
+      {
         "uuid": "6fc3c21d-da54-5382-9a11-583cfe33d9da",
         "type": "link",
         "category": "External analysis",
@@ -4869,6 +5621,86 @@
         "timestamp": "1794528000"
       },
       {
+        "uuid": "449ed463-3f65-52dc-83a0-896d822c56e5",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2034027/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox",
+        "timestamp": "1794528000"
+      },
+      {
+        "uuid": "0a309a9a-a6ad-53c0-a89d-71c6e178ba9d",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2034028/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox",
+        "timestamp": "1794528000"
+      },
+      {
+        "uuid": "1246865a-34b6-5e48-8989-0354730e6a47",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2034029/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox",
+        "timestamp": "1794528000"
+      },
+      {
+        "uuid": "f068f57b-0e12-54a4-9788-9b633266b7cd",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2034030/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox",
+        "timestamp": "1794528000"
+      },
+      {
+        "uuid": "ecbb6a2c-a6de-55a1-a7f1-cd7eeeda2efa",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2034031/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox",
+        "timestamp": "1794528000"
+      },
+      {
+        "uuid": "3d4320ce-e619-56a1-9e7f-7cd9e1679d5d",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2034032/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox",
+        "timestamp": "1794528000"
+      },
+      {
+        "uuid": "32eeaf61-1eb3-5857-b00d-1a10a1af362b",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2034033/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox",
+        "timestamp": "1794528000"
+      },
+      {
+        "uuid": "ae78fdc8-eb94-566f-9831-87d9686fa584",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://bazaar.abuse.ch/sample/2ee9761e96fdaa7eaf56dc8ba8b3c71a9d7a2b5d16ebf2b7559336743a84da45/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "MalwareBazaar",
+        "timestamp": "1794528000"
+      },
+      {
         "uuid": "03382062-b3b7-545b-a18e-97fdb1f634f4",
         "type": "link",
         "category": "External analysis",
@@ -4883,6 +5715,26 @@
         "type": "link",
         "category": "External analysis",
         "value": "https://threatfox.abuse.ch/ioc/2028329/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox (reporter Myrtus0x0)",
+        "timestamp": "1794528000"
+      },
+      {
+        "uuid": "b2f3a3b9-ccf9-5b4a-87a3-8252bec50ee7",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2004528/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox (reporter Myrtus0x0)",
+        "timestamp": "1794528000"
+      },
+      {
+        "uuid": "a44dd27b-a2cb-59b7-a54f-f2999a52138e",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2026071/",
         "to_ids": false,
         "distribution": "5",
         "comment": "ThreatFox (reporter Myrtus0x0)",
