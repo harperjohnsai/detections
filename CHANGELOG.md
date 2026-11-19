@@ -93,3 +93,9 @@
 - +47 IOC rows (332 total), +5 `c2_timeline.csv` rows, README section and table rows, ThreatFox references 2034027 to 2034033, MalwareBazaar link for `2ee9761e`. No AES keys or other secrets published.
 - Update (not a retraction): earlier text that the `0x307dd759...` dead drops decrypt to `auth[.]benchteam[.]website` describes the 2026-11-16/17 reads; it no longer holds. The README's count of ten sample-linked contracts is now thirteen (the three new ones were already in the deployer's creation list).
 - Not checked: liveness of any C2 (nothing contacted); the setter transaction behind the re-point.
+
+### 2026-11-19 (Mispadu / URSA payload build 108)
+- New case `iocs/2026-11-mispadu-ursa`: 27 rows (2 SHA-256 plus 2 NirSoft tool hashes as context, the two hardcoded hosts `208[.]109[.]36[.]32` (downloads, infection counter) and `64[.]95[.]12[.]126` (exfiltration) with their URLs and ip:port endpoints, host artefacts, build tag and protocol strings, 5 references). Static analysis only: nothing executed, no host contacted, liveness not checked. The payload hash was already on MalwareBazaar and on ThreatFox (reported by Grim, 1958577); the hosts and the exfiltration URL are new on ThreatFox (2034945 to 2034947).
+- Findings new compared with ESET 2019, IBM X-Force and Cofense 2026 (as read): fake IBM Trusteer Rapport wait screens in ES/IT/PT/UK, 88 overlays by country (ES 33, PT 14, AR 8, CL 8, IT 7, UK 7, MX 6, CO 5), socket session key 60 (IBM: 66), plaintext string literals, two-file config with 62 C2 entries picked by day of month.
+- New `yara/mispadu/` with three rules (`MAL_Mispadu_URSA_Delphi_Cipher_Code`, `MAL_Mispadu_URSA_Payload_Build108`, `MAL_Mispadu_URSA_Hook_DLL_pDLL`), added to `tests/run_yara_tests.py` and `tests/RESULTS.md`.
+- The socket C2 and the 62 server entries are in config files dropped by the loader and are not in the sample: not published. The campaign token and the C2 reply markers are withheld.

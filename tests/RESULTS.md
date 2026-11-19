@@ -198,3 +198,16 @@ PASS [yara-x 1.23.0] 29db0be6d95b -> Grandoreiro_Loader_Delphi_StrCrypt_PortCalc
 ```
 
 `29db0be6d95b` is the same loader with the padding resource stripped (a derived test copy, not a sample in the wild). Negative corpus: 611 files (606 unrelated PE files from other analyses and tools, a VBS, two ZIPs, two benign Delphi installers). Grandoreiro rules: 0 hits on all 611. The other rule sets hit 26 of those files, all of them reference artefacts of the Setup Center / REVSTEALER case (expected positives, so the generic "0 hits" line of the harness is not applicable to this corpus). Only two benign Delphi binaries are in the corpus.
+
+## Mispadu rules (yara/mispadu), run 2026-11-19
+
+Engines: yara-python 4.5.4 and YARA-X 1.23.0, all repository rules compiled together (21 rule files).
+
+```
+PASS [yara-python 4.5.4] 4f4129e8f79b -> MAL_Mispadu_URSA_Delphi_Cipher_Code, MAL_Mispadu_URSA_Payload_Build108
+PASS [yara-x 1.23.0] 4f4129e8f79b -> MAL_Mispadu_URSA_Delphi_Cipher_Code, MAL_Mispadu_URSA_Payload_Build108
+PASS [yara-python 4.5.4] 352c8d5d8cc8 -> MAL_Mispadu_URSA_Hook_DLL_pDLL
+PASS [yara-x 1.23.0] 352c8d5d8cc8 -> MAL_Mispadu_URSA_Hook_DLL_pDLL
+```
+
+`352c8d5d8cc8` is the `PDLL` resource extracted from the payload (a derived test copy of an embedded component). Negative corpus (both engines): 550 files, 0 hits (unrelated PE files from other analyses and tools, among them the Grandoreiro loader, the two NirSoft tools bundled in the payload, and six Delphi DLLs of an unrelated banker cluster). The corpus holds only a few benign Delphi binaries, so the false-positive rate on benign Delphi software is not established.

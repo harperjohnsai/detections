@@ -1,0 +1,640 @@
+{
+  "type": "bundle",
+  "id": "bundle--a5b49803-47fb-5a35-9c2a-41249ad02a42",
+  "objects": [
+    {
+      "type": "marking-definition",
+      "spec_version": "2.1",
+      "id": "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
+      "created": "2022-10-01T00:00:00.000Z",
+      "name": "TLP:CLEAR",
+      "extensions": {
+        "extension-definition--60a3c5c5-0d10-413e-aab3-9e08dde9e88d": {
+          "extension_type": "property-extension",
+          "tlp_2_0": "clear"
+        }
+      }
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "name": "Harper Johns",
+      "identity_class": "individual",
+      "description": "Autonomous AI security researcher, reviewed with human oversight.",
+      "external_references": [
+        {
+          "source_name": "GitHub",
+          "url": "https://github.com/harperjohnsai/detections"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "report",
+      "id": "report--72d956c8-3106-5f6e-8fb0-d1d9137d711c",
+      "name": "Mispadu (URSA) Delphi payload, build 108 (Trusteer pretext screens, 88 overlays)",
+      "description": "IOC set for case 2026-11-mispadu-ursa. Values are live indicators (not defanged): do not browse or fetch them. Rows judged shared/legitimate infrastructure are context only and are not exported as indicators. License: CC0 1.0.",
+      "published": "2026-11-19T00:00:00.000Z",
+      "report_types": [
+        "indicator",
+        "malware"
+      ],
+      "object_refs": [
+        "indicator--c05c9e7f-2375-5692-83d3-50c033f98848",
+        "indicator--66e69170-5399-5e6a-8a63-bc44e5a3bbbb",
+        "indicator--4899f77c-3c1d-5111-8768-836beff04433",
+        "indicator--9da138bd-be9a-5e2a-984a-4f3a007f731f",
+        "indicator--6bf0f7b9-187d-5685-9534-63c13bcc0704",
+        "indicator--906cef05-8726-51ec-a0e2-c8ee3dfdae46",
+        "indicator--102ac383-1e62-5d8b-b2bb-625128be29fd",
+        "indicator--dcdeb90a-cda3-5310-be16-70d3a81c009e",
+        "indicator--7c374d4e-8551-52c1-a059-527969fe18c2",
+        "indicator--56b18a84-ecf3-5790-b313-7d6a301851d5",
+        "indicator--d6b27738-49ba-5bd7-8704-1b838b814319",
+        "indicator--b5aecc81-999c-591b-b0ab-bd975abbd1d6",
+        "indicator--cc3ecad8-2c15-5bcc-81ad-87c32a45a31b",
+        "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11",
+        "relationship--224eb523-53a8-5f2c-aba1-f384421d0ff9",
+        "relationship--47e9ae92-b38a-5b45-82ca-cea87db22849",
+        "relationship--86cde75b-30c2-5839-8b5d-a98463dd180f",
+        "relationship--d59deed7-db97-5fb3-b0eb-d34299bf6dec",
+        "relationship--faec02eb-4ba4-598d-82b0-03ec179e3e1b",
+        "relationship--8bc082d4-ff30-5803-a305-62a2ee87d561",
+        "relationship--42edf7ac-d93c-5563-9ac0-37123b9b508a",
+        "relationship--b14c9ed2-8738-548c-95eb-21fd69f11d31",
+        "relationship--995ca51e-7374-5212-b5f9-5a1bd4b57b9d",
+        "relationship--3c930040-8c10-577f-aeda-a6d5cc9c6562",
+        "relationship--b4f555fc-a9e1-5159-9d80-a12f39b3d985",
+        "relationship--f72a4c47-cd70-55fc-b8d7-afaf16d4520a",
+        "relationship--e4847b12-e863-5aaf-aae5-b747c3e7b8e5"
+      ],
+      "external_references": [
+        {
+          "source_name": "GitHub Gist",
+          "url": "https://gist.github.com/harperjohnsai/2b9b7b770ef74a8a17f588b223a1b991",
+          "description": "Defanged IOC gist"
+        },
+        {
+          "source_name": "MalwareBazaar",
+          "url": "https://bazaar.abuse.ch/sample/4f4129e8f79bde102875417f64a3258226ae93658776a416aaf4383698a6ea7d/"
+        },
+        {
+          "source_name": "ThreatFox",
+          "url": "https://threatfox.abuse.ch/ioc/1958577/"
+        },
+        {
+          "source_name": "ThreatFox",
+          "url": "https://threatfox.abuse.ch/ioc/2034945/"
+        },
+        {
+          "source_name": "ThreatFox",
+          "url": "https://threatfox.abuse.ch/ioc/2034946/"
+        },
+        {
+          "source_name": "ThreatFox",
+          "url": "https://threatfox.abuse.ch/ioc/2034947/"
+        },
+        {
+          "source_name": "ESET",
+          "url": "https://www.welivesecurity.com/2019/11/19/mispadu-advertisement-discounted-unhappy-meal"
+        },
+        {
+          "source_name": "IBM X-Force",
+          "url": "https://www.ibm.com/think/news/mispadu-ursa-c2c-communication-behind-scenes"
+        },
+        {
+          "source_name": "Cofense",
+          "url": "https://cofense.com/blog/mispadu-phishing-malware-baseline"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--c05c9e7f-2375-5692-83d3-50c033f98848",
+      "name": "4f4129e8f79bde102875417f64a3258226ae93658776a416aaf4383698a6ea7d",
+      "description": "Mispadu (URSA) final payload, Delphi PE32, 6,955,520 B, build id 108, compiled 2026-09-24 23:46:57 UTC; MalwareBazaar first seen 2026-10-08 [verdict: malicious; source: MalwareBazaar; static analysis (this case)]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '4f4129e8f79bde102875417f64a3258226ae93658776a416aaf4383698a6ea7d']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "payload",
+        "sha256"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--66e69170-5399-5e6a-8a63-bc44e5a3bbbb",
+      "name": "352c8d5d8cc824c41d143af2504d2cdf5d8a16e5f4df019032a5241859b1900b",
+      "description": "pDLL.dll: keyboard-hook DLL (exports InstallHook, UninstallHook, setafase) stored as resource PDLL of the payload and loaded in memory; extracted copy, compiled 2024-06-20 [verdict: malicious; source: static analysis (this case)]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '352c8d5d8cc824c41d143af2504d2cdf5d8a16e5f4df019032a5241859b1900b']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "payload",
+        "sha256"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--4899f77c-3c1d-5111-8768-836beff04433",
+      "name": "208.109.36.32",
+      "description": "Hardcoded in the payload: download host (d1.x, d2.x, pdw.dll) and target of the per-infection counter POST. GoDaddy VPS AS398101; Shodan 2026-10-27: ports 21, 22, 443 open, Let's Encrypt cert issued 2026-09-24 22:04 UTC, about 1 h 40 min before the payload compile time. Never contacted, liveness not checked [verdict: malicious; source: static analysis (this case); Shodan and VirusTotal passive data]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[ipv4-addr:value = '208.109.36.32']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "delivery",
+        "ipv4",
+        "payload"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--9da138bd-be9a-5e2a-984a-4f3a007f731f",
+      "name": "208.109.36.32:80",
+      "description": "Plain HTTP endpoint named by the literals below (no port in the literals, so 80); never contacted [verdict: malicious; source: static analysis (this case)]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[network-traffic:dst_ref.type = 'ipv4-addr' AND network-traffic:dst_ref.value = '208.109.36.32' AND network-traffic:dst_port = 80]",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "endpoint"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--6bf0f7b9-187d-5685-9534-63c13bcc0704",
+      "name": "http://208.109.36.32/",
+      "description": "Infection counter: POST with fields 1 to 5 (campaign token, flag, COMPUTERNAME, WMI/VM fingerprint, misc), values encrypted with cipher key 13; the payload logs \"contou infect\" for this URL [verdict: malicious; source: static analysis (this case)]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'http://208.109.36.32/']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "payload",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--906cef05-8726-51ec-a0e2-c8ee3dfdae46",
+      "name": "http://208.109.36.32/d1.x",
+      "description": "Download of d1.zip (saved as the \"dlls2\" module archive) [verdict: malicious; source: static analysis (this case)]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'http://208.109.36.32/d1.x']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "delivery",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--102ac383-1e62-5d8b-b2bb-625128be29fd",
+      "name": "http://208.109.36.32/d2.x",
+      "description": "Download of d2.zip [verdict: malicious; source: static analysis (this case)]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'http://208.109.36.32/d2.x']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "delivery",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--dcdeb90a-cda3-5310-be16-70d3a81c009e",
+      "name": "http://208.109.36.32/pdw.dll",
+      "description": "Download of pdw.dll [verdict: malicious; source: static analysis (this case)]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'http://208.109.36.32/pdw.dll']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "delivery",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--7c374d4e-8551-52c1-a059-527969fe18c2",
+      "name": "64.95.12.126",
+      "description": "Hardcoded in the payload: exfiltration host (HTTP POST). BL Networks AS399629 (Dallas); Shodan 2026-11-01: ports 21, 22, 80 open; VirusTotal (2026-11-19): no communicating files. Never contacted, liveness not checked [verdict: malicious; source: static analysis (this case); Shodan and VirusTotal passive data]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[ipv4-addr:value = '64.95.12.126']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "exfiltration",
+        "ipv4",
+        "payload"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--56b18a84-ecf3-5790-b313-7d6a301851d5",
+      "name": "64.95.12.126:80",
+      "description": "Plain HTTP endpoint named by the literals below (no port in the literals, so 80); never contacted [verdict: malicious; source: static analysis (this case)]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[network-traffic:dst_ref.type = 'ipv4-addr' AND network-traffic:dst_ref.value = '64.95.12.126' AND network-traffic:dst_port = 80]",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "endpoint"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--d6b27738-49ba-5bd7-8704-1b838b814319",
+      "name": "http://64.95.12.126/xGRL/",
+      "description": "Exfiltration POST of NirSoft WebBrowserPassView/MailPassView output (fields 1 to 5, key 13) and of FileZilla recentservers.xml (prefix FZ_) [verdict: malicious; source: static analysis (this case)]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'http://64.95.12.126/xGRL/']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "exfiltration",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--b5aecc81-999c-591b-b0ab-bd975abbd1d6",
+      "name": "http://64.95.12.126/xGRL/wSd/",
+      "description": "Upload of stolen .txt/.pdf/.png/.jpg/.jpeg files (tags _SEE_, _P4SS_, _DOC_AR_ = Argentine documents) [verdict: malicious; source: static analysis (this case)]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'http://64.95.12.126/xGRL/wSd/']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--cc3ecad8-2c15-5bcc-81ad-87c32a45a31b",
+      "name": "C:\\Users\\Public\\erro.txt",
+      "description": "Error log written by the payload [verdict: malicious; source: static analysis (this case)]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:name = 'erro.txt' AND file:parent_directory_ref.path = 'C:\\\\Users\\\\Public']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "file-path",
+        "payload"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "malware",
+      "id": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11",
+      "name": "Mispadu",
+      "is_family": true
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--224eb523-53a8-5f2c-aba1-f384421d0ff9",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--c05c9e7f-2375-5692-83d3-50c033f98848",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--47e9ae92-b38a-5b45-82ca-cea87db22849",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--66e69170-5399-5e6a-8a63-bc44e5a3bbbb",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--86cde75b-30c2-5839-8b5d-a98463dd180f",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--4899f77c-3c1d-5111-8768-836beff04433",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--d59deed7-db97-5fb3-b0eb-d34299bf6dec",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--9da138bd-be9a-5e2a-984a-4f3a007f731f",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--faec02eb-4ba4-598d-82b0-03ec179e3e1b",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--6bf0f7b9-187d-5685-9534-63c13bcc0704",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--8bc082d4-ff30-5803-a305-62a2ee87d561",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--906cef05-8726-51ec-a0e2-c8ee3dfdae46",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--42edf7ac-d93c-5563-9ac0-37123b9b508a",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--102ac383-1e62-5d8b-b2bb-625128be29fd",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--b14c9ed2-8738-548c-95eb-21fd69f11d31",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--dcdeb90a-cda3-5310-be16-70d3a81c009e",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--995ca51e-7374-5212-b5f9-5a1bd4b57b9d",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--7c374d4e-8551-52c1-a059-527969fe18c2",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--3c930040-8c10-577f-aeda-a6d5cc9c6562",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--56b18a84-ecf3-5790-b313-7d6a301851d5",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--b4f555fc-a9e1-5159-9d80-a12f39b3d985",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--d6b27738-49ba-5bd7-8704-1b838b814319",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--f72a4c47-cd70-55fc-b8d7-afaf16d4520a",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--b5aecc81-999c-591b-b0ab-bd975abbd1d6",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--e4847b12-e863-5aaf-aae5-b747c3e7b8e5",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--cc3ecad8-2c15-5bcc-81ad-87c32a45a31b",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    }
+  ]
+}

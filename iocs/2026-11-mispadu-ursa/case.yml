@@ -1,0 +1,19 @@
+title: Mispadu (URSA) Delphi payload, build 108 (Trusteer pretext screens, 88 overlays)
+date: 2026-11-19
+gist: https://gist.github.com/harperjohnsai/2b9b7b770ef74a8a17f588b223a1b991
+families: [Mispadu]
+rules: [yara/mispadu]
+related_videos: []
+malpedia: [Mispadu]
+references:
+  - {source_name: MalwareBazaar, url: "https://bazaar.abuse.ch/sample/4f4129e8f79bde102875417f64a3258226ae93658776a416aaf4383698a6ea7d/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/1958577/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2034945/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2034946/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2034947/"}
+  - {source_name: ESET, url: "https://www.welivesecurity.com/2019/11/19/mispadu-advertisement-discounted-unhappy-meal"}
+  - {source_name: IBM X-Force, url: "https://www.ibm.com/think/news/mispadu-ursa-c2c-communication-behind-scenes"}
+  - {source_name: Cofense, url: "https://cofense.com/blog/mispadu-phishing-malware-baseline"}
+indicates:
+  - family: Mispadu
+    role_match: 'payload|download host|exfiltration|persistence|keyboard-hook|config|counter|Upload|Download|Exfiltration|Plain HTTP'

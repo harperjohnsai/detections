@@ -1,0 +1,498 @@
+{
+  "Event": {
+    "uuid": "c6068900-49a9-5350-b78e-922f20c2c818",
+    "info": "Mispadu (URSA) Delphi payload, build 108 (Trusteer pretext screens, 88 overlays)",
+    "date": "2026-11-19",
+    "threat_level_id": "2",
+    "analysis": "2",
+    "distribution": "3",
+    "published": false,
+    "timestamp": "1795046400",
+    "Orgc": {
+      "uuid": "b641827b-b56f-53c3-b356-359fddd6e73f",
+      "name": "Harper Johns"
+    },
+    "Tag": [
+      {
+        "name": "tlp:clear"
+      },
+      {
+        "name": "misp-galaxy:malpedia=\"Mispadu\""
+      }
+    ],
+    "Attribute": [
+      {
+        "uuid": "e7b82361-2b1f-5f2e-9fa9-0f30587b0b2c",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "4f4129e8f79bde102875417f64a3258226ae93658776a416aaf4383698a6ea7d",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Mispadu (URSA) final payload, Delphi PE32, 6,955,520 B, build id 108, compiled 2026-09-24 23:46:57 UTC; MalwareBazaar first seen 2026-10-08 [type: sha256; verdict: malicious; source: MalwareBazaar; static analysis (this case)]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "d01ea7b7-b2b0-57ab-aded-4c85cf5e94e8",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "352c8d5d8cc824c41d143af2504d2cdf5d8a16e5f4df019032a5241859b1900b",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "pDLL.dll: keyboard-hook DLL (exports InstallHook, UninstallHook, setafase) stored as resource PDLL of the payload and loaded in memory; extracted copy, compiled 2024-06-20 [type: sha256; verdict: malicious; source: static analysis (this case)]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "fb6bae57-8268-55bb-85aa-8e5ef7912f34",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "f999357a17e672e87fbed66d14ba2bebd6fb04e058a1aae0f0fdc49a797f58fe",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Resource WY0: NirSoft WebBrowserPassView 2.06, dual-use freeware carried by the payload and run with /stext; context only, do not block on this hash alone [type: sha256; verdict: dual-use-tool; source: static analysis (this case)]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "249ffd2e-883b-5c11-a9aa-f1944daaeb1c",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "400b411a9bffd687c5e74f51d43b7dc92cdb8d5ca9f674456b75a5d37587d342",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Resource WY1: NirSoft MailPassView 1.86, dual-use freeware carried by the payload and run with /stext (VirusTotal lists it as mailpv.exe dropped by the payload); context only, do not block on this hash alone [type: sha256; verdict: dual-use-tool; source: static analysis (this case)]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "86fc9bd9-0462-544b-9466-4a0cb31c6798",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "208.109.36.32",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Hardcoded in the payload: download host (d1.x, d2.x, pdw.dll) and target of the per-infection counter POST. GoDaddy VPS AS398101; Shodan 2026-10-27: ports 21, 22, 443 open, Let's Encrypt cert issued 2026-09-24 22:04 UTC, about 1 h 40 min before the payload compile time. Never contacted, liveness not checked [type: ipv4; verdict: malicious; source: static analysis (this case); Shodan and VirusTotal passive data]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "9838e739-3969-584d-93b7-43a9cdbff93b",
+        "type": "ip-dst|port",
+        "category": "Network activity",
+        "value": "208.109.36.32|80",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Plain HTTP endpoint named by the literals below (no port in the literals, so 80); never contacted [type: endpoint; verdict: malicious; source: static analysis (this case)]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "1a6cfc55-3752-5fa8-a214-9ba13c46f8be",
+        "type": "url",
+        "category": "Network activity",
+        "value": "http://208.109.36.32/",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Infection counter: POST with fields 1 to 5 (campaign token, flag, COMPUTERNAME, WMI/VM fingerprint, misc), values encrypted with cipher key 13; the payload logs \"contou infect\" for this URL [type: url; verdict: malicious; source: static analysis (this case)]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "dc9633a3-7df9-53db-a2dc-e64c7d28338d",
+        "type": "url",
+        "category": "Network activity",
+        "value": "http://208.109.36.32/d1.x",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Download of d1.zip (saved as the \"dlls2\" module archive) [type: url; verdict: malicious; source: static analysis (this case)]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "d5567f89-017a-54d6-af1b-b0a5423c139c",
+        "type": "url",
+        "category": "Network activity",
+        "value": "http://208.109.36.32/d2.x",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Download of d2.zip [type: url; verdict: malicious; source: static analysis (this case)]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "de3160c6-8ecd-5e6e-9627-912e0f156cc6",
+        "type": "url",
+        "category": "Network activity",
+        "value": "http://208.109.36.32/pdw.dll",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Download of pdw.dll [type: url; verdict: malicious; source: static analysis (this case)]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "0b01d0dd-e06f-5227-a38c-b07945700e81",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "64.95.12.126",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Hardcoded in the payload: exfiltration host (HTTP POST). BL Networks AS399629 (Dallas); Shodan 2026-11-01: ports 21, 22, 80 open; VirusTotal (2026-11-19): no communicating files. Never contacted, liveness not checked [type: ipv4; verdict: malicious; source: static analysis (this case); Shodan and VirusTotal passive data]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "e34c72ee-cfba-5adf-86a4-7ee3fbddbff1",
+        "type": "ip-dst|port",
+        "category": "Network activity",
+        "value": "64.95.12.126|80",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Plain HTTP endpoint named by the literals below (no port in the literals, so 80); never contacted [type: endpoint; verdict: malicious; source: static analysis (this case)]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "a99834ed-f2e2-5256-bc0e-a5087f6637d2",
+        "type": "url",
+        "category": "Network activity",
+        "value": "http://64.95.12.126/xGRL/",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Exfiltration POST of NirSoft WebBrowserPassView/MailPassView output (fields 1 to 5, key 13) and of FileZilla recentservers.xml (prefix FZ_) [type: url; verdict: malicious; source: static analysis (this case)]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "83f6ad9a-7799-53bc-bca5-7e95274c2998",
+        "type": "url",
+        "category": "Network activity",
+        "value": "http://64.95.12.126/xGRL/wSd/",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Upload of stolen .txt/.pdf/.png/.jpg/.jpeg files (tags _SEE_, _P4SS_, _DOC_AR_ = Argentine documents) [type: url; verdict: malicious; source: static analysis (this case)]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "5ff053cd-498f-5b3e-a97f-b4f2a1742f58",
+        "type": "filename",
+        "category": "Artifacts dropped",
+        "value": "C:\\Users\\Public\\<2nd character of COMPUTERNAME>",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Mispadu general config, 6 lines, dropped by the loader (line 1 decoded with key 10); not in the payload [type: file-path; verdict: malicious; source: static analysis (this case)]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "9259c7ee-743e-5069-b636-ef02c97b8ec4",
+        "type": "filename",
+        "category": "Artifacts dropped",
+        "value": "C:\\Users\\Public\\<2nd character of COMPUTERNAME>_",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Mispadu C&C config (key 13, \"*\"-separated, 62 server entries); dropped by the loader, not in the payload [type: file-path; verdict: malicious; source: static analysis (this case)]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "ea1a6ff1-6085-5536-9b88-9af5d6518332",
+        "type": "filename",
+        "category": "Artifacts dropped",
+        "value": "%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\<name>.lnk -> <install dir>\\ai.exe",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Persistence: Startup-folder link to a renamed AutoIt interpreter named ai.exe (interpreter identity INFERRED) [type: file-path; verdict: malicious; source: static analysis (this case)]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "991f5bc8-f021-5f4d-a925-90d73c15cdda",
+        "type": "filename",
+        "category": "Artifacts dropped",
+        "value": "C:\\Users\\Public\\<name>.vbs",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "VBS built from a template (placeholders #idw#, #str1#, #const#, #avw#); deleted again with other *.vbs/*.js in C:\\Users\\Public [type: file-path; verdict: malicious; source: static analysis (this case)]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "fb1eca26-52f4-56a0-99d0-ec6c5d9cd81d",
+        "type": "filename",
+        "category": "Artifacts dropped",
+        "value": "C:\\Users\\Public\\erro.txt",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Error log written by the payload [type: file-path; verdict: malicious; source: static analysis (this case)]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "06d21244-9033-5d0b-b758-b2047d3ba31d",
+        "type": "text",
+        "category": "Other",
+        "value": "_VS108_",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Build tag of this payload (version literal 108), also sent as qvar4 in the C&C config request [type: string; verdict: build_tag; source: static analysis (this case)]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "81091c03-dba4-5ea7-9d12-2a597e2921c3",
+        "type": "text",
+        "category": "Other",
+        "value": "qvar1=, qvar2=, qvar3=, qvar4=",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "POST field names of the C&C-config refresh (every 780,000 ms): token, \"9\", victim profile, build id; values are cipher-encoded (key 13) [type: string; verdict: malicious; source: static analysis (this case)]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "04a88128-c928-5d9e-b928-5ccdbe3d726a",
+        "type": "text",
+        "category": "Other",
+        "value": "<|PRINCIPAL|>, <|SocketMain|>, <|Info|>",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Plaintext command names of the socket C2 (TClientSocket); on the wire each message is cipher-encoded (key 60 in this build) and ends with \"@\" [type: string; verdict: malicious; source: static analysis (this case)]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "f3b70897-c8c0-5304-814c-49b1301a1ab1",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://bazaar.abuse.ch/sample/4f4129e8f79bde102875417f64a3258226ae93658776a416aaf4383698a6ea7d/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "MalwareBazaar entry of the payload (signature Mispadu, first seen 2026-10-08) [type: reference; verdict: reference; source: abuse.ch]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "f61554b4-133b-5d97-9786-4b4497cc32c8",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/1958577/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox entry of the payload hash, reported by Grim (win.mispadu, confidence 95) [type: reference; verdict: reference; source: abuse.ch]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "dbb361ef-6a93-53f8-8655-7d197e252fe1",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://www.welivesecurity.com/2019/11/19/mispadu-advertisement-discounted-unhappy-meal",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ESET, Mispadu: Advertisement for a discounted Unhappy Meal (2019) [type: reference; verdict: reference; source: published research]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "db937736-2d29-571b-b1ec-26da41e0524d",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://www.ibm.com/think/news/mispadu-ursa-c2c-communication-behind-scenes",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "IBM X-Force, Mispadu (Ursa) C2C communication behind the scenes [type: reference; verdict: reference; source: published research]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "925d4293-d228-5463-a322-3418ec3ac503",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://cofense.com/blog/mispadu-phishing-malware-baseline",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Cofense, Mispadu phishing malware baseline (2026-02-11) [type: reference; verdict: reference; source: published research]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "441472cd-a428-5086-b0d6-aaa6782f28c3",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://gist.github.com/harperjohnsai/2b9b7b770ef74a8a17f588b223a1b991",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "GitHub Gist",
+        "timestamp": "1795046400"
+      },
+      {
+        "uuid": "d8730fea-36f5-585d-b571-a04db2c3c7a0",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2034945/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox",
+        "timestamp": "1795046400"
+      },
+      {
+        "uuid": "367a2e22-375c-591e-9c9d-5bea8baf6c70",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2034946/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox",
+        "timestamp": "1795046400"
+      },
+      {
+        "uuid": "c6830797-0065-5952-aa23-d24f33b4d706",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2034947/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox",
+        "timestamp": "1795046400"
+      }
+    ]
+  }
+}

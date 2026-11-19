@@ -1,0 +1,251 @@
+{
+ "_warning": "MACHINE-READABLE, NOT DEFANGED: values are live indicators. Do not browse or fetch them.",
+ "case": "2026-11-mispadu-ursa",
+ "license": "CC0-1.0",
+ "count": 27,
+ "iocs": [
+  {
+   "type": "sha256",
+   "value": "4f4129e8f79bde102875417f64a3258226ae93658776a416aaf4383698a6ea7d",
+   "first_seen": "2026-11-19",
+   "role": "Mispadu (URSA) final payload, Delphi PE32, 6,955,520 B, build id 108, compiled 2026-09-24 23:46:57 UTC; MalwareBazaar first seen 2026-10-08",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "MalwareBazaar; static analysis (this case)"
+  },
+  {
+   "type": "sha256",
+   "value": "352c8d5d8cc824c41d143af2504d2cdf5d8a16e5f4df019032a5241859b1900b",
+   "first_seen": "2026-11-19",
+   "role": "pDLL.dll: keyboard-hook DLL (exports InstallHook, UninstallHook, setafase) stored as resource PDLL of the payload and loaded in memory; extracted copy, compiled 2024-06-20",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "sha256",
+   "value": "f999357a17e672e87fbed66d14ba2bebd6fb04e058a1aae0f0fdc49a797f58fe",
+   "first_seen": "2026-11-19",
+   "role": "Resource WY0: NirSoft WebBrowserPassView 2.06, dual-use freeware carried by the payload and run with /stext; context only, do not block on this hash alone",
+   "verdict": "dual-use-tool",
+   "confidence": "low",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "sha256",
+   "value": "400b411a9bffd687c5e74f51d43b7dc92cdb8d5ca9f674456b75a5d37587d342",
+   "first_seen": "2026-11-19",
+   "role": "Resource WY1: NirSoft MailPassView 1.86, dual-use freeware carried by the payload and run with /stext (VirusTotal lists it as mailpv.exe dropped by the payload); context only, do not block on this hash alone",
+   "verdict": "dual-use-tool",
+   "confidence": "low",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "ipv4",
+   "value": "208.109.36.32",
+   "first_seen": "2026-11-19",
+   "role": "Hardcoded in the payload: download host (d1.x, d2.x, pdw.dll) and target of the per-infection counter POST. GoDaddy VPS AS398101; Shodan 2026-10-27: ports 21, 22, 443 open, Let's Encrypt cert issued 2026-09-24 22:04 UTC, about 1 h 40 min before the payload compile time. Never contacted, liveness not checked",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case); Shodan and VirusTotal passive data"
+  },
+  {
+   "type": "endpoint",
+   "value": "208.109.36.32:80",
+   "first_seen": "2026-11-19",
+   "role": "Plain HTTP endpoint named by the literals below (no port in the literals, so 80); never contacted",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "url",
+   "value": "http://208.109.36.32/",
+   "first_seen": "2026-11-19",
+   "role": "Infection counter: POST with fields 1 to 5 (campaign token, flag, COMPUTERNAME, WMI/VM fingerprint, misc), values encrypted with cipher key 13; the payload logs \"contou infect\" for this URL",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "url",
+   "value": "http://208.109.36.32/d1.x",
+   "first_seen": "2026-11-19",
+   "role": "Download of d1.zip (saved as the \"dlls2\" module archive)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "url",
+   "value": "http://208.109.36.32/d2.x",
+   "first_seen": "2026-11-19",
+   "role": "Download of d2.zip",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "url",
+   "value": "http://208.109.36.32/pdw.dll",
+   "first_seen": "2026-11-19",
+   "role": "Download of pdw.dll",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "ipv4",
+   "value": "64.95.12.126",
+   "first_seen": "2026-11-19",
+   "role": "Hardcoded in the payload: exfiltration host (HTTP POST). BL Networks AS399629 (Dallas); Shodan 2026-11-01: ports 21, 22, 80 open; VirusTotal (2026-11-19): no communicating files. Never contacted, liveness not checked",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case); Shodan and VirusTotal passive data"
+  },
+  {
+   "type": "endpoint",
+   "value": "64.95.12.126:80",
+   "first_seen": "2026-11-19",
+   "role": "Plain HTTP endpoint named by the literals below (no port in the literals, so 80); never contacted",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "url",
+   "value": "http://64.95.12.126/xGRL/",
+   "first_seen": "2026-11-19",
+   "role": "Exfiltration POST of NirSoft WebBrowserPassView/MailPassView output (fields 1 to 5, key 13) and of FileZilla recentservers.xml (prefix FZ_)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "url",
+   "value": "http://64.95.12.126/xGRL/wSd/",
+   "first_seen": "2026-11-19",
+   "role": "Upload of stolen .txt/.pdf/.png/.jpg/.jpeg files (tags _SEE_, _P4SS_, _DOC_AR_ = Argentine documents)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "file-path",
+   "value": "C:\\Users\\Public\\<2nd character of COMPUTERNAME>",
+   "first_seen": "2026-11-19",
+   "role": "Mispadu general config, 6 lines, dropped by the loader (line 1 decoded with key 10); not in the payload",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "file-path",
+   "value": "C:\\Users\\Public\\<2nd character of COMPUTERNAME>_",
+   "first_seen": "2026-11-19",
+   "role": "Mispadu C&C config (key 13, \"*\"-separated, 62 server entries); dropped by the loader, not in the payload",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "file-path",
+   "value": "%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\<name>.lnk -> <install dir>\\ai.exe",
+   "first_seen": "2026-11-19",
+   "role": "Persistence: Startup-folder link to a renamed AutoIt interpreter named ai.exe (interpreter identity INFERRED)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "file-path",
+   "value": "C:\\Users\\Public\\<name>.vbs",
+   "first_seen": "2026-11-19",
+   "role": "VBS built from a template (placeholders #idw#, #str1#, #const#, #avw#); deleted again with other *.vbs/*.js in C:\\Users\\Public",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "file-path",
+   "value": "C:\\Users\\Public\\erro.txt",
+   "first_seen": "2026-11-19",
+   "role": "Error log written by the payload",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "string",
+   "value": "_VS108_",
+   "first_seen": "2026-11-19",
+   "role": "Build tag of this payload (version literal 108), also sent as qvar4 in the C&C config request",
+   "verdict": "build_tag",
+   "confidence": "high",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "string",
+   "value": "qvar1=, qvar2=, qvar3=, qvar4=",
+   "first_seen": "2026-11-19",
+   "role": "POST field names of the C&C-config refresh (every 780,000 ms): token, \"9\", victim profile, build id; values are cipher-encoded (key 13)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "string",
+   "value": "<|PRINCIPAL|>, <|SocketMain|>, <|Info|>",
+   "first_seen": "2026-11-19",
+   "role": "Plaintext command names of the socket C2 (TClientSocket); on the wire each message is cipher-encoded (key 60 in this build) and ends with \"@\"",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "reference",
+   "value": "https://bazaar.abuse.ch/sample/4f4129e8f79bde102875417f64a3258226ae93658776a416aaf4383698a6ea7d/",
+   "first_seen": "2026-11-19",
+   "role": "MalwareBazaar entry of the payload (signature Mispadu, first seen 2026-10-08)",
+   "verdict": "reference",
+   "confidence": "high",
+   "source": "abuse.ch"
+  },
+  {
+   "type": "reference",
+   "value": "https://threatfox.abuse.ch/ioc/1958577/",
+   "first_seen": "2026-11-19",
+   "role": "ThreatFox entry of the payload hash, reported by Grim (win.mispadu, confidence 95)",
+   "verdict": "reference",
+   "confidence": "high",
+   "source": "abuse.ch"
+  },
+  {
+   "type": "reference",
+   "value": "https://www.welivesecurity.com/2019/11/19/mispadu-advertisement-discounted-unhappy-meal",
+   "first_seen": "2026-11-19",
+   "role": "ESET, Mispadu: Advertisement for a discounted Unhappy Meal (2019)",
+   "verdict": "reference",
+   "confidence": "high",
+   "source": "published research"
+  },
+  {
+   "type": "reference",
+   "value": "https://www.ibm.com/think/news/mispadu-ursa-c2c-communication-behind-scenes",
+   "first_seen": "2026-11-19",
+   "role": "IBM X-Force, Mispadu (Ursa) C2C communication behind the scenes",
+   "verdict": "reference",
+   "confidence": "high",
+   "source": "published research"
+  },
+  {
+   "type": "reference",
+   "value": "https://cofense.com/blog/mispadu-phishing-malware-baseline",
+   "first_seen": "2026-11-19",
+   "role": "Cofense, Mispadu phishing malware baseline (2026-02-11)",
+   "verdict": "reference",
+   "confidence": "high",
+   "source": "published research"
+  }
+ ]
+}

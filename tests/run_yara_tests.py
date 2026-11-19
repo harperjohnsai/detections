@@ -46,6 +46,9 @@ EXPECTED = {
     # Grandoreiro Delphi loader (yara/grandoreiro)
     '93845bd3c4d6cb0a15c75d82903a88776e07bf90634f8d794aca8fd476539a52': ['Grandoreiro_Loader_Delphi_BMP_Padding_Hunt', 'Grandoreiro_Loader_Delphi_StrCrypt_PortCalc'],  # loader EXE, 85.6 MB
     '29db0be6d95b24744259cba90c29fb34df596fb88d321dcc14e5873fd5a6ac6f': ['Grandoreiro_Loader_Delphi_StrCrypt_PortCalc'],  # same loader, padding resource stripped (derived test copy)
+    # Mispadu (URSA) 2026 payload (yara/mispadu)
+    '4f4129e8f79bde102875417f64a3258226ae93658776a416aaf4383698a6ea7d': ['MAL_Mispadu_URSA_Delphi_Cipher_Code', 'MAL_Mispadu_URSA_Payload_Build108'],  # payload EXE, build 108 (Delphi, 6.9 MB)
+    '352c8d5d8cc824c41d143af2504d2cdf5d8a16e5f4df019032a5241859b1900b': ['MAL_Mispadu_URSA_Hook_DLL_pDLL'],  # pDLL keyboard-hook DLL extracted from the payload resources
 }
 ok = True
 
