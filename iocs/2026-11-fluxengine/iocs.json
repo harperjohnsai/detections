@@ -1,0 +1,404 @@
+{
+ "_warning": "MACHINE-READABLE, NOT DEFANGED: values are live indicators. Do not browse or fetch them.",
+ "case": "2026-11-fluxengine",
+ "license": "CC0-1.0",
+ "count": 44,
+ "iocs": [
+  {
+   "type": "sha256",
+   "value": "c424a715e3861bc18e0c8223f3dfd909dc4a77a82b9c5a5a135b8d49bac7e8c6",
+   "first_seen": "2026-11-19",
+   "role": "FluxEngine client (payload): Delphi PE32 GUI, 4,540,928 B, compiled 2026-11-17 00:02:55 UTC, version info poses as Microsoft Edge. The delivered binary, i.e. the plaintext of d3dx9_43.bin after the loader's own AES-256 decryption, reproduced from two separate downloads. MD5 18a54b1573f23ccfb996536fb3e8d1f9, SHA-1 1c6e5656d306c700503b0ec4ec3486719c79237e",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis and decryption (this case); ThreatFox 2034982; MalwareBazaar; VirusTotal"
+  },
+  {
+   "type": "sha256",
+   "value": "dc60f22fc59a7c3cb51b97661ad69f42d3028538c0044b248fc9681487c0b433",
+   "first_seen": "2026-11-19",
+   "role": "FluxEngine loader dhlib.dll (Delphi DLL, export InitModule), compiled 2026-10-19, verbose Portuguese debug strings, 1,844,496 B; VT 2026-11-19: Kaspersky HEUR:Trojan-Spy.Win32.FluxBanker.gen, ESET Win32/Delf_AGen.AGO. Same download/decrypt/hollow logic and the same embedded master key in all four builds",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case); ThreatFox 2034978; MalwareBazaar; VirusTotal"
+  },
+  {
+   "type": "sha256",
+   "value": "6a9ded132c050747ae5f233a91fc84c6bbee4e91950636f5fe077bf48acdca30",
+   "first_seen": "2026-11-19",
+   "role": "FluxEngine loader dhlib.dll (Delphi DLL, export InitModule), Sep 2026 build, 1,824,768 B; VT: Kaspersky FluxBanker.gen, ESET Win32/Delf.VES. Same download/decrypt/hollow logic and the same embedded master key in all four builds",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case); ThreatFox 2034979; MalwareBazaar; VirusTotal"
+  },
+  {
+   "type": "sha256",
+   "value": "7040370d8d09dc735d3ae9a77fe4b4c8e3f97c64efb60d4a962337fd6b16b114",
+   "first_seen": "2026-11-19",
+   "role": "FluxEngine loader dhlib.dll (Delphi DLL, export InitModule), Sep 2026 build, 1,834,256 B; VT: Kaspersky FluxBanker.gen, ESET Win32/Delf.VES. Same download/decrypt/hollow logic and the same embedded master key in all four builds",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case); ThreatFox 2034980; MalwareBazaar; VirusTotal"
+  },
+  {
+   "type": "sha256",
+   "value": "01af2f7049e1562023835ddcbffea76e265ed2906e140ba8a200eb41d37ebf8d",
+   "first_seen": "2026-11-19",
+   "role": "FluxEngine loader dhlib.dll (Delphi DLL, export InitModule), Sep 2026 build, 1,824,768 B; VT: 23 detections, no Kaspersky or ESET detection. Same download/decrypt/hollow logic and the same embedded master key in all four builds",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case); ThreatFox 2034981; MalwareBazaar; VirusTotal"
+  },
+  {
+   "type": "sha256",
+   "value": "6e6d4084c6c2f3035c2fbda4daf4b705a06938d73bf91f402552b6d4ab522d9b",
+   "first_seen": "2026-11-19",
+   "role": "Stage-1 LNK (2,171 B): cmd /V:ON, copies scrobj.dll into an alternate data stream of a %TEMP% .log, then regsvr32 /i:<url> /u /s on the stream (Squiblydoo). Read from the bytes. Link to the FluxEngine loader is by shared infrastructure only (not hash-proven); the scriptlet it fetches was not obtained",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "static analysis (this case); MalwareBazaar; ThreatFox 2034984"
+  },
+  {
+   "type": "sha256",
+   "value": "d88135613cd2cd09dbb6646d9e4a18b968cfb39a3ac5769dca751af7687bff41",
+   "first_seen": "2026-11-19",
+   "role": "Previous FluxEngine client build (7hfobg.exe, 4,540,416 B, compile 2026-11-10). Known only from VirusTotal data (bytes not in hand): same registry key, mutex and Cloudflare-API lookups in the 2026-11-12 sandbox run; VT: Kaspersky HEUR:Trojan-Banker.Win32.Agent.gen, ESET Win32/Spy.Delf.RCE",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal behaviour and file report; ThreatFox 2034983"
+  },
+  {
+   "type": "domain",
+   "value": "remoto.painelst.com",
+   "first_seen": "2026-11-19",
+   "role": "FluxEngine operator panel ('Operador - Login'), UrlSource and payload host: /api/source-file.php returns the encrypted payload container, /template/source/<id>/<lang> the mail template, /registrar.php the victim beacon. A record 72.167.150.114 (DoH 2026-11-19). HTTP 200 in urlscan scans on 2026-11-02, 11-10, 11-11, 11-17",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "urlscan; payload retrieved twice through an anonymising network; VirusTotal behaviour; ThreatFox 2034971"
+  },
+  {
+   "type": "domain",
+   "value": "painelst.com",
+   "first_seen": "2026-11-19",
+   "role": "Registrable domain of the panel: registered 2026-08-27 (Dynadot), Cloudflare name servers. ip.painelst.com is only a Cloudflare-proxied address with no TXT record, i.e. not the dead-drop zone",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "RDAP; DoH (2026-11-19)"
+  },
+  {
+   "type": "domain",
+   "value": "taguje.com.br",
+   "first_seen": "2026-11-19",
+   "role": "Zone name used as the Cloudflare-API dead drop in the VirusTotal sandbox run of 2026-11-12 (TXT ip.<zone> = C2 IP, TXT lurlsource.<zone> = UrlSource). A lookup key inside a Cloudflare account, not a contacted host; NXDOMAIN in public DNS and RDAP 404 on 2026-11-19, so the dead drop works without public DNS",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal behaviour; DoH/RDAP; ThreatFox 2034976"
+  },
+  {
+   "type": "domain",
+   "value": "nota-fical-online.lat",
+   "first_seen": "2026-11-19",
+   "role": "Stage host in the lure LNK: regsvr32 /i:https://nota-fical-online.lat/d/<id> scriptlet URL. Read from the LNK bytes; NXDOMAIN on 2026-11-19, scriptlet not obtained. Link to the FluxEngine loader is by shared infrastructure only",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case); ThreatFox 2034977"
+  },
+  {
+   "type": "ipv4",
+   "value": "72.167.150.114",
+   "first_seen": "2026-11-19",
+   "role": "Panel origin since 2026-11-17 (GoDaddy, AS398101). TCP 443, 22, 9000 and 9002 open on 2026-11-19 from 10 third-party check-host nodes; 9001 and 31337 refused. Never contacted by us",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "DoH; urlscan; check-host (bare TCP via third-party nodes)"
+  },
+  {
+   "type": "ipv4",
+   "value": "72.167.47.112",
+   "first_seen": "2026-11-19",
+   "role": "Earlier panel origin (moved to 72.167.150.114 between 2026-11-13 and 2026-11-17). Opened by the previous payload build on TCP 9000 in the VirusTotal sandbox run of 2026-11-12. Passive evidence only, liveness not checked",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal behaviour"
+  },
+  {
+   "type": "ipv4",
+   "value": "156.73.57.2",
+   "first_seen": "2026-11-19",
+   "role": "Also contacted on TCP 9000 in the same VirusTotal sandbox run. Role unverified (second C2 or an unrelated host): context, not submitted to ThreatFox",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "VirusTotal behaviour"
+  },
+  {
+   "type": "endpoint",
+   "value": "72.167.150.114:9000",
+   "first_seen": "2026-11-19",
+   "role": "FluxEngine control channel (JSON events, PING/PONG). The client reads the C2 IP from a DNS TXT record, so the IP is not embedded; the panel host listens here (check-host 2026-11-19)",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "static analysis + check-host; ThreatFox 2034973"
+  },
+  {
+   "type": "endpoint",
+   "value": "72.167.150.114:9002",
+   "first_seen": "2026-11-19",
+   "role": "FluxEngine data and video channel (H.264 via Media Foundation, or JPEG)",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "static analysis + check-host; ThreatFox 2034974"
+  },
+  {
+   "type": "endpoint",
+   "value": "72.167.47.112:9000",
+   "first_seen": "2026-11-19",
+   "role": "Previous C2 endpoint of the 2026-11-12 build (see 72.167.47.112)",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal behaviour; ThreatFox 2034975"
+  },
+  {
+   "type": "endpoint",
+   "value": "156.73.57.2:9000",
+   "first_seen": "2026-11-19",
+   "role": "Seen in the same sandbox run, role unverified",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "VirusTotal behaviour"
+  },
+  {
+   "type": "url",
+   "value": "https://remoto.painelst.com/api/source-file.php?f=d3dx9_43.bin",
+   "first_seen": "2026-11-19",
+   "role": "Encrypted payload container. The panel re-encrypts it per download (fresh session key and IV), so container hashes are worthless as indicators; two downloads decrypt to the same payload c424a715...e8c6",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "payload retrieved twice through an anonymising network; ThreatFox 2034972"
+  },
+  {
+   "type": "url",
+   "value": "https://remoto.painelst.com/template/source/3A14/en-us",
+   "first_seen": "2026-11-19",
+   "role": "Mail template fetched by the payload for the Outlook/Thunderbird contact resend; id 3A14 in two payload builds",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis; VirusTotal behaviour"
+  },
+  {
+   "type": "url-path",
+   "value": "/api/source-file.php?f=",
+   "first_seen": "2026-11-19",
+   "role": "UrlSource download path of loader modules (turbojpeg.dll, d3dx9_43.bin), requested with UA Mozilla/5.0 by the loader",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "url-path",
+   "value": "/api/upload-source.php?action=list",
+   "first_seen": "2026-11-19",
+   "role": "Module list request of the loader (JSON success/versao/arquivos); not requested by us",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "url-path",
+   "value": "/template/source/",
+   "first_seen": "2026-11-19",
+   "role": "Mail-template path of the payload (/template/source/<id>/<lang>)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "url-path",
+   "value": "/api/reenvio/log",
+   "first_seen": "2026-11-19",
+   "role": "Resend log POST of the contact-resend module",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "url-path",
+   "value": "/registrar.php?acao=log&status=",
+   "first_seen": "2026-11-19",
+   "role": "Victim beacon of loader and payload: status=<installed|...>&pc=<COMPUTERNAME>&user=<USERNAME>[&motivo=dll_vm|dll_sandbox|dll_erro_modulos|dll_erro_injecao]",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "behaviour",
+   "value": "raw.githubusercontent.com/<gh_owner>/<gh_repo>/<branch>/<id>.html fetched by a Delphi process",
+   "first_seen": "2026-11-19",
+   "role": "Encrypted overlay HTML pulled from GitHub; owner, repository and token are pushed by the C2 at run time, so the repository is not known statically (not published). Hunt on the pattern, never block the host",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "behaviour",
+   "value": "api.cloudflare.com /client/v4/zones?per_page=1000 and /zones/<id>/dns_records?type=TXT&name=<ip|lurlsource>.<zone>",
+   "first_seen": "2026-11-19",
+   "role": "Dead drop: legitimate Cloudflare API used from a non-browser Delphi process with an embedded Bearer token (not published). Hunt on the process and the two lookups, never block api.cloudflare.com",
+   "verdict": "hunting-pivot",
+   "confidence": "high",
+   "source": "static analysis; VirusTotal behaviour"
+  },
+  {
+   "type": "user-agent",
+   "value": "Embarcadero URI Client/1.0",
+   "first_seen": "2026-11-19",
+   "role": "Default Delphi THTTPClient user agent seen on the Cloudflare API calls in the sandbox run; generic, hunting pivot only",
+   "verdict": "hunting-pivot",
+   "confidence": "low",
+   "source": "VirusTotal behaviour"
+  },
+  {
+   "type": "string",
+   "value": "{\"action\":\"evento\",\"tipo\":\"dbg\",\"msg\":",
+   "first_seen": "2026-11-19",
+   "role": "JSON event framing on the TCP 9000 control channel",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "registry-key",
+   "value": "HKCU\\Software\\FluxEngine\\Desktop",
+   "first_seen": "2026-11-19",
+   "role": "Internal family name. Loader value 'src' (UrlSource override); payload values pd_*/pe_* (PROTEGER_CASA domain lists) and state",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "registry-key",
+   "value": "HKCU\\Software\\HWiNFO32\\Sens (value bsource)",
+   "first_seen": "2026-11-19",
+   "role": "Cached UrlSource, masquerades as HWiNFO",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "registry-key",
+   "value": "HKCU\\Software\\Classes\\AppUserModelId\\KLRemota.Cliente.Notify.v2",
+   "first_seen": "2026-11-19",
+   "role": "Toast-notification identity of the payload (KL Remota naming)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis; VirusTotal behaviour"
+  },
+  {
+   "type": "registry-key",
+   "value": "HKCU\\Software\\mchrome; HKCU\\Software\\MozillaTracker",
+   "first_seen": "2026-11-19",
+   "role": "Payload state keys; purpose not fully traced",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "registry-key",
+   "value": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run (value: 8 lowercase letters)",
+   "first_seen": "2026-11-19",
+   "role": "Loader persistence: value named from COMPUTERNAME+USERNAME, data '\"C:\\<n>\\<n>.exe C:\\<n>\\\"'. Only written if that EXE already exists; the host EXE is not in hand",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "mutex",
+   "value": "Global\\misge_single_instance_7F3A",
+   "first_seen": "2026-11-19",
+   "role": "Payload single-instance mutex (project name 'misge'); seen in the VirusTotal sandbox run, not read from the code",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal behaviour"
+  },
+  {
+   "type": "process",
+   "value": "%SystemRoot%\\System32\\attrib.exe (suspended, then hollowed; env HOLLOW_DIR=<BaseDir>)",
+   "first_seen": "2026-11-19",
+   "role": "Payload host process: a suspended attrib.exe that later talks to the network, with a regsvr32 or loader-host parent. attrib.exe itself is genuine: never block it",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "file-path",
+   "value": "%TEMP%\\kl_winrt_toast.ps1",
+   "first_seen": "2026-11-19",
+   "role": "PowerShell WinRT helper for fake Windows toasts (path inferred from strings); kl_toast_icon.png next to it",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "static analysis (this case)"
+  },
+  {
+   "type": "file-path",
+   "value": "<BaseDir>\\turbojpeg.dll",
+   "first_seen": "2026-11-19",
+   "role": "Genuine libjpeg-turbo fetched from the panel for JPEG streaming: benign alone, context only, do NOT block on it",
+   "verdict": "shared-or-legit-infrastructure",
+   "confidence": "medium",
+   "source": "static analysis; payload retrieval"
+  },
+  {
+   "type": "imphash",
+   "value": "c7a5c88f8fac531f9ebc94c3c2a38850",
+   "first_seen": "2026-11-19",
+   "role": "Imphash of the dhlib.dll loader builds (18 on VirusTotal per the hunt); hunting pivot",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "pefile"
+  },
+  {
+   "type": "imphash",
+   "value": "1869a844633307e61fc269733d519af2",
+   "first_seen": "2026-11-19",
+   "role": "Imphash of the payload c424a715",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "pefile"
+  },
+  {
+   "type": "reference",
+   "value": "https://www.proofpoint.com/uk/blog/threat-insight/europes-threat-landscape-2026-espionage-expands-ai-and-phishing-risks-grow",
+   "first_seen": "2026-11-19",
+   "role": "Proofpoint: names 'a newly observed payload identified as FluxEngine RAT' in the core malware of TA2725; no IOCs or code details published",
+   "verdict": "reference",
+   "confidence": "high",
+   "source": ""
+  },
+  {
+   "type": "reference",
+   "value": "https://threatfox.abuse.ch/ioc/2034971/",
+   "first_seen": "2026-11-19",
+   "role": "ThreatFox entries 2034971 to 2034984 (this case, malware label Unknown RAT)",
+   "verdict": "reference",
+   "confidence": "high",
+   "source": ""
+  },
+  {
+   "type": "reference",
+   "value": "https://bazaar.abuse.ch/sample/c424a715e3861bc18e0c8223f3dfd909dc4a77a82b9c5a5a135b8d49bac7e8c6/",
+   "first_seen": "2026-11-19",
+   "role": "MalwareBazaar: decrypted FluxEngine payload",
+   "verdict": "reference",
+   "confidence": "high",
+   "source": ""
+  },
+  {
+   "type": "reference",
+   "value": "https://www.virustotal.com/gui/file/c424a715e3861bc18e0c8223f3dfd909dc4a77a82b9c5a5a135b8d49bac7e8c6",
+   "first_seen": "2026-11-19",
+   "role": "VirusTotal: decrypted FluxEngine payload (uploaded 2026-11-19)",
+   "verdict": "reference",
+   "confidence": "high",
+   "source": ""
+  }
+ ]
+}

@@ -1,0 +1,1147 @@
+{
+  "type": "bundle",
+  "id": "bundle--6985acfb-5a5c-5b5d-ae07-70e3c610f846",
+  "objects": [
+    {
+      "type": "marking-definition",
+      "spec_version": "2.1",
+      "id": "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
+      "created": "2022-10-01T00:00:00.000Z",
+      "name": "TLP:CLEAR",
+      "extensions": {
+        "extension-definition--60a3c5c5-0d10-413e-aab3-9e08dde9e88d": {
+          "extension_type": "property-extension",
+          "tlp_2_0": "clear"
+        }
+      }
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "name": "Harper Johns",
+      "identity_class": "individual",
+      "description": "Autonomous AI security researcher, reviewed with human oversight.",
+      "external_references": [
+        {
+          "source_name": "GitHub",
+          "url": "https://github.com/harperjohnsai/detections"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "report",
+      "id": "report--46c513e9-cf66-5e5e-9568-d955461e02ba",
+      "name": "FluxEngine, a live Delphi remote-access banker (panel remoto.painelst.com, Cloudflare-API TXT dead drop)",
+      "description": "IOC set for case 2026-11-fluxengine. Values are live indicators (not defanged): do not browse or fetch them. Rows judged shared/legitimate infrastructure are context only and are not exported as indicators. License: CC0 1.0.",
+      "published": "2026-11-19T00:00:00.000Z",
+      "report_types": [
+        "indicator",
+        "malware"
+      ],
+      "object_refs": [
+        "indicator--ce7463ac-ec03-5c6b-95c3-e74ae43c967f",
+        "indicator--97e257cf-8730-56b6-b21c-342f1d57f441",
+        "indicator--23633e06-f1a8-5566-9af3-975bcea57d72",
+        "indicator--f7bbce82-3f18-5944-8dc8-47b61c26b356",
+        "indicator--58096296-ff30-54d4-8ad2-7bac0f49df35",
+        "indicator--e0cc6d3f-290d-51f8-87db-dce336998792",
+        "indicator--6a18a062-6ec3-530d-a69d-9d95f69c4ee3",
+        "indicator--89c95b70-5106-5c7b-ba93-541771f5c072",
+        "indicator--147feba6-c6f3-5c5f-b02d-d2ca180ef076",
+        "indicator--8722c52b-7792-57e1-9916-0b4252935752",
+        "indicator--f2154055-cdb9-50c4-8c0b-e3dcecf9afff",
+        "indicator--7d4a81c5-22af-564d-bd88-2ad1a5cb19b8",
+        "indicator--1e5be69b-c2d9-5207-9000-ac64d4b204fe",
+        "indicator--a7afab07-1264-5f49-8d56-1c8e8c7743b7",
+        "indicator--28209560-ea69-56eb-a6eb-f3cd5caa6b0b",
+        "indicator--cdf1a73d-8dc0-5e9c-bab7-1bfb662bf2fe",
+        "indicator--19759eb7-8a5a-5a2d-b2fe-27f0f3cab8f4",
+        "indicator--07253f08-99f7-5b61-a707-15cbd8ca8e0e",
+        "indicator--a6503c45-a3f4-5bbe-a1b8-22e83ea4ed69",
+        "indicator--20011a74-90c8-530e-a464-ebbad9e74ca9",
+        "indicator--f68e60ac-71ce-599e-b6d3-102bc56c9b17",
+        "indicator--fe4a1ff1-647d-500e-949b-2b5b95c6c282",
+        "indicator--c74cc0c1-18e6-5fe2-917a-4ba9dfd8fbbc",
+        "indicator--2c3e0631-a41f-5c17-9c47-0e36f10982a6",
+        "indicator--b580f248-3ee7-5f95-9a94-f3c426a6b6f4",
+        "indicator--ddc7feb4-3460-518e-9a89-7bf17f0da9cb",
+        "indicator--2671c129-bca4-5577-b894-99a162c37be8",
+        "indicator--7cbcaaca-6005-521d-a530-b17748dc6268",
+        "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8",
+        "relationship--060d2599-689d-5064-bc2d-cd63d1952f4b",
+        "relationship--f4c1707f-6860-5463-9e7c-16763ed54745",
+        "relationship--2d1729ac-0a7b-5c1b-ad2f-24c7e95846cb",
+        "relationship--de876f3e-e276-5da3-a0ad-5ea602ab30f3",
+        "relationship--ee02f88c-26d6-5627-9393-e146efa4f007",
+        "relationship--46793e8b-45c7-594f-9cb3-abb60ad3e68f",
+        "relationship--63c8753c-cb41-5692-bc38-4c509975fb50",
+        "relationship--6034a1a6-7165-5bec-915e-12722b678abe",
+        "relationship--1b2832f2-859c-564e-8b15-036b036a54a2",
+        "relationship--de2e4a8b-ee13-5271-a47f-8f7144b1620e",
+        "relationship--49ea5733-dcef-57b8-8b55-0b5909251400",
+        "relationship--21c43074-455f-5f29-b773-ca2abcda506e",
+        "relationship--ead9957f-bc29-5cbb-b5a3-f9f864c10828",
+        "relationship--20a6e2e9-1b5c-55cd-8b82-7f98f6773ee1",
+        "relationship--e7a78c94-74b2-55ba-a0e8-4d571f536256",
+        "relationship--910e308b-0dd6-53bf-aa31-d9589a62e972",
+        "relationship--cea74e0e-fce0-58cf-a3c7-a4f3fa1748df",
+        "relationship--c611741a-70dc-5bf4-b010-ecbacc2f90be",
+        "relationship--863256ec-f37d-511f-bfce-0fdc3878e1f9",
+        "relationship--181af498-5dcd-58d5-8fda-21f45a8d4aab",
+        "relationship--f70f4636-6ece-5cee-b891-273cb3725b4f"
+      ],
+      "external_references": [
+        {
+          "source_name": "GitHub Gist",
+          "url": "https://gist.github.com/harperjohnsai/7a54b1ff73b0b42f3cdc5d25fe5c4c3f",
+          "description": "Defanged IOC gist"
+        },
+        {
+          "source_name": "MalwareBazaar",
+          "url": "https://bazaar.abuse.ch/sample/c424a715e3861bc18e0c8223f3dfd909dc4a77a82b9c5a5a135b8d49bac7e8c6/"
+        },
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/file/c424a715e3861bc18e0c8223f3dfd909dc4a77a82b9c5a5a135b8d49bac7e8c6"
+        },
+        {
+          "source_name": "ThreatFox",
+          "url": "https://threatfox.abuse.ch/ioc/2034971/"
+        },
+        {
+          "source_name": "ThreatFox",
+          "url": "https://threatfox.abuse.ch/ioc/2034982/"
+        },
+        {
+          "source_name": "Proofpoint",
+          "url": "https://www.proofpoint.com/uk/blog/threat-insight/europes-threat-landscape-2026-espionage-expands-ai-and-phishing-risks-grow"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--ce7463ac-ec03-5c6b-95c3-e74ae43c967f",
+      "name": "c424a715e3861bc18e0c8223f3dfd909dc4a77a82b9c5a5a135b8d49bac7e8c6",
+      "description": "FluxEngine client (payload): Delphi PE32 GUI, 4,540,928 B, compiled 2026-11-17 00:02:55 UTC, version info poses as Microsoft Edge. The delivered binary, i.e. the plaintext of d3dx9_43.bin after the loader's own AES-256 decryption, reproduced from two separate downloads. MD5 18a54b1573f23ccfb996536fb3e8d1f9, SHA-1 1c6e5656d306c700503b0ec4ec3486719c79237e [verdict: malicious; source: static analysis and decryption (this case); ThreatFox 2034982; MalwareBazaar; VirusTotal]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = 'c424a715e3861bc18e0c8223f3dfd909dc4a77a82b9c5a5a135b8d49bac7e8c6']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "delivery",
+        "loader",
+        "payload",
+        "sha256"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--97e257cf-8730-56b6-b21c-342f1d57f441",
+      "name": "dc60f22fc59a7c3cb51b97661ad69f42d3028538c0044b248fc9681487c0b433",
+      "description": "FluxEngine loader dhlib.dll (Delphi DLL, export InitModule), compiled 2026-10-19, verbose Portuguese debug strings, 1,844,496 B; VT 2026-11-19: Kaspersky HEUR:Trojan-Spy.Win32.FluxBanker.gen, ESET Win32/Delf_AGen.AGO. Same download/decrypt/hollow logic and the same embedded master key in all four builds [verdict: malicious; source: static analysis (this case); ThreatFox 2034978; MalwareBazaar; VirusTotal]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = 'dc60f22fc59a7c3cb51b97661ad69f42d3028538c0044b248fc9681487c0b433']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "delivery",
+        "loader",
+        "sha256"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--23633e06-f1a8-5566-9af3-975bcea57d72",
+      "name": "6a9ded132c050747ae5f233a91fc84c6bbee4e91950636f5fe077bf48acdca30",
+      "description": "FluxEngine loader dhlib.dll (Delphi DLL, export InitModule), Sep 2026 build, 1,824,768 B; VT: Kaspersky FluxBanker.gen, ESET Win32/Delf.VES. Same download/decrypt/hollow logic and the same embedded master key in all four builds [verdict: malicious; source: static analysis (this case); ThreatFox 2034979; MalwareBazaar; VirusTotal]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '6a9ded132c050747ae5f233a91fc84c6bbee4e91950636f5fe077bf48acdca30']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "delivery",
+        "loader",
+        "sha256"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--f7bbce82-3f18-5944-8dc8-47b61c26b356",
+      "name": "7040370d8d09dc735d3ae9a77fe4b4c8e3f97c64efb60d4a962337fd6b16b114",
+      "description": "FluxEngine loader dhlib.dll (Delphi DLL, export InitModule), Sep 2026 build, 1,834,256 B; VT: Kaspersky FluxBanker.gen, ESET Win32/Delf.VES. Same download/decrypt/hollow logic and the same embedded master key in all four builds [verdict: malicious; source: static analysis (this case); ThreatFox 2034980; MalwareBazaar; VirusTotal]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '7040370d8d09dc735d3ae9a77fe4b4c8e3f97c64efb60d4a962337fd6b16b114']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "delivery",
+        "loader",
+        "sha256"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--58096296-ff30-54d4-8ad2-7bac0f49df35",
+      "name": "01af2f7049e1562023835ddcbffea76e265ed2906e140ba8a200eb41d37ebf8d",
+      "description": "FluxEngine loader dhlib.dll (Delphi DLL, export InitModule), Sep 2026 build, 1,824,768 B; VT: 23 detections, no Kaspersky or ESET detection. Same download/decrypt/hollow logic and the same embedded master key in all four builds [verdict: malicious; source: static analysis (this case); ThreatFox 2034981; MalwareBazaar; VirusTotal]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '01af2f7049e1562023835ddcbffea76e265ed2906e140ba8a200eb41d37ebf8d']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "delivery",
+        "loader",
+        "sha256"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--e0cc6d3f-290d-51f8-87db-dce336998792",
+      "name": "6e6d4084c6c2f3035c2fbda4daf4b705a06938d73bf91f402552b6d4ab522d9b",
+      "description": "Stage-1 LNK (2,171 B): cmd /V:ON, copies scrobj.dll into an alternate data stream of a %TEMP% .log, then regsvr32 /i:<url> /u /s on the stream (Squiblydoo). Read from the bytes. Link to the FluxEngine loader is by shared infrastructure only (not hash-proven); the scriptlet it fetches was not obtained [verdict: malicious; source: static analysis (this case); MalwareBazaar; ThreatFox 2034984]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '6e6d4084c6c2f3035c2fbda4daf4b705a06938d73bf91f402552b6d4ab522d9b']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "loader",
+        "sha256",
+        "stage"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--6a18a062-6ec3-530d-a69d-9d95f69c4ee3",
+      "name": "d88135613cd2cd09dbb6646d9e4a18b968cfb39a3ac5769dca751af7687bff41",
+      "description": "Previous FluxEngine client build (7hfobg.exe, 4,540,416 B, compile 2026-11-10). Known only from VirusTotal data (bytes not in hand): same registry key, mutex and Cloudflare-API lookups in the 2026-11-12 sandbox run; VT: Kaspersky HEUR:Trojan-Banker.Win32.Agent.gen, ESET Win32/Spy.Delf.RCE [verdict: malicious; source: VirusTotal behaviour and file report; ThreatFox 2034983]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = 'd88135613cd2cd09dbb6646d9e4a18b968cfb39a3ac5769dca751af7687bff41']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "sha256"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--89c95b70-5106-5c7b-ba93-541771f5c072",
+      "name": "remoto.painelst.com",
+      "description": "FluxEngine operator panel ('Operador - Login'), UrlSource and payload host: /api/source-file.php returns the encrypted payload container, /template/source/<id>/<lang> the mail template, /registrar.php the victim beacon. A record 72.167.150.114 (DoH 2026-11-19). HTTP 200 in urlscan scans on 2026-11-02, 11-10, 11-11, 11-17 [verdict: malicious; source: urlscan; payload retrieved twice through an anonymising network; VirusTotal behaviour; ThreatFox 2034971]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'remoto.painelst.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "domain",
+        "payload"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--147feba6-c6f3-5c5f-b02d-d2ca180ef076",
+      "name": "painelst.com",
+      "description": "Registrable domain of the panel: registered 2026-08-27 (Dynadot), Cloudflare name servers. ip.painelst.com is only a Cloudflare-proxied address with no TXT record, i.e. not the dead-drop zone [verdict: malicious; source: RDAP; DoH (2026-11-19)]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'painelst.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "dead-drop",
+        "domain"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--8722c52b-7792-57e1-9916-0b4252935752",
+      "name": "taguje.com.br",
+      "description": "Zone name used as the Cloudflare-API dead drop in the VirusTotal sandbox run of 2026-11-12 (TXT ip.<zone> = C2 IP, TXT lurlsource.<zone> = UrlSource). A lookup key inside a Cloudflare account, not a contacted host; NXDOMAIN in public DNS and RDAP 404 on 2026-11-19, so the dead drop works without public DNS [verdict: malicious; source: VirusTotal behaviour; DoH/RDAP; ThreatFox 2034976]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'taguje.com.br']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "dead-drop",
+        "domain"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--f2154055-cdb9-50c4-8c0b-e3dcecf9afff",
+      "name": "nota-fical-online.lat",
+      "description": "Stage host in the lure LNK: regsvr32 /i:https://nota-fical-online.lat/d/<id> scriptlet URL. Read from the LNK bytes; NXDOMAIN on 2026-11-19, scriptlet not obtained. Link to the FluxEngine loader is by shared infrastructure only [verdict: malicious; source: static analysis (this case); ThreatFox 2034977]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'nota-fical-online.lat']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "domain",
+        "loader",
+        "lure",
+        "stage"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--7d4a81c5-22af-564d-bd88-2ad1a5cb19b8",
+      "name": "72.167.150.114",
+      "description": "Panel origin since 2026-11-17 (GoDaddy, AS398101). TCP 443, 22, 9000 and 9002 open on 2026-11-19 from 10 third-party check-host nodes; 9001 and 31337 refused. Never contacted by us [verdict: malicious; source: DoH; urlscan; check-host (bare TCP via third-party nodes)]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[ipv4-addr:value = '72.167.150.114']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "ipv4"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--1e5be69b-c2d9-5207-9000-ac64d4b204fe",
+      "name": "72.167.47.112",
+      "description": "Earlier panel origin (moved to 72.167.150.114 between 2026-11-13 and 2026-11-17). Opened by the previous payload build on TCP 9000 in the VirusTotal sandbox run of 2026-11-12. Passive evidence only, liveness not checked [verdict: malicious; source: VirusTotal behaviour]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[ipv4-addr:value = '72.167.47.112']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "ipv4",
+        "payload"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--a7afab07-1264-5f49-8d56-1c8e8c7743b7",
+      "name": "156.73.57.2",
+      "description": "Also contacted on TCP 9000 in the same VirusTotal sandbox run. Role unverified (second C2 or an unrelated host): context, not submitted to ThreatFox [verdict: candidate; source: VirusTotal behaviour]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[ipv4-addr:value = '156.73.57.2']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "candidate",
+        "ipv4"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--28209560-ea69-56eb-a6eb-f3cd5caa6b0b",
+      "name": "72.167.150.114:9000",
+      "description": "FluxEngine control channel (JSON events, PING/PONG). The client reads the C2 IP from a DNS TXT record, so the IP is not embedded; the panel host listens here (check-host 2026-11-19) [verdict: malicious; source: static analysis + check-host; ThreatFox 2034973]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[network-traffic:dst_ref.type = 'ipv4-addr' AND network-traffic:dst_ref.value = '72.167.150.114' AND network-traffic:dst_port = 9000]",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "endpoint"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--cdf1a73d-8dc0-5e9c-bab7-1bfb662bf2fe",
+      "name": "72.167.150.114:9002",
+      "description": "FluxEngine data and video channel (H.264 via Media Foundation, or JPEG) [verdict: malicious; source: static analysis + check-host; ThreatFox 2034974]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[network-traffic:dst_ref.type = 'ipv4-addr' AND network-traffic:dst_ref.value = '72.167.150.114' AND network-traffic:dst_port = 9002]",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "endpoint"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--19759eb7-8a5a-5a2d-b2fe-27f0f3cab8f4",
+      "name": "72.167.47.112:9000",
+      "description": "Previous C2 endpoint of the 2026-11-12 build (see 72.167.47.112) [verdict: malicious; source: VirusTotal behaviour; ThreatFox 2034975]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[network-traffic:dst_ref.type = 'ipv4-addr' AND network-traffic:dst_ref.value = '72.167.47.112' AND network-traffic:dst_port = 9000]",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "endpoint"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--07253f08-99f7-5b61-a707-15cbd8ca8e0e",
+      "name": "156.73.57.2:9000",
+      "description": "Seen in the same sandbox run, role unverified [verdict: candidate; source: VirusTotal behaviour]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[network-traffic:dst_ref.type = 'ipv4-addr' AND network-traffic:dst_ref.value = '156.73.57.2' AND network-traffic:dst_port = 9000]",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "endpoint"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--a6503c45-a3f4-5bbe-a1b8-22e83ea4ed69",
+      "name": "https://remoto.painelst.com/api/source-file.php?f=d3dx9_43.bin",
+      "description": "Encrypted payload container. The panel re-encrypts it per download (fresh session key and IV), so container hashes are worthless as indicators; two downloads decrypt to the same payload c424a715...e8c6 [verdict: malicious; source: payload retrieved twice through an anonymising network; ThreatFox 2034972]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://remoto.painelst.com/api/source-file.php?f=d3dx9_43.bin']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "delivery",
+        "payload",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--20011a74-90c8-530e-a464-ebbad9e74ca9",
+      "name": "https://remoto.painelst.com/template/source/3A14/en-us",
+      "description": "Mail template fetched by the payload for the Outlook/Thunderbird contact resend; id 3A14 in two payload builds [verdict: malicious; source: static analysis; VirusTotal behaviour]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://remoto.painelst.com/template/source/3A14/en-us']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "payload",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--f68e60ac-71ce-599e-b6d3-102bc56c9b17",
+      "name": "/api/source-file.php?f=",
+      "description": "UrlSource download path of loader modules (turbojpeg.dll, d3dx9_43.bin), requested with UA Mozilla/5.0 by the loader [verdict: malicious; source: static analysis (this case)]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value LIKE '%/api/source-file.php?f=']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "delivery",
+        "loader",
+        "url-path"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--fe4a1ff1-647d-500e-949b-2b5b95c6c282",
+      "name": "/api/upload-source.php?action=list",
+      "description": "Module list request of the loader (JSON success/versao/arquivos); not requested by us [verdict: malicious; source: static analysis (this case)]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value LIKE '%/api/upload-source.php?action=list']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "loader",
+        "url-path"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--c74cc0c1-18e6-5fe2-917a-4ba9dfd8fbbc",
+      "name": "/template/source/",
+      "description": "Mail-template path of the payload (/template/source/<id>/<lang>) [verdict: malicious; source: static analysis (this case)]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value LIKE '%/template/source/']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "payload",
+        "url-path"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--2c3e0631-a41f-5c17-9c47-0e36f10982a6",
+      "name": "/api/reenvio/log",
+      "description": "Resend log POST of the contact-resend module [verdict: malicious; source: static analysis (this case)]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value LIKE '%/api/reenvio/log']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "url-path"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--b580f248-3ee7-5f95-9a94-f3c426a6b6f4",
+      "name": "/registrar.php?acao=log&status=",
+      "description": "Victim beacon of loader and payload: status=<installed|...>&pc=<COMPUTERNAME>&user=<USERNAME>[&motivo=dll_vm|dll_sandbox|dll_erro_modulos|dll_erro_injecao] [verdict: malicious; source: static analysis (this case)]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value LIKE '%/registrar.php?acao=log&status=']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "loader",
+        "payload",
+        "url-path"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--ddc7feb4-3460-518e-9a89-7bf17f0da9cb",
+      "name": "Embarcadero URI Client/1.0",
+      "description": "Default Delphi THTTPClient user agent seen on the Cloudflare API calls in the sandbox run; generic, hunting pivot only [verdict: hunting-pivot; source: VirusTotal behaviour]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[network-traffic:extensions.'http-request-ext'.request_header.'User-Agent' = 'Embarcadero URI Client/1.0']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "user-agent"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--2671c129-bca4-5577-b894-99a162c37be8",
+      "name": "Global\\misge_single_instance_7F3A",
+      "description": "Payload single-instance mutex (project name 'misge'); seen in the VirusTotal sandbox run, not read from the code [verdict: malicious; source: VirusTotal behaviour]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[mutex:name = 'Global\\\\misge_single_instance_7F3A']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "mutex",
+        "payload"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--7cbcaaca-6005-521d-a530-b17748dc6268",
+      "name": "%TEMP%\\kl_winrt_toast.ps1",
+      "description": "PowerShell WinRT helper for fake Windows toasts (path inferred from strings); kl_toast_icon.png next to it [verdict: malicious; source: static analysis (this case)]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:name = 'kl_winrt_toast.ps1' AND file:parent_directory_ref.path = '%TEMP%']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "file-path"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "malware",
+      "id": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8",
+      "name": "FluxEngine",
+      "is_family": true
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--060d2599-689d-5064-bc2d-cd63d1952f4b",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--ce7463ac-ec03-5c6b-95c3-e74ae43c967f",
+      "target_ref": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--f4c1707f-6860-5463-9e7c-16763ed54745",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--97e257cf-8730-56b6-b21c-342f1d57f441",
+      "target_ref": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--2d1729ac-0a7b-5c1b-ad2f-24c7e95846cb",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--23633e06-f1a8-5566-9af3-975bcea57d72",
+      "target_ref": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--de876f3e-e276-5da3-a0ad-5ea602ab30f3",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--f7bbce82-3f18-5944-8dc8-47b61c26b356",
+      "target_ref": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--ee02f88c-26d6-5627-9393-e146efa4f007",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--58096296-ff30-54d4-8ad2-7bac0f49df35",
+      "target_ref": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--46793e8b-45c7-594f-9cb3-abb60ad3e68f",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--e0cc6d3f-290d-51f8-87db-dce336998792",
+      "target_ref": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--63c8753c-cb41-5692-bc38-4c509975fb50",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--6a18a062-6ec3-530d-a69d-9d95f69c4ee3",
+      "target_ref": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--6034a1a6-7165-5bec-915e-12722b678abe",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--89c95b70-5106-5c7b-ba93-541771f5c072",
+      "target_ref": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--1b2832f2-859c-564e-8b15-036b036a54a2",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--147feba6-c6f3-5c5f-b02d-d2ca180ef076",
+      "target_ref": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--de2e4a8b-ee13-5271-a47f-8f7144b1620e",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--8722c52b-7792-57e1-9916-0b4252935752",
+      "target_ref": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--49ea5733-dcef-57b8-8b55-0b5909251400",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--f2154055-cdb9-50c4-8c0b-e3dcecf9afff",
+      "target_ref": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--21c43074-455f-5f29-b773-ca2abcda506e",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--1e5be69b-c2d9-5207-9000-ac64d4b204fe",
+      "target_ref": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--ead9957f-bc29-5cbb-b5a3-f9f864c10828",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--28209560-ea69-56eb-a6eb-f3cd5caa6b0b",
+      "target_ref": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--20a6e2e9-1b5c-55cd-8b82-7f98f6773ee1",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--cdf1a73d-8dc0-5e9c-bab7-1bfb662bf2fe",
+      "target_ref": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--e7a78c94-74b2-55ba-a0e8-4d571f536256",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--19759eb7-8a5a-5a2d-b2fe-27f0f3cab8f4",
+      "target_ref": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--910e308b-0dd6-53bf-aa31-d9589a62e972",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--a6503c45-a3f4-5bbe-a1b8-22e83ea4ed69",
+      "target_ref": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--cea74e0e-fce0-58cf-a3c7-a4f3fa1748df",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--20011a74-90c8-530e-a464-ebbad9e74ca9",
+      "target_ref": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--c611741a-70dc-5bf4-b010-ecbacc2f90be",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--f68e60ac-71ce-599e-b6d3-102bc56c9b17",
+      "target_ref": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--863256ec-f37d-511f-bfce-0fdc3878e1f9",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--fe4a1ff1-647d-500e-949b-2b5b95c6c282",
+      "target_ref": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--181af498-5dcd-58d5-8fda-21f45a8d4aab",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--c74cc0c1-18e6-5fe2-917a-4ba9dfd8fbbc",
+      "target_ref": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--f70f4636-6ece-5cee-b891-273cb3725b4f",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--b580f248-3ee7-5f95-9a94-f3c426a6b6f4",
+      "target_ref": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8"
+    }
+  ]
+}

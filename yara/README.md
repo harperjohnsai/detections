@@ -8,5 +8,7 @@ One folder per family or campaign. Every rule file carries `author`, `date`, a `
 | [`revstealer/`](revstealer/) | REVSTEALER x64 core, hashed-evasion code shapes, Chrome App-Bound-Encryption helper DLL, decrypted-strings (memory) |
 | [`miolab-macos/`](miolab-macos/) | MioLab macOS stealer (C++ build) and agent, trojanised Ledger / Trezor apps, hunting rules for decrypted artefacts |
 | [`grandoreiro/`](grandoreiro/) | Grandoreiro Delphi loader (2026 build): string-key derivation / SHA-256 port code idioms, BMP size-padding hunting rule |
+| [`mispadu/`](mispadu/) | Mispadu (URSA) Delphi payload build 108: letter-pair cipher code, build-specific resource loop, keyboard-hook DLL |
+| [`fluxengine/`](fluxengine/) | FluxEngine Delphi remote-access banker: loader DLL (`dhlib.dll`), decrypted payload, stage-1 LNK hunting rule |
 
 Test: `python tests/run_yara_tests.py --compile-only` (CI) or with `--samples` / `--negatives` (see the top README).

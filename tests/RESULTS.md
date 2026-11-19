@@ -211,3 +211,7 @@ PASS [yara-x 1.23.0] 352c8d5d8cc8 -> MAL_Mispadu_URSA_Hook_DLL_pDLL
 ```
 
 `352c8d5d8cc8` is the `PDLL` resource extracted from the payload (a derived test copy of an embedded component). Negative corpus (both engines): 550 files, 0 hits (unrelated PE files from other analyses and tools, among them the Grandoreiro loader, the two NirSoft tools bundled in the payload, and six Delphi DLLs of an unrelated banker cluster). The corpus holds only a few benign Delphi binaries, so the false-positive rate on benign Delphi software is not established.
+
+## FluxEngine rules (yara/fluxengine), run 2026-11-19
+
+Engines: yara-python 4.5.4, YARA-X 1.23.0. Positives: the four `dhlib.dll` loader builds, the decrypted payload and the stage-1 LNK (each hit exactly its rule on both engines, see `tests/run_yara_tests.py`). Negatives: 547 PE and LNK files from other analyses (including the Mispadu payload, the Grandoreiro loader, REVSTEALER, MioLab helpers, other Delphi and AutoIt binaries and ordinary tooling): **0 hits from any FluxEngine rule on either engine**. The corpus has few benign Delphi applications, so the false-positive estimate for Delphi software is weak. The YARA Forge `full` set (release 2026-11-08) has no hit on any of the six positives.

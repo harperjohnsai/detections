@@ -49,6 +49,13 @@ EXPECTED = {
     # Mispadu (URSA) 2026 payload (yara/mispadu)
     '4f4129e8f79bde102875417f64a3258226ae93658776a416aaf4383698a6ea7d': ['MAL_Mispadu_URSA_Delphi_Cipher_Code', 'MAL_Mispadu_URSA_Payload_Build108'],  # payload EXE, build 108 (Delphi, 6.9 MB)
     '352c8d5d8cc824c41d143af2504d2cdf5d8a16e5f4df019032a5241859b1900b': ['MAL_Mispadu_URSA_Hook_DLL_pDLL'],  # pDLL keyboard-hook DLL extracted from the payload resources
+    # FluxEngine (yara/fluxengine)
+    'dc60f22fc59a7c3cb51b97661ad69f42d3028538c0044b248fc9681487c0b433': ['MAL_FluxEngine_Loader_dhlib_DLL'],  # dhlib.dll loader, 2026-10-19 build
+    '6a9ded132c050747ae5f233a91fc84c6bbee4e91950636f5fe077bf48acdca30': ['MAL_FluxEngine_Loader_dhlib_DLL'],  # dhlib.dll loader, Sep 2026
+    '7040370d8d09dc735d3ae9a77fe4b4c8e3f97c64efb60d4a962337fd6b16b114': ['MAL_FluxEngine_Loader_dhlib_DLL'],  # dhlib.dll loader, Sep 2026
+    '01af2f7049e1562023835ddcbffea76e265ed2906e140ba8a200eb41d37ebf8d': ['MAL_FluxEngine_Loader_dhlib_DLL'],  # dhlib.dll loader, Sep 2026
+    'c424a715e3861bc18e0c8223f3dfd909dc4a77a82b9c5a5a135b8d49bac7e8c6': ['MAL_FluxEngine_Payload_Delphi'],  # decrypted payload (Delphi, 4.5 MB)
+    '6e6d4084c6c2f3035c2fbda4daf4b705a06938d73bf91f402552b6d4ab522d9b': ['SUSP_FluxEngine_LNK_Squiblydoo_ADS'],  # stage-1 LNK
 }
 ok = True
 

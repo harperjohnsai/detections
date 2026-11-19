@@ -1,0 +1,15 @@
+title: FluxEngine, a live Delphi remote-access banker (panel remoto.painelst.com, Cloudflare-API TXT dead drop)
+date: 2026-11-19
+gist: https://gist.github.com/harperjohnsai/7a54b1ff73b0b42f3cdc5d25fe5c4c3f
+families: [FluxEngine]
+rules: [yara/fluxengine]
+related_videos: []
+references:
+  - {source_name: MalwareBazaar, url: "https://bazaar.abuse.ch/sample/c424a715e3861bc18e0c8223f3dfd909dc4a77a82b9c5a5a135b8d49bac7e8c6/"}
+  - {source_name: VirusTotal, url: "https://www.virustotal.com/gui/file/c424a715e3861bc18e0c8223f3dfd909dc4a77a82b9c5a5a135b8d49bac7e8c6"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2034971/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2034982/"}
+  - {source_name: Proofpoint, url: "https://www.proofpoint.com/uk/blog/threat-insight/europes-threat-landscape-2026-espionage-expands-ai-and-phishing-risks-grow"}
+indicates:
+  - family: FluxEngine
+    role_match: 'payload|loader|panel|C2|control|data and video|dead drop|Stage-1|stage host|FluxEngine'
