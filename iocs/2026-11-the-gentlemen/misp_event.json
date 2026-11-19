@@ -28,7 +28,7 @@
         "value": "025fc0976c548fb5a880c83ea3eb21a5f23c5d53c4e51e862bb893c11adf712a",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 2,963,456 B). VirusTotal 2026-11-19: 57 engines malicious, 22 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.A trojan); first submitted 2025-12-01. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 7f11809925adc6657e84165fdf780816. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 2,963,456 B). VirusTotal 2026-11-19: 57 engines malicious, 22 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.A trojan); first submitted 2025-12-01. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 7f11809925adc6657e84165fdf780816. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 1811827 (reporter TheRavenFile, 2026-05-14)]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -44,7 +44,7 @@
         "value": "0d07a653649aefcc92c3315925cde3085b02b9a50f60cddf50b571fde3763955",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 4,217,344 B), resolved from the MD5 ff709591615a26f037a465ce97cc59d6 on the ransomware.live list. VirusTotal 2026-11-19: 48 engines malicious, 16 with a Gentlemen family label (Trojan.Win32.Gentlemen.j!c); MD5 ff709591615a26f037a465ce97cc59d6. Not on MalwareBazaar; bytes not analysed by us [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 4,217,344 B), resolved from the MD5 ff709591615a26f037a465ce97cc59d6 on the ransomware.live list. VirusTotal 2026-11-19: 48 engines malicious, 16 with a Gentlemen family label (Trojan.Win32.Gentlemen.j!c); MD5 ff709591615a26f037a465ce97cc59d6. Not on MalwareBazaar; bytes not analysed by us [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 2035349]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -60,7 +60,7 @@
         "value": "1334f0189a8e6dbc48456fa4b482c5726ab7609f7fa652fcc4c1a96f2334436f",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 3,975,680 B). VirusTotal 2026-11-19: 56 engines malicious, 20 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.B trojan); first submitted 2026-04-14. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 736a6b312fe80efea9bc2e482629be06. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 3,975,680 B). VirusTotal 2026-11-19: 56 engines malicious, 20 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.B trojan); first submitted 2026-04-14. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 736a6b312fe80efea9bc2e482629be06. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 1811828 (reporter TheRavenFile, 2026-05-14)]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -76,7 +76,7 @@
         "value": "1af419b36a5edefef387409e2b3248c9223f7dc49a4f7b15ea095d371c3a70b2",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 3,885,056 B). VirusTotal 2026-11-19: 56 engines malicious, 20 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.B trojan); first submitted 2026-04-09. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 10ca9a4040001560d053b7e7885c1b95. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 3,885,056 B). VirusTotal 2026-11-19: 56 engines malicious, 20 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.B trojan); first submitted 2026-04-09. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 10ca9a4040001560d053b7e7885c1b95. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 1811829 (reporter TheRavenFile, 2026-05-14)]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -92,7 +92,7 @@
         "value": "1d7d51d51f0d12661db27b7d7c06320f8cc51eabfd2550c298141ebc24704451",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 4,217,344 B), resolved from the MD5 88e824ea42dc271f4992957584b57d64 on the ransomware.live list. VirusTotal 2026-11-19: 51 engines malicious, 16 with a Gentlemen family label (Trojan.Win32.Gentlemen.j!c); MD5 88e824ea42dc271f4992957584b57d64. Not on MalwareBazaar; bytes not analysed by us [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 4,217,344 B), resolved from the MD5 88e824ea42dc271f4992957584b57d64 on the ransomware.live list. VirusTotal 2026-11-19: 51 engines malicious, 16 with a Gentlemen family label (Trojan.Win32.Gentlemen.j!c); MD5 88e824ea42dc271f4992957584b57d64. Not on MalwareBazaar; bytes not analysed by us [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 2035350]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -108,7 +108,7 @@
         "value": "1eece1e1ba4b96e6c784729f0608ad2939cfb67bc4236dfababbe1d09268960c",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Linux ELF, 36,424 B). VirusTotal 2026-11-19: 34 engines malicious, 18 with a Gentlemen family label (e.g. ESET-NOD32 Linux/Filecoder.Gentlemen.A trojan); first submitted 2025-12-24. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Linux ELF, 36,424 B). VirusTotal 2026-11-19: 34 engines malicious, 18 with a Gentlemen family label (e.g. ESET-NOD32 Linux/Filecoder.Gentlemen.A trojan); first submitted 2025-12-24. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 1811857 (reporter TheRavenFile, 2026-05-14)]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -124,7 +124,7 @@
         "value": "228fc86acbaa6626051fd189932cb1768254aec5a9539771cee8a567103bbec1",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 4,214,784 B), resolved from the MD5 6440dff8fd8156ef54f6814207983d65 on the ransomware.live list. VirusTotal 2026-11-19: 55 engines malicious, 16 with a Gentlemen family label (Trojan.Win32.Gentlemen.j!c); MD5 6440dff8fd8156ef54f6814207983d65. Not on MalwareBazaar; bytes not analysed by us [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 4,214,784 B), resolved from the MD5 6440dff8fd8156ef54f6814207983d65 on the ransomware.live list. VirusTotal 2026-11-19: 55 engines malicious, 16 with a Gentlemen family label (Trojan.Win32.Gentlemen.j!c); MD5 6440dff8fd8156ef54f6814207983d65. Not on MalwareBazaar; bytes not analysed by us [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 2035351]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -140,7 +140,7 @@
         "value": "22b38dad7da097ea03aa28d0614164cd25fafeb1383dbc15047e34c8050f6f67",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 3,952,640 B). VirusTotal 2026-11-19: 57 engines malicious, 23 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.A trojan); first submitted 2026-03-02. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 7a262d4cbbc4808932b6af42c4041f06. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 3,952,640 B). VirusTotal 2026-11-19: 57 engines malicious, 23 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.A trojan); first submitted 2026-03-02. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 7a262d4cbbc4808932b6af42c4041f06. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 1811830 (reporter TheRavenFile, 2026-05-14)]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -156,7 +156,7 @@
         "value": "24ac3588fb8cfbff63b7fdfcbc7dec1f3c60e54e6f949dd69d68e89e0c89d966",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 3,975,680 B). VirusTotal 2026-11-19: 53 engines malicious, 20 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.B trojan); first submitted 2026-04-14. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 1b6d9c7cb4ad65da282fc48a9a30f97e. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 3,975,680 B). VirusTotal 2026-11-19: 53 engines malicious, 20 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.B trojan); first submitted 2026-04-14. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 1b6d9c7cb4ad65da282fc48a9a30f97e. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 1811831 (reporter TheRavenFile, 2026-05-14)]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -172,7 +172,7 @@
         "value": "2da8816369c6163d84fb98790bc1a8511bea3eccd805ae9b4c995944ecf7a672",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 4,217,344 B), resolved from the MD5 886888ccad9b4726c095fd42fce9ea22 on the ransomware.live list. VirusTotal 2026-11-19: 50 engines malicious, 16 with a Gentlemen family label (Trojan.Win32.Gentlemen.j!c); MD5 886888ccad9b4726c095fd42fce9ea22. Not on MalwareBazaar; bytes not analysed by us [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 4,217,344 B), resolved from the MD5 886888ccad9b4726c095fd42fce9ea22 on the ransomware.live list. VirusTotal 2026-11-19: 50 engines malicious, 16 with a Gentlemen family label (Trojan.Win32.Gentlemen.j!c); MD5 886888ccad9b4726c095fd42fce9ea22. Not on MalwareBazaar; bytes not analysed by us [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 2035352]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -188,7 +188,7 @@
         "value": "2ed9494e9b7b68415b4eb151c922c82c0191294d0aa443dd2cb5133e6bfe3d5d",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 3,280,900 B). VirusTotal 2026-11-19: 57 engines malicious, 26 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.A trojan); first submitted 2025-12-15. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 0a454a07e071971832985701bc6e9164. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 3,280,900 B). VirusTotal 2026-11-19: 57 engines malicious, 26 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.A trojan); first submitted 2025-12-15. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 0a454a07e071971832985701bc6e9164. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 1811832 (reporter TheRavenFile, 2026-05-14)]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -220,7 +220,7 @@
         "value": "3ab9575225e00a83a4ac2b534da5a710bdcf6eb72884944c437b5fbe5c5c9235",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen Windows locker (Go, Garble-obfuscated), 2,962,944 B, MalwareBazaar first seen 2026-04-03 (uploader KodaDr). Our static triage: embeds the leak-site onion address, the affiliate Tox ID 88984846...5B9340FD1A8FF40E9A, the persistence names and the footer markers described by Microsoft; matches MAL_Gentlemen_Locker_Go. MD5 4200b46a93c6ab059e2b34ce200c4a5b. [type: sha256; verdict: malicious; source: MalwareBazaar; our static triage 2026-11-18/19; ransomware.live group page (read 2026-11-18)]",
+        "comment": "The Gentlemen Windows locker (Go, Garble-obfuscated), 2,962,944 B, MalwareBazaar first seen 2026-04-03 (uploader KodaDr). Our static triage: embeds the leak-site onion address, the affiliate Tox ID 88984846...5B9340FD1A8FF40E9A, the persistence names and the footer markers described by Microsoft; matches MAL_Gentlemen_Locker_Go. MD5 4200b46a93c6ab059e2b34ce200c4a5b. [type: sha256; verdict: malicious; source: MalwareBazaar; our static triage 2026-11-18/19; ransomware.live group page (read 2026-11-18); ThreatFox 1811833 (reporter TheRavenFile, 2026-05-14)]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -236,7 +236,7 @@
         "value": "3c2466d8a4572c26530e6f6bcef01fc1baefb98dbff2c65efaed5599622f51f3",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 4,216,320 B). VirusTotal 2026-11-19: 56 engines malicious, 19 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.D trojan); first submitted 2026-07-24. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 598b222fe1d12453639dc14b390b3fa9. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 4,216,320 B). VirusTotal 2026-11-19: 56 engines malicious, 19 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.D trojan); first submitted 2026-07-24. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 598b222fe1d12453639dc14b390b3fa9. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 2035353]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -252,7 +252,7 @@
         "value": "48d9b2ce4fcd6854a3164ce395d7140014e0b58b77680623f3e4ca22d3a6e7fd",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 3,963,904 B). VirusTotal 2026-11-19: 57 engines malicious, 20 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.B trojan); first submitted 2026-03-03. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 7a89b347beb55f63dbcbcfc0beedbe43. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 3,963,904 B). VirusTotal 2026-11-19: 57 engines malicious, 20 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.B trojan); first submitted 2026-03-03. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 7a89b347beb55f63dbcbcfc0beedbe43. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 1811835 (reporter TheRavenFile, 2026-05-14)]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -268,7 +268,7 @@
         "value": "4a175eed927c0a477eafb8aa35a93c191748acaa78ac7aecd8ea3c4cd868887c",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 3,966,464 B). VirusTotal 2026-11-19: 53 engines malicious, 17 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.B trojan); first submitted 2026-04-23. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 6f1ece39f46345ff8f0327a93af2312b. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 3,966,464 B). VirusTotal 2026-11-19: 53 engines malicious, 17 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.B trojan); first submitted 2026-04-23. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 6f1ece39f46345ff8f0327a93af2312b. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 1811836 (reporter TheRavenFile, 2026-05-14)]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -284,7 +284,7 @@
         "value": "4de88220ff6a6dcb137b17d8d3f77ab4bacc39ea4e4d1147f687b021b7a82b8c",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 4,202,496 B), resolved from the MD5 2e8db0587aa8994a1f5bc796dafe33ba on the ransomware.live list. VirusTotal 2026-11-19: 52 engines malicious, 13 with a Gentlemen family label (Multi.Ransomware.Gentlemen); MD5 2e8db0587aa8994a1f5bc796dafe33ba. Not on MalwareBazaar; bytes not analysed by us [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 4,202,496 B), resolved from the MD5 2e8db0587aa8994a1f5bc796dafe33ba on the ransomware.live list. VirusTotal 2026-11-19: 52 engines malicious, 13 with a Gentlemen family label (Multi.Ransomware.Gentlemen); MD5 2e8db0587aa8994a1f5bc796dafe33ba. Not on MalwareBazaar; bytes not analysed by us [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 2035354]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -300,7 +300,7 @@
         "value": "51b9f246d6da85631131fcd1fabf0a67937d4bdde33625a44f7ee6a3a7baebd2",
         "to_ids": false,
         "distribution": "5",
-        "comment": "The Gentlemen locker build, Windows x64, 14,911,488 B, VMProtect-packed (Detect It Easy via VirusTotal), MalwareBazaar first seen 2025-09-17 (uploader JAMESWT_WT, tags GENTLEMEN, WinGO-Filecoder-NP) together with the ransom-note zip f8b07ce2. Attribution rests on the tags, the note zip and three engines with a Gentlemen label (ALYac, AhnLab, Ikarus); no byte-level family evidence because the Go image is encrypted. NOT matched by any rule here (yara/the_gentlemen/README.md). Imphash 9da18038...1aff is shared with SparkRAT, Cobalt Strike, Sliver and LaplasClipper samples: do not block on the imphash. MD5 adf675ffc1acb357f2d9f1a94e016f52. [type: sha256; verdict: malicious; source: MalwareBazaar; our static triage 2026-11-18/19; ransomware.live group page (read 2026-11-18)]",
+        "comment": "The Gentlemen locker build, Windows x64, 14,911,488 B, VMProtect-packed (Detect It Easy via VirusTotal), MalwareBazaar first seen 2025-09-17 (uploader JAMESWT_WT, tags GENTLEMEN, WinGO-Filecoder-NP) together with the ransom-note zip f8b07ce2. Attribution rests on the tags, the note zip and three engines with a Gentlemen label (ALYac, AhnLab, Ikarus); no byte-level family evidence because the Go image is encrypted. NOT matched by any rule here (yara/the_gentlemen/README.md). Imphash 9da18038...1aff is shared with SparkRAT, Cobalt Strike, Sliver and LaplasClipper samples: do not block on the imphash. MD5 adf675ffc1acb357f2d9f1a94e016f52. [type: sha256; verdict: malicious; source: MalwareBazaar; our static triage 2026-11-18/19; ransomware.live group page (read 2026-11-18); ThreatFox 1811837 (reporter TheRavenFile, 2026-05-14)]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -316,7 +316,7 @@
         "value": "53d2484ae1ad6ff9547d90f5f5ccd6ae1dca8cb24e622a07dfc74c9593b2c3fa",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen Linux ELF locker (Go), 2,490,504 B, MalwareBazaar first seen 2026-10-22 (uploader BlinkzSec). Our static triage: embeds the leak-site onion address and the affiliate Tox ID C3429265...2872FB (in neither the Check Point nor the ransomware.live list), \"Wipe free space after encryption\" and a VM/database/backup kill list; matches MAL_Gentlemen_Locker_Go [type: sha256; verdict: malicious; source: MalwareBazaar; our static triage 2026-11-18/19; MalwareBazaar tag Gentlemen + our static triage 2026-11-18]",
+        "comment": "The Gentlemen Linux ELF locker (Go), 2,490,504 B, MalwareBazaar first seen 2026-10-22 (uploader BlinkzSec). Our static triage: embeds the leak-site onion address and the affiliate Tox ID C3429265...2872FB (in neither the Check Point nor the ransomware.live list), \"Wipe free space after encryption\" and a VM/database/backup kill list; matches MAL_Gentlemen_Locker_Go [type: sha256; verdict: malicious; source: MalwareBazaar; our static triage 2026-11-18/19; MalwareBazaar tag Gentlemen + our static triage 2026-11-18; ThreatFox 2035348]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -332,7 +332,7 @@
         "value": "586459f1adf018de4586dcd61782839a3ee72d8469944e0f4dd45a6e20598869",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 4,214,784 B), resolved from the MD5 f55f5be6acfe822a2dab793450dc60d7 on the ransomware.live list. VirusTotal 2026-11-19: 54 engines malicious, 18 with a Gentlemen family label (Trojan.Win32.Gentlemen.j!c); MD5 f55f5be6acfe822a2dab793450dc60d7. Not on MalwareBazaar; bytes not analysed by us [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 4,214,784 B), resolved from the MD5 f55f5be6acfe822a2dab793450dc60d7 on the ransomware.live list. VirusTotal 2026-11-19: 54 engines malicious, 18 with a Gentlemen family label (Trojan.Win32.Gentlemen.j!c); MD5 f55f5be6acfe822a2dab793450dc60d7. Not on MalwareBazaar; bytes not analysed by us [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 2035355]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -348,7 +348,7 @@
         "value": "5dc607c8990841139768884b1b43e1403496d5a458788a1937be139594f01dca",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Linux ELF, 36,424 B). VirusTotal 2026-11-19: 31 engines malicious, 18 with a Gentlemen family label (e.g. ESET-NOD32 Linux/Filecoder.Gentlemen.A trojan); first submitted 2026-01-10. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Linux ELF, 36,424 B). VirusTotal 2026-11-19: 31 engines malicious, 18 with a Gentlemen family label (e.g. ESET-NOD32 Linux/Filecoder.Gentlemen.A trojan); first submitted 2026-01-10. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 1811858 (reporter TheRavenFile, 2026-05-14)]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -364,7 +364,7 @@
         "value": "6263a85611c02a0b78d5e5620f1f34a99eba3b74f614742e8b0cf29ca8ef4fa5",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Linux ELF, 2,592,894 B), resolved from the MD5 5f319c7e83b8daa6836b8ae674c8e0e6 on the ransomware.live list. VirusTotal 2026-11-19: 30 engines malicious, 10 with a Gentlemen family label (Trojan.Linux.GentleCrypt.4!c); MD5 5f319c7e83b8daa6836b8ae674c8e0e6. Not on MalwareBazaar; bytes not analysed by us [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Linux ELF, 2,592,894 B), resolved from the MD5 5f319c7e83b8daa6836b8ae674c8e0e6 on the ransomware.live list. VirusTotal 2026-11-19: 30 engines malicious, 10 with a Gentlemen family label (Trojan.Linux.GentleCrypt.4!c); MD5 5f319c7e83b8daa6836b8ae674c8e0e6. Not on MalwareBazaar; bytes not analysed by us [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 2035366]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -380,7 +380,7 @@
         "value": "62c2c24937d67fdeb43f2c9690ab10e8bb90713af46945048db9a94a465ffcb8",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 3,280,900 B). VirusTotal 2026-11-19: 58 engines malicious, 25 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.A trojan); first submitted 2025-12-01. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 de1a114a2c5552387a1bbb61501bf129. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 3,280,900 B). VirusTotal 2026-11-19: 58 engines malicious, 25 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.A trojan); first submitted 2025-12-01. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 de1a114a2c5552387a1bbb61501bf129. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 1811838 (reporter TheRavenFile, 2026-05-14)]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -396,7 +396,7 @@
         "value": "6a70824fc1777f81c8e8289258ac951e6bac7636db5315b6d7e76c5a58b82b6b",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 4,166,144 B), resolved from the MD5 71f152d84b2928c6163724de1cb6fae3 on the ransomware.live list. VirusTotal 2026-11-19: 52 engines malicious, 14 with a Gentlemen family label (Trojan.Win32.Gentlemen.j!c); MD5 71f152d84b2928c6163724de1cb6fae3. Not on MalwareBazaar; bytes not analysed by us [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 4,166,144 B), resolved from the MD5 71f152d84b2928c6163724de1cb6fae3 on the ransomware.live list. VirusTotal 2026-11-19: 52 engines malicious, 14 with a Gentlemen family label (Trojan.Win32.Gentlemen.j!c); MD5 71f152d84b2928c6163724de1cb6fae3. Not on MalwareBazaar; bytes not analysed by us [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 2035356]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -412,7 +412,7 @@
         "value": "7284d45bdbb1e32e3fb1ca6041b448b165795c91a2748de715798238fc8b3bff",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 4,202,496 B), resolved from the MD5 15ced19102f80a843c22480e362c8811 on the ransomware.live list. VirusTotal 2026-11-19: 52 engines malicious, 15 with a Gentlemen family label (Trojan.Win32.Gentlemen.j!c); MD5 15ced19102f80a843c22480e362c8811. Not on MalwareBazaar; bytes not analysed by us [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 4,202,496 B), resolved from the MD5 15ced19102f80a843c22480e362c8811 on the ransomware.live list. VirusTotal 2026-11-19: 52 engines malicious, 15 with a Gentlemen family label (Trojan.Win32.Gentlemen.j!c); MD5 15ced19102f80a843c22480e362c8811. Not on MalwareBazaar; bytes not analysed by us [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 2035357]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -428,7 +428,7 @@
         "value": "788ba200f776a188c248d6c2029f00b5d34be45d4444f7cb89ffe838c39b8b19",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Linux ELF, 2,510,996 B). VirusTotal 2026-11-19: 35 engines malicious, 19 with a Gentlemen family label (e.g. ESET-NOD32 Linux/Filecoder.Gentlemen.B trojan); first submitted 2026-01-04. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 8ee42d16a9381d726591ddc551863931. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Linux ELF, 2,510,996 B). VirusTotal 2026-11-19: 35 engines malicious, 19 with a Gentlemen family label (e.g. ESET-NOD32 Linux/Filecoder.Gentlemen.B trojan); first submitted 2026-01-04. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 8ee42d16a9381d726591ddc551863931. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 1811859 (reporter TheRavenFile, 2026-05-14)]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -460,7 +460,7 @@
         "value": "7d90023d535096da99bffcb3370008355435d9f022232870f3c27d29be8be60c",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 4,214,784 B), resolved from the MD5 6add66a89721e2b7d817ba0d0f0d660e on the ransomware.live list. VirusTotal 2026-11-19: 53 engines malicious, 17 with a Gentlemen family label (Trojan.Win32.Gentlemen.4!c); MD5 6add66a89721e2b7d817ba0d0f0d660e. Not on MalwareBazaar; bytes not analysed by us [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 4,214,784 B), resolved from the MD5 6add66a89721e2b7d817ba0d0f0d660e on the ransomware.live list. VirusTotal 2026-11-19: 53 engines malicious, 17 with a Gentlemen family label (Trojan.Win32.Gentlemen.4!c); MD5 6add66a89721e2b7d817ba0d0f0d660e. Not on MalwareBazaar; bytes not analysed by us [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 2035358]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -476,7 +476,7 @@
         "value": "7eb2fd5e79e79c3f2a95023d617062908c9d8c5aff9fed8361a5a74dc0d1af75",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 4,214,784 B), resolved from the MD5 926d26fae93d090519ac0f0e1155150e on the ransomware.live list. VirusTotal 2026-11-19: 53 engines malicious, 14 with a Gentlemen family label (Multi.Ransomware.Gentlemen); MD5 926d26fae93d090519ac0f0e1155150e. Not on MalwareBazaar; bytes not analysed by us [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 4,214,784 B), resolved from the MD5 926d26fae93d090519ac0f0e1155150e on the ransomware.live list. VirusTotal 2026-11-19: 53 engines malicious, 14 with a Gentlemen family label (Multi.Ransomware.Gentlemen); MD5 926d26fae93d090519ac0f0e1155150e. Not on MalwareBazaar; bytes not analysed by us [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 2035359]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -492,7 +492,7 @@
         "value": "860a6177b055a2f5aa61470d17ec3c69da24f1cdf0a782237055cba431158923",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 3,971,072 B). VirusTotal 2026-11-19: 57 engines malicious, 19 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.A trojan); first submitted 2026-02-07. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 0b33a1a23b044beb5c9a63aafd35595c. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 3,971,072 B). VirusTotal 2026-11-19: 57 engines malicious, 19 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.A trojan); first submitted 2026-02-07. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 0b33a1a23b044beb5c9a63aafd35595c. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 1811840 (reporter TheRavenFile, 2026-05-14)]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -508,7 +508,7 @@
         "value": "87d25d0e5880b3b5cd30106853cbfc6ef1ad38966b30d9bd5b99df46098e546c",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 3,975,680 B). VirusTotal 2026-11-19: 58 engines malicious, 18 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.B trojan); first submitted 2026-03-31. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 05e9d6d239ea29f0427b02a9bc903be7. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 3,975,680 B). VirusTotal 2026-11-19: 58 engines malicious, 18 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.B trojan); first submitted 2026-03-31. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 05e9d6d239ea29f0427b02a9bc903be7. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 1811841 (reporter TheRavenFile, 2026-05-14)]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -540,7 +540,7 @@
         "value": "8c87134c1b45e990e9568f0a3899b0076f94be16d3c40fa824ac1e6c6ee892db",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 3,128,320 B). VirusTotal 2026-11-19: 45 engines malicious, 20 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.B trojan); first submitted 2025-12-02. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 30b49ae2f685d4403d3013410f80c2e2. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 3,128,320 B). VirusTotal 2026-11-19: 45 engines malicious, 20 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.B trojan); first submitted 2025-12-02. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 30b49ae2f685d4403d3013410f80c2e2. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 1811843 (reporter TheRavenFile, 2026-05-14)]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -556,7 +556,7 @@
         "value": "91415e0b9fe4e7cbe43ec0558a7adf89423de30d22b00b985c2e4b97e75076b1",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 3,957,760 B). VirusTotal 2026-11-19: 58 engines malicious, 21 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.A trojan); first submitted 2026-01-14. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 1e0f4cd09aa4464179933769b5009251. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 3,957,760 B). VirusTotal 2026-11-19: 58 engines malicious, 21 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.A trojan); first submitted 2026-01-14. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 1e0f4cd09aa4464179933769b5009251. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 1811844 (reporter TheRavenFile, 2026-05-14)]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -572,7 +572,7 @@
         "value": "992c951f4af57ca7cd8396f5ed69c2199fd6fd4ae5e93726da3e198e78bec0a5",
         "to_ids": true,
         "distribution": "5",
-        "comment": "SystemBC proxy (staged as socks.exe) from an affiliate intrusion; VirusTotal 2026-11-19: 45 engines malicious (SystemBC/Coroxy family labels). Sibling of the C&C 45.86.230.112 [type: sha256; verdict: malicious; source: Check Point Research DFIR report 2026-04-20; VirusTotal 2026-11-19]",
+        "comment": "SystemBC proxy (staged as socks.exe) from an affiliate intrusion; VirusTotal 2026-11-19: 45 engines malicious (SystemBC/Coroxy family labels). Sibling of the C&C 45.86.230.112 [type: sha256; verdict: malicious; source: Check Point Research DFIR report 2026-04-20; VirusTotal 2026-11-19; ThreatFox 2035367]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -588,7 +588,7 @@
         "value": "994d6d1edb57f945f4284cc0163ec998861c7496d85f6d45c08657c9727186e3",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 3,293,188 B). VirusTotal 2026-11-19: 53 engines malicious, 21 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.B trojan); first submitted 2025-12-02. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 4609cbac6772a6c61fcf2745cd3b4362. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 3,293,188 B). VirusTotal 2026-11-19: 53 engines malicious, 21 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.B trojan); first submitted 2025-12-02. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 4609cbac6772a6c61fcf2745cd3b4362. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 1811845 (reporter TheRavenFile, 2026-05-14)]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -604,7 +604,7 @@
         "value": "9c6f6c0d7127c95aa1360ad6fb0ba5679527a6ea2cc17eb0bc2162dd1e13cd09",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 4,214,272 B), resolved from the MD5 5d2ff243bafd84603263ab20f3f2d1e7 on the ransomware.live list. VirusTotal 2026-11-19: 54 engines malicious, 13 with a Gentlemen family label (Trojan.Win32.Gentlemen.j!c); MD5 5d2ff243bafd84603263ab20f3f2d1e7. Not on MalwareBazaar; bytes not analysed by us [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 4,214,272 B), resolved from the MD5 5d2ff243bafd84603263ab20f3f2d1e7 on the ransomware.live list. VirusTotal 2026-11-19: 54 engines malicious, 13 with a Gentlemen family label (Trojan.Win32.Gentlemen.j!c); MD5 5d2ff243bafd84603263ab20f3f2d1e7. Not on MalwareBazaar; bytes not analysed by us [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 2035360]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -620,7 +620,7 @@
         "value": "9f61ff4deb8afced8b1ecdc8787a134c63bde632b18293fbfc94a91749e3e454",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 3,534,852 B). VirusTotal 2026-11-19: 54 engines malicious, 22 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.A trojan); first submitted 2025-11-20. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 ed18c524e930cd1c34614f7cc3051dfc. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 3,534,852 B). VirusTotal 2026-11-19: 54 engines malicious, 22 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.A trojan); first submitted 2025-11-20. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 ed18c524e930cd1c34614f7cc3051dfc. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 1811846 (reporter TheRavenFile, 2026-05-14)]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -636,7 +636,7 @@
         "value": "a7a19cab7aab606f833fa8225bc94ec9570a6666660b02cc41a63fe39ea8b0ad",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 3,954,688 B). VirusTotal 2026-11-19: 58 engines malicious, 25 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.A trojan); first submitted 2026-01-05. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 1cc9ae55b1856e4e9796c73f94c2e683. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 3,954,688 B). VirusTotal 2026-11-19: 58 engines malicious, 25 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.A trojan); first submitted 2026-01-05. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 1cc9ae55b1856e4e9796c73f94c2e683. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 1811847 (reporter TheRavenFile, 2026-05-14)]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -652,7 +652,7 @@
         "value": "afc30b1a14f2f29572412ba883782eb3ad3a9e6bf9ff9c38aa48ff35a4ee73fa",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 4,156,928 B), resolved from the MD5 f3c6ca1ba97b7f94ab52584dc62ea691 on the ransomware.live list. VirusTotal 2026-11-19: 53 engines malicious, 16 with a Gentlemen family label (Trojan.Win32.Gentlemen.j!c); MD5 f3c6ca1ba97b7f94ab52584dc62ea691. Not on MalwareBazaar; bytes not analysed by us [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 4,156,928 B), resolved from the MD5 f3c6ca1ba97b7f94ab52584dc62ea691 on the ransomware.live list. VirusTotal 2026-11-19: 53 engines malicious, 16 with a Gentlemen family label (Trojan.Win32.Gentlemen.j!c); MD5 f3c6ca1ba97b7f94ab52584dc62ea691. Not on MalwareBazaar; bytes not analysed by us [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 2035361]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -668,7 +668,7 @@
         "value": "b67958afc982cafbe1c3f114b444d7f4c91a88a3e7a86f89ab8795ac2110d1e6",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 3,975,680 B). VirusTotal 2026-11-19: 34 engines malicious, 9 with a Gentlemen family label (e.g. Microsoft Ransom:Win64/Gentlemen.SH!MTB); first submitted 2026-04-01. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 3b46a729db7ae6af8b19711c9452194d. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 3,975,680 B). VirusTotal 2026-11-19: 34 engines malicious, 9 with a Gentlemen family label (e.g. Microsoft Ransom:Win64/Gentlemen.SH!MTB); first submitted 2026-04-01. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 3b46a729db7ae6af8b19711c9452194d. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 1811848 (reporter TheRavenFile, 2026-05-14)]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -684,7 +684,7 @@
         "value": "bd5950d4bd3de1c6d1609b8369b7332ada40c50070a9a3cd8e80ec89b19c48dc",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 4,202,496 B), resolved from the MD5 50d6a53992cb7d6eb09bc71294e5a68f on the ransomware.live list. VirusTotal 2026-11-19: 53 engines malicious, 13 with a Gentlemen family label (Trojan.Win32.Gentlemen.j!c); MD5 50d6a53992cb7d6eb09bc71294e5a68f. Not on MalwareBazaar; bytes not analysed by us [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 4,202,496 B), resolved from the MD5 50d6a53992cb7d6eb09bc71294e5a68f on the ransomware.live list. VirusTotal 2026-11-19: 53 engines malicious, 13 with a Gentlemen family label (Trojan.Win32.Gentlemen.j!c); MD5 50d6a53992cb7d6eb09bc71294e5a68f. Not on MalwareBazaar; bytes not analysed by us [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 2035362]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -700,7 +700,7 @@
         "value": "c7f7b5a6e7d93221344e6368c7ab4abf93e162f7567e1a7bcb8786cb8a183a73",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 3,975,680 B). VirusTotal 2026-11-19: 48 engines malicious, 17 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.B trojan); first submitted 2026-04-03. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 6ae7c9a7ea0b8c40a64225734f6bd01d. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 3,975,680 B). VirusTotal 2026-11-19: 48 engines malicious, 17 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.B trojan); first submitted 2026-04-03. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 6ae7c9a7ea0b8c40a64225734f6bd01d. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 1811850 (reporter TheRavenFile, 2026-05-14)]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -716,7 +716,7 @@
         "value": "cd66fb941e63ad9a72687cafb050ed5b4d8b97b34461168581c4f150d6501523",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 4,214,784 B), resolved from the MD5 6a54c09873d13b0cd915abe682338669 on the ransomware.live list. VirusTotal 2026-11-19: 54 engines malicious, 16 with a Gentlemen family label (Trojan.Win32.Gentlemen.4!c); MD5 6a54c09873d13b0cd915abe682338669. Not on MalwareBazaar; bytes not analysed by us [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 4,214,784 B), resolved from the MD5 6a54c09873d13b0cd915abe682338669 on the ransomware.live list. VirusTotal 2026-11-19: 54 engines malicious, 16 with a Gentlemen family label (Trojan.Win32.Gentlemen.4!c); MD5 6a54c09873d13b0cd915abe682338669. Not on MalwareBazaar; bytes not analysed by us [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 2035363]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -732,7 +732,7 @@
         "value": "daf2e4d0b5e859062953821663a332387f99a48e9405834f28f8f170c92bc05d",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 4,217,344 B), resolved from the MD5 1ecaf7098bedaa4ffae0fff3e077f937 on the ransomware.live list. VirusTotal 2026-11-19: 50 engines malicious, 16 with a Gentlemen family label (Multi.Ransomware.Gentlemen); MD5 1ecaf7098bedaa4ffae0fff3e077f937. Not on MalwareBazaar; bytes not analysed by us [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 4,217,344 B), resolved from the MD5 1ecaf7098bedaa4ffae0fff3e077f937 on the ransomware.live list. VirusTotal 2026-11-19: 50 engines malicious, 16 with a Gentlemen family label (Multi.Ransomware.Gentlemen); MD5 1ecaf7098bedaa4ffae0fff3e077f937. Not on MalwareBazaar; bytes not analysed by us [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 2035364]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -748,7 +748,7 @@
         "value": "dce2e5cc00eff2493f8ced546dc51f9d5ef78c5ee56805906ec642dfa77a1c70",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 4,065,792 B). VirusTotal 2026-11-19: 51 engines malicious, 19 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.B trojan); first submitted 2026-05-01. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 698ce57e5f0ecda7b41d2c6c1e7ca177. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 4,065,792 B). VirusTotal 2026-11-19: 51 engines malicious, 19 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.B trojan); first submitted 2026-05-01. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 698ce57e5f0ecda7b41d2c6c1e7ca177. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 1811851 (reporter TheRavenFile, 2026-05-14)]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -764,7 +764,7 @@
         "value": "dfe696ff713318c53fb17731bd4a6585a02c085b590149b19847990b324a0be6",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 3,972,608 B). VirusTotal 2026-11-19: 51 engines malicious, 19 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.B trojan); first submitted 2026-04-12. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 b8683f466e936e45a5ca715c2845563c. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 3,972,608 B). VirusTotal 2026-11-19: 51 engines malicious, 19 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.B trojan); first submitted 2026-04-12. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 b8683f466e936e45a5ca715c2845563c. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 1811852 (reporter TheRavenFile, 2026-05-14)]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -780,7 +780,7 @@
         "value": "ec368ae0b4369b6ef0da244774995c819c63cffb7fd2132379963b9c1640ccd2",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 3,214,336 B). VirusTotal 2026-11-19: 55 engines malicious, 20 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.A trojan); first submitted 2025-11-18. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 5f5bf7fc7a9ac89ce0bbb07bd1160078. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 3,214,336 B). VirusTotal 2026-11-19: 55 engines malicious, 20 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.A trojan); first submitted 2025-11-18. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 5f5bf7fc7a9ac89ce0bbb07bd1160078. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 1811853 (reporter TheRavenFile, 2026-05-14)]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -796,7 +796,7 @@
         "value": "efaf8e7422ffd09c7f03f1a5b4e5c2cc32b05334c18d1ccb9673667f8f43108f",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 3,956,224 B). VirusTotal 2026-11-19: 57 engines malicious, 21 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.A trojan); first submitted 2026-01-16. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 a2a13b8da7370f5f4753d81c7958dfcb. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 3,956,224 B). VirusTotal 2026-11-19: 57 engines malicious, 21 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.A trojan); first submitted 2026-01-16. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 a2a13b8da7370f5f4753d81c7958dfcb. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 1811854 (reporter TheRavenFile, 2026-05-14)]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -812,7 +812,7 @@
         "value": "f483faa2b9c9815a0efb08023fe5d243b1b9f7e04b95127c506b6aae824c9d09",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 4,166,144 B), resolved from the MD5 4a9837dd830f8db27380836ef3a6adec on the ransomware.live list. VirusTotal 2026-11-19: 54 engines malicious, 16 with a Gentlemen family label (Trojan.Win32.Gentlemen.j!c); MD5 4a9837dd830f8db27380836ef3a6adec. Not on MalwareBazaar; bytes not analysed by us [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 4,166,144 B), resolved from the MD5 4a9837dd830f8db27380836ef3a6adec on the ransomware.live list. VirusTotal 2026-11-19: 54 engines malicious, 16 with a Gentlemen family label (Trojan.Win32.Gentlemen.j!c); MD5 4a9837dd830f8db27380836ef3a6adec. Not on MalwareBazaar; bytes not analysed by us [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 2035365]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -828,7 +828,7 @@
         "value": "f736be55193c77af346dbe905e25f6a1dee3ec1aedca8989ad2088e4f6576b12",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 3,971,072 B). VirusTotal 2026-11-19: 58 engines malicious, 21 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.A trojan); first submitted 2026-02-19. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 ffb6011e7c82355046988166dd896930. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 3,971,072 B). VirusTotal 2026-11-19: 58 engines malicious, 21 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.A trojan); first submitted 2026-02-19. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 ffb6011e7c82355046988166dd896930. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 1811855 (reporter TheRavenFile, 2026-05-14)]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -860,7 +860,7 @@
         "value": "fc75ed2159e0c8274076e46a37671cfb8d677af9f586224da1713df89490a958",
         "to_ids": true,
         "distribution": "5",
-        "comment": "The Gentlemen locker (Windows PE, 3,968,512 B). VirusTotal 2026-11-19: 56 engines malicious, 21 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.B trojan); first submitted 2026-03-31. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 7b885b446bbd9b450146c88f84c64f30. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19]",
+        "comment": "The Gentlemen locker (Windows PE, 3,968,512 B). VirusTotal 2026-11-19: 56 engines malicious, 21 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.B trojan); first submitted 2026-03-31. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 7b885b446bbd9b450146c88f84c64f30. [type: sha256; verdict: malicious; source: ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19; ThreatFox 1811856 (reporter TheRavenFile, 2026-05-14)]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -1180,7 +1180,7 @@
         "value": "91.107.247.163|443",
         "to_ids": true,
         "distribution": "5",
-        "comment": "Cobalt Strike C&C endpoint (port named by Check Point DFIR) [type: endpoint; verdict: malicious; source: Check Point Research DFIR report 2026-04-20]",
+        "comment": "Cobalt Strike C&C endpoint (port named by Check Point DFIR) [type: endpoint; verdict: malicious; source: Check Point Research DFIR report 2026-04-20; ThreatFox 2035368]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -1196,7 +1196,7 @@
         "value": "91.107.247.163|80",
         "to_ids": true,
         "distribution": "5",
-        "comment": "Cobalt Strike C&C endpoint (port named by Check Point DFIR) [type: endpoint; verdict: malicious; source: Check Point Research DFIR report 2026-04-20]",
+        "comment": "Cobalt Strike C&C endpoint (port named by Check Point DFIR) [type: endpoint; verdict: malicious; source: Check Point Research DFIR report 2026-04-20; ThreatFox 2035369]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -2326,6 +2326,16 @@
         "first_seen": "2026-11-18T00:00:00.000000+00:00"
       },
       {
+        "uuid": "2cb14007-8d8c-59b2-bd9f-c990bd3d414d",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://gist.github.com/harperjohnsai/7c55165a161cd6db9cd55556e763c62c",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "GitHub Gist",
+        "timestamp": "1795046400"
+      },
+      {
         "uuid": "147e8d2e-e7ca-51ae-a759-3d901483f710",
         "type": "link",
         "category": "External analysis",
@@ -2363,6 +2373,76 @@
         "to_ids": false,
         "distribution": "5",
         "comment": "MalwareBazaar",
+        "timestamp": "1795046400"
+      },
+      {
+        "uuid": "af7f34f3-3bbf-5eed-9268-df7fb915a742",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2035348/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox",
+        "timestamp": "1795046400"
+      },
+      {
+        "uuid": "f1f811da-7d13-5852-852b-15ee85d5043e",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2035349/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox",
+        "timestamp": "1795046400"
+      },
+      {
+        "uuid": "e236515a-a435-546a-aafd-2079d727fc85",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2035367/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox",
+        "timestamp": "1795046400"
+      },
+      {
+        "uuid": "ec6e8262-87bb-583c-804c-7e76280f3815",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2035368/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox",
+        "timestamp": "1795046400"
+      },
+      {
+        "uuid": "91a091a2-b0ae-5c42-a93e-1badf3a007d8",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2035369/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox",
+        "timestamp": "1795046400"
+      },
+      {
+        "uuid": "c6101298-2562-551b-966a-7a3b1ce7dc14",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/1811833/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox",
+        "timestamp": "1795046400"
+      },
+      {
+        "uuid": "0a47524e-bf31-5817-a9ea-349071d078c7",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/1917834/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox",
         "timestamp": "1795046400"
       },
       {

@@ -1,5 +1,6 @@
 title: "The Gentlemen (Storm-2697) RaaS: group profile, locker IOCs, YARA rules and the unverified NVIDIA leak-site claim"
 date: 2026-11-19
+gist: https://gist.github.com/harperjohnsai/7c55165a161cd6db9cd55556e763c62c
 families: [The Gentlemen]
 rules: [yara/the_gentlemen]
 related_videos: []
@@ -9,6 +10,13 @@ references:
   - {source_name: MalwareBazaar, url: "https://bazaar.abuse.ch/sample/53d2484ae1ad6ff9547d90f5f5ccd6ae1dca8cb24e622a07dfc74c9593b2c3fa/"}
   - {source_name: MalwareBazaar, url: "https://bazaar.abuse.ch/sample/51b9f246d6da85631131fcd1fabf0a67937d4bdde33625a44f7ee6a3a7baebd2/"}
   - {source_name: MalwareBazaar, url: "https://bazaar.abuse.ch/sample/f8b07ce20ae77fec0905724a466196a5ba8281e9ba9534808ab7e7bf15f37516/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2035348/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2035349/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2035367/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2035368/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2035369/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/1811833/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/1917834/"}
   - {source_name: Check Point Research, url: "https://research.checkpoint.com/2026/thus-spoke-the-gentlemen/"}
   - {source_name: Check Point Research, url: "https://research.checkpoint.com/2026/dfir-report-the-gentlemen/"}
   - {source_name: Microsoft Security Blog, url: "https://www.microsoft.com/en-us/security/blog/2026/05/28/the-gentlemen-ransomware-dissecting-a-self-propagating-go-encryptor/"}
