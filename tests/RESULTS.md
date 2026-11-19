@@ -215,3 +215,27 @@ PASS [yara-x 1.23.0] 352c8d5d8cc8 -> MAL_Mispadu_URSA_Hook_DLL_pDLL
 ## FluxEngine rules (yara/fluxengine), run 2026-11-19
 
 Engines: yara-python 4.5.4, YARA-X 1.23.0. Positives: the four `dhlib.dll` loader builds, the decrypted payload and the stage-1 LNK (each hit exactly its rule on both engines, see `tests/run_yara_tests.py`). Negatives: 547 PE and LNK files from other analyses (including the Mispadu payload, the Grandoreiro loader, REVSTEALER, MioLab helpers, other Delphi and AutoIt binaries and ordinary tooling): **0 hits from any FluxEngine rule on either engine**. The corpus has few benign Delphi applications, so the false-positive estimate for Delphi software is weak. The YARA Forge `full` set (release 2026-11-08) has no hit on any of the six positives.
+
+## YARA, The Gentlemen rules added (2026-11-19, yara-python 4.5.4 and YARA-X 1.23.0)
+
+Samples: the two public MalwareBazaar lockers (Windows `3ab95752…`, Linux ELF `53d2484a…`), the ransom note extracted from the MalwareBazaar note zip, the VMProtect-packed build `51b9f246…` and the note zip itself as documented misses. Negatives, 869 files, 0 hits on both engines: 24 Go executables (12 PE, 12 ELF) from current GitHub CLI, restic, Hugo, Caddy, Syncthing and age releases, 483 files of a Linux `/usr/bin`, and 58 saved vendor reports and news pages about the group (20 quote at least one locker string, 5 quote three or more). Extra checks: a section-mapped copy of the unpacked Windows locker and a copy with the first 4 KB removed still match `MAL_Gentlemen_Locker_Go`; the first 300 bytes of the note do not match `HUNT_Gentlemen_Ransom_Note`.
+
+```
+PASS at least one YARA engine available
+PASS 26 rule files compiled together
+ENGINE yara-python 4.5.4
+ENGINE yara-x 1.23.0
+PASS [yara-python 4.5.4] 3ab9575225e0 -> MAL_Gentlemen_Locker_Go
+PASS [yara-x 1.23.0] 3ab9575225e0 -> MAL_Gentlemen_Locker_Go
+PASS [yara-python 4.5.4] 32ead708c8b0 -> HUNT_Gentlemen_Ransom_Note
+PASS [yara-x 1.23.0] 32ead708c8b0 -> HUNT_Gentlemen_Ransom_Note
+PASS [yara-python 4.5.4] 53d2484ae1ad -> MAL_Gentlemen_Locker_Go
+PASS [yara-x 1.23.0] 53d2484ae1ad -> MAL_Gentlemen_Locker_Go
+PASS [yara-python 4.5.4] 51b9f246d6da -> 
+PASS [yara-x 1.23.0] 51b9f246d6da -> 
+PASS [yara-python 4.5.4] f8b07ce20ae7 -> 
+PASS [yara-x 1.23.0] f8b07ce20ae7 -> 
+PASS [yara-python 4.5.4] negative corpus: 869 files, 0 hits []
+PASS [yara-x 1.23.0] negative corpus: 869 files, 0 hits []
+ALL CHECKS PASS
+```

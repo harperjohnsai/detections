@@ -10,5 +10,6 @@ One folder per family or campaign. Every rule file carries `author`, `date`, a `
 | [`grandoreiro/`](grandoreiro/) | Grandoreiro Delphi loader (2026 build): string-key derivation / SHA-256 port code idioms, BMP size-padding hunting rule |
 | [`mispadu/`](mispadu/) | Mispadu (URSA) Delphi payload build 108: letter-pair cipher code, build-specific resource loop, keyboard-hook DLL |
 | [`fluxengine/`](fluxengine/) | FluxEngine Delphi remote-access banker: loader DLL (`dhlib.dll`), decrypted payload, stage-1 LNK hunting rule |
+| [`the_gentlemen/`](the_gentlemen/) | The Gentlemen (Storm-2697) ransomware: Go locker (Windows, Linux, unpacked memory) and the ransom note; the VMProtect-packed build is a documented miss |
 
 Test: `python tests/run_yara_tests.py --compile-only` (CI) or with `--samples` / `--negatives` (see the top README).

@@ -1,0 +1,1304 @@
+{
+ "_warning": "MACHINE-READABLE, NOT DEFANGED: values are live indicators. Do not browse or fetch them.",
+ "case": "2026-11-the-gentlemen",
+ "license": "CC0-1.0",
+ "count": 144,
+ "iocs": [
+  {
+   "type": "sha256",
+   "value": "025fc0976c548fb5a880c83ea3eb21a5f23c5d53c4e51e862bb893c11adf712a",
+   "first_seen": "2025-12-01",
+   "role": "The Gentlemen locker (Windows PE, 2,963,456 B). VirusTotal 2026-11-19: 57 engines malicious, 22 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.A trojan); first submitted 2025-12-01. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 7f11809925adc6657e84165fdf780816.",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "0d07a653649aefcc92c3315925cde3085b02b9a50f60cddf50b571fde3763955",
+   "first_seen": "2026-08-05",
+   "role": "The Gentlemen locker (Windows PE, 4,217,344 B), resolved from the MD5 ff709591615a26f037a465ce97cc59d6 on the ransomware.live list. VirusTotal 2026-11-19: 48 engines malicious, 16 with a Gentlemen family label (Trojan.Win32.Gentlemen.j!c); MD5 ff709591615a26f037a465ce97cc59d6. Not on MalwareBazaar; bytes not analysed by us",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "1334f0189a8e6dbc48456fa4b482c5726ab7609f7fa652fcc4c1a96f2334436f",
+   "first_seen": "2026-04-14",
+   "role": "The Gentlemen locker (Windows PE, 3,975,680 B). VirusTotal 2026-11-19: 56 engines malicious, 20 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.B trojan); first submitted 2026-04-14. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 736a6b312fe80efea9bc2e482629be06.",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "1af419b36a5edefef387409e2b3248c9223f7dc49a4f7b15ea095d371c3a70b2",
+   "first_seen": "2026-04-09",
+   "role": "The Gentlemen locker (Windows PE, 3,885,056 B). VirusTotal 2026-11-19: 56 engines malicious, 20 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.B trojan); first submitted 2026-04-09. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 10ca9a4040001560d053b7e7885c1b95.",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "1d7d51d51f0d12661db27b7d7c06320f8cc51eabfd2550c298141ebc24704451",
+   "first_seen": "2026-08-13",
+   "role": "The Gentlemen locker (Windows PE, 4,217,344 B), resolved from the MD5 88e824ea42dc271f4992957584b57d64 on the ransomware.live list. VirusTotal 2026-11-19: 51 engines malicious, 16 with a Gentlemen family label (Trojan.Win32.Gentlemen.j!c); MD5 88e824ea42dc271f4992957584b57d64. Not on MalwareBazaar; bytes not analysed by us",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "1eece1e1ba4b96e6c784729f0608ad2939cfb67bc4236dfababbe1d09268960c",
+   "first_seen": "2025-12-24",
+   "role": "The Gentlemen locker (Linux ELF, 36,424 B). VirusTotal 2026-11-19: 34 engines malicious, 18 with a Gentlemen family label (e.g. ESET-NOD32 Linux/Filecoder.Gentlemen.A trojan); first submitted 2025-12-24. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "228fc86acbaa6626051fd189932cb1768254aec5a9539771cee8a567103bbec1",
+   "first_seen": "2026-07-09",
+   "role": "The Gentlemen locker (Windows PE, 4,214,784 B), resolved from the MD5 6440dff8fd8156ef54f6814207983d65 on the ransomware.live list. VirusTotal 2026-11-19: 55 engines malicious, 16 with a Gentlemen family label (Trojan.Win32.Gentlemen.j!c); MD5 6440dff8fd8156ef54f6814207983d65. Not on MalwareBazaar; bytes not analysed by us",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "22b38dad7da097ea03aa28d0614164cd25fafeb1383dbc15047e34c8050f6f67",
+   "first_seen": "2026-03-02",
+   "role": "The Gentlemen locker (Windows PE, 3,952,640 B). VirusTotal 2026-11-19: 57 engines malicious, 23 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.A trojan); first submitted 2026-03-02. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 7a262d4cbbc4808932b6af42c4041f06.",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "24ac3588fb8cfbff63b7fdfcbc7dec1f3c60e54e6f949dd69d68e89e0c89d966",
+   "first_seen": "2026-04-14",
+   "role": "The Gentlemen locker (Windows PE, 3,975,680 B). VirusTotal 2026-11-19: 53 engines malicious, 20 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.B trojan); first submitted 2026-04-14. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 1b6d9c7cb4ad65da282fc48a9a30f97e.",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "2da8816369c6163d84fb98790bc1a8511bea3eccd805ae9b4c995944ecf7a672",
+   "first_seen": "2026-10-13",
+   "role": "The Gentlemen locker (Windows PE, 4,217,344 B), resolved from the MD5 886888ccad9b4726c095fd42fce9ea22 on the ransomware.live list. VirusTotal 2026-11-19: 50 engines malicious, 16 with a Gentlemen family label (Trojan.Win32.Gentlemen.j!c); MD5 886888ccad9b4726c095fd42fce9ea22. Not on MalwareBazaar; bytes not analysed by us",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "2ed9494e9b7b68415b4eb151c922c82c0191294d0aa443dd2cb5133e6bfe3d5d",
+   "first_seen": "2025-12-15",
+   "role": "The Gentlemen locker (Windows PE, 3,280,900 B). VirusTotal 2026-11-19: 57 engines malicious, 26 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.A trojan); first submitted 2025-12-15. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 0a454a07e071971832985701bc6e9164.",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "32ead708c8b0e5fcc61c224fb7e9e1b75a88f287d4c5d2867faacec310385134",
+   "first_seen": "2025-09-17",
+   "role": "README-GENTLEMEN.txt extracted from the note zip f8b07ce2 (1,550 B text, MD5 e9d2df69b580a8e41d4811a1433cf090); matches HUNT_Gentlemen_Ransom_Note",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "MalwareBazaar; our static triage 2026-11-18/19"
+  },
+  {
+   "type": "sha256",
+   "value": "3ab9575225e00a83a4ac2b534da5a710bdcf6eb72884944c437b5fbe5c5c9235",
+   "first_seen": "2026-04-03",
+   "role": "The Gentlemen Windows locker (Go, Garble-obfuscated), 2,962,944 B, MalwareBazaar first seen 2026-04-03 (uploader KodaDr). Our static triage: embeds the leak-site onion address, the affiliate Tox ID 88984846...5B9340FD1A8FF40E9A, the persistence names and the footer markers described by Microsoft; matches MAL_Gentlemen_Locker_Go. MD5 4200b46a93c6ab059e2b34ce200c4a5b.",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "MalwareBazaar; our static triage 2026-11-18/19; ransomware.live group page (read 2026-11-18)"
+  },
+  {
+   "type": "sha256",
+   "value": "3c2466d8a4572c26530e6f6bcef01fc1baefb98dbff2c65efaed5599622f51f3",
+   "first_seen": "2026-07-24",
+   "role": "The Gentlemen locker (Windows PE, 4,216,320 B). VirusTotal 2026-11-19: 56 engines malicious, 19 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.D trojan); first submitted 2026-07-24. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 598b222fe1d12453639dc14b390b3fa9.",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "48d9b2ce4fcd6854a3164ce395d7140014e0b58b77680623f3e4ca22d3a6e7fd",
+   "first_seen": "2026-03-03",
+   "role": "The Gentlemen locker (Windows PE, 3,963,904 B). VirusTotal 2026-11-19: 57 engines malicious, 20 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.B trojan); first submitted 2026-03-03. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 7a89b347beb55f63dbcbcfc0beedbe43.",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "4a175eed927c0a477eafb8aa35a93c191748acaa78ac7aecd8ea3c4cd868887c",
+   "first_seen": "2026-04-23",
+   "role": "The Gentlemen locker (Windows PE, 3,966,464 B). VirusTotal 2026-11-19: 53 engines malicious, 17 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.B trojan); first submitted 2026-04-23. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 6f1ece39f46345ff8f0327a93af2312b.",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "4de88220ff6a6dcb137b17d8d3f77ab4bacc39ea4e4d1147f687b021b7a82b8c",
+   "first_seen": "2026-06-01",
+   "role": "The Gentlemen locker (Windows PE, 4,202,496 B), resolved from the MD5 2e8db0587aa8994a1f5bc796dafe33ba on the ransomware.live list. VirusTotal 2026-11-19: 52 engines malicious, 13 with a Gentlemen family label (Multi.Ransomware.Gentlemen); MD5 2e8db0587aa8994a1f5bc796dafe33ba. Not on MalwareBazaar; bytes not analysed by us",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "51b9f246d6da85631131fcd1fabf0a67937d4bdde33625a44f7ee6a3a7baebd2",
+   "first_seen": "2025-09-17",
+   "role": "The Gentlemen locker build, Windows x64, 14,911,488 B, VMProtect-packed (Detect It Easy via VirusTotal), MalwareBazaar first seen 2025-09-17 (uploader JAMESWT_WT, tags GENTLEMEN, WinGO-Filecoder-NP) together with the ransom-note zip f8b07ce2. Attribution rests on the tags, the note zip and three engines with a Gentlemen label (ALYac, AhnLab, Ikarus); no byte-level family evidence because the Go image is encrypted. NOT matched by any rule here (yara/the_gentlemen/README.md). Imphash 9da18038...1aff is shared with SparkRAT, Cobalt Strike, Sliver and LaplasClipper samples: do not block on the imphash. MD5 adf675ffc1acb357f2d9f1a94e016f52.",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "MalwareBazaar; our static triage 2026-11-18/19; ransomware.live group page (read 2026-11-18)"
+  },
+  {
+   "type": "sha256",
+   "value": "53d2484ae1ad6ff9547d90f5f5ccd6ae1dca8cb24e622a07dfc74c9593b2c3fa",
+   "first_seen": "2026-10-22",
+   "role": "The Gentlemen Linux ELF locker (Go), 2,490,504 B, MalwareBazaar first seen 2026-10-22 (uploader BlinkzSec). Our static triage: embeds the leak-site onion address and the affiliate Tox ID C3429265...2872FB (in neither the Check Point nor the ransomware.live list), \"Wipe free space after encryption\" and a VM/database/backup kill list; matches MAL_Gentlemen_Locker_Go",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "MalwareBazaar; our static triage 2026-11-18/19; MalwareBazaar tag Gentlemen + our static triage 2026-11-18"
+  },
+  {
+   "type": "sha256",
+   "value": "586459f1adf018de4586dcd61782839a3ee72d8469944e0f4dd45a6e20598869",
+   "first_seen": "2026-07-23",
+   "role": "The Gentlemen locker (Windows PE, 4,214,784 B), resolved from the MD5 f55f5be6acfe822a2dab793450dc60d7 on the ransomware.live list. VirusTotal 2026-11-19: 54 engines malicious, 18 with a Gentlemen family label (Trojan.Win32.Gentlemen.j!c); MD5 f55f5be6acfe822a2dab793450dc60d7. Not on MalwareBazaar; bytes not analysed by us",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "5dc607c8990841139768884b1b43e1403496d5a458788a1937be139594f01dca",
+   "first_seen": "2026-01-10",
+   "role": "The Gentlemen locker (Linux ELF, 36,424 B). VirusTotal 2026-11-19: 31 engines malicious, 18 with a Gentlemen family label (e.g. ESET-NOD32 Linux/Filecoder.Gentlemen.A trojan); first submitted 2026-01-10. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "6263a85611c02a0b78d5e5620f1f34a99eba3b74f614742e8b0cf29ca8ef4fa5",
+   "first_seen": "2026-06-11",
+   "role": "The Gentlemen locker (Linux ELF, 2,592,894 B), resolved from the MD5 5f319c7e83b8daa6836b8ae674c8e0e6 on the ransomware.live list. VirusTotal 2026-11-19: 30 engines malicious, 10 with a Gentlemen family label (Trojan.Linux.GentleCrypt.4!c); MD5 5f319c7e83b8daa6836b8ae674c8e0e6. Not on MalwareBazaar; bytes not analysed by us",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "62c2c24937d67fdeb43f2c9690ab10e8bb90713af46945048db9a94a465ffcb8",
+   "first_seen": "2025-12-01",
+   "role": "The Gentlemen locker (Windows PE, 3,280,900 B). VirusTotal 2026-11-19: 58 engines malicious, 25 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.A trojan); first submitted 2025-12-01. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 de1a114a2c5552387a1bbb61501bf129.",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "6a70824fc1777f81c8e8289258ac951e6bac7636db5315b6d7e76c5a58b82b6b",
+   "first_seen": "2026-05-20",
+   "role": "The Gentlemen locker (Windows PE, 4,166,144 B), resolved from the MD5 71f152d84b2928c6163724de1cb6fae3 on the ransomware.live list. VirusTotal 2026-11-19: 52 engines malicious, 14 with a Gentlemen family label (Trojan.Win32.Gentlemen.j!c); MD5 71f152d84b2928c6163724de1cb6fae3. Not on MalwareBazaar; bytes not analysed by us",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "7284d45bdbb1e32e3fb1ca6041b448b165795c91a2748de715798238fc8b3bff",
+   "first_seen": "2026-06-10",
+   "role": "The Gentlemen locker (Windows PE, 4,202,496 B), resolved from the MD5 15ced19102f80a843c22480e362c8811 on the ransomware.live list. VirusTotal 2026-11-19: 52 engines malicious, 15 with a Gentlemen family label (Trojan.Win32.Gentlemen.j!c); MD5 15ced19102f80a843c22480e362c8811. Not on MalwareBazaar; bytes not analysed by us",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "788ba200f776a188c248d6c2029f00b5d34be45d4444f7cb89ffe838c39b8b19",
+   "first_seen": "2026-01-04",
+   "role": "The Gentlemen locker (Linux ELF, 2,510,996 B). VirusTotal 2026-11-19: 35 engines malicious, 19 with a Gentlemen family label (e.g. ESET-NOD32 Linux/Filecoder.Gentlemen.B trojan); first submitted 2026-01-04. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 8ee42d16a9381d726591ddc551863931.",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "7a311b584497e8133cd85950fec6132904dd5b02388a9feed3f5e057fb891d09",
+   "first_seen": "2024-12-21",
+   "role": "AV/EDR-killer tool (MalwareBazaar tag KILLAV, uploader JAMESWT_WT 2025-09-12; VirusTotal killav/throttleb family label, 45 engines malicious). Linked to The Gentlemen only by the ransomware.live IOC list (SHA1 c0979ec20b87084317d1bfa50405f7149c3b5c5f); consistent with the ThrottleBlood BYOVD tooling described by Trend Micro. MD5 a88daa62751c212b7579a57f1f4ae8f8",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "ransomware.live group page (read 2026-11-18); MalwareBazaar; VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "7d90023d535096da99bffcb3370008355435d9f022232870f3c27d29be8be60c",
+   "first_seen": "2026-06-24",
+   "role": "The Gentlemen locker (Windows PE, 4,214,784 B), resolved from the MD5 6add66a89721e2b7d817ba0d0f0d660e on the ransomware.live list. VirusTotal 2026-11-19: 53 engines malicious, 17 with a Gentlemen family label (Trojan.Win32.Gentlemen.4!c); MD5 6add66a89721e2b7d817ba0d0f0d660e. Not on MalwareBazaar; bytes not analysed by us",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "7eb2fd5e79e79c3f2a95023d617062908c9d8c5aff9fed8361a5a74dc0d1af75",
+   "first_seen": "2026-07-01",
+   "role": "The Gentlemen locker (Windows PE, 4,214,784 B), resolved from the MD5 926d26fae93d090519ac0f0e1155150e on the ransomware.live list. VirusTotal 2026-11-19: 53 engines malicious, 14 with a Gentlemen family label (Multi.Ransomware.Gentlemen); MD5 926d26fae93d090519ac0f0e1155150e. Not on MalwareBazaar; bytes not analysed by us",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "860a6177b055a2f5aa61470d17ec3c69da24f1cdf0a782237055cba431158923",
+   "first_seen": "2026-02-07",
+   "role": "The Gentlemen locker (Windows PE, 3,971,072 B). VirusTotal 2026-11-19: 57 engines malicious, 19 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.A trojan); first submitted 2026-02-07. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 0b33a1a23b044beb5c9a63aafd35595c.",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "87d25d0e5880b3b5cd30106853cbfc6ef1ad38966b30d9bd5b99df46098e546c",
+   "first_seen": "2026-03-31",
+   "role": "The Gentlemen locker (Windows PE, 3,975,680 B). VirusTotal 2026-11-19: 58 engines malicious, 18 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.B trojan); first submitted 2026-03-31. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 05e9d6d239ea29f0427b02a9bc903be7.",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "8aa0cb69ca2777001e0f4ba0eaab0841592710e4cc5ccd6b0b526d78bbd8bfba",
+   "first_seen": "2025-12-01",
+   "role": "Probable The Gentlemen locker build, Windows PE, VMProtect-packed (VirusTotal family label trojan.egairtigado/vmprotect; names include donavmp.exe), 13,509,120 B. VirusTotal 2026-11-19: 49 engines malicious, only 2 with a Gentlemen label (Symantec Ransom.Gentlemen). Listed by ransomware.live. Not unpacked; no rule matches it",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "8c87134c1b45e990e9568f0a3899b0076f94be16d3c40fa824ac1e6c6ee892db",
+   "first_seen": "2025-12-02",
+   "role": "The Gentlemen locker (Windows PE, 3,128,320 B). VirusTotal 2026-11-19: 45 engines malicious, 20 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.B trojan); first submitted 2025-12-02. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 30b49ae2f685d4403d3013410f80c2e2.",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "91415e0b9fe4e7cbe43ec0558a7adf89423de30d22b00b985c2e4b97e75076b1",
+   "first_seen": "2026-01-14",
+   "role": "The Gentlemen locker (Windows PE, 3,957,760 B). VirusTotal 2026-11-19: 58 engines malicious, 21 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.A trojan); first submitted 2026-01-14. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 1e0f4cd09aa4464179933769b5009251.",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "992c951f4af57ca7cd8396f5ed69c2199fd6fd4ae5e93726da3e198e78bec0a5",
+   "first_seen": "2026-02-26",
+   "role": "SystemBC proxy (staged as socks.exe) from an affiliate intrusion; VirusTotal 2026-11-19: 45 engines malicious (SystemBC/Coroxy family labels). Sibling of the C&C 45.86.230.112",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "Check Point Research DFIR report 2026-04-20; VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "994d6d1edb57f945f4284cc0163ec998861c7496d85f6d45c08657c9727186e3",
+   "first_seen": "2025-12-02",
+   "role": "The Gentlemen locker (Windows PE, 3,293,188 B). VirusTotal 2026-11-19: 53 engines malicious, 21 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.B trojan); first submitted 2025-12-02. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 4609cbac6772a6c61fcf2745cd3b4362.",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "9c6f6c0d7127c95aa1360ad6fb0ba5679527a6ea2cc17eb0bc2162dd1e13cd09",
+   "first_seen": "2026-07-09",
+   "role": "The Gentlemen locker (Windows PE, 4,214,272 B), resolved from the MD5 5d2ff243bafd84603263ab20f3f2d1e7 on the ransomware.live list. VirusTotal 2026-11-19: 54 engines malicious, 13 with a Gentlemen family label (Trojan.Win32.Gentlemen.j!c); MD5 5d2ff243bafd84603263ab20f3f2d1e7. Not on MalwareBazaar; bytes not analysed by us",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "9f61ff4deb8afced8b1ecdc8787a134c63bde632b18293fbfc94a91749e3e454",
+   "first_seen": "2025-11-20",
+   "role": "The Gentlemen locker (Windows PE, 3,534,852 B). VirusTotal 2026-11-19: 54 engines malicious, 22 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.A trojan); first submitted 2025-11-20. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 ed18c524e930cd1c34614f7cc3051dfc.",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "a7a19cab7aab606f833fa8225bc94ec9570a6666660b02cc41a63fe39ea8b0ad",
+   "first_seen": "2026-01-05",
+   "role": "The Gentlemen locker (Windows PE, 3,954,688 B). VirusTotal 2026-11-19: 58 engines malicious, 25 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.A trojan); first submitted 2026-01-05. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 1cc9ae55b1856e4e9796c73f94c2e683.",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "afc30b1a14f2f29572412ba883782eb3ad3a9e6bf9ff9c38aa48ff35a4ee73fa",
+   "first_seen": "2026-05-25",
+   "role": "The Gentlemen locker (Windows PE, 4,156,928 B), resolved from the MD5 f3c6ca1ba97b7f94ab52584dc62ea691 on the ransomware.live list. VirusTotal 2026-11-19: 53 engines malicious, 16 with a Gentlemen family label (Trojan.Win32.Gentlemen.j!c); MD5 f3c6ca1ba97b7f94ab52584dc62ea691. Not on MalwareBazaar; bytes not analysed by us",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "b67958afc982cafbe1c3f114b444d7f4c91a88a3e7a86f89ab8795ac2110d1e6",
+   "first_seen": "2026-04-01",
+   "role": "The Gentlemen locker (Windows PE, 3,975,680 B). VirusTotal 2026-11-19: 34 engines malicious, 9 with a Gentlemen family label (e.g. Microsoft Ransom:Win64/Gentlemen.SH!MTB); first submitted 2026-04-01. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 3b46a729db7ae6af8b19711c9452194d.",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "bd5950d4bd3de1c6d1609b8369b7332ada40c50070a9a3cd8e80ec89b19c48dc",
+   "first_seen": "2026-06-11",
+   "role": "The Gentlemen locker (Windows PE, 4,202,496 B), resolved from the MD5 50d6a53992cb7d6eb09bc71294e5a68f on the ransomware.live list. VirusTotal 2026-11-19: 53 engines malicious, 13 with a Gentlemen family label (Trojan.Win32.Gentlemen.j!c); MD5 50d6a53992cb7d6eb09bc71294e5a68f. Not on MalwareBazaar; bytes not analysed by us",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "c7f7b5a6e7d93221344e6368c7ab4abf93e162f7567e1a7bcb8786cb8a183a73",
+   "first_seen": "2026-04-03",
+   "role": "The Gentlemen locker (Windows PE, 3,975,680 B). VirusTotal 2026-11-19: 48 engines malicious, 17 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.B trojan); first submitted 2026-04-03. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 6ae7c9a7ea0b8c40a64225734f6bd01d.",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "cd66fb941e63ad9a72687cafb050ed5b4d8b97b34461168581c4f150d6501523",
+   "first_seen": "2026-06-26",
+   "role": "The Gentlemen locker (Windows PE, 4,214,784 B), resolved from the MD5 6a54c09873d13b0cd915abe682338669 on the ransomware.live list. VirusTotal 2026-11-19: 54 engines malicious, 16 with a Gentlemen family label (Trojan.Win32.Gentlemen.4!c); MD5 6a54c09873d13b0cd915abe682338669. Not on MalwareBazaar; bytes not analysed by us",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "daf2e4d0b5e859062953821663a332387f99a48e9405834f28f8f170c92bc05d",
+   "first_seen": "2026-07-30",
+   "role": "The Gentlemen locker (Windows PE, 4,217,344 B), resolved from the MD5 1ecaf7098bedaa4ffae0fff3e077f937 on the ransomware.live list. VirusTotal 2026-11-19: 50 engines malicious, 16 with a Gentlemen family label (Multi.Ransomware.Gentlemen); MD5 1ecaf7098bedaa4ffae0fff3e077f937. Not on MalwareBazaar; bytes not analysed by us",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "dce2e5cc00eff2493f8ced546dc51f9d5ef78c5ee56805906ec642dfa77a1c70",
+   "first_seen": "2026-05-01",
+   "role": "The Gentlemen locker (Windows PE, 4,065,792 B). VirusTotal 2026-11-19: 51 engines malicious, 19 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.B trojan); first submitted 2026-05-01. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 698ce57e5f0ecda7b41d2c6c1e7ca177.",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "dfe696ff713318c53fb17731bd4a6585a02c085b590149b19847990b324a0be6",
+   "first_seen": "2026-04-12",
+   "role": "The Gentlemen locker (Windows PE, 3,972,608 B). VirusTotal 2026-11-19: 51 engines malicious, 19 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.B trojan); first submitted 2026-04-12. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 b8683f466e936e45a5ca715c2845563c.",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "ec368ae0b4369b6ef0da244774995c819c63cffb7fd2132379963b9c1640ccd2",
+   "first_seen": "2025-11-18",
+   "role": "The Gentlemen locker (Windows PE, 3,214,336 B). VirusTotal 2026-11-19: 55 engines malicious, 20 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.A trojan); first submitted 2025-11-18. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 5f5bf7fc7a9ac89ce0bbb07bd1160078.",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "efaf8e7422ffd09c7f03f1a5b4e5c2cc32b05334c18d1ccb9673667f8f43108f",
+   "first_seen": "2026-01-16",
+   "role": "The Gentlemen locker (Windows PE, 3,956,224 B). VirusTotal 2026-11-19: 57 engines malicious, 21 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.A trojan); first submitted 2026-01-16. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 a2a13b8da7370f5f4753d81c7958dfcb.",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "f483faa2b9c9815a0efb08023fe5d243b1b9f7e04b95127c506b6aae824c9d09",
+   "first_seen": "2026-05-24",
+   "role": "The Gentlemen locker (Windows PE, 4,166,144 B), resolved from the MD5 4a9837dd830f8db27380836ef3a6adec on the ransomware.live list. VirusTotal 2026-11-19: 54 engines malicious, 16 with a Gentlemen family label (Trojan.Win32.Gentlemen.j!c); MD5 4a9837dd830f8db27380836ef3a6adec. Not on MalwareBazaar; bytes not analysed by us",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "f736be55193c77af346dbe905e25f6a1dee3ec1aedca8989ad2088e4f6576b12",
+   "first_seen": "2026-02-19",
+   "role": "The Gentlemen locker (Windows PE, 3,971,072 B). VirusTotal 2026-11-19: 58 engines malicious, 21 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.A trojan); first submitted 2026-02-19. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 ffb6011e7c82355046988166dd896930.",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "f8b07ce20ae77fec0905724a466196a5ba8281e9ba9534808ab7e7bf15f37516",
+   "first_seen": "2025-09-17",
+   "role": "ZIP (1,116 B) holding README-GENTLEMEN.txt: ransom note with the admin Tox ID F8E24C7F...98E, CmpID 4a94d2b7... and \"239 HOURS LEFT\"; MalwareBazaar first seen 2025-09-17 (uploader JAMESWT_WT). Extracted note sha256 32ead708...5134 matches HUNT_Gentlemen_Ransom_Note",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "MalwareBazaar; our static triage 2026-11-18/19; MalwareBazaar tag Gentlemen + our static triage 2026-11-18"
+  },
+  {
+   "type": "sha256",
+   "value": "fc75ed2159e0c8274076e46a37671cfb8d677af9f586224da1713df89490a958",
+   "first_seen": "2026-03-31",
+   "role": "The Gentlemen locker (Windows PE, 3,968,512 B). VirusTotal 2026-11-19: 56 engines malicious, 21 with a Gentlemen family label (e.g. ESET-NOD32 WinGo/Filecoder.Gentlemen.B trojan); first submitted 2026-03-31. Listed by ransomware.live as a Gentlemen IOC; not on MalwareBazaar; bytes not analysed by us. MD5 7b885b446bbd9b450146c88f84c64f30.",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "3c2182cb0bc7528829ef03f1b1745a92bcc47d917eb8870862488f21fdf1a6d6",
+   "first_seen": "2026-11-18",
+   "role": "Listed by ransomware.live as a Gentlemen locker/tool hash; unknown to VirusTotal (HTTP 404 on 2026-11-19) and to MalwareBazaar; not verified",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "ransomware.live group page (read 2026-11-18)"
+  },
+  {
+   "type": "sha256",
+   "value": "6a3ab9e984a759d55af4e84487d1fc44683065cc9a1089d5aa4ad1c0e4e84a63",
+   "first_seen": "2026-11-18",
+   "role": "Listed by ransomware.live as a Gentlemen locker/tool hash; unknown to VirusTotal (HTTP 404 on 2026-11-19) and to MalwareBazaar; not verified",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "ransomware.live group page (read 2026-11-18)"
+  },
+  {
+   "type": "sha256",
+   "value": "82124831a87b291b624dec47607eddf55aaadb104dab41650a90ffeeebbf69cc",
+   "first_seen": "2026-07-02",
+   "role": "Resolved from the MD5 3dc129c6e1e15e1a47ab9fb71e30e939 on the ransomware.live Gentlemen list: ELF, 2,490,504 B, VirusTotal 2026-11-19: 30 engines malicious, only 8 with a Gentlemen family label. Candidate: not enough engines agree on the family; bytes not analysed by us",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "b65a8d20139cfb37d422cd6064461e671a7cfb0420efb47f2270ae0a89802ad8",
+   "first_seen": "2026-06-23",
+   "role": "Resolved from the MD5 55adc1b1cd21895765d8aff36d894382 on the ransomware.live Gentlemen list: ELF, 2,592,894 B, VirusTotal 2026-11-19: 18 engines malicious, only 2 with a Gentlemen family label. Candidate: not enough engines agree on the family; bytes not analysed by us",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "ransomware.live group page (read 2026-11-18); VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "c46b5a18ab3fb5fd1c5c8288a41c75bf0170c10b5e829af89370a12c86dd10f8",
+   "first_seen": "2026-11-18",
+   "role": "Listed by ransomware.live as a Gentlemen locker/tool hash; unknown to VirusTotal (HTTP 404 on 2026-11-19) and to MalwareBazaar; not verified",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "ransomware.live group page (read 2026-11-18)"
+  },
+  {
+   "type": "sha256",
+   "value": "fe1033335a045c696c900d435119d210361966e2fb5cd1ba3382608cfa2c8e68",
+   "first_seen": "2026-05-27",
+   "role": "gentlemen.bmp wallpaper image named by Check Point (JPEG data, 0 VirusTotal detections): hunting pivot for the locker wallpaper, not a blocklist item",
+   "verdict": "hunting-pivot",
+   "confidence": "low",
+   "source": "Check Point Research DFIR report 2026-04-20; VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "4c82fbafef9bab484a2fbe23e4ec8aac06e8e296d6c9e496f4a589f97fd4ab71",
+   "first_seen": "2022-02-02",
+   "role": "Signed PowerRun utility (MalwareBazaar tag HackTool-PowerRun, SecuriteInfoCom 2024-07-09; 25 VirusTotal engines malicious, none with a Gentlemen label). Listed by ransomware.live (SHA1 e00293ce0eb534874efd615ae590cf6aa3858ba4) without a stated role. Dual-use tool: do not block by hash alone",
+   "verdict": "dual-use-tool",
+   "confidence": "low",
+   "source": "ransomware.live group page (read 2026-11-18); MalwareBazaar; VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "078163d5c16f64caa5a14784323fd51451b8c831c73396b967b4e35e6879937b",
+   "first_seen": "2023-04-11",
+   "role": "Sysinternals PsExec / psexesvc embedded in the locker for spread. Legitimate signed tool: context only, do not block",
+   "verdict": "shared-or-legit-infrastructure",
+   "confidence": "high",
+   "source": "Check Point Research DFIR report 2026-04-20; VirusTotal 2026-11-19"
+  },
+  {
+   "type": "sha256",
+   "value": "cc14df781475ef0f3f2c441d03a622ea67cd86967526f8758ead6f45174db78e",
+   "first_seen": "2023-04-11",
+   "role": "Sysinternals PsExec / psexesvc embedded in the locker for spread. Legitimate signed tool: context only, do not block",
+   "verdict": "shared-or-legit-infrastructure",
+   "confidence": "high",
+   "source": "Check Point Research DFIR report 2026-04-20; VirusTotal 2026-11-19"
+  },
+  {
+   "type": "ipv4",
+   "value": "45.86.230.112",
+   "first_seen": "2026-04-20",
+   "role": "SystemBC C&C: socks.exe tried to reach it in a Gentlemen affiliate intrusion (blocked); telemetry showed 1,570+ victims (Check Point DFIR). Port 4001 is on ThreatFox ID 1917834 (reporter dyingbreds_, win.systembc, confidence 100): credited, not resubmitted. Liveness not checked by us",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "Check Point Research DFIR report 2026-04-20; ThreatFox 1917834 (dyingbreds_)"
+  },
+  {
+   "type": "ipv4",
+   "value": "91.107.247.163",
+   "first_seen": "2026-04-20",
+   "role": "Cobalt Strike C&C used in a Gentlemen affiliate intrusion: a rundll32 payload connected over ports 443 and later 80 (Check Point DFIR, published 2026-04-20). Liveness not checked by us",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "Check Point Research DFIR report 2026-04-20"
+  },
+  {
+   "type": "ipv4",
+   "value": "178.130.46.120",
+   "first_seen": "2026-11-18",
+   "role": "Listed in the ransomware.live IOC block with no stated role. Hosting network per ipinfo.io 2026-11-19: AS215540 Global Connectivity Solutions. Candidate only: not shown to be C2, not a blocklist item",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "ransomware.live group page (read 2026-11-18)"
+  },
+  {
+   "type": "ipv4",
+   "value": "192.42.116.104",
+   "first_seen": "2026-11-18",
+   "role": "Listed in the ransomware.live IOC block with no stated role. Hosting network per ipinfo.io 2026-11-19: AS215125 Church of Cyberology. Candidate only: not shown to be C2, not a blocklist item",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "ransomware.live group page (read 2026-11-18)"
+  },
+  {
+   "type": "ipv4",
+   "value": "193.143.1.142",
+   "first_seen": "2026-11-18",
+   "role": "Listed in the ransomware.live IOC block with no stated role. Hosting network per ipinfo.io 2026-11-19: AS198953 Proton66. Candidate only: not shown to be C2, not a blocklist item",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "ransomware.live group page (read 2026-11-18)"
+  },
+  {
+   "type": "ipv4",
+   "value": "193.228.128.2",
+   "first_seen": "2026-11-18",
+   "role": "Listed in the ransomware.live IOC block with no stated role. Hosting network per ipinfo.io 2026-11-19: AS215540 Global Connectivity Solutions. Candidate only: not shown to be C2, not a blocklist item",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "ransomware.live group page (read 2026-11-18)"
+  },
+  {
+   "type": "ipv4",
+   "value": "194.87.31.69",
+   "first_seen": "2026-11-18",
+   "role": "Listed in the ransomware.live IOC block with no stated role. Hosting network per ipinfo.io 2026-11-19: AS215540 Global Connectivity Solutions. Candidate only: not shown to be C2, not a blocklist item",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "ransomware.live group page (read 2026-11-18)"
+  },
+  {
+   "type": "ipv4",
+   "value": "89.185.80.134",
+   "first_seen": "2026-11-18",
+   "role": "Listed in the ransomware.live IOC block with no stated role. Hosting network per ipinfo.io 2026-11-19: AS215540 Global Connectivity Solutions. Candidate only: not shown to be C2, not a blocklist item",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "ransomware.live group page (read 2026-11-18)"
+  },
+  {
+   "type": "ipv4",
+   "value": "92.39.211.142",
+   "first_seen": "2026-11-18",
+   "role": "Listed in the ransomware.live IOC block with no stated role. Hosting network per ipinfo.io 2026-11-19: AS39001 MTS. Candidate only: not shown to be C2, not a blocklist item",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "ransomware.live group page (read 2026-11-18)"
+  },
+  {
+   "type": "endpoint",
+   "value": "45.86.230.112:4001",
+   "first_seen": "2026-04-20",
+   "role": "SystemBC C&C endpoint, taken from ThreatFox 1917834 (dyingbreds_)",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "ThreatFox 1917834 (dyingbreds_); Check Point Research DFIR report 2026-04-20"
+  },
+  {
+   "type": "endpoint",
+   "value": "91.107.247.163:443",
+   "first_seen": "2026-04-20",
+   "role": "Cobalt Strike C&C endpoint (port named by Check Point DFIR)",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "Check Point Research DFIR report 2026-04-20"
+  },
+  {
+   "type": "endpoint",
+   "value": "91.107.247.163:80",
+   "first_seen": "2026-04-20",
+   "role": "Cobalt Strike C&C endpoint (port named by Check Point DFIR)",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "Check Point Research DFIR report 2026-04-20"
+  },
+  {
+   "type": "endpoint",
+   "value": "194.87.31.69:36137",
+   "first_seen": "2026-11-18",
+   "role": "Listed in the ransomware.live IOC block with no stated role. Hosting network per ipinfo.io 2026-11-19: AS215540 Global Connectivity Solutions. Candidate only: not shown to be C2, not a blocklist item",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "ransomware.live group page (read 2026-11-18)"
+  },
+  {
+   "type": "domain",
+   "value": "thegentlemen.cc",
+   "first_seen": "2026-11-18",
+   "role": "Listed in the ransomware.live IOC block with no stated role (possibly contact or mirror). Candidate only",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "ransomware.live group page (read 2026-11-18)"
+  },
+  {
+   "type": "domain",
+   "value": "thegentlemen.st",
+   "first_seen": "2026-11-18",
+   "role": "Listed in the ransomware.live IOC block with no stated role (possibly contact or mirror). Candidate only",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "ransomware.live group page (read 2026-11-18)"
+  },
+  {
+   "type": "onion",
+   "value": "i2ohjeeqe37jre4f2u7pyq73cbm6lecumdxapkvrlryna6rc3it4zsid.onion",
+   "first_seen": "2025-09-01",
+   "role": "Older leak-site address; offline per ransomware.live, unreachable in our 2026-11-18 request",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "ransomware.live group page (read 2026-11-18)"
+  },
+  {
+   "type": "onion",
+   "value": "tezwsse5czllksjb7cwp65rvnk4oobmzti2znn42i43bjdfd2prqqkad.onion",
+   "first_seen": "2025-09-09",
+   "role": "Active leak site (\"Gentlecloud Protection\"); embedded in the lockers 3ab95752 and 53d2484a and in the note; AIL first seen 2025-09-09. Site-wide anti-bot page when requested on 2026-11-18. Do not browse",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18); AIL onion-lookup; our static triage"
+  },
+  {
+   "type": "onion",
+   "value": "nsocks4pvtcewb2ora3zk47ksx7dvazbxyhzp4myhegpthgkphpi7aad.onion",
+   "first_seen": "2026-05-04",
+   "role": "SOCKS proxy service seen in the leaked chat corpus per Ransom-ISAC; not visited. Do not browse",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "Ransom-ISAC leak analysis"
+  },
+  {
+   "type": "onion",
+   "value": "xcsqtdobtmdhsjkyjz6iydfowh7bps5dd3a2xg53oirylnohednc4syd.onion",
+   "first_seen": "2026-05-04",
+   "role": "Internal Rocket.Chat of the group (page title \"ArmCorp\") that leaked in May 2026, per Ransom-ISAC; not visited. Do not browse",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "Ransom-ISAC leak analysis"
+  },
+  {
+   "type": "tox-id",
+   "value": "13343E50C1B3466F0EA35B5B3E55A044CB7132FD28A8665EFEA0E5848E276D548C21B79F15C2",
+   "first_seen": "2026-11-18",
+   "role": "Negotiation Tox ID (do not contact)",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "ransomware.live group page (read 2026-11-18)"
+  },
+  {
+   "type": "tox-id",
+   "value": "15CE8D5DB0BAC3BCBB1FA69F2E672CC54EFBEC7684DA792F3CBF8B007A9FEA1D16374560DFA5",
+   "first_seen": "2026-11-18",
+   "role": "Affiliate/admin Tox ID from the 29 locker campaigns Check Point profiled (do not contact)",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "Check Point Research \"Thus Spoke...The Gentlemen\""
+  },
+  {
+   "type": "tox-id",
+   "value": "2F1A9C8B8AA163BBB84FF799A0954B232C279C5E9EE42505955288EAAD28685A2BC0713C7745",
+   "first_seen": "2026-11-18",
+   "role": "Affiliate/admin Tox ID from the 29 locker campaigns Check Point profiled (do not contact)",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "Check Point Research \"Thus Spoke...The Gentlemen\""
+  },
+  {
+   "type": "tox-id",
+   "value": "617DFC4DF0E7397EC467C4DB3D77DA687DDBCDA60D5AA9BD0B0DA3537C170805018E21475B15",
+   "first_seen": "2026-11-18",
+   "role": "Negotiation Tox ID (do not contact)",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "ransomware.live group page (read 2026-11-18)"
+  },
+  {
+   "type": "tox-id",
+   "value": "6B2A19806036D972F90F03F593C2BAC61F8D002CD1C9B0B11B250C59B7807867D6B616E07E04",
+   "first_seen": "2026-11-18",
+   "role": "Negotiation Tox ID (do not contact)",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "ransomware.live group page (read 2026-11-18)"
+  },
+  {
+   "type": "tox-id",
+   "value": "88984846080D639C9A4EC394E53BA616D550B2B3AD691942EA2CCD33AA5B9340FD1A8FF40E9A",
+   "first_seen": "2026-11-18",
+   "role": "Affiliate Tox ID per Check Point, also embedded in the Windows locker 3ab95752 (do not contact)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "Check Point Research \"Thus Spoke...The Gentlemen\""
+  },
+  {
+   "type": "tox-id",
+   "value": "98C132E2B20B531BE6604397D97040C1E9EB42FCE12EDF119BCE8B4031CA5C70DAF5E65FA3C3",
+   "first_seen": "2026-11-18",
+   "role": "Negotiation Tox ID (do not contact)",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "ransomware.live group page (read 2026-11-18)"
+  },
+  {
+   "type": "tox-id",
+   "value": "C3429265C69E82195A7D3F9F95E05E2168BB87F90FC6C41B8F1D0B68544DDF7769808B2872FB",
+   "first_seen": "2026-11-18",
+   "role": "Affiliate Tox ID embedded in the Linux locker 53d2484a; not in the Check Point or ransomware.live lists (do not contact)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "MalwareBazaar tag Gentlemen + our static triage 2026-11-18"
+  },
+  {
+   "type": "tox-id",
+   "value": "D2CBA43A1AF6D965432AE11487726DB84D2945CF2CD975D7774B76B54AF052418AC2E59ADA69",
+   "first_seen": "2026-11-18",
+   "role": "Affiliate/admin Tox ID from the 29 locker campaigns Check Point profiled (do not contact)",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "Check Point Research \"Thus Spoke...The Gentlemen\""
+  },
+  {
+   "type": "tox-id",
+   "value": "D527959A7BC728CB272A0DB683B547F079C98012201A48DD2792B84604E8BC29F6E6BDB8003F",
+   "first_seen": "2026-11-18",
+   "role": "Affiliate/admin Tox ID from the 29 locker campaigns Check Point profiled (do not contact)",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "Check Point Research \"Thus Spoke...The Gentlemen\""
+  },
+  {
+   "type": "tox-id",
+   "value": "E717A4A06F1272E7F2991716B12575D17463CAB6262A900C1E71F7A5BFCA260E41433BAD7D34",
+   "first_seen": "2026-11-18",
+   "role": "Negotiation Tox ID (do not contact)",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "ransomware.live group page (read 2026-11-18)"
+  },
+  {
+   "type": "tox-id",
+   "value": "F8E24C7F5B12CD69C44C73F438F65E9BF560ADF35EBBDF92CF9A9B84079F8F04060FF98D098E",
+   "first_seen": "2026-11-18",
+   "role": "Admin (zeta88 / hastalamuerte) Tox ID per Check Point; also the NEGO TOX of the NVIDIA listing and the contact in the 2025-09 note zip (do not contact)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "ransomware.live group page (read 2026-11-18)"
+  },
+  {
+   "type": "tox-id",
+   "value": "F96C481CBB0D6E7BDA49C6D68CFDB1D284354961534EDEEDA854C672B48A8D6B7146F90BDACB",
+   "first_seen": "2026-11-18",
+   "role": "Affiliate/admin Tox ID from the 29 locker campaigns Check Point profiled (do not contact)",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "Check Point Research \"Thus Spoke...The Gentlemen\""
+  },
+  {
+   "type": "tox-id",
+   "value": "88984846080D639C9A4EC394E53BA616D550B2B3AD691942EA2CCD33AA589340FD1A8FF40E9A",
+   "first_seen": "2026-11-18",
+   "role": "ransomware.live copy of an affiliate Tox ID that differs by one character (...33AA589340... vs ...33AA5B9340...) from the Check Point value and the bytes of sample 3ab95752; probably a transcription error (do not contact)",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "ransomware.live group page (read 2026-11-18)"
+  },
+  {
+   "type": "tox-id",
+   "value": "7862AE03A73AAC2994A61DF1F635347F2D1731A77CACC155594C6B681D201F7AD6817AD3AB0A",
+   "first_seen": "2026-11-18",
+   "role": "Tox ID of the May-2026 chat-leak SELLER (n7778/n345), not the group (Check Point): context only (do not contact)",
+   "verdict": "context-not-group",
+   "confidence": "medium",
+   "source": "Check Point Research \"Thus Spoke...The Gentlemen\""
+  },
+  {
+   "type": "session-id",
+   "value": "050faaedd876483d807abfc0fd70274d31f42bbc8a8e1c1abc626a70fe62ae3f2d",
+   "first_seen": "2026-11-18",
+   "role": "Negotiation Session ID listed by ransomware.live (do not contact)",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "ransomware.live group page (read 2026-11-18)"
+  },
+  {
+   "type": "session-id",
+   "value": "05809b2da1d5b1a302f48b5767fd1843d54f3c516f9ab0eb26b544ffa73340292e",
+   "first_seen": "2026-11-18",
+   "role": "Negotiation Session ID listed by ransomware.live (do not contact)",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "ransomware.live group page (read 2026-11-18)"
+  },
+  {
+   "type": "email",
+   "value": "elsignore@onionmail.org",
+   "first_seen": "2026-11-18",
+   "role": "Negotiation / contact e-mail listed by ransomware.live (do not contact)",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "ransomware.live group page (read 2026-11-18)"
+  },
+  {
+   "type": "email",
+   "value": "thegentlemen88@atomicmail.io",
+   "first_seen": "2026-11-18",
+   "role": "Negotiation / contact e-mail listed by ransomware.live (do not contact)",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "ransomware.live group page (read 2026-11-18)"
+  },
+  {
+   "type": "actor-handle",
+   "value": "Avoid",
+   "first_seen": "2025-09-01",
+   "role": "RAMP vendor account assessed by Ransom-ISAC as linked to zeta88 (assessment, not confirmed)",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "Ransom-ISAC leak analysis"
+  },
+  {
+   "type": "actor-handle",
+   "value": "Bl0ck",
+   "first_seen": "2026-05-04",
+   "role": "Member or affiliate handle seen in the leaked Rocket.Chat (Check Point)",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "Check Point Research \"Thus Spoke...The Gentlemen\""
+  },
+  {
+   "type": "actor-handle",
+   "value": "JeLLy",
+   "first_seen": "2026-05-04",
+   "role": "Member or affiliate handle seen in the leaked Rocket.Chat (Check Point)",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "Check Point Research \"Thus Spoke...The Gentlemen\""
+  },
+  {
+   "type": "actor-handle",
+   "value": "Kunder",
+   "first_seen": "2026-05-04",
+   "role": "Member or affiliate handle seen in the leaked Rocket.Chat (Check Point)",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "Check Point Research \"Thus Spoke...The Gentlemen\""
+  },
+  {
+   "type": "actor-handle",
+   "value": "Mamba",
+   "first_seen": "2026-05-04",
+   "role": "Member or affiliate handle seen in the leaked Rocket.Chat (Check Point)",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "Check Point Research \"Thus Spoke...The Gentlemen\""
+  },
+  {
+   "type": "actor-handle",
+   "value": "Protagor",
+   "first_seen": "2026-05-04",
+   "role": "Member or affiliate handle seen in the leaked Rocket.Chat (Check Point)",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "Check Point Research \"Thus Spoke...The Gentlemen\""
+  },
+  {
+   "type": "actor-handle",
+   "value": "The Gentlemen",
+   "first_seen": "2025-07-22",
+   "role": "Forum alias of the RaaS admin (zeta88: technical operator, first recruitment post 2025-09; hastalamuerte: business persona; \"The Gentlemen\" forum account) per Check Point and Ransom-ISAC",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "Check Point Research \"Thus Spoke...The Gentlemen\""
+  },
+  {
+   "type": "actor-handle",
+   "value": "Wick",
+   "first_seen": "2026-05-04",
+   "role": "Member or affiliate handle seen in the leaked Rocket.Chat (Check Point)",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "Check Point Research \"Thus Spoke...The Gentlemen\""
+  },
+  {
+   "type": "actor-handle",
+   "value": "hastalamuerte",
+   "first_seen": "2025-07-22",
+   "role": "Forum alias of the RaaS admin (zeta88: technical operator, first recruitment post 2025-09; hastalamuerte: business persona; \"The Gentlemen\" forum account) per Check Point and Ransom-ISAC",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "Check Point Research \"Thus Spoke...The Gentlemen\""
+  },
+  {
+   "type": "actor-handle",
+   "value": "mAst3r",
+   "first_seen": "2026-05-04",
+   "role": "Member or affiliate handle seen in the leaked Rocket.Chat (Check Point)",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "Check Point Research \"Thus Spoke...The Gentlemen\""
+  },
+  {
+   "type": "actor-handle",
+   "value": "qbit",
+   "first_seen": "2026-05-04",
+   "role": "Member or affiliate handle seen in the leaked Rocket.Chat (Check Point)",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "Check Point Research \"Thus Spoke...The Gentlemen\""
+  },
+  {
+   "type": "actor-handle",
+   "value": "quant",
+   "first_seen": "2026-05-04",
+   "role": "Member or affiliate handle seen in the leaked Rocket.Chat (Check Point)",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "Check Point Research \"Thus Spoke...The Gentlemen\""
+  },
+  {
+   "type": "actor-handle",
+   "value": "zeta88",
+   "first_seen": "2025-07-22",
+   "role": "Forum alias of the RaaS admin (zeta88: technical operator, first recruitment post 2025-09; hastalamuerte: business persona; \"The Gentlemen\" forum account) per Check Point and Ransom-ISAC",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "Check Point Research \"Thus Spoke...The Gentlemen\""
+  },
+  {
+   "type": "actor-handle",
+   "value": "XxHDSandwichxX",
+   "first_seen": "2026-05-05",
+   "role": "Seller of the May-2026 chat leak on a criminal forum; not part of the group",
+   "verdict": "context-not-group",
+   "confidence": "medium",
+   "source": "KELA chat-leak analysis"
+  },
+  {
+   "type": "actor-handle",
+   "value": "n345",
+   "first_seen": "2026-05-05",
+   "role": "Seller of the May-2026 chat leak on a criminal forum; not part of the group",
+   "verdict": "context-not-group",
+   "confidence": "medium",
+   "source": "Ransom-ISAC leak analysis"
+  },
+  {
+   "type": "actor-handle",
+   "value": "n7778",
+   "first_seen": "2026-05-05",
+   "role": "Seller of the May-2026 chat leak on a criminal forum; not part of the group",
+   "verdict": "context-not-group",
+   "confidence": "medium",
+   "source": "KELA chat-leak analysis"
+  },
+  {
+   "type": "actor-handle",
+   "value": "n789",
+   "first_seen": "2026-05-05",
+   "role": "Seller of the May-2026 chat leak on a criminal forum; not part of the group",
+   "verdict": "context-not-group",
+   "confidence": "medium",
+   "source": "KELA chat-leak analysis"
+  },
+  {
+   "type": "x-account",
+   "value": "TheGentlemen25 (x.com)",
+   "first_seen": "2026-11-18",
+   "role": "X account named in ransom notes (suspended per fxtwitter API on 2026-11-18)",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "Check Point Research DFIR report 2026-04-20"
+  },
+  {
+   "type": "x-account",
+   "value": "TheGentlemen26 (x.com)",
+   "first_seen": "2026-11-18",
+   "role": "X account named in ransom notes (note variant 3)",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "ransom note variant 3 (ransomware.live)"
+  },
+  {
+   "type": "filename",
+   "value": "README-GENTLEMEN.txt",
+   "first_seen": "2026-11-18",
+   "role": "Ransom note file name",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "Microsoft Security blog 2026-05-28"
+  },
+  {
+   "type": "filename",
+   "value": "All.exe",
+   "first_seen": "2026-11-18",
+   "role": "EDR-killer BYOVD tooling named by Trend Micro; generic file names, hunting pivot only",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "Trend Micro 2025"
+  },
+  {
+   "type": "filename",
+   "value": "Allpatch2.exe",
+   "first_seen": "2026-11-18",
+   "role": "EDR-killer BYOVD tooling named by Trend Micro; generic file names, hunting pivot only",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "Trend Micro 2025"
+  },
+  {
+   "type": "filename",
+   "value": "ThrottleBlood.sys",
+   "first_seen": "2026-11-18",
+   "role": "EDR-killer BYOVD tooling named by Trend Micro; generic file names, hunting pivot only",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "Trend Micro 2025"
+  },
+  {
+   "type": "filename",
+   "value": "wipefile.tmp",
+   "first_seen": "2026-11-18",
+   "role": "Free-space wipe file of the --wipe option",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "Microsoft Security blog 2026-05-28"
+  },
+  {
+   "type": "filename",
+   "value": "ktapi.sys",
+   "first_seen": "2026-11-18",
+   "role": "Legitimate Kontron driver abused as a BYOVD zero-day by the group (Expel). Dual-use: do not block by name alone",
+   "verdict": "dual-use-tool",
+   "confidence": "medium",
+   "source": "Expel"
+  },
+  {
+   "type": "string",
+   "value": "--eph-- / --marker-- GENTLEMEN",
+   "first_seen": "2026-11-18",
+   "role": "Encrypted-file footer markers (--eph--<key>, --marker--GENTLEMEN)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "Microsoft Security blog 2026-05-28"
+  },
+  {
+   "type": "string",
+   "value": "LOCKER_BACKGROUND=1",
+   "first_seen": "2026-11-18",
+   "role": "Environment variable of the background SYSTEM worker",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "Microsoft Security blog 2026-05-28"
+  },
+  {
+   "type": "string",
+   "value": "gentlemen_system",
+   "first_seen": "2026-11-18",
+   "role": "Scheduled-task name created by the locker for the SYSTEM worker",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "Microsoft Security blog 2026-05-28"
+  },
+  {
+   "type": "string",
+   "value": ".7mtzhh",
+   "first_seen": "2026-11-18",
+   "role": "Encrypted-file extension seen in the Trend Micro sample (extensions differ per build)",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "Trend Micro 2025"
+  },
+  {
+   "type": "string",
+   "value": ".umc16h",
+   "first_seen": "2026-11-18",
+   "role": "Encrypted-file extension seen in the Microsoft sample (extensions differ per build)",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "Microsoft Security blog 2026-05-28"
+  },
+  {
+   "type": "string",
+   "value": "DefSvc",
+   "first_seen": "2026-11-18",
+   "role": "Remote task/service name used by the spread feature (Microsoft)",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "Microsoft Security blog 2026-05-28"
+  },
+  {
+   "type": "string",
+   "value": "DefU",
+   "first_seen": "2026-11-18",
+   "role": "Remote task/service name used by the spread feature (Microsoft)",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "Microsoft Security blog 2026-05-28"
+  },
+  {
+   "type": "string",
+   "value": "GentlemenCollection",
+   "first_seen": "2026-11-18",
+   "role": "GentleKiller EDR-killer staging directory name (ESET)",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "ESET Research"
+  },
+  {
+   "type": "string",
+   "value": "GupdateS",
+   "first_seen": "2026-11-18",
+   "role": "Run-key value name used for persistence (Microsoft)",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "Microsoft Security blog 2026-05-28"
+  },
+  {
+   "type": "string",
+   "value": "GupdateU",
+   "first_seen": "2026-11-18",
+   "role": "Run-key value name used for persistence (Microsoft)",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "Microsoft Security blog 2026-05-28"
+  },
+  {
+   "type": "string",
+   "value": "UpdateGU",
+   "first_seen": "2026-11-18",
+   "role": "Remote task/service name used by the spread feature (Microsoft)",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "Microsoft Security blog 2026-05-28"
+  },
+  {
+   "type": "string",
+   "value": "UpdateGU2",
+   "first_seen": "2026-11-18",
+   "role": "Remote task/service name used by the spread feature (Microsoft)",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "Microsoft Security blog 2026-05-28"
+  },
+  {
+   "type": "string",
+   "value": "UpdateSvc",
+   "first_seen": "2026-11-18",
+   "role": "Remote task/service name used by the spread feature (Microsoft)",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "Microsoft Security blog 2026-05-28"
+  },
+  {
+   "type": "string",
+   "value": "UpdateSvc2",
+   "first_seen": "2026-11-18",
+   "role": "Remote task/service name used by the spread feature (Microsoft)",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "Microsoft Security blog 2026-05-28"
+  },
+  {
+   "type": "string",
+   "value": "UpdateSystem",
+   "first_seen": "2026-11-18",
+   "role": "Persistence scheduled-task name (Microsoft)",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "Microsoft Security blog 2026-05-28"
+  },
+  {
+   "type": "string",
+   "value": "UpdateUser",
+   "first_seen": "2026-11-18",
+   "role": "Persistence scheduled-task name (Microsoft)",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "Microsoft Security blog 2026-05-28"
+  },
+  {
+   "type": "string",
+   "value": "share$ -> C:\\Temp",
+   "first_seen": "2026-11-18",
+   "role": "Hidden SMB share created for the spread feature (share$ pointing at C:\\Temp)",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "Microsoft Security blog 2026-05-28"
+  },
+  {
+   "type": "sha1",
+   "value": "c12c4d58541cc4f75ae19b65295a52c559570054",
+   "first_seen": "2026-11-18",
+   "role": "Listed by ransomware.live as a Gentlemen SHA1; unknown to VirusTotal (http 404 on 2026-11-19) and to MalwareBazaar; not verified",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "ransomware.live group page (read 2026-11-18)"
+  },
+  {
+   "type": "sha1",
+   "value": "df249727c12741ca176d5f1ccba3ce188a546d28",
+   "first_seen": "2026-11-18",
+   "role": "Listed by ransomware.live as a Gentlemen SHA1; unknown to VirusTotal (http 404 on 2026-11-19) and to MalwareBazaar; not verified",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "ransomware.live group page (read 2026-11-18)"
+  }
+ ]
+}

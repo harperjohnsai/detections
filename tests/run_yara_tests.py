@@ -56,6 +56,12 @@ EXPECTED = {
     '01af2f7049e1562023835ddcbffea76e265ed2906e140ba8a200eb41d37ebf8d': ['MAL_FluxEngine_Loader_dhlib_DLL'],  # dhlib.dll loader, Sep 2026
     'c424a715e3861bc18e0c8223f3dfd909dc4a77a82b9c5a5a135b8d49bac7e8c6': ['MAL_FluxEngine_Payload_Delphi'],  # decrypted payload (Delphi, 4.5 MB)
     '6e6d4084c6c2f3035c2fbda4daf4b705a06938d73bf91f402552b6d4ab522d9b': ['SUSP_FluxEngine_LNK_Squiblydoo_ADS'],  # stage-1 LNK
+    # The Gentlemen (yara/the_gentlemen)
+    '3ab9575225e00a83a4ac2b534da5a710bdcf6eb72884944c437b5fbe5c5c9235': ['MAL_Gentlemen_Locker_Go'],  # Windows locker (Go, garbled), 2026-04
+    '53d2484ae1ad6ff9547d90f5f5ccd6ae1dca8cb24e622a07dfc74c9593b2c3fa': ['MAL_Gentlemen_Locker_Go'],  # Linux ELF locker (Go), 2026-10
+    '32ead708c8b0e5fcc61c224fb7e9e1b75a88f287d4c5d2867faacec310385134': ['HUNT_Gentlemen_Ransom_Note'],  # README-GENTLEMEN.txt (extracted from the note zip)
+    '51b9f246d6da85631131fcd1fabf0a67937d4bdde33625a44f7ee6a3a7baebd2': [],  # DOCUMENTED MISS: VMProtect-packed Windows build, no family-specific rule possible (yara/the_gentlemen/README.md)
+    'f8b07ce20ae77fec0905724a466196a5ba8281e9ba9534808ab7e7bf15f37516': [],  # DOCUMENTED MISS: the note zip (deflate container); the extracted note matches
 }
 ok = True
 
