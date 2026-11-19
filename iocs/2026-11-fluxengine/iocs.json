@@ -107,7 +107,7 @@
    "type": "ipv4",
    "value": "72.167.150.114",
    "first_seen": "2026-11-19",
-   "role": "Panel origin since 2026-11-17 (GoDaddy, AS398101). TCP 443, 22, 9000 and 9002 open on 2026-11-19 from 10 third-party check-host nodes; 9001 and 31337 refused. Never contacted by us",
+   "role": "Panel origin since 2026-11-17 (GoDaddy, AS398101). TCP 443, 22, 9000 and 9002 open on 2026-11-19 on third-party check-host nodes (5 per port; 9000 from IR, RU, SI, US and 9002 from IR, IT, PT); the controls 9001 and 31337 were refused (one node timed out on 31337). Never contacted by us",
    "verdict": "malicious",
    "confidence": "high",
    "source": "DoH; urlscan; check-host (bare TCP via third-party nodes)"

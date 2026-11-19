@@ -89,6 +89,7 @@
         "relationship--1b2832f2-859c-564e-8b15-036b036a54a2",
         "relationship--de2e4a8b-ee13-5271-a47f-8f7144b1620e",
         "relationship--49ea5733-dcef-57b8-8b55-0b5909251400",
+        "relationship--4f6d9c72-af31-5f43-860d-6d57f6aca09c",
         "relationship--21c43074-455f-5f29-b773-ca2abcda506e",
         "relationship--ead9957f-bc29-5cbb-b5a3-f9f864c10828",
         "relationship--20a6e2e9-1b5c-55cd-8b82-7f98f6773ee1",
@@ -423,7 +424,7 @@
       "type": "indicator",
       "id": "indicator--7d4a81c5-22af-564d-bd88-2ad1a5cb19b8",
       "name": "72.167.150.114",
-      "description": "Panel origin since 2026-11-17 (GoDaddy, AS398101). TCP 443, 22, 9000 and 9002 open on 2026-11-19 from 10 third-party check-host nodes; 9001 and 31337 refused. Never contacted by us [verdict: malicious; source: DoH; urlscan; check-host (bare TCP via third-party nodes)]",
+      "description": "Panel origin since 2026-11-17 (GoDaddy, AS398101). TCP 443, 22, 9000 and 9002 open on 2026-11-19 on third-party check-host nodes (5 per port; 9000 from IR, RU, SI, US and 9002 from IR, IT, PT); the controls 9001 and 31337 were refused (one node timed out on 31337). Never contacted by us [verdict: malicious; source: DoH; urlscan; check-host (bare TCP via third-party nodes)]",
       "indicator_types": [
         "malicious-activity"
       ],
@@ -1001,6 +1002,20 @@
       "id": "relationship--49ea5733-dcef-57b8-8b55-0b5909251400",
       "relationship_type": "indicates",
       "source_ref": "indicator--f2154055-cdb9-50c4-8c0b-e3dcecf9afff",
+      "target_ref": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--4f6d9c72-af31-5f43-860d-6d57f6aca09c",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--7d4a81c5-22af-564d-bd88-2ad1a5cb19b8",
       "target_ref": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8"
     },
     {

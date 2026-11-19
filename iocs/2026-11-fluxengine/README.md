@@ -66,7 +66,7 @@ PE32 GUI, Delphi, compiled 2026-11-17 00:02:55 UTC, imphash `1869a844…9af2`. V
 
 - `remoto.painelst[.]com` resolved to `72.167.150[.]114` (GoDaddy, AS398101) and moved there from `72.167.47[.]112` between 2026-11-13 and 2026-11-17. The page "Operador - Login" returned HTTP 200 in urlscan scans on 2026-11-02, 11-10, 11-11 and 11-17.[6]
 - `painelst[.]com`: Dynadot, registered 2026-08-27, Cloudflare name servers.[6] `ip.painelst[.]com` is a Cloudflare-proxied address with no TXT record, so it is not the dead-drop zone.
-- Third-party check-host nodes (bare TCP, ten nodes in six countries) found **9000 and 9002 open** on 72.167.150[.]114, plus 443 and 22; the controls 9001 and 31337 were refused and the public control target answered. VERIFIED: the ports listen on the panel host. INFERRED: TXT `ip.<zone>` points there.
+- Third-party check-host nodes (bare TCP, five nodes per port) found **9000 open** (from IR, RU, SI, US) and **9002 open** (from IR, IT, PT) on 72.167.150[.]114, plus 443 and 22; the controls 9001 and 31337 were refused (one node timed out on 31337) and the public control target answered. VERIFIED: the ports listen on the panel host. INFERRED: TXT `ip.<zone>` points there.
 - Before this case ThreatFox, URLhaus and MalwareBazaar had no entry for the panel, its IPs, `taguje[.]com[.]br`, the payload or the previous build.
 
 ## Indicators
@@ -109,7 +109,7 @@ Hunting pivots: a Delphi process or hollowed `attrib.exe` that lists Cloudflare 
 | | Statement |
 |---|---|
 | VERIFIED (bytes, reproduced by code) | Loader order of work and gates; the container format and that both live containers decrypt to `c424a715…`; per-download re-encryption; the payload's strings, units, C2 channels, commands, targets and the dead-drop mechanism; the LNK command line |
-| VERIFIED (measurement, 2026-11-19) | DoH and RDAP data; ports 9000/9002 open on 72.167.150[.]114 from third-party nodes; NXDOMAIN of `taguje[.]com[.]br` and `nota-fical-online[.]lat` |
+| VERIFIED (measurement, 2026-11-19) | DoH and RDAP data; ports 9000 and 9002 open on 72.167.150[.]114 from third-party nodes (five per port); NXDOMAIN of `taguje[.]com[.]br` and `nota-fical-online[.]lat` |
 | VERIFIED (third-party sandbox) | The 2026-11-12 run of the previous build: zone name, 72.167.47[.]112, 156.73.57[.]2, mutex |
 | INFERRED | Proofpoint and TA2725 link; KL Remota lineage; geofencing at the lure hosts; that the TXT record now points to 72.167.150[.]114; the operator flow behind the lock screen; that the overlay decryption key is a string literal; the persistence layout beyond the loader Run value |
 
