@@ -11,9 +11,11 @@ references:
   - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2034945/"}
   - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2034946/"}
   - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2034947/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2034985/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2035041/"}
   - {source_name: ESET, url: "https://www.welivesecurity.com/2019/11/19/mispadu-advertisement-discounted-unhappy-meal"}
   - {source_name: IBM X-Force, url: "https://www.ibm.com/think/news/mispadu-ursa-c2c-communication-behind-scenes"}
   - {source_name: Cofense, url: "https://cofense.com/blog/mispadu-phishing-malware-baseline"}
 indicates:
   - family: Mispadu
-    role_match: 'payload|download host|exfiltration|persistence|keyboard-hook|config|counter|Upload|Download|Exfiltration|Plain HTTP'
+    role_match: 'payload|download host|exfiltration|persistence|keyboard-hook|config|counter|Upload|Download|Exfiltration|Plain HTTP|Mispadu lure|Stage-2 JScript|stage host'

@@ -2,7 +2,7 @@
  "_warning": "MACHINE-READABLE, NOT DEFANGED: values are live indicators. Do not browse or fetch them.",
  "case": "2026-11-mispadu-ursa",
  "license": "CC0-1.0",
- "count": 27,
+ "count": 90,
  "iocs": [
   {
    "type": "sha256",
@@ -44,7 +44,7 @@
    "type": "ipv4",
    "value": "208.109.36.32",
    "first_seen": "2026-11-19",
-   "role": "Hardcoded in the payload: download host (d1.x, d2.x, pdw.dll) and target of the per-infection counter POST. GoDaddy VPS AS398101; Shodan 2026-10-27: ports 21, 22, 443 open, Let's Encrypt cert issued 2026-09-24 22:04 UTC, about 1 h 40 min before the payload compile time. Never contacted, liveness not checked",
+   "role": "Hardcoded in the payload: download host (d1.x, d2.x, pdw.dll) and target of the per-infection counter POST. GoDaddy VPS AS398101; Shodan 2026-10-27: ports 21, 22, 443 open, Let's Encrypt cert issued 2026-09-24 22:04 UTC, about 1 h 40 min before the payload compile time. No host named by the sample was contacted for the payload analysis. Update 2026-11-19: unreachable (TCP 21/22/80/443 timed out from third-party check-host nodes in two passes, the control target answered; one stage-2 fetch attempt through an anonymising network timed out); it is also the host behind the 22 GDV5 stage-2 URLs",
    "verdict": "malicious",
    "confidence": "high",
    "source": "static analysis (this case); Shodan and VirusTotal passive data"
@@ -98,7 +98,7 @@
    "type": "ipv4",
    "value": "64.95.12.126",
    "first_seen": "2026-11-19",
-   "role": "Hardcoded in the payload: exfiltration host (HTTP POST). BL Networks AS399629 (Dallas); Shodan 2026-11-01: ports 21, 22, 80 open; VirusTotal (2026-11-19): no communicating files. Never contacted, liveness not checked",
+   "role": "Hardcoded in the payload: exfiltration host (HTTP POST). BL Networks AS399629 (Dallas); Shodan 2026-11-01: ports 21, 22, 80 open; VirusTotal (2026-11-19): no communicating files. No host named by the sample was contacted for the payload analysis. Update 2026-11-19: unreachable (TCP 22/80 timed out from third-party check-host nodes in two passes, the control target answered)",
    "verdict": "malicious",
    "confidence": "high",
    "source": "static analysis (this case); Shodan and VirusTotal passive data"
@@ -246,6 +246,573 @@
    "verdict": "reference",
    "confidence": "high",
    "source": "published research"
+  },
+  {
+   "type": "sha256",
+   "value": "ad056314350dbee79296536aed7b4a222f0ba20da3497a81f20d57c0bc972637",
+   "first_seen": "2026-09-29",
+   "role": "GDV5_648770.hta: Mispadu lure (HTA, 12,412 B). Under mshta it requests the stage-2 JScript JfL43/JfL43mde2/ujeio221.js from the stage host. VT first seen 2026-09-29 20:25:16 UTC, 13 detections; bytes not available on free tiers",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035007"
+  },
+  {
+   "type": "sha256",
+   "value": "6c167f706be34f1db11a3734ac964493e658f3a83b6718a3e7f3e6b60c339337",
+   "first_seen": "2026-10-06",
+   "role": "GDV5_547697.zip: Mispadu lure (ZIP, 1,592,737 B): one GDV5 HTA plus a genuinely signed Adobe Download Manager as padding; the bundle read holds the HTA with SHA-256 2c48a9d4cc8738e62d5f8ddc03fdde7a9f52795bfe41b5edd0eb3f929e89c3c8. VT first seen 2026-10-06 10:36:25 UTC, 13 detections; bytes not available on free tiers",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035015"
+  },
+  {
+   "type": "sha256",
+   "value": "2c48a9d4cc8738e62d5f8ddc03fdde7a9f52795bfe41b5edd0eb3f929e89c3c8",
+   "first_seen": "2026-10-06",
+   "role": "GDV5_381041.hta: Mispadu lure (HTA, 12,417 B). Under mshta it requests the stage-2 JScript iRvAKr63/iRvAKr63mde2/thI8Cu801.js from the stage host. VT first seen 2026-10-06 12:33:44 UTC, 13 detections; bytes not available on free tiers",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035008"
+  },
+  {
+   "type": "sha256",
+   "value": "3646a86664a4ba16411ec4e9d4e6c6ab3acc5416bb4e4fe5bfb48e7314a1b48e",
+   "first_seen": "2026-10-06",
+   "role": "GDV5_113019.zip: Mispadu lure (ZIP, 1,592,743 B): one GDV5 HTA plus a genuinely signed Adobe Download Manager as padding; layout INFERRED from size (two of twelve bundles were read). VT first seen 2026-10-06 15:29:23 UTC, 13 detections; bytes not available on free tiers",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035016"
+  },
+  {
+   "type": "sha256",
+   "value": "d375b927cde69bc09feae9044b39962c515f65bec11690162abdea784cf9552b",
+   "first_seen": "2026-10-06",
+   "role": "GDV5_898062.hta: Mispadu lure (HTA, 12,435 B). Under mshta it requests the stage-2 JScript oNbSLZ585/oNbSLZ585mde2/s454591.js from the stage host. VT first seen 2026-10-06 17:24:52 UTC, 13 detections; bytes not available on free tiers",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035027"
+  },
+  {
+   "type": "sha256",
+   "value": "7f9dbb7291d73bb1ff09f9e44f479d00325827f25666ae6bf77ea58b9d821dd1",
+   "first_seen": "2026-10-06",
+   "role": "GDV5_205722.hta: Mispadu lure (HTA, 12,436 B). Under mshta it requests the stage-2 JScript kg91IE74/kg91IE74mde2/LkxS471.js from the stage host. VT first seen 2026-10-06 17:32:07 UTC, 12 detections; bytes not available on free tiers",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035028"
+  },
+  {
+   "type": "sha256",
+   "value": "90de85f03e1865bcf722a1d6cbe8a39961b01e4ea8725d9983b9fd48bda1680e",
+   "first_seen": "2026-10-06",
+   "role": "GDV5_830443.zip: Mispadu lure (ZIP, 1,592,742 B): one GDV5 HTA plus a genuinely signed Adobe Download Manager as padding; layout INFERRED from size (two of twelve bundles were read). VT first seen 2026-10-06 18:09:38 UTC, 19 detections; bytes not available on free tiers",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035017"
+  },
+  {
+   "type": "sha256",
+   "value": "7a3e2b479cb4b07c4741524b500d06f2497ed707b1373371acaa82fdddca39e4",
+   "first_seen": "2026-10-06",
+   "role": "GDV5_833513.zip: Mispadu lure (ZIP, 1,592,724 B): one GDV5 HTA plus a genuinely signed Adobe Download Manager as padding; layout INFERRED from size (two of twelve bundles were read). VT first seen 2026-10-06 18:15:55 UTC, 13 detections; bytes not available on free tiers",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035018"
+  },
+  {
+   "type": "sha256",
+   "value": "16f93de46ee29d57f131d058815addc1b6bbcdd1ec6d7fcfeba74928ddebb3cb",
+   "first_seen": "2026-10-06",
+   "role": "GDV5_717056.hta: Mispadu lure (HTA, 12,411 B). Under mshta it requests the stage-2 JScript zMt15/zMt15mde2/fxDlC9j621.js from the stage host. VT first seen 2026-10-06 18:16:05 UTC, 12 detections; bytes not available on free tiers",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035029"
+  },
+  {
+   "type": "sha256",
+   "value": "4ec6233282a649da27f383b738f45bb060f70385afbfb83495855ff390afb4b4",
+   "first_seen": "2026-10-06",
+   "role": "GDV5_961397.hta: Mispadu lure (HTA, 12,412 B). Under mshta it requests the stage-2 JScript tMp4/tMp4mde2/wnhA731.js from the stage host. VT first seen 2026-10-06 18:18:46 UTC, 13 detections; bytes not available on free tiers",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035009"
+  },
+  {
+   "type": "sha256",
+   "value": "a09ace0660ae71c91bd5c80d52de285b4e40749e2066cc2f1db1db106f39a390",
+   "first_seen": "2026-10-06",
+   "role": "GDV5_965514.hta: Mispadu lure (HTA, 12,441 B). Under mshta it requests the stage-2 JScript lCczLV533/lCczLV533mde2/CIhyY7I851.js from the stage host. VT first seen 2026-10-06 20:21:27 UTC, 13 detections; bytes not available on free tiers",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035030"
+  },
+  {
+   "type": "sha256",
+   "value": "aaa761862ad41edda30d94ba30f8eb2202731476778c7f77114cc734fcbd4ea0",
+   "first_seen": "2026-10-06",
+   "role": "GDV5_943400.hta: Mispadu lure (HTA, 12,400 B). Under mshta it requests the stage-2 JScript ORgm21/ORgm21mde2/so6f6501.js from the stage host. VT first seen 2026-10-06 20:23:13 UTC, 12 detections; bytes not available on free tiers",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035031"
+  },
+  {
+   "type": "sha256",
+   "value": "d66e7a6208be796f431fa3fe82cdb066d6d81524b4f0d94800514bbc005b1e3c",
+   "first_seen": "2026-10-06",
+   "role": "GDV5_915122.zip: Mispadu lure (ZIP, 1,592,724 B): one GDV5 HTA plus a genuinely signed Adobe Download Manager as padding; the bundle read holds the HTA with SHA-256 8120a657cea224f41acef282b807713a09a7d02b3949f55d135236e19f8421bb. VT first seen 2026-10-06 22:11:27 UTC, 26 detections; bytes not available on free tiers",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035019"
+  },
+  {
+   "type": "sha256",
+   "value": "5a071c79bad1e5396b47513aa13a2494cf8a09e262f9707528dad3cbb5ed39b4",
+   "first_seen": "2026-10-06",
+   "role": "GDV5_801446.hta: Mispadu lure (HTA, 12,407 B). Under mshta it requests the stage-2 JScript Wxim14/Wxim14mde2/eArixAb541.js from the stage host. VT first seen 2026-10-06 22:37:30 UTC, 13 detections; bytes not available on free tiers",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035032"
+  },
+  {
+   "type": "sha256",
+   "value": "8120a657cea224f41acef282b807713a09a7d02b3949f55d135236e19f8421bb",
+   "first_seen": "2026-10-07",
+   "role": "GDV5_486441.hta: Mispadu lure (HTA, 12,389 B). Under mshta it requests the stage-2 JScript FIc27/FIc27mde2/CIi741.js from the stage host. VT first seen 2026-10-07 00:21:21 UTC, 27 detections; bytes not available on free tiers",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035010"
+  },
+  {
+   "type": "sha256",
+   "value": "7648cdf34deed8e0880347d81014723583446e87084fc7de4ce21e52f14acb39",
+   "first_seen": "2026-10-07",
+   "role": "GDV5_429956.hta: Mispadu lure (HTA, 12,439 B). Under mshta it requests the stage-2 JScript w9bpi4h18/w9bpi4h18mde2/CaI981.js from the stage host. VT first seen 2026-10-07 09:46:12 UTC, 13 detections; bytes not available on free tiers",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035033"
+  },
+  {
+   "type": "sha256",
+   "value": "97223e1a5a27a2ce2337edd9645cfca4c83de8557e40730beeecf775a8fe14d8",
+   "first_seen": "2026-10-07",
+   "role": "GDV5_19110.zip: Mispadu lure (ZIP, 1,592,726 B): one GDV5 HTA plus a genuinely signed Adobe Download Manager as padding; layout INFERRED from size (two of twelve bundles were read). VT first seen 2026-10-07 12:52:47 UTC, 13 detections; bytes not available on free tiers",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035020"
+  },
+  {
+   "type": "sha256",
+   "value": "42af3604c87aba9b949d8252293b2edf863b1bda463822b936dbf7978c2b8ec3",
+   "first_seen": "2026-10-07",
+   "role": "GDV5_940627.hta: Mispadu lure (HTA, 12,422 B). Under mshta it requests the stage-2 JScript IVAWB41/IVAWB41mde2/JSD7D571.js from the stage host. VT first seen 2026-10-07 13:07:05 UTC, 13 detections; bytes not available on free tiers",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035034"
+  },
+  {
+   "type": "sha256",
+   "value": "785e775013641976d5a919fc9ca584a0f8d7cb9a07068ced598d78bc22e28d6a",
+   "first_seen": "2026-10-07",
+   "role": "GDV5_754856.zip: Mispadu lure (ZIP, 1,592,731 B): one GDV5 HTA plus a genuinely signed Adobe Download Manager as padding; layout INFERRED from size (two of twelve bundles were read). VT first seen 2026-10-07 13:19:49 UTC, 13 detections; bytes not available on free tiers",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035021"
+  },
+  {
+   "type": "sha256",
+   "value": "f96b732960a3a077ea242fc83eaa68ecc35a3b210076811c6149ec888891f4da",
+   "first_seen": "2026-10-07",
+   "role": "GDV5_600730.hta: Mispadu lure (HTA, 12,405 B). Under mshta it requests the stage-2 JScript uVuX98/uVuX98mde2/wToWa171.js from the stage host. VT first seen 2026-10-07 13:22:31 UTC, 13 detections; bytes not available on free tiers",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035035"
+  },
+  {
+   "type": "sha256",
+   "value": "f0ea2863992bb27a64bbc6e415e6a04741942d38efff6f606fe2b8c44f1d296b",
+   "first_seen": "2026-10-07",
+   "role": "GDV5_346042.hta: Mispadu lure (HTA, 12,433 B). Under mshta it requests the stage-2 JScript gOxllx14/gOxllx14mde2/mTOPGTC191.js from the stage host. VT first seen 2026-10-07 14:09:17 UTC, 13 detections; bytes not available on free tiers",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035012"
+  },
+  {
+   "type": "sha256",
+   "value": "2bad36922aa0e1dbd044d90d4dffe5490c023d9d393eb0d761f621248fe707d6",
+   "first_seen": "2026-10-07",
+   "role": "GDV5_889836.zip: Mispadu lure (ZIP, 1,592,740 B): one GDV5 HTA plus a genuinely signed Adobe Download Manager as padding; layout INFERRED from size (two of twelve bundles were read). VT first seen 2026-10-07 14:13:31 UTC, 13 detections; bytes not available on free tiers",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035022"
+  },
+  {
+   "type": "sha256",
+   "value": "965712b295fc7dd1d47703bda84ebdd7d296936de4c27b27a7180c5ee5c5bd28",
+   "first_seen": "2026-10-07",
+   "role": "GDV5_990689.zip: Mispadu lure (ZIP, 1,592,732 B): one GDV5 HTA plus a genuinely signed Adobe Download Manager as padding; layout INFERRED from size (two of twelve bundles were read). VT first seen 2026-10-07 14:14:00 UTC, 13 detections; bytes not available on free tiers",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035023"
+  },
+  {
+   "type": "sha256",
+   "value": "bd03035edecdd6d3633351ebda022dbec9778c1385e8e9ddf876c3361a2315cc",
+   "first_seen": "2026-10-07",
+   "role": "GDV5_356065.zip: Mispadu lure (ZIP, 1,592,732 B): one GDV5 HTA plus a genuinely signed Adobe Download Manager as padding; layout INFERRED from size (two of twelve bundles were read). VT first seen 2026-10-07 14:14:15 UTC, 13 detections; bytes not available on free tiers",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035024"
+  },
+  {
+   "type": "sha256",
+   "value": "62782505e51cfe3cf783aacc98efe66c8dbcb4fd76ddcea9691209c17ee09ec1",
+   "first_seen": "2026-10-07",
+   "role": "GDV5_637343.hta: Mispadu lure (HTA, 12,409 B). Under mshta it requests the stage-2 JScript CP3b12/CP3b12mde2/lOy241.js from the stage host. VT first seen 2026-10-07 14:27:39 UTC, 13 detections; bytes not available on free tiers",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035036"
+  },
+  {
+   "type": "sha256",
+   "value": "bf9a6784ab2dc67a64143b080b322fce8c3a178e0644d1886478868c09ec1353",
+   "first_seen": "2026-10-07",
+   "role": "GDV5_481859.hta: Mispadu lure (HTA, 12,442 B). Under mshta it requests the stage-2 JScript Uk0ht93/Uk0ht93mde2/Fpri321.js from the stage host. VT first seen 2026-10-07 16:27:11 UTC, 13 detections; bytes not available on free tiers",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035037"
+  },
+  {
+   "type": "sha256",
+   "value": "547449f1b36712984a1b0eea84bd5e9326d740722bdfb709e7f41830aaa84d0d",
+   "first_seen": "2026-10-07",
+   "role": "GDV5_449620.hta: Mispadu lure (HTA, 12,417 B). Under mshta it requests the stage-2 JScript tFofdN4/tFofdN4mde2/akF861.js from the stage host. VT first seen 2026-10-07 16:27:13 UTC, 13 detections; bytes not available on free tiers",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035038"
+  },
+  {
+   "type": "sha256",
+   "value": "4f216cd9a11ba553e49c1b9f35a1f84114625be991017ee91bb30cb352fb77ea",
+   "first_seen": "2026-10-07",
+   "role": "GDV5_322417.hta: Mispadu lure (HTA, 12,399 B). Under mshta it requests the stage-2 JScript KAa50/KAa50mde2/AufA21.js from the stage host. VT first seen 2026-10-07 16:27:41 UTC, 13 detections; bytes not available on free tiers",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035013"
+  },
+  {
+   "type": "sha256",
+   "value": "437866be03f0a31b150f3f7886fd6fade1630bf8ae0565857f07f80258617548",
+   "first_seen": "2026-10-09",
+   "role": "GDV5_2560.hta: Mispadu lure (HTA, 12,449 B). Under mshta it requests the stage-2 JScript RK5YNm679/RK5YNm679mde2/S8b711.js from the stage host. VT first seen 2026-10-09 15:07:15 UTC, 4 detections; bytes not available on free tiers",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035039"
+  },
+  {
+   "type": "sha256",
+   "value": "a6ed15c375b3474e55118a9b262e87fe3c4874239380fcb5a98a0eaa10f8e8fd",
+   "first_seen": "2026-10-09",
+   "role": "GDV5_915672.hta: Mispadu lure (HTA, 12,409 B). Under mshta it requests the stage-2 JScript aTG9T73/aTG9T73mde2/DVf3465891.js from the stage host. VT first seen 2026-10-09 19:26:26 UTC, 13 detections; bytes not available on free tiers",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035040"
+  },
+  {
+   "type": "sha256",
+   "value": "e4360249195aada04434842741eff6fec336a326989045b8b322bbe3668f922d",
+   "first_seen": "2026-10-13",
+   "role": "GDV5_383407.zip: Mispadu lure (ZIP, 1,592,728 B): one GDV5 HTA plus a genuinely signed Adobe Download Manager as padding; layout INFERRED from size (two of twelve bundles were read). VT first seen 2026-10-13 12:25:09 UTC, 13 detections; bytes not available on free tiers",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035025"
+  },
+  {
+   "type": "sha256",
+   "value": "3ee49a5632cb4b696891e8b6f3e0625e26e4f637a8fa49d3f0fe2fc69cc7db7a",
+   "first_seen": "2026-10-13",
+   "role": "GDV5_476989.hta: Mispadu lure (HTA, 12,415 B). Under mshta it requests the stage-2 JScript EwS15/EwS15mde2/JEo271.js from the stage host. VT first seen 2026-10-13 12:31:50 UTC, 13 detections; bytes not available on free tiers",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035041"
+  },
+  {
+   "type": "sha256",
+   "value": "4fd2f9dff54603ac4a8f9e129d7f1165fd146a3b10760aaa32303cb361919dc3",
+   "first_seen": "2026-10-13",
+   "role": "GDV5_490078.zip: Mispadu lure (ZIP, 1,592,746 B): one GDV5 HTA plus a genuinely signed Adobe Download Manager as padding; layout INFERRED from size (two of twelve bundles were read). VT first seen 2026-10-13 13:33:02 UTC, 12 detections; bytes not available on free tiers",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035026"
+  },
+  {
+   "type": "sha256",
+   "value": "ec1634363bb3a74af4522447d115c8df481eae9687d6800fd90731df7ff94da5",
+   "first_seen": "2026-10-13",
+   "role": "GDV5_241266.hta: Mispadu lure (HTA, 12,434 B). Under mshta it requests the stage-2 JScript BMFJ6I20/BMFJ6I20mde2/uqwOVM161.js from the stage host. VT first seen 2026-10-13 15:32:59 UTC, 13 detections; bytes not available on free tiers",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035014"
+  },
+  {
+   "type": "url",
+   "value": "https://32.36.109.208.host.secureserver.net/JfL43/JfL43mde2/ujeio221.js",
+   "first_seen": "2026-09-29",
+   "role": "Stage-2 JScript requested by mshta when VT ran GDV5_648770.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2034985"
+  },
+  {
+   "type": "url",
+   "value": "https://32.36.109.208.host.secureserver.net/iRvAKr63/iRvAKr63mde2/thI8Cu801.js",
+   "first_seen": "2026-10-06",
+   "role": "Stage-2 JScript requested by mshta when VT ran GDV5_381041.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2034986"
+  },
+  {
+   "type": "url",
+   "value": "https://32.36.109.208.host.secureserver.net/oNbSLZ585/oNbSLZ585mde2/s454591.js",
+   "first_seen": "2026-10-06",
+   "role": "Stage-2 JScript requested by mshta when VT ran GDV5_898062.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2034987"
+  },
+  {
+   "type": "url",
+   "value": "https://32.36.109.208.host.secureserver.net/kg91IE74/kg91IE74mde2/LkxS471.js",
+   "first_seen": "2026-10-06",
+   "role": "Stage-2 JScript requested by mshta when VT ran GDV5_205722.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2034988"
+  },
+  {
+   "type": "url",
+   "value": "https://32.36.109.208.host.secureserver.net/zMt15/zMt15mde2/fxDlC9j621.js",
+   "first_seen": "2026-10-06",
+   "role": "Stage-2 JScript requested by mshta when VT ran GDV5_717056.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2034989"
+  },
+  {
+   "type": "url",
+   "value": "https://32.36.109.208.host.secureserver.net/tMp4/tMp4mde2/wnhA731.js",
+   "first_seen": "2026-10-06",
+   "role": "Stage-2 JScript requested by mshta when VT ran GDV5_961397.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2034990"
+  },
+  {
+   "type": "url",
+   "value": "https://32.36.109.208.host.secureserver.net/lCczLV533/lCczLV533mde2/CIhyY7I851.js",
+   "first_seen": "2026-10-06",
+   "role": "Stage-2 JScript requested by mshta when VT ran GDV5_965514.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2034991"
+  },
+  {
+   "type": "url",
+   "value": "https://32.36.109.208.host.secureserver.net/ORgm21/ORgm21mde2/so6f6501.js",
+   "first_seen": "2026-10-06",
+   "role": "Stage-2 JScript requested by mshta when VT ran GDV5_943400.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2034992"
+  },
+  {
+   "type": "url",
+   "value": "https://32.36.109.208.host.secureserver.net/Wxim14/Wxim14mde2/eArixAb541.js",
+   "first_seen": "2026-10-06",
+   "role": "Stage-2 JScript requested by mshta when VT ran GDV5_801446.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2034993"
+  },
+  {
+   "type": "url",
+   "value": "https://32.36.109.208.host.secureserver.net/FIc27/FIc27mde2/CIi741.js",
+   "first_seen": "2026-10-07",
+   "role": "Stage-2 JScript requested by mshta when VT ran GDV5_486441.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2034994"
+  },
+  {
+   "type": "url",
+   "value": "https://32.36.109.208.host.secureserver.net/w9bpi4h18/w9bpi4h18mde2/CaI981.js",
+   "first_seen": "2026-10-07",
+   "role": "Stage-2 JScript requested by mshta when VT ran GDV5_429956.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2034995"
+  },
+  {
+   "type": "url",
+   "value": "https://32.36.109.208.host.secureserver.net/IVAWB41/IVAWB41mde2/JSD7D571.js",
+   "first_seen": "2026-10-07",
+   "role": "Stage-2 JScript requested by mshta when VT ran GDV5_940627.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2034996"
+  },
+  {
+   "type": "url",
+   "value": "https://32.36.109.208.host.secureserver.net/uVuX98/uVuX98mde2/wToWa171.js",
+   "first_seen": "2026-10-07",
+   "role": "Stage-2 JScript requested by mshta when VT ran GDV5_600730.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2034997"
+  },
+  {
+   "type": "url",
+   "value": "https://32.36.109.208.host.secureserver.net/gOxllx14/gOxllx14mde2/mTOPGTC191.js",
+   "first_seen": "2026-10-07",
+   "role": "Stage-2 JScript requested by mshta when VT ran GDV5_346042.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2034998"
+  },
+  {
+   "type": "url",
+   "value": "https://32.36.109.208.host.secureserver.net/CP3b12/CP3b12mde2/lOy241.js",
+   "first_seen": "2026-10-07",
+   "role": "Stage-2 JScript requested by mshta when VT ran GDV5_637343.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2034999"
+  },
+  {
+   "type": "url",
+   "value": "https://32.36.109.208.host.secureserver.net/Uk0ht93/Uk0ht93mde2/Fpri321.js",
+   "first_seen": "2026-10-07",
+   "role": "Stage-2 JScript requested by mshta when VT ran GDV5_481859.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035000"
+  },
+  {
+   "type": "url",
+   "value": "https://32.36.109.208.host.secureserver.net/tFofdN4/tFofdN4mde2/akF861.js",
+   "first_seen": "2026-10-07",
+   "role": "Stage-2 JScript requested by mshta when VT ran GDV5_449620.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035001"
+  },
+  {
+   "type": "url",
+   "value": "https://32.36.109.208.host.secureserver.net/KAa50/KAa50mde2/AufA21.js",
+   "first_seen": "2026-10-07",
+   "role": "Stage-2 JScript requested by mshta when VT ran GDV5_322417.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035002"
+  },
+  {
+   "type": "url",
+   "value": "https://32.36.109.208.host.secureserver.net/RK5YNm679/RK5YNm679mde2/S8b711.js",
+   "first_seen": "2026-10-09",
+   "role": "Stage-2 JScript requested by mshta when VT ran GDV5_2560.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035003"
+  },
+  {
+   "type": "url",
+   "value": "https://32.36.109.208.host.secureserver.net/aTG9T73/aTG9T73mde2/DVf3465891.js",
+   "first_seen": "2026-10-09",
+   "role": "Stage-2 JScript requested by mshta when VT ran GDV5_915672.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035004"
+  },
+  {
+   "type": "url",
+   "value": "https://32.36.109.208.host.secureserver.net/EwS15/EwS15mde2/JEo271.js",
+   "first_seen": "2026-10-13",
+   "role": "Stage-2 JScript requested by mshta when VT ran GDV5_476989.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035005"
+  },
+  {
+   "type": "url",
+   "value": "https://32.36.109.208.host.secureserver.net/BMFJ6I20/BMFJ6I20mde2/uqwOVM161.js",
+   "first_seen": "2026-10-13",
+   "role": "Stage-2 JScript requested by mshta when VT ran GDV5_241266.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035006"
+  },
+  {
+   "type": "domain",
+   "value": "32.36.109.208.host.secureserver.net",
+   "first_seen": "2026-11-19",
+   "role": "GoDaddy PTR name of 208.109.36.32, used as the HTTPS stage host by all 22 GDV5 HTAs. Same IP and TLS certificate as the counter host hardcoded in payload 4f4129e8 (infrastructure link, not hash-proven). Shared GoDaddy naming scheme: block this exact name only",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19)"
+  },
+  {
+   "type": "string",
+   "value": "/<T>/<T>mde2/<name>.js   (regex: /([A-Za-z0-9]{4,9})/\\1mde2/[A-Za-z0-9]{3,12}\\.js$)",
+   "first_seen": "2026-11-19",
+   "role": "Stage-2 URL pattern of the GDV5 kit: a 4 to 9 character token, repeated and followed by the literal mde2, then a short script name",
+   "verdict": "hunting-pivot",
+   "confidence": "high",
+   "source": "VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19)"
+  },
+  {
+   "type": "cert-serial",
+   "value": "06778c8dad79c23f3c87149d8aaf1f7320c2",
+   "first_seen": "2026-11-19",
+   "role": "TLS certificate (CN 32.36.109.208.host.secureserver.net, Let's Encrypt YE1, not before 2026-09-24 22:04 UTC) that mshta received on the lure fetch in a VT sandbox; the same serial Shodan recorded on 208.109.36.32. Per-host certificate: pivot only",
+   "verdict": "hunting-pivot",
+   "confidence": "high",
+   "source": "VirusTotal sandbox TLS record; Shodan (passive)"
+  },
+  {
+   "type": "file-path",
+   "value": "_\\t\\<TOKEN>\\ <24 random characters>",
+   "first_seen": "2026-11-19",
+   "role": "GDV5 ZIP layout: the signed Adobe decoy PE is stored under _\\t\\<TOKEN>\\ (leading space in the name); TOKEN equals the HTA's stage-2 path token (GDV5_486441.hta uses FIc27). Correlation only, never block on the layout alone",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "VirusTotal bundled_files of two ZIPs"
+  },
+  {
+   "type": "process",
+   "value": "mshta.exe \"<path>\\GDV5_<n>.hta\"",
+   "first_seen": "2026-11-19",
+   "role": "Process pattern: cmd.exe /C <TEMP>\\...\\GDV5_<n>.hta, then mshta.exe on the same file making HTTPS requests to a raw *.host.secureserver.net name; HTA <title> is random letters (for example BtU3Z78)",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "VirusTotal sandbox behaviour"
+  },
+  {
+   "type": "sha256",
+   "value": "7eda1844e95b1b87c08fca3a0bcdc1a9a1dc614724d65af6f9560f5fa2c60090",
+   "first_seen": "2026-11-19",
+   "role": "benign decoy - DO NOT BLOCK: genuinely signed Adobe Download Manager 2.0.0.790s (Adobe Inc. Authenticode, 263 VT sources since 2024-09-11, 1/70 detections) bundled in every GDV5 ZIP as size padding. Not part of the infection",
+   "verdict": "shared-or-legit-infrastructure",
+   "confidence": "high",
+   "source": "VirusTotal file report and bundled_files"
+  },
+  {
+   "type": "domain",
+   "value": "bot-nedm.com",
+   "first_seen": "2026-11-19",
+   "role": "LOW CONFIDENCE, historical: VirusTotal passive DNS shows it on 64.95.12.126 once (2025-08-03), about 14 months before the payload. No link to Mispadu was shown; context only",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "VirusTotal passive DNS"
   }
  ]
 }

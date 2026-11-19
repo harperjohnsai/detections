@@ -62,6 +62,53 @@
         "indicator--d6b27738-49ba-5bd7-8704-1b838b814319",
         "indicator--b5aecc81-999c-591b-b0ab-bd975abbd1d6",
         "indicator--cc3ecad8-2c15-5bcc-81ad-87c32a45a31b",
+        "indicator--b4f0b4fb-ad83-505c-a3d0-9499d39ae0dc",
+        "indicator--c7e4a5f3-0a7c-55a1-b2d0-d1fa2af170ac",
+        "indicator--d3abe570-43a7-538a-90b9-aaf2cad5c2de",
+        "indicator--88d91240-0c0c-545c-8ec0-f044ebc604eb",
+        "indicator--fbcc0ef0-7f19-5d1b-8c02-8ef45fee0db6",
+        "indicator--7ad39bb2-7989-5813-a1e3-30ec12138217",
+        "indicator--b3cdb1eb-2657-580e-b6ec-aaca9d5a00d7",
+        "indicator--22ab7791-d7e1-575e-a313-87787d31c6fd",
+        "indicator--e784bf17-b1a1-5b44-bae4-cffc369aaba0",
+        "indicator--0bda913a-bab8-52be-8153-8040c62824f3",
+        "indicator--a80fc2a2-b94e-55a8-90cf-297ed0639346",
+        "indicator--f4ea5074-d3a1-583f-8e3e-9dde78b04b79",
+        "indicator--08f190bb-24bf-5277-b097-566d196369a5",
+        "indicator--2f36d960-ff64-52ed-891d-f32b14ad4623",
+        "indicator--4c74966b-415f-5a36-aba0-d6a75c2c34ce",
+        "indicator--c521421b-985c-55aa-834e-bed067b5aa45",
+        "indicator--16c47407-3591-553e-bca5-2cfcc3272f92",
+        "indicator--f41f6dba-ff0e-52cc-8ae8-58eb54655c90",
+        "indicator--50997510-2983-5f2f-8ac4-ee8d7d0b00ea",
+        "indicator--a943cc13-644a-55e5-954b-a0304507c017",
+        "indicator--9bbe4b67-4bf1-5684-8407-582d62985937",
+        "indicator--200fe591-4459-5425-a222-398b1de03280",
+        "indicator--a72e57ce-9362-5da4-879e-63004482403f",
+        "indicator--494c5100-4a7b-569a-9818-e29c462f8a6c",
+        "indicator--baf29479-7ab8-54a5-b0b8-ff242876cdc3",
+        "indicator--b4310f91-ad0c-59e7-8f70-e6fa3041466e",
+        "indicator--5ed9e022-0fbc-54d6-ab2f-959abf914973",
+        "indicator--914e8837-83ff-5eed-b165-9f6e2c113b1e",
+        "indicator--1fe4ad68-9f69-5e70-b583-863745ef25b3",
+        "indicator--7636db93-c1e0-5332-bd1a-309e88cd1b15",
+        "indicator--732a49a6-1276-575a-a6c4-cb0734f74763",
+        "indicator--62a52211-6c3b-5ae9-a95f-bc8953843ffd",
+        "indicator--660f5323-01cb-561b-9e8b-ff8a3b75e593",
+        "indicator--15c79886-cdf3-5a24-82f8-ac7a199fb8d0",
+        "indicator--0e888be6-f495-5127-a12e-0b6827e6872b",
+        "indicator--e883d68a-a1fb-5a73-98a9-911100c4142b",
+        "indicator--5125f9a8-cc90-53f3-82b8-b4230b162d5a",
+        "indicator--baafb63c-d500-52af-b0fd-0042c4cc44f7",
+        "indicator--c4b14e85-bc9b-524c-941c-79cb190ecdbf",
+        "indicator--f13dde1a-6dab-5612-88c6-3f69f51a77d0",
+        "indicator--bf8daf74-f144-5c86-8976-1c55ab91d3d4",
+        "indicator--31886cd4-a85f-55d5-82b2-1eb0e665c5fe",
+        "indicator--f9065446-a249-54f7-9aa1-51b105bfc870",
+        "indicator--df7466c6-8bc5-58ba-b1b1-c53a216b0cae",
+        "indicator--02b8af02-0b78-5f90-b670-8eaf825c6cc8",
+        "indicator--2c044ec4-59f2-55ab-9302-c1ccd496a118",
+        "indicator--60a3b1a3-60cf-5305-b2f5-bf3625738d64",
         "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11",
         "relationship--224eb523-53a8-5f2c-aba1-f384421d0ff9",
         "relationship--47e9ae92-b38a-5b45-82ca-cea87db22849",
@@ -75,7 +122,52 @@
         "relationship--3c930040-8c10-577f-aeda-a6d5cc9c6562",
         "relationship--b4f555fc-a9e1-5159-9d80-a12f39b3d985",
         "relationship--f72a4c47-cd70-55fc-b8d7-afaf16d4520a",
-        "relationship--e4847b12-e863-5aaf-aae5-b747c3e7b8e5"
+        "relationship--e4847b12-e863-5aaf-aae5-b747c3e7b8e5",
+        "relationship--b7436aec-7778-5e0e-a768-099363de4ab8",
+        "relationship--84886dac-37f5-57e6-aaee-638583cb3db4",
+        "relationship--9cee561d-1aa8-5c8a-9e4f-9d4dddcbd8cf",
+        "relationship--33a6622c-2c7d-5398-a326-609e55117f92",
+        "relationship--99d84319-679d-5bce-8df4-7d32e872a26c",
+        "relationship--980c5570-a50c-5fbd-8de4-364bb5e96ad6",
+        "relationship--add91006-271f-529b-9828-094d69a8e937",
+        "relationship--7b7b4bdd-3503-59a3-9b5a-1b2df10d06be",
+        "relationship--760a8ffd-ff1e-568f-a3af-5907ee93d93d",
+        "relationship--c1103604-ba47-5450-a144-27f968c2a58a",
+        "relationship--2eb37c0c-6910-5fbb-80d6-f0ca55955c78",
+        "relationship--977cde19-4470-5f57-b9bd-3a2215cb36ab",
+        "relationship--22d3dcfe-a08e-5498-bdb8-90f05496953c",
+        "relationship--ddd97550-af79-5e1a-a120-44b9bb8c2806",
+        "relationship--d356b284-821c-5a67-be0e-e937d2d0e395",
+        "relationship--89bc5998-7fbc-5e3a-968c-bd380a0d8430",
+        "relationship--ac255619-914e-50c1-8c33-9a1ac0310253",
+        "relationship--95a4e78a-e11d-5f7e-9955-e0573b6e4e77",
+        "relationship--47d201c6-8d31-5c7e-befb-3f21083420c2",
+        "relationship--11d5e33e-3c76-57bf-9dcf-1cce5d309a0d",
+        "relationship--9d207989-a10d-569a-82fc-eb006e1d19eb",
+        "relationship--56b03702-2037-5117-9ed8-6993bb7595fe",
+        "relationship--8cf5e373-c843-5f84-9b08-22e68b1b2150",
+        "relationship--a2c92741-06a3-5650-a51f-148a9ea9d5b3",
+        "relationship--30acdf95-ba5e-53e5-b71b-b4b2eb654d88",
+        "relationship--2085e6d0-cced-50f6-806a-841138f105b8",
+        "relationship--cc6def0f-83ab-5894-a8d8-1b42cb2fee70",
+        "relationship--8b0d0a21-d65a-5291-8a32-212407cf4f45",
+        "relationship--59c87ced-bb15-538e-9f22-3027ab19a591",
+        "relationship--7e68922e-c35e-5fec-841d-0daa38b63c95",
+        "relationship--cf26ee4b-66af-55a7-94a9-b6adb8241e9a",
+        "relationship--3821815a-9fda-58aa-8111-86278e3183e8",
+        "relationship--4424c713-a88e-5327-95fa-07cc99780703",
+        "relationship--ec4e8ec2-e187-5f7a-804d-696cfe64656e",
+        "relationship--81f3d897-4d9e-55b1-92d6-4e3f2e80bfec",
+        "relationship--4d4d7a5c-8e9a-5eec-9b45-5f7f632c8277",
+        "relationship--79d7bbd0-9fca-5f05-bcfb-7b089b7742d5",
+        "relationship--2de8cf9a-094a-5433-856a-5f9523c21de0",
+        "relationship--92c383cb-5567-5d18-bc5e-afcd74dda3d8",
+        "relationship--9704f62f-aa58-5511-a9b2-a44643292e84",
+        "relationship--40fca84a-9b06-5253-9c7b-cbc054137840",
+        "relationship--ab6b50f5-fa9d-5f4f-b920-e15e12cd0995",
+        "relationship--8126e9e7-fc46-5bfe-a21d-356a90af3e98",
+        "relationship--de690022-6d9f-5122-9f0d-95a8b53c4eb2",
+        "relationship--c3d25638-ecfa-55d6-ab90-85523f45d100"
       ],
       "external_references": [
         {
@@ -102,6 +194,14 @@
         {
           "source_name": "ThreatFox",
           "url": "https://threatfox.abuse.ch/ioc/2034947/"
+        },
+        {
+          "source_name": "ThreatFox",
+          "url": "https://threatfox.abuse.ch/ioc/2034985/"
+        },
+        {
+          "source_name": "ThreatFox",
+          "url": "https://threatfox.abuse.ch/ioc/2035041/"
         },
         {
           "source_name": "ESET",
@@ -178,7 +278,7 @@
       "type": "indicator",
       "id": "indicator--4899f77c-3c1d-5111-8768-836beff04433",
       "name": "208.109.36.32",
-      "description": "Hardcoded in the payload: download host (d1.x, d2.x, pdw.dll) and target of the per-infection counter POST. GoDaddy VPS AS398101; Shodan 2026-10-27: ports 21, 22, 443 open, Let's Encrypt cert issued 2026-09-24 22:04 UTC, about 1 h 40 min before the payload compile time. Never contacted, liveness not checked [verdict: malicious; source: static analysis (this case); Shodan and VirusTotal passive data]",
+      "description": "Hardcoded in the payload: download host (d1.x, d2.x, pdw.dll) and target of the per-infection counter POST. GoDaddy VPS AS398101; Shodan 2026-10-27: ports 21, 22, 443 open, Let's Encrypt cert issued 2026-09-24 22:04 UTC, about 1 h 40 min before the payload compile time. No host named by the sample was contacted for the payload analysis. Update 2026-11-19: unreachable (TCP 21/22/80/443 timed out from third-party check-host nodes in two passes, the control target answered; one stage-2 fetch attempt through an anonymising network timed out); it is also the host behind the 22 GDV5 stage-2 URLs [verdict: malicious; source: static analysis (this case); Shodan and VirusTotal passive data]",
       "indicator_types": [
         "malicious-activity"
       ],
@@ -189,7 +289,8 @@
       "labels": [
         "delivery",
         "ipv4",
-        "payload"
+        "payload",
+        "stage"
       ],
       "confidence": 85
     },
@@ -328,7 +429,7 @@
       "type": "indicator",
       "id": "indicator--7c374d4e-8551-52c1-a059-527969fe18c2",
       "name": "64.95.12.126",
-      "description": "Hardcoded in the payload: exfiltration host (HTTP POST). BL Networks AS399629 (Dallas); Shodan 2026-11-01: ports 21, 22, 80 open; VirusTotal (2026-11-19): no communicating files. Never contacted, liveness not checked [verdict: malicious; source: static analysis (this case); Shodan and VirusTotal passive data]",
+      "description": "Hardcoded in the payload: exfiltration host (HTTP POST). BL Networks AS399629 (Dallas); Shodan 2026-11-01: ports 21, 22, 80 open; VirusTotal (2026-11-19): no communicating files. No host named by the sample was contacted for the payload analysis. Update 2026-11-19: unreachable (TCP 22/80 timed out from third-party check-host nodes in two passes, the control target answered) [verdict: malicious; source: static analysis (this case); Shodan and VirusTotal passive data]",
       "indicator_types": [
         "malicious-activity"
       ],
@@ -440,6 +541,1205 @@
         "payload"
       ],
       "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--b4f0b4fb-ad83-505c-a3d0-9499d39ae0dc",
+      "name": "ad056314350dbee79296536aed7b4a222f0ba20da3497a81f20d57c0bc972637",
+      "description": "GDV5_648770.hta: Mispadu lure (HTA, 12,412 B). Under mshta it requests the stage-2 JScript JfL43/JfL43mde2/ujeio221.js from the stage host. VT first seen 2026-09-29 20:25:16 UTC, 13 detections; bytes not available on free tiers [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035007]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = 'ad056314350dbee79296536aed7b4a222f0ba20da3497a81f20d57c0bc972637']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-09-29T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "sha256",
+        "stage"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--c7e4a5f3-0a7c-55a1-b2d0-d1fa2af170ac",
+      "name": "2c48a9d4cc8738e62d5f8ddc03fdde7a9f52795bfe41b5edd0eb3f929e89c3c8",
+      "description": "GDV5_381041.hta: Mispadu lure (HTA, 12,417 B). Under mshta it requests the stage-2 JScript iRvAKr63/iRvAKr63mde2/thI8Cu801.js from the stage host. VT first seen 2026-10-06 12:33:44 UTC, 13 detections; bytes not available on free tiers [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035008]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '2c48a9d4cc8738e62d5f8ddc03fdde7a9f52795bfe41b5edd0eb3f929e89c3c8']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-06T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "sha256",
+        "stage"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--d3abe570-43a7-538a-90b9-aaf2cad5c2de",
+      "name": "d375b927cde69bc09feae9044b39962c515f65bec11690162abdea784cf9552b",
+      "description": "GDV5_898062.hta: Mispadu lure (HTA, 12,435 B). Under mshta it requests the stage-2 JScript oNbSLZ585/oNbSLZ585mde2/s454591.js from the stage host. VT first seen 2026-10-06 17:24:52 UTC, 13 detections; bytes not available on free tiers [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035027]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = 'd375b927cde69bc09feae9044b39962c515f65bec11690162abdea784cf9552b']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-06T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "sha256",
+        "stage"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--88d91240-0c0c-545c-8ec0-f044ebc604eb",
+      "name": "7f9dbb7291d73bb1ff09f9e44f479d00325827f25666ae6bf77ea58b9d821dd1",
+      "description": "GDV5_205722.hta: Mispadu lure (HTA, 12,436 B). Under mshta it requests the stage-2 JScript kg91IE74/kg91IE74mde2/LkxS471.js from the stage host. VT first seen 2026-10-06 17:32:07 UTC, 12 detections; bytes not available on free tiers [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035028]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '7f9dbb7291d73bb1ff09f9e44f479d00325827f25666ae6bf77ea58b9d821dd1']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-06T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "sha256",
+        "stage"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--fbcc0ef0-7f19-5d1b-8c02-8ef45fee0db6",
+      "name": "16f93de46ee29d57f131d058815addc1b6bbcdd1ec6d7fcfeba74928ddebb3cb",
+      "description": "GDV5_717056.hta: Mispadu lure (HTA, 12,411 B). Under mshta it requests the stage-2 JScript zMt15/zMt15mde2/fxDlC9j621.js from the stage host. VT first seen 2026-10-06 18:16:05 UTC, 12 detections; bytes not available on free tiers [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035029]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '16f93de46ee29d57f131d058815addc1b6bbcdd1ec6d7fcfeba74928ddebb3cb']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-06T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "sha256",
+        "stage"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--7ad39bb2-7989-5813-a1e3-30ec12138217",
+      "name": "4ec6233282a649da27f383b738f45bb060f70385afbfb83495855ff390afb4b4",
+      "description": "GDV5_961397.hta: Mispadu lure (HTA, 12,412 B). Under mshta it requests the stage-2 JScript tMp4/tMp4mde2/wnhA731.js from the stage host. VT first seen 2026-10-06 18:18:46 UTC, 13 detections; bytes not available on free tiers [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035009]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '4ec6233282a649da27f383b738f45bb060f70385afbfb83495855ff390afb4b4']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-06T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "sha256",
+        "stage"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--b3cdb1eb-2657-580e-b6ec-aaca9d5a00d7",
+      "name": "a09ace0660ae71c91bd5c80d52de285b4e40749e2066cc2f1db1db106f39a390",
+      "description": "GDV5_965514.hta: Mispadu lure (HTA, 12,441 B). Under mshta it requests the stage-2 JScript lCczLV533/lCczLV533mde2/CIhyY7I851.js from the stage host. VT first seen 2026-10-06 20:21:27 UTC, 13 detections; bytes not available on free tiers [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035030]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = 'a09ace0660ae71c91bd5c80d52de285b4e40749e2066cc2f1db1db106f39a390']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-06T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "sha256",
+        "stage"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--22ab7791-d7e1-575e-a313-87787d31c6fd",
+      "name": "aaa761862ad41edda30d94ba30f8eb2202731476778c7f77114cc734fcbd4ea0",
+      "description": "GDV5_943400.hta: Mispadu lure (HTA, 12,400 B). Under mshta it requests the stage-2 JScript ORgm21/ORgm21mde2/so6f6501.js from the stage host. VT first seen 2026-10-06 20:23:13 UTC, 12 detections; bytes not available on free tiers [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035031]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = 'aaa761862ad41edda30d94ba30f8eb2202731476778c7f77114cc734fcbd4ea0']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-06T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "sha256",
+        "stage"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--e784bf17-b1a1-5b44-bae4-cffc369aaba0",
+      "name": "5a071c79bad1e5396b47513aa13a2494cf8a09e262f9707528dad3cbb5ed39b4",
+      "description": "GDV5_801446.hta: Mispadu lure (HTA, 12,407 B). Under mshta it requests the stage-2 JScript Wxim14/Wxim14mde2/eArixAb541.js from the stage host. VT first seen 2026-10-06 22:37:30 UTC, 13 detections; bytes not available on free tiers [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035032]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '5a071c79bad1e5396b47513aa13a2494cf8a09e262f9707528dad3cbb5ed39b4']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-06T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "sha256",
+        "stage"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--0bda913a-bab8-52be-8153-8040c62824f3",
+      "name": "8120a657cea224f41acef282b807713a09a7d02b3949f55d135236e19f8421bb",
+      "description": "GDV5_486441.hta: Mispadu lure (HTA, 12,389 B). Under mshta it requests the stage-2 JScript FIc27/FIc27mde2/CIi741.js from the stage host. VT first seen 2026-10-07 00:21:21 UTC, 27 detections; bytes not available on free tiers [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035010]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '8120a657cea224f41acef282b807713a09a7d02b3949f55d135236e19f8421bb']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-07T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "sha256",
+        "stage"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--a80fc2a2-b94e-55a8-90cf-297ed0639346",
+      "name": "7648cdf34deed8e0880347d81014723583446e87084fc7de4ce21e52f14acb39",
+      "description": "GDV5_429956.hta: Mispadu lure (HTA, 12,439 B). Under mshta it requests the stage-2 JScript w9bpi4h18/w9bpi4h18mde2/CaI981.js from the stage host. VT first seen 2026-10-07 09:46:12 UTC, 13 detections; bytes not available on free tiers [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035033]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '7648cdf34deed8e0880347d81014723583446e87084fc7de4ce21e52f14acb39']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-07T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "sha256",
+        "stage"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--f4ea5074-d3a1-583f-8e3e-9dde78b04b79",
+      "name": "42af3604c87aba9b949d8252293b2edf863b1bda463822b936dbf7978c2b8ec3",
+      "description": "GDV5_940627.hta: Mispadu lure (HTA, 12,422 B). Under mshta it requests the stage-2 JScript IVAWB41/IVAWB41mde2/JSD7D571.js from the stage host. VT first seen 2026-10-07 13:07:05 UTC, 13 detections; bytes not available on free tiers [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035034]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '42af3604c87aba9b949d8252293b2edf863b1bda463822b936dbf7978c2b8ec3']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-07T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "sha256",
+        "stage"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--08f190bb-24bf-5277-b097-566d196369a5",
+      "name": "f96b732960a3a077ea242fc83eaa68ecc35a3b210076811c6149ec888891f4da",
+      "description": "GDV5_600730.hta: Mispadu lure (HTA, 12,405 B). Under mshta it requests the stage-2 JScript uVuX98/uVuX98mde2/wToWa171.js from the stage host. VT first seen 2026-10-07 13:22:31 UTC, 13 detections; bytes not available on free tiers [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035035]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = 'f96b732960a3a077ea242fc83eaa68ecc35a3b210076811c6149ec888891f4da']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-07T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "sha256",
+        "stage"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--2f36d960-ff64-52ed-891d-f32b14ad4623",
+      "name": "f0ea2863992bb27a64bbc6e415e6a04741942d38efff6f606fe2b8c44f1d296b",
+      "description": "GDV5_346042.hta: Mispadu lure (HTA, 12,433 B). Under mshta it requests the stage-2 JScript gOxllx14/gOxllx14mde2/mTOPGTC191.js from the stage host. VT first seen 2026-10-07 14:09:17 UTC, 13 detections; bytes not available on free tiers [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035012]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = 'f0ea2863992bb27a64bbc6e415e6a04741942d38efff6f606fe2b8c44f1d296b']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-07T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "sha256",
+        "stage"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--4c74966b-415f-5a36-aba0-d6a75c2c34ce",
+      "name": "62782505e51cfe3cf783aacc98efe66c8dbcb4fd76ddcea9691209c17ee09ec1",
+      "description": "GDV5_637343.hta: Mispadu lure (HTA, 12,409 B). Under mshta it requests the stage-2 JScript CP3b12/CP3b12mde2/lOy241.js from the stage host. VT first seen 2026-10-07 14:27:39 UTC, 13 detections; bytes not available on free tiers [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035036]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '62782505e51cfe3cf783aacc98efe66c8dbcb4fd76ddcea9691209c17ee09ec1']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-07T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "sha256",
+        "stage"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--c521421b-985c-55aa-834e-bed067b5aa45",
+      "name": "bf9a6784ab2dc67a64143b080b322fce8c3a178e0644d1886478868c09ec1353",
+      "description": "GDV5_481859.hta: Mispadu lure (HTA, 12,442 B). Under mshta it requests the stage-2 JScript Uk0ht93/Uk0ht93mde2/Fpri321.js from the stage host. VT first seen 2026-10-07 16:27:11 UTC, 13 detections; bytes not available on free tiers [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035037]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = 'bf9a6784ab2dc67a64143b080b322fce8c3a178e0644d1886478868c09ec1353']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-07T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "sha256",
+        "stage"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--16c47407-3591-553e-bca5-2cfcc3272f92",
+      "name": "547449f1b36712984a1b0eea84bd5e9326d740722bdfb709e7f41830aaa84d0d",
+      "description": "GDV5_449620.hta: Mispadu lure (HTA, 12,417 B). Under mshta it requests the stage-2 JScript tFofdN4/tFofdN4mde2/akF861.js from the stage host. VT first seen 2026-10-07 16:27:13 UTC, 13 detections; bytes not available on free tiers [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035038]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '547449f1b36712984a1b0eea84bd5e9326d740722bdfb709e7f41830aaa84d0d']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-07T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "sha256",
+        "stage"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--f41f6dba-ff0e-52cc-8ae8-58eb54655c90",
+      "name": "4f216cd9a11ba553e49c1b9f35a1f84114625be991017ee91bb30cb352fb77ea",
+      "description": "GDV5_322417.hta: Mispadu lure (HTA, 12,399 B). Under mshta it requests the stage-2 JScript KAa50/KAa50mde2/AufA21.js from the stage host. VT first seen 2026-10-07 16:27:41 UTC, 13 detections; bytes not available on free tiers [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035013]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '4f216cd9a11ba553e49c1b9f35a1f84114625be991017ee91bb30cb352fb77ea']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-07T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "sha256",
+        "stage"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--50997510-2983-5f2f-8ac4-ee8d7d0b00ea",
+      "name": "437866be03f0a31b150f3f7886fd6fade1630bf8ae0565857f07f80258617548",
+      "description": "GDV5_2560.hta: Mispadu lure (HTA, 12,449 B). Under mshta it requests the stage-2 JScript RK5YNm679/RK5YNm679mde2/S8b711.js from the stage host. VT first seen 2026-10-09 15:07:15 UTC, 4 detections; bytes not available on free tiers [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035039]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '437866be03f0a31b150f3f7886fd6fade1630bf8ae0565857f07f80258617548']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-09T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "sha256",
+        "stage"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--a943cc13-644a-55e5-954b-a0304507c017",
+      "name": "a6ed15c375b3474e55118a9b262e87fe3c4874239380fcb5a98a0eaa10f8e8fd",
+      "description": "GDV5_915672.hta: Mispadu lure (HTA, 12,409 B). Under mshta it requests the stage-2 JScript aTG9T73/aTG9T73mde2/DVf3465891.js from the stage host. VT first seen 2026-10-09 19:26:26 UTC, 13 detections; bytes not available on free tiers [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035040]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = 'a6ed15c375b3474e55118a9b262e87fe3c4874239380fcb5a98a0eaa10f8e8fd']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-09T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "sha256",
+        "stage"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--9bbe4b67-4bf1-5684-8407-582d62985937",
+      "name": "3ee49a5632cb4b696891e8b6f3e0625e26e4f637a8fa49d3f0fe2fc69cc7db7a",
+      "description": "GDV5_476989.hta: Mispadu lure (HTA, 12,415 B). Under mshta it requests the stage-2 JScript EwS15/EwS15mde2/JEo271.js from the stage host. VT first seen 2026-10-13 12:31:50 UTC, 13 detections; bytes not available on free tiers [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035041]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '3ee49a5632cb4b696891e8b6f3e0625e26e4f637a8fa49d3f0fe2fc69cc7db7a']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-13T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "sha256",
+        "stage"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--200fe591-4459-5425-a222-398b1de03280",
+      "name": "ec1634363bb3a74af4522447d115c8df481eae9687d6800fd90731df7ff94da5",
+      "description": "GDV5_241266.hta: Mispadu lure (HTA, 12,434 B). Under mshta it requests the stage-2 JScript BMFJ6I20/BMFJ6I20mde2/uqwOVM161.js from the stage host. VT first seen 2026-10-13 15:32:59 UTC, 13 detections; bytes not available on free tiers [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035014]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = 'ec1634363bb3a74af4522447d115c8df481eae9687d6800fd90731df7ff94da5']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-13T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "sha256",
+        "stage"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--a72e57ce-9362-5da4-879e-63004482403f",
+      "name": "https://32.36.109.208.host.secureserver.net/JfL43/JfL43mde2/ujeio221.js",
+      "description": "Stage-2 JScript requested by mshta when VT ran GDV5_648770.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19 [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2034985]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://32.36.109.208.host.secureserver.net/JfL43/JfL43mde2/ujeio221.js']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-09-29T00:00:00.000Z",
+      "labels": [
+        "stage",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--494c5100-4a7b-569a-9818-e29c462f8a6c",
+      "name": "https://32.36.109.208.host.secureserver.net/iRvAKr63/iRvAKr63mde2/thI8Cu801.js",
+      "description": "Stage-2 JScript requested by mshta when VT ran GDV5_381041.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19 [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2034986]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://32.36.109.208.host.secureserver.net/iRvAKr63/iRvAKr63mde2/thI8Cu801.js']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-06T00:00:00.000Z",
+      "labels": [
+        "stage",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--baf29479-7ab8-54a5-b0b8-ff242876cdc3",
+      "name": "https://32.36.109.208.host.secureserver.net/oNbSLZ585/oNbSLZ585mde2/s454591.js",
+      "description": "Stage-2 JScript requested by mshta when VT ran GDV5_898062.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19 [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2034987]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://32.36.109.208.host.secureserver.net/oNbSLZ585/oNbSLZ585mde2/s454591.js']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-06T00:00:00.000Z",
+      "labels": [
+        "stage",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--b4310f91-ad0c-59e7-8f70-e6fa3041466e",
+      "name": "https://32.36.109.208.host.secureserver.net/kg91IE74/kg91IE74mde2/LkxS471.js",
+      "description": "Stage-2 JScript requested by mshta when VT ran GDV5_205722.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19 [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2034988]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://32.36.109.208.host.secureserver.net/kg91IE74/kg91IE74mde2/LkxS471.js']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-06T00:00:00.000Z",
+      "labels": [
+        "stage",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--5ed9e022-0fbc-54d6-ab2f-959abf914973",
+      "name": "https://32.36.109.208.host.secureserver.net/zMt15/zMt15mde2/fxDlC9j621.js",
+      "description": "Stage-2 JScript requested by mshta when VT ran GDV5_717056.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19 [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2034989]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://32.36.109.208.host.secureserver.net/zMt15/zMt15mde2/fxDlC9j621.js']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-06T00:00:00.000Z",
+      "labels": [
+        "stage",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--914e8837-83ff-5eed-b165-9f6e2c113b1e",
+      "name": "https://32.36.109.208.host.secureserver.net/tMp4/tMp4mde2/wnhA731.js",
+      "description": "Stage-2 JScript requested by mshta when VT ran GDV5_961397.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19 [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2034990]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://32.36.109.208.host.secureserver.net/tMp4/tMp4mde2/wnhA731.js']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-06T00:00:00.000Z",
+      "labels": [
+        "stage",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--1fe4ad68-9f69-5e70-b583-863745ef25b3",
+      "name": "https://32.36.109.208.host.secureserver.net/lCczLV533/lCczLV533mde2/CIhyY7I851.js",
+      "description": "Stage-2 JScript requested by mshta when VT ran GDV5_965514.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19 [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2034991]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://32.36.109.208.host.secureserver.net/lCczLV533/lCczLV533mde2/CIhyY7I851.js']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-06T00:00:00.000Z",
+      "labels": [
+        "stage",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--7636db93-c1e0-5332-bd1a-309e88cd1b15",
+      "name": "https://32.36.109.208.host.secureserver.net/ORgm21/ORgm21mde2/so6f6501.js",
+      "description": "Stage-2 JScript requested by mshta when VT ran GDV5_943400.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19 [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2034992]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://32.36.109.208.host.secureserver.net/ORgm21/ORgm21mde2/so6f6501.js']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-06T00:00:00.000Z",
+      "labels": [
+        "stage",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--732a49a6-1276-575a-a6c4-cb0734f74763",
+      "name": "https://32.36.109.208.host.secureserver.net/Wxim14/Wxim14mde2/eArixAb541.js",
+      "description": "Stage-2 JScript requested by mshta when VT ran GDV5_801446.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19 [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2034993]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://32.36.109.208.host.secureserver.net/Wxim14/Wxim14mde2/eArixAb541.js']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-06T00:00:00.000Z",
+      "labels": [
+        "stage",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--62a52211-6c3b-5ae9-a95f-bc8953843ffd",
+      "name": "https://32.36.109.208.host.secureserver.net/FIc27/FIc27mde2/CIi741.js",
+      "description": "Stage-2 JScript requested by mshta when VT ran GDV5_486441.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19 [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2034994]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://32.36.109.208.host.secureserver.net/FIc27/FIc27mde2/CIi741.js']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-07T00:00:00.000Z",
+      "labels": [
+        "stage",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--660f5323-01cb-561b-9e8b-ff8a3b75e593",
+      "name": "https://32.36.109.208.host.secureserver.net/w9bpi4h18/w9bpi4h18mde2/CaI981.js",
+      "description": "Stage-2 JScript requested by mshta when VT ran GDV5_429956.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19 [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2034995]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://32.36.109.208.host.secureserver.net/w9bpi4h18/w9bpi4h18mde2/CaI981.js']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-07T00:00:00.000Z",
+      "labels": [
+        "stage",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--15c79886-cdf3-5a24-82f8-ac7a199fb8d0",
+      "name": "https://32.36.109.208.host.secureserver.net/IVAWB41/IVAWB41mde2/JSD7D571.js",
+      "description": "Stage-2 JScript requested by mshta when VT ran GDV5_940627.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19 [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2034996]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://32.36.109.208.host.secureserver.net/IVAWB41/IVAWB41mde2/JSD7D571.js']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-07T00:00:00.000Z",
+      "labels": [
+        "stage",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--0e888be6-f495-5127-a12e-0b6827e6872b",
+      "name": "https://32.36.109.208.host.secureserver.net/uVuX98/uVuX98mde2/wToWa171.js",
+      "description": "Stage-2 JScript requested by mshta when VT ran GDV5_600730.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19 [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2034997]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://32.36.109.208.host.secureserver.net/uVuX98/uVuX98mde2/wToWa171.js']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-07T00:00:00.000Z",
+      "labels": [
+        "stage",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--e883d68a-a1fb-5a73-98a9-911100c4142b",
+      "name": "https://32.36.109.208.host.secureserver.net/gOxllx14/gOxllx14mde2/mTOPGTC191.js",
+      "description": "Stage-2 JScript requested by mshta when VT ran GDV5_346042.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19 [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2034998]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://32.36.109.208.host.secureserver.net/gOxllx14/gOxllx14mde2/mTOPGTC191.js']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-07T00:00:00.000Z",
+      "labels": [
+        "stage",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--5125f9a8-cc90-53f3-82b8-b4230b162d5a",
+      "name": "https://32.36.109.208.host.secureserver.net/CP3b12/CP3b12mde2/lOy241.js",
+      "description": "Stage-2 JScript requested by mshta when VT ran GDV5_637343.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19 [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2034999]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://32.36.109.208.host.secureserver.net/CP3b12/CP3b12mde2/lOy241.js']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-07T00:00:00.000Z",
+      "labels": [
+        "stage",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--baafb63c-d500-52af-b0fd-0042c4cc44f7",
+      "name": "https://32.36.109.208.host.secureserver.net/Uk0ht93/Uk0ht93mde2/Fpri321.js",
+      "description": "Stage-2 JScript requested by mshta when VT ran GDV5_481859.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19 [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035000]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://32.36.109.208.host.secureserver.net/Uk0ht93/Uk0ht93mde2/Fpri321.js']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-07T00:00:00.000Z",
+      "labels": [
+        "stage",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--c4b14e85-bc9b-524c-941c-79cb190ecdbf",
+      "name": "https://32.36.109.208.host.secureserver.net/tFofdN4/tFofdN4mde2/akF861.js",
+      "description": "Stage-2 JScript requested by mshta when VT ran GDV5_449620.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19 [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035001]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://32.36.109.208.host.secureserver.net/tFofdN4/tFofdN4mde2/akF861.js']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-07T00:00:00.000Z",
+      "labels": [
+        "stage",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--f13dde1a-6dab-5612-88c6-3f69f51a77d0",
+      "name": "https://32.36.109.208.host.secureserver.net/KAa50/KAa50mde2/AufA21.js",
+      "description": "Stage-2 JScript requested by mshta when VT ran GDV5_322417.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19 [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035002]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://32.36.109.208.host.secureserver.net/KAa50/KAa50mde2/AufA21.js']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-07T00:00:00.000Z",
+      "labels": [
+        "stage",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--bf8daf74-f144-5c86-8976-1c55ab91d3d4",
+      "name": "https://32.36.109.208.host.secureserver.net/RK5YNm679/RK5YNm679mde2/S8b711.js",
+      "description": "Stage-2 JScript requested by mshta when VT ran GDV5_2560.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19 [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035003]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://32.36.109.208.host.secureserver.net/RK5YNm679/RK5YNm679mde2/S8b711.js']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-09T00:00:00.000Z",
+      "labels": [
+        "stage",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--31886cd4-a85f-55d5-82b2-1eb0e665c5fe",
+      "name": "https://32.36.109.208.host.secureserver.net/aTG9T73/aTG9T73mde2/DVf3465891.js",
+      "description": "Stage-2 JScript requested by mshta when VT ran GDV5_915672.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19 [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035004]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://32.36.109.208.host.secureserver.net/aTG9T73/aTG9T73mde2/DVf3465891.js']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-09T00:00:00.000Z",
+      "labels": [
+        "stage",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--f9065446-a249-54f7-9aa1-51b105bfc870",
+      "name": "https://32.36.109.208.host.secureserver.net/EwS15/EwS15mde2/JEo271.js",
+      "description": "Stage-2 JScript requested by mshta when VT ran GDV5_476989.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19 [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035005]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://32.36.109.208.host.secureserver.net/EwS15/EwS15mde2/JEo271.js']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-13T00:00:00.000Z",
+      "labels": [
+        "stage",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--df7466c6-8bc5-58ba-b1b1-c53a216b0cae",
+      "name": "https://32.36.109.208.host.secureserver.net/BMFJ6I20/BMFJ6I20mde2/uqwOVM161.js",
+      "description": "Stage-2 JScript requested by mshta when VT ran GDV5_241266.hta (UA MSIE 7.0/Trident). No sandbox ever received a body (404 with empty body or a dead connection); host unreachable on 2026-11-19 [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19); ThreatFox 2035006]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://32.36.109.208.host.secureserver.net/BMFJ6I20/BMFJ6I20mde2/uqwOVM161.js']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-13T00:00:00.000Z",
+      "labels": [
+        "stage",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--02b8af02-0b78-5f90-b670-8eaf825c6cc8",
+      "name": "32.36.109.208.host.secureserver.net",
+      "description": "GoDaddy PTR name of 208.109.36.32, used as the HTTPS stage host by all 22 GDV5 HTAs. Same IP and TLS certificate as the counter host hardcoded in payload 4f4129e8 (infrastructure link, not hash-proven). Shared GoDaddy naming scheme: block this exact name only [verdict: malicious; source: VirusTotal sandbox data (lure listing and behaviour summary, 2026-11-19)]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = '32.36.109.208.host.secureserver.net']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "domain",
+        "payload",
+        "stage"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--2c044ec4-59f2-55ab-9302-c1ccd496a118",
+      "name": "06778c8dad79c23f3c87149d8aaf1f7320c2",
+      "description": "TLS certificate (CN 32.36.109.208.host.secureserver.net, Let's Encrypt YE1, not before 2026-09-24 22:04 UTC) that mshta received on the lure fetch in a VT sandbox; the same serial Shodan recorded on 208.109.36.32. Per-host certificate: pivot only [verdict: hunting-pivot; source: VirusTotal sandbox TLS record; Shodan (passive)]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[x509-certificate:serial_number = '06778c8dad79c23f3c87149d8aaf1f7320c2']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "cert-serial",
+        "lure"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--60a3b1a3-60cf-5305-b2f5-bf3625738d64",
+      "name": "bot-nedm.com",
+      "description": "LOW CONFIDENCE, historical: VirusTotal passive DNS shows it on 64.95.12.126 once (2025-08-03), about 14 months before the payload. No link to Mispadu was shown; context only [verdict: candidate; source: VirusTotal passive DNS]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'bot-nedm.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain",
+        "payload"
+      ],
+      "confidence": 15
     },
     {
       "spec_version": "2.1",
@@ -634,6 +1934,636 @@
       "id": "relationship--e4847b12-e863-5aaf-aae5-b747c3e7b8e5",
       "relationship_type": "indicates",
       "source_ref": "indicator--cc3ecad8-2c15-5bcc-81ad-87c32a45a31b",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--b7436aec-7778-5e0e-a768-099363de4ab8",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--b4f0b4fb-ad83-505c-a3d0-9499d39ae0dc",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--84886dac-37f5-57e6-aaee-638583cb3db4",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--c7e4a5f3-0a7c-55a1-b2d0-d1fa2af170ac",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--9cee561d-1aa8-5c8a-9e4f-9d4dddcbd8cf",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--d3abe570-43a7-538a-90b9-aaf2cad5c2de",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--33a6622c-2c7d-5398-a326-609e55117f92",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--88d91240-0c0c-545c-8ec0-f044ebc604eb",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--99d84319-679d-5bce-8df4-7d32e872a26c",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--fbcc0ef0-7f19-5d1b-8c02-8ef45fee0db6",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--980c5570-a50c-5fbd-8de4-364bb5e96ad6",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--7ad39bb2-7989-5813-a1e3-30ec12138217",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--add91006-271f-529b-9828-094d69a8e937",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--b3cdb1eb-2657-580e-b6ec-aaca9d5a00d7",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--7b7b4bdd-3503-59a3-9b5a-1b2df10d06be",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--22ab7791-d7e1-575e-a313-87787d31c6fd",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--760a8ffd-ff1e-568f-a3af-5907ee93d93d",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--e784bf17-b1a1-5b44-bae4-cffc369aaba0",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--c1103604-ba47-5450-a144-27f968c2a58a",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--0bda913a-bab8-52be-8153-8040c62824f3",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--2eb37c0c-6910-5fbb-80d6-f0ca55955c78",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--a80fc2a2-b94e-55a8-90cf-297ed0639346",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--977cde19-4470-5f57-b9bd-3a2215cb36ab",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--f4ea5074-d3a1-583f-8e3e-9dde78b04b79",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--22d3dcfe-a08e-5498-bdb8-90f05496953c",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--08f190bb-24bf-5277-b097-566d196369a5",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--ddd97550-af79-5e1a-a120-44b9bb8c2806",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--2f36d960-ff64-52ed-891d-f32b14ad4623",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--d356b284-821c-5a67-be0e-e937d2d0e395",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--4c74966b-415f-5a36-aba0-d6a75c2c34ce",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--89bc5998-7fbc-5e3a-968c-bd380a0d8430",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--c521421b-985c-55aa-834e-bed067b5aa45",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--ac255619-914e-50c1-8c33-9a1ac0310253",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--16c47407-3591-553e-bca5-2cfcc3272f92",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--95a4e78a-e11d-5f7e-9955-e0573b6e4e77",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--f41f6dba-ff0e-52cc-8ae8-58eb54655c90",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--47d201c6-8d31-5c7e-befb-3f21083420c2",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--50997510-2983-5f2f-8ac4-ee8d7d0b00ea",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--11d5e33e-3c76-57bf-9dcf-1cce5d309a0d",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--a943cc13-644a-55e5-954b-a0304507c017",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--9d207989-a10d-569a-82fc-eb006e1d19eb",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--9bbe4b67-4bf1-5684-8407-582d62985937",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--56b03702-2037-5117-9ed8-6993bb7595fe",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--200fe591-4459-5425-a222-398b1de03280",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--8cf5e373-c843-5f84-9b08-22e68b1b2150",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--a72e57ce-9362-5da4-879e-63004482403f",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--a2c92741-06a3-5650-a51f-148a9ea9d5b3",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--494c5100-4a7b-569a-9818-e29c462f8a6c",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--30acdf95-ba5e-53e5-b71b-b4b2eb654d88",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--baf29479-7ab8-54a5-b0b8-ff242876cdc3",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--2085e6d0-cced-50f6-806a-841138f105b8",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--b4310f91-ad0c-59e7-8f70-e6fa3041466e",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--cc6def0f-83ab-5894-a8d8-1b42cb2fee70",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--5ed9e022-0fbc-54d6-ab2f-959abf914973",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--8b0d0a21-d65a-5291-8a32-212407cf4f45",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--914e8837-83ff-5eed-b165-9f6e2c113b1e",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--59c87ced-bb15-538e-9f22-3027ab19a591",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--1fe4ad68-9f69-5e70-b583-863745ef25b3",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--7e68922e-c35e-5fec-841d-0daa38b63c95",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--7636db93-c1e0-5332-bd1a-309e88cd1b15",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--cf26ee4b-66af-55a7-94a9-b6adb8241e9a",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--732a49a6-1276-575a-a6c4-cb0734f74763",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--3821815a-9fda-58aa-8111-86278e3183e8",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--62a52211-6c3b-5ae9-a95f-bc8953843ffd",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--4424c713-a88e-5327-95fa-07cc99780703",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--660f5323-01cb-561b-9e8b-ff8a3b75e593",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--ec4e8ec2-e187-5f7a-804d-696cfe64656e",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--15c79886-cdf3-5a24-82f8-ac7a199fb8d0",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--81f3d897-4d9e-55b1-92d6-4e3f2e80bfec",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--0e888be6-f495-5127-a12e-0b6827e6872b",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--4d4d7a5c-8e9a-5eec-9b45-5f7f632c8277",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--e883d68a-a1fb-5a73-98a9-911100c4142b",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--79d7bbd0-9fca-5f05-bcfb-7b089b7742d5",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--5125f9a8-cc90-53f3-82b8-b4230b162d5a",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--2de8cf9a-094a-5433-856a-5f9523c21de0",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--baafb63c-d500-52af-b0fd-0042c4cc44f7",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--92c383cb-5567-5d18-bc5e-afcd74dda3d8",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--c4b14e85-bc9b-524c-941c-79cb190ecdbf",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--9704f62f-aa58-5511-a9b2-a44643292e84",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--f13dde1a-6dab-5612-88c6-3f69f51a77d0",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--40fca84a-9b06-5253-9c7b-cbc054137840",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--bf8daf74-f144-5c86-8976-1c55ab91d3d4",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--ab6b50f5-fa9d-5f4f-b920-e15e12cd0995",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--31886cd4-a85f-55d5-82b2-1eb0e665c5fe",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--8126e9e7-fc46-5bfe-a21d-356a90af3e98",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--f9065446-a249-54f7-9aa1-51b105bfc870",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--de690022-6d9f-5122-9f0d-95a8b53c4eb2",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--df7466c6-8bc5-58ba-b1b1-c53a216b0cae",
+      "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--c3d25638-ecfa-55d6-ab90-85523f45d100",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--02b8af02-0b78-5f90-b670-8eaf825c6cc8",
       "target_ref": "malware--07eb82de-673e-5e92-899b-9cdd3d23bf11"
     }
   ]

@@ -109,9 +109,25 @@ Hunting pivots: a Startup-folder `.lnk` pointing to `ai.exe`; files named after 
 ## Gaps
 
 - The socket C2 host and port, and the 62 server entries, are in config files dropped by the loader, not in this sample. A matching loader chain would be needed.
-- `d1.zip`, `d2.zip` and `pdw.dll` were not retrieved, and liveness of both IPs was not measured.
+- `d1.zip`, `d2.zip` and `pdw.dll` were not retrieved. Liveness of both IPs was measured later: both were unreachable on 2026-11-19 (see the update section).
 - No dynamic run and no sandbox report. Not every code path was reviewed.
-- The delivery chain (lures, scripts, loader) is not part of this case.
+- The delivery chain: the lure layer is now listed by hash and stage-2 URL (see the update section), but no lure, stage-2 script or loader bytes were obtained.
+
+## Update 2026-11-19 (later): delivery lures found on VirusTotal only
+
+This section adds the delivery layer that the first version of this case did not have. It is **static and passive**: nothing was executed, no C2 socket was contacted, and none of the lure files was downloaded.[4]
+
+**What was found (VERIFIED from VirusTotal data, 2026-11-19).** VirusTotal lists 34 files that talk to the payload's counter host `208[.]109[.]36[.]32`: 22 `GDV5_<n>.hta` and 12 `GDV5_<n>.zip`, first seen 2026-09-29 to 2026-10-13 (27 of them on 6 and 7 October), which starts five days after the payload's compile time. None is on MalwareBazaar, YARAify or Hybrid Analysis and downloads need a paid VirusTotal tier, so only hashes and sandbox logs exist. The HTAs are 12,389 to 12,449 B with random-letter titles and 4 to 27 detections (VT label `trojan.aeog`, downloader). The ZIPs are about 1.59 MB: the two bundles read hold one `GDV5_<n>.hta` plus the genuinely signed Adobe Download Manager 2.0.0.790s (`7eda1844…`, listed as a benign decoy, **do not block**) stored as `_\t\<TOKEN>\ <24 characters>`. The other ten ZIPs have the same size (same layout INFERRED).
+
+**Stage 1 (VERIFIED from VT sandbox logs).** The user opens the archive, `cmd.exe /C <tmp>\GDV5_<n>.hta` starts `mshta.exe`, which reads keyboard layout and locale registry keys (geofencing check), queries display devices and WMI, then sends `GET /<T>/<T>mde2/<name>.js` over TLS 1.2 to `32.36.109.208.host.secureserver[.]net:443` (UA `Mozilla/4.0 (compatible; MSIE 7.0; ... Trident/7.0`). In all 22 HTA runs the request goes to the same host with a different token and script name (22 distinct URLs, all in `iocs.csv`). The certificate it received has serial `06778c8dad79c23f3c87149d8aaf1f7320c2`, the one Shodan recorded on `208[.]109[.]36[.]32`.
+
+**The chain stops there.** No sandbox received a stage-2 body: one run logged an HTTP 404 with an empty body (Apache/2.4.66, 2026-10-06 10:49 UTC) and the others a dead connection (INFERRED: an origin-side gate on geography, user agent or a one-shot token). On 2026-11-19 the host `208[.]109[.]36[.]32` and the exfiltration host `64[.]95[.]12[.]126` timed out on every port from 14 third-party check-host nodes in two passes (the control target answered each time), and one stage-2 fetch attempt through an anonymising network timed out. The servers had been open on 2026-10-27 and 2026-11-01 (Shodan), so they went dark in between, for an unknown reason. So there is no stage-2 script, no AutoIt or VBS loader, no config files and no 62-server C2 list.
+
+**Link to the payload (INFERRED, medium-high).** The lures connect to the payload by shared infrastructure: the same IP, the same TLS certificate and the same timing. **No hash links a lure to the payload**, and the HTA bytes were never read, so the family attribution of the lures rests on that infrastructure link alone. The old domain `bot-nedm[.]com` (VT passive DNS on `64[.]95[.]12[.]126`, 2025-08-03) is listed as low-confidence history only.
+
+**Indicators added:** 34 lure hashes, 22 stage-2 URLs, the stage host name (a GoDaddy PTR name: block that exact name only), the URL pattern, the certificate serial, the ZIP layout and the process pattern, plus the decoy (benign) and the historical domain (low). ThreatFox 2034985 to 2035041 (the 22 URLs and 34 lure hashes at confidence 75, label Mispadu; the decoy was not submitted). Hunting: `GDV5_<1-6 digits>.(zip|hta)`; `mshta.exe` making HTTPS requests to a raw `*.host.secureserver.net` name; URL regex `/([A-Za-z0-9]{4,9})/\1mde2/[A-Za-z0-9]{3,12}\.js$`.
+
+Sources for this update: VirusTotal API (communicating files of the counter host, behaviour summaries of 22 HTAs and one ZIP, bundled files of two ZIPs), MalwareBazaar and YARAify lookups, Hybrid Analysis hash search, check-host.net TCP and HTTP checks; the same Mispadu delivery chain family is described by ThreatDown (HTA with remote script to VBS)[5] and Morphisec (HTA/MSI to VBS to AutoIt).[6]
 
 ## Credits
 
@@ -122,3 +138,6 @@ Family behaviour and the cipher: ESET (Mispadu, 2019; the config layout, NirSoft
 [1] ESET, Mispadu: Advertisement for a discounted Unhappy Meal (2019): https://www.welivesecurity.com/2019/11/19/mispadu-advertisement-discounted-unhappy-meal
 [2] IBM X-Force, Mispadu (Ursa) C2C communication behind the scenes: https://www.ibm.com/think/news/mispadu-ursa-c2c-communication-behind-scenes
 [3] Cofense, Mispadu phishing malware baseline (2026-02-11): https://cofense.com/blog/mispadu-phishing-malware-baseline
+[4] VirusTotal, communicating files of 208.109.36.32 (API v3, read 2026-11-19): https://www.virustotal.com/gui/ip-address/208.109.36.32/relations
+[5] ThreatDown, Analyzing a Mispadu trojan's attack chain (2025-02-11): https://www.threatdown.com/blog/analyzing-a-mispadu-trojans-attack-chain
+[6] Morphisec, Mispadu infiltration beyond LATAM: https://www.morphisec.com/blog/mispadu-infiltration-beyond-latam
