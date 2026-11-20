@@ -106,9 +106,9 @@
         "type": "ip-dst",
         "category": "Network activity",
         "value": "3.80.57.117",
-        "to_ids": false,
+        "to_ids": true,
         "distribution": "5",
-        "comment": "A record of the C2 name on 2026-11-16 08:09 UTC (AWS us-east-1, TTL 60; may rotate) [type: ipv4; verdict: malicious; source: public DoH (dns.google, cloudflare-dns)] [warninglist known infrastructure (amazon-aws); to_ids=false; shared by other users, block only with other evidence]",
+        "comment": "A record of the C2 name on 2026-11-16 08:09 UTC (AWS us-east-1, TTL 60; may rotate) [type: ipv4; verdict: malicious; source: public DoH (dns.google, cloudflare-dns)] [cloud-hosted (amazon-aws): attacker-rented server; IP may be reassigned after takedown, treat as time-bound]",
         "timestamp": "1794787200",
         "Tag": [
           {
@@ -122,9 +122,9 @@
         "type": "ip-dst|port",
         "category": "Network activity",
         "value": "3.80.57.117|9136",
-        "to_ids": false,
+        "to_ids": true,
         "distribution": "5",
-        "comment": "derived C2 module-server endpoint for that A record: port = (SHA256(\"SERVERMODULES\"+ip)[:8] mod 9001)+1001; never contacted, port state not checked [type: endpoint; verdict: malicious; source: derived from decrypted config] [warninglist known infrastructure (amazon-aws); to_ids=false; shared by other users, block only with other evidence]",
+        "comment": "derived C2 module-server endpoint for that A record: port = (SHA256(\"SERVERMODULES\"+ip)[:8] mod 9001)+1001; never contacted, port state not checked [type: endpoint; verdict: malicious; source: derived from decrypted config] [cloud-hosted (amazon-aws): attacker-rented server; IP may be reassigned after takedown, treat as time-bound]",
         "timestamp": "1794787200",
         "Tag": [
           {

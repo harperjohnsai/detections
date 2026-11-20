@@ -1,8 +1,8 @@
 {
  "misp_warninglists_commit": "40e2b570fda2e5443a2d6fa1d1db16c37ab0a956",
  "lists": [
-  "amazon-aws",
   "akamai",
+  "amazon-aws",
   "check-host-net",
   "cloudflare",
   "digitalocean",
@@ -21,6 +21,27 @@
   "url-shortener",
   "vultr"
  ],
+ "classes": {
+  "akamai": "shared",
+  "check-host-net": "shared",
+  "cloudflare": "shared",
+  "dynamic-dns": "shared",
+  "fastly": "shared",
+  "github": "shared",
+  "link-in-bio": "shared",
+  "ovh-cluster": "shared",
+  "parking-domain": "shared",
+  "public-ipfs-gateways": "shared",
+  "sinkholes": "shared",
+  "telegram-ips": "shared",
+  "url-shortener": "shared",
+  "amazon-aws": "cloud",
+  "digitalocean": "cloud",
+  "google-gcp": "cloud",
+  "hetzner": "cloud",
+  "microsoft-azure": "cloud",
+  "vultr": "cloud"
+ },
  "entries": [
   {
    "type": "domain",
@@ -129,7 +150,7 @@
   {
    "type": "ip-dst",
    "value": "3.80.57.117",
-   "kind": "exact",
+   "kind": "cloud",
    "lists": [
     "amazon-aws"
    ]
@@ -137,7 +158,7 @@
   {
    "type": "ip-dst",
    "value": "65.109.14.177",
-   "kind": "exact",
+   "kind": "cloud",
    "lists": [
     "hetzner"
    ]
@@ -145,7 +166,7 @@
   {
    "type": "ip-dst",
    "value": "91.107.247.163",
-   "kind": "exact",
+   "kind": "cloud",
    "lists": [
     "hetzner"
    ]
@@ -153,7 +174,7 @@
   {
    "type": "ip-dst|port",
    "value": "3.80.57.117|9136",
-   "kind": "exact",
+   "kind": "cloud",
    "lists": [
     "amazon-aws"
    ]
@@ -161,7 +182,7 @@
   {
    "type": "ip-dst|port",
    "value": "91.107.247.163|443",
-   "kind": "exact",
+   "kind": "cloud",
    "lists": [
     "hetzner"
    ]
@@ -169,7 +190,7 @@
   {
    "type": "ip-dst|port",
    "value": "91.107.247.163|80",
-   "kind": "exact",
+   "kind": "cloud",
    "lists": [
     "hetzner"
    ]

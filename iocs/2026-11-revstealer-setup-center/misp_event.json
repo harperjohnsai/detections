@@ -1057,7 +1057,7 @@
         "value": "65.109.14.177",
         "to_ids": false,
         "distribution": "5",
-        "comment": "social.linux.pizza host (AS24940 Hetzner) - legit instance, do NOT block; contacted by sample for dead-drop read [type: ipv4; verdict: shared-or-legit-infrastructure; source: Hybrid Analysis] [warninglist known infrastructure (hetzner); to_ids=false; shared by other users, block only with other evidence]",
+        "comment": "social.linux.pizza host (AS24940 Hetzner) - legit instance, do NOT block; contacted by sample for dead-drop read [type: ipv4; verdict: shared-or-legit-infrastructure; source: Hybrid Analysis] [cloud-hosted (hetzner): attacker-rented server; IP may be reassigned after takedown, treat as time-bound]",
         "timestamp": "1794528000",
         "Tag": [
           {

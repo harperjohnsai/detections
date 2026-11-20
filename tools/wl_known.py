@@ -2,19 +2,30 @@
 """MISP warninglist 'known' matches for the published IOC sets (stdlib only, offline once the lists exist).
 
 The exporter (export_iocs.py) must not mark shared infrastructure as to_ids=true. MISP warninglists with
-category "known" describe such infrastructure (URL shorteners, cloud/hosting ranges, dynamic DNS, CDNs).
+category "known" describe two different things, which this module keeps apart (table CLASSES below):
+
+  (a) SHARED infrastructure: many unrelated parties use the same address or host (CDN/anycast proxy ranges,
+      parking, link-in-bio, URL shorteners, dynamic DNS, public IPFS gateways, public service hostnames, sinkholes).
+      Blocking on the value alone hits other users.
+  (b) RENTED hosting/cloud compute ranges (AWS, GCP, Azure, Hetzner, DigitalOcean, Vultr): the list only says that
+      an address belongs to a provider. An attacker simply rents a server there (MISP's own description of the
+      hetzner and vultr lists says so), so a C2 on such an address is a real, alertable indicator. The address may be
+      reassigned after the server is taken down: time-bound, not benign.
+
 This module classifies every exported MISP attribute against a PINNED misp-warninglists commit and a fixed
 subset of its lists, type-aware (a list is only consulted for the MISP attribute types in its
 `matching_attributes`; ip-dst|port is split to its IP half; a URL is reduced to its host):
 
-  exact      domain equals a list entry, or an IP lies inside a listed CIDR, or a path-less URL has an entry host
-             -> exporter sets to_ids=false (the IOC row stays in iocs.csv/json/STIX, only the flag changes)
+  exact      class (a): domain equals a list entry, or an IP lies inside a listed CIDR, or a path-less URL has an
+             entry host -> exporter sets to_ids=false (the IOC row stays in iocs.csv/json/STIX, only the flag changes)
   subdomain  host is a subdomain of an entry (guild.<dyndns zone>)           -> to_ids kept, review note in comment
   path       URL with a path on a listed host (bit.ly/<code>)                -> to_ids kept, review note in comment
+  cloud      class (b): IP inside a rented-compute range                     -> to_ids kept, "cloud-hosted" note
+             An IP that is in a class (a) range as well (GitHub and Azure ranges overlap) stays 'exact'.
 
 Output of --update is tools/warninglist_known.json, read by the exporter (no network at export time).
-tests/validate_exports.py re-derives it from the pinned lists and fails if it is stale or if a to_ids=true
-attribute still carries an exact 'known' match.
+tests/validate_exports.py re-derives it from the pinned lists and fails if it is stale, if a to_ids=true
+attribute still carries an exact (class a) match, or if a class (b) match lost its to_ids flag or its note.
 
 usage: wl_known.py --update | --check [--lists-dir DIR]
   DIR = misp-warninglists checkout at PIN (default: shallow fetch of PIN into a temp dir; env WL_DIR also works)
@@ -33,15 +44,47 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, 'warninglist_known.json')
 REPO_URL = 'https://github.com/MISP/misp-warninglists.git'
 PIN = '40e2b570fda2e5443a2d6fa1d1db16c37ab0a956'
-# Subset: lists of category "known" that describe shared infrastructure. The full repo also carries
-# datacenter-ipv4, vpn-ipv4, tor-exit-nodes, ... which would cover most hosting space and are deliberately not used.
-LISTS = ['amazon-aws', 'akamai', 'check-host-net', 'cloudflare', 'digitalocean', 'dynamic-dns', 'fastly',
-         'github', 'google-gcp', 'hetzner', 'link-in-bio', 'microsoft-azure', 'ovh-cluster', 'parking-domain',
-         'public-ipfs-gateways', 'sinkholes', 'telegram-ips', 'url-shortener', 'vultr']
+# Subset: lists of category "known". The full repo also carries datacenter-ipv4, vpn-ipv4, tor-exit-nodes, ...
+# which would cover most hosting space and are deliberately not used.
+#
+# CLASSES: decided per list from its MISP name/description at PIN. 'shared' = class (a), 'cloud' = class (b).
+CLASSES = {
+    # (a) shared: many unrelated users behind one address or host
+    'akamai': 'shared',               # CDN edge ranges (BGP search): proxy in front of many customers
+    'check-host-net': 'shared',       # check-host.net probe nodes: a public measurement service
+    'cloudflare': 'shared',           # anycast CDN/proxy ranges: thousands of sites per address
+    'dynamic-dns': 'shared',          # dynamic DNS zones, anyone can register a subdomain
+    'fastly': 'shared',               # CDN edge ranges
+    'github': 'shared',               # api.github.com/meta ranges: Pages/raw/web front ends shared by all users
+    'link-in-bio': 'shared',          # link-in-bio hostnames (shared landing-page services)
+    'ovh-cluster': 'shared',          # OVH web-hosting clusters and SHARED hosting IPs (docs: "clusters and shared
+                                      # hosting IP"): many customers' sites on one address. Not OVH VPS/dedicated.
+    'parking-domain': 'shared',       # parking-domain addresses, shared by every parked domain
+    'public-ipfs-gateways': 'shared', # public IPFS gateways, content of any user behind one hostname
+    'sinkholes': 'shared',            # sinkhole addresses: victims' traffic, not an operator server
+    'telegram-ips': 'shared',         # Telegram service ranges, shared by all clients
+    'url-shortener': 'shared',        # shortener hostnames, one host for any destination
+    # (b) rented hosting/cloud compute: provider ranges, an attacker can rent an address like any customer
+    'amazon-aws': 'cloud',            # AWS ip-ranges.json (EC2 etc.; includes some CDN/S3 service prefixes, which
+                                      # the list cannot separate: review such a hit by hand)
+    'digitalocean': 'cloud',          # DigitalOcean droplet ranges (RFC 8805 geofeed)
+    'google-gcp': 'cloud',            # GCP cloud.json: Compute Engine and other customer-rented ranges
+    'hetzner': 'cloud',               # MISP: "general-purpose rented compute ... an attacker can simply rent one"
+    'microsoft-azure': 'cloud',       # Azure datacenter ranges
+    'vultr': 'cloud',                 # MISP: "general-purpose rented compute ... an attacker can simply rent one"
+}
+LISTS = sorted(CLASSES)
 IP_TYPES = {'ip-dst': 0, 'ip-src': 0, 'ip-dst|port': 0, 'ip-src|port': 0}
 HOST_TYPES = {'domain', 'hostname', 'url'}
 NOTE_EXACT = 'warninglist known infrastructure'
 NOTE_REVIEW = 'review: warninglist'
+NOTE_CLOUD = 'cloud-hosted'
+RANK = {'exact': 0, 'cloud': 1, 'subdomain': 2, 'path': 3}
+
+
+def cloud_note(lists):
+    return (f"[{NOTE_CLOUD} ({', '.join(lists)}): attacker-rented server; IP may be reassigned after takedown, "
+            "treat as time-bound]")
 
 
 def ensure_lists(path=None):
@@ -92,7 +135,7 @@ class Lists:
                 raise SystemExit(f'{name}: unsupported list type {d["type"]}')
 
     def classify(self, mtype, value):
-        """Return [(list, kind, version)] with kind exact|subdomain|path for one MISP attribute."""
+        """Return [(list, kind, version)] with kind exact|cloud|subdomain|path for one MISP attribute."""
         hits = []
         if mtype in IP_TYPES:
             try:
@@ -106,7 +149,7 @@ class Lists:
                 if mtype in types:
                     i = bisect.bisect_right(starts, n) - 1
                     if i >= 0 and n <= ends[i]:
-                        hits.append((name, 'exact', ver))
+                        hits.append((name, 'cloud' if CLASSES[name] == 'cloud' else 'exact', ver))
         elif mtype in HOST_TYPES:
             pathful = False
             if mtype == 'url':
@@ -145,11 +188,10 @@ def derive(lists):
         hits = lists.classify(mtype, value)
         if not hits:
             continue
-        rank = {'exact': 0, 'subdomain': 1, 'path': 2}
-        kind = min((h[1] for h in hits), key=rank.get)
+        kind = min((h[1] for h in hits), key=RANK.get)
         ent[(mtype, value)] = {'type': mtype, 'value': value, 'kind': kind,
-                               'lists': sorted(h[0] for h in hits)}
-    return {'misp_warninglists_commit': PIN, 'lists': LISTS,
+                               'lists': sorted(h[0] for h in hits if h[1] == kind)}
+    return {'misp_warninglists_commit': PIN, 'lists': LISTS, 'classes': CLASSES,
             'entries': sorted(ent.values(), key=lambda e: (e['type'], e['value']))}
 
 

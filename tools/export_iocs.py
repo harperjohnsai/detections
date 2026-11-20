@@ -255,6 +255,8 @@ def build_stix(slug, case, rows, known=None):
         if kn and kn['kind'] == 'exact':  # STIX has no to_ids flag: keep the indicator, mark it
             labels.append('known-infrastructure')
             role += f" [{WL_EXACT} ({', '.join(kn['lists'])}); block only with other evidence]"
+        elif kn and kn['kind'] == 'cloud':  # rented server: still an indicator, say that it is time-bound
+            role += ' ' + wl_known.cloud_note(kn['lists'])
         if pat in inds:
             inds[pat]['labels'] = sorted(set(inds[pat]['labels']) | set(labels))
             continue
@@ -361,6 +363,8 @@ def misp_attr(slug, row, created, known=None):
             # shared infrastructure: the IOC row stays published, only the IDS flag is withdrawn
             comment += f" [{WL_EXACT} ({names}); to_ids=false; shared by other users, block only with other evidence]"
             ids = False
+        elif kn['kind'] == 'cloud':
+            comment += ' ' + wl_known.cloud_note(kn['lists'])  # rented compute: the IDS flag is not touched
         else:
             comment += f" [{WL_REVIEW} {names} (known) matches the {kn['kind']}; kept to_ids, check before blocking]"
     epoch = str(int(created.replace(tzinfo=dt.timezone.utc).timestamp()))

@@ -1034,9 +1034,9 @@
         "type": "ip-dst",
         "category": "Network activity",
         "value": "91.107.247.163",
-        "to_ids": false,
+        "to_ids": true,
         "distribution": "5",
-        "comment": "Cobalt Strike C&C used in a Gentlemen affiliate intrusion: a rundll32 payload connected over ports 443 and later 80 (Check Point DFIR, published 2026-04-20). Liveness not checked by us [type: ipv4; verdict: malicious; source: Check Point Research DFIR report 2026-04-20] [warninglist known infrastructure (hetzner); to_ids=false; shared by other users, block only with other evidence]",
+        "comment": "Cobalt Strike C&C used in a Gentlemen affiliate intrusion: a rundll32 payload connected over ports 443 and later 80 (Check Point DFIR, published 2026-04-20). Liveness not checked by us [type: ipv4; verdict: malicious; source: Check Point Research DFIR report 2026-04-20] [cloud-hosted (hetzner): attacker-rented server; IP may be reassigned after takedown, treat as time-bound]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -1178,9 +1178,9 @@
         "type": "ip-dst|port",
         "category": "Network activity",
         "value": "91.107.247.163|443",
-        "to_ids": false,
+        "to_ids": true,
         "distribution": "5",
-        "comment": "Cobalt Strike C&C endpoint (port named by Check Point DFIR) [type: endpoint; verdict: malicious; source: Check Point Research DFIR report 2026-04-20; ThreatFox 2035368] [warninglist known infrastructure (hetzner); to_ids=false; shared by other users, block only with other evidence]",
+        "comment": "Cobalt Strike C&C endpoint (port named by Check Point DFIR) [type: endpoint; verdict: malicious; source: Check Point Research DFIR report 2026-04-20; ThreatFox 2035368] [cloud-hosted (hetzner): attacker-rented server; IP may be reassigned after takedown, treat as time-bound]",
         "timestamp": "1795046400",
         "Tag": [
           {
@@ -1194,9 +1194,9 @@
         "type": "ip-dst|port",
         "category": "Network activity",
         "value": "91.107.247.163|80",
-        "to_ids": false,
+        "to_ids": true,
         "distribution": "5",
-        "comment": "Cobalt Strike C&C endpoint (port named by Check Point DFIR) [type: endpoint; verdict: malicious; source: Check Point Research DFIR report 2026-04-20; ThreatFox 2035369] [warninglist known infrastructure (hetzner); to_ids=false; shared by other users, block only with other evidence]",
+        "comment": "Cobalt Strike C&C endpoint (port named by Check Point DFIR) [type: endpoint; verdict: malicious; source: Check Point Research DFIR report 2026-04-20; ThreatFox 2035369] [cloud-hosted (hetzner): attacker-rented server; IP may be reassigned after takedown, treat as time-bound]",
         "timestamp": "1795046400",
         "Tag": [
           {
