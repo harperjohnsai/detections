@@ -2,7 +2,7 @@
  "_warning": "MACHINE-READABLE, NOT DEFANGED: values are live indicators. Do not browse or fetch them.",
  "case": "2026-11-revstealer-setup-center",
  "license": "CC0-1.0",
- "count": 374,
+ "count": 385,
  "iocs": [
   {
    "type": "url",
@@ -3366,6 +3366,105 @@
    "value": "rpc-polygon.blockmachine.io",
    "first_seen": "2026-11-19",
    "role": "public Polygon JSON-RPC host listed in the config of build yh-1111b (and of a further compilation of yh-1114); role INFERRED (config field, not tested). Third-party service: do NOT block globally; hunt non-browser POST eth_call",
+   "verdict": "shared-or-legit-infrastructure",
+   "confidence": "low",
+   "source": "static config extraction"
+  },
+  {
+   "type": "domain",
+   "value": "app.bluepanel.wiki",
+   "first_seen": "2026-11-11",
+   "role": "C1 build yh-1111c REVSTEALER primary C2 (HTTPS :443; GET /health must return 'active'); host:port, Polygon contract and Telegraph page all taken from the embedded config of a sandbox memory image; contract value and Telegraph page read 2026-11-20 and decrypted: both give the same host:port. Domain registered 2026-11-11T09:31:51Z (Dynadot, Cloudflare name servers, RDAP); the contract was created 28 minutes later. Host never contacted. Already on ThreatFox as 2024633 (reporter Myrtus0x0), not resubmitted",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "YARAify memory image (first seen 2026-11-19 14:42 UTC), static config extraction; eth_call and Telegraph read 2026-11-20; RDAP"
+  },
+  {
+   "type": "polygon-contract",
+   "value": "0x0990CAD2ca2f5E295a429AD98a212dE8533Eb8FF",
+   "first_seen": "2026-11-11",
+   "role": "C1 build yh-1111c REVSTEALER EtherHiding dead drop named in the config (3rd C2 source), created 2026-11-11T09:59:52Z by deployer 0x8bAddf05 (nonce 173, tx 0x369c2a58f3caf629cbdc10e2587cf436ba35c7c3e441b545c8e9dba3285bb48d); eth_call selector 0xd6e480eb on a public Polygon RPC; value read 2026-11-20 decrypts to app.bluepanel.wiki:443, the embedded primary of this build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction; creation tx located by code-history search on public Polygon RPCs; eth_call read 2026-11-20"
+  },
+  {
+   "type": "url",
+   "value": "https://telegra.ph/Slate-ridge-olive-canvas-11-11",
+   "first_seen": "2026-11-11",
+   "role": "C1 build yh-1111c Telegraph dead drop named in the config (page description holds the AES-encrypted C2); block by path, not by host; page read 2026-11-20 via the Telegraph API, description decrypts to app.bluepanel.wiki:443 (embedded primary)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "YARAify memory image (first seen 2026-11-19 14:42 UTC), static config extraction"
+  },
+  {
+   "type": "url-path",
+   "value": "/njpm/ixnxv.izlj",
+   "first_seen": "2026-11-11",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1111c, app.bluepanel.wiki; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "url-path",
+   "value": "/okst/fgle/ixnxv.izlj",
+   "first_seen": "2026-11-11",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1111c, app.bluepanel.wiki; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "url-path",
+   "value": "/puov/ixnxv.izlj",
+   "first_seen": "2026-11-11",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1111c, app.bluepanel.wiki; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "url-path",
+   "value": "/qjg/ixnxv.izlj",
+   "first_seen": "2026-11-11",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1111c, app.bluepanel.wiki; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "mutex",
+   "value": "Global\\70761F52",
+   "first_seen": "2026-11-11",
+   "role": "C1 REVSTEALER mutex of build yh-1111c",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "user-agent",
+   "value": "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.13142.72 Safari/537.36",
+   "first_seen": "2026-11-11",
+   "role": "C1 REVSTEALER WinINet User-Agent of build yh-1111c (C2 + RPC traffic); the browser build number is not a real release",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "static config extraction"
+  },
+  {
+   "type": "sha256",
+   "value": "281af3669e09b641a31ae5645295c568fb554f21a3d383f0af6bc1266c0f06b7",
+   "first_seen": "2026-11-11",
+   "role": "C1 build yh-1111c REVSTEALER core: sandbox process-memory dump of a Themida-protected build (14,707,308 B = SizeOfImage 0xe06a6c, section raw offsets equal virtual addresses; YARAify file name 140000000.<uuid>.exe; sections .themida 8.6 MB and .boot 5.6 MB; not a Go binary: no Go build info, pclntab or runtime strings), first seen 2026-11-19 14:42 UTC; matches YARA REVSTEALER_x64_Core_SetupCenter; memory/dump hunting, not a file on disk; ThreatFox 2036166",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "YARAify (first seen); static config extraction"
+  },
+  {
+   "type": "domain",
+   "value": "matic.rpc.sentio.xyz",
+   "first_seen": "2026-11-11",
+   "role": "public Polygon JSON-RPC host listed in the config of build yh-1111c; role INFERRED (config field, not tested). Third-party service: do NOT block globally; hunt non-browser POST eth_call",
    "verdict": "shared-or-legit-infrastructure",
    "confidence": "low",
    "source": "static config extraction"

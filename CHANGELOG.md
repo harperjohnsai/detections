@@ -131,3 +131,9 @@
 - +42 IOC rows (374 total), +4 `c2_timeline.csv` rows, README section and table rows, ThreatFox references 2036131 to 2036137. No AES keys or other secrets published.
 - Update (not a retraction): nonce 208, listed in the README as tied to no sample, is `yh-1114b`. The "nonce now 216" figure noted on 2026-11-16 evening was too low: nonces 217 and 218 were created on 2026-11-16 at 09:16 and 09:17 UTC. The cause was not determined.
 - Not checked: liveness of any C2 (nothing contacted); setter transactions on the four contracts.
+
+### 2026-11-20 (REVSTEALER: one more build from a YARAify hit, new Polygon contract and Telegraph page)
+- `iocs/2026-11-revstealer-setup-center`: `REVSTEALER_x64_Core_SetupCenter` matched a Themida-protected memory-layout image on YARAify (`281af366`). Static config extraction gives build `yh-1111c` (`app[.]bluepanel[.]wiki`, already ThreatFox 2024633 by another reporter, credited) with its own Polygon contract (`0x0990CAD2...`, deployer `0x8bAddf05` nonce 173) and Telegraph page, none published before.
+- Dead drops read 2026-11-20: the Telegraph page and the contract decrypt to the embedded primary.
+- +11 IOC rows, +1 `c2_timeline.csv` row, README section and table row, ThreatFox reference 2036166. No AES keys or other secrets published.
+- Not checked: liveness of the C2 (nothing contacted); setter transactions on the contract.
