@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Validate the generated exports: STIX 2.1 with the OASIS stix2-validator and the stix2 parser,
-MISP events by loading them with PyMISP (no server). Needs stix2 stix2-validator pymisp."""
+MISP events by loading them with PyMISP (no server), the MISP category/type matrix (A-CAT) and a warninglist gate
+(pinned misp-warninglists commit, see tools/wl_known.py; fetched with git unless WL_DIR points at a checkout).
+Needs stix2 stix2-validator pymisp."""
 import glob, json, os, sys
 
 import stix2
@@ -8,6 +10,9 @@ from pymisp import MISPAttribute, MISPEvent
 from stix2validator import ValidationOptions, validate_file
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.join(HERE, '..', 'tools'))
+import wl_known  # noqa: E402
+
 ok = True
 # MISP category/type matrix of the installed PyMISP (describeTypes); MISPEvent.load() does not enforce it
 MATRIX = MISPAttribute().describe_types['category_type_mappings']
@@ -62,5 +67,49 @@ for d in sorted(glob.glob(os.path.join(HERE, '..', 'iocs', '*', ''))):
     ev.load(open(d + 'misp_event.json', encoding='utf-8').read())
     check(len(ev.attributes) > 0 and ev.distribution == 3 and any(t.name == 'tlp:clear' for t in ev.tags),
           f'{name}: pymisp loaded event, {len(ev.attributes)} attributes ({sum(a.to_ids for a in ev.attributes)} to_ids) of {n_iocs} rows + links')
+# ---- warninglist gate (T0163): pinned misp-warninglists commit, type-aware ---------------------------------
+# A to_ids=true attribute must not equal an entry of a 'known'-category list (shared infrastructure): the exporter
+# withdraws the flag. Subdomain/path matches keep to_ids but must carry a review note in the attribute comment.
+WL = wl_known.Lists(wl_known.ensure_lists())
+cl = WL.classify
+check(('url-shortener', 'exact') in [h[:2] for h in cl('domain', 'bit.ly')],
+      'warninglist control: domain bit.ly is an exact hit of url-shortener')
+check(any(h[:2] == ('amazon-aws', 'exact') for h in cl('ip-dst', '3.80.57.117')) and
+      any(h[:2] == ('amazon-aws', 'exact') for h in cl('ip-dst|port', '3.80.57.117|9136')),
+      'warninglist control: ip-dst and ip-dst|port (IP half) hit amazon-aws')
+check(cl('text', 'bit.ly') == [] and cl('domain', '3.80.57.117') == [],
+      'warninglist control: type-aware, same value as another attribute type is not consulted')
+check(['dynamic-dns'] == [h[0] for h in cl('domain', 'guild.hopto.me') if h[1] == 'subdomain'] and
+      all(h[1] == 'path' for h in cl('url', 'https://bit.ly/3WCrex2')) and cl('url', 'https://bit.ly/3WCrex2'),
+      'warninglist control: subdomain of a zone entry and a path URL on a shortener are not exact')
+check(cl('domain', 'example-unlisted-domain.test') == [] and cl('ip-dst', '203.0.113.5') == [],
+      'warninglist control: unlisted domain and documentation IP give no hit')
+check(wl_known.dumps(wl_known.derive(WL)) == open(wl_known.DATA, encoding='utf-8').read(),
+      f'tools/warninglist_known.json equals a fresh derivation from {wl_known.PIN[:10]} (run tools/wl_known.py --update)')
+n_exact = n_review = 0
+for d in sorted(glob.glob(os.path.join(HERE, '..', 'iocs', '*', ''))):
+    name = os.path.basename(os.path.dirname(d))
+    if not os.path.exists(d + 'misp_event.json'):
+        continue
+    ev = json.load(open(d + 'misp_event.json', encoding='utf-8'))['Event']
+    attrs = ev.get('Attribute', []) + [a for o in ev.get('Object', []) for a in o.get('Attribute', [])]
+    exact_ids, unreviewed = [], []
+    for a in attrs:
+        hits = cl(a['type'], str(a['value']))
+        if not hits:
+            continue
+        if any(h[1] == 'exact' for h in hits):
+            n_exact += 1
+            if a['to_ids']:
+                exact_ids.append(f"{a['type']}:{a['value']}")
+            elif wl_known.NOTE_EXACT not in a['comment']:
+                unreviewed.append(f"{a['type']}:{a['value']}")
+        elif a['to_ids']:
+            n_review += 1
+            if wl_known.NOTE_REVIEW not in a['comment']:
+                unreviewed.append(f"{a['type']}:{a['value']}")
+    check(not exact_ids, f'{name}: no to_ids=true attribute equals a known-category warninglist entry {exact_ids[:3]}')
+    check(not unreviewed, f'{name}: every warninglist hit carries its note in the comment {unreviewed[:3]}')
+print(f'warninglist: {n_exact} exact hits (to_ids withdrawn), {n_review} subdomain/path hits kept with review note')
 print('ALL CHECKS PASS' if ok else 'SOME CHECKS FAILED')
 sys.exit(0 if ok else 1)

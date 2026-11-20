@@ -2210,7 +2210,7 @@
       "type": "indicator",
       "id": "indicator--f4bcd2f3-097d-541f-962b-eeec39e38434",
       "name": "3c5.com",
-      "description": "L1 redirector target of bit.ly/3O31vLx (HTTP 522) [verdict: malicious; source: analyst fetch]",
+      "description": "L1 redirector target of bit.ly/3O31vLx (HTTP 522) [warninglist known infrastructure (url-shortener); block only with other evidence] [verdict: malicious; source: analyst fetch]",
       "indicator_types": [
         "malicious-activity"
       ],
@@ -2220,6 +2220,7 @@
       "valid_from": "2026-11-13T00:00:00.000Z",
       "labels": [
         "domain",
+        "known-infrastructure",
         "redirector"
       ],
       "confidence": 50

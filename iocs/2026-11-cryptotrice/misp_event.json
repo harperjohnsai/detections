@@ -1353,7 +1353,7 @@
         "value": "149.154.167.99",
         "to_ids": false,
         "distribution": "5",
-        "comment": "telegram.me address contacted by sample in HA sandbox (Telegram infra, not C2) [type: ipv4; verdict: shared-or-legit-infrastructure; source: Hybrid Analysis; sandbox]",
+        "comment": "telegram.me address contacted by sample in HA sandbox (Telegram infra, not C2) [type: ipv4; verdict: shared-or-legit-infrastructure; source: Hybrid Analysis; sandbox] [warninglist known infrastructure (telegram-ips); to_ids=false; shared by other users, block only with other evidence]",
         "timestamp": "1794355200",
         "Tag": [
           {

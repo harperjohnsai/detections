@@ -481,7 +481,7 @@
         "value": "https://cutt.ly/uMmYMil",
         "to_ids": true,
         "distribution": "5",
-        "comment": "L1 shortener -> https://transfer.sh/XvzDfx/InstalleR.zip [type: url; verdict: malicious; source: redirect check]",
+        "comment": "L1 shortener -> https://transfer.sh/XvzDfx/InstalleR.zip [type: url; verdict: malicious; source: redirect check] [review: warninglist url-shortener (known) matches the path; kept to_ids, check before blocking]",
         "timestamp": "1794528000",
         "Tag": [
           {
@@ -511,7 +511,7 @@
         "value": "https://bit.ly/3O31vLx",
         "to_ids": true,
         "distribution": "5",
-        "comment": "L1 shortener -> https://href.li/?https://3c5.com/wmznh [type: url; verdict: malicious; source: redirect check]",
+        "comment": "L1 shortener -> https://href.li/?https://3c5.com/wmznh [type: url; verdict: malicious; source: redirect check] [review: warninglist link-in-bio, url-shortener (known) matches the path; kept to_ids, check before blocking]",
         "timestamp": "1794528000",
         "Tag": [
           {
@@ -541,7 +541,7 @@
         "value": "https://tinyurl.com/47exbmes",
         "to_ids": true,
         "distribution": "5",
-        "comment": "L1 shortener -> https://transfer.sh/get/oah5Tg/[brand].zip [type: url; verdict: malicious; source: redirect check]",
+        "comment": "L1 shortener -> https://transfer.sh/get/oah5Tg/[brand].zip [type: url; verdict: malicious; source: redirect check] [review: warninglist url-shortener (known) matches the path; kept to_ids, check before blocking]",
         "timestamp": "1794528000",
         "Tag": [
           {
@@ -571,7 +571,7 @@
         "value": "https://bit.ly/3XJxEvs",
         "to_ids": true,
         "distribution": "5",
-        "comment": "L1 shortener -> https://href.li/?http://gg.gg/131t7a [type: url; verdict: malicious; source: redirect check]",
+        "comment": "L1 shortener -> https://href.li/?http://gg.gg/131t7a [type: url; verdict: malicious; source: redirect check] [review: warninglist link-in-bio, url-shortener (known) matches the path; kept to_ids, check before blocking]",
         "timestamp": "1794528000",
         "Tag": [
           {
@@ -601,7 +601,7 @@
         "value": "http://bit.ly/3WCrex2",
         "to_ids": true,
         "distribution": "5",
-        "comment": "L1 shortener -> https://href.li/?http://gg.gg/131t7g [type: url; verdict: malicious; source: redirect check]",
+        "comment": "L1 shortener -> https://href.li/?http://gg.gg/131t7g [type: url; verdict: malicious; source: redirect check] [review: warninglist link-in-bio, url-shortener (known) matches the path; kept to_ids, check before blocking]",
         "timestamp": "1794528000",
         "Tag": [
           {
@@ -631,7 +631,7 @@
         "value": "https://cutt.ly/oMLnFN1",
         "to_ids": true,
         "distribution": "5",
-        "comment": "L1 shortener -> https://telegra.ph/[brand]-Free-Download--Premium-11-20 [type: url; verdict: malicious; source: redirect check]",
+        "comment": "L1 shortener -> https://telegra.ph/[brand]-Free-Download--Premium-11-20 [type: url; verdict: malicious; source: redirect check] [review: warninglist url-shortener (known) matches the path; kept to_ids, check before blocking]",
         "timestamp": "1794528000",
         "Tag": [
           {
@@ -646,7 +646,7 @@
         "value": "https://bit.ly/3dkwjJE",
         "to_ids": true,
         "distribution": "5",
-        "comment": "L1 shortener -> https://cdn.discordapp.com/attachments/1020239068577144832/1020681287050207372/AppSetup.zip [type: url; verdict: malicious; source: redirect check]",
+        "comment": "L1 shortener -> https://cdn.discordapp.com/attachments/1020239068577144832/1020681287050207372/AppSetup.zip [type: url; verdict: malicious; source: redirect check] [review: warninglist link-in-bio, url-shortener (known) matches the path; kept to_ids, check before blocking]",
         "timestamp": "1794528000",
         "Tag": [
           {
@@ -676,7 +676,7 @@
         "value": "https://bit.ly/3Bcjryq",
         "to_ids": true,
         "distribution": "5",
-        "comment": "L1 shortener -> https://github.com/softmnz/soft/raw/main/[brand].rar [type: url; verdict: malicious; source: redirect check]",
+        "comment": "L1 shortener -> https://github.com/softmnz/soft/raw/main/[brand].rar [type: url; verdict: malicious; source: redirect check] [review: warninglist link-in-bio, url-shortener (known) matches the path; kept to_ids, check before blocking]",
         "timestamp": "1794528000",
         "Tag": [
           {
@@ -706,7 +706,7 @@
         "value": "https://cutt.ly/yBQ5tqx",
         "to_ids": true,
         "distribution": "5",
-        "comment": "L1 shortener -> https://transfer.sh/DNcMC2/Installer%202022.zip [type: url; verdict: malicious; source: redirect check]",
+        "comment": "L1 shortener -> https://transfer.sh/DNcMC2/Installer%202022.zip [type: url; verdict: malicious; source: redirect check] [review: warninglist url-shortener (known) matches the path; kept to_ids, check before blocking]",
         "timestamp": "1794528000",
         "Tag": [
           {
@@ -839,9 +839,9 @@
         "type": "domain",
         "category": "Network activity",
         "value": "3c5.com",
-        "to_ids": true,
+        "to_ids": false,
         "distribution": "5",
-        "comment": "L1 redirector target of bit.ly/3O31vLx (HTTP 522) [type: domain; verdict: malicious; source: analyst fetch]",
+        "comment": "L1 redirector target of bit.ly/3O31vLx (HTTP 522) [type: domain; verdict: malicious; source: analyst fetch] [warninglist known infrastructure (url-shortener); to_ids=false; shared by other users, block only with other evidence]",
         "timestamp": "1794528000",
         "Tag": [
           {
@@ -1057,7 +1057,7 @@
         "value": "65.109.14.177",
         "to_ids": false,
         "distribution": "5",
-        "comment": "social.linux.pizza host (AS24940 Hetzner) - legit instance, do NOT block; contacted by sample for dead-drop read [type: ipv4; verdict: shared-or-legit-infrastructure; source: Hybrid Analysis]",
+        "comment": "social.linux.pizza host (AS24940 Hetzner) - legit instance, do NOT block; contacted by sample for dead-drop read [type: ipv4; verdict: shared-or-legit-infrastructure; source: Hybrid Analysis] [warninglist known infrastructure (hetzner); to_ids=false; shared by other users, block only with other evidence]",
         "timestamp": "1794528000",
         "Tag": [
           {
@@ -1121,7 +1121,7 @@
         "value": "172.67.201.202",
         "to_ids": false,
         "distribution": "5",
-        "comment": "Cloudflare edge for queue.prooutlet58.website (AS13335) - shared, do NOT block; report the domain [type: ipv4; verdict: shared-or-legit-infrastructure; source: analyst triage]",
+        "comment": "Cloudflare edge for queue.prooutlet58.website (AS13335) - shared, do NOT block; report the domain [type: ipv4; verdict: shared-or-legit-infrastructure; source: analyst triage] [warninglist known infrastructure (cloudflare); to_ids=false; shared by other users, block only with other evidence]",
         "timestamp": "1794528000",
         "Tag": [
           {
@@ -1137,7 +1137,7 @@
         "value": "104.21.60.214",
         "to_ids": false,
         "distribution": "5",
-        "comment": "Cloudflare edge for queue.prooutlet58.website (AS13335) - shared, do NOT block; report the domain [type: ipv4; verdict: shared-or-legit-infrastructure; source: analyst triage]",
+        "comment": "Cloudflare edge for queue.prooutlet58.website (AS13335) - shared, do NOT block; report the domain [type: ipv4; verdict: shared-or-legit-infrastructure; source: analyst triage] [warninglist known infrastructure (cloudflare); to_ids=false; shared by other users, block only with other evidence]",
         "timestamp": "1794528000",
         "Tag": [
           {
@@ -1809,7 +1809,7 @@
         "value": "172.67.188.1",
         "to_ids": false,
         "distribution": "5",
-        "comment": "Cloudflare edge for lewokodwqko.icu (AS13335) - shared, do NOT block; report the domain [type: ipv4; verdict: shared-or-legit-infrastructure; source: urlscan.io; DNS resolution]",
+        "comment": "Cloudflare edge for lewokodwqko.icu (AS13335) - shared, do NOT block; report the domain [type: ipv4; verdict: shared-or-legit-infrastructure; source: urlscan.io; DNS resolution] [warninglist known infrastructure (cloudflare); to_ids=false; shared by other users, block only with other evidence]",
         "timestamp": "1794528000",
         "Tag": [
           {
@@ -1825,7 +1825,7 @@
         "value": "104.21.7.202",
         "to_ids": false,
         "distribution": "5",
-        "comment": "Cloudflare edge for lewokodwqko.icu (AS13335) - shared, do NOT block; report the domain [type: ipv4; verdict: shared-or-legit-infrastructure; source: DNS resolution]",
+        "comment": "Cloudflare edge for lewokodwqko.icu (AS13335) - shared, do NOT block; report the domain [type: ipv4; verdict: shared-or-legit-infrastructure; source: DNS resolution] [warninglist known infrastructure (cloudflare); to_ids=false; shared by other users, block only with other evidence]",
         "timestamp": "1794528000",
         "Tag": [
           {
@@ -1841,7 +1841,7 @@
         "value": "172.67.164.79",
         "to_ids": false,
         "distribution": "5",
-        "comment": "Cloudflare edge for shopguoerve.pro (AS13335) - shared, do NOT block; report the domain [type: ipv4; verdict: shared-or-legit-infrastructure; source: urlscan.io; DNS resolution]",
+        "comment": "Cloudflare edge for shopguoerve.pro (AS13335) - shared, do NOT block; report the domain [type: ipv4; verdict: shared-or-legit-infrastructure; source: urlscan.io; DNS resolution] [warninglist known infrastructure (cloudflare); to_ids=false; shared by other users, block only with other evidence]",
         "timestamp": "1794528000",
         "Tag": [
           {
@@ -1857,7 +1857,7 @@
         "value": "104.21.74.230",
         "to_ids": false,
         "distribution": "5",
-        "comment": "Cloudflare edge for shopguoerve.pro (AS13335) - shared, do NOT block; report the domain [type: ipv4; verdict: shared-or-legit-infrastructure; source: urlscan.io; DNS resolution]",
+        "comment": "Cloudflare edge for shopguoerve.pro (AS13335) - shared, do NOT block; report the domain [type: ipv4; verdict: shared-or-legit-infrastructure; source: urlscan.io; DNS resolution] [warninglist known infrastructure (cloudflare); to_ids=false; shared by other users, block only with other evidence]",
         "timestamp": "1794528000",
         "Tag": [
           {
@@ -2369,7 +2369,7 @@
         "value": "172.67.151.82",
         "to_ids": false,
         "distribution": "5",
-        "comment": "Cloudflare edge for proxy.proup43.lol (AS13335) - shared, do NOT block; report the domain [type: ipv4; verdict: shared-or-legit-infrastructure; source: DNS over HTTPS 2026-11-13]",
+        "comment": "Cloudflare edge for proxy.proup43.lol (AS13335) - shared, do NOT block; report the domain [type: ipv4; verdict: shared-or-legit-infrastructure; source: DNS over HTTPS 2026-11-13] [warninglist known infrastructure (cloudflare); to_ids=false; shared by other users, block only with other evidence]",
         "timestamp": "1794528000",
         "Tag": [
           {
@@ -2385,7 +2385,7 @@
         "value": "104.21.12.25",
         "to_ids": false,
         "distribution": "5",
-        "comment": "Cloudflare edge for proxy.proup43.lol (AS13335) - shared, do NOT block; report the domain [type: ipv4; verdict: shared-or-legit-infrastructure; source: DNS over HTTPS 2026-11-13]",
+        "comment": "Cloudflare edge for proxy.proup43.lol (AS13335) - shared, do NOT block; report the domain [type: ipv4; verdict: shared-or-legit-infrastructure; source: DNS over HTTPS 2026-11-13] [warninglist known infrastructure (cloudflare); to_ids=false; shared by other users, block only with other evidence]",
         "timestamp": "1794528000",
         "Tag": [
           {
@@ -2401,7 +2401,7 @@
         "value": "172.67.167.179",
         "to_ids": false,
         "distribution": "5",
-        "comment": "Cloudflare edge for job.ivorydisplay61.click (AS13335) - shared, do NOT block; report the domain [type: ipv4; verdict: shared-or-legit-infrastructure; source: DNS over HTTPS 2026-11-13]",
+        "comment": "Cloudflare edge for job.ivorydisplay61.click (AS13335) - shared, do NOT block; report the domain [type: ipv4; verdict: shared-or-legit-infrastructure; source: DNS over HTTPS 2026-11-13] [warninglist known infrastructure (cloudflare); to_ids=false; shared by other users, block only with other evidence]",
         "timestamp": "1794528000",
         "Tag": [
           {
@@ -2417,7 +2417,7 @@
         "value": "104.21.35.17",
         "to_ids": false,
         "distribution": "5",
-        "comment": "Cloudflare edge for job.ivorydisplay61.click (AS13335) - shared, do NOT block; report the domain [type: ipv4; verdict: shared-or-legit-infrastructure; source: DNS over HTTPS 2026-11-13]",
+        "comment": "Cloudflare edge for job.ivorydisplay61.click (AS13335) - shared, do NOT block; report the domain [type: ipv4; verdict: shared-or-legit-infrastructure; source: DNS over HTTPS 2026-11-13] [warninglist known infrastructure (cloudflare); to_ids=false; shared by other users, block only with other evidence]",
         "timestamp": "1794528000",
         "Tag": [
           {

@@ -1713,7 +1713,7 @@
       "type": "indicator",
       "id": "indicator--77b20752-4d8d-544c-90a0-8e9fea5d1acc",
       "name": "91.107.247.163",
-      "description": "Cobalt Strike C&C used in a Gentlemen affiliate intrusion: a rundll32 payload connected over ports 443 and later 80 (Check Point DFIR, published 2026-04-20). Liveness not checked by us [verdict: malicious; source: Check Point Research DFIR report 2026-04-20]",
+      "description": "Cobalt Strike C&C used in a Gentlemen affiliate intrusion: a rundll32 payload connected over ports 443 and later 80 (Check Point DFIR, published 2026-04-20). Liveness not checked by us [warninglist known infrastructure (hetzner); block only with other evidence] [verdict: malicious; source: Check Point Research DFIR report 2026-04-20]",
       "indicator_types": [
         "malicious-activity"
       ],
@@ -1723,6 +1723,7 @@
       "valid_from": "2026-04-20T00:00:00.000Z",
       "labels": [
         "ipv4",
+        "known-infrastructure",
         "payload"
       ],
       "confidence": 50
@@ -1944,7 +1945,7 @@
       "type": "indicator",
       "id": "indicator--922bbc33-b296-563a-941f-f8456c958e45",
       "name": "91.107.247.163:443",
-      "description": "Cobalt Strike C&C endpoint (port named by Check Point DFIR) [verdict: malicious; source: Check Point Research DFIR report 2026-04-20; ThreatFox 2035368]",
+      "description": "Cobalt Strike C&C endpoint (port named by Check Point DFIR) [warninglist known infrastructure (hetzner); block only with other evidence] [verdict: malicious; source: Check Point Research DFIR report 2026-04-20; ThreatFox 2035368]",
       "indicator_types": [
         "malicious-activity"
       ],
@@ -1953,7 +1954,8 @@
       "pattern_version": "2.1",
       "valid_from": "2026-04-20T00:00:00.000Z",
       "labels": [
-        "endpoint"
+        "endpoint",
+        "known-infrastructure"
       ],
       "confidence": 50
     },
@@ -1968,7 +1970,7 @@
       "type": "indicator",
       "id": "indicator--72a57fe2-59a7-5b04-8740-05d606643361",
       "name": "91.107.247.163:80",
-      "description": "Cobalt Strike C&C endpoint (port named by Check Point DFIR) [verdict: malicious; source: Check Point Research DFIR report 2026-04-20; ThreatFox 2035369]",
+      "description": "Cobalt Strike C&C endpoint (port named by Check Point DFIR) [warninglist known infrastructure (hetzner); block only with other evidence] [verdict: malicious; source: Check Point Research DFIR report 2026-04-20; ThreatFox 2035369]",
       "indicator_types": [
         "malicious-activity"
       ],
@@ -1977,7 +1979,8 @@
       "pattern_version": "2.1",
       "valid_from": "2026-04-20T00:00:00.000Z",
       "labels": [
-        "endpoint"
+        "endpoint",
+        "known-infrastructure"
       ],
       "confidence": 50
     },

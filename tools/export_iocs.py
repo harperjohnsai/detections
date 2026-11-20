@@ -27,6 +27,9 @@ import uuid
 
 import yaml
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import wl_known  # noqa: E402  (pinned MISP warninglist matches)
+
 ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 NS = uuid.UUID('6f0c1d52-8d3e-5a47-9b8e-2c7f4a1e90d3')  # fixed namespace: do not change, ids derive from it
 AUTHOR = 'Harper Johns'
@@ -41,6 +44,8 @@ TLP_CLEAR = {  # OASIS STIX 2.1 TLP 2.0 object, verbatim
 CONF = {'high': 85, 'medium': 50, 'low': 15}
 MISP_CONF = {'high': 'high', 'medium': 'moderate', 'low': 'low'}
 CONF_ALIAS = {'med': 'medium', 'mid': 'medium'}
+WL_EXACT = wl_known.NOTE_EXACT
+WL_REVIEW = wl_known.NOTE_REVIEW
 IDS_TYPES = {'domain', 'url', 'ipv4', 'endpoint', 'sha256', 'url-path', 'mutex'}
 HASH_TYPES = {'sha256', 'filename', 'path', 'file-path'}
 LEGIT_ROLE = re.compile(r'\blegit\b|genuine|do not block|not malicious', re.I)
@@ -207,7 +212,7 @@ def case_refs(c):
     return refs
 
 
-def build_stix(slug, case, rows):
+def build_stix(slug, case, rows, known=None):
     created = to_dt(case['date'])
     ident = {'type': 'identity', 'spec_version': '2.1', 'id': 'identity--' + uid('identity', AUTHOR),
              'created': ts(created), 'modified': ts(created), 'name': AUTHOR, 'identity_class': 'individual',
@@ -245,6 +250,11 @@ def build_stix(slug, case, rows):
         role = (row.get('role') or '').strip()
         cand = row['verdict'] == 'candidate'
         labels = labels_for(row) + (['candidate'] if cand else [])
+        tv = misp_tv(row)
+        kn = (known or {}).get((tv[0], tv[2]))
+        if kn and kn['kind'] == 'exact':  # STIX has no to_ids flag: keep the indicator, mark it
+            labels.append('known-infrastructure')
+            role += f" [{WL_EXACT} ({', '.join(kn['lists'])}); block only with other evidence]"
         if pat in inds:
             inds[pat]['labels'] = sorted(set(inds[pat]['labels']) | set(labels))
             continue
@@ -306,7 +316,8 @@ MISP_MAP = {  # type -> (misp type, category)
 }
 
 
-def misp_attr(slug, row, created):
+def misp_tv(row):
+    """MISP (type, category, value, comment prefix) of one IOC row."""
     t, v = row['type'], row['value']
     mtype, cat = MISP_MAP.get(t, ('text', 'Other'))
     comment_extra = ''
@@ -328,8 +339,15 @@ def misp_attr(slug, row, created):
         cat = 'Payload delivery'
     elif t in ('discord-server', 'dead-drop-value'):
         cat = 'Social network' if t == 'discord-server' else 'Network activity'
+    return mtype, cat, v, comment_extra
+
+
+def misp_attr(slug, row, created, known=None):
+    t = row['type']
+    mtype, cat, v, comment_extra = misp_tv(row)
     ids = (row['verdict'] == 'malicious' and conf(row) in ('high', 'medium') and t in IDS_TYPES
            and not is_context(row))
+    kn = (known or {}).get((mtype, v))  # pinned 'known' warninglist match (tools/wl_known.py)
     comment = (row.get('role') or '').strip()
     if comment_extra:
         comment = f'{comment_extra}; {comment}'
@@ -337,6 +355,14 @@ def misp_attr(slug, row, created):
     if row.get('source'):
         comment += f"; source: {row['source']}"
     comment += ']'
+    if kn:
+        names = ', '.join(kn['lists'])
+        if kn['kind'] == 'exact':
+            # shared infrastructure: the IOC row stays published, only the IDS flag is withdrawn
+            comment += f" [{WL_EXACT} ({names}); to_ids=false; shared by other users, block only with other evidence]"
+            ids = False
+        else:
+            comment += f" [{WL_REVIEW} {names} (known) matches the {kn['kind']}; kept to_ids, check before blocking]"
     epoch = str(int(created.replace(tzinfo=dt.timezone.utc).timestamp()))
     a = {'uuid': uid('misp-attribute', slug, mtype, v), 'type': mtype, 'category': cat, 'value': v,
          'to_ids': ids, 'distribution': '5', 'comment': comment, 'timestamp': epoch,
@@ -347,12 +373,12 @@ def misp_attr(slug, row, created):
     return a
 
 
-def build_misp(slug, case, rows):
+def build_misp(slug, case, rows, known=None):
     created = to_dt(case['date'])
     epoch = str(int(created.replace(tzinfo=dt.timezone.utc).timestamp()))
     attrs, seen = [], {}
     for row in rows:
-        a = misp_attr(slug, row, created)
+        a = misp_attr(slug, row, created, known)
         key = (a['type'], a['value'])
         if key in seen:
             if a['to_ids']:
@@ -383,13 +409,14 @@ def dump(obj):
 
 def outputs():
     res = {}
+    known = wl_known.load_known()
     for p in sorted(glob.glob(os.path.join(ROOT, 'iocs', '*', 'iocs.json'))):
         d = os.path.dirname(p)
         slug = os.path.basename(d)
         case = yaml.safe_load(open(os.path.join(d, 'case.yml'), encoding='utf-8'))
         rows = json.load(open(p, encoding='utf-8'))['iocs']
-        res[os.path.join(d, 'stix2.json')] = dump(build_stix(slug, case, rows))
-        res[os.path.join(d, 'misp_event.json')] = dump(build_misp(slug, case, rows))
+        res[os.path.join(d, 'stix2.json')] = dump(build_stix(slug, case, rows, known))
+        res[os.path.join(d, 'misp_event.json')] = dump(build_misp(slug, case, rows, known))
     return res
 
 

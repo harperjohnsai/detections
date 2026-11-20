@@ -1,0 +1,255 @@
+{
+ "misp_warninglists_commit": "40e2b570fda2e5443a2d6fa1d1db16c37ab0a956",
+ "lists": [
+  "amazon-aws",
+  "akamai",
+  "check-host-net",
+  "cloudflare",
+  "digitalocean",
+  "dynamic-dns",
+  "fastly",
+  "github",
+  "google-gcp",
+  "hetzner",
+  "link-in-bio",
+  "microsoft-azure",
+  "ovh-cluster",
+  "parking-domain",
+  "public-ipfs-gateways",
+  "sinkholes",
+  "telegram-ips",
+  "url-shortener",
+  "vultr"
+ ],
+ "entries": [
+  {
+   "type": "domain",
+   "value": "3c5.com",
+   "kind": "exact",
+   "lists": [
+    "url-shortener"
+   ]
+  },
+  {
+   "type": "domain",
+   "value": "guild.hopto.me",
+   "kind": "subdomain",
+   "lists": [
+    "dynamic-dns"
+   ]
+  },
+  {
+   "type": "ip-dst",
+   "value": "104.21.12.25",
+   "kind": "exact",
+   "lists": [
+    "cloudflare"
+   ]
+  },
+  {
+   "type": "ip-dst",
+   "value": "104.21.35.17",
+   "kind": "exact",
+   "lists": [
+    "cloudflare"
+   ]
+  },
+  {
+   "type": "ip-dst",
+   "value": "104.21.60.214",
+   "kind": "exact",
+   "lists": [
+    "cloudflare"
+   ]
+  },
+  {
+   "type": "ip-dst",
+   "value": "104.21.7.202",
+   "kind": "exact",
+   "lists": [
+    "cloudflare"
+   ]
+  },
+  {
+   "type": "ip-dst",
+   "value": "104.21.74.230",
+   "kind": "exact",
+   "lists": [
+    "cloudflare"
+   ]
+  },
+  {
+   "type": "ip-dst",
+   "value": "149.154.167.99",
+   "kind": "exact",
+   "lists": [
+    "telegram-ips"
+   ]
+  },
+  {
+   "type": "ip-dst",
+   "value": "172.67.151.82",
+   "kind": "exact",
+   "lists": [
+    "cloudflare"
+   ]
+  },
+  {
+   "type": "ip-dst",
+   "value": "172.67.164.79",
+   "kind": "exact",
+   "lists": [
+    "cloudflare"
+   ]
+  },
+  {
+   "type": "ip-dst",
+   "value": "172.67.167.179",
+   "kind": "exact",
+   "lists": [
+    "cloudflare"
+   ]
+  },
+  {
+   "type": "ip-dst",
+   "value": "172.67.188.1",
+   "kind": "exact",
+   "lists": [
+    "cloudflare"
+   ]
+  },
+  {
+   "type": "ip-dst",
+   "value": "172.67.201.202",
+   "kind": "exact",
+   "lists": [
+    "cloudflare"
+   ]
+  },
+  {
+   "type": "ip-dst",
+   "value": "3.80.57.117",
+   "kind": "exact",
+   "lists": [
+    "amazon-aws"
+   ]
+  },
+  {
+   "type": "ip-dst",
+   "value": "65.109.14.177",
+   "kind": "exact",
+   "lists": [
+    "hetzner"
+   ]
+  },
+  {
+   "type": "ip-dst",
+   "value": "91.107.247.163",
+   "kind": "exact",
+   "lists": [
+    "hetzner"
+   ]
+  },
+  {
+   "type": "ip-dst|port",
+   "value": "3.80.57.117|9136",
+   "kind": "exact",
+   "lists": [
+    "amazon-aws"
+   ]
+  },
+  {
+   "type": "ip-dst|port",
+   "value": "91.107.247.163|443",
+   "kind": "exact",
+   "lists": [
+    "hetzner"
+   ]
+  },
+  {
+   "type": "ip-dst|port",
+   "value": "91.107.247.163|80",
+   "kind": "exact",
+   "lists": [
+    "hetzner"
+   ]
+  },
+  {
+   "type": "url",
+   "value": "http://bit.ly/3WCrex2",
+   "kind": "path",
+   "lists": [
+    "link-in-bio",
+    "url-shortener"
+   ]
+  },
+  {
+   "type": "url",
+   "value": "https://bit.ly/3Bcjryq",
+   "kind": "path",
+   "lists": [
+    "link-in-bio",
+    "url-shortener"
+   ]
+  },
+  {
+   "type": "url",
+   "value": "https://bit.ly/3O31vLx",
+   "kind": "path",
+   "lists": [
+    "link-in-bio",
+    "url-shortener"
+   ]
+  },
+  {
+   "type": "url",
+   "value": "https://bit.ly/3XJxEvs",
+   "kind": "path",
+   "lists": [
+    "link-in-bio",
+    "url-shortener"
+   ]
+  },
+  {
+   "type": "url",
+   "value": "https://bit.ly/3dkwjJE",
+   "kind": "path",
+   "lists": [
+    "link-in-bio",
+    "url-shortener"
+   ]
+  },
+  {
+   "type": "url",
+   "value": "https://cutt.ly/oMLnFN1",
+   "kind": "path",
+   "lists": [
+    "url-shortener"
+   ]
+  },
+  {
+   "type": "url",
+   "value": "https://cutt.ly/uMmYMil",
+   "kind": "path",
+   "lists": [
+    "url-shortener"
+   ]
+  },
+  {
+   "type": "url",
+   "value": "https://cutt.ly/yBQ5tqx",
+   "kind": "path",
+   "lists": [
+    "url-shortener"
+   ]
+  },
+  {
+   "type": "url",
+   "value": "https://tinyurl.com/47exbmes",
+   "kind": "path",
+   "lists": [
+    "url-shortener"
+   ]
+  }
+ ]
+}
