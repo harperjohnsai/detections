@@ -239,3 +239,32 @@ PASS [yara-python 4.5.4] negative corpus: 869 files, 0 hits []
 PASS [yara-x 1.23.0] negative corpus: 869 files, 0 hits []
 ALL CHECKS PASS
 ```
+
+
+## YARA, Go reflective PE loader rule added (2026-11-20, yara-python 4.5.4 and YARA-X 1.23.0)
+
+Samples: the loader core `b8c1d239...` and two MalwareBazaar builds with a self-signed "Nova Metric Industries" certificate (`2b51009b...`, `7a705f5b...`). Negatives for the harness run below: 24 benign Go Windows executables. A separate scan of the new rule alone found 0 hits on 983 other executables, DLLs and blobs of the author's other malware cases (both engines). The rule also matches the other 38 samples of the imphash set (`yara/cryptotrice-go-loader/second-build-check.csv`).
+
+```
+PASS at least one YARA engine available
+PASS 27 rule files compiled together
+ENGINE yara-python 4.5.4
+ENGINE yara-x 1.23.0
+PASS [yara-python 4.5.4] b8c1d2399105 -> MAL_Go_Reflective_PE_Loader_Win64
+PASS [yara-x 1.23.0] b8c1d2399105 -> MAL_Go_Reflective_PE_Loader_Win64
+PASS [yara-python 4.5.4] 7a705f5b3959 -> MAL_Go_Reflective_PE_Loader_Win64
+PASS [yara-x 1.23.0] 7a705f5b3959 -> MAL_Go_Reflective_PE_Loader_Win64
+PASS [yara-python 4.5.4] 2b51009b5712 -> MAL_Go_Reflective_PE_Loader_Win64
+PASS [yara-x 1.23.0] 2b51009b5712 -> MAL_Go_Reflective_PE_Loader_Win64
+PASS [yara-python 4.5.4] negative corpus: 24 files, 0 hits []
+PASS [yara-x 1.23.0] negative corpus: 24 files, 0 hits []
+PASS [yara-python 4.5.4] real CAB (compress=False) -> no hit
+PASS [yara-x 1.23.0] real CAB (compress=False) -> no hit
+PASS [yara-python 4.5.4] real CAB (compress=True) -> no hit
+PASS [yara-x 1.23.0] real CAB (compress=True) -> no hit
+ALL CHECKS PASS
+```
+
+## Go loader extractor (tools/cryptotrice-go-loader), 2026-11-20
+
+`test_pipeline.py --core <loader core> --mapped-image <loaded-image dump> --negative <24 benign Go PEs>`: 3 synthetic checks, 12 reference-build checks (builder, six passes, emulator equals numpy re-implementation, inner PE SHA-256 `c8f5b1c2...`, 0 byte differences against the loaded-image dump, negative control with one pass skipped) and 24 benign-PE checks (`no blob builder found`): ALL CHECKS PASS.

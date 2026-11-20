@@ -499,6 +499,22 @@
         "first_seen": "2026-11-11T00:00:00.000000+00:00"
       },
       {
+        "uuid": "12ea1268-a3c6-50fa-a44a-9a78a2ef678d",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "c8f5b1c2b898a7c13fc2843dd9771566e0a1b7e79bd18f479300e3518fda7d20",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "inner stealer PE decrypted from the loader's embedded blob (x64, no import table), original file layout, 937984 B; the in-memory image e7da3731... is a different byte string [type: sha256; verdict: malicious; source: static decryption of the loader blob, MalwareBazaar 2026-11-20]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-11T00:00:00.000000+00:00"
+      },
+      {
         "uuid": "66fd230b-1f4f-5a6c-bef4-7c08c8848034",
         "type": "text",
         "category": "Payload delivery",
@@ -1531,6 +1547,16 @@
         "type": "link",
         "category": "External analysis",
         "value": "https://bazaar.abuse.ch/sample/b8c1d2399105a57046b24aeee74d2dea3250c8c8aa5502c448b8d954f1dcb17a/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "MalwareBazaar",
+        "timestamp": "1794355200"
+      },
+      {
+        "uuid": "4eb44496-ca22-587b-9ba5-b56bd0951c3b",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://bazaar.abuse.ch/sample/c8f5b1c2b898a7c13fc2843dd9771566e0a1b7e79bd18f479300e3518fda7d20/",
         "to_ids": false,
         "distribution": "5",
         "comment": "MalwareBazaar",

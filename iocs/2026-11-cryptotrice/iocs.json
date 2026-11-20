@@ -2,7 +2,7 @@
  "_warning": "MACHINE-READABLE, NOT DEFANGED: values are live indicators. Do not browse or fetch them.",
  "case": "2026-11-cryptotrice",
  "license": "CC0-1.0",
- "count": 93,
+ "count": 94,
  "iocs": [
   {
    "type": "x-account",
@@ -273,6 +273,15 @@
    "verdict": "malicious",
    "confidence": "high",
    "source": "analyst fetch"
+  },
+  {
+   "type": "sha256",
+   "value": "c8f5b1c2b898a7c13fc2843dd9771566e0a1b7e79bd18f479300e3518fda7d20",
+   "first_seen": "2026-11-11",
+   "role": "inner stealer PE decrypted from the loader's embedded blob (x64, no import table), original file layout, 937984 B; the in-memory image e7da3731... is a different byte string",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static decryption of the loader blob, MalwareBazaar 2026-11-20"
   },
   {
    "type": "code-signing-cert",

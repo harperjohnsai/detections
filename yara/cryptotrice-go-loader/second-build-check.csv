@@ -1,0 +1,42 @@
+sha256,size,mb_first_seen,mb_signature,rule_match,note,pipeline_result
+3de94ec29d9fa03ea88bdac55df4ab5e260ecd88cc18917a9b063b33c5f598e0,4192632,2026-11-18,WARDENStealer,yes,,extractor stops: no blob builder found
+5e632d77f7f1bb2a95983fd9c27e63925d06f12c5b3f06bcf65cf17f64c85b9a,4192632,2026-11-18,WARDENStealer,yes,,extractor stops: no blob builder found
+407352c707103e711c525ab17599dd2bb83c47c736a9345c595dadf437e0c31e,4885432,2026-11-18,Vidar,yes,,"blob rebuilt, 5 passes found, no MZ"
+6f2da97e084b3ec946f80e8bff21092556be85b59661a10d0fa354d980d7e05a,5594520,2026-11-18,WARDENStealer,yes,,"blob rebuilt, 5 passes found, no MZ"
+0f614b7b7343596fd42b1aa940264fda4e63ff8e71f7e02226eae2ff839035ae,5525400,2026-11-18,WARDENStealer,yes,,extractor stops: no blob builder found
+41240211b74040a534e0f3facfddcb4c5b9d3b358dfe66bf119ea1642dc3a8a9,4252600,2026-11-18,WARDENStealer,yes,,"decrypts to PE, 240128 B"
+74d0d2017569799772741c8252f7a96cc9f24e75be52cb761726696c56b0e343,4226992,2026-11-15,Vidar,yes,,extractor stops: no blob builder found
+de719cacc88b256344f89b773eb01bb41674092f8d8e1f22d9f08a01336a5b9f,3581888,2026-11-15,Vidar,yes,,"decrypts to PE, 966656 B"
+b7673b792cfb905c6e00f26580f4b3622512cf2e89c3611d50d520d680c651ef,4304816,2026-11-15,Vidar,yes,,extractor stops: no blob builder found
+92cde019c950917e7bbe175e6a4128d31f53e2fb8af600734f383b6982faa2f4,3077520,2026-11-15,Vidar,yes,,extractor stops: pass at 0x4f4bcf
+7c2c2e9b864f38e2b915cb87250f51b2a88b95b3a8737fd9588107da125e9b7e,5321088,2026-11-14,Vidar,yes,,"blob rebuilt, 5 passes found, no MZ"
+fdeed4bbb15996a5a11f7038740cceefb80e89c7e2e0b9db7c74f18dded3c9e4,3271024,2026-11-14,WARDENStealer,yes,,extractor stops: pass at 0x590899
+70ffad5b7c728899de393b96b697f83a5015d9a4ab70c336126832281c646509,3006368,2026-11-14,WARDENStealer,yes,,extractor stops: no blob builder found
+62c66deba94eb51f268ff10c6d8565f5fc52a9cd67819d243f85b672ee13a872,3358064,2026-11-14,WARDENStealer,yes,,extractor stops: pass at 0x5929d8
+4e59bfbaec788854ed1a2429c5c828fce0436012f0970a5c6a3c9449ef067075,5035904,2026-11-13,Vidar,yes,,"decrypts to PE, 966656 B"
+e94e3854db4dd36cf8aa084136cdc99c2fb72591c8b4dd89aff786a6048b373d,4715480,2026-11-12,Vidar,yes,,extractor stops: no blob builder found
+e222959aad15eb605db1534921d11cd19e73e595c22c6080b99d2fdd4e605f45,3784064,2026-11-12,Vidar,yes,,extractor stops: no blob builder found
+b1ac2fb4d8723485c23a1d32846937592dd33956755d215b05fc37f4e3c656f1,3784064,2026-11-12,Vidar,yes,,extractor stops: no blob builder found
+584df8f6dacf0196bf31f182ae008f52cf81fbe9f95d04cb8d6fa4786c621e35,3169152,2026-11-12,WARDENStealer,yes,,"blob rebuilt, 0 passes found, no MZ"
+2b51009b5712d49af298d35b4fc22a014bb04575d7474f3b44fc6753720f39da,4132280,2026-11-12,Vidar,yes,Nova Metric Industries signer,"decrypts to PE, 937984 B"
+e7b2b38ee0855e11c4661d838fc151d908adcf157bbdc014c2379f112fa40cff,3797888,2026-11-12,WARDENStealer,yes,,extractor stops: no blob builder found
+7a705f5b3959b9f56223cf93e68b1b0422959b7f9ca2e94ef0c30c8a050f793b,3479480,2026-11-12,RemusStealer,yes,Nova Metric Industries signer,"decrypts to PE, 251392 B"
+0289a1fec49250eb56701b0d0ac1d0f23eb334398c075c12140a54781ced4338,3177856,2026-11-11,WARDENStealer,yes,,"blob rebuilt, 0 passes found, no MZ"
+b8c1d2399105a57046b24aeee74d2dea3250c8c8aa5502c448b8d954f1dcb17a,4191744,2026-11-11,Vidar,yes,reference build,"decrypts to PE, 937984 B"
+a589532b0b7e1a900955c8e5dc87d1d8ec48b3d1d05e6415bd74e5e48ea56c23,4832176,2026-11-11,WARDENStealer,yes,,extractor stops: no blob builder found
+1670dec785bf6abc81420498aabe992a59478117b3ec125884d2b9564524660b,4619696,2026-11-10,Vidar,yes,,extractor stops: no blob builder found
+007a4d16bc2ce6db37fb912ce9981f5fe168ff60ecf1b8100a99633b5b561f01,4619696,2026-11-10,Vidar,yes,,extractor stops: no blob builder found
+8425ed0eca3539fd6c4c83d848bfa5cdb18c39fbebbf2308c7dfe8fa10defe04,4269480,2026-11-10,Vidar,yes,,extractor stops: no blob builder found
+9425cd2f8f40b3dd627cfe42a0fa5cec428d41a3e5df09a9931ad1a567c9b4ac,3458936,2026-11-10,,yes,,extractor stops: pass at 0x578463
+9ffa8fb9361a02da35f519d8ab728ff31f37d706246b331b4f301f9d001deab3,3275120,2026-11-10,WARDENStealer,yes,,extractor stops: no blob builder found
+fb191ab486dc6dd30b1b701a96bc5efe1103be9b8c47bba5a965895e81e693a6,3814264,2026-11-09,Vidar,yes,,extractor stops: pass at 0x578483
+e089ef9158fab0eaa1afbab6f34fb94aabdb91854539c3cbe63fe18ae872dc81,3814264,2026-11-09,Vidar,yes,,extractor stops: pass at 0x578483
+c6e71f53c93b14cb6693e4dda71e372d1e040ce5a7124fdf796c1647b03e3a74,5178288,2026-11-09,Vidar,yes,,"decrypts to PE, 940544 B"
+f8a67d177c8d0bfbc10106a0e3f04a56fd779884bf6e675abd3439f7abd8a32c,3054520,2026-11-07,RemusStealer,yes,,"blob rebuilt, 0 passes found, no MZ"
+0d3c25a7842f86f9fe36aaf59b9800301d8e73349fda54f93b6bc82d84700f9f,3443648,2026-11-07,Stealc,yes,,"blob rebuilt, 0 passes found, no MZ"
+daf0623ef19b3618788248c6786a60bf64fca4c6671b99583b7c7bab2be8c322,5555632,2026-10-29,,yes,,"decrypts to PE, 1089024 B"
+02aa350cbfbeaa54c3677b2a0e271c3982ff008063c964f51650d64cd0ee6fc4,3857328,2026-10-28,RemusStealer,yes,,extractor stops: no blob builder found
+0ec1874f105019ede7c2d5c492e4cada25372915f03a5ccdbfd197d902020256,3250032,2026-10-27,Vidar,yes,,"blob rebuilt, 0 passes found, no MZ"
+8c61d3ae9aa04c2cec594fc9db364d3c44bef57e81b79d98bdbe04694ceffcaf,3884912,2026-10-27,Vidar,yes,,extractor stops: no blob builder found
+090df03cf728dacb6af8bb9cb4c7163afd32aadf83778cae71b96047e9c1aff8,4685224,2026-10-26,Vidar,yes,,"decrypts to PE, 940544 B"
+bc16bad32a7a6e531e830e873c9de503d8b87dd5015c184566b6dccf1285d8da,3977128,2026-10-26,AokigaharaStealer,yes,,"decrypts to PE, 194560 B"

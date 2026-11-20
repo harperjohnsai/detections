@@ -77,6 +77,7 @@
         "indicator--1dc3af41-9acf-5b8b-ae76-c687446e6505",
         "indicator--48c52573-1f07-5cfe-80f0-32433dee88dd",
         "indicator--a8096084-f725-500a-88b5-4b214943374f",
+        "indicator--7e12856d-d00f-5d11-b212-91cb96a5b90c",
         "indicator--6be6e1a9-efd2-597d-998a-502e4eb64623",
         "indicator--f1c085e0-a1b2-5abe-81b9-014b2877b7ec",
         "indicator--7ef4dd39-6941-5b33-9b03-fec5f64d951f",
@@ -134,6 +135,7 @@
         "relationship--d86650f4-e1cd-5289-a009-1eb76d481086",
         "relationship--40b37e89-8740-5588-8a75-bedf67846ef1",
         "relationship--c47de214-a811-545d-9eca-22b40c07db82",
+        "relationship--21f8a469-2b96-5144-a06f-258e30267a15",
         "relationship--33c6aa2a-2bb8-528f-ba3f-7cf1f324d425",
         "relationship--debe29fb-2b80-5da4-8c41-8420b736fe31",
         "relationship--bac2f5c2-1509-56f0-bd1f-49417ca5151a",
@@ -165,6 +167,10 @@
         {
           "source_name": "MalwareBazaar",
           "url": "https://bazaar.abuse.ch/sample/b8c1d2399105a57046b24aeee74d2dea3250c8c8aa5502c448b8d954f1dcb17a/"
+        },
+        {
+          "source_name": "MalwareBazaar",
+          "url": "https://bazaar.abuse.ch/sample/c8f5b1c2b898a7c13fc2843dd9771566e0a1b7e79bd18f479300e3518fda7d20/"
         },
         {
           "source_name": "MalwareBazaar",
@@ -854,6 +860,31 @@
       "pattern_version": "2.1",
       "valid_from": "2026-11-11T00:00:00.000Z",
       "labels": [
+        "sha256"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--7e12856d-d00f-5d11-b212-91cb96a5b90c",
+      "name": "c8f5b1c2b898a7c13fc2843dd9771566e0a1b7e79bd18f479300e3518fda7d20",
+      "description": "inner stealer PE decrypted from the loader's embedded blob (x64, no import table), original file layout, 937984 B; the in-memory image e7da3731... is a different byte string [verdict: malicious; source: static decryption of the loader blob, MalwareBazaar 2026-11-20]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = 'c8f5b1c2b898a7c13fc2843dd9771566e0a1b7e79bd18f479300e3518fda7d20']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-11T00:00:00.000Z",
+      "labels": [
+        "loader",
         "sha256"
       ],
       "confidence": 85
@@ -2232,6 +2263,20 @@
       "id": "relationship--c47de214-a811-545d-9eca-22b40c07db82",
       "relationship_type": "indicates",
       "source_ref": "indicator--a8096084-f725-500a-88b5-4b214943374f",
+      "target_ref": "malware--a2a6d30c-e906-50ec-8751-fc1093d7ef41"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-11T00:00:00.000Z",
+      "modified": "2026-11-11T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--21f8a469-2b96-5144-a06f-258e30267a15",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--7e12856d-d00f-5d11-b212-91cb96a5b90c",
       "target_ref": "malware--a2a6d30c-e906-50ec-8751-fc1093d7ef41"
     },
     {

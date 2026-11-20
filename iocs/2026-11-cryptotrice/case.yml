@@ -1,12 +1,13 @@
 title: cryptotrice, a fake cracked trading app with Telegram and Steam dead-drop C2
 date: 2026-11-11
 families: [Vidar-like Go-loader stealer, MacSync-like zsh loader, AppleScript stealer]
-rules: []
+rules: [yara/cryptotrice-go-loader]
 video: https://youtu.be/fuJMKVu-CFk
 related_videos: []
 gist: https://gist.github.com/harperjohnsai/a4cce902c90b37ae74992226cc9ec0f2
 references:
   - {source_name: MalwareBazaar, url: "https://bazaar.abuse.ch/sample/b8c1d2399105a57046b24aeee74d2dea3250c8c8aa5502c448b8d954f1dcb17a/"}
+  - {source_name: MalwareBazaar, url: "https://bazaar.abuse.ch/sample/c8f5b1c2b898a7c13fc2843dd9771566e0a1b7e79bd18f479300e3518fda7d20/"}
   - {source_name: MalwareBazaar, url: "https://bazaar.abuse.ch/sample/4e2698b61750624535ba607d27d1ef1f177057bc13f8901dac4855a84254dd2a/"}
 indicates:
   - family: Vidar-like Go-loader stealer

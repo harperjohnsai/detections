@@ -16,12 +16,15 @@ Static analysis, emulation and one public sandbox run; no attacker server was co
 - macOS: `curl ... $(echo ...|base64 -D)|zsh` in shell history; `osascript` password dialog; `/tmp/osalogging.zip`.
 
 ## Detections
-No rules for this case yet; the IOC set is the deliverable.
+- YARA: [`yara/cryptotrice-go-loader/`](../../yara/cryptotrice-go-loader/), rule `MAL_Go_Reflective_PE_Loader_Win64` (the Go loader core; it also matches 40 other MalwareBazaar builds, see that README).
+- Tool: [`tools/cryptotrice-go-loader/`](../../tools/cryptotrice-go-loader/) finds the loader's blob builder, runs its six byte passes in a CPU emulator (no OS, no network) and writes the inner PE.
+- Second builds: MalwareBazaar lists two other Go loaders with a self-signed "Nova Metric Industries" certificate (`2b51009b5712d49af298d35b4fc22a014bb04575d7474f3b44fc6753720f39da`, `7a705f5b3959b9f56223cf93e68b1b0422959b7f9ca2e94ef0c30c8a050f793b`, both first seen 2026-11-12, different certificate serials); both match the rule. `tools/cryptotrice-go-loader` decrypts both to PEs (937,984 and 251,392 bytes); the payloads and their C2s were not analysed here.
 
 ## Samples on MalwareBazaar
 | Artefact | SHA-256 | Link |
 |---|---|---|
 | Go core of the Windows loader (no padding) | `b8c1d2399105a57046b24aeee74d2dea3250c8c8aa5502c448b8d954f1dcb17a` | [MalwareBazaar](https://bazaar.abuse.ch/sample/b8c1d2399105a57046b24aeee74d2dea3250c8c8aa5502c448b8d954f1dcb17a/) (signature `Vidar`, listed by another reporter) |
+| Decrypted inner stealer PE (file layout, uploaded by this project 2026-11-20) | `c8f5b1c2b898a7c13fc2843dd9771566e0a1b7e79bd18f479300e3518fda7d20` | [MalwareBazaar](https://bazaar.abuse.ch/sample/c8f5b1c2b898a7c13fc2843dd9771566e0a1b7e79bd18f479300e3518fda7d20/) (tags `stealer`, `dead-drop`, `decrypted-payload`) |
 | macOS zsh loader | `4e2698b61750624535ba607d27d1ef1f177057bc13f8901dac4855a84254dd2a` | [MalwareBazaar](https://bazaar.abuse.ch/sample/4e2698b61750624535ba607d27d1ef1f177057bc13f8901dac4855a84254dd2a/) (signature `MacSync`, listed by another reporter) |
 
 The padded `.exe`, the outer zip and the AppleScript stealer were not found on MalwareBazaar at the time of checking. ThreatFox: no entries submitted by this project for this case.

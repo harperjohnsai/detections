@@ -56,6 +56,10 @@ EXPECTED = {
     '01af2f7049e1562023835ddcbffea76e265ed2906e140ba8a200eb41d37ebf8d': ['MAL_FluxEngine_Loader_dhlib_DLL'],  # dhlib.dll loader, Sep 2026
     'c424a715e3861bc18e0c8223f3dfd909dc4a77a82b9c5a5a135b8d49bac7e8c6': ['MAL_FluxEngine_Payload_Delphi'],  # decrypted payload (Delphi, 4.5 MB)
     '6e6d4084c6c2f3035c2fbda4daf4b705a06938d73bf91f402552b6d4ab522d9b': ['SUSP_FluxEngine_LNK_Squiblydoo_ADS'],  # stage-1 LNK
+    # Go reflective PE loader (yara/cryptotrice-go-loader): reference build and two builds with the same self-signed publisher name
+    'b8c1d2399105a57046b24aeee74d2dea3250c8c8aa5502c448b8d954f1dcb17a': ['MAL_Go_Reflective_PE_Loader_Win64'],  # cryptotrice loader core (4,191,744 B, Go 1.21.1)
+    '2b51009b5712d49af298d35b4fc22a014bb04575d7474f3b44fc6753720f39da': ['MAL_Go_Reflective_PE_Loader_Win64'],  # MalwareBazaar 2026-11-12, "Nova Metric Industries" signer, serial c8266838...
+    '7a705f5b3959b9f56223cf93e68b1b0422959b7f9ca2e94ef0c30c8a050f793b': ['MAL_Go_Reflective_PE_Loader_Win64'],  # MalwareBazaar 2026-11-12, "Nova Metric Industries" signer, serial a3741edb...
     # The Gentlemen (yara/the_gentlemen)
     '3ab9575225e00a83a4ac2b534da5a710bdcf6eb72884944c437b5fbe5c5c9235': ['MAL_Gentlemen_Locker_Go'],  # Windows locker (Go, garbled), 2026-04
     '53d2484ae1ad6ff9547d90f5f5ccd6ae1dca8cb24e622a07dfc74c9593b2c3fa': ['MAL_Gentlemen_Locker_Go'],  # Linux ELF locker (Go), 2026-10
@@ -126,7 +130,7 @@ def main():
     a = ap.parse_args()
     E = Engines()
     check(E.eng, 'at least one YARA engine available')
-    check(len(E.files) >= 16, f'{len(E.files)} rule files compiled together')
+    check(len(E.files) >= 17, f'{len(E.files)} rule files compiled together')
     for name in E.eng:
         print('ENGINE', name)
     if a.compile_only:
