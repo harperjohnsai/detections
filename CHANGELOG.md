@@ -137,3 +137,8 @@
 - Dead drops read 2026-11-20: the Telegraph page and the contract decrypt to the embedded primary.
 - +11 IOC rows, +1 `c2_timeline.csv` row, README section and table row, ThreatFox reference 2036166. No AES keys or other secrets published.
 - Not checked: liveness of the C2 (nothing contacted); setter transactions on the contract.
+
+### 2026-11-20 (MISP exports: category fix)
+- Fix (not a retraction): the MISP exports of `iocs/2026-11-cryptotrice` (6 attributes: X posts) and `iocs/2026-11-quantai` (3 attributes: YouTube channel and videos) put `url` attributes in category "Social network", which the MISP category/type matrix does not allow for type `url` (valid: Payload delivery, Network activity, External analysis). PyMISP's `MISPEvent.load()` accepts such pairs, so the loader check in `tests/validate_exports.py` did not catch it. `tools/export_iocs.py` now exports `x-post`, `youtube-channel` and `youtube-video` as `url` in "Payload delivery".
+- Only the `category` of those 9 attributes changed in `misp_event.json`; attribute uuids, values, `to_ids` flags and the STIX bundles are unchanged, and no IOC row was added or removed.
+- `tests/validate_exports.py` gained an A-CAT check (every attribute's category must be valid for its type per PyMISP's describeTypes) with a negative control.

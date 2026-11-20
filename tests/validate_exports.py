@@ -4,17 +4,31 @@ MISP events by loading them with PyMISP (no server). Needs stix2 stix2-validator
 import glob, json, os, sys
 
 import stix2
-from pymisp import MISPEvent
+from pymisp import MISPAttribute, MISPEvent
 from stix2validator import ValidationOptions, validate_file
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ok = True
+# MISP category/type matrix of the installed PyMISP (describeTypes); MISPEvent.load() does not enforce it
+MATRIX = MISPAttribute().describe_types['category_type_mappings']
 
 
 def check(c, m):
     global ok
     print(('PASS ' if c else 'FAIL ') + m)
     ok &= bool(c)
+
+
+def bad_categories(attrs):
+    """A-CAT: attributes whose category is not a valid selection for their type."""
+    return [f"{a['type']}:{str(a['value'])[:60]} in {a['category']!r}" for a in attrs
+            if a['category'] not in MATRIX or a['type'] not in MATRIX[a['category']]]
+
+
+# negative control: the matrix check must flag the pair PyMISP's loader lets through
+check(bad_categories([{'type': 'url', 'category': 'Social network', 'value': 'https://x.test/'},
+                      {'type': 'url', 'category': 'Payload delivery', 'value': 'https://x.test/'}]) ==
+      ["url:https://x.test/ in 'Social network'"], 'A-CAT control: url in "Social network" is flagged, url in "Payload delivery" is not')
 
 
 for d in sorted(glob.glob(os.path.join(HERE, '..', 'iocs', '*', ''))):
@@ -40,6 +54,10 @@ for d in sorted(glob.glob(os.path.join(HERE, '..', 'iocs', '*', ''))):
     check(all(o['id'] == 'marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487' or
               'marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487' in o.get('object_marking_refs', [])
               for o in bundle.objects if o['type'] not in ('identity',)), f'{name}: TLP:CLEAR on all objects')
+    raw = json.load(open(d + 'misp_event.json', encoding='utf-8'))['Event']
+    raw_attrs = raw.get('Attribute', []) + [a for o in raw.get('Object', []) for a in o.get('Attribute', [])]
+    bad = bad_categories(raw_attrs)
+    check(not bad, f'{name}: A-CAT every attribute category valid for its type ({len(raw_attrs)} checked) {bad[:3]}')
     ev = MISPEvent()
     ev.load(open(d + 'misp_event.json', encoding='utf-8').read())
     check(len(ev.attributes) > 0 and ev.distribution == 3 and any(t.name == 'tlp:clear' for t in ev.tags),

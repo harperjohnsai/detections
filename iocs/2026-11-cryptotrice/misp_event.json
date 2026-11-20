@@ -37,7 +37,7 @@
       {
         "uuid": "3a708a0e-e93a-5517-a803-e5e40b63faf7",
         "type": "url",
-        "category": "Social network",
+        "category": "Payload delivery",
         "value": "https://x.com/cryptotrice/status/2117572256079741351",
         "to_ids": false,
         "distribution": "5",
@@ -53,7 +53,7 @@
       {
         "uuid": "bc719b62-e212-5aaf-8cb2-3d0bcc756b98",
         "type": "url",
-        "category": "Social network",
+        "category": "Payload delivery",
         "value": "https://x.com/cryptotrice/status/2111472920241524897",
         "to_ids": false,
         "distribution": "5",
@@ -69,7 +69,7 @@
       {
         "uuid": "ae546dc9-b28c-58cd-b8f2-56c7a04433f0",
         "type": "url",
-        "category": "Social network",
+        "category": "Payload delivery",
         "value": "https://x.com/cryptotrice/status/2110300326792429916",
         "to_ids": false,
         "distribution": "5",
@@ -85,7 +85,7 @@
       {
         "uuid": "1fd0fdc2-cacc-5fa5-9347-b38523e8f14a",
         "type": "url",
-        "category": "Social network",
+        "category": "Payload delivery",
         "value": "https://x.com/cryptotrice/status/2108500579790315885",
         "to_ids": false,
         "distribution": "5",
@@ -101,7 +101,7 @@
       {
         "uuid": "be5265d6-7478-5abc-a5a5-b9a10ee6622c",
         "type": "url",
-        "category": "Social network",
+        "category": "Payload delivery",
         "value": "https://x.com/cryptotrice/status/2118705306767335545",
         "to_ids": false,
         "distribution": "5",
@@ -117,7 +117,7 @@
       {
         "uuid": "811e3b1b-830c-5960-9d00-27cbf426e2e6",
         "type": "url",
-        "category": "Social network",
+        "category": "Payload delivery",
         "value": "https://x.com/cryptotrice/status/2120182085600280896",
         "to_ids": false,
         "distribution": "5",

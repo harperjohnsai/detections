@@ -299,8 +299,9 @@ MISP_MAP = {  # type -> (misp type, category)
     'user-agent': ('user-agent', 'Network activity'), 'filename': ('filename', 'Artifacts dropped'),
     'file-path': ('filename', 'Artifacts dropped'), 'path': ('filename', 'Artifacts dropped'),
     'process': ('text', 'Artifacts dropped'), 'command': ('text', 'Payload delivery'),
-    'polygon-contract': ('text', 'Network activity'), 'polygon-wallet': ('text', 'Financial fraud'), 'x-post': ('url', 'Social network'),
-    'youtube-channel': ('url', 'Social network'), 'youtube-video': ('url', 'Social network'),
+    'polygon-contract': ('text', 'Network activity'), 'polygon-wallet': ('text', 'Financial fraud'), 'x-post': ('url', 'Payload delivery'),
+    # MISP has no 'url' type in 'Social network' (describeTypes.json); lure posts/videos deliver the payload link
+    'youtube-channel': ('url', 'Payload delivery'), 'youtube-video': ('url', 'Payload delivery'),
     'x-account': ('twitter-id', 'Social network'), 'reference': ('link', 'External analysis'),
 }
 

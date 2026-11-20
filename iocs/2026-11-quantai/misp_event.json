@@ -296,7 +296,7 @@
       {
         "uuid": "dd9c8c2b-a45e-5aec-9657-05d18a67657a",
         "type": "url",
-        "category": "Social network",
+        "category": "Payload delivery",
         "value": "https://www.youtube.com/channel/UCXB43fOyaJWD1o092fOF5Iw",
         "to_ids": false,
         "distribution": "5",
@@ -312,7 +312,7 @@
       {
         "uuid": "9da1de72-225c-5fc6-8b24-af6d86dc159e",
         "type": "url",
-        "category": "Social network",
+        "category": "Payload delivery",
         "value": "https://www.youtube.com/watch?v=RKeu00DiDzw",
         "to_ids": false,
         "distribution": "5",
@@ -328,7 +328,7 @@
       {
         "uuid": "7b1835bb-a0b9-5e35-bec8-496a272daae8",
         "type": "url",
-        "category": "Social network",
+        "category": "Payload delivery",
         "value": "https://www.youtube.com/watch?v=D_b9HgmrS4Y",
         "to_ids": false,
         "distribution": "5",
