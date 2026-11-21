@@ -2,7 +2,7 @@
  "_warning": "MACHINE-READABLE, NOT DEFANGED: values are live indicators. Do not browse or fetch them.",
  "case": "2026-11-revstealer-setup-center",
  "license": "CC0-1.0",
- "count": 385,
+ "count": 395,
  "iocs": [
   {
    "type": "url",
@@ -3465,6 +3465,96 @@
    "value": "matic.rpc.sentio.xyz",
    "first_seen": "2026-11-11",
    "role": "public Polygon JSON-RPC host listed in the config of build yh-1111c; role INFERRED (config field, not tested). Third-party service: do NOT block globally; hunt non-browser POST eth_call",
+   "verdict": "shared-or-legit-infrastructure",
+   "confidence": "low",
+   "source": "static config extraction"
+  },
+  {
+   "type": "domain",
+   "value": "console.hazelcadence.website",
+   "first_seen": "2026-11-20",
+   "role": "C1 build yh-1120 REVSTEALER primary C2 (HTTPS :443; GET /health must return 'active'); host:port, Polygon contract and Telegraph page all taken from the embedded config of a sandbox memory image; contract value and Telegraph page read 2026-11-21 and decrypted: both give the same host:port. Domain registered 2026-11-20T09:07:56Z (Dynadot, Cloudflare name servers, RDAP); the contract was created 10 minutes later. Host never contacted. ThreatFox 2037832",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "YARAify memory image (first seen 2026-11-20 15:08 UTC), static config extraction; eth_call and Telegraph read 2026-11-21; RDAP"
+  },
+  {
+   "type": "polygon-contract",
+   "value": "0xca86C5f309D37e6c1B2998594e6D76D7061E0055",
+   "first_seen": "2026-11-20",
+   "role": "C1 build yh-1120 REVSTEALER EtherHiding dead drop named in the config (3rd C2 source), created 2026-11-20T09:17:58Z by deployer 0x8bAddf05 (nonce 246, tx 0xd6789eb11ba55fc1cbdc90280542c58cfdbd4e54d5560232924ab3b0d3541705); eth_call selector 0x6bc24ead on a public Polygon RPC; value read 2026-11-21 decrypts to console.hazelcadence.website:443, the embedded primary of this build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction; creation tx located by code-history search on public Polygon RPCs; eth_call read 2026-11-21"
+  },
+  {
+   "type": "url",
+   "value": "https://telegra.ph/Coast-willow-11-20",
+   "first_seen": "2026-11-20",
+   "role": "C1 build yh-1120 Telegraph dead drop named in the config (page description holds the AES-encrypted C2); block by path, not by host; page read 2026-11-21 via the Telegraph API, description decrypts to console.hazelcadence.website:443 (embedded primary)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "YARAify memory image (first seen 2026-11-20 15:08 UTC), static config extraction"
+  },
+  {
+   "type": "url-path",
+   "value": "/bzevbx/whd/phnwn.kgfs",
+   "first_seen": "2026-11-20",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1120, console.hazelcadence.website; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "url-path",
+   "value": "/ivrds/lvg/phnwn.kgfs",
+   "first_seen": "2026-11-20",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1120, console.hazelcadence.website; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "url-path",
+   "value": "/vwztn/phnwn.kgfs",
+   "first_seen": "2026-11-20",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1120, console.hazelcadence.website; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "url-path",
+   "value": "/yltft/pry/phnwn.kgfs",
+   "first_seen": "2026-11-20",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1120, console.hazelcadence.website; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "mutex",
+   "value": "Global\\325F9150",
+   "first_seen": "2026-11-20",
+   "role": "C1 REVSTEALER mutex of build yh-1120",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "sha256",
+   "value": "07b5c79f31acafb22a5bd8c407d485a2b8921859716840de796f61488ba0d6bc",
+   "first_seen": "2026-11-20",
+   "role": "C1 build yh-1120 REVSTEALER core: sandbox process-memory image (28,628,666 B = SizeOfImage 0x1b4d6ba, section raw offsets equal virtual addresses; YARAify file name 7ff677880000.<uuid>.exe, image base 0x7ff677880000; two high-entropy sections of 10.4 MB and 17.5 MB; not a Go binary: no Go build info, pclntab or runtime strings), first seen 2026-11-20 15:08 UTC; matches YARA REVSTEALER_x64_Core_SetupCenter; memory/dump hunting, not a file on disk; ThreatFox 2037833",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "YARAify (first seen); static config extraction"
+  },
+  {
+   "type": "domain",
+   "value": "rpc-mainnet.matic.quiknode.pro",
+   "first_seen": "2026-11-20",
+   "role": "public Polygon JSON-RPC host listed in the config of build yh-1120; role INFERRED (config field, not tested). Third-party service: do NOT block globally; hunt non-browser POST eth_call",
    "verdict": "shared-or-legit-infrastructure",
    "confidence": "low",
    "source": "static config extraction"

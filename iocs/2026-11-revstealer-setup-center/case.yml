@@ -64,6 +64,8 @@ references:
   - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2036136/"}
   - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2036137/"}
   - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2036166/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2037832/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2037833/"}
   - {source_name: MalwareBazaar, url: "https://bazaar.abuse.ch/sample/2ee9761e96fdaa7eaf56dc8ba8b3c71a9d7a2b5d16ebf2b7559336743a84da45/"}
   - {source_name: ThreatFox (reporter Myrtus0x0), url: "https://threatfox.abuse.ch/ioc/2016383/"}
   - {source_name: ThreatFox (reporter Myrtus0x0), url: "https://threatfox.abuse.ch/ioc/2029607/"}
