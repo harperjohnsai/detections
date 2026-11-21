@@ -167,3 +167,7 @@
 - Dead drops read 2026-11-21: the Telegraph page and the contract decrypt to the embedded primary.
 - +10 IOC rows, +1 `c2_timeline.csv` row, README section and table row, ThreatFox references 2037832 and 2037833. No AES keys or other secrets published.
 - Not checked: liveness of the C2 (nothing contacted); setter transactions on the contract.
+
+### 2026-11-21 (Go reflective loader: v2 decryptor for every build)
+- Added `tools/cryptotrice-go-loader/blob_fn_emu.py` (+ `gosyms.py`, `test_fn_emu.py`): emulates the whole blob-builder function in bare unicorn with every call patched and serviced by stubs (allocator, memmove, panic = error, junk callees skipped) instead of matching each decryption pass. Decrypts **41 of 41** loader builds of the second-build set to an AMD64 PE in file layout (v1: 10 of 41), byte-identical to v1 where v1 works; 3 non-builder control functions and 24 benign Go executables give no PE. Static analysis only: no OS layer, no Go runtime, no network.
+- `yara/cryptotrice-go-loader/second-build-check.csv`: new columns `v2_result`, `inner_pe_len`, `inner_pe_sha256` (32 distinct inner PEs); README of the rule summarises size groups and YARA Forge leads per payload.

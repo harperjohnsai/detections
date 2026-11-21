@@ -9,6 +9,30 @@ Static extractor for the Go loader of the fake "cracked trading software" campai
 | [`extract_pipeline.py`](extract_pipeline.py) | build-independent: finds the blob builder (`rep movsq` copy of `.rdata` plus `movabs` immediates), follows the one stack slot that holds the buffer to locate each in-place pass, emulates each loop, writes the decrypted buffer, prints a JSON report (builder address, header immediates, `.rdata` source, per-pass disassembly and loop range, hashes, inner PE length and SHA-256) |
 | [`gen_decrypt.py`](gen_decrypt.py) | the same six passes as a numpy re-implementation with the constants of the reference build `b8c1d239...` (encryption direction included, for round-trip tests) |
 | [`test_pipeline.py`](test_pipeline.py) | tests, see below |
+| [`blob_fn_emu.py`](blob_fn_emu.py) | **v2, decrypts every known build (41/41)**: emulates the whole blob-builder function instead of matching each pass, see "v2" below |
+| [`gosyms.py`](gosyms.py) | COFF symbol table reader (function bounds and callee names) used by v2 |
+| [`test_fn_emu.py`](test_fn_emu.py) | v2 tests: reference build, non-builder controls, all builds of a directory (v1 == v2 where v1 works), benign negatives |
+
+## v2: whole-function emulation (`blob_fn_emu.py`, 2026-11-21)
+
+v1 recognises one builder shape and one loop shape; builds differ in both (header immediates or none, buffer pointer kept in a register instead of a stack slot, longer loops). v2 does not look at the passes at all. It picks the `main.*` function that holds the large `rep movsq` copy from `.rdata`, maps the PE into a bare `unicorn` CPU, replaces every `call` in that function with `int3`, and runs the function from its real entry to its return:
+
+- `runtime.newobject`, `makeslice`, `mallocgc`, `growslice`: a bump allocator in emulator memory (sizes read from the Go type descriptor, Go 1.21 register ABI: arguments in RAX, RBX, RCX, RDI, RSI);
+- `runtime.memmove`, `memclrNoHeapPointers`: done in Python on emulator memory;
+- `runtime.panic*`, `throw`, `morestack`: the run stops with an error (never guessed);
+- every other callee (the ~1,500 junk print/map/random calls): skipped, returns a pointer to a zero page;
+- R14 points to a zero "goroutine" page so the prologue's stack check never branches to `morestack`.
+
+The function's return registers (RAX = pointer, RBX = length) give the decrypted buffer. Only the function's own arithmetic runs, inside the emulator, with no OS layer, no Go runtime and no network. The tool needs the PE's COFF symbol table (Go linker flag `-s` removes it); a stripped file is reported as unsupported.
+
+```bash
+.venv/bin/python blob_fn_emu.py LOADER.exe INNER.bin        # JSON report on stdout, inner PE in INNER.bin
+.venv/bin/python test_fn_emu.py --core LOADER.exe [--builds DIR] [--negative BENIGN.exe ...]
+```
+
+Test results (2026-11-21, `test_fn_emu.py --core <b8c1d239> --builds <41 builds> --negative <24 benign Go PEs>`): **all checks pass** (79). The reference build gives `c8f5b1c2...` (the inner PE that matched the independent memory dump byte for byte); three non-builder `main.*` functions of the same file give no `MZ`; **all 41 builds decrypt to an AMD64 PE in file layout** (one build at about 0.5 s); on the 10 builds v1 also decrypts, both versions give identical bytes; the 24 benign Go executables give no PE (21 have no builder, 3 are stripped). The per-build inner PE lengths and hashes are in [`second-build-check.csv`](../../yara/cryptotrice-go-loader/second-build-check.csv) (32 distinct inner PEs across 41 builds).
+
+## v1 usage (`extract_pipeline.py`, reference build)
 
 ```bash
 uv venv && uv pip install pefile capstone unicorn numpy
@@ -33,7 +57,8 @@ The buffer is the 12 immediate bytes the code stores into the new object followe
 
 ## Limits
 
-- One reference build was fully verified. On 40 other Go loaders that match the rule in [`yara/cryptotrice-go-loader/`](../../yara/cryptotrice-go-loader/) (MalwareBazaar, same imphash; list in `second-build-check.csv` there) the extractor decrypts 9 to a PE, rebuilds the blob but not to a PE in 8 (different pass shapes), and stops in 23 (no builder found in 17, no loop recognised in 6). So the builder shape and the passes vary per build, and `gen_decrypt.py` is valid for the reference build only; the extractor is not build-independent for every variant.
+- One reference build was fully verified. On 40 other Go loaders that match the rule in [`yara/cryptotrice-go-loader/`](../../yara/cryptotrice-go-loader/) (MalwareBazaar, same imphash; list in `second-build-check.csv` there) the extractor decrypts 9 to a PE, rebuilds the blob but not to a PE in 8 (different pass shapes), and stops in 23 (no builder found in 17, no loop recognised in 6). So the builder shape and the passes vary per build, and `gen_decrypt.py` is valid for the reference build only; `extract_pipeline.py` is not build-independent for every variant. Use `blob_fn_emu.py` (v2) for other builds; it decrypts all 41.
+- v2 trusts that the stubbed junk calls do not feed the blob; that held for all 41 builds (each result is a well-formed PE), but a future build that routes the buffer through a stubbed callee would fail visibly (no `MZ`), not silently.
 - Loop windows are limited to 128 bytes; larger loops are reported as errors, never guessed.
 - The inner PE is a stealer that expects to be mapped by its loader (no imports); the tool does not run it.
 
