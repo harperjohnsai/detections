@@ -1251,10 +1251,10 @@
         "first_seen": "2026-11-22T00:00:00.000000+00:00"
       },
       {
-        "uuid": "0a0d6227-c19f-5cfa-859d-59beaec7d933",
+        "uuid": "1786049c-cf26-5310-b2c2-917249878c8a",
         "type": "link",
         "category": "External analysis",
-        "value": "https://gist.github.com/harperjohnsai/7a54b1ff73b0b42f3cdc5d25fe5c4c3f",
+        "value": "https://gist.github.com/harperjohnsai/ab269fb870a085e47cb9b4a27d02af0c",
         "to_ids": false,
         "distribution": "5",
         "comment": "GitHub Gist",
@@ -1268,6 +1268,16 @@
         "to_ids": false,
         "distribution": "5",
         "comment": "ThreatFox",
+        "timestamp": "1795046400"
+      },
+      {
+        "uuid": "0a0d6227-c19f-5cfa-859d-59beaec7d933",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://gist.github.com/harperjohnsai/7a54b1ff73b0b42f3cdc5d25fe5c4c3f",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "GitHub Gist (part 1 IOCs)",
         "timestamp": "1795046400"
       }
     ]

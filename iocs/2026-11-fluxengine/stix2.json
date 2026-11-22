@@ -140,7 +140,7 @@
       "external_references": [
         {
           "source_name": "GitHub Gist",
-          "url": "https://gist.github.com/harperjohnsai/7a54b1ff73b0b42f3cdc5d25fe5c4c3f",
+          "url": "https://gist.github.com/harperjohnsai/ab269fb870a085e47cb9b4a27d02af0c",
           "description": "Defanged IOC gist"
         },
         {
@@ -178,6 +178,10 @@
         {
           "source_name": "MalwareBazaar",
           "url": "https://bazaar.abuse.ch/sample/e683253477ca1b9b22c285cbc854a50284256b4d246b151e63dc171830bf7192/"
+        },
+        {
+          "source_name": "GitHub Gist (part 1 IOCs)",
+          "url": "https://gist.github.com/harperjohnsai/7a54b1ff73b0b42f3cdc5d25fe5c4c3f"
         },
         {
           "source_name": "Kometa Labs",
