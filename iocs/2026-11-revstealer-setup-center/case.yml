@@ -66,6 +66,15 @@ references:
   - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2036166/"}
   - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2037832/"}
   - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2037833/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2039978/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2039979/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2039980/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2039981/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2039982/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2039983/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2039984/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2039985/"}
+  - {source_name: MalwareBazaar, url: "https://bazaar.abuse.ch/sample/6c705d296e0fe83d0435a5d5c22152c2efeebc1c49c8a35846118834958fb229/"}
   - {source_name: MalwareBazaar, url: "https://bazaar.abuse.ch/sample/2ee9761e96fdaa7eaf56dc8ba8b3c71a9d7a2b5d16ebf2b7559336743a84da45/"}
   - {source_name: ThreatFox (reporter Myrtus0x0), url: "https://threatfox.abuse.ch/ioc/2016383/"}
   - {source_name: ThreatFox (reporter Myrtus0x0), url: "https://threatfox.abuse.ch/ioc/2029607/"}

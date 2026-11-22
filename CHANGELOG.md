@@ -171,3 +171,10 @@
 ### 2026-11-21 (Go reflective loader: v2 decryptor for every build)
 - Added `tools/cryptotrice-go-loader/blob_fn_emu.py` (+ `gosyms.py`, `test_fn_emu.py`): emulates the whole blob-builder function in bare unicorn with every call patched and serviced by stubs (allocator, memmove, panic = error, junk callees skipped) instead of matching each decryption pass. Decrypts **41 of 41** loader builds of the second-build set to an AMD64 PE in file layout (v1: 10 of 41), byte-identical to v1 where v1 works; 3 non-builder control functions and 24 benign Go executables give no PE. Static analysis only: no OS layer, no Go runtime, no network.
 - `yara/cryptotrice-go-loader/second-build-check.csv`: new columns `v2_result`, `inner_pe_len`, `inner_pe_sha256` (32 distinct inner PEs); README of the rule summarises size groups and YARA Forge leads per payload.
+
+### 2026-11-22 (REVSTEALER: three more builds from YARAify hits, three new C2s with Polygon contracts and Telegraph pages)
+- `iocs/2026-11-revstealer-setup-center`: `REVSTEALER_x64_Core_SetupCenter` matched seven further samples on YARAify. Static config extraction gives builds `yh-1118` (`assets[.]get-vault[.]website`, three samples), `yh-1116d` (`ping8[.]southbazaar[.]work`, an original file) and `yh-1117` (`ping[.]forest-haven[.]wiki`), each with its own Polygon contract and Telegraph page, none listed anywhere before.
+- Dead drops read 2026-11-22: for all three builds the Telegraph page and the contract decrypt to the embedded primary.
+- +38 IOC rows, +3 `c2_timeline.csv` rows, README section and table rows, ThreatFox references 2039978 to 2039985, MalwareBazaar reference for the original file. No AES keys or other secrets published.
+- Two further hit samples add no indicators (known C2 `dev[.]gojournal[.]wiki`; a Themida-protected original whose config could not be recovered statically).
+- Not checked: liveness of the C2s (nothing contacted); setter transactions on the contracts.
