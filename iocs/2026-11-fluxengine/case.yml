@@ -1,9 +1,10 @@
 title: "FluxEngine, a live Delphi remote-access banker: full chain VBS -> scriptlets -> AutoIt -> dhlib.dll (panel remoto.painelst.com, Cloudflare-API TXT dead drop)"
 date: 2026-11-19
 gist: https://gist.github.com/harperjohnsai/ab269fb870a085e47cb9b4a27d02af0c
+video: https://youtu.be/dWD_bb4snMo
 families: [FluxEngine]
 rules: [yara/fluxengine, sigma]
-related_videos: []
+related_videos: ["https://youtu.be/t3dHUKu56oQ"]
 references:
   - {source_name: MalwareBazaar, url: "https://bazaar.abuse.ch/sample/c424a715e3861bc18e0c8223f3dfd909dc4a77a82b9c5a5a135b8d49bac7e8c6/"}
   - {source_name: VirusTotal, url: "https://www.virustotal.com/gui/file/c424a715e3861bc18e0c8223f3dfd909dc4a77a82b9c5a5a135b8d49bac7e8c6"}

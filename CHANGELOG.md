@@ -190,3 +190,5 @@
 - Not published: the Cloudflare API token and the AES master key (compared by hash only); the per-serve gate tokens of the stage URLs.
 - YARAhub (2026-11-22): deployed `MAL_FluxEngine_VBS_Downloader`, `MAL_FluxEngine_SCT_Recon_Stage2`, `MAL_FluxEngine_SCT_Installer_Stage3`, `SUSP_AutoIt_A3X_Large_NoExt_Script` (new) and re-deployed `MAL_FluxEngine_Loader_dhlib_DLL`, `MAL_FluxEngine_Payload_Delphi`, `SUSP_FluxEngine_LNK_Squiblydoo_ADS` (same uuids); all seven listed by `recent_yararules` (author Harper Johns, CC BY 4.0, TLP:CLEAR). `MAL_FluxEngine_AU3_PELoader_Decompiled` is repository-only (it matches decompiled text, not files YARAify scans).
 - IOC gist for the part 2 video (both parts, defanged): https://gist.github.com/harperjohnsai/ab269fb870a085e47cb9b4a27d02af0c, now the case `gist:`; the part 1 gist stays listed under references.
+
+- 2026-11-22: FluxEngine case: linked the Part 2 video (https://youtu.be/dWD_bb4snMo) and Part 1 as related video.

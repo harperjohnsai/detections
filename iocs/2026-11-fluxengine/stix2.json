@@ -139,6 +139,16 @@
       ],
       "external_references": [
         {
+          "source_name": "YouTube",
+          "url": "https://youtu.be/dWD_bb4snMo",
+          "description": "Video write-up"
+        },
+        {
+          "source_name": "YouTube",
+          "url": "https://youtu.be/t3dHUKu56oQ",
+          "description": "Related video"
+        },
+        {
           "source_name": "GitHub Gist",
           "url": "https://gist.github.com/harperjohnsai/ab269fb870a085e47cb9b4a27d02af0c",
           "description": "Defanged IOC gist"

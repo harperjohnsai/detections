@@ -1251,6 +1251,26 @@
         "first_seen": "2026-11-22T00:00:00.000000+00:00"
       },
       {
+        "uuid": "ae453ee1-f459-5b17-9f68-9aa5b530641d",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://youtu.be/dWD_bb4snMo",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "YouTube",
+        "timestamp": "1795046400"
+      },
+      {
+        "uuid": "506929db-b0fa-583a-aa8c-89a834591cbb",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://youtu.be/t3dHUKu56oQ",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "YouTube",
+        "timestamp": "1795046400"
+      },
+      {
         "uuid": "1786049c-cf26-5310-b2c2-917249878c8a",
         "type": "link",
         "category": "External analysis",
