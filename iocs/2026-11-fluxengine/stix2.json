@@ -41,7 +41,7 @@
       "modified": "2026-11-19T00:00:00.000Z",
       "type": "report",
       "id": "report--46c513e9-cf66-5e5e-9568-d955461e02ba",
-      "name": "FluxEngine, a live Delphi remote-access banker (panel remoto.painelst.com, Cloudflare-API TXT dead drop)",
+      "name": "FluxEngine, a live Delphi remote-access banker: full chain VBS -> scriptlets -> AutoIt -> dhlib.dll (panel remoto.painelst.com, Cloudflare-API TXT dead drop)",
       "description": "IOC set for case 2026-11-fluxengine. Values are live indicators (not defanged): do not browse or fetch them. Rows judged shared/legitimate infrastructure are context only and are not exported as indicators. License: CC0 1.0.",
       "published": "2026-11-19T00:00:00.000Z",
       "report_types": [
@@ -77,6 +77,27 @@
         "indicator--ddc7feb4-3460-518e-9a89-7bf17f0da9cb",
         "indicator--2671c129-bca4-5577-b894-99a162c37be8",
         "indicator--7cbcaaca-6005-521d-a530-b17748dc6268",
+        "indicator--c3428fab-0159-5b35-bb0f-8dfbd8929d1e",
+        "indicator--a266e554-bc2c-5762-a82a-cb2bee9cfe02",
+        "indicator--21b134bf-cf95-57bf-a548-117ddfb0cb1a",
+        "indicator--8b00101e-814a-57a3-9e16-48f055e5caac",
+        "indicator--60dd5a56-7e44-545a-868a-d53d16045622",
+        "indicator--9087fdbe-6763-5d9d-a071-f5199caa3aa2",
+        "indicator--ca302821-b09f-53c3-9c4e-0f6644886f3e",
+        "indicator--46cee629-f294-53c1-96bd-822d0c725b66",
+        "indicator--e014efd4-e664-5615-acdf-5f9c9d271519",
+        "indicator--ac91d8f5-8f3f-55f9-9472-37579009d28c",
+        "indicator--ce3348dd-073e-5d07-91f9-4e68e8637346",
+        "indicator--5d1f1339-d257-58df-92a9-2069b74b3ee1",
+        "indicator--a23fd93f-7674-5071-befa-ea66c5c7446d",
+        "indicator--3761ec67-f352-503b-b661-fbdddd1a8f65",
+        "indicator--fdf06582-261c-5818-84af-cb9936f906f5",
+        "indicator--cf1caefa-75c2-5025-b060-d61e52bb45fd",
+        "indicator--b152b8a9-41dc-5d81-a469-0863ee5c663e",
+        "indicator--1c088559-2b55-51eb-a6d4-6e82718cdb66",
+        "indicator--7c27bdef-ce47-5c25-9723-ab98be48c80b",
+        "indicator--5c87d3e9-157a-554f-b4c2-c728a3a2ae75",
+        "indicator--b4bcd739-8a22-5e29-ab8a-cc98edebff8f",
         "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8",
         "relationship--060d2599-689d-5064-bc2d-cd63d1952f4b",
         "relationship--f4c1707f-6860-5463-9e7c-16763ed54745",
@@ -99,7 +120,22 @@
         "relationship--c611741a-70dc-5bf4-b010-ecbacc2f90be",
         "relationship--863256ec-f37d-511f-bfce-0fdc3878e1f9",
         "relationship--181af498-5dcd-58d5-8fda-21f45a8d4aab",
-        "relationship--f70f4636-6ece-5cee-b891-273cb3725b4f"
+        "relationship--f70f4636-6ece-5cee-b891-273cb3725b4f",
+        "relationship--c784fee3-d82d-5073-9ba0-2f7ff3029483",
+        "relationship--6fd49369-bc92-565c-b73d-2713046fbf78",
+        "relationship--7e5d29b0-cf6f-5574-a139-5f278de66c8f",
+        "relationship--f4cbb795-1b32-57c8-b866-a2856f2f6e92",
+        "relationship--7a9f85fe-8ec6-5704-89a2-6aa6b6eda217",
+        "relationship--9910e18f-a43e-5fb4-b6c8-0c1fc350c16d",
+        "relationship--9e1f8a5b-491c-5bab-8507-8eeed59e1636",
+        "relationship--9fc7f621-e833-564c-9afa-128361e5b3cc",
+        "relationship--9ba045a0-967d-54a1-9ac5-47ef224c7914",
+        "relationship--7ea96034-ee1b-5348-bef6-59d3c874dfbb",
+        "relationship--8ee54f74-cddc-5e8c-bb34-e1f5f5571fff",
+        "relationship--d721ea44-a9a2-591a-9511-eeb783b46e0b",
+        "relationship--2f64537c-46bd-56b2-a95f-f4a17ff27aeb",
+        "relationship--573bad45-8664-5b84-9d35-ebf3075e0a32",
+        "relationship--1ca2bdac-70cf-5e85-96a2-dd8ebfcf7ed8"
       ],
       "external_references": [
         {
@@ -126,6 +162,26 @@
         {
           "source_name": "Proofpoint",
           "url": "https://www.proofpoint.com/uk/blog/threat-insight/europes-threat-landscape-2026-espionage-expands-ai-and-phishing-risks-grow"
+        },
+        {
+          "source_name": "MalwareBazaar",
+          "url": "https://bazaar.abuse.ch/sample/c2225d927b1461354418ce8067574e2c48dcd19be9d5150b68a3bcfbdd0e5c25/"
+        },
+        {
+          "source_name": "MalwareBazaar",
+          "url": "https://bazaar.abuse.ch/sample/c3dc04853487b4a8f0e25a9527c250c45de5f8ba8153ec5e0c83ad834a0c81de/"
+        },
+        {
+          "source_name": "MalwareBazaar",
+          "url": "https://bazaar.abuse.ch/sample/305b8da6d1bf5bd3d2b7c08553765a8ef268d126f6b7d78d01ca588937415359/"
+        },
+        {
+          "source_name": "MalwareBazaar",
+          "url": "https://bazaar.abuse.ch/sample/e683253477ca1b9b22c285cbc854a50284256b4d246b151e63dc171830bf7192/"
+        },
+        {
+          "source_name": "Kometa Labs",
+          "url": "https://kometa.cl/blog/falso-correo-pjud-estafa-ia-redireccion-google-search-ms"
         }
       ]
     },
@@ -845,6 +901,539 @@
       ],
       "created": "2026-11-19T00:00:00.000Z",
       "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--c3428fab-0159-5b35-bb0f-8dfbd8929d1e",
+      "name": "e683253477ca1b9b22c285cbc854a50284256b4d246b151e63dc171830bf7192",
+      "description": "Stage 1 VBS DOC-9CQC87.vbs (3,653 B): Msxml2.ServerXMLHTTP GET of https://doc.pdf-unico.lat/d/abpod6?r=330767F45595 with UA 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)', saves %TEMP%\\t481799.sct and runs regsvr32 /s /n /u /i:<sct> scrobj.dll. Listed on MalwareBazaar 2026-11-21 with tag mispadu, a mislabel: the chain is FluxEngine (correction comment added 2026-11-22). MD5 edcbd5d4880ef969c822fb96b70afe6b [verdict: malicious; source: static analysis (this case, part 2); MalwareBazaar]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = 'e683253477ca1b9b22c285cbc854a50284256b4d246b151e63dc171830bf7192']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "sha256",
+        "stage"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--a266e554-bc2c-5762-a82a-cb2bee9cfe02",
+      "name": "2ec8894d0cc8b092c5525a12254cad122d34933a349c3eff14f1af02836177ac",
+      "description": "Stage 2 recon scriptlet (JScript COM scriptlet, 4,357 B) from /d/abpod6: XOR string table, WMI VM/BIOS/AV checks, analyst PC-name blocklist, beacon registrar.php?dominio=..., then saves %TEMP%\\<8 base36>.sct (stage 3) and runs it with regsvr32. progid/classid look per-serve, so the hash may be per download. MalwareBazaar accepted the upload but does not list plain-text scripts [verdict: malicious; source: static analysis (this case, part 2)]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '2ec8894d0cc8b092c5525a12254cad122d34933a349c3eff14f1af02836177ac']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "delivery",
+        "sha256",
+        "stage"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--21b134bf-cf95-57bf-a548-117ddfb0cb1a",
+      "name": "f32d6dc8c15efe4473e5a400cacb15cb28bcde2daf74fa2c99fa86d4936c7880",
+      "description": "Stage 3 installer scriptlet (4,852 B) from /d/inewqrh: ClearMyTracksByProcess 8, HKCU\\Software\\FluxEngine\\Desktop values src and taskm, 8-letter install name from COMPUTERNAME+USERNAME, unzips AutoIt3 + compiled script + icon into C:\\<n>\\, starts C:\\<n>\\<n>.exe C:\\<n>\\<n>, attrib +h +s. Hash may be per download; not listed by MalwareBazaar (plain text) [verdict: malicious; source: static analysis (this case, part 2)]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = 'f32d6dc8c15efe4473e5a400cacb15cb28bcde2daf74fa2c99fa86d4936c7880']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "delivery",
+        "sha256",
+        "stage"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--8b00101e-814a-57a3-9e16-48f055e5caac",
+      "name": "4fc99727bbb91087a474126049ced32b69d252c5ed93e2b1fa40d8c13d10257e",
+      "description": "Stage 4 compiled AutoIt script (AU3!EA06, 1,881,241 B, dropped without extension as C:\\<n>\\<n>): maps the hex-embedded dhlib.dll c3dc0485 with its own in-memory PE loader and calls InitModule(C:\\<n>\\); beacons au3_inicio/au3_dll_ok/au3_init_ok. On MalwareBazaar inside a2.zip 305b8da6 (the raw file is not listed) [verdict: malicious; source: static analysis and decompilation (this case, part 2)]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '4fc99727bbb91087a474126049ced32b69d252c5ed93e2b1fa40d8c13d10257e']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "loader",
+        "sha256",
+        "stage"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--60dd5a56-7e44-545a-868a-d53d16045622",
+      "name": "305b8da6d1bf5bd3d2b7c08553765a8ef268d126f6b7d78d01ca588937415359",
+      "description": "a2.zip served at /d/mo1t6do6?f=a3x (holds the compiled script 4fc99727). Built per request, so likely per victim. MD5 714034b6639f7f0f3af1a5c6e172d430 [verdict: malicious; source: stage retrieval (this case, part 2); MalwareBazaar]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '305b8da6d1bf5bd3d2b7c08553765a8ef268d126f6b7d78d01ca588937415359']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "sha256"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--9087fdbe-6763-5d9d-a071-f5199caa3aa2",
+      "name": "c3dc04853487b4a8f0e25a9527c250c45de5f8ba8153ec5e0c83ad834a0c81de",
+      "description": "FluxEngine loader dhlib.dll, November 2026 build (Delphi DLL, export InitModule, export name Project1.dll, 1,855,760 B, compiled 2026-11-17 00:03:21 UTC), carved from the hex blob in the AutoIt script; never written to disk. Same AES master key and Cloudflare API token as the four Sep/Oct builds (compared by hash). MD5 7c146c37657fa36fc8e337875b4c7151, SHA-1 8fa82c2553bb5d15d242b3fa2ab124d6727d4ea6 [verdict: malicious; source: static analysis (this case, part 2); MalwareBazaar]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = 'c3dc04853487b4a8f0e25a9527c250c45de5f8ba8153ec5e0c83ad834a0c81de']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "loader",
+        "sha256"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--ca302821-b09f-53c3-9c4e-0f6644886f3e",
+      "name": "c2225d927b1461354418ce8067574e2c48dcd19be9d5150b68a3bcfbdd0e5c25",
+      "description": "FluxEngine client (payload) build 1.0.3.113: Delphi PE32 GUI, 4,541,440 B, compiled 2026-11-21 18:17:00 UTC. Plaintext of d3dx9_43.bin served by the panel on 2026-11-22 10:54 UTC, decrypted with the loader key. Same strings, token, imphash and protocol as build 1.0.3.111 (c424a715); only main-unit code changed. MD5 aa251154fa58c886dcdd6dacae0b473e, SHA-1 f7165ed0e670db161b27c4dd7624b5d9afe823e9 [verdict: malicious; source: stage retrieval and decryption (this case, part 2); MalwareBazaar]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = 'c2225d927b1461354418ce8067574e2c48dcd19be9d5150b68a3bcfbdd0e5c25']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "loader",
+        "payload",
+        "sha256"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--46cee629-f294-53c1-96bd-822d0c725b66",
+      "name": "doc.pdf-unico.lat",
+      "description": "Lure and stage host of the Spain/Portugal arm: catch-all 'Document available' page, /gerar/gerar.php, stages /d/abpod6, /d/inewqrh, /d/mo1t6do6?f=autoit|a3x|icone, status beacons /registrar.php. Behind Cloudflare; only ES and PT check-host nodes passed the WAF on 2026-11-22 [verdict: malicious; source: stage retrieval (this case, part 2); check-host; urlscan]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'doc.pdf-unico.lat']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "domain",
+        "lure",
+        "stage"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--e014efd4-e664-5615-acdf-5f9c9d271519",
+      "name": "pdf-unico.lat",
+      "description": "Registrable domain of the stage host: registered 2026-11-13 (NameSilo), Cloudflare name servers [verdict: malicious; source: RDAP; DoH (this case, part 2)]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'pdf-unico.lat']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "domain",
+        "stage"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--ac91d8f5-8f3f-55f9-9472-37579009d28c",
+      "name": "file.bancocentral.lat",
+      "description": "Sibling lure host: same 'Document available' page title in a urlscan scan of 2026-11-06. Apex on serverHold and NXDOMAIN on 2026-11-22, not fetched. Tie is the page title only [verdict: candidate; source: urlscan; RDAP]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'file.bancocentral.lat']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain",
+        "lure"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--ce3348dd-073e-5d07-91f9-4e68e8637346",
+      "name": "pjudportal.lat",
+      "description": "Chile court-notice (PJUD) lure domain of the LATAM arm; A record 72.167.150.114 (the panel and C2 host) on 2026-11-22 [verdict: malicious; source: DoH (this case, part 2); Kometa Labs write-up]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'pjudportal.lat']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "domain",
+        "lure"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--5d1f1339-d257-58df-92a9-2069b74b3ee1",
+      "name": "oficinajudicialvirtual.online",
+      "description": "Chile court-notice (PJUD) lure domain of the LATAM arm; A record 72.167.150.114 (the panel and C2 host) on 2026-11-22 [verdict: malicious; source: DoH (this case, part 2)]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'oficinajudicialvirtual.online']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "domain",
+        "lure"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--a23fd93f-7674-5071-befa-ea66c5c7446d",
+      "name": "https://doc.pdf-unico.lat/d/abpod6?r=330767F45595",
+      "description": "Stage 2 scriptlet URL requested by the VBS (fetched 2026-11-22 from a Spanish egress) [verdict: malicious; source: stage retrieval (this case, part 2)]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://doc.pdf-unico.lat/d/abpod6?r=330767F45595']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "stage",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--3761ec67-f352-503b-b661-fbdddd1a8f65",
+      "name": "https://doc.pdf-unico.lat/d/inewqrh?r=330767F45595",
+      "description": "Stage 3 installer scriptlet URL requested by stage 2 [verdict: malicious; source: stage retrieval (this case, part 2)]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://doc.pdf-unico.lat/d/inewqrh?r=330767F45595']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "stage",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--fdf06582-261c-5818-84af-cb9936f906f5",
+      "name": "https://doc.pdf-unico.lat/gerar/gerar.php",
+      "description": "Lure page endpoint that returns the DOC-*.zip URL (POST, not sent by us) [verdict: malicious; source: lure page source (this case, part 2)]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://doc.pdf-unico.lat/gerar/gerar.php']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "lure",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--cf1caefa-75c2-5025-b060-d61e52bb45fd",
+      "name": "/d/mo1t6do6?f=",
+      "description": "Stage 4 ZIP downloads by the installer scriptlet: f=autoit (AutoIt3.exe), f=a3x (compiled script), f=icone (icon), plus per-serve t=<token>&h=<install name> [verdict: malicious; source: static analysis (this case, part 2)]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value LIKE '%/d/mo1t6do6?f=']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "delivery",
+        "stage",
+        "url-path"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--b152b8a9-41dc-5d81-a469-0863ee5c663e",
+      "name": "/registrar.php?dominio=",
+      "description": "Recon beacon of stage 2 (dominio, pc, user, os, vm, lang, mf, md, bios, vmr, av) [verdict: malicious; source: static analysis (this case, part 2)]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value LIKE '%/registrar.php?dominio=']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "stage",
+        "url-path"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--1c088559-2b55-51eb-a6d4-6e82718cdb66",
+      "name": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)",
+      "description": "Hard-coded UA of the stage-1 VBS (Msxml2.ServerXMLHTTP); old and rare, hunting pivot with the /d/<id>?r=<hex> path [verdict: hunting-pivot; source: static analysis (this case, part 2)]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[network-traffic:extensions.'http-request-ext'.request_header.'User-Agent' = 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "stage",
+        "user-agent"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--7c27bdef-ce47-5c25-9723-ab98be48c80b",
+      "name": "%TEMP%\\t481799.sct",
+      "description": "Stage 2 drop path (fixed name in this VBS); stage 3 uses %TEMP%\\<8 base36 chars>.sct [verdict: malicious; source: static analysis (this case, part 2)]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:name = 't481799.sct' AND file:parent_directory_ref.path = '%TEMP%']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "file-path",
+        "stage"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--5c87d3e9-157a-554f-b4c2-c728a3a2ae75",
+      "name": "regsvr32 /s /n /u /i:\"%TEMP%\\t<digits>.sct\" scrobj.dll",
+      "description": "Stage 1 to stage 2 execution (local scriptlet through scrobj.dll), started by wscript.exe [verdict: malicious; source: static analysis (this case, part 2)]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[process:command_line = 'regsvr32 /s /n /u /i:\"%TEMP%\\\\t<digits>.sct\" scrobj.dll']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "command",
+        "stage"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--b4bcd739-8a22-5e29-ab8a-cc98edebff8f",
+      "name": "rundll32 InetCpl.cpl,ClearMyTracksByProcess 8",
+      "description": "IE/WinINet history wipe run by the stage 3 scriptlet (regsvr32 parent); generic on its own [verdict: hunting-pivot; source: static analysis (this case, part 2)]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[process:command_line = 'rundll32 InetCpl.cpl,ClearMyTracksByProcess 8']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "command",
+        "stage"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
       "type": "malware",
       "id": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8",
       "name": "FluxEngine",
@@ -1156,6 +1745,216 @@
       "id": "relationship--f70f4636-6ece-5cee-b891-273cb3725b4f",
       "relationship_type": "indicates",
       "source_ref": "indicator--b580f248-3ee7-5f95-9a94-f3c426a6b6f4",
+      "target_ref": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--c784fee3-d82d-5073-9ba0-2f7ff3029483",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--c3428fab-0159-5b35-bb0f-8dfbd8929d1e",
+      "target_ref": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--6fd49369-bc92-565c-b73d-2713046fbf78",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--a266e554-bc2c-5762-a82a-cb2bee9cfe02",
+      "target_ref": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--7e5d29b0-cf6f-5574-a139-5f278de66c8f",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--21b134bf-cf95-57bf-a548-117ddfb0cb1a",
+      "target_ref": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--f4cbb795-1b32-57c8-b866-a2856f2f6e92",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--8b00101e-814a-57a3-9e16-48f055e5caac",
+      "target_ref": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--7a9f85fe-8ec6-5704-89a2-6aa6b6eda217",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--9087fdbe-6763-5d9d-a071-f5199caa3aa2",
+      "target_ref": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--9910e18f-a43e-5fb4-b6c8-0c1fc350c16d",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--ca302821-b09f-53c3-9c4e-0f6644886f3e",
+      "target_ref": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--9e1f8a5b-491c-5bab-8507-8eeed59e1636",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--46cee629-f294-53c1-96bd-822d0c725b66",
+      "target_ref": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--9fc7f621-e833-564c-9afa-128361e5b3cc",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--e014efd4-e664-5615-acdf-5f9c9d271519",
+      "target_ref": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--9ba045a0-967d-54a1-9ac5-47ef224c7914",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--ce3348dd-073e-5d07-91f9-4e68e8637346",
+      "target_ref": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--7ea96034-ee1b-5348-bef6-59d3c874dfbb",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--5d1f1339-d257-58df-92a9-2069b74b3ee1",
+      "target_ref": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--8ee54f74-cddc-5e8c-bb34-e1f5f5571fff",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--a23fd93f-7674-5071-befa-ea66c5c7446d",
+      "target_ref": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--d721ea44-a9a2-591a-9511-eeb783b46e0b",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--3761ec67-f352-503b-b661-fbdddd1a8f65",
+      "target_ref": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--2f64537c-46bd-56b2-a95f-f4a17ff27aeb",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--cf1caefa-75c2-5025-b060-d61e52bb45fd",
+      "target_ref": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--573bad45-8664-5b84-9d35-ebf3075e0a32",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--7c27bdef-ce47-5c25-9723-ab98be48c80b",
+      "target_ref": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-19T00:00:00.000Z",
+      "modified": "2026-11-19T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--1ca2bdac-70cf-5e85-96a2-dd8ebfcf7ed8",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--5c87d3e9-157a-554f-b4c2-c728a3a2ae75",
       "target_ref": "malware--8da029c7-d29b-573a-a8bf-5d7d95ef62b8"
     }
   ]

@@ -9,7 +9,7 @@ One folder per family or campaign. Every rule file carries `author`, `date`, a `
 | [`miolab-macos/`](miolab-macos/) | MioLab macOS stealer (C++ build) and agent, trojanised Ledger / Trezor apps, hunting rules for decrypted artefacts |
 | [`grandoreiro/`](grandoreiro/) | Grandoreiro Delphi loader (2026 build): string-key derivation / SHA-256 port code idioms, BMP size-padding hunting rule |
 | [`mispadu/`](mispadu/) | Mispadu (URSA) Delphi payload build 108: letter-pair cipher code, build-specific resource loop, keyboard-hook DLL |
-| [`fluxengine/`](fluxengine/) | FluxEngine Delphi remote-access banker: loader DLL (`dhlib.dll`), decrypted payload, stage-1 LNK hunting rule |
+| [`fluxengine/`](fluxengine/) | FluxEngine Delphi remote-access banker: loader DLL (`dhlib.dll`), decrypted payload, stage-1 VBS and scriptlets, AutoIt stage, stage-1 LNK hunting rule |
 | [`cryptotrice-go-loader/`](cryptotrice-go-loader/) | Go loader that reflectively maps an embedded encrypted PE (Go build info plus the five mapper API names, `kernel32` as only import); second-build check and per-sample table |
 | [`the_gentlemen/`](the_gentlemen/) | The Gentlemen (Storm-2697) ransomware: Go locker (Windows, Linux, unpacked memory) and the ransom note; the VMProtect-packed build is a documented miss |
 

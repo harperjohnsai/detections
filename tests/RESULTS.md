@@ -268,3 +268,30 @@ ALL CHECKS PASS
 ## Go loader extractor (tools/cryptotrice-go-loader), 2026-11-20
 
 `test_pipeline.py --core <loader core> --mapped-image <loaded-image dump> --negative <24 benign Go PEs>`: 3 synthetic checks, 12 reference-build checks (builder, six passes, emulator equals numpy re-implementation, inner PE SHA-256 `c8f5b1c2...`, 0 byte differences against the loaded-image dump, negative control with one pass skipped) and 24 benign-PE checks (`no blob builder found`): ALL CHECKS PASS.
+
+## FluxEngine part 2 (yara/fluxengine, sigma FluxEngine rules), run 2026-11-22
+
+Engines: yara-python 4.5.4, YARA-X 1.23.0. `tests/run_yara_tests.py --samples <case folders> --negatives <benign libraries>`, 32 rule files compiled together. FluxEngine lines (every expected result passes on both engines):
+
+```
+PASS [yara-x 1.23.0] e683253477ca -> MAL_FluxEngine_VBS_Downloader
+PASS [yara-x 1.23.0] 2ec8894d0cc8 -> MAL_FluxEngine_SCT_Recon_Stage2
+PASS [yara-x 1.23.0] f32d6dc8c15e -> MAL_FluxEngine_SCT_Installer_Stage3
+PASS [yara-x 1.23.0] 4fc99727bbb9 -> SUSP_AutoIt_A3X_Large_NoExt_Script
+PASS [yara-x 1.23.0] d8e0ac6e4300 -> MAL_FluxEngine_AU3_PELoader_Decompiled
+PASS [yara-x 1.23.0] c3dc04853487 -> MAL_FluxEngine_Loader_dhlib_DLL
+PASS [yara-x 1.23.0] dc60f22fc59a / 6a9ded132c05 / 7040370d8d09 / 01af2f7049e1 -> MAL_FluxEngine_Loader_dhlib_DLL
+PASS [yara-x 1.23.0] c424a715e386 / c2225d927b14 -> MAL_FluxEngine_Payload_Delphi
+PASS [yara-x 1.23.0] 6e6d4084c6c2 -> SUSP_FluxEngine_LNK_Squiblydoo_ADS
+PASS [yara-x 1.23.0] bdd2b7236a11 ->            (genuine signed AutoIt3.exe)
+PASS [yara-x 1.23.0] cd2f07e47e98 ->            (genuine WebView2Loader.dll)
+PASS [yara-x 1.23.0] 01b64c8943b7 ->            (install icon)
+PASS [yara-python 4.5.4] (same 16 lines)
+PASS [yara-python 4.5.4] negative corpus: 1295 files, 0 hits []
+PASS [yara-x 1.23.0] negative corpus: 1295 files, 0 hits []
+ALL CHECKS PASS
+```
+
+Negatives for the harness: 1,295 files of a Python 3.13 standard library and two Python virtual environments (scripts, extension modules). A wider YARA-X scan of the eight FluxEngine rules over 10,038 other files of the author's cases (614 PE files, 9,424 scripts, text, JSON and archives) plus an EICAR file: **0 hits**. The YARA Forge `full` set has no hit on the chain files. `MAL_FluxEngine_AU3_PELoader_Decompiled` matches analyst text or AutoIt script memory only, so its positive is the decompiled script (an artefact, not a sample in the wild).
+
+Sigma: `yamllint --strict` (CI config) and `sigma check --fail-on-error --fail-on-issues` with the SigmaHQ validators: 0 errors, 0 issues for all 11 FluxEngine rules; `tests/test_sigma_synthetic.py` (now with `|re` and list-of-maps selections) fires on 11 hand-made positive events and stays silent on 11 negatives. The six rules proposed upstream also pass SigmaHQ's `tests/test_rules.py`, `tests/test_logsource.py` and `.yamllint`.

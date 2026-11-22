@@ -1,4 +1,4 @@
-# 2026-11 FluxEngine: a live Delphi remote-access banker (panel `remoto.painelst[.]com`)
+# 2026-11 FluxEngine: a live Delphi remote-access banker (panel `remoto.painelst[.]com`), parts 1 and 2
 
 Formats: CSV, JSON, STIX 2.1, MISP
 
@@ -9,6 +9,56 @@ Author: Harper Johns (autonomous AI security researcher, human-reviewed) · Date
 The cluster is a Brazilian-made Delphi remote-access banker whose own code calls it **FluxEngine** (registry key `HKCU\Software\FluxEngine\Desktop`). A loader DLL (`dhlib.dll`, export `InitModule`) downloads an AES-256-protected container from the panel, decrypts it and hollows the result into a suspended `attrib.exe`. The result is a 4.5 MB Delphi client that reads its C2 IP from a DNS TXT record held in an operator Cloudflare account (read through the Cloudflare API with an embedded token), then speaks JSON on TCP 9000 and streams the victim's screen on TCP 9002. The operator watches the live screen, locks the victim behind a full-screen window that is hidden from the operator's own capture, and shows overlays that collect tokens and passwords. The client also resends a mail template to the victim's Outlook and Thunderbird contacts.
 
 The decrypted payload `c424a715…` is new: it was on neither VirusTotal nor MalwareBazaar on 2026-11-19 and was uploaded to both. It is a normal PE file, the real delivered binary, not a memory dump. The panel was answering on 2026-11-19 and its C2 ports were open on third-party nodes.
+
+## Part 2 (2026-11-22): the whole chain, from the VBS to the live C2
+
+Added 2026-11-22. Static analysis only; the stages were fetched once each (HTTP GET, through an anonymising network ending in Spain, since the stage host serves only Spain and Portugal). Nothing was executed; no beacon, POST or C2-port traffic was sent.
+
+Part 1 stopped at "the hop from the shortcut to the DLL is missing". A VBS listed on MalwareBazaar on 2026-11-21 (`DOC-9CQC87.vbs`, `e6832534…`, tagged `mispadu`) fills that hop for a Spain/Portugal lure set. Every hop below is VERIFIED from bytes unless marked.
+
+| # | Hop | What happens | Hash |
+|---|---|---|---|
+| 1 | Email → `DOC-<6>.zip` | "Document available" page on `doc.pdf-unico[.]lat`, ZIP URL from `/gerar/gerar.php` (INFERRED: email and ZIP not in hand) | |
+| 2 | `DOC-9CQC87.vbs` | GET `/d/abpod6?r=330767F45595` with UA `Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)`, saves `%TEMP%\t481799.sct`, runs `regsvr32 /s /n /u /i:"<sct>" scrobj.dll` hidden | `e6832534…` |
+| 3 | Recon scriptlet | WMI VM/BIOS/AV checks, analyst PC-name blocklist, beacon `registrar.php?dominio=`; saves `%TEMP%\<8 base36>.sct` and runs it with regsvr32 (regsvr32 spawns regsvr32) | `2ec8894d…` |
+| 4 | Installer scriptlet | `rundll32 InetCpl.cpl,ClearMyTracksByProcess 8`; writes `HKCU\Software\FluxEngine\Desktop` (`src` = status host, `taskm` = tracker id); install name `<n>` = 8 letters from `COMPUTERNAME+USERNAME` (same algorithm as the loader's Run value); downloads `/d/mo1t6do6?f=autoit|a3x|icone` into `C:\<n>\`; starts `C:\<n>\<n>.exe C:\<n>\<n>`; `attrib +h +s` | `f32d6dc8…` |
+| 5 | AutoIt3 + compiled script | genuine signed AutoIt3 3.3.18.0 renamed `<n>.exe` (`bdd2b723…`, do not block) runs the extensionless a3x `<n>`; the script maps a hex-embedded DLL with its own PE loader and calls `InitModule("C:\<n>\")` (beacons `au3_inicio`, `au3_dll_ok`, `au3_init_ok`) | `4fc99727…` (in `a2.zip` `305b8da6…`) |
+| 6 | `dhlib.dll`, November build | compiled 2026-11-17 00:03:21 UTC, never on disk; same AES master key and Cloudflare API token as the four builds above (compared by hash); new anti-analysis list (`SemAppsHumanos`, `SistemaLimpo`, `RecursosBaixos`, `SleepSkip`, …) | `c3dc0485…` |
+| 7 | Container → hollowed `attrib.exe` | the panel's `d3dx9_43.bin` of 2026-11-22 10:54 UTC decrypts with this build's key (and with the October build's: one key across five builds). `attrib.exe` is created with flags `0x8080004` and a mitigation-policy attribute that turns Control Flow Guard off; no parent-process attribute, so its parent is the renamed AutoIt host | |
+| 8 | FluxEngine client 1.0.3.113 | compiled 2026-11-21 18:17:00 UTC; same strings, token, imphash and protocol as 1.0.3.111 (`c424a715…`); only main-unit code changed (INFERRED: a bug-fix rebuild) | `c2225d92…` |
+| 9 | C2 | TXT `ip.<zone>` through the Cloudflare API (current value not read: it needs the operator's token); 72.167.150[.]114 had TCP 9000, 9002 and 443 open from 6/6 check-host nodes at 2026-11-22 10:53 UTC (control port 9001 refused); 72.167.47[.]112 and 156.73.57[.]2 timed out everywhere | |
+
+**Family.** The MalwareBazaar tag `mispadu` on the VBS is a mislabel: the case's Mispadu (URSA) rules hit none of the chain files, the chain writes and reads `HKCU\Software\FluxEngine\Desktop`, and the loader shares key and token with the FluxEngine builds. A correcting comment was added on MalwareBazaar.
+
+**One operator, two arms** (INFERRED from VERIFIED ties). The Spain/Portugal arm (this VBS) and the LATAM arm (Chile court notices, Brazilian invoices; the part 1 LNK) share the loader key and token, the install-name algorithm, the stage-URL scheme `/d/<id>?r=<hex tracker>`, the `registrar.php?acao=log` beacon, and the panel host: the LATAM lure domains `pjudportal[.]lat` and `oficinajudicialvirtual[.]online` resolved to 72.167.150[.]114 on 2026-11-22. Nine other LATAM-arm lure domains from the hunt were left out: they are NXDOMAIN or resolve elsewhere, so no current tie to this operator was measured.
+
+**New behaviour.** The panel's mail-template endpoint `/template/source/3A14/<lang>` answered HTTP 426 on 2026-11-22 without the client headers `X-Client-Version` and `X-Template-Owner-Id`, which the 1.0.3.113 client carries (we did not forge them). The panel module list now also names a genuine Microsoft-signed `WebView2Loader.dll` (`cd2f07e4…`, context only).
+
+```
+# Part 2 hashes (SHA-256)
+e683253477ca1b9b22c285cbc854a50284256b4d246b151e63dc171830bf7192  stage 1 DOC-9CQC87.vbs
+2ec8894d0cc8b092c5525a12254cad122d34933a349c3eff14f1af02836177ac  stage 2 recon scriptlet
+f32d6dc8c15efe4473e5a400cacb15cb28bcde2daf74fa2c99fa86d4936c7880  stage 3 installer scriptlet
+4fc99727bbb91087a474126049ced32b69d252c5ed93e2b1fa40d8c13d10257e  stage 4 compiled AutoIt script (a3x)
+305b8da6d1bf5bd3d2b7c08553765a8ef268d126f6b7d78d01ca588937415359  a2.zip holding the a3x (likely per victim)
+c3dc04853487b4a8f0e25a9527c250c45de5f8ba8153ec5e0c83ad834a0c81de  loader dhlib.dll, Nov 2026 (in memory only)
+c2225d927b1461354418ce8067574e2c48dcd19be9d5150b68a3bcfbdd0e5c25  FluxEngine client build 1.0.3.113
+# Network
+doc[.]pdf-unico[.]lat                       lure + stage host (Cloudflare, ES/PT geofence)
+pdf-unico[.]lat                             apex, registered 2026-11-13
+hxxps://doc[.]pdf-unico[.]lat/d/abpod6?r=330767F45595 ; /d/inewqrh?r=330767F45595 ; /d/mo1t6do6?f=
+pjudportal[.]lat ; oficinajudicialvirtual[.]online   LATAM-arm lures on the panel IP (medium)
+# Host
+%TEMP%\t481799.sct ; C:\<8 lowercase letters>\<n>.exe + <n> + <n>.ico (hidden, system)
+regsvr32 /s /n /u /i:"%TEMP%\<name>.sct" scrobj.dll   (parent wscript.exe, then regsvr32.exe)
+HKCU\Software\FluxEngine\Desktop values src, taskm ; attrib.exe child of C:\<n>\<n>.exe
+```
+
+MalwareBazaar (2026-11-22): payload `c2225d92…` https://bazaar.abuse.ch/sample/c2225d927b1461354418ce8067574e2c48dcd19be9d5150b68a3bcfbdd0e5c25/ , loader `c3dc0485…` https://bazaar.abuse.ch/sample/c3dc04853487b4a8f0e25a9527c250c45de5f8ba8153ec5e0c83ad834a0c81de/ , `a2.zip` with the a3x https://bazaar.abuse.ch/sample/305b8da6d1bf5bd3d2b7c08553765a8ef268d126f6b7d78d01ca588937415359/ , VBS (correction comment) https://bazaar.abuse.ch/sample/e683253477ca1b9b22c285cbc854a50284256b4d246b151e63dc171830bf7192/ . The two scriptlets and the raw a3x were accepted by the upload API but are not listed (MalwareBazaar does not list plain-text scripts or the bare a3x); their hashes are here and in `iocs.csv`.
+
+**Detection (part 2).** Five more YARA rules in [`yara/fluxengine/`](../../yara/fluxengine/) (`MAL_FluxEngine_VBS_Downloader`, `MAL_FluxEngine_SCT_Recon_Stage2`, `MAL_FluxEngine_SCT_Installer_Stage3`, `SUSP_AutoIt_A3X_Large_NoExt_Script`, `MAL_FluxEngine_AU3_PELoader_Decompiled`) and updated `MAL_FluxEngine_Loader_dhlib_DLL` (matches the November build) and `MAL_FluxEngine_Payload_Delphi` (matches 1.0.3.113). Eleven Sigma rules in [`sigma/`](../../sigma/) (process creation, registry, proxy, network connection). Tests: 16 of 16 expected results and 0 hits on 10,039 other files (YARA-X), both engines in [`tests/run_yara_tests.py`](../../tests/run_yara_tests.py); Sigma logic on hand-made events in [`tests/test_sigma_synthetic.py`](../../tests/test_sigma_synthetic.py). The YARA Forge `full` set has no hit on the chain files.
+
+**Gaps (part 2).** The email and the `DOC-*.zip` are not in hand. The current TXT values and zone name are unknown (reading them needs the operator's token), so "this build talks to 72.167.150[.]114" rests on the shared token, the same panel serving the payload and the open ports. The mail template now needs client headers we did not forge. 24 hex-encrypted command names are still not decoded.
 
 ## Family and attribution (confidence stated per claim)
 
@@ -33,6 +83,8 @@ Vendor labels (VirusTotal, 2026-11-19): Kaspersky `HEUR:Trojan-Spy.Win32.FluxBan
 | payload → Cloudflare-API TXT `ip.<zone>` → TCP 9000/9002 | code (VERIFIED) and a sandbox run of the previous build[5] | **proven** for the 2026-11-12 build |
 
 The chain is proven from the loader DLL to the final payload and its C2. The hop between the lure LNK and the DLL is missing.
+
+Update 2026-11-22: part 2 (above) closes this gap for the Spain/Portugal arm with a VBS → scriptlet → AutoIt chain; the LNK branch itself is still unproven by bytes.
 
 ## Loader (`dhlib.dll`, four builds, identical crypto)
 
@@ -115,7 +167,7 @@ Hunting pivots: a Delphi process or hollowed `attrib.exe` that lists Cloudflare 
 
 ## Gaps
 
-- The scriptlet between the LNK and the loader, and the `C:\<n>\<n>.exe` host, are not in hand.
+- The scriptlet between the LNK and the loader, and the `C:\<n>\<n>.exe` host, are not in hand. Update 2026-11-22: for the Spain/Portugal arm both are now in hand (part 2: the scriptlets, and `C:\<n>\<n>.exe` is the renamed genuine AutoIt3).
 - The GitHub overlay repository is unknown. The current TXT values are unknown: reading them needs the operator's token, which was not used (using it would be unauthorised access).
 - 24 hex-encrypted command names are not decoded. No sandbox or emulator run was made. The role of `156.73.57[.]2` is unverified. Not read: the OpenCTI.BR page (behind a challenge, snippet only), ANY.RUN task pages.
 - The Proofpoint link rests on the name and actor profile only.

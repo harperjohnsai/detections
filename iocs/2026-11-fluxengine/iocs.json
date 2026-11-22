@@ -2,7 +2,7 @@
  "_warning": "MACHINE-READABLE, NOT DEFANGED: values are live indicators. Do not browse or fetch them.",
  "case": "2026-11-fluxengine",
  "license": "CC0-1.0",
- "count": 44,
+ "count": 77,
  "iocs": [
   {
    "type": "sha256",
@@ -398,6 +398,303 @@
    "role": "VirusTotal: decrypted FluxEngine payload (uploaded 2026-11-19)",
    "verdict": "reference",
    "confidence": "high",
+   "source": ""
+  },
+  {
+   "type": "sha256",
+   "value": "e683253477ca1b9b22c285cbc854a50284256b4d246b151e63dc171830bf7192",
+   "first_seen": "2026-11-21",
+   "role": "Stage 1 VBS DOC-9CQC87.vbs (3,653 B): Msxml2.ServerXMLHTTP GET of https://doc.pdf-unico.lat/d/abpod6?r=330767F45595 with UA 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)', saves %TEMP%\\t481799.sct and runs regsvr32 /s /n /u /i:<sct> scrobj.dll. Listed on MalwareBazaar 2026-11-21 with tag mispadu, a mislabel: the chain is FluxEngine (correction comment added 2026-11-22). MD5 edcbd5d4880ef969c822fb96b70afe6b",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case, part 2); MalwareBazaar"
+  },
+  {
+   "type": "sha256",
+   "value": "2ec8894d0cc8b092c5525a12254cad122d34933a349c3eff14f1af02836177ac",
+   "first_seen": "2026-11-22",
+   "role": "Stage 2 recon scriptlet (JScript COM scriptlet, 4,357 B) from /d/abpod6: XOR string table, WMI VM/BIOS/AV checks, analyst PC-name blocklist, beacon registrar.php?dominio=..., then saves %TEMP%\\<8 base36>.sct (stage 3) and runs it with regsvr32. progid/classid look per-serve, so the hash may be per download. MalwareBazaar accepted the upload but does not list plain-text scripts",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case, part 2)"
+  },
+  {
+   "type": "sha256",
+   "value": "f32d6dc8c15efe4473e5a400cacb15cb28bcde2daf74fa2c99fa86d4936c7880",
+   "first_seen": "2026-11-22",
+   "role": "Stage 3 installer scriptlet (4,852 B) from /d/inewqrh: ClearMyTracksByProcess 8, HKCU\\Software\\FluxEngine\\Desktop values src and taskm, 8-letter install name from COMPUTERNAME+USERNAME, unzips AutoIt3 + compiled script + icon into C:\\<n>\\, starts C:\\<n>\\<n>.exe C:\\<n>\\<n>, attrib +h +s. Hash may be per download; not listed by MalwareBazaar (plain text)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case, part 2)"
+  },
+  {
+   "type": "sha256",
+   "value": "4fc99727bbb91087a474126049ced32b69d252c5ed93e2b1fa40d8c13d10257e",
+   "first_seen": "2026-11-22",
+   "role": "Stage 4 compiled AutoIt script (AU3!EA06, 1,881,241 B, dropped without extension as C:\\<n>\\<n>): maps the hex-embedded dhlib.dll c3dc0485 with its own in-memory PE loader and calls InitModule(C:\\<n>\\); beacons au3_inicio/au3_dll_ok/au3_init_ok. On MalwareBazaar inside a2.zip 305b8da6 (the raw file is not listed)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis and decompilation (this case, part 2)"
+  },
+  {
+   "type": "sha256",
+   "value": "305b8da6d1bf5bd3d2b7c08553765a8ef268d126f6b7d78d01ca588937415359",
+   "first_seen": "2026-11-22",
+   "role": "a2.zip served at /d/mo1t6do6?f=a3x (holds the compiled script 4fc99727). Built per request, so likely per victim. MD5 714034b6639f7f0f3af1a5c6e172d430",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "stage retrieval (this case, part 2); MalwareBazaar"
+  },
+  {
+   "type": "sha256",
+   "value": "c3dc04853487b4a8f0e25a9527c250c45de5f8ba8153ec5e0c83ad834a0c81de",
+   "first_seen": "2026-11-22",
+   "role": "FluxEngine loader dhlib.dll, November 2026 build (Delphi DLL, export InitModule, export name Project1.dll, 1,855,760 B, compiled 2026-11-17 00:03:21 UTC), carved from the hex blob in the AutoIt script; never written to disk. Same AES master key and Cloudflare API token as the four Sep/Oct builds (compared by hash). MD5 7c146c37657fa36fc8e337875b4c7151, SHA-1 8fa82c2553bb5d15d242b3fa2ab124d6727d4ea6",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case, part 2); MalwareBazaar"
+  },
+  {
+   "type": "sha256",
+   "value": "c2225d927b1461354418ce8067574e2c48dcd19be9d5150b68a3bcfbdd0e5c25",
+   "first_seen": "2026-11-22",
+   "role": "FluxEngine client (payload) build 1.0.3.113: Delphi PE32 GUI, 4,541,440 B, compiled 2026-11-21 18:17:00 UTC. Plaintext of d3dx9_43.bin served by the panel on 2026-11-22 10:54 UTC, decrypted with the loader key. Same strings, token, imphash and protocol as build 1.0.3.111 (c424a715); only main-unit code changed. MD5 aa251154fa58c886dcdd6dacae0b473e, SHA-1 f7165ed0e670db161b27c4dd7624b5d9afe823e9",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "stage retrieval and decryption (this case, part 2); MalwareBazaar"
+  },
+  {
+   "type": "sha256",
+   "value": "bdd2b7236a110b04c288380ad56e8d7909411da93eed2921301206de0cb0dda1",
+   "first_seen": "2026-11-22",
+   "role": "Genuine AutoIt3.exe 3.3.18.0 (Authenticode OK, AUTOIT CONSULTING LTD), shipped renamed as C:\\<n>\\<n>.exe in a1.zip. Context only, do NOT block by hash: hunt on the renamed path instead",
+   "verdict": "shared-or-legit-infrastructure",
+   "confidence": "high",
+   "source": "Authenticode check (this case, part 2)"
+  },
+  {
+   "type": "sha256",
+   "value": "cd2f07e47e98e52472bd744912edc9e9e645b544f5e612e2f38f89b7acb1e064",
+   "first_seen": "2026-11-22",
+   "role": "Genuine Microsoft-signed WebView2Loader.dll 1.0.2792.45, listed by the panel module list on 2026-11-22 and fetched by the loader for overlays. Context only, do NOT block",
+   "verdict": "shared-or-legit-infrastructure",
+   "confidence": "high",
+   "source": "Authenticode check (this case, part 2)"
+  },
+  {
+   "type": "domain",
+   "value": "doc.pdf-unico.lat",
+   "first_seen": "2026-11-22",
+   "role": "Lure and stage host of the Spain/Portugal arm: catch-all 'Document available' page, /gerar/gerar.php, stages /d/abpod6, /d/inewqrh, /d/mo1t6do6?f=autoit|a3x|icone, status beacons /registrar.php. Behind Cloudflare; only ES and PT check-host nodes passed the WAF on 2026-11-22",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "stage retrieval (this case, part 2); check-host; urlscan"
+  },
+  {
+   "type": "domain",
+   "value": "pdf-unico.lat",
+   "first_seen": "2026-11-22",
+   "role": "Registrable domain of the stage host: registered 2026-11-13 (NameSilo), Cloudflare name servers",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "RDAP; DoH (this case, part 2)"
+  },
+  {
+   "type": "domain",
+   "value": "file.bancocentral.lat",
+   "first_seen": "2026-11-22",
+   "role": "Sibling lure host: same 'Document available' page title in a urlscan scan of 2026-11-06. Apex on serverHold and NXDOMAIN on 2026-11-22, not fetched. Tie is the page title only",
+   "verdict": "candidate",
+   "confidence": "low",
+   "source": "urlscan; RDAP"
+  },
+  {
+   "type": "domain",
+   "value": "pjudportal.lat",
+   "first_seen": "2026-11-22",
+   "role": "Chile court-notice (PJUD) lure domain of the LATAM arm; A record 72.167.150.114 (the panel and C2 host) on 2026-11-22",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "DoH (this case, part 2); Kometa Labs write-up"
+  },
+  {
+   "type": "domain",
+   "value": "oficinajudicialvirtual.online",
+   "first_seen": "2026-11-22",
+   "role": "Chile court-notice (PJUD) lure domain of the LATAM arm; A record 72.167.150.114 (the panel and C2 host) on 2026-11-22",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "DoH (this case, part 2)"
+  },
+  {
+   "type": "url",
+   "value": "https://doc.pdf-unico.lat/d/abpod6?r=330767F45595",
+   "first_seen": "2026-11-22",
+   "role": "Stage 2 scriptlet URL requested by the VBS (fetched 2026-11-22 from a Spanish egress)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "stage retrieval (this case, part 2)"
+  },
+  {
+   "type": "url",
+   "value": "https://doc.pdf-unico.lat/d/inewqrh?r=330767F45595",
+   "first_seen": "2026-11-22",
+   "role": "Stage 3 installer scriptlet URL requested by stage 2",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "stage retrieval (this case, part 2)"
+  },
+  {
+   "type": "url",
+   "value": "https://doc.pdf-unico.lat/gerar/gerar.php",
+   "first_seen": "2026-11-22",
+   "role": "Lure page endpoint that returns the DOC-*.zip URL (POST, not sent by us)",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "lure page source (this case, part 2)"
+  },
+  {
+   "type": "url-path",
+   "value": "/d/mo1t6do6?f=",
+   "first_seen": "2026-11-22",
+   "role": "Stage 4 ZIP downloads by the installer scriptlet: f=autoit (AutoIt3.exe), f=a3x (compiled script), f=icone (icon), plus per-serve t=<token>&h=<install name>",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case, part 2)"
+  },
+  {
+   "type": "url-path",
+   "value": "/registrar.php?dominio=",
+   "first_seen": "2026-11-22",
+   "role": "Recon beacon of stage 2 (dominio, pc, user, os, vm, lang, mf, md, bios, vmr, av)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case, part 2)"
+  },
+  {
+   "type": "user-agent",
+   "value": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)",
+   "first_seen": "2026-11-22",
+   "role": "Hard-coded UA of the stage-1 VBS (Msxml2.ServerXMLHTTP); old and rare, hunting pivot with the /d/<id>?r=<hex> path",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "static analysis (this case, part 2)"
+  },
+  {
+   "type": "string",
+   "value": "330767F45595",
+   "first_seen": "2026-11-22",
+   "role": "Campaign tracker id: r= parameter of the stage URLs and value taskm under HKCU\\Software\\FluxEngine\\Desktop",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "static analysis (this case, part 2)"
+  },
+  {
+   "type": "string",
+   "value": "X-Template-Owner-Id",
+   "first_seen": "2026-11-22",
+   "role": "HTTP header the 1.0.3.113 client sends with X-Client-Version to /template/source/<id>/<lang>; the panel answered HTTP 426 without them on 2026-11-22",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "static analysis (this case, part 2)"
+  },
+  {
+   "type": "file-path",
+   "value": "%TEMP%\\t481799.sct",
+   "first_seen": "2026-11-22",
+   "role": "Stage 2 drop path (fixed name in this VBS); stage 3 uses %TEMP%\\<8 base36 chars>.sct",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case, part 2)"
+  },
+  {
+   "type": "file-path",
+   "value": "C:\\<8 lowercase letters>\\<n>.exe ; <n> ; <n>.ico",
+   "first_seen": "2026-11-22",
+   "role": "Install folder (hidden + system): renamed AutoIt3.exe, extensionless compiled script and icon; n derived from COMPUTERNAME+USERNAME (same algorithm as the loader Run value)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case, part 2)"
+  },
+  {
+   "type": "command",
+   "value": "regsvr32 /s /n /u /i:\"%TEMP%\\t<digits>.sct\" scrobj.dll",
+   "first_seen": "2026-11-22",
+   "role": "Stage 1 to stage 2 execution (local scriptlet through scrobj.dll), started by wscript.exe",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static analysis (this case, part 2)"
+  },
+  {
+   "type": "command",
+   "value": "rundll32 InetCpl.cpl,ClearMyTracksByProcess 8",
+   "first_seen": "2026-11-22",
+   "role": "IE/WinINet history wipe run by the stage 3 scriptlet (regsvr32 parent); generic on its own",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "static analysis (this case, part 2)"
+  },
+  {
+   "type": "process",
+   "value": "%SystemRoot%\\System32\\attrib.exe created with flags 0x8080004 and CFG disabled, parent C:\\<n>\\<n>.exe",
+   "first_seen": "2026-11-22",
+   "role": "Hollowing target in the November build: CREATE_SUSPENDED|CREATE_NO_WINDOW|EXTENDED_STARTUPINFO_PRESENT plus a mitigation-policy attribute that turns Control Flow Guard off. No parent-PID spoofing, so the parent is the renamed AutoIt3 host",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static disassembly (this case, part 2)"
+  },
+  {
+   "type": "imphash",
+   "value": "95a42b403171b8f9c862cff5926cec3b",
+   "first_seen": "2026-11-22",
+   "role": "Imphash of the November dhlib.dll build c3dc0485 (MalwareBazaar get_imphash: no other samples on 2026-11-22)",
+   "verdict": "hunting-pivot",
+   "confidence": "medium",
+   "source": "pefile"
+  },
+  {
+   "type": "reference",
+   "value": "https://bazaar.abuse.ch/sample/c2225d927b1461354418ce8067574e2c48dcd19be9d5150b68a3bcfbdd0e5c25/",
+   "first_seen": "2026-11-22",
+   "role": "MalwareBazaar: FluxEngine payload build 1.0.3.113 (uploaded 2026-11-22)",
+   "verdict": "reference",
+   "confidence": "high",
+   "source": ""
+  },
+  {
+   "type": "reference",
+   "value": "https://bazaar.abuse.ch/sample/c3dc04853487b4a8f0e25a9527c250c45de5f8ba8153ec5e0c83ad834a0c81de/",
+   "first_seen": "2026-11-22",
+   "role": "MalwareBazaar: dhlib.dll November build (uploaded 2026-11-22)",
+   "verdict": "reference",
+   "confidence": "high",
+   "source": ""
+  },
+  {
+   "type": "reference",
+   "value": "https://bazaar.abuse.ch/sample/305b8da6d1bf5bd3d2b7c08553765a8ef268d126f6b7d78d01ca588937415359/",
+   "first_seen": "2026-11-22",
+   "role": "MalwareBazaar: a2.zip with the compiled AutoIt script (uploaded 2026-11-22)",
+   "verdict": "reference",
+   "confidence": "high",
+   "source": ""
+  },
+  {
+   "type": "reference",
+   "value": "https://bazaar.abuse.ch/sample/e683253477ca1b9b22c285cbc854a50284256b4d246b151e63dc171830bf7192/",
+   "first_seen": "2026-11-22",
+   "role": "MalwareBazaar: stage 1 VBS (listed 2026-11-21, family correction comment 2026-11-22)",
+   "verdict": "reference",
+   "confidence": "high",
+   "source": ""
+  },
+  {
+   "type": "reference",
+   "value": "https://kometa.cl/blog/falso-correo-pjud-estafa-ia-redireccion-google-search-ms",
+   "first_seen": "2026-11-22",
+   "role": "Kometa Labs: Chile court-notice (PJUD) lure chain of the LATAM arm",
+   "verdict": "reference",
+   "confidence": "medium",
    "source": ""
   }
  ]

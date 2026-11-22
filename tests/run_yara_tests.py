@@ -56,6 +56,17 @@ EXPECTED = {
     '01af2f7049e1562023835ddcbffea76e265ed2906e140ba8a200eb41d37ebf8d': ['MAL_FluxEngine_Loader_dhlib_DLL'],  # dhlib.dll loader, Sep 2026
     'c424a715e3861bc18e0c8223f3dfd909dc4a77a82b9c5a5a135b8d49bac7e8c6': ['MAL_FluxEngine_Payload_Delphi'],  # decrypted payload (Delphi, 4.5 MB)
     '6e6d4084c6c2f3035c2fbda4daf4b705a06938d73bf91f402552b6d4ab522d9b': ['SUSP_FluxEngine_LNK_Squiblydoo_ADS'],  # stage-1 LNK
+    # FluxEngine part 2 chain (2026-11-22)
+    'c3dc04853487b4a8f0e25a9527c250c45de5f8ba8153ec5e0c83ad834a0c81de': ['MAL_FluxEngine_Loader_dhlib_DLL'],  # dhlib.dll Nov 2026 build (carved from the a3x)
+    'c2225d927b1461354418ce8067574e2c48dcd19be9d5150b68a3bcfbdd0e5c25': ['MAL_FluxEngine_Payload_Delphi'],  # decrypted payload build 1.0.3.113
+    'e683253477ca1b9b22c285cbc854a50284256b4d246b151e63dc171830bf7192': ['MAL_FluxEngine_VBS_Downloader'],  # stage-1 DOC-9CQC87.vbs
+    '2ec8894d0cc8b092c5525a12254cad122d34933a349c3eff14f1af02836177ac': ['MAL_FluxEngine_SCT_Recon_Stage2'],  # stage-2 scriptlet
+    'f32d6dc8c15efe4473e5a400cacb15cb28bcde2daf74fa2c99fa86d4936c7880': ['MAL_FluxEngine_SCT_Installer_Stage3'],  # stage-3 installer scriptlet
+    '4fc99727bbb91087a474126049ced32b69d252c5ed93e2b1fa40d8c13d10257e': ['SUSP_AutoIt_A3X_Large_NoExt_Script'],  # compiled AutoIt script (raw a3x)
+    'd8e0ac6e4300c5a2faa730aa45c7aa939c9232dcc4998d9122ecd4d37bc4c95e': ['MAL_FluxEngine_AU3_PELoader_Decompiled'],  # decompiled a3x text (artefact)
+    'bdd2b7236a110b04c288380ad56e8d7909411da93eed2921301206de0cb0dda1': [],  # genuine signed AutoIt3.exe shipped renamed: must NOT hit
+    'cd2f07e47e98e52472bd744912edc9e9e645b544f5e612e2f38f89b7acb1e064': [],  # genuine WebView2Loader.dll listed by the panel: must NOT hit
+    '01b64c8943b71ef3a5c73de14269695a2c9c1fb15a97243abbe3a076a38993e8': [],  # <n>.ico of the install folder: no rule
     # Go reflective PE loader (yara/cryptotrice-go-loader): reference build and two builds with the same self-signed publisher name
     'b8c1d2399105a57046b24aeee74d2dea3250c8c8aa5502c448b8d954f1dcb17a': ['MAL_Go_Reflective_PE_Loader_Win64'],  # cryptotrice loader core (4,191,744 B, Go 1.21.1)
     '2b51009b5712d49af298d35b4fc22a014bb04575d7474f3b44fc6753720f39da': ['MAL_Go_Reflective_PE_Loader_Win64'],  # MalwareBazaar 2026-11-12, "Nova Metric Industries" signer, serial c8266838...

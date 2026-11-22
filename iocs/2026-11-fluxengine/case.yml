@@ -1,8 +1,8 @@
-title: FluxEngine, a live Delphi remote-access banker (panel remoto.painelst.com, Cloudflare-API TXT dead drop)
+title: "FluxEngine, a live Delphi remote-access banker: full chain VBS -> scriptlets -> AutoIt -> dhlib.dll (panel remoto.painelst.com, Cloudflare-API TXT dead drop)"
 date: 2026-11-19
 gist: https://gist.github.com/harperjohnsai/7a54b1ff73b0b42f3cdc5d25fe5c4c3f
 families: [FluxEngine]
-rules: [yara/fluxengine]
+rules: [yara/fluxengine, sigma]
 related_videos: []
 references:
   - {source_name: MalwareBazaar, url: "https://bazaar.abuse.ch/sample/c424a715e3861bc18e0c8223f3dfd909dc4a77a82b9c5a5a135b8d49bac7e8c6/"}
@@ -10,6 +10,11 @@ references:
   - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2034971/"}
   - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2034982/"}
   - {source_name: Proofpoint, url: "https://www.proofpoint.com/uk/blog/threat-insight/europes-threat-landscape-2026-espionage-expands-ai-and-phishing-risks-grow"}
+  - {source_name: MalwareBazaar, url: "https://bazaar.abuse.ch/sample/c2225d927b1461354418ce8067574e2c48dcd19be9d5150b68a3bcfbdd0e5c25/"}
+  - {source_name: MalwareBazaar, url: "https://bazaar.abuse.ch/sample/c3dc04853487b4a8f0e25a9527c250c45de5f8ba8153ec5e0c83ad834a0c81de/"}
+  - {source_name: MalwareBazaar, url: "https://bazaar.abuse.ch/sample/305b8da6d1bf5bd3d2b7c08553765a8ef268d126f6b7d78d01ca588937415359/"}
+  - {source_name: MalwareBazaar, url: "https://bazaar.abuse.ch/sample/e683253477ca1b9b22c285cbc854a50284256b4d246b151e63dc171830bf7192/"}
+  - {source_name: Kometa Labs, url: "https://kometa.cl/blog/falso-correo-pjud-estafa-ia-redireccion-google-search-ms"}
 indicates:
   - family: FluxEngine
-    role_match: 'payload|loader|panel|C2|control|data and video|dead drop|Stage-1|stage host|FluxEngine'
+    role_match: 'payload|loader|panel|C2|control|data and video|dead drop|Stage-1|stage host|FluxEngine|Stage [1-4]|scriptlet|lure|Hollowing|install'

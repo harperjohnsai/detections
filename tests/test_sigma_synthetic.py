@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Logic test for the Sigma rules in ../sigma on hand-made events (no real logs, no regression EVTX).
 A tiny evaluator supports exactly the modifiers/conditions these rules use: exact, startswith, endswith,
-contains, contains|all, 'sel', 'not', 'and', 'or', '1 of sel_*'. Needs PyYAML."""
+contains, contains|all, re, 'sel', 'not', 'and', 'or', '1 of sel_*'. Needs PyYAML."""
 import glob, os, re, sys
 import yaml
 
@@ -19,9 +19,16 @@ FN = {'': lambda a, b: a == b, 'startswith': str.startswith, 'endswith': str.end
 
 
 def sel(s, ev):
+    if isinstance(s, list):  # list of maps = OR
+        return any(sel(x, ev) for x in s)
     for k, v in s.items():
         f, _, mod = k.partition('|')
         mod, _, quant = mod.partition('|')
+        if mod == 're':  # Sigma regexes are case-sensitive: compare raw values
+            hits = [re.search(str(x), str(ev.get(f, ''))) is not None for x in (v if isinstance(v, list) else [v])]
+            if not any(hits):
+                return False
+            continue
         val = str(ev.get(f, '')).lower()
         hits = [FN[mod](val, str(x).lower()) for x in (v if isinstance(v, list) else [v])]
         if not (all(hits) if quant == 'all' else any(hits)):
@@ -83,6 +90,29 @@ T = [
     ('proxy_malware_miolab_c2_communication.yml', {'cs-method': 'POST', 'c-uri': '/api/trezor/seed'}, True, 'seed upload'),
     ('proxy_malware_miolab_c2_communication.yml', {'cs-method': 'GET', 'c-uri': '/api/agnt'}, False, 'GET to /api/agnt'),
     ('proxy_malware_miolab_c2_communication.yml', {'cs-method': 'GET', 'c-uri': '/api/download/app-bundle'}, False, 'download path without parameters'),
+    # FluxEngine (part 2): events built from the statically recovered command lines and registry writes
+    ('registry_set_malware_fluxengine_desktop_key.yml', dict(TargetObject='HKU\\S-1-5-21-1\\Software\\FluxEngine\\Desktop\\src'), True, 'src value written'),
+    ('registry_set_malware_fluxengine_desktop_key.yml', dict(TargetObject='HKU\\S-1-5-21-1\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\x'), False, 'other key'),
+    ('registry_set_malware_fluxengine_hwinfo_bsource_cache.yml', dict(TargetObject='HKU\\S-1-5-21-1\\Software\\HWiNFO32\\Sens\\bsource'), True, 'bsource cache'),
+    ('registry_set_malware_fluxengine_hwinfo_bsource_cache.yml', dict(TargetObject='HKU\\S-1-5-21-1\\Software\\HWiNFO32\\Sens\\SensorsSM'), False, 'genuine HWiNFO value'),
+    ('registry_set_malware_fluxengine_run_key_root_folder.yml', dict(TargetObject='HKU\\S-1-5-21-1\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\hswxhmql', Details='"C:\\hswxhmql\\hswxhmql.exe C:\\hswxhmql\\"'), True, 'loader Run value'),
+    ('registry_set_malware_fluxengine_run_key_root_folder.yml', dict(TargetObject='HKU\\S-1-5-21-1\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\OneDrive', Details='"C:\\Program Files\\Microsoft OneDrive\\OneDrive.exe" /background'), False, 'ordinary Run value'),
+    ('proc_creation_win_malware_fluxengine_attrib_from_autoit.yml', dict(Image='C:\\Windows\\System32\\attrib.exe', ParentImage='C:\\hswxhmql\\hswxhmql.exe'), True, 'hollowing host started'),
+    ('proc_creation_win_malware_fluxengine_attrib_from_autoit.yml', dict(Image='C:\\Windows\\System32\\attrib.exe', ParentImage='C:\\Windows\\System32\\cmd.exe'), False, 'attrib from cmd'),
+    ('proxy_malware_fluxengine_cloudflare_api_dead_drop.yml', {'cs-host': 'api.cloudflare.com', 'c-uri': '/client/v4/zones?per_page=1000', 'c-useragent': 'Embarcadero URI Client/1.0'}, True, 'zone listing'),
+    ('proxy_malware_fluxengine_cloudflare_api_dead_drop.yml', {'cs-host': 'api.cloudflare.com', 'c-uri': '/client/v4/zones', 'c-useragent': 'curl/8.5.0'}, False, 'other client'),
+    ('proxy_malware_fluxengine_stage_url_msie8_ua.yml', {'c-uri': '/d/abpod6?r=330767F45595', 'c-useragent': 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)'}, True, 'stage 2 request'),
+    ('proxy_malware_fluxengine_stage_url_msie8_ua.yml', {'c-uri': '/d/abpod6', 'c-useragent': 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)'}, False, 'path without tracker'),
+    ('net_connection_win_malware_fluxengine_attrib_network.yml', dict(Image='C:\\Windows\\System32\\attrib.exe', Initiated='true'), True, 'attrib connects out'),
+    ('net_connection_win_malware_fluxengine_attrib_network.yml', dict(Image='C:\\Windows\\System32\\svchost.exe', Initiated='true'), False, 'other process'),
+    ('proc_creation_win_malware_fluxengine_clearmytracks_from_scriptlet.yml', dict(ParentImage='C:\\Windows\\SysWOW64\\regsvr32.exe', Image='C:\\Windows\\SysWOW64\\rundll32.exe', CommandLine='rundll32 InetCpl.cpl,ClearMyTracksByProcess 8'), True, 'history wipe from scriptlet'),
+    ('proc_creation_win_malware_fluxengine_clearmytracks_from_scriptlet.yml', dict(ParentImage='C:\\Windows\\explorer.exe', Image='C:\\Windows\\System32\\rundll32.exe', CommandLine='rundll32 InetCpl.cpl,ClearMyTracksByProcess 8'), False, 'user-initiated wipe'),
+    ('proc_creation_win_malware_fluxengine_regsvr32_spawns_regsvr32_sct.yml', dict(ParentImage='C:\\Windows\\System32\\regsvr32.exe', Image='C:\\Windows\\System32\\regsvr32.exe', CommandLine='regsvr32 /s /n /u /i:"C:\\Users\\a\\AppData\\Local\\Temp\\k3x9a0zq.sct" scrobj.dll'), True, 'stage 2 starts stage 3'),
+    ('proc_creation_win_malware_fluxengine_regsvr32_spawns_regsvr32_sct.yml', dict(ParentImage='C:\\Windows\\System32\\msiexec.exe', Image='C:\\Windows\\System32\\regsvr32.exe', CommandLine='regsvr32 /s C:\\x\\a.dll'), False, 'ordinary registration'),
+    ('proc_creation_win_malware_fluxengine_renamed_autoit_root_folder.yml', dict(OriginalFileName='AutoIt3.exe', Image='C:\\hswxhmql\\hswxhmql.exe', CommandLine='"C:\\hswxhmql\\hswxhmql.exe" C:\\hswxhmql\\hswxhmql'), True, 'renamed AutoIt3 with script'),
+    ('proc_creation_win_malware_fluxengine_renamed_autoit_root_folder.yml', dict(OriginalFileName='AutoIt3.exe', Image='C:\\Program Files\\AutoIt3\\AutoIt3.exe', CommandLine='"C:\\Program Files\\AutoIt3\\AutoIt3.exe" C:\\scripts\\job.au3'), False, 'installed AutoIt3'),
+    ('proc_creation_win_malware_fluxengine_wscript_regsvr32_temp_sct.yml', dict(ParentImage='C:\\Windows\\System32\\wscript.exe', Image='C:\\Windows\\System32\\regsvr32.exe', CommandLine='regsvr32 /s /n /u /i:"C:\\Users\\a\\AppData\\Local\\Temp\\t481799.sct" scrobj.dll'), True, 'VBS starts stage 2'),
+    ('proc_creation_win_malware_fluxengine_wscript_regsvr32_temp_sct.yml', dict(ParentImage='C:\\Windows\\System32\\wscript.exe', Image='C:\\Windows\\System32\\regsvr32.exe', CommandLine='regsvr32 /s C:\\Tools\\x.dll'), False, 'script registers a DLL'),
 ]
 for f, ev, exp, label in T:
     check(fires(load(f), ev) == exp, f'{f.split("_malware_")[-1] if "_malware_" in f else f}: {label} -> {"fire" if exp else "silent"}')
