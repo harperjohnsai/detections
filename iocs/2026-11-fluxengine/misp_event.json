@@ -1145,7 +1145,7 @@
         "value": "%SystemRoot%\\System32\\attrib.exe created with flags 0x8080004 and CFG disabled, parent C:\\<n>\\<n>.exe",
         "to_ids": false,
         "distribution": "5",
-        "comment": "Hollowing target in the November build: CREATE_SUSPENDED|CREATE_NO_WINDOW|EXTENDED_STARTUPINFO_PRESENT plus a mitigation-policy attribute that turns Control Flow Guard off. No parent-PID spoofing, so the parent is the renamed AutoIt3 host (corrects the part 1 inference) [type: process; verdict: malicious; source: static disassembly (this case, part 2)]",
+        "comment": "Hollowing target in the November build: CREATE_SUSPENDED|CREATE_NO_WINDOW|EXTENDED_STARTUPINFO_PRESENT plus a mitigation-policy attribute that turns Control Flow Guard off. No parent-PID spoofing, so the parent is the renamed AutoIt3 host [type: process; verdict: malicious; source: static disassembly (this case, part 2)]",
         "timestamp": "1795046400",
         "Tag": [
           {
