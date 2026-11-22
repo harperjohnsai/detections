@@ -178,3 +178,6 @@
 - +38 IOC rows, +3 `c2_timeline.csv` rows, README section and table rows, ThreatFox references 2039978 to 2039985, MalwareBazaar reference for the original file. No AES keys or other secrets published.
 - Two further hit samples add no indicators (known C2 `dev[.]gojournal[.]wiki`; a Themida-protected original whose config could not be recovered statically).
 - Not checked: liveness of the C2s (nothing contacted); setter transactions on the contracts.
+
+### 2026-11-22 (REVSTEALER: sample-linked contract count)
+- Case README: appended an update (not a retraction) to the 2026-11-22 section. The deployer wallet is now tied to 24 sample-linked contracts (counted from `c2_timeline.csv`); the earlier running count had missed the two contracts of `yh-1112` and `yh-1114`.
