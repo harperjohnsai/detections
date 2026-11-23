@@ -6907,6 +6907,486 @@
         "first_seen": "2026-11-21T00:00:00.000000+00:00"
       },
       {
+        "uuid": "9f069bed-6e30-5b0d-be97-19a4611ede66",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "feed.widebrief.work",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 build yh-1120b REVSTEALER primary C2 (HTTPS :443; GET /health must return 'active'); host:port, Polygon contract and Telegraph page all taken from the embedded config of a sandbox sample; contract value and Telegraph page read 2026-11-23 and decrypted: both give the same host:port. Domain registered 2026-11-20T09:05:25Z (Dynadot, Cloudflare name servers, RDAP); the contract was created 12 minutes later. Host never contacted. ThreatFox 2042126 [type: domain; verdict: malicious; source: YARAify (first seen 2026-11-22 14:37 UTC), static config extraction; eth_call and Telegraph read 2026-11-23; RDAP]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-20T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "20d8fef4-2019-596c-a880-8b5753cf28bd",
+        "type": "text",
+        "category": "Network activity",
+        "value": "0xCD53f32776a0aC5fA058F244A06a4CD007898085",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "C1 build yh-1120b REVSTEALER EtherHiding dead drop named in the config (3rd C2 source), created 2026-11-20T09:17:23Z by deployer 0x8bAddf05 (nonce 245, tx 0xc111d458c5f22d8ea1ddbd389f91abc96be48cef02b5441c441d7e222b0203be); eth_call selector 0xde6ceae2 on a public Polygon RPC; value read 2026-11-23 decrypts to feed.widebrief.work:443, the embedded primary of this build [type: polygon-contract; verdict: malicious; source: static config extraction; creation tx located by code-history search on public Polygon RPCs; eth_call read 2026-11-23]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-20T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "23af5b67-2017-5fc2-8ed7-6c7005bf78a9",
+        "type": "url",
+        "category": "Network activity",
+        "value": "https://telegra.ph/Amber-record-atlas-11-20",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 build yh-1120b Telegraph dead drop named in the config (page description holds the AES-encrypted C2); block by path, not by host; page read 2026-11-23 via the Telegraph API, description decrypts to feed.widebrief.work:443 (embedded primary) [type: url; verdict: malicious; source: YARAify (first seen 2026-11-22 14:37 UTC), static config extraction; eth_call and Telegraph read 2026-11-23]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-22T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "ebc61aaf-9fc4-57b0-ae44-599947007e40",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/qtktrw/opma/eerul.etgn",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER gate path on C2 (build yh-1120b, feed.widebrief.work; role not resolved); suffix rotates per build [type: url-path; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-22T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "86590db8-eb53-5732-bbc3-ba072b36a425",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/ulaw/koib/eerul.etgn",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER gate path on C2 (build yh-1120b, feed.widebrief.work; role not resolved); suffix rotates per build [type: url-path; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-22T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "de12e44d-1b79-5d15-a5df-6eb5c85c08f3",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/vzpm/wtq/eerul.etgn",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER gate path on C2 (build yh-1120b, feed.widebrief.work; role not resolved); suffix rotates per build [type: url-path; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-22T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "1ed3daad-a967-54b2-b311-7354fa5973a9",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/xyept/grpic/eerul.etgn",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER gate path on C2 (build yh-1120b, feed.widebrief.work; role not resolved); suffix rotates per build [type: url-path; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-22T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "f5c0358f-d455-5dc8-9814-21996a4c8579",
+        "type": "mutex",
+        "category": "Artifacts dropped",
+        "value": "Global\\D02B307E",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER mutex of build yh-1120b (sample 4ccef33e) [type: mutex; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-22T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "be500485-7772-5527-a267-03d8fb368662",
+        "type": "user-agent",
+        "category": "Network activity",
+        "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER WinINet User-Agent of build yh-1120b (C2 + RPC traffic) [type: user-agent; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-22T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "11d0223e-b446-5d34-93a3-1849e483f608",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "4ccef33ee14a23b4b3c02d56de4f78b09d56a25978e167753eacc8a9eb763c82",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 build yh-1120b REVSTEALER core: sandbox process-memory image (15,667,200 B = SizeOfImage 0xef1000, section raw offsets equal virtual addresses; YARAify file name 140000000.<hash>.exe), first seen 2026-11-22 14:37 UTC; matches YARA REVSTEALER_x64_Core_SetupCenter; memory/dump hunting, not a file on disk; ThreatFox 2042128 [type: sha256; verdict: malicious; source: YARAify (first seen); static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-22T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "9e93521d-443c-5ed1-9ef4-50b48dce907a",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "log.travelvault.today",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 build yh-1119 REVSTEALER primary C2 (HTTPS :443; GET /health must return 'active'); host:port, Polygon contract and Telegraph page all taken from the embedded config of a sandbox sample; contract value and Telegraph page read 2026-11-23 and decrypted: both give the same host:port. Domain registered 2026-11-19T09:07:26Z (Dynadot, Cloudflare name servers, RDAP); the contract was created 24 minutes later. Host never contacted. ThreatFox 2042127 [type: domain; verdict: malicious; source: YARAify (first seen 2026-11-22 22:56 UTC), static config extraction; eth_call and Telegraph read 2026-11-23; RDAP]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "40ecbcba-0de7-570c-9ab2-dea408f6f44c",
+        "type": "text",
+        "category": "Network activity",
+        "value": "0x45a7B8fAec623508bd68be535Cc7618f283ddB48",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "C1 build yh-1119 REVSTEALER EtherHiding dead drop named in the config (3rd C2 source), created 2026-11-19T09:31:46Z by deployer 0x8bAddf05 (nonce 243, tx 0x33627f40c628fd94180d7338e80b1031104183c63258edda29dd0b7253494c33); eth_call selector 0x9e36b13b on a public Polygon RPC; value read 2026-11-23 decrypts to log.travelvault.today:443, the embedded primary of this build [type: polygon-contract; verdict: malicious; source: static config extraction; creation tx located by code-history search on public Polygon RPCs; eth_call read 2026-11-23]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "a9b03c91-e602-5972-8879-c7f9182efc56",
+        "type": "url",
+        "category": "Network activity",
+        "value": "https://telegra.ph/Canvas-grove-11-19",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 build yh-1119 Telegraph dead drop named in the config (page description holds the AES-encrypted C2); block by path, not by host; page read 2026-11-23 via the Telegraph API, description decrypts to log.travelvault.today:443 (embedded primary) [type: url; verdict: malicious; source: YARAify (first seen 2026-11-22 22:56 UTC), static config extraction; eth_call and Telegraph read 2026-11-23]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-22T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "76bae74f-3ffc-5247-9ec3-aa8fe53a41c5",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/fdhvaz/jynkd.csuf",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER gate path on C2 (build yh-1119, log.travelvault.today; role not resolved); suffix rotates per build [type: url-path; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-22T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "bb078c2f-a8ca-50f6-a24e-c12f0d848ee4",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/kmpm/mrg/jynkd.csuf",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER gate path on C2 (build yh-1119, log.travelvault.today; role not resolved); suffix rotates per build [type: url-path; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-22T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "3baee199-9fed-538d-8fb5-5c1e71e1c2e0",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/wef/jynkd.csuf",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER gate path on C2 (build yh-1119, log.travelvault.today; role not resolved); suffix rotates per build [type: url-path; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-22T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "935e067e-f7fa-586e-aa87-35e2941ea31e",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/ziarg/jynkd.csuf",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER gate path on C2 (build yh-1119, log.travelvault.today; role not resolved); suffix rotates per build [type: url-path; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-22T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "74ad76b3-51eb-5750-a567-446e91256810",
+        "type": "mutex",
+        "category": "Artifacts dropped",
+        "value": "Global\\95378FF8",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER mutex of build yh-1119 (sample b2b52954) [type: mutex; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-22T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "7e96f35d-f450-5666-9e42-28a8c98034f1",
+        "type": "user-agent",
+        "category": "Network activity",
+        "value": "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER WinINet User-Agent of build yh-1119 (C2 + RPC traffic); the Windows version token (NT 11.0) does not exist [type: user-agent; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-22T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "cc04e9e0-8d65-50d0-bd85-c3be2ee05de6",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "b2b52954cd7d61efc94e853675d91964d90ebbb6a4a68f794e664247eef44fa0",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 build yh-1119 REVSTEALER core: sandbox process-memory image (5,944,130 B = SizeOfImage 0x5ab342, section raw offsets equal virtual addresses; YARAify file name 7ff676700000.<uuid>.exe), first seen 2026-11-22 22:56 UTC; matches YARA REVSTEALER_x64_Core_SetupCenter; memory/dump hunting, not a file on disk; ThreatFox 2042129 [type: sha256; verdict: malicious; source: YARAify (first seen); static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-22T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "7a1973b6-a4e4-56dd-acd5-9f203cf91b86",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "alert.bakerypark51.wiki",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 build yh-1114c REVSTEALER primary C2 (HTTPS :443; GET /health must return 'active'); host:port, Polygon contract and Telegraph page all taken from the embedded config of a sandbox sample; contract value and Telegraph page read 2026-11-23 and decrypted: both give the same host:port. Domain registered 2026-11-14T09:09:25Z (Dynadot, Cloudflare name servers, RDAP); the contract was created 16 minutes later. Host never contacted. Already listed on ThreatFox by another reporter (Myrtus0x0, id 2029853, confidence 75, no sample); not resubmitted by us. [type: domain; verdict: malicious; source: YARAify (first seen 2026-11-22 13:38 UTC), static config extraction; eth_call and Telegraph read 2026-11-23; RDAP]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-14T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "8a868162-ff6f-531e-92a7-d079c6f64415",
+        "type": "text",
+        "category": "Network activity",
+        "value": "0xE565b2888eFA73a8708417F01e5eb61B5AcfE9d4",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "C1 build yh-1114c REVSTEALER EtherHiding dead drop named in the config (3rd C2 source), created 2026-11-14T09:25:05Z by deployer 0x8bAddf05 (nonce 209, tx 0x3f6252cc1729b71ee7086a1d35600882fb517413f5e0a343966844597ff31dd4); eth_call selector 0x439bac13 on a public Polygon RPC; value read 2026-11-23 decrypts to alert.bakerypark51.wiki:443, the embedded primary of this build [type: polygon-contract; verdict: malicious; source: static config extraction; creation tx located by code-history search on public Polygon RPCs; eth_call read 2026-11-23]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-14T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "966febd8-aa29-5394-bb36-35c44870d93f",
+        "type": "url",
+        "category": "Network activity",
+        "value": "https://telegra.ph/Ridge-study-autumn-11-14",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 build yh-1114c Telegraph dead drop named in the config (page description holds the AES-encrypted C2); block by path, not by host; page read 2026-11-23 via the Telegraph API, description decrypts to alert.bakerypark51.wiki:443 (embedded primary) [type: url; verdict: malicious; source: YARAify (first seen 2026-11-22 13:38 UTC), static config extraction; eth_call and Telegraph read 2026-11-23]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-22T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "451b611f-6a9d-524f-9d0e-20d234848301",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/bcyg/mcfxg.kxcl",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER gate path on C2 (build yh-1114c, alert.bakerypark51.wiki; role not resolved); suffix rotates per build [type: url-path; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-22T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "efa91ff2-b88e-5603-9b26-87c5931a7167",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/ekzup/mcfxg.kxcl",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER gate path on C2 (build yh-1114c, alert.bakerypark51.wiki; role not resolved); suffix rotates per build [type: url-path; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-22T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "a2899e16-6cd4-52c1-a20c-da12eec4bb0e",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/kqy/fify/mcfxg.kxcl",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER gate path on C2 (build yh-1114c, alert.bakerypark51.wiki; role not resolved); suffix rotates per build [type: url-path; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-22T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "572f2e3a-7322-5218-8da9-51a3097da7f2",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/rre/cqeuxl/mcfxg.kxcl",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER gate path on C2 (build yh-1114c, alert.bakerypark51.wiki; role not resolved); suffix rotates per build [type: url-path; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-22T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "37332799-2f2c-5139-98d1-d538e5ed34a3",
+        "type": "mutex",
+        "category": "Artifacts dropped",
+        "value": "Global\\B72ABC9A",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER mutex of build yh-1114c (sample d711b8e9) [type: mutex; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-22T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "e9865c3e-59d1-59de-9bde-302c12730273",
+        "type": "user-agent",
+        "category": "Network activity",
+        "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "C1 REVSTEALER WinINet User-Agent of build yh-1114c (C2 + RPC traffic) [type: user-agent; verdict: malicious; source: static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-22T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "e0cd3d17-707b-51ae-859d-5f0e5468f409",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "d711b8e9a477c7b828e7236ce115a82ddd951c64487761054194060f668affeb",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "C1 build yh-1114c REVSTEALER core: sandbox process-memory image (5,658,675 B = SizeOfImage 0x565833, section raw offsets equal virtual addresses; YARAify file name 7ff6c63f0000.<uuid>.exe), first seen 2026-11-22 13:38 UTC; matches YARA REVSTEALER_x64_Core_SetupCenter; memory/dump hunting, not a file on disk; ThreatFox 2042130 [type: sha256; verdict: malicious; source: YARAify (first seen); static config extraction]",
+        "timestamp": "1794528000",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-22T00:00:00.000000+00:00"
+      },
+      {
         "uuid": "6fc3c21d-da54-5382-9a11-583cfe33d9da",
         "type": "link",
         "category": "External analysis",
@@ -7481,6 +7961,56 @@
         "type": "link",
         "category": "External analysis",
         "value": "https://threatfox.abuse.ch/ioc/2039985/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox",
+        "timestamp": "1794528000"
+      },
+      {
+        "uuid": "3799050c-752c-58b3-b449-b36e223fc5a8",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2042126/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox",
+        "timestamp": "1794528000"
+      },
+      {
+        "uuid": "d45e09d7-99b4-5e34-98ef-d8681e79c5fc",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2042127/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox",
+        "timestamp": "1794528000"
+      },
+      {
+        "uuid": "711e0989-453f-5342-b984-18ba69d1d6bf",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2042128/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox",
+        "timestamp": "1794528000"
+      },
+      {
+        "uuid": "47c4b797-a31b-5e45-bbf9-772c6b9fbc83",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2042129/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox",
+        "timestamp": "1794528000"
+      },
+      {
+        "uuid": "a8239ee5-ddac-5736-8670-0b6b44a15c43",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2042130/",
         "to_ids": false,
         "distribution": "5",
         "comment": "ThreatFox",

@@ -192,3 +192,10 @@
 - IOC gist for the part 2 video (both parts, defanged): https://gist.github.com/harperjohnsai/ab269fb870a085e47cb9b4a27d02af0c, now the case `gist:`; the part 1 gist stays listed under references.
 
 - 2026-11-22: FluxEngine case: linked the Part 2 video (https://youtu.be/dWD_bb4snMo) and Part 1 as related video.
+
+### 2026-11-23 (REVSTEALER: three more builds from YARAify hits, three C2s with Polygon contracts and Telegraph pages)
+- `iocs/2026-11-revstealer-setup-center`: `REVSTEALER_x64_Core_SetupCenter` matched five further samples on YARAify. Static config extraction gives builds `yh-1120b` (`feed[.]widebrief[.]work`), `yh-1119` (`log[.]travelvault[.]today`) and `yh-1114c` (`alert[.]bakerypark51[.]wiki`, C2 already on ThreatFox from another reporter), each with its own Polygon contract and Telegraph page, none listed anywhere before.
+- Dead drops read 2026-11-23: for all three builds the Telegraph page and the contract decrypt to the embedded primary.
+- +30 IOC rows, +3 `c2_timeline.csv` rows, README section and table rows, ThreatFox references 2042126 to 2042130 and 2029853. No AES keys or other secrets published.
+- Two further hit samples add no indicators (known C2s `bridge6[.]hazellayer76[.]website` and `ping[.]forest-haven[.]wiki`).
+- Not checked: liveness of the C2s (nothing contacted); setter transactions on the contracts.
