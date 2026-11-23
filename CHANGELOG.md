@@ -199,3 +199,8 @@
 - +30 IOC rows, +3 `c2_timeline.csv` rows, README section and table rows, ThreatFox references 2042126 to 2042130 and 2029853. No AES keys or other secrets published.
 - Two further hit samples add no indicators (known C2s `bridge6[.]hazellayer76[.]website` and `ping[.]forest-haven[.]wiki`).
 - Not checked: liveness of the C2s (nothing contacted); setter transactions on the contracts.
+
+### 2026-11-23 (cryptotrice Go crypter: Remus build date and campaign ID per payload)
+- New `tools/remus-cleartext/`: static reader for the cleartext build date and NUL-terminated 32-hex campaign ID of Remus stealer payloads (`.rdata`, the ID sits 0x5e4 bytes after the date in every known build). Regression test `test_remus_cleartext.py` with `expected.csv`: 85 passed, 0 failed (32 inner PEs, 41 loaders and 12 benign PEs as negatives).
+- `yara/cryptotrice-go-loader/second-build-check.csv`: new columns `inner_build_date`, `inner_campaign_id` (15 loaders, 14 distinct Remus payloads, 12 campaign IDs, build dates 27.10-18.11.2026); README update line.
+- Not yet covered: the per-build C2 region of these payloads is still encrypted.

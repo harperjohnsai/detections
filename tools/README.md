@@ -9,6 +9,7 @@ Static helpers used to derive the rules. They parse and decrypt files only; noth
 | [`miolab-macos-config-extractor/`](miolab-macos-config-extractor/) | parses the MioLab macOS stealer's rotating-XOR config blob (affiliate id, build tag, C2 hosts, dialogs) from a Mach-O |
 | [`miolab-agent-wire-decoder/`](miolab-agent-wire-decoder/) | decodes the beacon body of the MioLab macOS agent from logged curl command lines |
 | [`cryptotrice-go-loader/`](cryptotrice-go-loader/) | finds the blob builder and the six in-place byte passes of the cryptotrice Go loader, runs only those loops in a CPU emulator (no OS, no network) and writes the decrypted inner PE; tests with a negative control on 24 benign Go PEs |
+| [`remus-cleartext/`](remus-cleartext/) | reads the cleartext build date and campaign ID of Remus stealer payloads from `.rdata` (fixed 0x5e4 offset between them); regression test on 14 Remus payloads plus 53 negatives |
 | [`build_index.py`](build_index.py) | generates `INDEX.md` from `iocs/*/case.yml` (`--check` in CI) |
 | [`wl_known.py`](wl_known.py) | classifies exported MISP attributes against a pinned misp-warninglists commit (category `known` lists only, type-aware; shared infrastructure vs rented cloud ranges) and writes `warninglist_known.json`, which the exporter reads |
 | [`export_iocs.py`](export_iocs.py) | generates `iocs/<case>/stix2.json` (STIX 2.1) and `iocs/<case>/misp_event.json` (MISP) from `iocs.json` + `case.yml`; deterministic (uuid5 ids), `--check` fails on stale files |
