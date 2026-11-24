@@ -78,9 +78,17 @@ Test results (2026-11-24): of 63 reference files, 62 give exactly the expected r
 - Of the vendor hashes, 13 of 35 had bytes available to us; the rest are memory-only, not shared anywhere, or not obtainable. 4 of 28 VirusTotal lookups found no file.
 - DoH resolver and liveness values are point-in-time (2026-11-24, one pass). The domains and addresses rotate.
 
-## Samples
+## Samples, MalwareBazaar, ThreatFox, other publication
 
-None of the vendor-listed ROMULUS MSI hashes or the extracted components were on MalwareBazaar when checked on 2026-11-24 (two LevelBlue-chain DLLs were). The numeric MSIs, `68993.msi`, `281.ps1` and the stage PEs are on MalwareBazaar from other uploaders (credited above). MalwareBazaar and ThreatFox entries created by this project for this case are linked in `case.yml` once they exist. Signed legitimate host binaries (`DeElevate64.exe`, `COTFileReadApp.exe`, `WinWrapIDE.exe`) are not malware; the rows are marked `shared-or-legit-infrastructure` and must not be hash-blocked.
+None of the vendor-listed ROMULUS MSI hashes or the extracted components were on MalwareBazaar when checked on 2026-11-24 (two LevelBlue-chain DLLs were). The numeric MSIs, `68993.msi`, `281.ps1` and the stage PEs were already on MalwareBazaar from other uploaders (credited above). Signed legitimate host binaries (`DeElevate64.exe`, `COTFileReadApp.exe`, `WinWrapIDE.exe`) are not malware; the rows are marked `shared-or-legit-infrastructure` and must not be hash-blocked.
+
+Published by this project on 2026-11-24 (links in `case.yml`):
+
+- **MalwareBazaar, 17 original files** (reporter `harperjohns`, tags ROMULUS, CNCMachineRMS, ClickFix, each with a context comment): `ISOSimple.msi`, `FilesInspectorX.msi`, `AllMyBasic.msi`, the patched `DeElevator64.dll` and 13 sideload DLLs extracted unmodified from the MSIs and from the BabaDeda zip. Four more originals were not accepted: `IconEdit2Turb.msi`, `I++u.dll`, `senddmp.resources.dll` and `res.dll` returned `file_already_known` on upload, yet `get_info` does not list them (checked at 10:20 and 10:27 UTC), so they count as not listed; the public tria.ge reports of the vendors cover them. Not uploaded on purpose: the signed host binary, decrypted artefacts, memory-only files and non-executable data files (`Build.dat`, the Storage containers), which MalwareBazaar drops; their hashes are in `iocs.csv`.
+- **MalwareBazaar comment** on the BlinkzSec upload `28520147...` (MSI `3`, tag LegionLoader): it carries the CNCMachineRMS Storage container with the gates above, not a LegionLoader config.
+- **ThreatFox, 8 entries** (ids 2048534 to 2048541): gates `nfenribj3[.]com` and `wizardexpensive[.]com` and `96[.]62[.]218[.]59:443` (botnet_cc, confidence 90), `139[.]28[.]240[.]185:443` (botnet_cc, confidence 50; the comment says it is the current DNS value of a decoded gate and that port 443 was closed), and four ROMULUS panel entries from urlscan (payload_delivery, confidence 75: `https://23.94.145.229/login`, `https://23.94.145.52/login`, `91.92.43.239:80`, `microsoft-winupdate[.]com`). The malware family is `unknown_rat` / `unknown_loader` because ThreatFox has no CNCMachineRMS family; `win.romulus_loader` (RomulusLoader) is used by other reporters for the same panels, but the page-title match shows the ROMULUS panel, so this project did not reuse that name.
+- **YARAhub**: the 7 rules of `yara/romulus-cncmachinerms/` (author Harper Johns, CC BY 4.0, TLP:CLEAR), listed by `recent_yararules` on 2026-11-24.
+- **SigmaHQ**: pull request [6668](https://github.com/SigmaHQ/sigma/pull/6668) with the six Sigma rules.
 
 ## Method
 

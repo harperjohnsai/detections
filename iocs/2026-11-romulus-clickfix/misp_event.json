@@ -1913,7 +1913,7 @@
         "value": "23.94.145.229",
         "to_ids": true,
         "distribution": "5",
-        "comment": "ROMULUS panel/delivery node: /login page titled \"Romulus\" in urlscan scans 2026-10-29 to 2026-11-03; route /e/692a7d50aaf0/<md5>, numeric MSI paths /8177 /93607. Check-host timeout from 3 nodes 2026-11-24 ~08:00 UTC [type: ipv4; verdict: malicious; source: urlscan.io public scans]",
+        "comment": "ROMULUS panel/delivery node: urlscan scans of this IP 2026-10-29 to 2026-11-03, /login page titled \"Romulus\" on 2026-10-29 and 2026-11-02; route /e/692a7d50aaf0/<md5>, numeric MSI paths /8177 /93607. Check-host timeout from 3 nodes 2026-11-24 ~08:00 UTC [type: ipv4; verdict: malicious; source: urlscan.io public scans]",
         "timestamp": "1795478400",
         "Tag": [
           {
@@ -1993,7 +1993,7 @@
         "value": "78.159.131.254",
         "to_ids": true,
         "distribution": "5",
-        "comment": "Stage host of a second LegionLoader ClickFix chain: 281.ps1 downloads /yrjrs/ver.pa (AES-CBC shellcode); URL decoded statically from 281.ps1; 16 urlscan scans 2026-11-02. Connection refused 2026-11-24 ~08:00 UTC [type: ipv4; verdict: malicious; source: static analysis of 281.ps1 (MalwareBazaar 7eb0d8e8...); ThreatFox 2008908 / 2008909 / 2008910 (Daydream, Satacom/LegionLoader)]",
+        "comment": "Stage host of a second LegionLoader ClickFix chain: 281.ps1 downloads /yrjrs/ver.pa (AES-CBC shellcode); URL decoded statically from 281.ps1; urlscan scans 2026-11-01 and 2026-11-02. Connection refused 2026-11-24 ~08:00 UTC [type: ipv4; verdict: malicious; source: static analysis of 281.ps1 (MalwareBazaar 7eb0d8e8...); ThreatFox 2008908 / 2008909 / 2008910 (Daydream, Satacom/LegionLoader)]",
         "timestamp": "1795478400",
         "Tag": [
           {
@@ -3363,6 +3363,276 @@
         "to_ids": false,
         "distribution": "5",
         "comment": "ThreatFox (reporter Crash371)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "513d462f-d70f-5ed2-822b-8c5d4f34fe4a",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://bazaar.abuse.ch/sample/6761aad48a3f987238994d92bca97e4b8550e0150607bd67b47b1b6366a371fc/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "MalwareBazaar (uploaded by this project)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "9bbf9f52-a461-5872-a999-256acb3d3b82",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://bazaar.abuse.ch/sample/9ac13a8ef7bab76c4d074385fd783e8c9542a8db7a166c3d3921a48add092455/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "MalwareBazaar (uploaded by this project)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "2863ce5f-fa16-507e-b27e-2ca4b74a6c49",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://bazaar.abuse.ch/sample/f4d7c5321bb0d1bda439304a753bcf9b467b98ca53c7e9493b9c2c3451092e4a/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "MalwareBazaar (uploaded by this project)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "ff60a41c-59df-557e-8780-2cdd1fd2e0ad",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://bazaar.abuse.ch/sample/0457414c4504b70115798eee9c8384a8bf9e793461ffb2e0661a6dcc6ed4809f/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "MalwareBazaar (uploaded by this project)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "98630c80-a6ea-5e00-956c-d62f9e36785d",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://bazaar.abuse.ch/sample/2108909c78bdf20abcbb092e1f72375d27d1ecc98d76312b33ead4ae3330a92e/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "MalwareBazaar (uploaded by this project)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "376169f6-e4ed-5b40-a3b0-3a1aab66c1d6",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://bazaar.abuse.ch/sample/32797a560b9a290e715cb5591e71dd9537d782862324906e1bb4652dd2366c9a/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "MalwareBazaar (uploaded by this project)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "45a4d45a-342d-5ea3-a797-37e963ffa50f",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://bazaar.abuse.ch/sample/3bd4c0335342a0a68e535096e2c412d110b5d83ba6078ded762bb565fed96621/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "MalwareBazaar (uploaded by this project)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "bf1b2dd1-ab50-523c-a841-3d4ce8d6623d",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://bazaar.abuse.ch/sample/5cd20d86211ab3f4b8ab96a3efb296a069a600a3473d3548e1ed58a9d8c7062e/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "MalwareBazaar (uploaded by this project)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "0cba2cc7-721f-5e8a-b5e9-88c9a24bea86",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://bazaar.abuse.ch/sample/71b82aca5bf2b96a69dd4d4292a68b29e287bedd61d67414320dcfd899b00f08/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "MalwareBazaar (uploaded by this project)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "0cfb5650-50c5-562d-b995-194ce0a0bccc",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://bazaar.abuse.ch/sample/727313a64de14972734375e50f5da5f01f1858de8d18bafbf372849b08d0aa39/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "MalwareBazaar (uploaded by this project)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "67172b1d-df33-516c-8734-e0c96bec5f84",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://bazaar.abuse.ch/sample/8198d32ee695709cb1310b99a44db5bc70e6e3b3590394ad063f81ce544fdfae/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "MalwareBazaar (uploaded by this project)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "803c6ee9-3de9-583e-af60-e145a3350d26",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://bazaar.abuse.ch/sample/9c615db040b88c18ce6b96f30d08797045b7d506f940bea452dc7a6992fdbb8d/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "MalwareBazaar (uploaded by this project)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "4a4ace67-34b7-55f7-ba50-a74e134c6213",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://bazaar.abuse.ch/sample/b77575413c0f97eaf31e4a44c884c1ecdc0049ec89916ceb0bf3aaaedc0442fe/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "MalwareBazaar (uploaded by this project)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "21847249-4136-5f5a-ab89-b442256b08ca",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://bazaar.abuse.ch/sample/b962250b8eb977322899cbfd79e6adb6b3e6ac4fcef5cbdb724dde3ee203f1b7/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "MalwareBazaar (uploaded by this project)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "bd5208fb-5b1b-5549-a9ce-abaa81c17ca6",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://bazaar.abuse.ch/sample/bddc9f8116008c03cb90c2753eb85d6e264e80d64189c64e39706c8c989854d1/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "MalwareBazaar (uploaded by this project)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "2df13818-ac78-58d8-b9eb-75f3d5d04528",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://bazaar.abuse.ch/sample/d7bcae4a915261ace7a845f8c1bb2a54ce918921805204125705bfae29656851/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "MalwareBazaar (uploaded by this project)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "a7c8ee52-0e4e-5f44-98ed-c23ff1ae8ac6",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://bazaar.abuse.ch/sample/eff5d63ddf1813962f0d8ad1250cea5486c8bb5dd27c3f432b43957a33e43764/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "MalwareBazaar (uploaded by this project)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "1697d8e7-6906-50e5-9a23-136c5c350b67",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://bazaar.abuse.ch/sample/28520147ab1ac24f4dd35c96c0203c09aac04a1b5bec3924233f6883eb23188b/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "MalwareBazaar (BlinkzSec upload, comment added by this project)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "fd1df3f2-0b6b-5311-adde-b5c128bc4c4f",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2048534/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox (created by this project)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "7c682e93-5d76-5cea-af7b-09fb7da85620",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2048535/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox (created by this project)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "1b521fad-daeb-54ce-a6d0-72faab650f53",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2048536/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox (created by this project)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "112a96b2-888c-5263-9f0f-928daaa93bc7",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2048537/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox (created by this project)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "3e770dd2-9227-5023-aebd-93ace75bbf36",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2048538/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox (created by this project)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "22f2000e-cf3d-560f-910b-ddf94cbfe160",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2048539/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox (created by this project)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "6f1562ab-55bb-5588-beed-06e8c6baf920",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2048540/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox (created by this project)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "5ee963fb-79b0-515d-98a3-796c8700de25",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2048541/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox (created by this project)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "17d002d6-a885-5c8f-a643-e78b9fe741e6",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://github.com/SigmaHQ/sigma/pull/6668",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SigmaHQ pull request (6 rules)",
         "timestamp": "1795478400"
       }
     ]

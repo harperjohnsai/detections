@@ -215,3 +215,10 @@
 - Added `iocs/2026-11-romulus-clickfix/`: ROMULUS ClickFix platform and CNCMachineRMS RAT. RAT gates decoded from five builds (`nfenribj3[.]com` / `45[.]140[.]205[.]28`, `wizardexpensive[.]com` / `96[.]62[.]218[.]59`, `triotmelon[.]com` / `144[.]124[.]242[.]171`), LegionLoader C2 hosts read from two builds, vendor IOC rows (Blackpoint, Forescout, Huntress, LevelBlue) with source and credit, ROMULUS panel rows from urlscan, 196 rows in total.
 - Added `yara/romulus-cncmachinerms/` (7 rules), six Sigma rules in `sigma/`, `tools/cncmachinerms-extract/`, `tools/legionloader-config/`, and their tests (`tests/test_cncmachinerms_extract.py`, `tests/test_legionloader_config.py`, additions to `tests/run_yara_tests.py` and `tests/test_sigma_synthetic.py`).
 
+### 2026-11-24 (ROMULUS / CNCMachineRMS distribution)
+- YARAhub: the 7 rules of `yara/romulus-cncmachinerms/` deployed (author Harper Johns, CC BY 4.0, TLP:CLEAR) and listed by `recent_yararules`: MAL_ROMULUS_MSI_Builder_Script_CustomAction, MAL_ROMULUS_PS_IntArray_CharOffset_Stager, MAL_ROMULUS_Script_Nibble_Base64_Decoders, MAL_ROMULUS_Stardock_DeElevator64_Patched_Import, MAL_ROMULUS_SideLoaded_Decoy_Loader_DLL, MAL_CNCMachineRMS_Storage_Container, MAL_CNCMachineRMS_Core_Decrypted_x64.
+- SigmaHQ/sigma PR (6 ROMULUS rules, same files and UUIDs as in `sigma/`): https://github.com/SigmaHQ/sigma/pull/6668
+- MalwareBazaar: 17 original files uploaded and one comment added to MSI `28520147...`; ThreatFox: 8 entries (ids 2048534 to 2048541). Links in `iocs/2026-11-romulus-clickfix/case.yml`.
+- Retracted: `iocs/2026-11-romulus-clickfix` row for 23.94.145.229 said the `/login` page titled Romulus was seen in urlscan scans 2026-10-29 to 2026-11-03. The titled scans are 2026-10-29 and 2026-11-02; the later scans of the IP (to 2026-11-03) did not carry the title in the search result we read. Cause: the date range was taken from the IP search instead of the title search. Row corrected in this commit.
+- Retracted: the row for 78.159.131.254 said "16 urlscan scans 2026-11-02". urlscan lists scans on 2026-11-01 and 2026-11-02; the count of 16 was not re-verified. Row corrected in this commit.
+

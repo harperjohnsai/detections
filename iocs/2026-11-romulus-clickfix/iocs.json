@@ -1070,7 +1070,7 @@
    "type": "ipv4",
    "value": "23.94.145.229",
    "first_seen": "2026-10-29",
-   "role": "ROMULUS panel/delivery node: /login page titled \"Romulus\" in urlscan scans 2026-10-29 to 2026-11-03; route /e/692a7d50aaf0/<md5>, numeric MSI paths /8177 /93607. Check-host timeout from 3 nodes 2026-11-24 ~08:00 UTC",
+   "role": "ROMULUS panel/delivery node: urlscan scans of this IP 2026-10-29 to 2026-11-03, /login page titled \"Romulus\" on 2026-10-29 and 2026-11-02; route /e/692a7d50aaf0/<md5>, numeric MSI paths /8177 /93607. Check-host timeout from 3 nodes 2026-11-24 ~08:00 UTC",
    "verdict": "malicious",
    "confidence": "medium",
    "source": "urlscan.io public scans"
@@ -1115,7 +1115,7 @@
    "type": "ipv4",
    "value": "78.159.131.254",
    "first_seen": "2026-11-01",
-   "role": "Stage host of a second LegionLoader ClickFix chain: 281.ps1 downloads /yrjrs/ver.pa (AES-CBC shellcode); URL decoded statically from 281.ps1; 16 urlscan scans 2026-11-02. Connection refused 2026-11-24 ~08:00 UTC",
+   "role": "Stage host of a second LegionLoader ClickFix chain: 281.ps1 downloads /yrjrs/ver.pa (AES-CBC shellcode); URL decoded statically from 281.ps1; urlscan scans 2026-11-01 and 2026-11-02. Connection refused 2026-11-24 ~08:00 UTC",
    "verdict": "malicious",
    "confidence": "high",
    "source": "static analysis of 281.ps1 (MalwareBazaar 7eb0d8e8...); ThreatFox 2008908 / 2008909 / 2008910 (Daydream, Satacom/LegionLoader)"

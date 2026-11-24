@@ -449,6 +449,114 @@
         {
           "source_name": "ThreatFox (reporter Crash371)",
           "url": "https://threatfox.abuse.ch/ioc/2028248/"
+        },
+        {
+          "source_name": "MalwareBazaar (uploaded by this project)",
+          "url": "https://bazaar.abuse.ch/sample/6761aad48a3f987238994d92bca97e4b8550e0150607bd67b47b1b6366a371fc/"
+        },
+        {
+          "source_name": "MalwareBazaar (uploaded by this project)",
+          "url": "https://bazaar.abuse.ch/sample/9ac13a8ef7bab76c4d074385fd783e8c9542a8db7a166c3d3921a48add092455/"
+        },
+        {
+          "source_name": "MalwareBazaar (uploaded by this project)",
+          "url": "https://bazaar.abuse.ch/sample/f4d7c5321bb0d1bda439304a753bcf9b467b98ca53c7e9493b9c2c3451092e4a/"
+        },
+        {
+          "source_name": "MalwareBazaar (uploaded by this project)",
+          "url": "https://bazaar.abuse.ch/sample/0457414c4504b70115798eee9c8384a8bf9e793461ffb2e0661a6dcc6ed4809f/"
+        },
+        {
+          "source_name": "MalwareBazaar (uploaded by this project)",
+          "url": "https://bazaar.abuse.ch/sample/2108909c78bdf20abcbb092e1f72375d27d1ecc98d76312b33ead4ae3330a92e/"
+        },
+        {
+          "source_name": "MalwareBazaar (uploaded by this project)",
+          "url": "https://bazaar.abuse.ch/sample/32797a560b9a290e715cb5591e71dd9537d782862324906e1bb4652dd2366c9a/"
+        },
+        {
+          "source_name": "MalwareBazaar (uploaded by this project)",
+          "url": "https://bazaar.abuse.ch/sample/3bd4c0335342a0a68e535096e2c412d110b5d83ba6078ded762bb565fed96621/"
+        },
+        {
+          "source_name": "MalwareBazaar (uploaded by this project)",
+          "url": "https://bazaar.abuse.ch/sample/5cd20d86211ab3f4b8ab96a3efb296a069a600a3473d3548e1ed58a9d8c7062e/"
+        },
+        {
+          "source_name": "MalwareBazaar (uploaded by this project)",
+          "url": "https://bazaar.abuse.ch/sample/71b82aca5bf2b96a69dd4d4292a68b29e287bedd61d67414320dcfd899b00f08/"
+        },
+        {
+          "source_name": "MalwareBazaar (uploaded by this project)",
+          "url": "https://bazaar.abuse.ch/sample/727313a64de14972734375e50f5da5f01f1858de8d18bafbf372849b08d0aa39/"
+        },
+        {
+          "source_name": "MalwareBazaar (uploaded by this project)",
+          "url": "https://bazaar.abuse.ch/sample/8198d32ee695709cb1310b99a44db5bc70e6e3b3590394ad063f81ce544fdfae/"
+        },
+        {
+          "source_name": "MalwareBazaar (uploaded by this project)",
+          "url": "https://bazaar.abuse.ch/sample/9c615db040b88c18ce6b96f30d08797045b7d506f940bea452dc7a6992fdbb8d/"
+        },
+        {
+          "source_name": "MalwareBazaar (uploaded by this project)",
+          "url": "https://bazaar.abuse.ch/sample/b77575413c0f97eaf31e4a44c884c1ecdc0049ec89916ceb0bf3aaaedc0442fe/"
+        },
+        {
+          "source_name": "MalwareBazaar (uploaded by this project)",
+          "url": "https://bazaar.abuse.ch/sample/b962250b8eb977322899cbfd79e6adb6b3e6ac4fcef5cbdb724dde3ee203f1b7/"
+        },
+        {
+          "source_name": "MalwareBazaar (uploaded by this project)",
+          "url": "https://bazaar.abuse.ch/sample/bddc9f8116008c03cb90c2753eb85d6e264e80d64189c64e39706c8c989854d1/"
+        },
+        {
+          "source_name": "MalwareBazaar (uploaded by this project)",
+          "url": "https://bazaar.abuse.ch/sample/d7bcae4a915261ace7a845f8c1bb2a54ce918921805204125705bfae29656851/"
+        },
+        {
+          "source_name": "MalwareBazaar (uploaded by this project)",
+          "url": "https://bazaar.abuse.ch/sample/eff5d63ddf1813962f0d8ad1250cea5486c8bb5dd27c3f432b43957a33e43764/"
+        },
+        {
+          "source_name": "MalwareBazaar (BlinkzSec upload, comment added by this project)",
+          "url": "https://bazaar.abuse.ch/sample/28520147ab1ac24f4dd35c96c0203c09aac04a1b5bec3924233f6883eb23188b/"
+        },
+        {
+          "source_name": "ThreatFox (created by this project)",
+          "url": "https://threatfox.abuse.ch/ioc/2048534/"
+        },
+        {
+          "source_name": "ThreatFox (created by this project)",
+          "url": "https://threatfox.abuse.ch/ioc/2048535/"
+        },
+        {
+          "source_name": "ThreatFox (created by this project)",
+          "url": "https://threatfox.abuse.ch/ioc/2048536/"
+        },
+        {
+          "source_name": "ThreatFox (created by this project)",
+          "url": "https://threatfox.abuse.ch/ioc/2048537/"
+        },
+        {
+          "source_name": "ThreatFox (created by this project)",
+          "url": "https://threatfox.abuse.ch/ioc/2048538/"
+        },
+        {
+          "source_name": "ThreatFox (created by this project)",
+          "url": "https://threatfox.abuse.ch/ioc/2048539/"
+        },
+        {
+          "source_name": "ThreatFox (created by this project)",
+          "url": "https://threatfox.abuse.ch/ioc/2048540/"
+        },
+        {
+          "source_name": "ThreatFox (created by this project)",
+          "url": "https://threatfox.abuse.ch/ioc/2048541/"
+        },
+        {
+          "source_name": "SigmaHQ pull request (6 rules)",
+          "url": "https://github.com/SigmaHQ/sigma/pull/6668"
         }
       ]
     },
@@ -3315,7 +3423,7 @@
       "type": "indicator",
       "id": "indicator--e91494fd-b655-5495-8e77-eb9871f0d13d",
       "name": "23.94.145.229",
-      "description": "ROMULUS panel/delivery node: /login page titled \"Romulus\" in urlscan scans 2026-10-29 to 2026-11-03; route /e/692a7d50aaf0/<md5>, numeric MSI paths /8177 /93607. Check-host timeout from 3 nodes 2026-11-24 ~08:00 UTC [verdict: malicious; source: urlscan.io public scans]",
+      "description": "ROMULUS panel/delivery node: urlscan scans of this IP 2026-10-29 to 2026-11-03, /login page titled \"Romulus\" on 2026-10-29 and 2026-11-02; route /e/692a7d50aaf0/<md5>, numeric MSI paths /8177 /93607. Check-host timeout from 3 nodes 2026-11-24 ~08:00 UTC [verdict: malicious; source: urlscan.io public scans]",
       "indicator_types": [
         "malicious-activity"
       ],
@@ -3440,7 +3548,7 @@
       "type": "indicator",
       "id": "indicator--7d85ad8f-b692-58ed-87ab-873bf6e9c6a0",
       "name": "78.159.131.254",
-      "description": "Stage host of a second LegionLoader ClickFix chain: 281.ps1 downloads /yrjrs/ver.pa (AES-CBC shellcode); URL decoded statically from 281.ps1; 16 urlscan scans 2026-11-02. Connection refused 2026-11-24 ~08:00 UTC [verdict: malicious; source: static analysis of 281.ps1 (MalwareBazaar 7eb0d8e8...); ThreatFox 2008908 / 2008909 / 2008910 (Daydream, Satacom/LegionLoader)]",
+      "description": "Stage host of a second LegionLoader ClickFix chain: 281.ps1 downloads /yrjrs/ver.pa (AES-CBC shellcode); URL decoded statically from 281.ps1; urlscan scans 2026-11-01 and 2026-11-02. Connection refused 2026-11-24 ~08:00 UTC [verdict: malicious; source: static analysis of 281.ps1 (MalwareBazaar 7eb0d8e8...); ThreatFox 2008908 / 2008909 / 2008910 (Daydream, Satacom/LegionLoader)]",
       "indicator_types": [
         "malicious-activity"
       ],
