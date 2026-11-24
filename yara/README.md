@@ -12,5 +12,6 @@ One folder per family or campaign. Every rule file carries `author`, `date`, a `
 | [`fluxengine/`](fluxengine/) | FluxEngine Delphi remote-access banker: loader DLL (`dhlib.dll`), decrypted payload, stage-1 VBS and scriptlets, AutoIt stage, stage-1 LNK hunting rule |
 | [`cryptotrice-go-loader/`](cryptotrice-go-loader/) | Go loader that reflectively maps an embedded encrypted PE (Go build info plus the five mapper API names, `kernel32` as only import); second-build check and per-sample table |
 | [`the_gentlemen/`](the_gentlemen/) | The Gentlemen (Storm-2697) ransomware: Go locker (Windows, Linux, unpacked memory) and the ransom note; the VMProtect-packed build is a documented miss |
+| [`romulus-cncmachinerms/`](romulus-cncmachinerms/) | ROMULUS ClickFix platform and CNCMachineRMS RAT: MSI-builder script stages, patched Stardock `DeElevator64.dll`, decoy loader DLLs, Storage container (header equations), decrypted RAT core |
 
 Test: `python tests/run_yara_tests.py --compile-only` (CI) or with `--samples` / `--negatives` (see the top README).

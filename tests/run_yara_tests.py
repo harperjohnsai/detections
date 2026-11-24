@@ -77,6 +77,70 @@ EXPECTED = {
     '32ead708c8b0e5fcc61c224fb7e9e1b75a88f287d4c5d2867faacec310385134': ['HUNT_Gentlemen_Ransom_Note'],  # README-GENTLEMEN.txt (extracted from the note zip)
     '51b9f246d6da85631131fcd1fabf0a67937d4bdde33625a44f7ee6a3a7baebd2': [],  # DOCUMENTED MISS: VMProtect-packed Windows build, no family-specific rule possible (yara/the_gentlemen/README.md)
     'f8b07ce20ae77fec0905724a466196a5ba8281e9ba9534808ab7e7bf15f37516': [],  # DOCUMENTED MISS: the note zip (deflate container); the extracted note matches
+    # ROMULUS ClickFix / CNCMachineRMS (yara/romulus-cncmachinerms)
+    '29340068aa98c9720340fb1aa6f21f8314d939519db5e26cdd5e7d9c321816db': ['MAL_CNCMachineRMS_Core_Decrypted_x64'],  # decrypted RAT core
+    '51c25fdf3a1aae25b7f489577f279839ec6c802ed3ba17b07d58c1fd055d7d70': ['MAL_CNCMachineRMS_Core_Decrypted_x64'],  # decrypted RAT core
+    'ab65bbfc505dbe1cebe6021fb36e2011f6aa1d64f5d87cee1cbee3fc2a0c7907': ['MAL_CNCMachineRMS_Core_Decrypted_x64'],  # decrypted RAT core
+    'd9274c98d7be30e6045e63d3acc190055a3849e2992b7382643c16a5aefa22dc': ['MAL_CNCMachineRMS_Core_Decrypted_x64'],  # decrypted RAT core
+    '06b8adb4f361ba2cbcf35379e4dfd3d6291167bb987bd0b1817d3358c3e8fb5c': ['MAL_CNCMachineRMS_Storage_Container'],  # Storage container
+    '4652fe86f16373375dbc84894917e34b4ea67b91a4b86d62c03fce96d9a985e8': ['MAL_CNCMachineRMS_Storage_Container'],  # Storage container
+    '9a7ec20cfe939a0739819262c1e3ff0265c851136cc263597936773376a5d907': ['MAL_CNCMachineRMS_Storage_Container'],  # Storage container
+    'd5acf44658f0dce90bd160f15d8e07a96938c81661d87dc7e9cb0107863bfb90': ['MAL_CNCMachineRMS_Storage_Container'],  # Storage container
+    'd95a5e3447077a4cb0cad3110bf761b26270a140a4817744b9570e0887591e4c': ['MAL_CNCMachineRMS_Storage_Container'],  # Storage container
+    'e614b7d5a7a363fb1b355a87e2e8d9e8a05bbbca08f2cee3d606bdb5015ac53b': ['MAL_CNCMachineRMS_Storage_Container'],  # Storage container
+    '0187479bca5c3802c4ecc616ce610281cfa120448409dd9f0e9a01bd445a2e3c': ['MAL_ROMULUS_MSI_Builder_Script_CustomAction'],  # MSI builder
+    '01a1f73a1cf5f52ffe9c8091cc04d15c5cccaf67a8f66c56bf6b398303197d37': ['MAL_ROMULUS_MSI_Builder_Script_CustomAction'],  # MSI builder
+    '02da738af6d5faa9fb3bdb7c112e6fb0f16876e18edf2871566d14f0b0f6143a': ['MAL_ROMULUS_MSI_Builder_Script_CustomAction'],  # MSI builder
+    '04a6a5d6787196ae1851b3d031896953a8a72acde34580f8ce30e375a435e4d3': ['MAL_ROMULUS_MSI_Builder_Script_CustomAction'],  # MSI builder
+    '232a1639b1d70e7f4721b2811cb5dab3e096393d00a43bc46ba91cdcc36d9d84': ['MAL_ROMULUS_MSI_Builder_Script_CustomAction'],  # MSI builder
+    '37e56899fcfeeab953dd1c0804b59848f5cc66a0e47e2197e0e276dd032f30f7': ['MAL_ROMULUS_MSI_Builder_Script_CustomAction'],  # MSI builder
+    '3b39d6b14b99c0e1cf590a32635c77c31094cb2f48c916381df05fe3dc77ffe5': ['MAL_ROMULUS_MSI_Builder_Script_CustomAction'],  # MSI builder
+    '3cf6900cf7af81f4c5f3c41c96c6231f464646e89e427e25f83498667fe3247e': ['MAL_ROMULUS_MSI_Builder_Script_CustomAction'],  # MSI builder
+    '49c20202f1501b82dd1e87fbe63a0b1b066ad8a074f7d6a1b19b37cca09c735f': ['MAL_ROMULUS_MSI_Builder_Script_CustomAction'],  # MSI builder
+    '4a98be1541936632c91c83fc71d7626ea2f0fdc37ef2407f72879b9353d19af4': ['MAL_ROMULUS_MSI_Builder_Script_CustomAction'],  # MSI builder
+    '4cf4597ccacd6660d95e0f7630e69d0be81f98437d9c7970b24ac462fd821874': ['MAL_ROMULUS_MSI_Builder_Script_CustomAction'],  # MSI builder
+    '543c0336cabbab85a8cbaff437b8bb33fba4fda58763b1b00a948c7ebfcafbf4': ['MAL_ROMULUS_MSI_Builder_Script_CustomAction'],  # MSI builder
+    '5f36b4e8b71e2b12e542487ba0fd8b890abeb713297e103048b465e0e27db571': ['MAL_ROMULUS_MSI_Builder_Script_CustomAction'],  # MSI builder
+    '737690df6e6b5b05b295557e5da604116f46e42bb33b4b457a421c9af79d44a1': ['MAL_ROMULUS_MSI_Builder_Script_CustomAction'],  # MSI builder
+    '73d3bfae1717b01f021d88f9ae6a3628ae38013a50215de7de26905a6bb7746d': ['MAL_ROMULUS_MSI_Builder_Script_CustomAction'],  # MSI builder
+    '7c1c464de8a353bd5480e3de09ac36ad5cca6558e9c8adb9fe00b08ef7e76467': ['MAL_ROMULUS_MSI_Builder_Script_CustomAction'],  # MSI builder
+    '8f6f14485f0118637766e60a1382b5457d41056c60ac8783e8b5b82e9fd1faa5': ['MAL_ROMULUS_MSI_Builder_Script_CustomAction'],  # MSI builder
+    '920bc0ea1f58e06f4fa6e2038a62320dba36423e94bc169022cb125b84c6920a': ['MAL_ROMULUS_MSI_Builder_Script_CustomAction'],  # MSI builder
+    '9666fe7e1ff1f42bc8e9035cb54358dfeab009970ed005d3e2c9ecd1b54a40dc': ['MAL_ROMULUS_MSI_Builder_Script_CustomAction'],  # MSI builder
+    '9ae0f9d4338e4719d78a234a22c1ead941a66ed6b76d0ea4f4c332570788a74c': ['MAL_ROMULUS_MSI_Builder_Script_CustomAction'],  # MSI builder
+    'a93344d6a743979dd867d662a8572562bdfbe4bd16c0daa5dbdfa18c0e2ac985': ['MAL_ROMULUS_MSI_Builder_Script_CustomAction'],  # MSI builder
+    'b6769af4f9ed80121bd826e519e56dd57463f5688cc8c41287c43df2a86eeb88': ['MAL_ROMULUS_MSI_Builder_Script_CustomAction'],  # MSI builder
+    'cd0c4a46b163c5b6b2ee563be95328f57c627e2ba90bbbd4aa470765cd4849f6': ['MAL_ROMULUS_MSI_Builder_Script_CustomAction'],  # MSI builder
+    'd096a4ea41fe73b8c216e1058a1e895220dddc5f7218c3e603e3b18b2b3456f9': ['MAL_ROMULUS_MSI_Builder_Script_CustomAction'],  # MSI builder
+    'db2a4e300c9442b10840a790e93f7b99844d13e0305dd4ad052db62a379a1731': ['MAL_ROMULUS_MSI_Builder_Script_CustomAction'],  # MSI builder
+    'f205498b7aef46e722cc5fcc4ecfcdf2ae7407277c33351bd6c977416e2e3f2c': ['MAL_ROMULUS_MSI_Builder_Script_CustomAction'],  # MSI builder
+    'f3a8d40d9a7060bcad4444a7994c68d6d15ae556852d3324a125c55d56bb3702': ['MAL_ROMULUS_MSI_Builder_Script_CustomAction'],  # MSI builder
+    'f4c375f43b22056267ba4633c9e86a3120705f96cd053f2dbe629da09d63c318': ['MAL_ROMULUS_MSI_Builder_Script_CustomAction'],  # MSI builder
+    'f9440912b7f3a35c91ec7c9b98eaa9986733a60bb1be9e5a2591460dc135e9e8': ['MAL_ROMULUS_MSI_Builder_Script_CustomAction'],  # MSI builder
+    'faadf376cc6d2ff6dd56c814a99c4d3276bf10c843d04fb8fbd9b3ccedad428f': ['MAL_ROMULUS_MSI_Builder_Script_CustomAction'],  # MSI builder
+    'fcbeea2c639ed7c3e8d7c2d78105c695e83f26ac62a6ba3c466b374a92393495': ['MAL_ROMULUS_MSI_Builder_Script_CustomAction'],  # MSI builder
+    '7eb0d8e8f74b298885fa0ec0a0ee1e87b03e27fbff5fe41ae99edacfaac2d1a3': ['MAL_ROMULUS_PS_IntArray_CharOffset_Stager'],  # PowerShell stage
+    'f1b38c9412a18eecc1e29bb058aa87bdbe41edac073c190aab517248cc68ad1d': ['MAL_ROMULUS_PS_IntArray_CharOffset_Stager'],  # PowerShell stage
+    '98a1d42af78a82a61b1511479f7f8b3fb5f91bca8ff452cbf6576a32515c6b0d': ['MAL_ROMULUS_Script_Nibble_Base64_Decoders'],  # script stage
+    'bb19340e9d9d29241321f3e8486901aaf130e65f809c67bf59eb5ae69f3cd304': ['MAL_ROMULUS_Script_Nibble_Base64_Decoders'],  # script stage
+    '2108909c78bdf20abcbb092e1f72375d27d1ecc98d76312b33ead4ae3330a92e': ['MAL_ROMULUS_SideLoaded_Decoy_Loader_DLL'],  # decoy loader DLL
+    '32797a560b9a290e715cb5591e71dd9537d782862324906e1bb4652dd2366c9a': ['MAL_ROMULUS_SideLoaded_Decoy_Loader_DLL'],  # decoy loader DLL
+    '3bd4c0335342a0a68e535096e2c412d110b5d83ba6078ded762bb565fed96621': ['MAL_ROMULUS_SideLoaded_Decoy_Loader_DLL'],  # decoy loader DLL
+    '3cd1484cc5bf10e22d79784beba58a75d7b126c46efb5e1a85d6aab884447621': ['MAL_ROMULUS_SideLoaded_Decoy_Loader_DLL'],  # decoy loader DLL
+    '5cd20d86211ab3f4b8ab96a3efb296a069a600a3473d3548e1ed58a9d8c7062e': ['MAL_ROMULUS_SideLoaded_Decoy_Loader_DLL'],  # decoy loader DLL
+    '71b82aca5bf2b96a69dd4d4292a68b29e287bedd61d67414320dcfd899b00f08': ['MAL_ROMULUS_SideLoaded_Decoy_Loader_DLL'],  # decoy loader DLL
+    '727313a64de14972734375e50f5da5f01f1858de8d18bafbf372849b08d0aa39': ['MAL_ROMULUS_SideLoaded_Decoy_Loader_DLL'],  # decoy loader DLL
+    '8198d32ee695709cb1310b99a44db5bc70e6e3b3590394ad063f81ce544fdfae': ['MAL_ROMULUS_SideLoaded_Decoy_Loader_DLL'],  # decoy loader DLL
+    '9c615db040b88c18ce6b96f30d08797045b7d506f940bea452dc7a6992fdbb8d': ['MAL_ROMULUS_SideLoaded_Decoy_Loader_DLL'],  # decoy loader DLL
+    'a27cafb84876a3374ef4aba1062345def6cd0b029eaf8e0dc44fa24fc943f3c6': ['MAL_ROMULUS_SideLoaded_Decoy_Loader_DLL'],  # decoy loader DLL
+    'b59a21a8d4c0c11a9ecbbdbe2a2938499c99c5ebb210c9c6db9683c7ad19f4c4': ['MAL_ROMULUS_SideLoaded_Decoy_Loader_DLL'],  # decoy loader DLL
+    'b77575413c0f97eaf31e4a44c884c1ecdc0049ec89916ceb0bf3aaaedc0442fe': ['MAL_ROMULUS_SideLoaded_Decoy_Loader_DLL'],  # decoy loader DLL
+    'b962250b8eb977322899cbfd79e6adb6b3e6ac4fcef5cbdb724dde3ee203f1b7': ['MAL_ROMULUS_SideLoaded_Decoy_Loader_DLL'],  # decoy loader DLL
+    'bddc9f8116008c03cb90c2753eb85d6e264e80d64189c64e39706c8c989854d1': ['MAL_ROMULUS_SideLoaded_Decoy_Loader_DLL'],  # decoy loader DLL
+    'd7bcae4a915261ace7a845f8c1bb2a54ce918921805204125705bfae29656851': ['MAL_ROMULUS_SideLoaded_Decoy_Loader_DLL'],  # decoy loader DLL
+    'eff5d63ddf1813962f0d8ad1250cea5486c8bb5dd27c3f432b43957a33e43764': ['MAL_ROMULUS_SideLoaded_Decoy_Loader_DLL'],  # decoy loader DLL
+    '0457414c4504b70115798eee9c8384a8bf9e793461ffb2e0661a6dcc6ed4809f': ['MAL_ROMULUS_Stardock_DeElevator64_Patched_Import'],  # patched DeElevator64.dll
+    '22869e3326fe1de011cd500e666769027126c5c440b76837baf55139f30094e4': [],  # genuine signed Stardock DeElevate64.exe (the host the chain abuses): must NOT hit
 }
 ok = True
 

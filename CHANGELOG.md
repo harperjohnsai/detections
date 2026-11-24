@@ -210,3 +210,8 @@
 - `iocs/2026-11-cryptotrice`: +11 domain rows (fallback C2s, 3 per build, all `https://`). 9 were already on ThreatFox from other reporters (Remus / WARDENStealer labels); `neeft[.]tattoo` and `servicesbo[.]com` submitted to ThreatFox 2026-11-24.
 - `tools/remus-cleartext/README.md`: limits line points to the new tool.
 - Not checked: liveness of the domains (nothing contacted); the EtherHiding contract address of these builds.
+
+### 2026-11-24 (ROMULUS / CNCMachineRMS)
+- Added `iocs/2026-11-romulus-clickfix/`: ROMULUS ClickFix platform and CNCMachineRMS RAT. RAT gates decoded from five builds (`nfenribj3[.]com` / `45[.]140[.]205[.]28`, `wizardexpensive[.]com` / `96[.]62[.]218[.]59`, `triotmelon[.]com` / `144[.]124[.]242[.]171`), LegionLoader C2 hosts read from two builds, vendor IOC rows (Blackpoint, Forescout, Huntress, LevelBlue) with source and credit, ROMULUS panel rows from urlscan, 196 rows in total.
+- Added `yara/romulus-cncmachinerms/` (7 rules), six Sigma rules in `sigma/`, `tools/cncmachinerms-extract/`, `tools/legionloader-config/`, and their tests (`tests/test_cncmachinerms_extract.py`, `tests/test_legionloader_config.py`, additions to `tests/run_yara_tests.py` and `tests/test_sigma_synthetic.py`).
+

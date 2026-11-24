@@ -1,0 +1,3370 @@
+{
+  "Event": {
+    "uuid": "7b1e0ee8-3962-5757-b2b0-5ce1b35ca40f",
+    "info": "ROMULUS ClickFix platform and CNCMachineRMS: RAT gates decoded from five builds",
+    "date": "2026-11-24",
+    "threat_level_id": "2",
+    "analysis": "2",
+    "distribution": "3",
+    "published": false,
+    "timestamp": "1795478400",
+    "Orgc": {
+      "uuid": "b641827b-b56f-53c3-b356-359fddd6e73f",
+      "name": "Harper Johns"
+    },
+    "Tag": [
+      {
+        "name": "tlp:clear"
+      }
+    ],
+    "Attribute": [
+      {
+        "uuid": "148d151d-1cf8-529f-ae96-729c7f27c504",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "00ef251f6f49eb50f3300585c814910318e7f09864ed373ec4f078d2c1471d0e",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "LegionLoader stage-5 PE (494,080 B, compiled 2026-10-28); same layout as the vendor stage-3 PE (2e3d378d..., 2026-09-26); C2 redjaxfire.com read by our static reader [type: sha256; verdict: malicious; source: MalwareBazaar (Daydream 2026-11-01); bytes obtained; static config extraction]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-01T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "c544d7f3-4e5d-5613-8b6a-e764ad204365",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "0187479bca5c3802c4ecc616ce610281cfa120448409dd9f0e9a01bd445a2e3c",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "MSI '078541' from the ROMULUS MSI builder set (name = URL path served by ROMULUS nodes per urlscan); matches YARA MAL_ROMULUS_MSI_Builder_Script_CustomAction [type: sha256; verdict: malicious; source: MalwareBazaar (BlinkzSec 2026-11-01, tag LegionLoader); bytes obtained; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-01T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "4b31ddd7-a38e-5af8-b429-36a1edc0923f",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "01a1f73a1cf5f52ffe9c8091cc04d15c5cccaf67a8f66c56bf6b398303197d37",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "MSI '071094' from the ROMULUS MSI builder set (name = URL path served by ROMULUS nodes per urlscan); matches YARA MAL_ROMULUS_MSI_Builder_Script_CustomAction [type: sha256; verdict: malicious; source: MalwareBazaar (BlinkzSec 2026-11-01, tag LegionLoader); bytes obtained; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-01T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "e977fa3f-8fec-5bc4-9d51-6ec89acb9fb2",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "02da738af6d5faa9fb3bdb7c112e6fb0f16876e18edf2871566d14f0b0f6143a",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "MSI '080095' from the ROMULUS MSI builder set (name = URL path served by ROMULUS nodes per urlscan); matches YARA MAL_ROMULUS_MSI_Builder_Script_CustomAction [type: sha256; verdict: malicious; source: MalwareBazaar (BlinkzSec 2026-11-01, tag LegionLoader); bytes obtained; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-01T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "81e5885d-e964-5c63-bc3e-5092d88a24b7",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "0457414c4504b70115798eee9c8384a8bf9e793461ffb2e0661a6dcc6ed4809f",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "DeElevator64.dll: Patched sideloaded Stardock DLL (imports I++u.dll) [type: sha256; verdict: malicious; source: VENDOR-REPORTED: Blackpoint 2026-11-18; also Forescout 2026-10-15 / Huntress 2026-09-28; extracted by this project; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "40bce5a7-a9ab-558e-af24-1bda65fa3639",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "04a6a5d6787196ae1851b3d031896953a8a72acde34580f8ce30e375a435e4d3",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "MSI '078541' from the ROMULUS MSI builder set (name = URL path served by ROMULUS nodes per urlscan); matches YARA MAL_ROMULUS_MSI_Builder_Script_CustomAction [type: sha256; verdict: malicious; source: MalwareBazaar (BlinkzSec 2026-11-01, tag LegionLoader); bytes obtained; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-01T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "243a30a2-534f-5a6c-8be6-7d7b704ce90e",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "06b8adb4f361ba2cbcf35379e4dfd3d6291167bb987bd0b1817d3358c3e8fb5c",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "CNCMachineRMS Storage container (loader script + RAT); matches YARA MAL_CNCMachineRMS_Storage_Container; extracted from numeric MSI '3' (28520147...) [type: sha256; verdict: malicious; source: extracted by this project; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-24T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "a852082f-a96e-541f-ae5a-ab73e6967d75",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "0c692fdd1085f2ee287f305a1f6da6541287d9119fff13a2bd309ac0592f78d3",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "ver.pa stage 3 executable (8.4 MB), LegionLoader chain [type: sha256; verdict: malicious; source: MalwareBazaar (Daydream 2026-11-01); bytes obtained]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-01T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "38b5ebea-8ca8-5f34-9524-626b3b1e05ef",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "14e3376befd4b7b52de0757b6264da294ac6b0f9e4ff51cb9bc5b19b243fe335",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "6469.ps1: obfuscated ClickFix stager v1 [type: sha256; verdict: malicious; source: VENDOR-REPORTED: Huntress 2026-09-28]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "73f29e88-ff05-5ac3-9324-9f8c44b83fe3",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "1f403ac059f172e99968ce96bd0ef1bd1981070b454e3e5d75a71368c3c8762a",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "(random).exe 882,716,672 B: LegionLoader stage1 inflated carrier [type: sha256; verdict: malicious; source: VENDOR-REPORTED: Forescout 2026-10-15]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-10-15T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "1dc40ca7-c02e-554c-8c5f-775acb73d7f7",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "20c7befc174a61117770535e809046c75e93c71284bf1a9c6cd532f55b315f53",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "loader shellcode: Canon chain [type: sha256; verdict: malicious; source: VENDOR-REPORTED: Huntress 2026-09-28]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "2447b807-7463-57fc-8e78-663d870530d7",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "2108909c78bdf20abcbb092e1f72375d27d1ecc98d76312b33ead4ae3330a92e",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Decoy loader DLL side-loaded by a signed host; matches YARA MAL_ROMULUS_SideLoaded_Decoy_Loader_DLL; extracted from numeric MSI '3' (28520147...) [type: sha256; verdict: malicious; source: extracted by this project; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-24T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "5f489dd4-6583-53be-bd4c-10aa806635b5",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "232a1639b1d70e7f4721b2811cb5dab3e096393d00a43bc46ba91cdcc36d9d84",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "MSI '080095' from the ROMULUS MSI builder set (name = URL path served by ROMULUS nodes per urlscan); matches YARA MAL_ROMULUS_MSI_Builder_Script_CustomAction [type: sha256; verdict: malicious; source: MalwareBazaar (BlinkzSec 2026-11-01, tag LegionLoader); bytes obtained; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-01T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "e9059d81-49cd-5d96-b41b-f9fe3b508618",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "28520147ab1ac24f4dd35c96c0203c09aac04a1b5bec3924233f6883eb23188b",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "MSI named '3' (20.4 MB, MalwareBazaar tag LegionLoader). It carries a CNCMachineRMS Storage container (06b8adb4..., gates nfenribj3.com / 45.140.205.28 by our extractor), not a LegionLoader config [type: sha256; verdict: malicious; source: MalwareBazaar (BlinkzSec 2026-11-01, tag LegionLoader); bytes obtained; static extraction]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-01T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "95c6c97f-8de2-5434-9e6d-67c9c25fd605",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "2922837a8d049bf0b51f0f9b27340a377b27dd1912675e2cd82056db83ec7a19",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "HelperStandardizationApplication.bin: CNCMachineRMS config storage [type: sha256; verdict: malicious; source: VENDOR-REPORTED: LevelBlue 2026-08-10]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-08-10T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "51a097b2-53cc-5204-bc97-032938f30fe1",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "29340068aa98c9720340fb1aa6f21f8314d939519db5e26cdd5e7d9c321816db",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Decrypted CNCMachineRMS RAT core (blob 16100) reproduced by our extractor; memory-only artefact, never a file on disk; matches YARA MAL_CNCMachineRMS_Core_Decrypted_x64 [type: sha256; verdict: malicious; source: extracted by this project; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-24T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "c53e6d61-fde3-5432-b19a-6779d4e8aa77",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "2e3d378d6a842af2404dfcd1dcbfc0df84b01b799b2c8270ddbfe5eb18837762",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "stage3 PE: LegionLoader final [type: sha256; verdict: malicious; source: VENDOR-REPORTED: Forescout 2026-10-15; bytes obtained from the public tria.ge report of the Forescout chain; static config extraction]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-10-15T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "c66c82e8-5230-540c-a5eb-a926f69cd918",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "32797a560b9a290e715cb5591e71dd9537d782862324906e1bb4652dd2366c9a",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Decoy loader DLL side-loaded by a signed host; matches YARA MAL_ROMULUS_SideLoaded_Decoy_Loader_DLL; extracted from BabaDeda zip c68bffb8... [type: sha256; verdict: malicious; source: extracted by this project; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-24T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "74e20c84-71ef-5b3b-b37f-5cf0882e47e2",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "3466c3524f13cb3b7c87819e619bdb482ec9034a57bcdbe0240af6a9a530b02a",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "ComPDFKit.Viewer.dll: BabaDeda chain [type: sha256; verdict: malicious; source: VENDOR-REPORTED: LevelBlue 2026-08-10]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-08-10T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "e6ebf2d0-6757-504d-ae93-21336739c1f0",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "37e56899fcfeeab953dd1c0804b59848f5cc66a0e47e2197e0e276dd032f30f7",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "MSI '003259' from the ROMULUS MSI builder set (name = URL path served by ROMULUS nodes per urlscan); matches YARA MAL_ROMULUS_MSI_Builder_Script_CustomAction [type: sha256; verdict: malicious; source: MalwareBazaar (BlinkzSec 2026-11-01, tag LegionLoader); bytes obtained; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-01T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "b0165d83-962b-5092-a743-47bfd0afdd46",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "3b39d6b14b99c0e1cf590a32635c77c31094cb2f48c916381df05fe3dc77ffe5",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "MSI '071094' from the ROMULUS MSI builder set (name = URL path served by ROMULUS nodes per urlscan); matches YARA MAL_ROMULUS_MSI_Builder_Script_CustomAction [type: sha256; verdict: malicious; source: MalwareBazaar (BlinkzSec 2026-11-01, tag LegionLoader); bytes obtained; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-01T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "a7e8caa2-0aab-5e94-b6c2-ecd086c2b8b2",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "3b9b86feb3b789dda9cdfe5425ccb7e1feae9fde2cc158ff962991218a98f53f",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "model.dat: BabaDeda encoded shellcode [type: sha256; verdict: malicious; source: VENDOR-REPORTED: LevelBlue 2026-08-10]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-08-10T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "6b3a5c41-8e20-52a7-8c38-764f208627c7",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "3bd4c0335342a0a68e535096e2c412d110b5d83ba6078ded762bb565fed96621",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Decoy loader DLL side-loaded by a signed host; matches YARA MAL_ROMULUS_SideLoaded_Decoy_Loader_DLL; extracted from AllMyBasic.msi (f4d7c532...) [type: sha256; verdict: malicious; source: extracted by this project; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-24T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "a777a177-3fae-59a2-9079-0086b4c5e38e",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "3cd1484cc5bf10e22d79784beba58a75d7b126c46efb5e1a85d6aab884447621",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "I++u.dll: Malicious loader (fake SharpCompress version info per Huntress) [type: sha256; verdict: malicious; source: VENDOR-REPORTED: Blackpoint 2026-11-18; also Forescout 2026-10-15 / Huntress 2026-09-28; bytes obtained and SHA-256 verified by us; extracted by this project; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "564fec11-4294-5cf6-8858-51dc194eff0f",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "3cf6900cf7af81f4c5f3c41c96c6231f464646e89e427e25f83498667fe3247e",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "MSI '038355' from the ROMULUS MSI builder set (name = URL path served by ROMULUS nodes per urlscan); matches YARA MAL_ROMULUS_MSI_Builder_Script_CustomAction [type: sha256; verdict: malicious; source: MalwareBazaar (BlinkzSec 2026-11-01, tag LegionLoader); bytes obtained; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-01T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "d936e24f-3173-59df-9889-6f22b7e56513",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "3d4e7187f74de912f9d52f5ba6a95bd41868348b16583d72957d732c0ed8f0e7",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "ClLoca.dll: BabaDeda chain [type: sha256; verdict: malicious; source: VENDOR-REPORTED: LevelBlue 2026-08-10]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-08-10T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "1adb3461-bc47-5b29-acf8-0f1c9314eff1",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "4652fe86f16373375dbc84894917e34b4ea67b91a4b86d62c03fce96d9a985e8",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "CNCMachineRMS Storage container (loader script + RAT); matches YARA MAL_CNCMachineRMS_Storage_Container; extracted from FilesInspectorX.msi (9ac13a8e...) [type: sha256; verdict: malicious; source: extracted by this project; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-24T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "5fb41a22-4cd8-51f3-94fd-e6a679310117",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "49c20202f1501b82dd1e87fbe63a0b1b066ad8a074f7d6a1b19b37cca09c735f",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "MSI '085175' from the ROMULUS MSI builder set (name = URL path served by ROMULUS nodes per urlscan); matches YARA MAL_ROMULUS_MSI_Builder_Script_CustomAction [type: sha256; verdict: malicious; source: MalwareBazaar (BlinkzSec 2026-11-01, tag LegionLoader); bytes obtained; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-01T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "19baea79-9eff-5f6a-bd8f-3de855972e41",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "4a98be1541936632c91c83fc71d7626ea2f0fdc37ef2407f72879b9353d19af4",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "MSI '080095' from the ROMULUS MSI builder set (name = URL path served by ROMULUS nodes per urlscan); matches YARA MAL_ROMULUS_MSI_Builder_Script_CustomAction [type: sha256; verdict: malicious; source: MalwareBazaar (BlinkzSec 2026-11-01, tag LegionLoader); bytes obtained; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-01T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "7537c273-475b-5068-acce-970f5f49963d",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "4cf4597ccacd6660d95e0f7630e69d0be81f98437d9c7970b24ac462fd821874",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "MSI '080095' from the ROMULUS MSI builder set (name = URL path served by ROMULUS nodes per urlscan); matches YARA MAL_ROMULUS_MSI_Builder_Script_CustomAction [type: sha256; verdict: malicious; source: MalwareBazaar (BlinkzSec 2026-11-01, tag LegionLoader); bytes obtained; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-01T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "b9c75423-21a1-54e9-b305-b9dec7c7474d",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "4e0941d243c0b16e9019e4f9c5eb0f6e6630af4d44d9677611917450bb2e696e",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "stage2 shellcode: LegionLoader [type: sha256; verdict: malicious; source: VENDOR-REPORTED: Forescout 2026-10-15]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-10-15T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "d8ffdc4a-c9ad-570b-9f3d-88dadc2355c2",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "51c25fdf3a1aae25b7f489577f279839ec6c802ed3ba17b07d58c1fd055d7d70",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Decrypted CNCMachineRMS RAT core (blob 16100) reproduced by our extractor; memory-only artefact, never a file on disk; matches YARA MAL_CNCMachineRMS_Core_Decrypted_x64 [type: sha256; verdict: malicious; source: extracted by this project; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-24T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "d57e82f4-0765-5b25-81f7-4f04fc358502",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "543c0336cabbab85a8cbaff437b8bb33fba4fda58763b1b00a948c7ebfcafbf4",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "MSI '078541' from the ROMULUS MSI builder set (name = URL path served by ROMULUS nodes per urlscan); matches YARA MAL_ROMULUS_MSI_Builder_Script_CustomAction [type: sha256; verdict: malicious; source: MalwareBazaar (BlinkzSec 2026-11-01, tag LegionLoader); bytes obtained; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-01T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "b7ef2e30-3358-595c-aece-691cbf6e1b4b",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "54c94f85ba6e950903d5ff42c0971c5a9d0741596be26e06afe7d60ec38edf31",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Common.Integrator.Preview.wav: audio carrier of encrypted loader [type: sha256; verdict: malicious; source: VENDOR-REPORTED: Huntress 2026-09-28]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "a79567f6-3205-56fe-83eb-968cf609ce8a",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "5b71b49bad415643ff3e291ee3ba550e5edfd584eb913859dadb81634450e7e7",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "wwide9.dll: BabaDeda chain [type: sha256; verdict: malicious; source: VENDOR-REPORTED: LevelBlue 2026-08-10]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-08-10T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "d2d5bacf-80af-5e9a-9004-9822606610e1",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "5cd20d86211ab3f4b8ab96a3efb296a069a600a3473d3548e1ed58a9d8c7062e",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Decoy loader DLL side-loaded by a signed host; matches YARA MAL_ROMULUS_SideLoaded_Decoy_Loader_DLL; extracted from FilesInspectorX.msi (9ac13a8e...) [type: sha256; verdict: malicious; source: extracted by this project; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-24T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "05d1c8f7-b054-5c33-b79c-56c6bad5a98e",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "5f36b4e8b71e2b12e542487ba0fd8b890abeb713297e103048b465e0e27db571",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "MSI '071094' from the ROMULUS MSI builder set (name = URL path served by ROMULUS nodes per urlscan); matches YARA MAL_ROMULUS_MSI_Builder_Script_CustomAction [type: sha256; verdict: malicious; source: MalwareBazaar (BlinkzSec 2026-11-01, tag LegionLoader); bytes obtained; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-01T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "da16520f-d9bd-5910-8c47-125181814b0d",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "6761aad48a3f987238994d92bca97e4b8550e0150607bd67b47b1b6366a371fc",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "ISOSimple.msi: Malicious installer (Canon chain) [type: sha256; verdict: malicious; source: VENDOR-REPORTED: Blackpoint 2026-11-18; also Huntress 2026-09-28; bytes obtained and SHA-256 verified by us]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "7cbc629b-335d-5c51-82aa-0d014d702d16",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "71b82aca5bf2b96a69dd4d4292a68b29e287bedd61d67414320dcfd899b00f08",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Decoy loader DLL side-loaded by a signed host; matches YARA MAL_ROMULUS_SideLoaded_Decoy_Loader_DLL; extracted from AllMyBasic.msi (f4d7c532...) [type: sha256; verdict: malicious; source: extracted by this project; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-24T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "55bb166d-7910-5945-b77c-b18c33d29fe6",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "727313a64de14972734375e50f5da5f01f1858de8d18bafbf372849b08d0aa39",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Decoy loader DLL side-loaded by a signed host; matches YARA MAL_ROMULUS_SideLoaded_Decoy_Loader_DLL; extracted from FilesInspectorX.msi (9ac13a8e...) [type: sha256; verdict: malicious; source: extracted by this project; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-24T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "5e82fa9b-ab2a-5dcd-a141-72476b16a546",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "737690df6e6b5b05b295557e5da604116f46e42bb33b4b457a421c9af79d44a1",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "68993.msi: VBScript custom action -> PowerShell -> AES-256-CBC blob -> x64 PE. MalwareBazaar tag romulus; same MSI builder as the numeric MSIs (YARA MAL_ROMULUS_MSI_Builder_Script_CustomAction) [type: sha256; verdict: malicious; source: MalwareBazaar (rifteyy 2026-10-14); bytes obtained; static analysis]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-10-14T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "9312a292-f2b5-58e3-a94c-38f0b3a59ad0",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "73d3bfae1717b01f021d88f9ae6a3628ae38013a50215de7de26905a6bb7746d",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "MSI '085175' from the ROMULUS MSI builder set (name = URL path served by ROMULUS nodes per urlscan); matches YARA MAL_ROMULUS_MSI_Builder_Script_CustomAction [type: sha256; verdict: malicious; source: MalwareBazaar (BlinkzSec 2026-11-01, tag LegionLoader); bytes obtained; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-01T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "aae94b77-c3cb-5a28-bbfd-dd96f2807d67",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "744b8165b6161cbd1d5ecc423ecfdb8306485afdc80262000ab3c6908881ef9e",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "BabaDeda stage [type: sha256; verdict: malicious; source: VENDOR-REPORTED: LevelBlue 2026-08-10]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-08-10T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "ee8f8a87-a1ac-5dab-ad2e-4b0f62f8005d",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "7c1c464de8a353bd5480e3de09ac36ad5cca6558e9c8adb9fe00b08ef7e76467",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "MSI '078541' from the ROMULUS MSI builder set (name = URL path served by ROMULUS nodes per urlscan); matches YARA MAL_ROMULUS_MSI_Builder_Script_CustomAction [type: sha256; verdict: malicious; source: MalwareBazaar (BlinkzSec 2026-11-01, tag LegionLoader); bytes obtained; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-01T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "44ef51f3-939b-52ae-8964-47084155fce5",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "7eb0d8e8f74b298885fa0ec0a0ee1e87b03e27fbff5fe41ae99edacfaac2d1a3",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "281.ps1: AMSI/ETW patch plus VirtualAlloc shellcode runner for http://78.159.131.254/yrjrs/ver.pa; matches YARA MAL_ROMULUS_PS_IntArray_CharOffset_Stager [type: sha256; verdict: malicious; source: MalwareBazaar (Daydream 2026-11-01); bytes obtained; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-01T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "f5b1a931-2837-5b76-ab74-73f284da0cf1",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "8198d32ee695709cb1310b99a44db5bc70e6e3b3590394ad063f81ce544fdfae",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Decoy loader DLL side-loaded by a signed host; matches YARA MAL_ROMULUS_SideLoaded_Decoy_Loader_DLL; extracted from numeric MSI '3' (28520147...) [type: sha256; verdict: malicious; source: extracted by this project; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-24T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "db5d0308-4d97-5c9c-8d6f-1cffe82b0ecc",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "8f6f14485f0118637766e60a1382b5457d41056c60ac8783e8b5b82e9fd1faa5",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "MSI '038355' from the ROMULUS MSI builder set (name = URL path served by ROMULUS nodes per urlscan); matches YARA MAL_ROMULUS_MSI_Builder_Script_CustomAction [type: sha256; verdict: malicious; source: MalwareBazaar (BlinkzSec 2026-11-01, tag LegionLoader); bytes obtained; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-01T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "945341bb-6e18-58c6-8332-046141c6ef39",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "917f2bc33faba15236be1bf6c5a121dbca3fdf38b56c03ad08e6c46b464509fe",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "ClipboardFusion.msi: Malicious installer [type: sha256; verdict: malicious; source: VENDOR-REPORTED: Blackpoint 2026-11-18]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-18T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "6492cfd9-20dc-5d87-bc8e-0551ea477e5c",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "91a22cf3154944897cbcaffc7d20d4596e972d280ee134197d41d8d8eefb0fe2",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "IconEdit2Turb.msi: Malicious installer (Stardock chain) [type: sha256; verdict: malicious; source: VENDOR-REPORTED: Blackpoint 2026-11-18; also Forescout 2026-10-15 / Huntress 2026-09-28; bytes obtained and SHA-256 verified by us]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "f73e0b60-7be3-59a6-81e2-bd6bd8b97636",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "920bc0ea1f58e06f4fa6e2038a62320dba36423e94bc169022cb125b84c6920a",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "MSI '071094' from the ROMULUS MSI builder set (name = URL path served by ROMULUS nodes per urlscan); matches YARA MAL_ROMULUS_MSI_Builder_Script_CustomAction [type: sha256; verdict: malicious; source: MalwareBazaar (BlinkzSec 2026-11-01, tag LegionLoader); bytes obtained; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-01T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "0ff47f20-ce4d-5963-9306-20818c80597c",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "9666fe7e1ff1f42bc8e9035cb54358dfeab009970ed005d3e2c9ecd1b54a40dc",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "MSI '2' from the ROMULUS MSI builder set (name = URL path served by ROMULUS nodes per urlscan); matches YARA MAL_ROMULUS_MSI_Builder_Script_CustomAction [type: sha256; verdict: malicious; source: MalwareBazaar (BlinkzSec 2026-11-01, tag LegionLoader); bytes obtained; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-01T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "3d691794-2a1d-5b68-8acc-91aa0e24e30b",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "98a1d42af78a82a61b1511479f7f8b3fb5f91bca8ff452cbf6576a32515c6b0d",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Script stage with the nibble/base64 decoders of the MSI builder; matches YARA MAL_ROMULUS_Script_Nibble_Base64_Decoders; extracted from numeric MSI 080095 [type: sha256; verdict: malicious; source: extracted by this project; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-24T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "23b5f476-ac12-5fdf-b4f3-ab12a37969ed",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "9a7ec20cfe939a0739819262c1e3ff0265c851136cc263597936773376a5d907",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "CNCMachineRMS Storage container (loader script + RAT); matches YARA MAL_CNCMachineRMS_Storage_Container; extracted from BabaDeda zip c68bffb8... [type: sha256; verdict: malicious; source: extracted by this project; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-24T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "502e6c22-69b1-573b-8081-cdd472d6e2e4",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "9ac13a8ef7bab76c4d074385fd783e8c9542a8db7a166c3d3921a48add092455",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "FilesInspectorX.msi: Malicious installer [type: sha256; verdict: malicious; source: VENDOR-REPORTED: Blackpoint 2026-11-18; bytes obtained and SHA-256 verified by us]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-18T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "4ad41a6f-2353-5fa6-a4b9-49aca3783b68",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "9ae0f9d4338e4719d78a234a22c1ead941a66ed6b76d0ea4f4c332570788a74c",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "MSI '071094' from the ROMULUS MSI builder set (name = URL path served by ROMULUS nodes per urlscan); matches YARA MAL_ROMULUS_MSI_Builder_Script_CustomAction [type: sha256; verdict: malicious; source: MalwareBazaar (BlinkzSec 2026-11-01, tag LegionLoader); bytes obtained; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-01T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "704431fc-6c67-5bc7-b097-e9374da589c2",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "9c615db040b88c18ce6b96f30d08797045b7d506f940bea452dc7a6992fdbb8d",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "WMPCL.dll: helper DLL [type: sha256; verdict: malicious; source: VENDOR-REPORTED: Huntress 2026-09-28; extracted by this project; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "b5e75fed-b1db-5a83-97ee-e9192e9f89b9",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "a27cafb84876a3374ef4aba1062345def6cd0b029eaf8e0dc44fa24fc943f3c6",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "res.dll: network helper (Huntress) / additional loader component (BP) [type: sha256; verdict: malicious; source: VENDOR-REPORTED: Blackpoint 2026-11-18; also Forescout 2026-10-15 / Huntress 2026-09-28; bytes obtained and SHA-256 verified by us; extracted by this project; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "82c29e95-027f-5da4-8d89-36f1c23d2f51",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "a8e336577ff61f0e34fc4b0429b27a8f3c150994714e3dc5e42c88b0062f2c23",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Inner x64 PE (975,376 B, compiled 2026-07-05) decrypted from 68993.msi by our static pass; not unpacked further; not analysed beyond the PE header and section entropy [type: sha256; verdict: malicious; source: derived by this project from 737690df...]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-24T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "980194cd-9593-5b56-888f-731aa49c079c",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "a93344d6a743979dd867d662a8572562bdfbe4bd16c0daa5dbdfa18c0e2ac985",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "MSI '085175' from the ROMULUS MSI builder set (name = URL path served by ROMULUS nodes per urlscan); matches YARA MAL_ROMULUS_MSI_Builder_Script_CustomAction [type: sha256; verdict: malicious; source: MalwareBazaar (BlinkzSec 2026-11-01, tag LegionLoader); bytes obtained; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-01T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "6c02c6ed-905c-5b50-8746-b012e39f62aa",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "ab65bbfc505dbe1cebe6021fb36e2011f6aa1d64f5d87cee1cbee3fc2a0c7907",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "RAT shellcode: Canon chain RAT (BP says same RAT sha as Stardock chain) [type: sha256; verdict: malicious; source: VENDOR-REPORTED: Huntress 2026-09-28; extracted by this project; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "d99d40f6-d015-52d7-a26d-70fc0357d4a7",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "b59a21a8d4c0c11a9ecbbdbe2a2938499c99c5ebb210c9c6db9683c7ad19f4c4",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "senddmp.resources.dll: alloc/exec helper [type: sha256; verdict: malicious; source: VENDOR-REPORTED: Blackpoint 2026-11-18; also Forescout 2026-10-15 / Huntress 2026-09-28; bytes obtained and SHA-256 verified by us; extracted by this project; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "6660659b-7bf1-5116-bcce-34f2f691c81d",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "b6769af4f9ed80121bd826e519e56dd57463f5688cc8c41287c43df2a86eeb88",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "MSI '038355' from the ROMULUS MSI builder set (name = URL path served by ROMULUS nodes per urlscan); matches YARA MAL_ROMULUS_MSI_Builder_Script_CustomAction [type: sha256; verdict: malicious; source: MalwareBazaar (BlinkzSec 2026-11-01, tag LegionLoader); bytes obtained; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-01T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "369e8ca1-e263-5173-8407-5a1090dc3a22",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "b77575413c0f97eaf31e4a44c884c1ecdc0049ec89916ceb0bf3aaaedc0442fe",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "rdCore.dll: Decodes loader from .wav [type: sha256; verdict: malicious; source: VENDOR-REPORTED: Huntress 2026-09-28; extracted by this project; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "10bc7288-c173-54b6-a5f1-16e650a07482",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "b804b9dd2726e69fb4f496a6872f90edf9146ad8044c6d3a592040ce1074a5d0",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Xceed.Wpf.DataGrid.dll: BabaDeda chain [type: sha256; verdict: malicious; source: VENDOR-REPORTED: LevelBlue 2026-08-10]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-08-10T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "871a679a-ce70-504f-b036-fc97be8ff200",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "b962250b8eb977322899cbfd79e6adb6b3e6ac4fcef5cbdb724dde3ee203f1b7",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Decoy loader DLL side-loaded by a signed host; matches YARA MAL_ROMULUS_SideLoaded_Decoy_Loader_DLL; extracted from AllMyBasic.msi (f4d7c532...) [type: sha256; verdict: malicious; source: extracted by this project; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-24T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "a2fdb088-693f-5f6c-b3a5-d975038faaa5",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "bb19340e9d9d29241321f3e8486901aaf130e65f809c67bf59eb5ae69f3cd304",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Script stage with the nibble/base64 decoders of the MSI builder; matches YARA MAL_ROMULUS_Script_Nibble_Base64_Decoders; extracted from numeric MSI 080095 [type: sha256; verdict: malicious; source: extracted by this project; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-24T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "9038ac9d-2852-5d45-9e6e-86756ad91a1e",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "bb81786286be437b3ec6d562055767097c9277054e1d09172caa96376451481c",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "CNCMachineRMS payload: LevelBlue-era RAT blob 16100 [type: sha256; verdict: malicious; source: VENDOR-REPORTED: LevelBlue 2026-08-10]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-08-10T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "3f04229e-36b1-578c-bb60-283c43d92cd0",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "bddc9f8116008c03cb90c2753eb85d6e264e80d64189c64e39706c8c989854d1",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Decoy loader DLL side-loaded by a signed host; matches YARA MAL_ROMULUS_SideLoaded_Decoy_Loader_DLL; extracted from numeric MSI '3' (28520147...) [type: sha256; verdict: malicious; source: extracted by this project; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-24T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "81403111-a1e3-50ed-afa7-9062fb3d27ea",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "c4603646701069ebdeabc96f74e1f947355ace8575560986d8393fcc6b88d0b7",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "5689.ps1: v2 ClickFix stager [type: sha256; verdict: malicious; source: VENDOR-REPORTED: Huntress 2026-09-28]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "71ae6b16-5b0b-5768-afa9-be4a75aa63bb",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "cd0c4a46b163c5b6b2ee563be95328f57c627e2ba90bbbd4aa470765cd4849f6",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "MSI '038355' from the ROMULUS MSI builder set (name = URL path served by ROMULUS nodes per urlscan); matches YARA MAL_ROMULUS_MSI_Builder_Script_CustomAction [type: sha256; verdict: malicious; source: MalwareBazaar (BlinkzSec 2026-11-01, tag LegionLoader); bytes obtained; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-01T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "c38221a7-39b7-54e4-841a-5561be44a6bd",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "d096a4ea41fe73b8c216e1058a1e895220dddc5f7218c3e603e3b18b2b3456f9",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "MSI '085175' from the ROMULUS MSI builder set (name = URL path served by ROMULUS nodes per urlscan); matches YARA MAL_ROMULUS_MSI_Builder_Script_CustomAction [type: sha256; verdict: malicious; source: MalwareBazaar (BlinkzSec 2026-11-01, tag LegionLoader); bytes obtained; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-01T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "4b7ecade-04c5-5221-922b-ef2f26ebcb2d",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "d3fda1e6cf886fd530bf62e2d16c39ad23ed12a2c933fc211f1f4876ceaa033e",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Build.dat: NuGet-package carrier of encrypted loader [type: sha256; verdict: malicious; source: VENDOR-REPORTED: Blackpoint 2026-11-18; also Forescout 2026-10-15 / Huntress 2026-09-28]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "b9428ad4-d49f-53af-975e-f7fe3be51f36",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "d5acf44658f0dce90bd160f15d8e07a96938c81661d87dc7e9cb0107863bfb90",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "execute_engine_disconnect.raw: Storage container w/ script (16001) + RAT (16100) [type: sha256; verdict: malicious; source: VENDOR-REPORTED: Forescout 2026-10-15; Huntress 2026-09-28; extracted by this project; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "16ffe2a5-a848-5d10-8a67-26488727a0dd",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "d7bcae4a915261ace7a845f8c1bb2a54ce918921805204125705bfae29656851",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Decoy loader DLL side-loaded by a signed host; matches YARA MAL_ROMULUS_SideLoaded_Decoy_Loader_DLL; extracted from BabaDeda zip c68bffb8... [type: sha256; verdict: malicious; source: extracted by this project; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-24T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "0e814291-e976-5b9b-b64f-30f9aa0ea1a8",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "d9274c98d7be30e6045e63d3acc190055a3849e2992b7382643c16a5aefa22dc",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Decrypted CNCMachineRMS RAT core (blob 16100) reproduced by our extractor; memory-only artefact, never a file on disk; matches YARA MAL_CNCMachineRMS_Core_Decrypted_x64 [type: sha256; verdict: malicious; source: extracted by this project; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-24T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "b89a8d39-302b-52b2-a61e-32682219f090",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "d95a5e3447077a4cb0cad3110bf761b26270a140a4817744b9570e0887591e4c",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "CNCMachineRMS Storage container (loader script + RAT); matches YARA MAL_CNCMachineRMS_Storage_Container; extracted from AllMyBasic.msi (f4d7c532...) [type: sha256; verdict: malicious; source: extracted by this project; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-24T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "70e1176c-406f-5f63-adba-962427e1351d",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "db2a4e300c9442b10840a790e93f7b99844d13e0305dd4ad052db62a379a1731",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "MSI '038355' from the ROMULUS MSI builder set (name = URL path served by ROMULUS nodes per urlscan); matches YARA MAL_ROMULUS_MSI_Builder_Script_CustomAction [type: sha256; verdict: malicious; source: MalwareBazaar (BlinkzSec 2026-11-01, tag LegionLoader); bytes obtained; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-01T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "e2a3c668-7afa-5810-844f-9eaf7fd65263",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "e58831766e8d4313db9f8b85f90c3a840aa0d84cfeac285beefa40e39ad0d1fb",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "ceiinfolog.dll: Patched Canon DLL (imports rdCore.dll) [type: sha256; verdict: malicious; source: VENDOR-REPORTED: Huntress 2026-09-28]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "1896f117-f5cc-560a-9b21-62ff099a899b",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "e614b7d5a7a363fb1b355a87e2e8d9e8a05bbbca08f2cee3d606bdb5015ac53b",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "monitor.raw: encrypted archive (script+RAT) Canon chain [type: sha256; verdict: malicious; source: VENDOR-REPORTED: Huntress 2026-09-28; extracted by this project; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "cf527c42-057d-5203-a621-f97a7c16b937",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "eff5d63ddf1813962f0d8ad1250cea5486c8bb5dd27c3f432b43957a33e43764",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "WPFLocalizeExtension.dll: malicious native DLL [type: sha256; verdict: malicious; source: VENDOR-REPORTED: Huntress 2026-09-28; extracted by this project; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "8dad78d2-4751-59ca-bb32-1f128c323dab",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "f1b38c9412a18eecc1e29bb058aa87bdbe41edac073c190aab517248cc68ad1d",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Decoded ROMULUS PowerShell stage (int-array char offsets); matches YARA MAL_ROMULUS_PS_IntArray_CharOffset_Stager; extracted from 68993.msi (737690df...) [type: sha256; verdict: malicious; source: extracted by this project; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-24T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "a883e082-25f4-5bee-8bfe-268a60cf0803",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "f205498b7aef46e722cc5fcc4ecfcdf2ae7407277c33351bd6c977416e2e3f2c",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "MSI '6987' from the ROMULUS MSI builder set (name = URL path served by ROMULUS nodes per urlscan); matches YARA MAL_ROMULUS_MSI_Builder_Script_CustomAction [type: sha256; verdict: malicious; source: MalwareBazaar (BlinkzSec 2026-11-01, tag LegionLoader); bytes obtained; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-01T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "03b29052-1689-5197-9962-8396e615292b",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "f3a8d40d9a7060bcad4444a7994c68d6d15ae556852d3324a125c55d56bb3702",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "MSI '080095' from the ROMULUS MSI builder set (name = URL path served by ROMULUS nodes per urlscan); matches YARA MAL_ROMULUS_MSI_Builder_Script_CustomAction [type: sha256; verdict: malicious; source: MalwareBazaar (BlinkzSec 2026-11-01, tag LegionLoader); bytes obtained; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-01T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "710e69a5-7e0f-5544-8a0c-d30c0e15056d",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "f4c375f43b22056267ba4633c9e86a3120705f96cd053f2dbe629da09d63c318",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "MSI '2023' from the ROMULUS MSI builder set (name = URL path served by ROMULUS nodes per urlscan); matches YARA MAL_ROMULUS_MSI_Builder_Script_CustomAction [type: sha256; verdict: malicious; source: MalwareBazaar (BlinkzSec 2026-11-01, tag LegionLoader); bytes obtained; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-01T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "71cbfc6d-be11-5b6a-9d7b-129875ab0abd",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "f4d7c5321bb0d1bda439304a753bcf9b467b98ca53c7e9493b9c2c3451092e4a",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "AllMyBasic.msi: Malicious installer [type: sha256; verdict: malicious; source: VENDOR-REPORTED: Blackpoint 2026-11-18; bytes obtained and SHA-256 verified by us]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-18T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "b685aac7-1d09-58f7-b066-77532e1f83d3",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "f9440912b7f3a35c91ec7c9b98eaa9986733a60bb1be9e5a2591460dc135e9e8",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "MSI '1080' from the ROMULUS MSI builder set (name = URL path served by ROMULUS nodes per urlscan); matches YARA MAL_ROMULUS_MSI_Builder_Script_CustomAction [type: sha256; verdict: malicious; source: MalwareBazaar (BlinkzSec 2026-11-01, tag LegionLoader); bytes obtained; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-01T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "3d9f820a-bfcd-5c72-9441-ca9ed388e199",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "faadf376cc6d2ff6dd56c814a99c4d3276bf10c843d04fb8fbd9b3ccedad428f",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "MSI '078541' from the ROMULUS MSI builder set (name = URL path served by ROMULUS nodes per urlscan); matches YARA MAL_ROMULUS_MSI_Builder_Script_CustomAction [type: sha256; verdict: malicious; source: MalwareBazaar (BlinkzSec 2026-11-01, tag LegionLoader); bytes obtained; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-01T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "37e6bd8e-3b66-59ec-9f79-b03353111e7d",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "fcbeea2c639ed7c3e8d7c2d78105c695e83f26ac62a6ba3c466b374a92393495",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "MSI '085175' from the ROMULUS MSI builder set (name = URL path served by ROMULUS nodes per urlscan); matches YARA MAL_ROMULUS_MSI_Builder_Script_CustomAction [type: sha256; verdict: malicious; source: MalwareBazaar (BlinkzSec 2026-11-01, tag LegionLoader); bytes obtained; YARA]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-01T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "50a08669-3874-5061-aae4-12653b637114",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "0562c588997fa9961d55c6ab1db2656344324bca8db9ea7b64fe309132b2399f",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WinWrapIDE.exe: Legitimate IBM SPSS host (BabaDeda chain) [type: sha256; verdict: shared-or-legit-infrastructure; source: VENDOR-REPORTED: LevelBlue 2026-08-10]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-08-10T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "b3c3d2a2-3421-57c1-829c-81ab6c062bcb",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "22869e3326fe1de011cd500e666769027126c5c440b76837baf55139f30094e4",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "DeElevate64.exe: Legitimate signed Stardock host - do not block [type: sha256; verdict: shared-or-legit-infrastructure; source: VENDOR-REPORTED: Forescout 2026-10-15; Huntress 2026-09-28]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "caa8af68-75fa-5a09-8900-3201d872b127",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "278e2f3e2f26c18666b89ef774b4af9ce954e36b2bf54a2392608619245d8c48",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "COTFileReadApp.exe: Legitimate Canon-signed host [type: sha256; verdict: shared-or-legit-infrastructure; source: VENDOR-REPORTED: Huntress 2026-09-28]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "c1ce1141-ab7b-541c-8d8b-dd8b44ec8f6a",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "cloubflare.net",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Listed by the vendor as ROMULUS C2 (typosquat of a CDN brand) [type: domain; verdict: malicious; source: VENDOR-REPORTED: Blackpoint 2026-11-18]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-18T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "fad4a60f-7011-52b0-92bc-28b4692c27b8",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "cloubflare.top",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Listed by Blackpoint as ROMULUS C2 (typosquat of a CDN brand) [type: domain; verdict: malicious; source: VENDOR-REPORTED: Blackpoint 2026-11-18]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-18T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "c40e26a5-f564-5f4d-b540-83ec20ee0032",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "cocu.cc",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "ROMULUS panel domain: /login \"Romulus\" on 167.148.201.67 [type: domain; verdict: malicious; source: urlscan.io public scans; ThreatFox 2016430 (reporter abuse_ch, tag ViriBack)]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-05T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "c5a99c0e-a14d-52f2-ae0b-a2ce5f9f408c",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "gptverification.com",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "ClickFix lure domain [type: domain; verdict: malicious; source: VENDOR-REPORTED: Huntress 2026-09-28]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "cdc8a119-7143-5ec4-a31e-2d7fba8a1fb8",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "microsoft-winupdate.com",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "ROMULUS panel domain behind Cloudflare: /login titled \"Romulus\" in 4 urlscan scans 2026-11-09; Microsoft lookalike name. Cloudflare answered 522 (origin down) on 2026-11-24 ~08:00 UTC [type: domain; verdict: malicious; source: urlscan.io public scans; not on ThreatFox at 2026-11-24]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-09T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "10bffd63-f36c-5290-8edf-b93b51a7ce66",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "nfenribj3.com",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "CNCMachineRMS gate (host:port 443) decoded from the Storage container of the ROMULUS Stardock build (d5acf446...) and of numeric MSI '3' (container 06b8adb4...); campaign id 'test'. DNS over HTTPS (public resolver, read via Tor 2026-11-24 08:37 UTC) answered 139.28.240.185 [type: domain; verdict: malicious; source: static config extraction by this project (tools/cncmachinerms-extract; nothing executed natively); not on ThreatFox at 2026-11-24]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "0e45cb56-6915-5592-bd20-37cb8d6e3a26",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "notepadreleased.com",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "CNCMachineRMS C2 (BabaDeda chain) [type: domain; verdict: malicious; source: VENDOR-REPORTED: LevelBlue 2026-08-10; ThreatFox 1883837 (Netresec)]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-08-10T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "c97a5328-9c0b-54b9-a1ba-3d6900c75965",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "novatrafficcore.lol",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "earlier stager URL /AsFJfTQYDTkpOg6K [type: domain; verdict: malicious; source: VENDOR-REPORTED: Forescout 2026-10-15]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-10-15T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "cc828f3d-d021-5377-b384-3165205dabd3",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "orbitflownetwork.lol",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "LegionLoader archive delivery /dl/J8QkZUVJgV.7z [type: domain; verdict: malicious; source: VENDOR-REPORTED: Forescout 2026-10-15]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-10-15T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "c5ba7982-69de-5108-8f1c-ad055fe71aa3",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "redjaxfire.com",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "LegionLoader C2 host read from the stage-5 PE (00ef251f..., compiled 2026-10-28) by our static config reader; gate paths /nfront.php and /nback.php. urlscan scans on 109.238.86.137 2026-10-31 to 2026-11-01. No DNS answer from 3 check-host nodes 2026-11-24 ~08:00 UTC [type: domain; verdict: malicious; source: static config extraction (tools/legionloader-config); ThreatFox 2008855 (Rnascimento147, tags ClickFix, OnionDrop, ROMULUS) and 2006129 / 2006465 (the /nfront.php and /nback.php URLs)]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-10-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "b6b4f483-67ab-5e80-86d9-c31e4da685a2",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "smashshape.com",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "LegionLoader C2 (/nfront.php, /nback.php); host read from the stage-3 PE config by our static reader (2e3d378d...) [type: domain; verdict: malicious; source: VENDOR-REPORTED: Forescout 2026-10-15; ThreatFox 1941575 and 1941564 (reporter abuse_ch)]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-10-15T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "88428ae9-75dc-5721-91a8-66d769e1d7d7",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "towerrush.cam",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "ROMULUS panel domain: /login \"Romulus\" on 91.92.43.239 [type: domain; verdict: malicious; source: urlscan.io public scans; ThreatFox 2016347 (reporter abuse_ch, tag ViriBack)]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-04T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "1fa59b0a-032d-5abb-9273-35e2f7f9d1bd",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "triotmelon.com",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "CNCMachineRMS gate decoded from load.db of the BabaDeda zip c68bffb8... (campaign id first); A record 144.124.242.171 (DoH 2026-11-24 08:38 UTC) [type: domain; verdict: malicious; source: static config extraction by this project (tools/cncmachinerms-extract; nothing executed natively); ThreatFox 1883838 (Netresec)]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-08-21T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "e0ad730a-a026-57df-96f5-f22948d36f2d",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "wizardexpensive.com",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "CNCMachineRMS gate decoded from the Storage containers of FilesInspectorX.msi (4652fe86..., campaign id 'default') and AllMyBasic.msi (d95a5e34..., campaign id 'first'). DoH answered 96.62.218.59 (2026-11-24 08:38 UTC) [type: domain; verdict: malicious; source: static config extraction by this project (tools/cncmachinerms-extract; nothing executed natively); not on ThreatFox at 2026-11-24]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-10-06T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "8370a4e7-df16-5289-8b7b-827889fc1c41",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "benderoflight.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "LegionLoader-style C2 (same /nfront.php + /nback.php paths as smashshape.com); resolves to 109.238.86.137 in urlscan scans 2026-11-16. Candidate: the link to the LegionLoader family rests on the shared URL paths and the shared IP, the host was not read from a sample config; no DNS answer from 3 check-host nodes 2026-11-24 ~08:00 UTC [type: domain; verdict: candidate; source: urlscan.io public scans]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-16T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "3227fa8e-d6f2-57a5-8d2e-5738209bbce7",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "dayafterfifty.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "LegionLoader-style C2 (same /nfront.php + /nback.php paths as smashshape.com); resolves to 109.238.86.137 in urlscan scans 2026-11-21. Candidate: the link to the LegionLoader family rests on the shared URL paths and the shared IP, the host was not read from a sample config; no DNS answer from 3 check-host nodes 2026-11-24 ~08:00 UTC [type: domain; verdict: candidate; source: urlscan.io public scans]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-21T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "3d8189ac-0402-5bea-b848-3cee996bb420",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "feidaindy.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "LegionLoader-style C2 (same /nfront.php + /nback.php paths as smashshape.com); resolves to 109.238.86.137 in urlscan scans 2026-11-18. Candidate: the link to the LegionLoader family rests on the shared URL paths and the shared IP, the host was not read from a sample config; no DNS answer from 3 check-host nodes 2026-11-24 ~08:00 UTC [type: domain; verdict: candidate; source: urlscan.io public scans]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-18T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "ef4bdcb5-2786-518c-9414-bf7410af6f7f",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "jarrettpico.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "LegionLoader-style C2 (same /nfront.php + /nback.php paths as smashshape.com); resolves to 109.238.86.137 in urlscan scans 2026-11-23 to 2026-11-24. Candidate: the link to the LegionLoader family rests on the shared URL paths and the shared IP, the host was not read from a sample config; /nfront.php answered HTTP 405 from 3 check-host nodes 2026-11-24 ~08:00 UTC [type: domain; verdict: candidate; source: urlscan.io public scans]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-23T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "de4364b8-8fee-5407-81f7-49c3882555a2",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "mesoncord.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "LegionLoader-style C2 (same /nfront.php + /nback.php paths as smashshape.com); resolves to 109.238.86.137 in urlscan scans 2026-10-27 to 2026-10-28. Candidate: the link to the LegionLoader family rests on the shared URL paths and the shared IP, the host was not read from a sample config; not checked for liveness [type: domain; verdict: candidate; source: urlscan.io public scans]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-10-27T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "9bb65820-64b3-56a4-9f68-cc033fc7e7ac",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "sdnrlre.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "LegionLoader-style C2 (same /nfront.php + /nback.php paths as smashshape.com); resolves to 109.238.86.137 in urlscan scans 2026-11-19 to 2026-11-20. Candidate: the link to the LegionLoader family rests on the shared URL paths and the shared IP, the host was not read from a sample config; no DNS answer from 3 check-host nodes 2026-11-24 ~08:00 UTC [type: domain; verdict: candidate; source: urlscan.io public scans]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "6b3af421-bf7f-5996-81b0-333d7fae16eb",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "toddloftindds.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "LegionLoader-style C2 (same /nfront.php + /nback.php paths as smashshape.com); resolves to 109.238.86.137 in urlscan scans 2026-11-06 to 2026-11-11. Candidate: the link to the LegionLoader family rests on the shared URL paths and the shared IP, the host was not read from a sample config; no DNS answer from 3 check-host nodes 2026-11-24 ~08:00 UTC [type: domain; verdict: candidate; source: urlscan.io public scans]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-06T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "cad07ccc-80b1-5327-b7aa-ab155f00d7ba",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "139.28.240.185",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Current A record of the decoded gate domain nfenribj3.com (DoH, 2026-11-24 08:37 UTC, TTL 300). TCP 443 refused or timed out from 5 of 5 check-host nodes at 08:44 UTC, so it is a DNS value of the gate, not a confirmed listener [type: ipv4; verdict: malicious; source: DNS over HTTPS (via Tor) + check-host.net bare TCP; the domain is decoded from sample configs]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-24T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "28f2a37a-1a5e-5bd9-9029-1b19acaa427e",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "151.240.151.223",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "ROMULUS node [type: ipv4; verdict: malicious; source: VENDOR-REPORTED: Blackpoint 2026-11-18; Forescout 2026-10-15]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-10-15T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "42548a3e-875c-5e71-95d4-d474c3e042be",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "167.148.201.224",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "ROMULUS node; served ClipboardFusion.msi [type: ipv4; verdict: malicious; source: VENDOR-REPORTED: Blackpoint 2026-11-18]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-18T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "2a0c6b84-c58e-563a-9432-dbfebaa5ecc4",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "167.148.201.67",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "ROMULUS panel/delivery node behind cocu.cc: /login page titled \"Romulus\" in urlscan scans 2026-11-05 to 2026-11-11; same /24 as the vendor-listed 167.148.201.224. HTTP 301 from 3 check-host nodes 2026-11-24 ~08:00 UTC [type: ipv4; verdict: malicious; source: urlscan.io public scans; ThreatFox 2032923 (reporter 0xJustme, RomulusLoader)]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-05T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "3968828e-abc5-5586-ab19-08138a33e700",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "167.76.44.160",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "ROMULUS delivery node (Blackpoint labels it C2); served ClipboardFusion.msi [type: ipv4; verdict: malicious; source: VENDOR-REPORTED: Blackpoint 2026-11-18]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-18T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "32f57467-dca1-59fd-9a31-703549759916",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "2.27.248.127",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "ROMULUS node [type: ipv4; verdict: malicious; source: VENDOR-REPORTED: Blackpoint 2026-11-18; Forescout 2026-10-15]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-10-15T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "a1388bed-2961-5dc2-b43b-db027fed6c55",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "23.94.145.229",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "ROMULUS panel/delivery node: /login page titled \"Romulus\" in urlscan scans 2026-10-29 to 2026-11-03; route /e/692a7d50aaf0/<md5>, numeric MSI paths /8177 /93607. Check-host timeout from 3 nodes 2026-11-24 ~08:00 UTC [type: ipv4; verdict: malicious; source: urlscan.io public scans]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-10-29T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "4a12c1ac-5298-5187-9a88-88bf36fab605",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "23.94.145.243",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "ROMULUS panel/delivery node: /login page titled \"Romulus\" in urlscan scans 2026-11-03/04; routes /e/37bb235b7995/<md5> and numeric MSI paths /11745 /5821. Check-host https timeout from 3 nodes 2026-11-24 ~08:00 UTC [type: ipv4; verdict: malicious; source: urlscan.io public scans; ThreatFox 2028248 (Crash371, URL http://23.94.145.243/s/37bb235b7995)]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-03T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "3c749059-ee2a-529d-a476-4197c3caed84",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "23.94.145.52",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "ROMULUS panel/delivery node: /login page titled \"Romulus\" in urlscan scans 2026-10-25/26; numeric MSI path /98339. Check-host timeout from 3 nodes 2026-11-24 ~08:00 UTC [type: ipv4; verdict: malicious; source: urlscan.io public scans]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-10-25T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "8af70bd3-0e2c-5faa-b3f8-599a42027fa9",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "23.94.252.153",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "ROMULUS node [type: ipv4; verdict: malicious; source: VENDOR-REPORTED: Blackpoint 2026-11-18]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-18T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "07512f10-72e5-5c6c-bb8b-c066371e821f",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "45.140.205.28",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Payload server seen in a related incident (Huntress); also decoded as a CNCMachineRMS gate (see endpoint row) [type: ipv4; verdict: malicious; source: VENDOR-REPORTED: Huntress 2026-09-28]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "a589406d-5d35-564c-9091-0dbc7b57350b",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "78.159.131.254",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Stage host of a second LegionLoader ClickFix chain: 281.ps1 downloads /yrjrs/ver.pa (AES-CBC shellcode); URL decoded statically from 281.ps1; 16 urlscan scans 2026-11-02. Connection refused 2026-11-24 ~08:00 UTC [type: ipv4; verdict: malicious; source: static analysis of 281.ps1 (MalwareBazaar 7eb0d8e8...); ThreatFox 2008908 / 2008909 / 2008910 (Daydream, Satacom/LegionLoader)]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-01T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "5d819d58-dfda-5f98-a295-eb5440109c6d",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "85.158.110.78",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "CNCMachineRMS C2 TCP/443 (BabaDeda chain) [type: ipv4; verdict: malicious; source: VENDOR-REPORTED: LevelBlue 2026-08-10; also ThreatFox 1883834 (Netresec)]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-08-10T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "8b26a1c0-18da-5b47-8d5f-ac84c1eccc33",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "86.107.124.7",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "ROMULUS node [type: ipv4; verdict: malicious; source: VENDOR-REPORTED: Blackpoint 2026-11-18]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-18T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "b2546a69-d5fd-55f3-acea-3f48eb330edc",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "86.109.75.7",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "ROMULUS node (decimal 1450003207), /stats.htm panel [type: ipv4; verdict: malicious; source: VENDOR-REPORTED: Blackpoint 2026-11-18; Forescout 2026-10-15]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-10-15T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "7bf638cb-b28e-5e80-b916-e96aa1909ee7",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "89.110.110.119",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "CNCMachineRMS C2 of the BabaDeda chain (August builds); absent from the Blackpoint list [type: ipv4; verdict: malicious; source: ThreatFox 1883833 (Netresec)]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-08-21T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "a41c65ae-3a09-545c-baf9-883209b642dd",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "89.124.79.98",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "CNCMachineRMS C2 of the BabaDeda chain (August builds); absent from the Blackpoint list [type: ipv4; verdict: malicious; source: ThreatFox 1883835 (Netresec)]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-08-21T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "d5fee8f9-bcdd-571b-86cc-a7e6194d7bb8",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "91.92.43.239",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "ROMULUS panel node behind towerrush.cam: /login page titled \"Romulus\" in urlscan scans 2026-11-04/05. Check-host timeout from 3 nodes 2026-11-24 ~08:00 UTC [type: ipv4; verdict: malicious; source: urlscan.io public scans; domain is ThreatFox 2016347 (reporter abuse_ch, tag ViriBack, RomulusLoader)]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-04T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "330eee75-2d79-5986-95d5-10a7db9f3651",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "91.92.43.242",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "ROMULUS panel/delivery node: /login page titled \"Romulus\" in a urlscan scan 2026-10-31; serves numeric MSI paths /038355 /078541 /080095 /085175 /071094. Port 80 refused from 2 of 3 check-host nodes 2026-11-24 ~08:00 UTC [type: ipv4; verdict: malicious; source: urlscan.io public scans; ThreatFox 1973942 (reporter abuse_ch, tag ViriBack, RomulusLoader)]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-10-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "3e775b8f-2c19-5bb3-9e47-c6f2c78939e3",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "93.152.213.151",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "ROMULUS node [type: ipv4; verdict: malicious; source: VENDOR-REPORTED: Blackpoint 2026-11-18]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-18T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "7cae5ba9-6ee7-5e0b-81c7-f6678d25824e",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "96.62.224.81",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "ROMULUS node / Huntress ClickFix script+MSI host (decimal 1614733393) [type: ipv4; verdict: malicious; source: VENDOR-REPORTED: Blackpoint 2026-11-18; Forescout 2026-10-15; Huntress 2026-09-28]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "9757aed3-105f-5d88-ac09-a93dd1c891c2",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "109.238.86.137",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Single IP behind the eight rotating LegionLoader-style C2 domains (HTTPS 443); 75 urlscan scans 2026-10-27 to 2026-11-24. The domains rotate every 2 to 5 days [type: ipv4; verdict: candidate; source: urlscan.io public scans; ThreatFox 2008856 (Rnascimento147, 109.238.86.137:443) and 2031301 (TOM123, URL http://109.238.86.137)]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-10-27T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "e5b23650-d127-5958-90de-270c518aecdb",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "23.94.145.224",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ROMULUS host listed by Forescout with partial-octet notation (differs from BP 23.94.252.153); Forescout and Blackpoint list different octets for this host, so this value may be a transcription variant [type: ipv4; verdict: candidate; source: VENDOR-REPORTED: Forescout 2026-10-15]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-10-15T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "9515f531-6e22-58e4-ac4d-ad30c643fbb3",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "93.152.224.118",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ROMULUS host listed by Forescout with partial-octet notation (differs from BP 93.152.213.151); Forescout and Blackpoint list different octets for this host, so this value may be a transcription variant [type: ipv4; verdict: candidate; source: VENDOR-REPORTED: Forescout 2026-10-15]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-10-15T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "82940b77-f142-5b9e-bdd9-e4e2a727ad79",
+        "type": "ip-dst|port",
+        "category": "Network activity",
+        "value": "144.124.242.171|443",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "CNCMachineRMS gate decoded from load.db of the BabaDeda zip; also the A record of triotmelon.com (DoH 2026-11-24 08:38 UTC). TCP 443 answered from 4 of 4 reporting check-host nodes 2026-11-24 08:44 UTC [type: endpoint; verdict: malicious; source: static config extraction by this project (tools/cncmachinerms-extract; nothing executed natively); ThreatFox 1883836 (Netresec)]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-08-21T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "57c64128-3401-537f-8bfc-c05113aeebd4",
+        "type": "ip-dst|port",
+        "category": "Network activity",
+        "value": "45.140.205.28|443",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "CNCMachineRMS gate decoded from the same two containers as nfenribj3.com (listed second in the gate list). TCP 443 answered from 5 of 5 check-host nodes 2026-11-24 08:44 UTC [type: endpoint; verdict: malicious; source: static config extraction by this project (tools/cncmachinerms-extract; nothing executed natively); already ThreatFox 1941440 (anonymous reporter, Unknown Loader)]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "156cf9ab-8e99-5ba7-a1f0-fd6b52c28f50",
+        "type": "ip-dst|port",
+        "category": "Network activity",
+        "value": "85.158.110.78|443",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "CNCMachineRMS C2 TCP/443 of the BabaDeda chain (LevelBlue). TCP 443 timed out from 4 of 4 reporting check-host nodes 2026-11-24 08:44 UTC [type: endpoint; verdict: malicious; source: VENDOR-REPORTED: LevelBlue 2026-08-10; ThreatFox 1883834 (Netresec)]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-08-10T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "79488fbf-3f04-537c-bd11-5caa4aabc66f",
+        "type": "ip-dst|port",
+        "category": "Network activity",
+        "value": "96.62.218.59|443",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "CNCMachineRMS gate decoded from the same two containers as wizardexpensive.com; it is also the A record of that domain (DoH 2026-11-24 08:38 UTC). TCP 443 answered from 5 of 5 check-host nodes 2026-11-24 08:44 UTC [type: endpoint; verdict: malicious; source: static config extraction by this project (tools/cncmachinerms-extract; nothing executed natively); not on ThreatFox at 2026-11-24]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-10-06T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "357b7fae-39a7-5724-89b4-1ae9a76cf3cb",
+        "type": "url",
+        "category": "Network activity",
+        "value": "http://167.148.201.224/app/5dbd80d34839/ClipboardFusion.msi",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "ROMULUS delivery URL [type: url; verdict: malicious; source: VENDOR-REPORTED: Blackpoint 2026-11-18]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-18T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "3464f722-1d1f-5635-bf7c-cd811ac1c0f7",
+        "type": "url",
+        "category": "Network activity",
+        "value": "http://167.76.44.160/app/5dbd80d34839/ClipboardFusion.msi",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "ROMULUS delivery URL [type: url; verdict: malicious; source: VENDOR-REPORTED: Blackpoint 2026-11-18]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-18T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "50c263ea-4937-5231-bb50-7fb387820a0d",
+        "type": "url",
+        "category": "Network activity",
+        "value": "http://78.159.131.254/yrjrs/ver.pa",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Stage-2 URL decoded from 281.ps1 (int-array obfuscation); shellcode loaded in memory by the script [type: url; verdict: malicious; source: static analysis of 281.ps1 (MalwareBazaar 7eb0d8e8...)]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-01T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "7dd854d0-1739-5c85-903b-d9b74c566400",
+        "type": "url",
+        "category": "Network activity",
+        "value": "http://86.109.75.7/app/19481b28bd67/IconEdit2Turb.msi",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "ROMULUS delivery URL [type: url; verdict: malicious; source: VENDOR-REPORTED: Forescout 2026-10-15]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-10-15T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "ac69413e-aa8e-5d8e-abcd-2c6be5605d64",
+        "type": "url",
+        "category": "Network activity",
+        "value": "http://86.109.75.7/app/2c56afb54013/overlay.msi",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "ROMULUS delivery URL (vendor: not analysed) [type: url; verdict: malicious; source: VENDOR-REPORTED: Forescout 2026-10-15]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-10-15T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "31c2091e-214d-5d02-83fe-39642acc26a9",
+        "type": "url",
+        "category": "Network activity",
+        "value": "http://86.109.75.7/app/40152518488f/235235.msi",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "ROMULUS delivery URL (vendor: not analysed) [type: url; verdict: malicious; source: VENDOR-REPORTED: Forescout 2026-10-15]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-10-15T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "6b5b1ebe-d50a-590f-be00-6e48bef04a9e",
+        "type": "url",
+        "category": "Network activity",
+        "value": "http://86.109.75.7/app/60f9f0dbd64c/FreePhotoSlideShowDesktop_signed.msi",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "ROMULUS delivery URL (vendor: not analysed) [type: url; verdict: malicious; source: VENDOR-REPORTED: Forescout 2026-10-15]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-10-15T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "902d5a28-c89c-52fa-b8c2-22222f27400c",
+        "type": "url",
+        "category": "Network activity",
+        "value": "http://86.109.75.7/s/19481b28bd67",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Stardock stage route [type: url; verdict: malicious; source: VENDOR-REPORTED: Forescout 2026-10-15]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-10-15T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "8e0bd95b-8501-5577-9f8b-b5623bda0674",
+        "type": "url",
+        "category": "Network activity",
+        "value": "http://86.109.75.7/s/6c67e0336a7b",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "LegionLoader stage route [type: url; verdict: malicious; source: VENDOR-REPORTED: Forescout 2026-10-15]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-10-15T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "765b1cbd-f2e0-5608-850a-744b81962af8",
+        "type": "url",
+        "category": "Network activity",
+        "value": "http://96.62.224.81/app/50d6565cf39e/IconEdit2Turb.msi",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "ROMULUS delivery URL [type: url; verdict: malicious; source: VENDOR-REPORTED: Huntress 2026-09-28]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "487a8364-9a10-57bf-bc05-b9898cce3c99",
+        "type": "url",
+        "category": "Network activity",
+        "value": "http://96.62.224.81/app/a26b67343315/UltraFreeISOCreateWizardSolution.msi",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "ROMULUS delivery URL (vendor: not obtained) [type: url; verdict: malicious; source: VENDOR-REPORTED: Huntress 2026-09-28]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "297e1072-d455-5e64-9a78-401384d26a1c",
+        "type": "url",
+        "category": "Network activity",
+        "value": "http://96.62.224.81/app/afafa98279c9/ISOSimple.msi",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "ROMULUS delivery URL [type: url; verdict: malicious; source: VENDOR-REPORTED: Huntress 2026-09-28]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "1c8fd4ad-f086-5c20-9e64-6e6bc6a45889",
+        "type": "url",
+        "category": "Network activity",
+        "value": "http://96.62.224.81/s/50d6565cf39e",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "V2 stage-2 (via decimal 1614733393) [type: url; verdict: malicious; source: VENDOR-REPORTED: Huntress 2026-09-28]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "0bbebe18-2bb4-5f91-981b-79ce355a1d83",
+        "type": "url",
+        "category": "Network activity",
+        "value": "http://orbitflownetwork.lol/dl/J8QkZUVJgV.7z",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "two passworded 7z layers (LegionLoader archive) [type: url; verdict: malicious; source: VENDOR-REPORTED: Forescout 2026-10-15]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-10-15T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "bfdaa772-2182-5580-89ca-8b4fb11f0869",
+        "type": "url",
+        "category": "Network activity",
+        "value": "https://chatgpt.com/g/g-6ab595ad6554819181b686d4876efb80-plus-5-6",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "malicious Custom GPT [type: url; verdict: compromised-or-abused-legit; source: VENDOR-REPORTED: Huntress 2026-09-28]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "cb8657e7-8543-5a3a-9f6a-128db581e820",
+        "type": "url",
+        "category": "Network activity",
+        "value": "https://chatgpt.com/g/g-6ab6ba039440819185ed491740b11cf8-plus-5-6",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "malicious Custom GPT [type: url; verdict: compromised-or-abused-legit; source: VENDOR-REPORTED: Huntress 2026-09-28]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "5f8b69e6-3a08-5148-8067-940ce63425b1",
+        "type": "url",
+        "category": "Network activity",
+        "value": "https://sites.google.com/view/antibot172881",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Google Sites ClickFix lure [type: url; verdict: compromised-or-abused-legit; source: VENDOR-REPORTED: Huntress 2026-09-28]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "71016a9b-9034-5dad-9517-1eefa79fd5b0",
+        "type": "url",
+        "category": "Network activity",
+        "value": "https://sites.google.com/view/antibot381122/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Google Sites ClickFix lure [type: url; verdict: compromised-or-abused-legit; source: VENDOR-REPORTED: Huntress 2026-09-28]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "a4f519b9-6d54-5160-973b-49044a1e89d5",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/app/3af981719677/FileInspectorX.msi",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "ROMULUS payload route on 151.240.151.223 (urlscan); the vendors list the IP but not this token or file name [type: url-path; verdict: malicious; source: urlscan.io public scans]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ]
+      },
+      {
+        "uuid": "f36c7020-92da-57c9-807e-2fb7d0a004f7",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/e/37bb235b7995/8bde9ac8a7c0df47457d470474ebfb4f",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "ROMULUS encrypted-delivery route /e/<12 hex>/<32 hex> on 23.94.145.243 (urlscan 2026-11-04); the route is not in the vendor reports [type: url-path; verdict: malicious; source: urlscan.io public scans]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ]
+      },
+      {
+        "uuid": "2554ac21-a4a2-52f4-ae2b-7ea56d8b0340",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/e/692a7d50aaf0/f79a87d7164fd6e179e8911193204194",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Same /e/ route on 23.94.145.229 (urlscan 2026-11-01) [type: url-path; verdict: malicious; source: urlscan.io public scans]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ]
+      },
+      {
+        "uuid": "ff55e893-888c-5224-997e-015cab183665",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/nback.php",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "LegionLoader gate path read from both PE builds (stage 3, stage 5) by our static reader [type: url-path; verdict: malicious; source: static config extraction (tools/legionloader-config)]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-09-26T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "b87c7ee7-039d-54cd-8720-0b15c991e241",
+        "type": "uri",
+        "category": "Network activity",
+        "value": "/nfront.php",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "LegionLoader gate path read from both PE builds (stage 3, stage 5) by our static reader [type: url-path; verdict: malicious; source: static config extraction (tools/legionloader-config)]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-09-26T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "faa84db1-359f-562d-998c-240c883cc93f",
+        "type": "user-agent",
+        "category": "Network activity",
+        "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Vivaldi/5.3.2679.68",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "User-Agent string in the config of both LegionLoader builds (stage 3, stage 5); an old Vivaldi build string, so a request with it from a current system is unusual [type: user-agent; verdict: hunting-pivot; source: static config extraction (tools/legionloader-config)]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-09-26T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "48ed9148-94ff-53e9-9f31-509b24f86601",
+        "type": "text",
+        "category": "Other",
+        "value": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\Canon Configuration Reader",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Run value name, also used as scheduled-task name (vendor-reported) [type: registry-key; verdict: malicious; source: VENDOR-REPORTED: Huntress 2026-09-28]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "85d895c8-6823-554b-ac8d-004f64e11bc7",
+        "type": "text",
+        "category": "Other",
+        "value": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\IBM SPSS WinWrap Basic IDE",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Run value name, also used as scheduled-task name (vendor-reported) [type: registry-key; verdict: malicious; source: VENDOR-REPORTED: LevelBlue 2026-08-10]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-08-10T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "05b9f331-a9eb-5dd5-8609-0b6d806ef576",
+        "type": "text",
+        "category": "Other",
+        "value": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\Stardock DeElevation Tool",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Run value name, also used as scheduled-task name (vendor-reported) [type: registry-key; verdict: malicious; source: VENDOR-REPORTED: Blackpoint 2026-11-18]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-18T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "e9d677c0-ab16-57ab-b407-0107e7397a87",
+        "type": "text",
+        "category": "Other",
+        "value": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\CatchPulse Notifier",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Run value and scheduled-task name in the loader script of the FilesInspectorX.msi container (4652fe86...); the name imitates installed software, so match it together with the parent folder, not alone [type: registry-key; verdict: hunting-pivot; source: static config extraction by this project (tools/cncmachinerms-extract; nothing executed natively)]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-10-07T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "dd10a83f-62e4-57b1-823f-f6e2ce8725c9",
+        "type": "text",
+        "category": "Other",
+        "value": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\Easy Data Transform Suite",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Run value and scheduled-task name in the loader script of numeric MSI '3' (container 06b8adb4...); the name imitates installed software, so match it together with the parent folder, not alone [type: registry-key; verdict: hunting-pivot; source: static config extraction by this project (tools/cncmachinerms-extract; nothing executed natively)]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-01T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "58d79d52-a051-5ce9-8dd0-83543841636f",
+        "type": "text",
+        "category": "Other",
+        "value": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\SPSS WinWrap Basic IDE 27.4",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Run value and scheduled-task name in the loader script of the BabaDeda load.db container (9a7ec20c...); the name imitates installed software, so match it together with the parent folder, not alone [type: registry-key; verdict: hunting-pivot; source: static config extraction by this project (tools/cncmachinerms-extract; nothing executed natively)]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-08-21T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "0cec3b73-2316-51f5-a791-e435e5cf482e",
+        "type": "text",
+        "category": "Other",
+        "value": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\Siemens Software Center",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Run value and scheduled-task name in the loader script of the AllMyBasic.msi container (d95a5e34...); the name imitates installed software, so match it together with the parent folder, not alone [type: registry-key; verdict: hunting-pivot; source: static config extraction by this project (tools/cncmachinerms-extract; nothing executed natively)]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-10-06T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "db873956-6809-5517-b269-07c2f5938d1c",
+        "type": "filename",
+        "category": "Artifacts dropped",
+        "value": "%LOCALAPPDATA%\\AppstorageFile\\GOMCam2024.exe",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "follow-on payload [type: file-path; verdict: hunting-pivot; source: VENDOR-REPORTED: Huntress 2026-09-28]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "16735bfd-db33-5da6-93d6-f879abcaffca",
+        "type": "filename",
+        "category": "Artifacts dropped",
+        "value": "%LOCALAPPDATA%\\FTSuite\\ftc.uml",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Local database path in the config of the FilesInspectorX and AllMyBasic builds [type: file-path; verdict: hunting-pivot; source: static config extraction by this project (tools/cncmachinerms-extract; nothing executed natively)]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-10-06T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "64482e1c-1420-584c-9e67-bfeb664c8fd4",
+        "type": "filename",
+        "category": "Artifacts dropped",
+        "value": "%LOCALAPPDATA%\\FmcService\\db.bin",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Local database path in the config of the ROMULUS Stardock build and of numeric MSI '3' [type: file-path; verdict: hunting-pivot; source: static config extraction by this project (tools/cncmachinerms-extract; nothing executed natively)]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "a15cb989-ea85-52d3-ad18-d7b739545358",
+        "type": "filename",
+        "category": "Artifacts dropped",
+        "value": "%LOCALAPPDATA%\\Programs\\Advanced Printer Configuration Reader\\",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Canon chain install dir [type: file-path; verdict: hunting-pivot; source: VENDOR-REPORTED: Huntress 2026-09-28]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "eb4a710b-8057-5f27-a7d4-389222ba389b",
+        "type": "filename",
+        "category": "Artifacts dropped",
+        "value": "%LOCALAPPDATA%\\Programs\\Stardock Smart DeElevation Tool\\",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "install dir [type: file-path; verdict: hunting-pivot; source: VENDOR-REPORTED: Blackpoint 2026-11-18]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-18T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "cda79b68-7fc7-5a18-9c56-2174bc4c82e9",
+        "type": "filename",
+        "category": "Artifacts dropped",
+        "value": "%LOCALAPPDATA%\\RTProject\\rtc.bin",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Local database path in the config of the BabaDeda load.db build [type: file-path; verdict: hunting-pivot; source: static config extraction by this project (tools/cncmachinerms-extract; nothing executed natively)]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-08-21T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "2b7fe274-e829-5a2a-95fa-084c50e4d527",
+        "type": "filename",
+        "category": "Artifacts dropped",
+        "value": "%LOCALAPPDATA%\\SProject\\sp.bin",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "random-size file [type: file-path; verdict: hunting-pivot; source: VENDOR-REPORTED: LevelBlue 2026-08-10]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-08-10T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "721adba2-7900-508c-8205-54531d970acd",
+        "type": "filename",
+        "category": "Artifacts dropped",
+        "value": "%TEMP%\\CNCMachineRMS\\tasks\\<id>\\task_payload.bin",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "family task dir [type: file-path; verdict: hunting-pivot; source: VENDOR-REPORTED: Blackpoint 2026-11-18; LevelBlue 2026-08-10]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-08-10T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "6df184bd-0326-5821-95c2-04d293aa3ee0",
+        "type": "filename",
+        "category": "Artifacts dropped",
+        "value": "C:\\Intel",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Vendor: an empty C:\\Intel folder disables the family VM check. NOT a detection on its own: the folder also exists on ordinary systems [type: file-path; verdict: hunting-pivot; source: VENDOR-REPORTED: LevelBlue 2026-08-10]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-08-10T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "d1346b1f-9fbc-5d7a-9e72-69a50e36e4c8",
+        "type": "text",
+        "category": "Other",
+        "value": "19481b28bd67",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ROMULUS /s/ or /app/ 12-hex route token seen in a vendor-reported URL [type: build-token; verdict: hunting-pivot; source: VENDOR-REPORTED: Forescout 2026-10-15; Huntress 2026-09-28; Blackpoint 2026-11-18]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "4b22871e-881c-5280-9a16-9018fb45785d",
+        "type": "text",
+        "category": "Other",
+        "value": "2c56afb54013",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ROMULUS /s/ or /app/ 12-hex route token seen in a vendor-reported URL [type: build-token; verdict: hunting-pivot; source: VENDOR-REPORTED: Forescout 2026-10-15; Huntress 2026-09-28; Blackpoint 2026-11-18]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "70186306-f533-5467-9f53-295eef577ad3",
+        "type": "text",
+        "category": "Other",
+        "value": "40152518488f",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ROMULUS /s/ or /app/ 12-hex route token seen in a vendor-reported URL [type: build-token; verdict: hunting-pivot; source: VENDOR-REPORTED: Forescout 2026-10-15; Huntress 2026-09-28; Blackpoint 2026-11-18]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "17f726c2-b258-5ab2-91bc-847e68bee5a0",
+        "type": "text",
+        "category": "Other",
+        "value": "50d6565cf39e",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ROMULUS /s/ or /app/ 12-hex route token seen in a vendor-reported URL [type: build-token; verdict: hunting-pivot; source: VENDOR-REPORTED: Forescout 2026-10-15; Huntress 2026-09-28; Blackpoint 2026-11-18]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "76cc46bf-1cd4-57f3-8e9f-8977888e4ddb",
+        "type": "text",
+        "category": "Other",
+        "value": "5dbd80d34839",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ROMULUS /s/ or /app/ 12-hex route token seen in a vendor-reported URL [type: build-token; verdict: hunting-pivot; source: VENDOR-REPORTED: Forescout 2026-10-15; Huntress 2026-09-28; Blackpoint 2026-11-18]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "2880cd96-f118-50fe-839d-31ab2dfcc390",
+        "type": "text",
+        "category": "Other",
+        "value": "60f9f0dbd64c",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ROMULUS /s/ or /app/ 12-hex route token seen in a vendor-reported URL [type: build-token; verdict: hunting-pivot; source: VENDOR-REPORTED: Forescout 2026-10-15; Huntress 2026-09-28; Blackpoint 2026-11-18]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "6487c526-465f-56c9-907e-1a9a55ee4381",
+        "type": "text",
+        "category": "Other",
+        "value": "6c67e0336a7b",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ROMULUS /s/ or /app/ 12-hex route token seen in a vendor-reported URL [type: build-token; verdict: hunting-pivot; source: VENDOR-REPORTED: Forescout 2026-10-15; Huntress 2026-09-28; Blackpoint 2026-11-18]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "be2967ef-a9c7-5e5f-aa1c-9768031f10e2",
+        "type": "text",
+        "category": "Other",
+        "value": "a26b67343315",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ROMULUS /s/ or /app/ 12-hex route token seen in a vendor-reported URL [type: build-token; verdict: hunting-pivot; source: VENDOR-REPORTED: Forescout 2026-10-15; Huntress 2026-09-28; Blackpoint 2026-11-18]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "c78ea41d-3014-540f-86fc-7d299df626c2",
+        "type": "text",
+        "category": "Other",
+        "value": "afafa98279c9",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ROMULUS /s/ or /app/ 12-hex route token seen in a vendor-reported URL [type: build-token; verdict: hunting-pivot; source: VENDOR-REPORTED: Forescout 2026-10-15; Huntress 2026-09-28; Blackpoint 2026-11-18]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-09-28T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "f3b1a334-8b67-50f0-95de-d92ec2b9fd95",
+        "type": "text",
+        "category": "Other",
+        "value": "Run key/task re-asserted every 150 s (registry) / 875 s (schtask)",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Controller script (blob 16001, 3,904 B) re-creates the Run value and the scheduled task on a timer; the same script was read by us from the container [type: behaviour; verdict: hunting-pivot; source: VENDOR-REPORTED: Blackpoint 2026-11-18; our static extraction of blob 16001]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-18T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "8530ae4b-2a0f-5830-8cb3-905ebd6db538",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://blackpointcyber.com/blog/romulus-cncmachinerms/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Blackpoint Cyber, CNCMachineRMS: The Missing Piece in the ROMULUS Campaign (2026-11-18) [type: reference; verdict: reference; source: public vendor report]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ]
+      },
+      {
+        "uuid": "8009b0d0-29eb-55a0-a35b-968ba7c7c01f",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://thehackernews.com/2026/11/romulus-clickfix-attacks-deliver-rat.html",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "The Hacker News, ROMULUS ClickFix attacks deliver RAT (2026-11) [type: reference; verdict: reference; source: public vendor report]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ]
+      },
+      {
+        "uuid": "b6e23307-5b3d-514a-864d-102d225bd128",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/1883838/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Netresec, ThreatFox entries 1883833 to 1883838 (BabaDeda-chain C2 set, 2026-08-21) [type: reference; verdict: reference; source: public vendor report]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ]
+      },
+      {
+        "uuid": "2194e2c9-7909-5912-a8c8-361be36e8b35",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://www.forescout.com/blog/romulus-analysis-of-a-new-multi-payload-clickfix-delivery-platform/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Forescout Vedere Labs, ROMULUS: Analysis of a New Multi-Payload ClickFix Delivery Platform (2026-10-15) [type: reference; verdict: reference; source: public vendor report]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ]
+      },
+      {
+        "uuid": "10bec382-afc3-58fc-a4b9-dc42ca52f5bb",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://www.huntress.com/blog/chatgpt-custom-gpts-clickfix-rat",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Huntress, Attackers Abuse ChatGPT Custom GPTs to Deliver RAT via ClickFix (2026-09-28) [type: reference; verdict: reference; source: public vendor report]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ]
+      },
+      {
+        "uuid": "e5ce63d7-5201-5251-94f1-6e95e8f4b4cb",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://www.levelblue.com/blogs/spiderlabs-blog/cncmachinerms-the-undocumented-rat-at-the-end-of-a-babadeda-chain",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "LevelBlue SpiderLabs, CNCMachineRMS: the undocumented RAT at the end of a BabaDeda chain (2026-08-10) [type: reference; verdict: reference; source: public vendor report]",
+        "timestamp": "1795478400",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ]
+      },
+      {
+        "uuid": "c805d713-25ac-5302-a401-4ca0af7cc591",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://thehackernews.com/2026/10/romulus-clickfix-platform-tricks-users.html",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "The Hacker News (2026-10)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "5f198bd3-3619-5a5e-af52-78c48f09b85e",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/1883833/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox (reporter Netresec)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "62b074fc-fc9b-54d6-9d8c-f7821cd97f4d",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/1883834/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox (reporter Netresec)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "f5b2e0ce-015d-53f2-9fa0-ba0aefe596a6",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/1883835/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox (reporter Netresec)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "cfc5cf04-2ba0-5fc1-b284-8a22ee6eab5d",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/1883836/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox (reporter Netresec)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "2109e571-1898-510e-bffb-27288b574d36",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/1883837/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox (reporter Netresec)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "e6c5f36c-2ad6-505c-838a-9ae65f1180b6",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/1941440/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox (reporter anonymous)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "50166976-68dc-5067-856a-9291d9e603c4",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/1941575/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox (reporter abuse_ch)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "568951b5-13f9-5f4d-880c-9834c5364c47",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/1941564/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox (reporter abuse_ch)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "c4c30cd5-20b9-535c-a11a-ec026e96ea37",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2008855/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox (reporter Rnascimento147)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "94e4d940-90e5-5e48-89c9-dbeea343b7bc",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2008856/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox (reporter Rnascimento147)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "6d79242a-1267-51ea-8023-5dccaa6722fe",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2008908/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox (reporter Daydream)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "0a10d4a4-f46c-562b-abff-e9dcb895548f",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2008909/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox (reporter Daydream)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "8b16dc35-f748-50d8-bbec-7661f7348833",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2008910/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox (reporter Daydream)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "f7da4cfa-36a1-5ed3-ad7b-e2f542614cc1",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2031301/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox (reporter TOM123)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "b6a6d52e-3be3-59f2-9753-02d53c041e87",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2041877/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox (reporter TOM123)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "0fa292c4-2648-5af8-b6ef-2123dbd7461c",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2041878/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox (reporter TOM123)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "f5769426-0783-56f0-a14b-e169028c87a9",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2016347/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox (reporter abuse_ch, tag ViriBack)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "56cc7ab4-00d4-59dd-94b1-af63b8724cd5",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2016430/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox (reporter abuse_ch, tag ViriBack)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "92a944d4-171d-579b-88ca-937761b3e3a3",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/1973942/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox (reporter abuse_ch, tag ViriBack)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "51794dee-cd57-540e-8f64-06f1fddc923f",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2032923/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox (reporter 0xJustme)",
+        "timestamp": "1795478400"
+      },
+      {
+        "uuid": "28293960-20fd-516d-bace-8e982e96ab3c",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://threatfox.abuse.ch/ioc/2028248/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "ThreatFox (reporter Crash371)",
+        "timestamp": "1795478400"
+      }
+    ]
+  }
+}

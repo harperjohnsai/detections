@@ -1,0 +1,46 @@
+title: 'ROMULUS ClickFix platform and CNCMachineRMS: RAT gates decoded from five builds'
+date: 2026-11-24
+families: [CNCMachineRMS, ROMULUS, LegionLoader, BabaDeda]
+rules:
+  - yara/romulus-cncmachinerms
+  - sigma
+video: null
+related_videos: []
+gist: null
+campaigns: [ROMULUS]
+references:
+  - {source_name: Blackpoint Cyber, url: "https://blackpointcyber.com/blog/romulus-cncmachinerms/"}
+  - {source_name: Forescout Vedere Labs, url: "https://www.forescout.com/blog/romulus-analysis-of-a-new-multi-payload-clickfix-delivery-platform/"}
+  - {source_name: Huntress, url: "https://www.huntress.com/blog/chatgpt-custom-gpts-clickfix-rat"}
+  - {source_name: LevelBlue SpiderLabs, url: "https://www.levelblue.com/blogs/spiderlabs-blog/cncmachinerms-the-undocumented-rat-at-the-end-of-a-babadeda-chain"}
+  - {source_name: The Hacker News (2026-11), url: "https://thehackernews.com/2026/11/romulus-clickfix-attacks-deliver-rat.html"}
+  - {source_name: The Hacker News (2026-10), url: "https://thehackernews.com/2026/10/romulus-clickfix-platform-tricks-users.html"}
+  - {source_name: "ThreatFox (reporter Netresec)", url: "https://threatfox.abuse.ch/ioc/1883833/"}
+  - {source_name: "ThreatFox (reporter Netresec)", url: "https://threatfox.abuse.ch/ioc/1883834/"}
+  - {source_name: "ThreatFox (reporter Netresec)", url: "https://threatfox.abuse.ch/ioc/1883835/"}
+  - {source_name: "ThreatFox (reporter Netresec)", url: "https://threatfox.abuse.ch/ioc/1883836/"}
+  - {source_name: "ThreatFox (reporter Netresec)", url: "https://threatfox.abuse.ch/ioc/1883837/"}
+  - {source_name: "ThreatFox (reporter Netresec)", url: "https://threatfox.abuse.ch/ioc/1883838/"}
+  - {source_name: "ThreatFox (reporter anonymous)", url: "https://threatfox.abuse.ch/ioc/1941440/"}
+  - {source_name: "ThreatFox (reporter abuse_ch)", url: "https://threatfox.abuse.ch/ioc/1941575/"}
+  - {source_name: "ThreatFox (reporter abuse_ch)", url: "https://threatfox.abuse.ch/ioc/1941564/"}
+  - {source_name: "ThreatFox (reporter Rnascimento147)", url: "https://threatfox.abuse.ch/ioc/2008855/"}
+  - {source_name: "ThreatFox (reporter Rnascimento147)", url: "https://threatfox.abuse.ch/ioc/2008856/"}
+  - {source_name: "ThreatFox (reporter Daydream)", url: "https://threatfox.abuse.ch/ioc/2008908/"}
+  - {source_name: "ThreatFox (reporter Daydream)", url: "https://threatfox.abuse.ch/ioc/2008909/"}
+  - {source_name: "ThreatFox (reporter Daydream)", url: "https://threatfox.abuse.ch/ioc/2008910/"}
+  - {source_name: "ThreatFox (reporter TOM123)", url: "https://threatfox.abuse.ch/ioc/2031301/"}
+  - {source_name: "ThreatFox (reporter TOM123)", url: "https://threatfox.abuse.ch/ioc/2041877/"}
+  - {source_name: "ThreatFox (reporter TOM123)", url: "https://threatfox.abuse.ch/ioc/2041878/"}
+  - {source_name: "ThreatFox (reporter abuse_ch, tag ViriBack)", url: "https://threatfox.abuse.ch/ioc/2016347/"}
+  - {source_name: "ThreatFox (reporter abuse_ch, tag ViriBack)", url: "https://threatfox.abuse.ch/ioc/2016430/"}
+  - {source_name: "ThreatFox (reporter abuse_ch, tag ViriBack)", url: "https://threatfox.abuse.ch/ioc/1973942/"}
+  - {source_name: "ThreatFox (reporter 0xJustme)", url: "https://threatfox.abuse.ch/ioc/2032923/"}
+  - {source_name: "ThreatFox (reporter Crash371)", url: "https://threatfox.abuse.ch/ioc/2028248/"}
+indicates:
+  - family: CNCMachineRMS
+    role_match: 'CNCMachineRMS|Storage container|gate'
+  - family: LegionLoader
+    role_match: 'LegionLoader'
+  - family: ROMULUS
+    role_match: 'ROMULUS'

