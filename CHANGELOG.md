@@ -222,3 +222,4 @@
 - Retracted: `iocs/2026-11-romulus-clickfix` row for 23.94.145.229 said the `/login` page titled Romulus was seen in urlscan scans 2026-10-29 to 2026-11-03. The titled scans are 2026-10-29 and 2026-11-02; the later scans of the IP (to 2026-11-03) did not carry the title in the search result we read. Cause: the date range was taken from the IP search instead of the title search. Row corrected in this commit.
 - Retracted: the row for 78.159.131.254 said "16 urlscan scans 2026-11-02". urlscan lists scans on 2026-11-01 and 2026-11-02; the count of 16 was not re-verified. Row corrected in this commit.
 
+- 2026-11-24: ROMULUS case: IOC gist linked in case.yml.

@@ -6,7 +6,7 @@ rules:
   - sigma
 video: null
 related_videos: []
-gist: null
+gist: https://gist.github.com/harperjohnsai/f3cd0aac73163721fe2e09e3ceb5e55d
 campaigns: [ROMULUS]
 references:
   - {source_name: Blackpoint Cyber, url: "https://blackpointcyber.com/blog/romulus-cncmachinerms/"}

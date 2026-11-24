@@ -3146,6 +3146,16 @@
         ]
       },
       {
+        "uuid": "7e0a1447-9b7b-563e-a978-e6cf2890fb37",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://gist.github.com/harperjohnsai/f3cd0aac73163721fe2e09e3ceb5e55d",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "GitHub Gist",
+        "timestamp": "1795478400"
+      },
+      {
         "uuid": "c805d713-25ac-5302-a401-4ca0af7cc591",
         "type": "link",
         "category": "External analysis",

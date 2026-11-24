@@ -339,6 +339,11 @@
       ],
       "external_references": [
         {
+          "source_name": "GitHub Gist",
+          "url": "https://gist.github.com/harperjohnsai/f3cd0aac73163721fe2e09e3ceb5e55d",
+          "description": "Defanged IOC gist"
+        },
+        {
           "source_name": "Blackpoint Cyber",
           "url": "https://blackpointcyber.com/blog/romulus-cncmachinerms/"
         },
