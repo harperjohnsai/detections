@@ -1523,6 +1523,182 @@
         "first_seen": "2026-11-02T00:00:00.000000+00:00"
       },
       {
+        "uuid": "8e45282f-6de9-5ee6-a11e-679f2a9c4d34",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "afforabl3.com",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Remus stealer hard-coded fallback C2 (https), in 2 build(s) 7898b038, 904d9229, build dates 2026-10-27..2026-11-04 [type: domain; verdict: malicious; source: static ChaCha20 decryption of the Remus payload fallback table (tools/remus-c2-table); ThreatFox: listed (Remus)]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-10-27T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "a2341faf-5408-5a46-9523-ca944e0f25ba",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "appvbe.onl",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Remus stealer hard-coded fallback C2 (https), in 6 build(s) 099aa22e, 232205fd, 83f0796f, 8882f674, b4df864c, dc37f82d, build dates 2026-11-12..2026-11-18 [type: domain; verdict: malicious; source: static ChaCha20 decryption of the Remus payload fallback table (tools/remus-c2-table); ThreatFox: listed (WARDENStealer)]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-12T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "667f7a2c-1dd7-5d83-95ed-a239514cf078",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "as6rion.wiki",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Remus stealer hard-coded fallback C2 (https), in 3 build(s) 232205fd, 8882f674, dc37f82d, build dates 2026-11-13..2026-11-18 [type: domain; verdict: malicious; source: static ChaCha20 decryption of the Remus payload fallback table (tools/remus-c2-table); ThreatFox: listed (WARDENStealer)]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-13T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "4bb6ed9b-29f0-5dc9-9563-520edfdf18ad",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "blapt.tattoo",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Remus stealer hard-coded fallback C2 (https), in 2 build(s) 099aa22e, 1ac2f1b0, build dates 2026-11-06..2026-11-12 [type: domain; verdict: malicious; source: static ChaCha20 decryption of the Remus payload fallback table (tools/remus-c2-table); ThreatFox: listed (Remus)]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-06T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "47d36b68-dcd4-52ee-b7a8-daef2a51ea46",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "clicus.onl",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Remus stealer hard-coded fallback C2 (https), in 2 build(s) 83f0796f, b4df864c, build dates 2026-11-12..2026-11-13 [type: domain; verdict: malicious; source: static ChaCha20 decryption of the Remus payload fallback table (tools/remus-c2-table); ThreatFox: listed (WARDENStealer)]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-12T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "5233cfb9-29d2-5964-a9ea-f93d01b630b7",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "cybede.wiki",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Remus stealer hard-coded fallback C2 (https), in 10 build(s) 099aa22e, 1ac2f1b0, 232205fd, 5a2cedc7, 6ffbdfd8, 83f0796f, 8882f674, a38f4a74, b4df864c, dc37f82d, build dates 2026-11-06..2026-11-18 [type: domain; verdict: malicious; source: static ChaCha20 decryption of the Remus payload fallback table (tools/remus-c2-table); ThreatFox: listed (Remus, WARDENStealer)]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-06T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "e206f353-8304-57c8-8663-9240ea6580a0",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "gowong.onl",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Remus stealer hard-coded fallback C2 (https), in 6 build(s) 1ac2f1b0, 5a2cedc7, 6ffbdfd8, 9821f5d3, a1c005bb, a38f4a74, build dates 2026-11-06..2026-11-06 [type: domain; verdict: malicious; source: static ChaCha20 decryption of the Remus payload fallback table (tools/remus-c2-table); ThreatFox: listed (WARDENStealer)]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-06T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "50615240-68cd-53f2-b92d-1333b56437a4",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "keyw0rd.com",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Remus stealer hard-coded fallback C2 (https), in 2 build(s) 7898b038, 904d9229, build dates 2026-10-27..2026-11-04 [type: domain; verdict: malicious; source: static ChaCha20 decryption of the Remus payload fallback table (tools/remus-c2-table); ThreatFox: listed (Remus)]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-10-27T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "d9991b91-aa7c-5fdc-8b01-ed875e7715c3",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "neeft.tattoo",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Remus stealer hard-coded fallback C2 (https), in 3 build(s) 5a2cedc7, 9821f5d3, a1c005bb, build dates 2026-11-06..2026-11-06 [type: domain; verdict: malicious; source: static ChaCha20 decryption of the Remus payload fallback table (tools/remus-c2-table); ThreatFox: not listed before 2026-11-24]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-06T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "882bbf1e-ad3a-5ce7-a2c5-8c89290b12ba",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "procer.onl",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Remus stealer hard-coded fallback C2 (https), in 4 build(s) 6ffbdfd8, 9821f5d3, a1c005bb, a38f4a74, build dates 2026-11-06..2026-11-06 [type: domain; verdict: malicious; source: static ChaCha20 decryption of the Remus payload fallback table (tools/remus-c2-table); ThreatFox: listed (Remus, WARDENStealer)]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-06T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "9049af6e-f33e-51ee-aa8f-124614f49fd6",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "servicesbo.com",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "Remus stealer hard-coded fallback C2 (https), in 2 build(s) 7898b038, 904d9229, build dates 2026-10-27..2026-11-04 [type: domain; verdict: malicious; source: static ChaCha20 decryption of the Remus payload fallback table (tools/remus-c2-table); ThreatFox: not listed before 2026-11-24]",
+        "timestamp": "1794355200",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-10-27T00:00:00.000000+00:00"
+      },
+      {
         "uuid": "e1edc155-9fef-597a-98e4-a85c6d7e2115",
         "type": "link",
         "category": "External analysis",

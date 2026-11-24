@@ -20,6 +20,8 @@ Static analysis, emulation and one public sandbox run; no attacker server was co
 - Tool: [`tools/cryptotrice-go-loader/`](../../tools/cryptotrice-go-loader/) finds the loader's blob builder, runs its six byte passes in a CPU emulator (no OS, no network) and writes the inner PE.
 - Second builds: MalwareBazaar lists two other Go loaders with a self-signed "Nova Metric Industries" certificate (`2b51009b5712d49af298d35b4fc22a014bb04575d7474f3b44fc6753720f39da`, `7a705f5b3959b9f56223cf93e68b1b0422959b7f9ca2e94ef0c30c8a050f793b`, both first seen 2026-11-12, different certificate serials); both match the rule. `tools/cryptotrice-go-loader` decrypts both to PEs (937,984 and 251,392 bytes); the payloads and their C2s were not analysed here.
 
+- Remus payloads: 14 of the crypter's inner payloads are Remus stealer builds. [`tools/remus-cleartext/`](../../tools/remus-cleartext/) reads their build date and campaign ID; [`tools/remus-c2-table/`](../../tools/remus-c2-table/) decrypts each build's three hard-coded fallback C2 URLs (11 distinct domains, added as `domain` rows here on 2026-11-24; two of them, `neeft[.]tattoo` and `servicesbo[.]com`, were new to ThreatFox).
+
 ## Samples on MalwareBazaar
 | Artefact | SHA-256 | Link |
 |---|---|---|

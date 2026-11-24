@@ -204,3 +204,9 @@
 - New `tools/remus-cleartext/`: static reader for the cleartext build date and NUL-terminated 32-hex campaign ID of Remus stealer payloads (`.rdata`, the ID sits 0x5e4 bytes after the date in every known build). Regression test `test_remus_cleartext.py` with `expected.csv`: 85 passed, 0 failed (32 inner PEs, 41 loaders and 12 benign PEs as negatives).
 - `yara/cryptotrice-go-loader/second-build-check.csv`: new columns `inner_build_date`, `inner_campaign_id` (15 loaders, 14 distinct Remus payloads, 12 campaign IDs, build dates 27.10-18.11.2026); README update line.
 - Not yet covered: the per-build C2 region of these payloads is still encrypted.
+
+### 2026-11-24 (Remus: fallback C2 table decrypted for all 14 crypter payloads)
+- New `tools/remus-c2-table/`: static decryptor for the Remus hard-coded fallback C2 table (ChaCha20 in the original 64-bit-nonce layout over 3 x 64-byte `.rdata` entries, then a 4-byte XOR mask built in code). Regression test `test_remus_c2_table.py` with `expected.csv`: 86 passed, 0 failed (RFC 8439 block vector, 14 payloads, 71 negatives).
+- `iocs/2026-11-cryptotrice`: +11 domain rows (fallback C2s, 3 per build, all `https://`). 9 were already on ThreatFox from other reporters (Remus / WARDENStealer labels); `neeft[.]tattoo` and `servicesbo[.]com` submitted to ThreatFox 2026-11-24.
+- `tools/remus-cleartext/README.md`: limits line points to the new tool.
+- Not checked: liveness of the domains (nothing contacted); the EtherHiding contract address of these builds.

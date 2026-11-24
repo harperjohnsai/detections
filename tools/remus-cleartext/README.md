@@ -29,7 +29,7 @@ Output columns: `sha256, size, pe_timestamp, build_date, build_date_rva, campaig
 
 ## Limits
 
-- The C2 addresses are not cleartext: they are stack-built strings, and the ~240-byte high-entropy region that differs per build (`.rdata`, next to the date) is not decrypted yet. A contiguous ChaCha20 key/nonce search near that region found nothing.
+- The C2 addresses are not cleartext. The ~240-byte region that differs per build is the ChaCha20 key, nonce and fallback C2 table; [`tools/remus-c2-table/`](../remus-c2-table/) decrypts it (2026-11-24).
 - The `0x5e4` offset is an observation on these 14 builds, not a format guarantee; a new Remus version may move it. A payload where the tool reports nothing but the size and family leads say Remus is worth a manual look.
 - MalwareBazaar labels (WARDENStealer vs RemusStealer) are leads, not attribution. All WARDEN-labelled payloads of this size class share the Remus cleartext layout above.
 
