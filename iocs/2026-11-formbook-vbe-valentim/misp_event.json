@@ -1,0 +1,1579 @@
+{
+  "Event": {
+    "uuid": "240e3f25-1811-5ee9-bcb6-ecb5609fcffe",
+    "info": "Formbook/Xloader VBE downloader via a compromised WordPress site (secured_*stub.ps1 chain)",
+    "date": "2026-11-25",
+    "threat_level_id": "2",
+    "analysis": "2",
+    "distribution": "3",
+    "published": false,
+    "timestamp": "1795564800",
+    "Orgc": {
+      "uuid": "b641827b-b56f-53c3-b356-359fddd6e73f",
+      "name": "Harper Johns"
+    },
+    "Tag": [
+      {
+        "name": "tlp:clear"
+      }
+    ],
+    "Attribute": [
+      {
+        "uuid": "4bf512be-d24f-5e82-8d5a-98366f90ee66",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "866dd289e94a2ed4c405858e3d0eb0faa68bf736d15cda3d016fe9df9641cedd",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "stage 1 VBE downloader (Konfirmasi 001.23.11.2026.vbe) [type: sha256; verdict: malicious; source: own static analysis; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-24T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "b970e8f7-7e11-5c6d-a7ca-58eba13be23b",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "2f92779fcf03465a2d2d13ba1bebb77bd1f7d45727c84cd98cab5ff8d14787f7",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "stage 2 secured_fstub.ps1 (AES loader) [type: sha256; verdict: malicious; source: own static analysis; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-24T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "d116c99f-6f4b-50fa-9bfb-77c0c031bde6",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "852a1820dc6c6aac9c71e9b3d0d0ddeac65f3595390f5f3f8ca07389bef077ac",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "stage 3 decrypted PowerShell loader (XOR + reflection), fstub [type: sha256; verdict: malicious; source: own static analysis; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-24T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "f2ddf992-fb1e-57f9-85fb-907285f7350a",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "4899600bc2c13639f3217c319620372a6af39a50cd49c6a9a380d08c72982bb5",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "stage 4 .NET injector MACHINEE.WHORE (fstub) [type: sha256; verdict: malicious; source: own static analysis; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-24T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "fe4b7478-6f98-58b2-bfe8-9d90ee51d47b",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "5547fa8c4fc76486cd99a98bd9e33ffedd980c848430c494322e18ad3d6284f1",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "stage 5 packed PE32 Xloader payload (byte-identical in all 3 variants) [type: sha256; verdict: malicious; source: own static analysis; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "0c78c1ee-e7c9-5103-bb75-63121804441d",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "50f186dc7714b57358e8ca1fd135d2ae28a10aa41a25c34009e7392655a5fb4f",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "sibling stager secured_stub.ps1 [type: sha256; verdict: malicious; source: own static analysis; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "5b285194-a37e-5e51-89e2-f8f9c98030f0",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "02bfbaa59506188c1235aa9e89a76a6605b5ea89c6d5dc80dc98d24ff11b72c7",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "sibling decrypted PowerShell loader (stub) [type: sha256; verdict: malicious; source: own static analysis; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "675be4f5-cd56-57de-89df-2ae1fdf6e4c6",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "fb50d88d8dc1dc5deb3ba1873eb9c196d46d05cb908e49cf3b46d783a826d81c",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "sibling .NET injector DEVVV.WHORE (stub) [type: sha256; verdict: malicious; source: own static analysis; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "2dbe505f-b862-56af-9e48-4d6c8860a34b",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "e738ec59d12caebeaae8cc1a52238f27d9b383db65ad82a7eaf86b496866a4d5",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "sibling stager secured_stuub.ps1 [type: sha256; verdict: malicious; source: own static analysis; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "aa71e436-07e6-5b3e-b40b-afb9492142b6",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "4524aaa4810d230c4b0022852591f515c07dfb971782cdf0b30fab06f1e2ec7a",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "sibling decrypted PowerShell loader (stuub) [type: sha256; verdict: malicious; source: own static analysis; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "4273005a-f500-58e7-a811-0a357fd4c6a5",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "d38b8138d1a96127770d4d49811664ef3d1916d1277c21c3072f612657797702",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "sibling .NET injector DEVVV.WHORE (stuub) [type: sha256; verdict: malicious; source: own static analysis; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "690519cb-d233-5fda-8306-64c818423a1c",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "137f00f628eeeb7f6a5e24e13730c05bb805d3cb544251754e33725800b35ac2",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "sibling stager secured_stubc.ps1 (public sandbox run 261124-tdqk8aaz8v) [type: sha256; verdict: malicious; source: own static analysis; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-24T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "1dc1ab02-fcfe-562c-8c1f-cd0de8c89d3d",
+        "type": "url",
+        "category": "Network activity",
+        "value": "https://valentimadvocacia.com.br/wp-admin/css/colors/coffee/secured_fstub.ps1",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "stage 2 download on a compromised WordPress site [type: url; verdict: malicious; source: VBE source; urlscan]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-24T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "680cfde6-5ef9-5d48-a401-9afec9dddc6d",
+        "type": "url",
+        "category": "Network activity",
+        "value": "https://valentimadvocacia.com.br/wp-admin/css/colors/blue/secured_stuub.ps1",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "stage 2 download on a compromised WordPress site [type: url; verdict: malicious; source: VBE source; urlscan]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "f44ce06d-349d-5c16-aadf-caa2db865a43",
+        "type": "url",
+        "category": "Network activity",
+        "value": "https://valentimadvocacia.com.br/wp-admin/includes/secured_stub.ps1",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "stage 2 download on a compromised WordPress site [type: url; verdict: malicious; source: VBE source; urlscan]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "1dd7d37f-b0c3-5e10-b1d9-72faad0b07ab",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "valentimadvocacia.com.br",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "stage host (compromised legitimate WordPress site) [type: domain; verdict: compromised-or-abused-legit; source: RDAP; public sandbox run]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "d0e228ed-cbf2-5776-afce-fb9f3793a76f",
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "192.185.210.145",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "stage host IP (shared hosting; do not block the IP blindly) [type: ipv4; verdict: shared-or-legit-infrastructure; source: public sandbox run; ipinfo]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "afd0f2ef-2a43-5811-a52f-8fae63b3f070",
+        "type": "filename",
+        "category": "Artifacts dropped",
+        "value": "Konfirmasi 001.23.11.2026.vbe",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "lure file name (Indonesian \"confirmation\") [type: filename; verdict: malicious; source: MalwareBazaar]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-24T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "4188f59b-c5ea-598e-bab8-8a37a73cb9fd",
+        "type": "filename",
+        "category": "Artifacts dropped",
+        "value": "sleestak_payload_1.ps1",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "sandbox-side name of the stage 2 variants (builder tag?) [type: filename; verdict: hunting-pivot; source: VirusTotal]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-19T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "db8a1b33-fa1c-5217-8df6-8244a0d2bab8",
+        "type": "filename",
+        "category": "Artifacts dropped",
+        "value": "C:\\Temp\\[A-Z]{8}.ps1",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "VBE drop path of stage 2 [type: file-path; verdict: hunting-pivot; source: static VBS read]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-24T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "f27c1059-9e53-5f1d-8b12-0ea137007a22",
+        "type": "text",
+        "category": "Other",
+        "value": "powershell.exe -nop -ep bypass -file \"C:\\Temp\\XXXXXXXX.ps1\"",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "VBE launch command line (hidden window) [type: string; verdict: hunting-pivot; source: static VBS read]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-24T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "69200416-7404-5e83-be18-5e7d7559a048",
+        "type": "filename",
+        "category": "Artifacts dropped",
+        "value": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\aspnet_compiler.exe",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "hollowing target; a PowerShell parent that writes into it is high-signal [type: file-path; verdict: hunting-pivot; source: static analysis; public sandbox run]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-24T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "8cee4c87-fd56-5025-91a7-76514dda3bd1",
+        "type": "text",
+        "category": "Artifacts dropped",
+        "value": "C:\\Windows\\SysWOW64\\newdev.exe",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "second injection target of the Xloader payload in the public sandbox run [type: process; verdict: hunting-pivot; source: public sandbox run 261117-rl356sww9m]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "e2f9a6d1-a034-5954-922e-6bf868e0a2a9",
+        "type": "text",
+        "category": "Other",
+        "value": "MACHINEE.WHORE::LAUNCHER",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": ".NET type and method invoked by the loader (variants: DEVVV.WHORE) [type: string; verdict: hunting-pivot; source: static analysis]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-24T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "c6bbd578-78e9-54d3-9789-005586951d36",
+        "type": "text",
+        "category": "Other",
+        "value": "Layer Reversal Engine - Variant 24B",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "banner in the decrypted PowerShell loader [type: string; verdict: hunting-pivot; source: static analysis]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-24T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "f591ba68-a0ce-58bd-82ad-515a3d17c986",
+        "type": "text",
+        "category": "Other",
+        "value": "PS Secure Loader - Advanced Decryption Engine v2",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "banner in secured_fstub.ps1 [type: string; verdict: hunting-pivot; source: static analysis]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-24T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "c222d7ce-fac1-5b44-bb58-420b2d76ceac",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.thecalmdogguide.com",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "configured real C2 of build 5547fa8c (decrypted from the sample; role inferred from code layout). Not a working C2 when observed: every check-in on 17, 24 and 25 Nov 2026 was a Cloudflare cache HIT with origin time 0 ms [type: domain; verdict: malicious; source: xloader-decrypt output (decryption verified); public sandbox runs 261117-rl356sww9m, 261124-tdqk8aaz8v]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "b643d117-ddbe-5ec5-89b1-7ff736053548",
+        "type": "url",
+        "category": "Network activity",
+        "value": "http://www.thecalmdogguide.com/t2rs/",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "check-in URL of slot 0 (hard-coded real-C2 host + path of list index 40); cache HIT only, see domain row [type: url; verdict: malicious; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"moderate\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "0ecc8bd2-c3bf-5344-bdba-9cd3513ae4f6",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.balticflows.eu",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 1, path /b1i9/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-25T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "c7e0c331-aae4-5b5a-bd0d-54591aafedb0",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.kycpremium.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 2, path /8aql/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "d0b39f3b-7eba-52f8-ac8f-73cc25ff3f10",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.endure360.xyz",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 3, path /0men/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "0a4acda6-40e9-5d0a-879c-3088e74e2013",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.kddplatform.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 4, path /ey74/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-25T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "d28e1ee2-28a3-5bba-9531-07f9d761482e",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.prostookredycie.pl",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 5, path /vxw8/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-25T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "b6796006-c8eb-546a-a03a-f3e499d86f87",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.zqcpjcjsq9.com.cn",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 6, path /kydz/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "d59a19f4-d7d4-5bbb-8b47-53b28d62d109",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.pfalzpelletgmbh.de",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 7, path /4ko6/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "e2ee49a1-89ed-5cb7-8267-74482d7508a0",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.royalccb.org",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 8, path /22bp/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "e578d2b9-bf45-5f90-8a4f-5cb4bfc0067b",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.acaipoint.eu",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 9, path /41g1/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "e577e8ec-505d-50d1-8ae9-c9b6057d4665",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.findhammercoaching.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 10, path /8j3o/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "a55dc1bf-a97d-5f08-876f-7a68a5b77e71",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.poketshift.online",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 11, path /wdig/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-25T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "312c1c81-4552-5694-b869-38f5c3e7792f",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.verdile.fr",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 12, path /shfl/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-25T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "e7ce97ff-0f9f-51e0-b739-db68979bde28",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.julis-inselreiten.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 13, path /7ktw/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-25T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "d6aa5e37-4556-5e33-9424-f94a160b9d2e",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.cafepress.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "legitimate site used as a decoy; list index 14, path /82pg/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: shared-or-legit-infrastructure; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-25T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "112e5dd7-0ce7-5620-9cb8-c3a066229281",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.larepublica.pe",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "legitimate site used as a decoy; list index 15, path /zs1q/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: shared-or-legit-infrastructure; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "40f20568-cd77-51b6-8bad-89de73c12c37",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.73e2.cc",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 16, path /u7dp/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-25T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "01c1da56-044b-5a44-9115-13c58b9a09c4",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.nashvilledanse83.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 17, path /gp2a/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "54a20302-3a2f-5882-84da-4f081d6b8982",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.houseemaj.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 18, path /n1ht/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-25T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "a3aa20ed-fca9-55a5-9d1c-11d31d164718",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.49050217492824.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 19, path /8d36/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-25T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "6ccbc666-3029-5e03-b0f5-30a3b1884523",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.colnerat.top",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 20, path /fwe8/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "7c9927b6-d49f-5aa0-aa33-4b69283d2318",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.gopalswadsadan.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 21, path /b9mm/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-25T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "18b20ccd-0859-5011-a940-515242097016",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.mt-tohoku.net",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 22, path /nmq5/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "d763b824-db55-553a-9528-d87498f94af1",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.jsxzxw.cn",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 23, path /mpf0/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "f9f30689-afb8-5ae1-bea9-1085b0208b8d",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.shorteso.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 24, path /q61b/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-25T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "cc46fbb1-a231-593a-b7c8-f7373504caf1",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.fehogr.garden",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 25, path /qhu4/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-25T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "67cceb69-971c-5bd9-8872-787e152f6d6a",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.localtradesgrowth.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 26, path /eduu/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "b768f658-58b3-5a4c-a808-c34f4b76fd60",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.zfp31.buzz",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 27, path /g8vj/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "c06ecea4-8299-5b32-9952-77e7bde2e646",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.ded-vpn.biz",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 28, path /7cru/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-25T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "33f58105-9746-56e7-9b14-f53c1028f2a9",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.iwantogelpelangi.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 29, path /tmog/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-25T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "ce1c9b4b-7d63-598a-b164-202492611a24",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.ksufd.cn",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 30, path /kclt/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-25T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "5cffad79-838d-56ab-a410-5aa7c93ad68d",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.buncistoto-168.lol",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 31, path /bzi4/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-25T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "2bdccc3a-0802-552f-b097-6ffb48050c83",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.risenskateboards.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 32, path /keyc/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "3554838f-8099-53e4-8bcd-50d681dfc2a1",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.php7.in",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 33, path /ttte/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "2760c897-2b3e-5477-927e-974a84fb6a55",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.daxue699.cc",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 34, path /fy52/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-25T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "19f144d6-4666-5c47-853d-a9cd34b9e2d5",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.boronchaplet.shop",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 35, path /apll/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "0b2595ed-62c9-5138-8520-9d0d140dfddf",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.falcointrading.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 36, path /or67/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "5bc91e68-ac78-5478-992d-1ca7d56507e2",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.asv-global.ru",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 37, path /2i2p/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "57c89cc1-13c8-5674-a5db-f47e4f508526",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.78882.my",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 38, path /91rg/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "79ef46e0-a609-59ef-a0a9-2ef89ef28ea2",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.gustarelli.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 39, path /t8wi/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-25T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "6ac4f995-7607-5d20-86d5-2f8323d023ab",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.bestbuy.ca",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "legitimate site used as a decoy; list index 40, path /t2rs/; not seen in the sandbox runs (decrypted only) (its slot-0 use is replaced by the real-C2 string). DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: shared-or-legit-infrastructure; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-25T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "9dd2ffa4-ebc6-54bf-aa15-082d0703a27d",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.lr33.cc",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 41, path /g60u/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "36b0ad05-c78e-5183-8300-b6ea46de678a",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.civicfindings.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 42, path /wnq5/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "ef6cbc8f-7bc3-5023-ae57-6d268716ece3",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.megawatt-power.online",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 43, path /8ky0/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-25T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "fead9ea1-c78f-5c32-bc76-033cdbef6004",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.yomedia.in",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 44, path /2jzo/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-25T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "d3bd9ff1-3b5b-5760-bfcb-6d9de065e35f",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.touriwant.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 45, path /12n5/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-25T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "d71dc05f-3ece-5684-928e-3b3699dbe64f",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.chargedengineering.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 46, path /bc7m/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "d5585cb8-9575-516a-befb-3924d65fc052",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.dreamrequest.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 47, path /sh25/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "9d6b11f5-a36d-58f2-98db-fe8dc1338feb",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.mementocheese.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 48, path /en2a/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "4b6ae62c-e6ed-5bd3-af45-ada3811d1dc1",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.4kmao.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 49, path /3puj/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "91b72701-522d-50fc-9379-0b6eb559a05f",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.agely.si",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 50, path /gynz/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-25T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "98fd5c8d-d054-54b9-953b-ab691c8056ee",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.lucascurves.co.uk",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 51, path /9iid/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-25T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "9acc4ae7-42e1-5244-a908-050df9a8a5c4",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.oubichen.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 52, path /iolj/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-25T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "8d9a43bf-dac6-5d0e-b671-0bd4b20c9d66",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.goodinsumall.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 53, path /55i6/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-25T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "ae0dc49d-52fd-5bdf-b37d-31ac81044c38",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.xpitang.cc",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 54, path /frst/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "085d3950-a3d3-5278-8bb5-035e80b96ae6",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.linfa.si",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 55, path /q3tc/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-25T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "cf00fcc6-70d3-5441-9403-47b97fdc68d1",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.ishratvahmed.cfd",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 56, path /3nca/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "726ef8ea-8e03-51bb-9a7f-249f62607aaa",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.royalhossain.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 57, path /4pog/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-25T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "3499e68b-98e7-59b6-bd9e-df2d789afc53",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.wdbyyyg.net.cn",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 58, path /n4kx/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-25T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "365173cf-238b-5428-8416-c46fd9e85dda",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.easyimplant.net",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 59, path /1l73/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-25T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "112c9e2e-d388-552d-8adb-c4ca69e28cea",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.reservolt.ru",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 60, path /9jql/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "6138c2e0-ec3c-591b-a78a-983d97274aac",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.predictionaire.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 61, path /0tsy/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "ebd82ede-a88c-58a2-aeab-266a04a4debe",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.wowfoundry.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 62, path /wi01/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-25T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "0559133b-54a9-5af1-94c0-9ab8d8a070e9",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.pc-qichachatool.com.cn",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 63, path /42v2/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-25T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "c3910b8d-bffc-5181-ac19-f31e6064a16c",
+        "type": "domain",
+        "category": "Network activity",
+        "value": "www.park66corp.com",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "decoy-list entry (legitimate site or operator-registered: not determined); list index 64, path /1g2s/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [type: domain; verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ],
+        "first_seen": "2026-11-25T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "71fd6be2-1fc1-50e9-ba6c-45b3f873fdce",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://tria.ge/261117-rl356sww9m",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "public sandbox run of a sibling stager (Xloader payload, beacon walk) [type: reference; verdict: reference; source: public]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "75adaa06-80db-5284-91d8-92f0f7562935",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://tria.ge/261117-rp7yjacz7y",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "public sandbox run of a sibling stager [type: reference; verdict: reference; source: public]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-17T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "9e695334-7beb-5359-ac39-16e15e81fd89",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://tria.ge/261124-tdqk8aaz8v",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "public sandbox run of secured_stubc.ps1, 900 s, 32-host beacon walk [type: reference; verdict: reference; source: public]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-24T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "cdb05683-ab2d-5446-b9ea-f4018432c086",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://x.com/stop_spammerz/status/2125196471435993094",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "original post sharing the VBE (credit) [type: reference; verdict: reference; source: public]",
+        "timestamp": "1795564800",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ],
+        "first_seen": "2026-11-24T00:00:00.000000+00:00"
+      },
+      {
+        "uuid": "10048866-5260-56a7-b370-2c24eb7cf99c",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://gist.github.com/harperjohnsai/3934e19f9290576dd77fcf4f82db4e7c",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "GitHub Gist",
+        "timestamp": "1795564800"
+      },
+      {
+        "uuid": "ee2e891b-ce2d-55a5-a88d-20c59351e7e8",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://www.zscaler.com/blogs/security-research/latest-xloader-obfuscation-methods-and-network-protocol",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Zscaler ThreatLabz",
+        "timestamp": "1795564800"
+      }
+    ]
+  }
+}

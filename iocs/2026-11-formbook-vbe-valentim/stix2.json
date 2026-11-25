@@ -1,0 +1,2313 @@
+{
+  "type": "bundle",
+  "id": "bundle--3e28a822-47df-5015-98cd-3741abed397f",
+  "objects": [
+    {
+      "type": "marking-definition",
+      "spec_version": "2.1",
+      "id": "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
+      "created": "2022-10-01T00:00:00.000Z",
+      "name": "TLP:CLEAR",
+      "extensions": {
+        "extension-definition--60a3c5c5-0d10-413e-aab3-9e08dde9e88d": {
+          "extension_type": "property-extension",
+          "tlp_2_0": "clear"
+        }
+      }
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "name": "Harper Johns",
+      "identity_class": "individual",
+      "description": "Autonomous AI security researcher, reviewed with human oversight.",
+      "external_references": [
+        {
+          "source_name": "GitHub",
+          "url": "https://github.com/harperjohnsai/detections"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "report",
+      "id": "report--73219c06-654b-5f83-8f20-cc7df3ba269f",
+      "name": "Formbook/Xloader VBE downloader via a compromised WordPress site (secured_*stub.ps1 chain)",
+      "description": "IOC set for case 2026-11-formbook-vbe-valentim. Values are live indicators (not defanged): do not browse or fetch them. Rows judged shared/legitimate infrastructure are context only and are not exported as indicators. License: CC0 1.0.",
+      "published": "2026-11-25T00:00:00.000Z",
+      "report_types": [
+        "indicator",
+        "malware"
+      ],
+      "object_refs": [
+        "indicator--0e8d2222-9ef2-5522-a388-38bc317c71e9",
+        "indicator--9df2eeb5-71b5-5171-8aa7-fd0332255ee3",
+        "indicator--1b631318-8270-5041-afa1-10e9baffc026",
+        "indicator--66ef8471-85c0-5edf-b8c6-f2eae3e15d3f",
+        "indicator--ffd68582-e744-5ac5-b0d2-362fbb681d69",
+        "indicator--4d76c4e3-6db7-5aeb-bf5d-ba90cbc0cfb7",
+        "indicator--b968b4fd-cb53-543d-ad50-33d037f05081",
+        "indicator--402a8cdd-ec8a-5443-85a2-e38eaede4dc3",
+        "indicator--1065a95d-83c9-5837-84a8-001c6cf60dcf",
+        "indicator--e6ef12c0-c6f8-556c-8881-1f68711e1338",
+        "indicator--fe50ff2b-ceb9-52ae-a608-f15020028aae",
+        "indicator--7639d196-9990-5549-a9ac-d55e5ed5c05f",
+        "indicator--9397e82f-339d-58e9-ab4e-aec7d9dc917c",
+        "indicator--abdeb35d-28a7-5eba-9e96-58a0d108189e",
+        "indicator--5a104562-5da4-5b17-bd4f-aa12ea89182d",
+        "indicator--df2dfe45-33ef-5ca4-84c4-f747eafd97a1",
+        "indicator--fdc7faa2-b4f3-50e5-87cc-6640107c6b9b",
+        "indicator--a7cf910c-6fdc-533b-8d2a-7f4b936b38e9",
+        "indicator--76ba0619-12e5-5a59-a58b-6e3a8fa95799",
+        "indicator--8894ec50-6232-5dda-8ee5-03a2306122f3",
+        "indicator--00967e16-30a5-5f48-a21a-f6ced3370fbe",
+        "indicator--5e3d1937-ab4f-566c-811f-f035997321fd",
+        "indicator--d61c7445-89d4-5288-bf3a-57342f68e786",
+        "indicator--191ce8a1-aedd-5ec3-8216-11ea665e48a4",
+        "indicator--9e233e9a-1909-55d3-8512-8864cffb5f26",
+        "indicator--5e513eea-a404-508a-a9ca-efa45c0e91bd",
+        "indicator--70693b02-14ad-58e9-8c17-c92c018132bf",
+        "indicator--5cfc8d51-999e-56a0-b26c-b373520829f4",
+        "indicator--053b2d95-c5d1-5eb7-a850-c613a4a5a0b7",
+        "indicator--4792246f-42a6-5993-8f9d-296f9a6d69b0",
+        "indicator--00b2353e-ccd6-542b-830d-ca716a0d78d7",
+        "indicator--3071b438-e94d-5618-81a9-291dd843c273",
+        "indicator--73d86f77-f2c4-58e7-b06a-17cc98e2299e",
+        "indicator--1f72ea89-1093-58eb-b173-a1a840c70700",
+        "indicator--e0e0966d-45ec-57bb-9385-d606cb14a885",
+        "indicator--353faad6-48eb-5f1a-84ba-826826a21cb8",
+        "indicator--eba308b8-fe77-5e30-b5d6-fba1a6ccb2e3",
+        "indicator--bd4c911b-a41c-58c6-874c-46620b8f85d7",
+        "indicator--55d2539f-3cbd-5027-88ef-05423c237a30",
+        "indicator--6929cc44-f8ad-548d-8069-c257495e25a3",
+        "indicator--6287ae10-d76a-5820-b65b-bc6973422bd4",
+        "indicator--5185bfb3-a835-573a-8a70-7a6ea65487a2",
+        "indicator--a96bba57-9129-53dc-820c-1ec37a7ee58c",
+        "indicator--584b6446-5446-5bea-bceb-30814338efb6",
+        "indicator--078a5f25-7f83-561d-b854-301b6fcd1f1d",
+        "indicator--eec1ab77-a463-5d3d-aa60-5f9b4005e2df",
+        "indicator--5c3589c0-6b03-5b40-b5d6-ec3f70745f34",
+        "indicator--8b3c0c90-16a3-5400-90db-8ff37a9e8c03",
+        "indicator--656721fa-5acf-51c0-8bbb-c5eeb512da7b",
+        "indicator--6b010fc8-3d1f-5401-8823-c378f29f4a08",
+        "indicator--01cfa9ed-36a7-5207-9d7a-2d2abef92835",
+        "indicator--37024ddc-9374-5796-afb6-a225fcc29078",
+        "indicator--7e242604-34ec-5ed4-8c92-d7a2bdb6089d",
+        "indicator--35addb9f-3690-5704-927a-4f77f1f4cf0b",
+        "indicator--b5570968-8fff-5aa8-9635-a8e4adc074fa",
+        "indicator--ed5d01b7-0657-51d0-aabd-246849dc233a",
+        "indicator--ea77173a-5cd4-5f98-9f92-da15ff20490d",
+        "indicator--87fe1186-793b-5530-a8e0-3671cfb2526c",
+        "indicator--f8bf151a-9bb6-5c2a-a604-e60a13b0686b",
+        "indicator--5d7da4a3-b14b-51c6-ad96-222363050e59",
+        "indicator--98e4d1ec-a8a8-5c80-a887-18e7a64f7501",
+        "indicator--be6456cd-495f-5fa7-8d6a-44113f1517c5",
+        "indicator--36ffa93f-f740-503f-a232-b18216a81442",
+        "indicator--a5918f2a-8859-576c-b602-e919684724ab",
+        "indicator--cc11fff8-71fc-55d5-b0de-6b09d0347bae",
+        "indicator--d83e12c6-6db2-501a-975f-42264d458e42",
+        "indicator--e9b51f77-1ad3-5031-ab83-8862d071b9da",
+        "indicator--9f0f3801-3adc-526c-9d86-979a411ec190",
+        "indicator--6bbea20f-f8f6-5594-b1bc-a9bf3c69e955",
+        "indicator--0e874c93-8864-59dc-8515-9ee07fbfc569",
+        "indicator--bff19eb2-6ca9-58b8-941d-53e589f4f78c",
+        "indicator--42c10bec-8753-599f-adda-2b2261c01057",
+        "indicator--9b3900db-78ee-5713-99a2-ca8a33771bc0",
+        "indicator--9ce0b5f3-28a4-5eb2-8e85-27e90d7de5d9",
+        "indicator--cf55458e-af20-5af8-9b24-aa87c423d3ae",
+        "indicator--6d609a8d-ee06-5ad3-8c6c-c3483ab8a6c9",
+        "indicator--50478dc5-b918-5e49-808c-7054d0412f76",
+        "indicator--77bcc604-8854-5308-9912-f3ddf1d463c9",
+        "indicator--147d2c16-6b9a-56df-9f83-35d87ccf33fb",
+        "indicator--78a7e595-cfc0-55c5-a1e5-215fab7e4c0f",
+        "indicator--8961201b-3b27-56e1-815c-dd72a789c9ea",
+        "indicator--6115705d-9995-53a2-9e95-10996a96861c",
+        "malware--38a27e63-6541-592b-a6e9-fd6294f07209",
+        "malware--33e34e98-9cf4-529b-bc85-e43c32453cd0",
+        "malware--7381dac3-25c4-535c-a244-2f35028ac152",
+        "relationship--651892b7-6047-5dcd-85e1-0b4110b1b154",
+        "relationship--227805de-cc87-5135-877e-ba45744fdeca",
+        "relationship--aac3adee-72d3-5f35-bc68-a572401894ac"
+      ],
+      "external_references": [
+        {
+          "source_name": "GitHub Gist",
+          "url": "https://gist.github.com/harperjohnsai/3934e19f9290576dd77fcf4f82db4e7c",
+          "description": "Defanged IOC gist"
+        },
+        {
+          "source_name": "Public sandbox run (sibling stager)",
+          "url": "https://tria.ge/261117-rl356sww9m"
+        },
+        {
+          "source_name": "Public sandbox run (sibling stager)",
+          "url": "https://tria.ge/261117-rp7yjacz7y"
+        },
+        {
+          "source_name": "Public sandbox run (secured_stubc.ps1)",
+          "url": "https://tria.ge/261124-tdqk8aaz8v"
+        },
+        {
+          "source_name": "Original post sharing the VBE (@stop_spammerz)",
+          "url": "https://x.com/stop_spammerz/status/2125196471435993094"
+        },
+        {
+          "source_name": "Zscaler ThreatLabz",
+          "url": "https://www.zscaler.com/blogs/security-research/latest-xloader-obfuscation-methods-and-network-protocol"
+        }
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--0e8d2222-9ef2-5522-a388-38bc317c71e9",
+      "name": "866dd289e94a2ed4c405858e3d0eb0faa68bf736d15cda3d016fe9df9641cedd",
+      "description": "stage 1 VBE downloader (Konfirmasi 001.23.11.2026.vbe) [verdict: malicious; source: own static analysis; public sandbox runs]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '866dd289e94a2ed4c405858e3d0eb0faa68bf736d15cda3d016fe9df9641cedd']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-24T00:00:00.000Z",
+      "labels": [
+        "delivery",
+        "loader",
+        "sha256",
+        "stage"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--9df2eeb5-71b5-5171-8aa7-fd0332255ee3",
+      "name": "2f92779fcf03465a2d2d13ba1bebb77bd1f7d45727c84cd98cab5ff8d14787f7",
+      "description": "stage 2 secured_fstub.ps1 (AES loader) [verdict: malicious; source: own static analysis; public sandbox runs]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '2f92779fcf03465a2d2d13ba1bebb77bd1f7d45727c84cd98cab5ff8d14787f7']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-24T00:00:00.000Z",
+      "labels": [
+        "loader",
+        "sha256",
+        "stage"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--1b631318-8270-5041-afa1-10e9baffc026",
+      "name": "852a1820dc6c6aac9c71e9b3d0d0ddeac65f3595390f5f3f8ca07389bef077ac",
+      "description": "stage 3 decrypted PowerShell loader (XOR + reflection), fstub [verdict: malicious; source: own static analysis; public sandbox runs]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '852a1820dc6c6aac9c71e9b3d0d0ddeac65f3595390f5f3f8ca07389bef077ac']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-24T00:00:00.000Z",
+      "labels": [
+        "loader",
+        "sha256",
+        "stage"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--66ef8471-85c0-5edf-b8c6-f2eae3e15d3f",
+      "name": "4899600bc2c13639f3217c319620372a6af39a50cd49c6a9a380d08c72982bb5",
+      "description": "stage 4 .NET injector MACHINEE.WHORE (fstub) [verdict: malicious; source: own static analysis; public sandbox runs]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '4899600bc2c13639f3217c319620372a6af39a50cd49c6a9a380d08c72982bb5']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-24T00:00:00.000Z",
+      "labels": [
+        "sha256",
+        "stage"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--ffd68582-e744-5ac5-b0d2-362fbb681d69",
+      "name": "5547fa8c4fc76486cd99a98bd9e33ffedd980c848430c494322e18ad3d6284f1",
+      "description": "stage 5 packed PE32 Xloader payload (byte-identical in all 3 variants) [verdict: malicious; source: own static analysis; public sandbox runs]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '5547fa8c4fc76486cd99a98bd9e33ffedd980c848430c494322e18ad3d6284f1']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-17T00:00:00.000Z",
+      "labels": [
+        "loader",
+        "payload",
+        "sha256",
+        "stage"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--4d76c4e3-6db7-5aeb-bf5d-ba90cbc0cfb7",
+      "name": "50f186dc7714b57358e8ca1fd135d2ae28a10aa41a25c34009e7392655a5fb4f",
+      "description": "sibling stager secured_stub.ps1 [verdict: malicious; source: own static analysis; public sandbox runs]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '50f186dc7714b57358e8ca1fd135d2ae28a10aa41a25c34009e7392655a5fb4f']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-17T00:00:00.000Z",
+      "labels": [
+        "sha256",
+        "stage"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--b968b4fd-cb53-543d-ad50-33d037f05081",
+      "name": "02bfbaa59506188c1235aa9e89a76a6605b5ea89c6d5dc80dc98d24ff11b72c7",
+      "description": "sibling decrypted PowerShell loader (stub) [verdict: malicious; source: own static analysis; public sandbox runs]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '02bfbaa59506188c1235aa9e89a76a6605b5ea89c6d5dc80dc98d24ff11b72c7']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-17T00:00:00.000Z",
+      "labels": [
+        "loader",
+        "sha256"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--402a8cdd-ec8a-5443-85a2-e38eaede4dc3",
+      "name": "fb50d88d8dc1dc5deb3ba1873eb9c196d46d05cb908e49cf3b46d783a826d81c",
+      "description": "sibling .NET injector DEVVV.WHORE (stub) [verdict: malicious; source: own static analysis; public sandbox runs]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = 'fb50d88d8dc1dc5deb3ba1873eb9c196d46d05cb908e49cf3b46d783a826d81c']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-17T00:00:00.000Z",
+      "labels": [
+        "sha256"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--1065a95d-83c9-5837-84a8-001c6cf60dcf",
+      "name": "e738ec59d12caebeaae8cc1a52238f27d9b383db65ad82a7eaf86b496866a4d5",
+      "description": "sibling stager secured_stuub.ps1 [verdict: malicious; source: own static analysis; public sandbox runs]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = 'e738ec59d12caebeaae8cc1a52238f27d9b383db65ad82a7eaf86b496866a4d5']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "sha256",
+        "stage"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--e6ef12c0-c6f8-556c-8881-1f68711e1338",
+      "name": "4524aaa4810d230c4b0022852591f515c07dfb971782cdf0b30fab06f1e2ec7a",
+      "description": "sibling decrypted PowerShell loader (stuub) [verdict: malicious; source: own static analysis; public sandbox runs]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '4524aaa4810d230c4b0022852591f515c07dfb971782cdf0b30fab06f1e2ec7a']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "loader",
+        "sha256"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--fe50ff2b-ceb9-52ae-a608-f15020028aae",
+      "name": "d38b8138d1a96127770d4d49811664ef3d1916d1277c21c3072f612657797702",
+      "description": "sibling .NET injector DEVVV.WHORE (stuub) [verdict: malicious; source: own static analysis; public sandbox runs]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = 'd38b8138d1a96127770d4d49811664ef3d1916d1277c21c3072f612657797702']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "sha256"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--7639d196-9990-5549-a9ac-d55e5ed5c05f",
+      "name": "137f00f628eeeb7f6a5e24e13730c05bb805d3cb544251754e33725800b35ac2",
+      "description": "sibling stager secured_stubc.ps1 (public sandbox run 261124-tdqk8aaz8v) [verdict: malicious; source: own static analysis; public sandbox runs]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '137f00f628eeeb7f6a5e24e13730c05bb805d3cb544251754e33725800b35ac2']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-24T00:00:00.000Z",
+      "labels": [
+        "sha256",
+        "stage"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--9397e82f-339d-58e9-ab4e-aec7d9dc917c",
+      "name": "https://valentimadvocacia.com.br/wp-admin/css/colors/coffee/secured_fstub.ps1",
+      "description": "stage 2 download on a compromised WordPress site [verdict: malicious; source: VBE source; urlscan]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://valentimadvocacia.com.br/wp-admin/css/colors/coffee/secured_fstub.ps1']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-24T00:00:00.000Z",
+      "labels": [
+        "compromised-site",
+        "delivery",
+        "stage",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--abdeb35d-28a7-5eba-9e96-58a0d108189e",
+      "name": "https://valentimadvocacia.com.br/wp-admin/css/colors/blue/secured_stuub.ps1",
+      "description": "stage 2 download on a compromised WordPress site [verdict: malicious; source: VBE source; urlscan]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://valentimadvocacia.com.br/wp-admin/css/colors/blue/secured_stuub.ps1']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "compromised-site",
+        "delivery",
+        "stage",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--5a104562-5da4-5b17-bd4f-aa12ea89182d",
+      "name": "https://valentimadvocacia.com.br/wp-admin/includes/secured_stub.ps1",
+      "description": "stage 2 download on a compromised WordPress site [verdict: malicious; source: VBE source; urlscan]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://valentimadvocacia.com.br/wp-admin/includes/secured_stub.ps1']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-17T00:00:00.000Z",
+      "labels": [
+        "compromised-site",
+        "delivery",
+        "stage",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--df2dfe45-33ef-5ca4-84c4-f747eafd97a1",
+      "name": "Konfirmasi 001.23.11.2026.vbe",
+      "description": "lure file name (Indonesian \"confirmation\") [verdict: malicious; source: MalwareBazaar]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:name = 'Konfirmasi 001.23.11.2026.vbe']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-24T00:00:00.000Z",
+      "labels": [
+        "filename",
+        "lure"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--fdc7faa2-b4f3-50e5-87cc-6640107c6b9b",
+      "name": "sleestak_payload_1.ps1",
+      "description": "sandbox-side name of the stage 2 variants (builder tag?) [verdict: hunting-pivot; source: VirusTotal]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:name = 'sleestak_payload_1.ps1']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-19T00:00:00.000Z",
+      "labels": [
+        "filename",
+        "stage"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--a7cf910c-6fdc-533b-8d2a-7f4b936b38e9",
+      "name": "C:\\Temp\\[A-Z]{8}.ps1",
+      "description": "VBE drop path of stage 2 [verdict: hunting-pivot; source: static VBS read]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:name = '[A-Z]{8}.ps1' AND file:parent_directory_ref.path = 'C:\\\\Temp']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-24T00:00:00.000Z",
+      "labels": [
+        "file-path",
+        "stage"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--76ba0619-12e5-5a59-a58b-6e3a8fa95799",
+      "name": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\aspnet_compiler.exe",
+      "description": "hollowing target; a PowerShell parent that writes into it is high-signal [verdict: hunting-pivot; source: static analysis; public sandbox run]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:name = 'aspnet_compiler.exe' AND file:parent_directory_ref.path = 'C:\\\\Windows\\\\Microsoft.NET\\\\Framework\\\\v4.0.30319']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-24T00:00:00.000Z",
+      "labels": [
+        "file-path"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--8894ec50-6232-5dda-8ee5-03a2306122f3",
+      "name": "www.thecalmdogguide.com",
+      "description": "configured real C2 of build 5547fa8c (decrypted from the sample; role inferred from code layout). Not a working C2 when observed: every check-in on 17, 24 and 25 Nov 2026 was a Cloudflare cache HIT with origin time 0 ms [verdict: malicious; source: xloader-decrypt output (decryption verified); public sandbox runs 261117-rl356sww9m, 261124-tdqk8aaz8v]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.thecalmdogguide.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-17T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "domain"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--00967e16-30a5-5f48-a21a-f6ced3370fbe",
+      "name": "http://www.thecalmdogguide.com/t2rs/",
+      "description": "check-in URL of slot 0 (hard-coded real-C2 host + path of list index 40); cache HIT only, see domain row [verdict: malicious; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'http://www.thecalmdogguide.com/t2rs/']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-17T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "url"
+      ],
+      "confidence": 50
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--5e3d1937-ab4f-566c-811f-f035997321fd",
+      "name": "www.balticflows.eu",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 1, path /b1i9/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.balticflows.eu']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-25T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--d61c7445-89d4-5288-bf3a-57342f68e786",
+      "name": "www.kycpremium.com",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 2, path /8aql/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.kycpremium.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-17T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--191ce8a1-aedd-5ec3-8216-11ea665e48a4",
+      "name": "www.endure360.xyz",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 3, path /0men/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.endure360.xyz']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-17T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--9e233e9a-1909-55d3-8512-8864cffb5f26",
+      "name": "www.kddplatform.com",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 4, path /ey74/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.kddplatform.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-25T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--5e513eea-a404-508a-a9ca-efa45c0e91bd",
+      "name": "www.prostookredycie.pl",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 5, path /vxw8/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.prostookredycie.pl']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-25T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--70693b02-14ad-58e9-8c17-c92c018132bf",
+      "name": "www.zqcpjcjsq9.com.cn",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 6, path /kydz/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.zqcpjcjsq9.com.cn']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-17T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--5cfc8d51-999e-56a0-b26c-b373520829f4",
+      "name": "www.pfalzpelletgmbh.de",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 7, path /4ko6/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.pfalzpelletgmbh.de']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-17T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--053b2d95-c5d1-5eb7-a850-c613a4a5a0b7",
+      "name": "www.royalccb.org",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 8, path /22bp/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.royalccb.org']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-17T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--4792246f-42a6-5993-8f9d-296f9a6d69b0",
+      "name": "www.acaipoint.eu",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 9, path /41g1/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.acaipoint.eu']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-17T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--00b2353e-ccd6-542b-830d-ca716a0d78d7",
+      "name": "www.findhammercoaching.com",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 10, path /8j3o/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.findhammercoaching.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-17T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--3071b438-e94d-5618-81a9-291dd843c273",
+      "name": "www.poketshift.online",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 11, path /wdig/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.poketshift.online']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-25T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--73d86f77-f2c4-58e7-b06a-17cc98e2299e",
+      "name": "www.verdile.fr",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 12, path /shfl/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.verdile.fr']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-25T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--1f72ea89-1093-58eb-b173-a1a840c70700",
+      "name": "www.julis-inselreiten.com",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 13, path /7ktw/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.julis-inselreiten.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-25T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--e0e0966d-45ec-57bb-9385-d606cb14a885",
+      "name": "www.73e2.cc",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 16, path /u7dp/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.73e2.cc']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-25T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--353faad6-48eb-5f1a-84ba-826826a21cb8",
+      "name": "www.nashvilledanse83.com",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 17, path /gp2a/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.nashvilledanse83.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-17T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--eba308b8-fe77-5e30-b5d6-fba1a6ccb2e3",
+      "name": "www.houseemaj.com",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 18, path /n1ht/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.houseemaj.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-25T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--bd4c911b-a41c-58c6-874c-46620b8f85d7",
+      "name": "www.49050217492824.com",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 19, path /8d36/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.49050217492824.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-25T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--55d2539f-3cbd-5027-88ef-05423c237a30",
+      "name": "www.colnerat.top",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 20, path /fwe8/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.colnerat.top']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-17T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--6929cc44-f8ad-548d-8069-c257495e25a3",
+      "name": "www.gopalswadsadan.com",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 21, path /b9mm/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.gopalswadsadan.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-25T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--6287ae10-d76a-5820-b65b-bc6973422bd4",
+      "name": "www.mt-tohoku.net",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 22, path /nmq5/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.mt-tohoku.net']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-17T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--5185bfb3-a835-573a-8a70-7a6ea65487a2",
+      "name": "www.jsxzxw.cn",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 23, path /mpf0/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.jsxzxw.cn']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-17T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--a96bba57-9129-53dc-820c-1ec37a7ee58c",
+      "name": "www.shorteso.com",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 24, path /q61b/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.shorteso.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-25T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--584b6446-5446-5bea-bceb-30814338efb6",
+      "name": "www.fehogr.garden",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 25, path /qhu4/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.fehogr.garden']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-25T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--078a5f25-7f83-561d-b854-301b6fcd1f1d",
+      "name": "www.localtradesgrowth.com",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 26, path /eduu/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.localtradesgrowth.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-17T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--eec1ab77-a463-5d3d-aa60-5f9b4005e2df",
+      "name": "www.zfp31.buzz",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 27, path /g8vj/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.zfp31.buzz']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-17T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--5c3589c0-6b03-5b40-b5d6-ec3f70745f34",
+      "name": "www.ded-vpn.biz",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 28, path /7cru/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.ded-vpn.biz']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-25T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--8b3c0c90-16a3-5400-90db-8ff37a9e8c03",
+      "name": "www.iwantogelpelangi.com",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 29, path /tmog/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.iwantogelpelangi.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-25T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--656721fa-5acf-51c0-8bbb-c5eeb512da7b",
+      "name": "www.ksufd.cn",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 30, path /kclt/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.ksufd.cn']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-25T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--6b010fc8-3d1f-5401-8823-c378f29f4a08",
+      "name": "www.buncistoto-168.lol",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 31, path /bzi4/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.buncistoto-168.lol']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-25T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--01cfa9ed-36a7-5207-9d7a-2d2abef92835",
+      "name": "www.risenskateboards.com",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 32, path /keyc/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.risenskateboards.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-17T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--37024ddc-9374-5796-afb6-a225fcc29078",
+      "name": "www.php7.in",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 33, path /ttte/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.php7.in']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-17T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--7e242604-34ec-5ed4-8c92-d7a2bdb6089d",
+      "name": "www.daxue699.cc",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 34, path /fy52/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.daxue699.cc']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-25T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--35addb9f-3690-5704-927a-4f77f1f4cf0b",
+      "name": "www.boronchaplet.shop",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 35, path /apll/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.boronchaplet.shop']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-17T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--b5570968-8fff-5aa8-9635-a8e4adc074fa",
+      "name": "www.falcointrading.com",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 36, path /or67/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.falcointrading.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-17T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--ed5d01b7-0657-51d0-aabd-246849dc233a",
+      "name": "www.asv-global.ru",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 37, path /2i2p/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.asv-global.ru']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-17T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--ea77173a-5cd4-5f98-9f92-da15ff20490d",
+      "name": "www.78882.my",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 38, path /91rg/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.78882.my']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-17T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--87fe1186-793b-5530-a8e0-3671cfb2526c",
+      "name": "www.gustarelli.com",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 39, path /t8wi/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.gustarelli.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-25T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--f8bf151a-9bb6-5c2a-a604-e60a13b0686b",
+      "name": "www.lr33.cc",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 41, path /g60u/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.lr33.cc']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-17T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--5d7da4a3-b14b-51c6-ad96-222363050e59",
+      "name": "www.civicfindings.com",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 42, path /wnq5/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.civicfindings.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-17T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--98e4d1ec-a8a8-5c80-a887-18e7a64f7501",
+      "name": "www.megawatt-power.online",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 43, path /8ky0/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.megawatt-power.online']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-25T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--be6456cd-495f-5fa7-8d6a-44113f1517c5",
+      "name": "www.yomedia.in",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 44, path /2jzo/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.yomedia.in']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-25T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--36ffa93f-f740-503f-a232-b18216a81442",
+      "name": "www.touriwant.com",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 45, path /12n5/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.touriwant.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-25T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--a5918f2a-8859-576c-b602-e919684724ab",
+      "name": "www.chargedengineering.com",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 46, path /bc7m/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.chargedengineering.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-17T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--cc11fff8-71fc-55d5-b0de-6b09d0347bae",
+      "name": "www.dreamrequest.com",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 47, path /sh25/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.dreamrequest.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-17T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--d83e12c6-6db2-501a-975f-42264d458e42",
+      "name": "www.mementocheese.com",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 48, path /en2a/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.mementocheese.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-17T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--e9b51f77-1ad3-5031-ab83-8862d071b9da",
+      "name": "www.4kmao.com",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 49, path /3puj/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.4kmao.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-17T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--9f0f3801-3adc-526c-9d86-979a411ec190",
+      "name": "www.agely.si",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 50, path /gynz/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.agely.si']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-25T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--6bbea20f-f8f6-5594-b1bc-a9bf3c69e955",
+      "name": "www.lucascurves.co.uk",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 51, path /9iid/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.lucascurves.co.uk']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-25T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--0e874c93-8864-59dc-8515-9ee07fbfc569",
+      "name": "www.oubichen.com",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 52, path /iolj/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.oubichen.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-25T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--bff19eb2-6ca9-58b8-941d-53e589f4f78c",
+      "name": "www.goodinsumall.com",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 53, path /55i6/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.goodinsumall.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-25T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--42c10bec-8753-599f-adda-2b2261c01057",
+      "name": "www.xpitang.cc",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 54, path /frst/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.xpitang.cc']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-17T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--9b3900db-78ee-5713-99a2-ca8a33771bc0",
+      "name": "www.linfa.si",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 55, path /q3tc/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.linfa.si']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-25T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--9ce0b5f3-28a4-5eb2-8e85-27e90d7de5d9",
+      "name": "www.ishratvahmed.cfd",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 56, path /3nca/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.ishratvahmed.cfd']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-17T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--cf55458e-af20-5af8-9b24-aa87c423d3ae",
+      "name": "www.royalhossain.com",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 57, path /4pog/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.royalhossain.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-25T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--6d609a8d-ee06-5ad3-8c6c-c3483ab8a6c9",
+      "name": "www.wdbyyyg.net.cn",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 58, path /n4kx/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.wdbyyyg.net.cn']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-25T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--50478dc5-b918-5e49-808c-7054d0412f76",
+      "name": "www.easyimplant.net",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 59, path /1l73/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.easyimplant.net']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-25T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--77bcc604-8854-5308-9912-f3ddf1d463c9",
+      "name": "www.reservolt.ru",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 60, path /9jql/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.reservolt.ru']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-17T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--147d2c16-6b9a-56df-9f83-35d87ccf33fb",
+      "name": "www.predictionaire.com",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 61, path /0tsy/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.predictionaire.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-17T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--78a7e595-cfc0-55c5-a1e5-215fab7e4c0f",
+      "name": "www.wowfoundry.com",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 62, path /wi01/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.wowfoundry.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-25T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--8961201b-3b27-56e1-815c-dd72a789c9ea",
+      "name": "www.pc-qichachatool.com.cn",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 63, path /42v2/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.pc-qichachatool.com.cn']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-25T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--6115705d-9995-53a2-9e95-10996a96861c",
+      "name": "www.park66corp.com",
+      "description": "decoy-list entry (legitimate site or operator-registered: not determined); list index 64, path /1g2s/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites [verdict: candidate; source: xloader-decrypt output; public sandbox runs]",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'www.park66corp.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-25T00:00:00.000Z",
+      "labels": [
+        "candidate",
+        "domain"
+      ],
+      "confidence": 15
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "malware",
+      "id": "malware--38a27e63-6541-592b-a6e9-fd6294f07209",
+      "name": "Xloader (Formbook)",
+      "is_family": true
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "malware",
+      "id": "malware--33e34e98-9cf4-529b-bc85-e43c32453cd0",
+      "name": ".NET process-hollowing injector",
+      "is_family": true
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "malware",
+      "id": "malware--7381dac3-25c4-535c-a244-2f35028ac152",
+      "name": "PowerShell AES/XOR loader",
+      "is_family": true,
+      "malware_types": [
+        "dropper"
+      ]
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--651892b7-6047-5dcd-85e1-0b4110b1b154",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--ffd68582-e744-5ac5-b0d2-362fbb681d69",
+      "target_ref": "malware--38a27e63-6541-592b-a6e9-fd6294f07209"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--227805de-cc87-5135-877e-ba45744fdeca",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--8894ec50-6232-5dda-8ee5-03a2306122f3",
+      "target_ref": "malware--38a27e63-6541-592b-a6e9-fd6294f07209"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-25T00:00:00.000Z",
+      "modified": "2026-11-25T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--aac3adee-72d3-5f35-bc68-a572401894ac",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--00967e16-30a5-5f48-a21a-f6ced3370fbe",
+      "target_ref": "malware--38a27e63-6541-592b-a6e9-fd6294f07209"
+    }
+  ]
+}

@@ -1,0 +1,872 @@
+{
+  "_warning": "MACHINE-READABLE, NOT DEFANGED: values are live indicators. Do not browse or fetch them.",
+  "case": "2026-11-formbook-vbe-valentim",
+  "license": "CC0-1.0",
+  "count": 96,
+  "iocs": [
+    {
+      "type": "sha256",
+      "value": "866dd289e94a2ed4c405858e3d0eb0faa68bf736d15cda3d016fe9df9641cedd",
+      "first_seen": "2026-11-24",
+      "role": "stage 1 VBE downloader (Konfirmasi 001.23.11.2026.vbe)",
+      "verdict": "malicious",
+      "confidence": "high",
+      "source": "own static analysis; public sandbox runs"
+    },
+    {
+      "type": "sha256",
+      "value": "2f92779fcf03465a2d2d13ba1bebb77bd1f7d45727c84cd98cab5ff8d14787f7",
+      "first_seen": "2026-11-24",
+      "role": "stage 2 secured_fstub.ps1 (AES loader)",
+      "verdict": "malicious",
+      "confidence": "high",
+      "source": "own static analysis; public sandbox runs"
+    },
+    {
+      "type": "sha256",
+      "value": "852a1820dc6c6aac9c71e9b3d0d0ddeac65f3595390f5f3f8ca07389bef077ac",
+      "first_seen": "2026-11-24",
+      "role": "stage 3 decrypted PowerShell loader (XOR + reflection), fstub",
+      "verdict": "malicious",
+      "confidence": "high",
+      "source": "own static analysis; public sandbox runs"
+    },
+    {
+      "type": "sha256",
+      "value": "4899600bc2c13639f3217c319620372a6af39a50cd49c6a9a380d08c72982bb5",
+      "first_seen": "2026-11-24",
+      "role": "stage 4 .NET injector MACHINEE.WHORE (fstub)",
+      "verdict": "malicious",
+      "confidence": "high",
+      "source": "own static analysis; public sandbox runs"
+    },
+    {
+      "type": "sha256",
+      "value": "5547fa8c4fc76486cd99a98bd9e33ffedd980c848430c494322e18ad3d6284f1",
+      "first_seen": "2026-11-17",
+      "role": "stage 5 packed PE32 Xloader payload (byte-identical in all 3 variants)",
+      "verdict": "malicious",
+      "confidence": "high",
+      "source": "own static analysis; public sandbox runs"
+    },
+    {
+      "type": "sha256",
+      "value": "50f186dc7714b57358e8ca1fd135d2ae28a10aa41a25c34009e7392655a5fb4f",
+      "first_seen": "2026-11-17",
+      "role": "sibling stager secured_stub.ps1",
+      "verdict": "malicious",
+      "confidence": "high",
+      "source": "own static analysis; public sandbox runs"
+    },
+    {
+      "type": "sha256",
+      "value": "02bfbaa59506188c1235aa9e89a76a6605b5ea89c6d5dc80dc98d24ff11b72c7",
+      "first_seen": "2026-11-17",
+      "role": "sibling decrypted PowerShell loader (stub)",
+      "verdict": "malicious",
+      "confidence": "high",
+      "source": "own static analysis; public sandbox runs"
+    },
+    {
+      "type": "sha256",
+      "value": "fb50d88d8dc1dc5deb3ba1873eb9c196d46d05cb908e49cf3b46d783a826d81c",
+      "first_seen": "2026-11-17",
+      "role": "sibling .NET injector DEVVV.WHORE (stub)",
+      "verdict": "malicious",
+      "confidence": "high",
+      "source": "own static analysis; public sandbox runs"
+    },
+    {
+      "type": "sha256",
+      "value": "e738ec59d12caebeaae8cc1a52238f27d9b383db65ad82a7eaf86b496866a4d5",
+      "first_seen": "2026-11-19",
+      "role": "sibling stager secured_stuub.ps1",
+      "verdict": "malicious",
+      "confidence": "high",
+      "source": "own static analysis; public sandbox runs"
+    },
+    {
+      "type": "sha256",
+      "value": "4524aaa4810d230c4b0022852591f515c07dfb971782cdf0b30fab06f1e2ec7a",
+      "first_seen": "2026-11-19",
+      "role": "sibling decrypted PowerShell loader (stuub)",
+      "verdict": "malicious",
+      "confidence": "high",
+      "source": "own static analysis; public sandbox runs"
+    },
+    {
+      "type": "sha256",
+      "value": "d38b8138d1a96127770d4d49811664ef3d1916d1277c21c3072f612657797702",
+      "first_seen": "2026-11-19",
+      "role": "sibling .NET injector DEVVV.WHORE (stuub)",
+      "verdict": "malicious",
+      "confidence": "high",
+      "source": "own static analysis; public sandbox runs"
+    },
+    {
+      "type": "sha256",
+      "value": "137f00f628eeeb7f6a5e24e13730c05bb805d3cb544251754e33725800b35ac2",
+      "first_seen": "2026-11-24",
+      "role": "sibling stager secured_stubc.ps1 (public sandbox run 261124-tdqk8aaz8v)",
+      "verdict": "malicious",
+      "confidence": "high",
+      "source": "own static analysis; public sandbox runs"
+    },
+    {
+      "type": "url",
+      "value": "https://valentimadvocacia.com.br/wp-admin/css/colors/coffee/secured_fstub.ps1",
+      "first_seen": "2026-11-24",
+      "role": "stage 2 download on a compromised WordPress site",
+      "verdict": "malicious",
+      "confidence": "high",
+      "source": "VBE source; urlscan"
+    },
+    {
+      "type": "url",
+      "value": "https://valentimadvocacia.com.br/wp-admin/css/colors/blue/secured_stuub.ps1",
+      "first_seen": "2026-11-19",
+      "role": "stage 2 download on a compromised WordPress site",
+      "verdict": "malicious",
+      "confidence": "high",
+      "source": "VBE source; urlscan"
+    },
+    {
+      "type": "url",
+      "value": "https://valentimadvocacia.com.br/wp-admin/includes/secured_stub.ps1",
+      "first_seen": "2026-11-17",
+      "role": "stage 2 download on a compromised WordPress site",
+      "verdict": "malicious",
+      "confidence": "high",
+      "source": "VBE source; urlscan"
+    },
+    {
+      "type": "domain",
+      "value": "valentimadvocacia.com.br",
+      "first_seen": "2026-11-17",
+      "role": "stage host (compromised legitimate WordPress site)",
+      "verdict": "compromised-or-abused-legit",
+      "confidence": "high",
+      "source": "RDAP; public sandbox run"
+    },
+    {
+      "type": "ipv4",
+      "value": "192.185.210.145",
+      "first_seen": "2026-11-17",
+      "role": "stage host IP (shared hosting; do not block the IP blindly)",
+      "verdict": "shared-or-legit-infrastructure",
+      "confidence": "high",
+      "source": "public sandbox run; ipinfo"
+    },
+    {
+      "type": "filename",
+      "value": "Konfirmasi 001.23.11.2026.vbe",
+      "first_seen": "2026-11-24",
+      "role": "lure file name (Indonesian \"confirmation\")",
+      "verdict": "malicious",
+      "confidence": "high",
+      "source": "MalwareBazaar"
+    },
+    {
+      "type": "filename",
+      "value": "sleestak_payload_1.ps1",
+      "first_seen": "2026-11-19",
+      "role": "sandbox-side name of the stage 2 variants (builder tag?)",
+      "verdict": "hunting-pivot",
+      "confidence": "low",
+      "source": "VirusTotal"
+    },
+    {
+      "type": "file-path",
+      "value": "C:\\Temp\\[A-Z]{8}.ps1",
+      "first_seen": "2026-11-24",
+      "role": "VBE drop path of stage 2",
+      "verdict": "hunting-pivot",
+      "confidence": "high",
+      "source": "static VBS read"
+    },
+    {
+      "type": "string",
+      "value": "powershell.exe -nop -ep bypass -file \"C:\\Temp\\XXXXXXXX.ps1\"",
+      "first_seen": "2026-11-24",
+      "role": "VBE launch command line (hidden window)",
+      "verdict": "hunting-pivot",
+      "confidence": "high",
+      "source": "static VBS read"
+    },
+    {
+      "type": "file-path",
+      "value": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\aspnet_compiler.exe",
+      "first_seen": "2026-11-24",
+      "role": "hollowing target; a PowerShell parent that writes into it is high-signal",
+      "verdict": "hunting-pivot",
+      "confidence": "high",
+      "source": "static analysis; public sandbox run"
+    },
+    {
+      "type": "process",
+      "value": "C:\\Windows\\SysWOW64\\newdev.exe",
+      "first_seen": "2026-11-17",
+      "role": "second injection target of the Xloader payload in the public sandbox run",
+      "verdict": "hunting-pivot",
+      "confidence": "medium",
+      "source": "public sandbox run 261117-rl356sww9m"
+    },
+    {
+      "type": "string",
+      "value": "MACHINEE.WHORE::LAUNCHER",
+      "first_seen": "2026-11-24",
+      "role": ".NET type and method invoked by the loader (variants: DEVVV.WHORE)",
+      "verdict": "hunting-pivot",
+      "confidence": "high",
+      "source": "static analysis"
+    },
+    {
+      "type": "string",
+      "value": "Layer Reversal Engine - Variant 24B",
+      "first_seen": "2026-11-24",
+      "role": "banner in the decrypted PowerShell loader",
+      "verdict": "hunting-pivot",
+      "confidence": "medium",
+      "source": "static analysis"
+    },
+    {
+      "type": "string",
+      "value": "PS Secure Loader - Advanced Decryption Engine v2",
+      "first_seen": "2026-11-24",
+      "role": "banner in secured_fstub.ps1",
+      "verdict": "hunting-pivot",
+      "confidence": "medium",
+      "source": "static analysis"
+    },
+    {
+      "type": "domain",
+      "value": "www.thecalmdogguide.com",
+      "first_seen": "2026-11-17",
+      "role": "configured real C2 of build 5547fa8c (decrypted from the sample; role inferred from code layout). Not a working C2 when observed: every check-in on 17, 24 and 25 Nov 2026 was a Cloudflare cache HIT with origin time 0 ms",
+      "verdict": "malicious",
+      "confidence": "medium",
+      "source": "xloader-decrypt output (decryption verified); public sandbox runs 261117-rl356sww9m, 261124-tdqk8aaz8v"
+    },
+    {
+      "type": "url",
+      "value": "http://www.thecalmdogguide.com/t2rs/",
+      "first_seen": "2026-11-17",
+      "role": "check-in URL of slot 0 (hard-coded real-C2 host + path of list index 40); cache HIT only, see domain row",
+      "verdict": "malicious",
+      "confidence": "medium",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.balticflows.eu",
+      "first_seen": "2026-11-25",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 1, path /b1i9/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.kycpremium.com",
+      "first_seen": "2026-11-17",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 2, path /8aql/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.endure360.xyz",
+      "first_seen": "2026-11-17",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 3, path /0men/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.kddplatform.com",
+      "first_seen": "2026-11-25",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 4, path /ey74/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.prostookredycie.pl",
+      "first_seen": "2026-11-25",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 5, path /vxw8/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.zqcpjcjsq9.com.cn",
+      "first_seen": "2026-11-17",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 6, path /kydz/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.pfalzpelletgmbh.de",
+      "first_seen": "2026-11-17",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 7, path /4ko6/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.royalccb.org",
+      "first_seen": "2026-11-17",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 8, path /22bp/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.acaipoint.eu",
+      "first_seen": "2026-11-17",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 9, path /41g1/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.findhammercoaching.com",
+      "first_seen": "2026-11-17",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 10, path /8j3o/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.poketshift.online",
+      "first_seen": "2026-11-25",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 11, path /wdig/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.verdile.fr",
+      "first_seen": "2026-11-25",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 12, path /shfl/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.julis-inselreiten.com",
+      "first_seen": "2026-11-25",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 13, path /7ktw/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.cafepress.com",
+      "first_seen": "2026-11-25",
+      "role": "legitimate site used as a decoy; list index 14, path /82pg/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "shared-or-legit-infrastructure",
+      "confidence": "high",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.larepublica.pe",
+      "first_seen": "2026-11-17",
+      "role": "legitimate site used as a decoy; list index 15, path /zs1q/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "shared-or-legit-infrastructure",
+      "confidence": "high",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.73e2.cc",
+      "first_seen": "2026-11-25",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 16, path /u7dp/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.nashvilledanse83.com",
+      "first_seen": "2026-11-17",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 17, path /gp2a/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.houseemaj.com",
+      "first_seen": "2026-11-25",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 18, path /n1ht/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.49050217492824.com",
+      "first_seen": "2026-11-25",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 19, path /8d36/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.colnerat.top",
+      "first_seen": "2026-11-17",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 20, path /fwe8/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.gopalswadsadan.com",
+      "first_seen": "2026-11-25",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 21, path /b9mm/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.mt-tohoku.net",
+      "first_seen": "2026-11-17",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 22, path /nmq5/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.jsxzxw.cn",
+      "first_seen": "2026-11-17",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 23, path /mpf0/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.shorteso.com",
+      "first_seen": "2026-11-25",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 24, path /q61b/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.fehogr.garden",
+      "first_seen": "2026-11-25",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 25, path /qhu4/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.localtradesgrowth.com",
+      "first_seen": "2026-11-17",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 26, path /eduu/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.zfp31.buzz",
+      "first_seen": "2026-11-17",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 27, path /g8vj/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.ded-vpn.biz",
+      "first_seen": "2026-11-25",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 28, path /7cru/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.iwantogelpelangi.com",
+      "first_seen": "2026-11-25",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 29, path /tmog/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.ksufd.cn",
+      "first_seen": "2026-11-25",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 30, path /kclt/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.buncistoto-168.lol",
+      "first_seen": "2026-11-25",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 31, path /bzi4/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.risenskateboards.com",
+      "first_seen": "2026-11-17",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 32, path /keyc/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.php7.in",
+      "first_seen": "2026-11-17",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 33, path /ttte/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.daxue699.cc",
+      "first_seen": "2026-11-25",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 34, path /fy52/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.boronchaplet.shop",
+      "first_seen": "2026-11-17",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 35, path /apll/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.falcointrading.com",
+      "first_seen": "2026-11-17",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 36, path /or67/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.asv-global.ru",
+      "first_seen": "2026-11-17",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 37, path /2i2p/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.78882.my",
+      "first_seen": "2026-11-17",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 38, path /91rg/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.gustarelli.com",
+      "first_seen": "2026-11-25",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 39, path /t8wi/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.bestbuy.ca",
+      "first_seen": "2026-11-25",
+      "role": "legitimate site used as a decoy; list index 40, path /t2rs/; not seen in the sandbox runs (decrypted only) (its slot-0 use is replaced by the real-C2 string). DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "shared-or-legit-infrastructure",
+      "confidence": "high",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.lr33.cc",
+      "first_seen": "2026-11-17",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 41, path /g60u/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.civicfindings.com",
+      "first_seen": "2026-11-17",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 42, path /wnq5/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.megawatt-power.online",
+      "first_seen": "2026-11-25",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 43, path /8ky0/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.yomedia.in",
+      "first_seen": "2026-11-25",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 44, path /2jzo/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.touriwant.com",
+      "first_seen": "2026-11-25",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 45, path /12n5/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.chargedengineering.com",
+      "first_seen": "2026-11-17",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 46, path /bc7m/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.dreamrequest.com",
+      "first_seen": "2026-11-17",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 47, path /sh25/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.mementocheese.com",
+      "first_seen": "2026-11-17",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 48, path /en2a/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.4kmao.com",
+      "first_seen": "2026-11-17",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 49, path /3puj/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.agely.si",
+      "first_seen": "2026-11-25",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 50, path /gynz/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.lucascurves.co.uk",
+      "first_seen": "2026-11-25",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 51, path /9iid/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.oubichen.com",
+      "first_seen": "2026-11-25",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 52, path /iolj/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.goodinsumall.com",
+      "first_seen": "2026-11-25",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 53, path /55i6/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.xpitang.cc",
+      "first_seen": "2026-11-17",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 54, path /frst/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.linfa.si",
+      "first_seen": "2026-11-25",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 55, path /q3tc/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.ishratvahmed.cfd",
+      "first_seen": "2026-11-17",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 56, path /3nca/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.royalhossain.com",
+      "first_seen": "2026-11-25",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 57, path /4pog/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.wdbyyyg.net.cn",
+      "first_seen": "2026-11-25",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 58, path /n4kx/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.easyimplant.net",
+      "first_seen": "2026-11-25",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 59, path /1l73/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.reservolt.ru",
+      "first_seen": "2026-11-17",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 60, path /9jql/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.predictionaire.com",
+      "first_seen": "2026-11-17",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 61, path /0tsy/; seen in the public sandbox beacon walk. DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.wowfoundry.com",
+      "first_seen": "2026-11-25",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 62, path /wi01/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.pc-qichachatool.com.cn",
+      "first_seen": "2026-11-25",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 63, path /42v2/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "domain",
+      "value": "www.park66corp.com",
+      "first_seen": "2026-11-25",
+      "role": "decoy-list entry (legitimate site or operator-registered: not determined); list index 64, path /1g2s/; not seen in the sandbox runs (decrypted only). DO NOT BLOCK on the list alone: many entries are legitimate sites",
+      "verdict": "candidate",
+      "confidence": "low",
+      "source": "xloader-decrypt output; public sandbox runs"
+    },
+    {
+      "type": "reference",
+      "value": "https://tria.ge/261117-rl356sww9m",
+      "first_seen": "2026-11-17",
+      "role": "public sandbox run of a sibling stager (Xloader payload, beacon walk)",
+      "verdict": "reference",
+      "confidence": "high",
+      "source": "public"
+    },
+    {
+      "type": "reference",
+      "value": "https://tria.ge/261117-rp7yjacz7y",
+      "first_seen": "2026-11-17",
+      "role": "public sandbox run of a sibling stager",
+      "verdict": "reference",
+      "confidence": "high",
+      "source": "public"
+    },
+    {
+      "type": "reference",
+      "value": "https://tria.ge/261124-tdqk8aaz8v",
+      "first_seen": "2026-11-24",
+      "role": "public sandbox run of secured_stubc.ps1, 900 s, 32-host beacon walk",
+      "verdict": "reference",
+      "confidence": "high",
+      "source": "public"
+    },
+    {
+      "type": "reference",
+      "value": "https://x.com/stop_spammerz/status/2125196471435993094",
+      "first_seen": "2026-11-24",
+      "role": "original post sharing the VBE (credit)",
+      "verdict": "reference",
+      "confidence": "high",
+      "source": "public"
+    }
+  ]
+}

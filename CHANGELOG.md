@@ -229,3 +229,10 @@
 - Dead drops read 2026-11-25: the Telegraph page and the contract decrypt to the embedded primary.
 - +18 IOC rows, +1 `c2_timeline.csv` row, README section and table row, ThreatFox references 2050969 to 2050972. No AES keys or other secrets published.
 - Not checked: liveness of the C2 (nothing contacted); setter transactions on the contract.
+
+### 2026-11-25 (Formbook/Xloader VBE case: C2 table decrypted)
+- New `tools/xloader-decrypt/`: static decryptor for the C2 / decoy table of Xloader 8.1+ builds (input a sandbox stage or injected-payload dump, output JSON). Validated on payload `5547fa8c...84f1`: 23 of 26 unique dumps from three public sandbox runs decrypt to the identical 64-host / 65-path table (3 snapshots refused by design: encrypted or empty); first-batch order 16/16 and 31/31 observed beacon pairs match the packet captures. `test_xloader_decrypt.py` and `expected_table.csv`; no malware dump is shipped.
+- New `iocs/2026-11-formbook-vbe-valentim/`: the VBE -> PowerShell -> .NET injector chain, three sibling stagers, the configured real C2 `www.thecalmdogguide[.]com/t2rs/` (medium: decryption verified, role inferred; not a working C2 on 17/24/25 Nov, every check-in a Cloudflare cache HIT with origin 0 ms) and the 64 decoy-list hosts as context rows (`to_ids=false`).
+- Retracted: the IOC gist of this case first named `www.thecalmdogguide[.]com/t2rs/` as the likely C2, then called it "refuted" and a decoy-like list entry. The decrypted config shows it is the build's hard-coded real-C2 string; the cache-HIT finding stands but only shows it was not answering from an origin. Gist updated with an explicit correction section; this repo had no earlier row.
+- Not checked: liveness of any list host (nothing contacted); YARA/Sigma for this chain not written.
+

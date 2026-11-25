@@ -1,0 +1,16 @@
+title: Formbook/Xloader VBE downloader via a compromised WordPress site (secured_*stub.ps1 chain)
+date: 2026-11-25
+families: [Xloader (Formbook), .NET process-hollowing injector, PowerShell AES/XOR loader]
+rules: []
+video: ''
+related_videos: []
+gist: https://gist.github.com/harperjohnsai/3934e19f9290576dd77fcf4f82db4e7c
+references:
+  - {source_name: Public sandbox run (sibling stager), url: "https://tria.ge/261117-rl356sww9m"}
+  - {source_name: Public sandbox run (sibling stager), url: "https://tria.ge/261117-rp7yjacz7y"}
+  - {source_name: Public sandbox run (secured_stubc.ps1), url: "https://tria.ge/261124-tdqk8aaz8v"}
+  - {source_name: Original post sharing the VBE (@stop_spammerz), url: "https://x.com/stop_spammerz/status/2125196471435993094"}
+  - {source_name: Zscaler ThreatLabz, Xloader 8.1-8.7 obfuscation and network protocol, url: "https://www.zscaler.com/blogs/security-research/latest-xloader-obfuscation-methods-and-network-protocol"}
+indicates:
+  - family: Xloader (Formbook)
+    role_match: 'Xloader|real C2|decoy-list|list index|packed PE32'
