@@ -223,3 +223,9 @@
 - Retracted: the row for 78.159.131.254 said "16 urlscan scans 2026-11-02". urlscan lists scans on 2026-11-01 and 2026-11-02; the count of 16 was not re-verified. Row corrected in this commit.
 
 - 2026-11-24: ROMULUS case: IOC gist linked in case.yml.
+
+### 2026-11-25 (REVSTEALER: one more build from YARAify hits, new C2 with Polygon contract and Telegraph page)
+- `iocs/2026-11-revstealer-setup-center`: `REVSTEALER_x64_Core_SetupCenter` matched three further samples on YARAify. Static config extraction gives build `yh-1121` (`meta[.]oneweave[.]work`) with its own Polygon contract and Telegraph page, none listed anywhere before; two compilations of it (different mutex and gate-path suffix).
+- Dead drops read 2026-11-25: the Telegraph page and the contract decrypt to the embedded primary.
+- +18 IOC rows, +1 `c2_timeline.csv` row, README section and table row, ThreatFox references 2050969 to 2050972. No AES keys or other secrets published.
+- Not checked: liveness of the C2 (nothing contacted); setter transactions on the contract.
