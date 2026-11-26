@@ -1,0 +1,117 @@
+name: Custom.MacOS.TCC.Review
+author: Harper Johns (autonomous AI security researcher, 2026-11-26)
+description: |
+  Review of the macOS privacy-consent database (TCC.db): who holds the sensitive permissions, joined with the apps that are
+  actually installed. The built-in `MacOS.System.TCC` dumps rows; this artifact adds the join and a triage verdict.
+
+  Sources (static reads; the databases are copied by the sqlite() plugin, nothing is written or executed):
+    Access            rows of the `access` table of every TCC.db found: the system database
+                      (`/Library/Application Support/com.apple.TCC/TCC.db`) and each user's
+                      (`/Users/*/Library/Application Support/com.apple.TCC/TCC.db`). Columns: service, client (bundle id or path),
+                      client_type, auth value/reason, AppleEvents target, TCC `last_modified`, and the join result: is the client
+                      installed (bundle id found in an app's Info.plist, or the client path exists), the app path and the
+                      Info.plist mtime. Only granted rows (auth_value 2 allowed, 3 limited) unless IncludeDenied=Y.
+    InstalledRemoteTools  installed apps whose bundle id or name matches the remote-access regex (inventory, no TCC needed).
+
+  Sensitive services: Accessibility, ScreenCapture, SystemPolicyAllFiles, ListenEvent, PostEvent, AppleEvents, Microphone, Camera
+  (parameter). `Suspicious` is true when a sensitive service is granted to
+    remote_access_tool   a client matching the remote-access regex (AnyDesk, Splashtop, ScreenConnect/ConnectWise,
+                         LogMeIn, RustDesk, VNC clients, RMM agents, ...)
+    not_installed        a client that is not installed any more (bundle id in no app, or the client path is gone; `com.apple.*`
+                         ids and system paths are treated as installed). Helpers, command-line tools and Homebrew paths
+                         can show up here without being malicious.
+    terminal_or_shell    a terminal emulator, a shell, a script interpreter or the sshd wrapper (these are the classic route
+                         to inherit permissions for anything run from them)
+  `Reasons` lists which of the three fired.
+
+  Requirements and limits: reading either TCC.db needs Full Disk Access for the collecting process (without it the glob or
+  the sqlite() call fails with "operation not permitted" and the artifact returns 0 rows: the session preflight must check
+  this). Modern schema only (auth_value column, macOS 11 and later); older databases are not parsed. There is no
+  "last used" timestamp in TCC: the artifact reports TCC's `last_modified` (when the grant changed) and the app's Info.plist
+  mtime. A grant to a remote tool is not a compromise by itself: it is what the tool needs to work. The finding is that
+  the tool and its grant exist, or that a grant outlived the app.
+reference:
+  - https://attack.mitre.org/techniques/T1548/006/
+  - https://attack.mitre.org/techniques/T1219/
+type: CLIENT
+parameters:
+  - name: Root
+    description: "Prefix for every path (test hook: point it at a fake root; leave empty to read the live system)."
+  - name: IgnoreOSCheck
+    description: Test hook, lets the artifact run on non-macOS against a synthetic tree.
+    type: bool
+  - name: IncludeDenied
+    description: Also return denied/unknown rows (auth_value 0 and 1).
+    type: bool
+  - name: TCCGlob
+    default: '{/Library/Application Support/com.apple.TCC/TCC.db,/Users/*/Library/Application Support/com.apple.TCC/TCC.db}'
+  - name: AppsGlob
+    description: Info.plist files of installed apps (bundles and common helper locations).
+    default: '{/Applications,/Applications/Utilities,/Applications/*,/System/Applications,/System/Applications/Utilities,/System/Library/CoreServices,/Users/*/Applications}/*.app/Contents/Info.plist'
+  - name: HelperAppsGlob
+    default: '/Applications/*.app/Contents/{Library/LoginItems,Helpers,MacOS,Applications}/*.app/Contents/Info.plist'
+  - name: SensitiveRegex
+    type: regex
+    default: '^kTCCService(Accessibility|ScreenCapture|SystemPolicyAllFiles|ListenEvent|PostEvent|AppleEvents|Microphone|Camera)$'
+  - name: RemoteToolRegex
+    type: regex
+    default: '(?i)(team.?viewer|anydesk|splashtop|screenconnect|connectwise|logmein|gotoassist|gotomypc|rustdesk|remotepc|supremo|zoho.?assist|vnc|jump.?desktop|chrome.?remote|ultraviewer|bomgar|beyondtrust|atera|ninja.?rmm|datto|kaseya|action1|n-able|syncro|dameware|radmin|nomachine|getscreen|meshagent|meshcentral|dwservice|aeroadmin|ammyy|parsec)'
+  - name: ShellRegex
+    type: regex
+    default: '(?i)^(com\.apple\.Terminal|com\.googlecode\.iterm2|dev\.warp\.Warp-.*|net\.kovidgoyal\.kitty|co\.zeit\.hyper|org\.alacritty|io\.alacritty|com\.github\.wez\.wezterm|com\.mitchellh\.ghostty|com\.apple\.ScriptEditor2)$|^(/private)?/(usr/(bin|sbin|local/bin)|bin|sbin|opt/homebrew/bin)/(ba|z|c|k|fi|da|tc)?sh$|/(osascript|python[0-9.]*|perl|ruby|node|sshd-keygen-wrapper|sshd|ssh|curl|nc|ncat|socat)$'
+sources:
+  - name: Access
+    precondition: |
+      SELECT OS FROM info() WHERE OS = 'darwin' OR IgnoreOSCheck
+    query: |
+      LET esc(S) = regex_replace(source=S, re="([.+*?()|\\[\\]{}^$\\\\])", replace="\\\\$1")
+      LET rel(P) = regex_replace(source=P, re="^" + esc(S=Root), replace="")
+      LET apps = SELECT OSPath, Mtime, plist(file=OSPath) AS I FROM glob(globs=[Root + AppsGlob, Root + HelperAppsGlob])
+      LET installed <= SELECT I.CFBundleIdentifier AS BundleId, I.CFBundleName AS AppName, rel(P=regex_replace(source=OSPath, re="/Contents/Info\\.plist$", replace="")) AS App, Mtime AS AppMtime
+        FROM apps WHERE I.CFBundleIdentifier
+      LET appmap <= to_dict(item={ SELECT BundleId AS _key, dict(App=App, Name=AppName, Mtime=AppMtime) AS _value FROM installed })
+      LET exists(P) = SELECT OSPath FROM glob(globs=Root + P)
+      LET reason(V) = if(condition=V = 2, then="user_consent", else=if(condition=V = 3, then="user_set", else=if(condition=V = 4, then="system_set",
+            else=if(condition=V = 5, then="service_policy", else=if(condition=V = 6, then="mdm_policy", else=if(condition=V = 7, then="override_policy",
+            else=if(condition=V = 11, then="entitled", else=str(str=V))))))))
+      LET dbs = SELECT OSPath FROM glob(globs=Root + TCCGlob) WHERE NOT IsDir
+      LET rows = SELECT * FROM foreach(row=dbs, query={
+          SELECT OSPath AS Db, service AS Service, client AS Client, client_type AS ClientType, auth_value AS AuthValue,
+                 auth_reason AS AuthReason, indirect_object_identifier AS Target, last_modified AS LastModified
+          FROM sqlite(file=OSPath, query="SELECT service, client, client_type, auth_value, auth_reason, indirect_object_identifier, last_modified FROM access ORDER BY last_modified DESC LIMIT 50000") })
+        WHERE IncludeDenied OR AuthValue = 2 OR AuthValue = 3
+      LET joined = SELECT *,
+            if(condition=ClientType = 0, then=get(item=appmap, field=Client)) AS AppInfo,
+            if(condition=ClientType = 0, then=Client =~ "^com\\.apple\\.",
+               else=Client =~ "^(/private)?/(System|usr/(bin|sbin|libexec|lib)|bin|sbin)/" OR len(list=exists(P=Client).OSPath) > 0) AS SystemOrPresent
+        FROM rows
+      LET scored = SELECT *, if(condition=AppInfo, then=true, else=SystemOrPresent) AS Installed,
+            Service =~ SensitiveRegex AS Sensitive,
+            (Client =~ RemoteToolRegex OR AppInfo.Name =~ RemoteToolRegex) AS Remote,
+            Client =~ ShellRegex AS Shell
+        FROM joined
+      SELECT if(condition=Db =~ "/Users/", then=regex_replace(source=rel(P=Db), re="^/Users/([^/]+)/.*$", replace="$1"), else="(system)") AS Scope,
+             Service, Client, ClientType, AuthValue,
+             if(condition=AuthValue = 2, then="allowed", else=if(condition=AuthValue = 3, then="limited",
+                else=if(condition=AuthValue = 0, then="denied", else="unknown"))) AS Auth,
+             reason(V=AuthReason) AS AuthReason, Target AS AppleEventsTarget, timestamp(epoch=LastModified) AS TCCLastModified,
+             Installed, AppInfo.App AS AppPath, AppInfo.Mtime AS AppMtime, Sensitive, Remote AS RemoteTool, Shell AS TerminalOrShell,
+             (Sensitive AND (AuthValue = 2 OR AuthValue = 3) AND (Remote OR Shell OR NOT Installed)) AS Suspicious,
+             if(condition=Sensitive AND (AuthValue = 2 OR AuthValue = 3),
+                then=if(condition=Remote, then="remote_access_tool;", else="") +
+                     if(condition=NOT Installed, then="not_installed;", else="") +
+                     if(condition=Shell, then="terminal_or_shell;", else=""),
+                else="") AS Reasons,
+             rel(P=Db) AS Database
+      FROM scored
+  - name: InstalledRemoteTools
+    precondition: |
+      SELECT OS FROM info() WHERE OS = 'darwin' OR IgnoreOSCheck
+    query: |
+      LET esc(S) = regex_replace(source=S, re="([.+*?()|\\[\\]{}^$\\\\])", replace="\\\\$1")
+      SELECT I.CFBundleIdentifier AS BundleId, I.CFBundleName AS Name, I.CFBundleShortVersionString AS Version,
+             regex_replace(source=regex_replace(source=OSPath, re="/Contents/Info\\.plist$", replace=""), re="^" + esc(S=Root), replace="") AS App,
+             Mtime AS InstalledMtime
+      FROM foreach(row={ SELECT OSPath, Mtime, plist(file=OSPath) AS I FROM glob(globs=[Root + AppsGlob, Root + HelperAppsGlob]) },
+                   query={ SELECT OSPath, Mtime, I FROM scope() })
+      WHERE I.CFBundleIdentifier =~ RemoteToolRegex OR I.CFBundleName =~ RemoteToolRegex

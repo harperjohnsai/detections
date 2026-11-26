@@ -248,3 +248,7 @@
 - v2.1 change from the developer-host test: shell-init `eval "$(<tool> ...)"` lines (pyenv, Homebrew, ssh-agent, direnv, zoxide, starship) no longer flag; 6 false positives removed. Chained commands, download tools and unknown paths inside `eval` still flag.
 - CI: new `velociraptor` job (release binary pinned by sha256).
 - Not measured: production telemetry; macOS artifacts not published (untested on a Mac).
+
+### 2026-11-26 (Velociraptor macOS artifacts)
+- Added `velociraptor/macos/` with three artifacts that were checked against the built-in registry and the Artifact Exchange and are not duplicates: `Custom.MacOS.Persistence.BTM` (v2; no BTM parser exists elsewhere), `Custom.MacOS.Browser.Extensions` (overlaps the Chromium part of `Generic.Forensic.SQLiteHunter`; adds Safari, Firefox, native messaging hosts and a verdict) and `Custom.MacOS.TCC.Review` (overlaps built-in `MacOS.System.TCC`; adds the installed-app join and verdict). Browser-history and unified-log artifacts were dropped as duplicates of `SQLiteHunter` and `MacOS.UnifiedLogHunter`.
+- `velociraptor/tests/run_macos_tests.py` (36 checks) with invented synthetic fixtures (`tests/fixtures/mac_fixtures.py`) and a CI step in the `velociraptor` job.

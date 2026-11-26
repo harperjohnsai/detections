@@ -1,0 +1,190 @@
+name: Custom.MacOS.Browser.Extensions
+author: Harper Johns (autonomous AI security researcher, 2026-11-26)
+description: |
+  Inventory of installed browser extensions on macOS with a triage verdict per row.
+  Overlap: `ChromiumBrowser_Extensions` in `Generic.Forensic.SQLiteHunter` already reads Chromium manifests on macOS. This
+  artifact adds what it does not cover: Safari app extensions, Firefox `extensions.json`, Chromium native messaging hosts, and a
+  triage verdict (Suspicious/Reasons) per row.
+
+  Sources (static file reads only, no program is executed, nothing is uploaded):
+    Chromium         `Extensions/<id>/<version>/manifest.json` for Chrome, Brave, Edge, Arc, Chromium, Vivaldi: id, version,
+                     name (resolves `__MSG_x__` from `_locales/<default_locale>/messages.json`), permissions, optional
+                     permissions, host permissions, content-script matches, `update_url`.
+    ChromiumNativeHosts  `NativeMessagingHosts/*.json` (per user and system): host name, executable path, allowed origins.
+    Safari           Safari app extensions: `*.appex/Contents/Info.plist` inside app bundles whose
+                     `NSExtensionPointIdentifier` is `com.apple.Safari.web-extension` or `com.apple.Safari.extension`,
+                     joined with the bundled `Resources/manifest.json` permissions when the extension has one.
+    SafariEnabledState  `Extensions.plist` of Safari's container (enabled flag per extension; needs Full Disk Access; the plist
+                     layout is inferred from public write-ups and was not verified against a live system: treat as a hint).
+    Firefox          `Profiles/*/extensions.json`: add-ons of type `extension` with location, signature state, source URL,
+                     granted permissions and origins.
+
+  Verdict columns `Suspicious` and `Reasons` (semicolon separated, all regexes are parameters):
+    risky_permission:<x>        cookies, webRequest, webRequestBlocking, nativeMessaging, debugger, proxy, management
+    broad_host_access:<x>       `<all_urls>`, `*://*/*`, `http(s)://*/*` in permissions, host permissions or content scripts
+    non_store_update_url:<url>  Chromium `update_url` that is not the Chrome Web Store or Edge Add-ons store (sideloaded or self-updating)
+    no_update_url               Chromium extension without any `update_url` (installed from a file or by another program)
+    non_amo_source:<url>, no_source_uri, unsigned_or_unknown_signature:<n>   Firefox add-ons outside addons.mozilla.org or not signed
+                                (Firefox system/built-in add-ons are never flagged)
+    app_outside_applications:<path>  Safari extension whose app bundle sits outside /Applications
+    native_host_in_user_writable_path:<path>   native messaging host executable under tmp, a hidden directory, /Users/Shared or the user's home
+    unparseable_manifest        the file could not be parsed
+
+  A flag is a lead, not a verdict: password managers, ad blockers and enterprise tools legitimately hold `<all_urls>` and
+  `cookies`. Read Name + Reasons + the update source together. Needs read access to the user Library folders: a launchd
+  client without Full Disk Access sees nothing in Safari's container and may be denied other profile directories.
+reference:
+  - https://developer.chrome.com/docs/extensions/reference/permissions-list
+  - https://attack.mitre.org/techniques/T1176/
+type: CLIENT
+parameters:
+  - name: Root
+    description: "Prefix for every path (test hook: point it at a fake root; leave empty to read the live system)."
+  - name: IgnoreOSCheck
+    description: Test hook, lets the artifact run on non-macOS against a synthetic tree.
+    type: bool
+  - name: ChromiumGlob
+    description: Glob for Chromium-family extension manifests (relative to Root).
+    default: '/Users/*/Library/Application Support/{Google/Chrome,Google/Chrome Beta,BraveSoftware/Brave-Browser,Microsoft Edge,Arc/User Data,Chromium,Vivaldi}/*/Extensions/*/*/manifest.json'
+  - name: NativeHostGlob
+    default: '{/Users/*/Library/Application Support/{Google/Chrome,BraveSoftware/Brave-Browser,Microsoft Edge,Chromium,Vivaldi}/NativeMessagingHosts/*.json,/Library/Google/Chrome/NativeMessagingHosts/*.json,/Library/Application Support/{Google/Chrome,BraveSoftware/Brave-Browser,Microsoft Edge,Chromium}/NativeMessagingHosts/*.json,/Library/Microsoft/Edge/NativeMessagingHosts/*.json}'
+  - name: SafariAppexGlob
+    default: '{/Applications/*/Contents/PlugIns/*.appex/Contents/Info.plist,/Applications/*/*/Contents/PlugIns/*.appex/Contents/Info.plist,/Users/*/Applications/*/Contents/PlugIns/*.appex/Contents/Info.plist,/Users/*/Downloads/*/Contents/PlugIns/*.appex/Contents/Info.plist,/Users/Shared/*/Contents/PlugIns/*.appex/Contents/Info.plist}'
+  - name: SafariStateGlob
+    default: '/Users/*/Library/Containers/com.apple.Safari/Data/Library/Safari/AppExtensions/Extensions.plist'
+  - name: FirefoxGlob
+    default: '/Users/*/Library/Application Support/Firefox/Profiles/*/extensions.json'
+  - name: RiskyPermRegex
+    type: regex
+    default: '^(cookies|webRequest|webRequestBlocking|nativeMessaging|debugger|proxy|management)$'
+  - name: BroadHostRegex
+    type: regex
+    default: '^(<all_urls>|\*://\*/\*|https?://\*/\*|http\*://\*/\*)$'
+  - name: StoreUpdateUrlRegex
+    description: Update URLs of the official stores; anything else is reported as non-store.
+    type: regex
+    default: '(?i)^https://(clients2\.google\.com/service/update2/crx|update\.googleapis\.com/service/update2/crx|edge\.microsoft\.com/extensionwebstorebase/v1/crx|microsoftedge\.microsoft\.com/.*)$'
+  - name: AmoSourceRegex
+    type: regex
+    default: '(?i)^https://addons\.mozilla\.org/'
+  - name: UserWritablePathRegex
+    type: regex
+    default: '(?i)^(/private)?/(tmp|var/tmp|Users/Shared)/|/\.[^/]+/|^/Users/'
+sources:
+  - name: Chromium
+    precondition: |
+      SELECT OS FROM info() WHERE OS = 'darwin' OR IgnoreOSCheck
+    query: |
+      LET unesc(T) = regex_replace(source=regex_replace(source=regex_replace(source=T, re="\\\\u003c", replace="<"), re="\\\\u003e", replace=">"), re="\\\\u0026", replace="&")
+      LET toks(T) = SELECT _value AS P FROM foreach(row=split(string=T, sep='"'))
+      LET risky(T) = SELECT P FROM toks(T=T) WHERE P =~ RiskyPermRegex
+      LET broad(T) = SELECT P FROM toks(T=T) WHERE P =~ BroadHostRegex
+      LET manifests = SELECT OSPath, Mtime FROM glob(globs=Root + ChromiumGlob) WHERE NOT IsDir
+      LET parsed = SELECT OSPath, Mtime, parse_json(data=read_file(filename=OSPath, length=2000000)) AS M,
+            parse_string_with_regex(string=OSPath, regex="(?P<Browser>Google/Chrome Beta|Google/Chrome|BraveSoftware/Brave-Browser|Microsoft Edge|Arc/User Data|Chromium|Vivaldi)/(?P<Profile>[^/]+)/Extensions/(?P<Id>[^/]+)/(?P<Ver>[^/]+)/manifest\\.json$") AS Loc
+        FROM manifests
+      LET msgs(P, M) = if(condition=M.default_locale,
+            then=parse_json(data=read_file(filename=regex_replace(source=P, re="manifest\\.json$", replace="_locales/" + M.default_locale + "/messages.json"), length=2000000)))
+      LET named = SELECT *, if(condition=M.name =~ "^__MSG_.+__$",
+              then=get(item=msgs(P=OSPath, M=M), field=regex_replace(source=M.name, re="^__MSG_(.+)__$", replace="$1")).message,
+              else=M.name) AS Resolved,
+            unesc(T=serialize(item=dict(a=M.permissions, b=M.optional_permissions, c=M.host_permissions,
+                                         d=M.optional_host_permissions, e=M.content_scripts), format="json")) AS Txt
+        FROM parsed
+      LET scored = SELECT *,
+            if(condition=M, then="", else="unparseable_manifest;") +
+            if(condition=join(array=risky(T=Txt).P, sep=","), then="risky_permission:" + join(array=risky(T=Txt).P, sep=",") + ";", else="") +
+            if(condition=join(array=broad(T=Txt).P, sep=","), then="broad_host_access:" + join(array=broad(T=Txt).P, sep=",") + ";", else="") +
+            if(condition=NOT M, then="",
+               else=if(condition=M.update_url,
+                       then=if(condition=M.update_url =~ StoreUpdateUrlRegex, then="", else="non_store_update_url:" + M.update_url + ";"),
+                       else="no_update_url;")) AS Reasons
+        FROM named
+      SELECT if(condition=Loc.Browser =~ "Chrome Beta", then="Chrome Beta",
+                else=if(condition=Loc.Browser =~ "Chrome", then="Chrome",
+                else=if(condition=Loc.Browser =~ "Brave", then="Brave",
+                else=if(condition=Loc.Browser =~ "Edge", then="Edge",
+                else=if(condition=Loc.Browser =~ "Arc", then="Arc", else=Loc.Browser))))) AS Browser, Loc.Profile AS Profile, Loc.Id AS ExtensionId, Loc.Ver AS FolderVersion,
+             if(condition=M, then=M.version) AS Version,
+             if(condition=Resolved, then=Resolved, else=M.name) AS Name, M.manifest_version AS ManifestVersion,
+             M.permissions AS Permissions, M.optional_permissions AS OptionalPermissions, M.host_permissions AS HostPermissions,
+             M.update_url AS UpdateUrl, Mtime, OSPath AS Manifest, Reasons != "" AS Suspicious, Reasons
+      FROM scored
+  - name: ChromiumNativeHosts
+    precondition: |
+      SELECT OS FROM info() WHERE OS = 'darwin' OR IgnoreOSCheck
+    query: |
+      LET hosts = SELECT OSPath, Mtime, parse_json(data=read_file(filename=OSPath, length=200000)) AS H
+        FROM glob(globs=Root + NativeHostGlob) WHERE NOT IsDir
+      SELECT OSPath AS HostFile, Mtime, H.name AS Name, H.path AS Path, H.allowed_origins AS AllowedOrigins,
+             H.allowed_extensions AS AllowedExtensions,
+             if(condition=NOT H, then="unparseable_manifest",
+                else=if(condition=H.path =~ UserWritablePathRegex, then="native_host_in_user_writable_path:" + H.path, else="")) AS Reasons,
+             if(condition=NOT H, then=true, else=H.path =~ UserWritablePathRegex) AS Suspicious
+      FROM hosts
+  - name: Safari
+    precondition: |
+      SELECT OS FROM info() WHERE OS = 'darwin' OR IgnoreOSCheck
+    query: |
+      LET unesc(T) = regex_replace(source=regex_replace(source=regex_replace(source=T, re="\\\\u003c", replace="<"), re="\\\\u003e", replace=">"), re="\\\\u0026", replace="&")
+      LET toks(T) = SELECT _value AS P FROM foreach(row=split(string=T, sep='"'))
+      LET risky(T) = SELECT P FROM toks(T=T) WHERE P =~ RiskyPermRegex
+      LET broad(T) = SELECT P FROM toks(T=T) WHERE P =~ BroadHostRegex
+      LET plists = SELECT OSPath, Mtime, plist(file=OSPath) AS I FROM glob(globs=Root + SafariAppexGlob)
+        WHERE NOT IsDir
+      LET safari = SELECT *,
+            regex_replace(source=OSPath, re="^(.*?\\.app)/Contents/PlugIns/.*$", replace="$1") AS AppPath,
+            regex_replace(source=OSPath, re="Info\\.plist$", replace="Resources/manifest.json") AS ManifestPath
+        FROM plists WHERE I.NSExtension.NSExtensionPointIdentifier =~ "^com\\.apple\\.Safari\\.(web-extension|extension)$"
+      LET withmf = SELECT *, parse_json(data=read_file(filename=ManifestPath, length=2000000)) AS M FROM safari
+      LET scored = SELECT *, unesc(T=serialize(item=dict(a=M.permissions, b=M.optional_permissions, c=M.host_permissions,
+                                                        d=M.optional_host_permissions), format="json")) AS Txt
+        FROM withmf
+      LET reasons = SELECT *,
+            if(condition=join(array=risky(T=Txt).P, sep=","), then="risky_permission:" + join(array=risky(T=Txt).P, sep=",") + ";", else="") +
+            if(condition=join(array=broad(T=Txt).P, sep=","), then="broad_host_access:" + join(array=broad(T=Txt).P, sep=",") + ";", else="") +
+            if(condition=regex_replace(source=AppPath, re="^" + regex_replace(source=Root, re="([.+*?()|\\[\\]{}^$\\\\])", replace="\\\\$1"), replace="") =~ "^/(Applications|System/Applications)/", then="",
+               else="app_outside_applications:" + regex_replace(source=AppPath, re="^" + regex_replace(source=Root, re="([.+*?()|\\[\\]{}^$\\\\])", replace="\\\\$1"), replace="") + ";") AS Reasons
+        FROM scored
+      SELECT I.CFBundleIdentifier AS BundleId, I.CFBundleName AS Name, I.CFBundleShortVersionString AS Version,
+             I.NSExtension.NSExtensionPointIdentifier AS ExtensionPoint, AppPath AS App,
+             M.name AS ManifestName, M.permissions AS Permissions, M.host_permissions AS HostPermissions, Mtime,
+             Reasons != "" AS Suspicious, Reasons
+      FROM reasons
+  - name: SafariEnabledState
+    precondition: |
+      SELECT OS FROM info() WHERE OS = 'darwin' OR IgnoreOSCheck
+    query: |
+      SELECT * FROM foreach(row={ SELECT OSPath, Mtime FROM glob(globs=Root + SafariStateGlob) WHERE NOT IsDir },
+        query={ SELECT OSPath AS StateFile, _key AS Extension, _value.Enabled AS Enabled,
+                       _value.`Allowed Domains` AS AllowedDomains
+                FROM items(item=plist(file=OSPath)) })
+  - name: Firefox
+    precondition: |
+      SELECT OS FROM info() WHERE OS = 'darwin' OR IgnoreOSCheck
+    query: |
+      LET unesc(T) = regex_replace(source=regex_replace(source=regex_replace(source=T, re="\\\\u003c", replace="<"), re="\\\\u003e", replace=">"), re="\\\\u0026", replace="&")
+      LET toks(T) = SELECT _value AS P FROM foreach(row=split(string=T, sep='"'))
+      LET risky(T) = SELECT P FROM toks(T=T) WHERE P =~ RiskyPermRegex
+      LET broad(T) = SELECT P FROM toks(T=T) WHERE P =~ BroadHostRegex
+      LET files = SELECT OSPath, Mtime, parse_json(data=read_file(filename=OSPath, length=20000000)) AS J
+        FROM glob(globs=Root + FirefoxGlob) WHERE NOT IsDir
+      LET flat = SELECT * FROM foreach(row=files, query={
+          SELECT OSPath, get(item=J.addons, member=_value) AS A
+          FROM range(start=0, end=len(list=J.addons)) })
+      LET addons = SELECT OSPath, A, unesc(T=serialize(item=A.userPermissions, format="json")) AS Txt,
+            parse_string_with_regex(string=OSPath, regex="/Profiles/(?P<Profile>[^/]+)/extensions\\.json$").Profile AS Profile
+        FROM flat
+      LET exts = SELECT * FROM addons WHERE A.type = "extension"
+      LET scored = SELECT *, if(condition=A.location =~ "^app-(system|builtin)", then="",
+          else=if(condition=join(array=risky(T=Txt).P, sep=","), then="risky_permission:" + join(array=risky(T=Txt).P, sep=",") + ";", else="") +
+               if(condition=join(array=broad(T=Txt).P, sep=","), then="broad_host_access:" + join(array=broad(T=Txt).P, sep=",") + ";", else="") +
+               if(condition=A.sourceURI, then=if(condition=A.sourceURI =~ AmoSourceRegex, then="", else="non_amo_source:" + A.sourceURI + ";"),
+                  else=if(condition=A.location = "app-profile", then="no_source_uri;", else="")) +
+               if(condition=A.signedState <= 0, then="unsigned_or_unknown_signature:" + str(str=A.signedState) + ";", else="")) AS Reasons
+        FROM exts
+      SELECT Profile, A.id AS ExtensionId, A.defaultLocale.name AS Name, A.version AS Version, A.active AS Active,
+             A.userDisabled AS UserDisabled, A.location AS Location, A.signedState AS SignedState, A.sourceURI AS SourceUri,
+             A.userPermissions.permissions AS Permissions, A.userPermissions.origins AS Origins,
+             Reasons != "" AS Suspicious, Reasons
+      FROM scored

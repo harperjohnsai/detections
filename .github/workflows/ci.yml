@@ -66,3 +66,6 @@ jobs:
       - name: Artifact verify + fixture regression tests
         run: |
           VELOCIRAPTOR="$RUNNER_TEMP/velociraptor" python velociraptor/tests/run_sweep_tests.py
+      - name: macOS artifacts - verify, capability scan and synthetic fixture tests
+        run: |
+          VELOCIRAPTOR="$RUNNER_TEMP/velociraptor" python velociraptor/tests/run_macos_tests.py

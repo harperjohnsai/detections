@@ -1,6 +1,6 @@
 # Velociraptor artifacts
 
-Custom [Velociraptor](https://docs.velociraptor.app/) artifacts for triage, tested against inert fixtures (text files in a temporary fake root; nothing is executed). Load one into a server with `artifact_set(definition=read_file(filename=...))` or run it locally:
+Custom [Velociraptor](https://docs.velociraptor.app/) artifacts for triage, tested against inert synthetic fixtures (files, plists and small databases in a temporary fake root; nothing is executed except one stub program in the unified-log test). Linux: `linux/`. macOS: `macos/`. Load one into a server with `artifact_set(definition=read_file(filename=...))` or run it locally:
 
 ```bash
 velociraptor --definitions velociraptor/linux artifacts collect Custom.Linux.Persistence.Sweep --format jsonl
@@ -31,3 +31,35 @@ Known limits: `@reboot` and `nohup` are flagged on purpose and will fire on host
 ```bash
 VELOCIRAPTOR=/path/to/velociraptor python3 velociraptor/tests/run_sweep_tests.py
 ```
+
+# macOS artifacts (`macos/`)
+
+Three artifacts for triage of a Mac that its owner has agreed to examine. Each one was checked against the built-in registry (v0.77.4) and the Artifact Exchange / `Generic.Forensic.SQLiteHunter` before publishing; artifacts that duplicate existing ones are not published here. Load one into a server with `artifact_set(definition=read_file(filename=...))` or run it against a tree:
+
+```bash
+velociraptor --definitions velociraptor/macos artifacts collect Custom.MacOS.Browser.Extensions --format jsonl
+# synthetic or mounted tree instead of the live system (test hook, works on Linux):
+velociraptor --definitions velociraptor/macos artifacts collect Custom.MacOS.TCC.Review --args Root=/mnt/tree --args IgnoreOSCheck=Y --format jsonl
+```
+
+| Artifact | What it does | Existing artifacts | Full Disk Access | Executes a program | Uploads a file |
+|---|---|---|---|---|---|
+| `Custom.MacOS.Persistence.BTM` (v2) | Reads Background Task Management stores (login items, launch agents/daemons, helper tools) and reports paths, URLs, bundle ids and team ids; decodes the base64 bookmark blobs to paths; flags tmp/hidden paths, executables in user-writable Library folders, user LaunchAgents named `com.apple.*` | none parses BTM (new) | for the system store; the per-user store needs none | no | no |
+| `Custom.MacOS.Browser.Extensions` | Chromium-family manifests (id, version, name, permissions, host permissions, `update_url`), native messaging hosts, Safari app extensions (`.appex` plus bundled manifest permissions, enabled state), Firefox `extensions.json`. Flags risky permissions (`<all_urls>`, `webRequest`, `nativeMessaging`, `debugger`, `cookies`, `proxy`, `management`), non-store or missing `update_url`, non-AMO or unsigned Firefox add-ons, native hosts in user-writable paths | `Generic.Forensic.SQLiteHunter` source `ChromiumBrowser_Extensions` covers Chromium manifests only; this adds Safari, Firefox, native hosts and the verdict | helpful (Safari container, some profile folders) | no | no |
+| `Custom.MacOS.TCC.Review` | Reads `TCC.db` (system and each user), joins every grant with the installed apps (bundle id or path) and flags Accessibility, ScreenCapture, SystemPolicyAllFiles, ListenEvent, PostEvent, AppleEvents, Microphone and Camera granted to remote-access tools, to apps that are no longer installed, or to terminals/shells; inventories installed remote-access tools | built-in `MacOS.System.TCC` dumps the rows; this adds the installed-app join, the verdict and the remote-tool inventory | **required** | no | no |
+
+Capability notes. None of the three executes a program, uploads files, writes to the device or opens network connections; the tests scan the artifact text for `execve(`, `upload(`, `http_client(` and similar calls. The output of the TCC and extension artifacts is personal data (user names, installed software): collect it only with the owner's consent and keep it off shared systems.
+
+Flags are leads, not verdicts: password managers legitimately hold `<all_urls>` and `cookies`, remote-support tools legitimately hold Accessibility and Screen Recording, and helper tools or Homebrew binaries can look "not installed". Read the Reasons column together with the app name and source.
+
+### Tests (`tests/run_macos_tests.py`, Velociraptor v0.77.4, 36 checks)
+
+All three artifacts run against invented synthetic fixtures built by `tests/fixtures/mac_fixtures.py` (fake `/Users/...` and `/Applications/...` trees in a temporary directory). No data from any real device is used.
+
+| Artifact | Fixture | Result |
+|---|---|---|
+| `Browser.Extensions` | 10 Chromium-family manifests (Chrome, Brave, Edge): 6 planted (risky permissions, sideloaded `update_url`, no `update_url`, unparseable, wildcard only in optional hosts / content scripts, webRequestBlocking + proxy) and 4 clean store extensions incl. a localized `__MSG_x__` name; 2 native hosts; 3 Safari web extensions + 1 non-Safari appex; 5 Firefox add-ons + 1 theme | 6/6 planted flagged, 4/4 clean silent, localized name resolved, appex decoy and theme skipped, Firefox system add-on with broad permissions silent |
+| `TCC.Review` | user + system `TCC.db` (modern schema) with 11 planted grants and 4 benign ones, 1 denied row, 6 app bundles | 11/11 flagged with the right reasons, 4/4 clean silent, limited grants count, denied rows hidden unless asked |
+| `Persistence.BTM` | binary-plist NSKeyedArchive with dict objects, base64 `book` bookmark blobs (bytes), a user store and a system store | bookmark blobs decoded to paths, exactly 3 suspicious values |
+
+Limits. All tests use synthetic fixtures only: the Safari enabled-state plist layout is inferred from public write-ups, the TCC schema is the documented macOS 11+ one, and the BTM layout is undocumented and changes between macOS releases. Treat results as unverified until compared with a known host.
