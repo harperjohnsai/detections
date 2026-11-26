@@ -13,6 +13,7 @@ Per-case facts (summary, samples, video, MalwareBazaar / ThreatFox links, status
 | `yara/<family-or-campaign>/` | YARA rules, one rule per file or a small family file, plus a README describing the rules and their reference samples |
 | `sigma/<category>/` | Sigma rules in SigmaHQ-style category folders (`dns_query/`, `proxy/`, `process_creation/`, `image_load/`, ...) |
 | `iocs/<YYYY-MM-case-slug>/` | `README.md` (case summary, samples, links), `case.yml` (machine-readable case metadata), `iocs.csv` (defanged), `iocs.json` (machine-readable, NOT defanged), plus generated `stix2.json` (STIX 2.1) and `misp_event.json` (MISP) |
+| `velociraptor/<os>/` | Custom Velociraptor artifacts (triage collections), with fixture tests in `velociraptor/tests/` |
 | `tools/<name>/` | Static config extractors and unpackers used to derive the rules; `tools/build_index.py` generates `INDEX.md`, `tools/export_iocs.py` generates the STIX 2.1 and MISP exports |
 | `tests/` | YARA test harness (yara-python and YARA-X), Sigma logic tests, IOC validation, recorded results |
 
@@ -20,6 +21,7 @@ Per-case facts (summary, samples, video, MalwareBazaar / ThreatFox links, status
 
 - **YARA:** every rule file must compile with yara-python and YARA-X (CI). Rules are also run against their reference samples (each must match exactly the rules it is meant to match) and against a corpus of benign and unrelated PE files (0 hits required). A generated, spec-conformant file of the format a rule imitates is used as a synthetic negative where relevant. The harness is `tests/run_yara_tests.py`; the most recent recorded run is `tests/RESULTS.md`.
 - **Sigma:** `sigma check --fail-on-error --fail-on-issues` with the SigmaHQ validators (CI), plus `tests/test_sigma_synthetic.py`, which runs each rule's logic on hand-made events.
+- **Velociraptor artifacts:** `velociraptor artifacts verify` plus `velociraptor/tests/run_sweep_tests.py`, which runs each artifact on inert fixture files in a temporary fake root (planted persistence that must be flagged, benign look-alikes that must not) (CI, pinned release binary).
 - **IOCs:** `tests/validate_iocs.py` checks that CSV and JSON agree, that the CSV is defanged and that hashes are well-formed; `tests/validate_exports.py` validates the STIX 2.1 bundles (OASIS `stix2-validator`, `stix2`) and loads the MISP events with PyMISP.
 
 Limits, stated plainly: rules are derived from static analysis. Unless a rule says otherwise there is no regression EVTX or pcap, and no rule has been measured on production telemetry. Levels are the author's estimate; baseline before alerting. Samples are malware and are not stored here; each case README links to the public copies.
@@ -35,7 +37,7 @@ uv pip install stix2 stix2-validator pymisp && .venv/bin/python tools/export_ioc
 
 ## Licenses
 
-- Rules, tools and tests (`yara/`, `sigma/`, `tools/`, `tests/`): [Detection Rule License (DRL) 1.1](LICENSE). Keep the `author` field and a link to this repository.
+- Rules, artifacts, tools and tests (`yara/`, `sigma/`, `velociraptor/`, `tools/`, `tests/`): [Detection Rule License (DRL) 1.1](LICENSE). Keep the `author` field and a link to this repository.
 - YARAhub requires a Creative Commons value in its `yarahub_license` meta field, so YARA rule files carry `CC BY 4.0` there; that is the license under which YARAhub redistributes them. The DRL applies to the copies in this repository.
 - Indicators (`iocs/`): CC0 1.0, free to use without attribution.
 

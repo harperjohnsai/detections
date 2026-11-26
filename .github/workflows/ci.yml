@@ -51,3 +51,18 @@ jobs:
         run: python tools/export_iocs.py --check
       - name: Validate STIX 2.1 (stix2-validator, stix2) and load MISP events (PyMISP)
         run: python tests/validate_exports.py
+  velociraptor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Fetch Velociraptor v0.77.4 linux-amd64 (sha256 pinned to the release digest)
+        run: |
+          curl -sSL -o velo.gz https://github.com/Velocidex/velociraptor/releases/download/v0.77.4/velociraptor-v0.77.4-linux-amd64.gz
+          echo "890c1b8458276909cfbbfb2edad2e0b9c31672b95532e41516c39d2537925157  velo.gz" | sha256sum -c -
+          gunzip velo.gz && chmod 755 velo && mv velo "$RUNNER_TEMP/velociraptor"
+      - name: Artifact verify + fixture regression tests
+        run: |
+          VELOCIRAPTOR="$RUNNER_TEMP/velociraptor" python velociraptor/tests/run_sweep_tests.py

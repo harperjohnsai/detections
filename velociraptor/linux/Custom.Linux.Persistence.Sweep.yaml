@@ -1,0 +1,209 @@
+name: Custom.Linux.Persistence.Sweep
+author: Harper Johns (2026-11-24; v2 2026-11-25; v2.1 2026-11-26)
+description: |
+  One-shot sweep of the common Linux persistence locations, with a plain
+  regex verdict per row. Gap this fills: the built-in set has Linux.Sys.Crontab,
+  Linux.Sys.Services and Linux.Ssh.AuthorizedKeys, but nothing that reads
+  systemd *user* units, shell profile/alias lines, ld.so.preload, XDG
+  autostart, rc.local, sudoers.d or at-jobs in one pass, and the
+  Microsoft Autoruns-for-Linux artifact needs a third-party RPM download.
+
+  Static file reads only: nothing is executed. Every row has Category, Path,
+  Mtime, Detail (the interesting line) and Suspicious/Reason. `Roots` lets
+  you point the sweep at a mounted image, an extracted triage tree, or a
+  test prefix (comma separated, each is prepended to the absolute paths).
+
+  Suspicious is a triage hint, not a verdict: it fires on download-and-run
+  tools, reverse-shell idioms, execution from tmp-like paths, LD_PRELOAD,
+  PROMPT_COMMAND, aliases that shadow security-relevant commands, any
+  non-comment ld.so.preload entry, sudoers NOPASSWD and authorized_keys
+  options with `command=`.
+reference:
+  - https://attack.mitre.org/techniques/T1053/003/
+  - https://attack.mitre.org/techniques/T1543/002/
+  - https://attack.mitre.org/techniques/T1574/006/
+  - https://attack.mitre.org/techniques/T1098/004/
+  - https://attack.mitre.org/techniques/T1546/004/
+type: CLIENT
+precondition: SELECT OS FROM info() WHERE OS = 'linux'
+parameters:
+  - name: Roots
+    description: Comma separated root prefixes to sweep (default the live filesystem).
+    default: "/"
+  - name: ExtraHomes
+    description: Comma separated absolute home dirs to include in addition to <root>/home/* (triage-linux.sh passes the passwd homes).
+    default: ""
+  - name: SuspiciousRegex
+    type: regex
+    description: Lines matching this are flagged Suspicious.
+    default: '(?i)(curl\s|wget\s|base64|/dev/tcp/|\bnc\s+-|\bncat\b|\bsocat\b|mkfifo|python[0-9.]*\s+-c|perl\s+-e|bash\s+-i|/tmp/|/dev/shm|/var/tmp|\beval\b|LD_PRELOAD|PROMPT_COMMAND|chmod\s+\+x|\|\s*(ba)?sh\b)'
+  - name: StrictRegex
+    type: regex
+    description: Used for distro-style scripts (cron.daily, init.d, rc.local) where tmp paths and eval are normal; only download-and-run / reverse-shell idioms.
+    default: '(?i)(curl\s|wget\s|base64\s+-d|/dev/tcp/|\bnc\s+-[a-z]*e|\bncat\b|\bsocat\b|mkfifo|python[0-9.]*\s+-c|perl\s+-e|bash\s+-i|\|\s*(ba)?sh\b)'
+  - name: StealthRegex
+    type: regex
+    description: |
+      v2 (2026-11-25, EtherRAT replay): launch lines with no download/tmp idiom that v1 missed 0/5.
+      Fires on nohup, cron @reboot, a hidden directory or file whose name holds a digit and 6+ chars
+      (random-name staging such as ~/.local/share/.05bf0e9b/.4dai8ovb/bin/node), and any hidden
+      directory directly under ~/.local/share/.
+    default: '(?i)(\bnohup\b|@reboot|/\.[a-z]*[0-9][a-z0-9]{5,}(\.[a-z]{1,4})?(/|\s|$|"|'')|\.local/share/\.[^/\s]+/)'
+  - name: EvalAllowRegex
+    type: regex
+    description: |
+      v2.1 (2026-11-26, dev-host FP test): whole-line shell-init idioms that v1/v2 flagged via the bare
+      `eval` token (6 of 6 false positives on a developer profile). Exempt only when the WHOLE line is
+      eval "$(<known tool> <plain args>)" with an optional >/dev/null; any path outside the tool list,
+      any second command (; | &&) or download tool still flags.
+    default: '^\s*eval\s+"\$\((pyenv|rbenv|nodenv|goenv|direnv|zoxide|starship|ssh-agent|fnm|mise|oh-my-posh|thefuck|/home/linuxbrew/\.linuxbrew/bin/brew|/opt/homebrew/bin/brew)(\s+[A-Za-z0-9 _=.-]*)?\)"\s*(>\s*/dev/null)?\s*$'
+  - name: ShadowedCommands
+    type: regex
+    description: An alias for one of these names is flagged (T1546.004).
+    default: '^\s*alias\s+(sudo|su|ssh|scp|ls|cat|ps|ss|netstat|lsof|top|ps|w|who|last|history|passwd|git|pip|python3?|curl|wget)='
+  - name: Systemd
+    type: bool
+    default: Y
+  - name: Cron
+    type: bool
+    default: Y
+  - name: Profiles
+    type: bool
+    default: Y
+  - name: Keys
+    type: bool
+    default: Y
+  - name: Misc
+    description: ld.so.preload, XDG autostart, rc.local, sudoers.d, at-jobs.
+    type: bool
+    default: Y
+
+export: |
+  LET RootList <= SELECT regex_replace(source=regex_replace(source=_value, re="\\s+", replace=""), re="/*$", replace="/") AS R
+                  FROM foreach(row=split(string=Roots, sep=","))
+
+  // Home dirs: <root>/home/* plus ExtraHomes (absolute, e.g. from passwd). Patterns starting "~/" expand per home dir.
+  LET HomeDirs <= SELECT * FROM chain(
+      a={ SELECT R + "home/*" AS H FROM RootList },
+      b={ SELECT _value AS H FROM foreach(row=split(string=ExtraHomes, sep=",")) WHERE _value })
+
+  // Expand glob patterns (relative, no leading slash) under every root, and "~/" patterns under every home dir.
+  LET Files(P) = SELECT * FROM chain(
+      a={ SELECT * FROM foreach(row=RootList, query={
+            SELECT * FROM foreach(row=P, query={
+                SELECT OSPath, Mtime, Size FROM glob(globs=R + _value)
+                WHERE NOT IsDir AND Size > 0 })}) },
+      b={ SELECT * FROM foreach(row=HomeDirs, query={
+            SELECT * FROM foreach(row=P, query={
+                SELECT * FROM if(condition=_value =~ "^~/", then={
+                    SELECT OSPath, Mtime, Size FROM glob(globs=H + substr(str=_value, start=1))
+                    WHERE NOT IsDir AND Size > 0 })})}) })
+
+  LET NonCommentLines(Path) = SELECT Line FROM parse_lines(filename=Path)
+      WHERE Line =~ "\\S" AND NOT Line =~ "^\\s*#"
+
+  LET VerdictS(Line) = if(condition=Line =~ StrictRegex, then="matches StrictRegex (script file)", else=NULL)
+  LET Verdict(Line, Always, Why) = if(condition=Always, then=Why,
+      else=if(condition=Line =~ ShadowedCommands, then="alias shadows a security-relevant command",
+      else=if(condition=Line =~ EvalAllowRegex, then=NULL,
+      else=if(condition=Line =~ SuspiciousRegex, then="matches SuspiciousRegex",
+      else=if(condition=Line =~ StealthRegex, then="stealth launch (nohup/@reboot/random hidden path)", else=NULL)))))
+
+sources:
+  - name: Systemd
+    query: |
+      LET units = SELECT * FROM Files(P=[
+          "etc/systemd/system/**/*.{service,timer,path,socket}",
+          "etc/systemd/user/**/*.{service,timer,path,socket}",
+          "~/.config/systemd/user/**/*.{service,timer,path,socket}",
+          "root/.config/systemd/user/**/*.{service,timer,path,socket}",
+          "usr/local/lib/systemd/system/*.{service,timer}"])
+      SELECT * FROM if(condition=Systemd, then={
+        SELECT "systemd-unit" AS Category, OSPath AS Path, Mtime,
+               Line AS Detail,
+               Verdict(Line=Line, Always=FALSE, Why="") != NULL AS Suspicious,
+               Verdict(Line=Line, Always=FALSE, Why="") AS Reason
+        FROM foreach(row=units, query={
+            SELECT OSPath, Mtime, Line FROM foreach(row=NonCommentLines(Path=OSPath))
+            WHERE Line =~ "^\\s*(Exec[A-Za-z]*|ListenStream|OnCalendar|OnBootSec|OnUnitActiveSec|WantedBy)\\s*="
+        })
+      })
+
+  - name: Cron
+    query: |
+      LET crons = SELECT * FROM Files(P=[
+          "etc/crontab", "etc/cron.d/*", "etc/cron.{hourly,daily,weekly,monthly}/*",
+          "var/spool/cron/**", "etc/anacrontab",
+          "~/.crontab*"])
+      SELECT * FROM if(condition=Cron, then={
+        SELECT "cron" AS Category, OSPath AS Path, Mtime, Line AS Detail,
+               if(condition=OSPath =~ "/cron\\.(hourly|daily|weekly|monthly)/", then=Line =~ StrictRegex,
+                  else=Verdict(Line=Line, Always=FALSE, Why="") != NULL) AS Suspicious,
+               if(condition=OSPath =~ "/cron\\.(hourly|daily|weekly|monthly)/", then=VerdictS(Line=Line),
+                  else=Verdict(Line=Line, Always=FALSE, Why="")) AS Reason
+        FROM foreach(row=crons, query={
+            SELECT OSPath, Mtime, Line FROM foreach(row=NonCommentLines(Path=OSPath))
+            WHERE NOT Line =~ "^\\s*[A-Z_]+="
+        })
+      })
+
+  - name: ShellProfiles
+    query: |
+      LET profs = SELECT * FROM Files(P=[
+          "etc/profile", "etc/profile.d/*", "etc/bash.bashrc", "etc/zsh/*", "etc/zshenv", "etc/environment",
+          "~/.{bashrc,bash_profile,bash_login,profile,bash_aliases,zshrc,zprofile,zshenv,zlogin,xprofile,xsessionrc,pam_environment}",
+          "root/.{bashrc,bash_profile,bash_login,profile,bash_aliases,zshrc,zprofile,zshenv,zlogin}"])
+      SELECT * FROM if(condition=Profiles, then={
+        SELECT "shell-profile" AS Category, OSPath AS Path, Mtime, Line AS Detail,
+               Verdict(Line=Line, Always=FALSE, Why="") != NULL AS Suspicious,
+               Verdict(Line=Line, Always=FALSE, Why="") AS Reason
+        FROM foreach(row=profs, query={
+            SELECT OSPath, Mtime, Line FROM foreach(row=NonCommentLines(Path=OSPath))
+            WHERE Line =~ ShadowedCommands OR Line =~ SuspiciousRegex OR Line =~ StealthRegex
+        })
+      })
+
+  - name: AuthorizedKeys
+    query: |
+      LET kfiles = SELECT * FROM Files(P=[
+          "~/.ssh/authorized_keys*", "root/.ssh/authorized_keys*", "etc/ssh/authorized_keys*",
+          "etc/ssh/sshd_config", "etc/ssh/sshd_config.d/*"])
+      SELECT * FROM if(condition=Keys, then={
+        SELECT "ssh-key-or-sshd-config" AS Category, OSPath AS Path, Mtime,
+               // public keys only (authorized_keys holds no secrets); cap the length
+               Line[:240] AS Detail,
+               if(condition=OSPath =~ "authorized_keys", then=Line =~ "(^|,)command=|(^|,)permitopen=|no-pty", else=Line =~ "(?i)^\\s*(AuthorizedKeysCommand|AuthorizedKeysFile\\s+(/tmp|/var/tmp|/dev/shm)|PermitRootLogin\\s+yes|PermitEmptyPasswords\\s+yes)") AS Suspicious,
+               if(condition=OSPath =~ "authorized_keys", then=if(condition=Line =~ "(^|,)command=", then="key with forced command=", else="key present"),
+                  else="sshd option of interest") AS Reason
+        FROM foreach(row=kfiles, query={
+            SELECT OSPath, Mtime, Line FROM foreach(row=NonCommentLines(Path=OSPath))
+            WHERE OSPath =~ "authorized_keys" OR Line =~ "(?i)^\\s*(AuthorizedKeysCommand|AuthorizedKeysFile|PermitRootLogin|PermitEmptyPasswords)"
+        })
+      })
+
+  - name: Misc
+    query: |
+      LET ld = SELECT * FROM Files(P=["etc/ld.so.preload"])
+      LET autostart = SELECT * FROM Files(P=["etc/xdg/autostart/*.desktop", "~/.config/autostart/*.desktop", "root/.config/autostart/*.desktop"])
+      LET boot = SELECT * FROM Files(P=["etc/rc.local", "etc/rc.d/rc.local", "etc/init.d/*"])
+      LET sudo = SELECT * FROM Files(P=["etc/sudoers.d/*", "etc/sudoers"])
+      LET atjobs = SELECT * FROM Files(P=["var/spool/at/*", "var/spool/cron/atjobs/*"])
+      SELECT * FROM if(condition=Misc, then={
+        SELECT * FROM chain(
+          a={ SELECT "ld.so.preload" AS Category, OSPath AS Path, Mtime, Line AS Detail,
+                     TRUE AS Suspicious, "non-empty ld.so.preload entry" AS Reason
+              FROM foreach(row=ld, query={ SELECT OSPath, Mtime, Line FROM foreach(row=NonCommentLines(Path=OSPath)) }) },
+          b={ SELECT "xdg-autostart" AS Category, OSPath AS Path, Mtime, Line AS Detail,
+                     Verdict(Line=Line, Always=FALSE, Why="") != NULL AS Suspicious,
+                     Verdict(Line=Line, Always=FALSE, Why="") AS Reason
+              FROM foreach(row=autostart, query={ SELECT OSPath, Mtime, Line FROM foreach(row=NonCommentLines(Path=OSPath)) WHERE Line =~ "^Exec=" }) },
+          c={ SELECT "boot-script" AS Category, OSPath AS Path, Mtime, Line AS Detail,
+                     TRUE AS Suspicious, VerdictS(Line=Line) AS Reason
+              FROM foreach(row=boot, query={ SELECT OSPath, Mtime, Line FROM foreach(row=NonCommentLines(Path=OSPath)) WHERE Line =~ StrictRegex }) },
+          d={ SELECT "sudoers" AS Category, OSPath AS Path, Mtime, Line AS Detail,
+                     Line =~ "NOPASSWD" AS Suspicious,
+                     if(condition=Line =~ "NOPASSWD", then="NOPASSWD rule", else="") AS Reason
+              FROM foreach(row=sudo, query={ SELECT OSPath, Mtime, Line FROM foreach(row=NonCommentLines(Path=OSPath)) WHERE Line =~ "NOPASSWD|ALL\\s*=" }) },
+          e={ SELECT "at-job" AS Category, OSPath AS Path, Mtime, "at job file present" AS Detail,
+                     TRUE AS Suspicious, "at job file" AS Reason FROM atjobs })
+      })

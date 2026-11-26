@@ -241,3 +241,10 @@
 - Dead drops read 2026-11-26: the Telegraph pages and the contracts of all four builds decrypt to their embedded primary.
 - +21 IOC rows, +2 `c2_timeline.csv` rows, README section and table rows, ThreatFox references 2053498 to 2053502. No AES keys or other secrets published.
 - Not checked: liveness of either C2 (nothing contacted); setter transactions on the two contracts.
+
+### 2026-11-26 (Velociraptor: Linux persistence sweep artifact)
+- New `velociraptor/linux/Custom.Linux.Persistence.Sweep.yaml` (v2.1): one-pass sweep of systemd system/user units, cron, shell profiles, SSH keys/sshd_config, ld.so.preload, XDG autostart, rc.local/init.d, sudoers.d and at-jobs, with a regex triage hint per row.
+- New `velociraptor/tests/run_sweep_tests.py` + three inert fixture sets: generic plants 5/5 flagged with 0 decoys; EtherRAT's five Linux persistence templates 5/5 with 0 decoys (v1 of the artifact found 0/5); developer-host set 0 of 13 benign entries flagged, 3/3 attack controls flagged, 2 legit `@reboot` lines flagged by design.
+- v2.1 change from the developer-host test: shell-init `eval "$(<tool> ...)"` lines (pyenv, Homebrew, ssh-agent, direnv, zoxide, starship) no longer flag; 6 false positives removed. Chained commands, download tools and unknown paths inside `eval` still flag.
+- CI: new `velociraptor` job (release binary pinned by sha256).
+- Not measured: production telemetry; macOS artifacts not published (untested on a Mac).
