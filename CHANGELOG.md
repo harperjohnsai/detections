@@ -236,3 +236,8 @@
 - Retracted: the IOC gist of this case first named `www.thecalmdogguide[.]com/t2rs/` as the likely C2, then called it "refuted" and a decoy-like list entry. The decrypted config shows it is the build's hard-coded real-C2 string; the cache-HIT finding stands but only shows it was not answering from an origin. Gist updated with an explicit correction section; this repo had no earlier row.
 - Not checked: liveness of any list host (nothing contacted); YARA/Sigma for this chain not written.
 
+### 2026-11-26 (REVSTEALER: two more builds from YARAify hits, new C2s with Polygon contracts and Telegraph pages)
+- `iocs/2026-11-revstealer-setup-center`: `REVSTEALER_x64_Core_SetupCenter` matched five further samples on YARAify. Static config extraction gives two new builds, `yh-1121b` (`config6[.]journeybridge[.]website`) and `yh-1122` (`portal3[.]voyage-forge67[.]today`), each with its own Polygon contract and Telegraph page, none listed anywhere before. The other two samples belong to the already listed builds `yh-1110b` and `yh-1120b`.
+- Dead drops read 2026-11-26: the Telegraph pages and the contracts of all four builds decrypt to their embedded primary.
+- +21 IOC rows, +2 `c2_timeline.csv` rows, README section and table rows, ThreatFox references 2053498 to 2053502. No AES keys or other secrets published.
+- Not checked: liveness of either C2 (nothing contacted); setter transactions on the two contracts.

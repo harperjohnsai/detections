@@ -2,7 +2,7 @@
  "_warning": "MACHINE-READABLE, NOT DEFANGED: values are live indicators. Do not browse or fetch them.",
  "case": "2026-11-revstealer-setup-center",
  "license": "CC0-1.0",
- "count": 481,
+ "count": 502,
  "iocs": [
   {
    "type": "url",
@@ -4329,6 +4329,195 @@
    "value": "68379418b6609bb117172e5c78dd97696e1cc53c68570824e4e6182cc25b6681",
    "first_seen": "2026-11-24",
    "role": "C1 build yh-1121 REVSTEALER core: sandbox process-memory image (5,710,496 B = SizeOfImage 0x5722a0, section raw offsets equal virtual addresses; YARAify file name 7ff797f00000.<uuid>.exe), first seen 2026-11-24 13:31 UTC; matches YARA REVSTEALER_x64_Core_SetupCenter; memory/dump hunting, not a file on disk; ThreatFox 2050971",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "YARAify (first seen); static config extraction"
+  },
+  {
+   "type": "domain",
+   "value": "config6.journeybridge.website",
+   "first_seen": "2026-11-21",
+   "role": "C1 build yh-1121b REVSTEALER primary C2 (HTTPS :443; GET /health must return 'active'); host:port, Polygon contract and Telegraph page all taken from the embedded config of two sandbox samples; contract value and Telegraph page read 2026-11-26 and decrypted: both give the same host:port. Domain registered 2026-11-21T09:07:59Z (Dynadot, Cloudflare name servers, RDAP); the contract was created 10 minutes later. Host never contacted. ThreatFox 2053498",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "YARAify (first seen 2026-11-25 18:18 UTC), static config extraction; eth_call and Telegraph read 2026-11-26; RDAP"
+  },
+  {
+   "type": "polygon-contract",
+   "value": "0x526374Fe3E57Bfc6A131A998ea9B5ff0dE3725C2",
+   "first_seen": "2026-11-21",
+   "role": "C1 build yh-1121b REVSTEALER EtherHiding dead drop named in the config (3rd C2 source), created 2026-11-21T09:18:07Z by deployer 0x8bAddf05 (nonce 249, tx 0xb5539ae2f2a7795d7a384f59785c2069beb9aebd85a2864bac46bbddfb415657); eth_call selector 0x032a42de on a public Polygon RPC; value read 2026-11-26 decrypts to config6.journeybridge.website:443, the embedded primary of this build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction; creation tx located by code-history search on public Polygon RPCs; eth_call read 2026-11-26"
+  },
+  {
+   "type": "url",
+   "value": "https://telegra.ph/Creek-autumn-11-21",
+   "first_seen": "2026-11-25",
+   "role": "C1 build yh-1121b Telegraph dead drop named in the config (page description holds the AES-encrypted C2); block by path, not by host; page read 2026-11-26 via the Telegraph API, description decrypts to config6.journeybridge.website:443 (embedded primary)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "YARAify (first seen 2026-11-25 18:18 UTC), static config extraction; eth_call and Telegraph read 2026-11-26"
+  },
+  {
+   "type": "url-path",
+   "value": "/cuqi/opddz.tvco",
+   "first_seen": "2026-11-25",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1121b, config6.journeybridge.website; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "url-path",
+   "value": "/ejfny/dtis/opddz.tvco",
+   "first_seen": "2026-11-25",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1121b, config6.journeybridge.website; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "url-path",
+   "value": "/pyruku/mwcq/opddz.tvco",
+   "first_seen": "2026-11-25",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1121b, config6.journeybridge.website; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "url-path",
+   "value": "/yvr/zohng/opddz.tvco",
+   "first_seen": "2026-11-25",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1121b, config6.journeybridge.website; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "mutex",
+   "value": "Global\\8912EF53",
+   "first_seen": "2026-11-25",
+   "role": "C1 REVSTEALER mutex of build yh-1121b (sample 709398fa)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "user-agent",
+   "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.8520.10 Safari/537.36 Edg/128.0.8520.10",
+   "first_seen": "2026-11-25",
+   "role": "C1 REVSTEALER WinINet User-Agent of build yh-1121b (C2 + RPC traffic)",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "static config extraction"
+  },
+  {
+   "type": "sha256",
+   "value": "709398fa6755f503130f54fc90057b6188e505189f4a2c26fd512bcf94f9ecfd",
+   "first_seen": "2026-11-25",
+   "role": "C1 build yh-1121b REVSTEALER core: sandbox process-memory image (462,378 B = SizeOfImage 0x70e2a; YARAify file name 140000000.svchost.exe), first seen 2026-11-25 18:34 UTC; matches YARA REVSTEALER_x64_Core_SetupCenter; memory/dump hunting, not a file on disk; ThreatFox 2053500",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "YARAify (first seen); static config extraction"
+  },
+  {
+   "type": "sha256",
+   "value": "aeb33de89999d0bd51b7a09796be041b5cea90747828a53c83600e212ccd6309",
+   "first_seen": "2026-11-25",
+   "role": "C1 build yh-1121b REVSTEALER core: sandbox process-memory image (458,752 B = SizeOfImage 0x70000; YARAify file name 140000000.svchost.exe), first seen 2026-11-25 18:18 UTC; matches YARA REVSTEALER_x64_Core_SetupCenter; memory/dump hunting, not a file on disk; ThreatFox 2053501",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "YARAify (first seen); static config extraction"
+  },
+  {
+   "type": "domain",
+   "value": "portal3.voyage-forge67.today",
+   "first_seen": "2026-11-22",
+   "role": "C1 build yh-1122 REVSTEALER primary C2 (HTTPS :443; GET /health must return 'active'); host:port, Polygon contract and Telegraph page all taken from the embedded config of one sandbox sample; contract value and Telegraph page read 2026-11-26 and decrypted: both give the same host:port. Domain registered 2026-11-22T09:05:31Z (Dynadot, Cloudflare name servers, RDAP); the contract was created 17 minutes later. Host never contacted. ThreatFox 2053499",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "YARAify (first seen 2026-11-25 19:42 UTC), static config extraction; eth_call and Telegraph read 2026-11-26; RDAP"
+  },
+  {
+   "type": "polygon-contract",
+   "value": "0xd0B6554BcaD7Cc8b7a14d83F96a4fC1B7eCDB358",
+   "first_seen": "2026-11-22",
+   "role": "C1 build yh-1122 REVSTEALER EtherHiding dead drop named in the config (3rd C2 source), created 2026-11-22T09:22:26Z by deployer 0x8bAddf05 (nonce 251, tx 0xd64d53a59132852c2119dbd244e9c18d1b6d91a48bf2af07893377e106cbb463); eth_call selector 0x255da0c5 on a public Polygon RPC; value read 2026-11-26 decrypts to portal3.voyage-forge67.today:443, the embedded primary of this build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction; creation tx located by code-history search on public Polygon RPCs; eth_call read 2026-11-26"
+  },
+  {
+   "type": "url",
+   "value": "https://telegra.ph/Study-ivory-path-willow-11-22",
+   "first_seen": "2026-11-25",
+   "role": "C1 build yh-1122 Telegraph dead drop named in the config (page description holds the AES-encrypted C2); block by path, not by host; page read 2026-11-26 via the Telegraph API, description decrypts to portal3.voyage-forge67.today:443 (embedded primary)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "YARAify (first seen 2026-11-25 19:42 UTC), static config extraction; eth_call and Telegraph read 2026-11-26"
+  },
+  {
+   "type": "url-path",
+   "value": "/dcgpsr/yxsqf.bhiu",
+   "first_seen": "2026-11-25",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1122, portal3.voyage-forge67.today; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "url-path",
+   "value": "/nwcj/yxsqf.bhiu",
+   "first_seen": "2026-11-25",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1122, portal3.voyage-forge67.today; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "url-path",
+   "value": "/tzp/yxsqf.bhiu",
+   "first_seen": "2026-11-25",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1122, portal3.voyage-forge67.today; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "url-path",
+   "value": "/yqnt/dws/yxsqf.bhiu",
+   "first_seen": "2026-11-25",
+   "role": "C1 REVSTEALER gate path on C2 (build yh-1122, portal3.voyage-forge67.today; role not resolved); suffix rotates per build",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "mutex",
+   "value": "Global\\0B860927",
+   "first_seen": "2026-11-25",
+   "role": "C1 REVSTEALER mutex of build yh-1122 (sample 5541a341)",
+   "verdict": "malicious",
+   "confidence": "high",
+   "source": "static config extraction"
+  },
+  {
+   "type": "user-agent",
+   "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+   "first_seen": "2026-11-25",
+   "role": "C1 REVSTEALER WinINet User-Agent of build yh-1122 (C2 + RPC traffic)",
+   "verdict": "malicious",
+   "confidence": "medium",
+   "source": "static config extraction"
+  },
+  {
+   "type": "sha256",
+   "value": "5541a341e5b10c94e1b298fbabd1a64b812e55d6c7ed697ae802c353eb2bee22",
+   "first_seen": "2026-11-25",
+   "role": "C1 build yh-1122 REVSTEALER core: sandbox process-memory image (12,683,838 B, section raw offsets equal virtual addresses, carries a .themida section; YARAify file name 140000000.<uuid>.exe), first seen 2026-11-25 19:42 UTC; matches YARA REVSTEALER_x64_Core_SetupCenter; memory/dump hunting, not a file on disk; ThreatFox 2053502",
    "verdict": "malicious",
    "confidence": "high",
    "source": "YARAify (first seen); static config extraction"
