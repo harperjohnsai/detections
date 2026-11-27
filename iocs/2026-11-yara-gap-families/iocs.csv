@@ -1,216 +1,216 @@
-type,value,family,role,source
-sha256,dcbb0f20d29ecc90db8c50ae5ee8d24a8faca5471725138786662aa9d2beecfd,wardenstealer,dev sample,MalwareBazaar
-sha256,56af4268009504cede5f187dae78e48b3ed61a5b989ec28ced24e56432e80729,wardenstealer,dev sample,MalwareBazaar
-sha256,fea9538084b70e9681fd8104b9319792c4d8c2701ae145ec31dc26e7526f2ae0,wardenstealer,dev sample,MalwareBazaar
-sha256,2d2a95ddad86b51aceba55a10dc9d66489e7188f50cb8cd1eff7af115d136966,wardenstealer,dev sample,MalwareBazaar
-sha256,e19f12a1d45ffd44819feb0d1dcfe0ccb2353a1b7bf085b378604cfd5faea2ad,wardenstealer,dev sample,MalwareBazaar
-sha256,c47f0cb5a0c51d908fbcc38be70ade963762e4f4adca8fb32f33440cb9af4376,wardenstealer,dev sample,MalwareBazaar
-sha256,c49cc5bbc848b380426c213df1ae4768ca552eefdb7bc70a0a46961f2bf34a21,wardenstealer,dev sample,MalwareBazaar
-sha256,584df8f6dacf0196bf31f182ae008f52cf81fbe9f95d04cb8d6fa4786c621e35,wardenstealer,dev sample,MalwareBazaar
-sha256,0a0503fbb31ae1eff1c78951f9d707ba45d0cc36c6e4e270f72ca5eb2ae63e00,wardenstealer,dev sample,MalwareBazaar
-sha256,23d4a386f0f030bb0e9c659b238143e1bf279d424743a340b386b603fa7f899d,wardenstealer,dev sample,MalwareBazaar
-sha256,fa4387cbb847d8d36450642b024be7e7af480925cc557770a4174084e1ca4833,wardenstealer,dev sample,MalwareBazaar
-sha256,bb1db61196220e327cd57b2a6f9b2bf6ab0a7ad0bc4a330e94bbe5460327561e,wardenstealer,dev sample,MalwareBazaar
-sha256,eff4b583d6a3e0743b7ad853a8227cc04b83eb4d855cac31bdef4fb0185326a9,wardenstealer,dev sample,MalwareBazaar
-sha256,dffefd3975d07b2381022e189b89aa85b97eb854b2c3ac572304ce8672ef0ca3,wardenstealer,dev sample,MalwareBazaar
-sha256,40e9906f017d9285fcd3ef01d5d87d56784350189734ba78f4260227dbe73b2d,wardenstealer,dev sample,MalwareBazaar
-sha256,0da0c094ce1f1e51bddaa92b59d795fbc8587e5a73ae45547fdd293b9b160a05,wardenstealer,dev sample,MalwareBazaar
-sha256,222566ec14004746626b1d3f8a5d8b52248c232f30754e6fc380c31ee186486b,wardenstealer,dev sample,MalwareBazaar
-sha256,755c02c4980de1020f688412091ec75856fbcf37c652b5ae3c3c0678b21dd29f,wardenstealer,dev sample,MalwareBazaar
-sha256,cf62388164be89edc469cd5d1633b52ac622e092806038fde8812852d7c35e65,wardenstealer,dev sample,MalwareBazaar
-sha256,14dc82bc5ee7c606e862a702666cc1b314179545f3a56fa68fc76b29d5900576,wardenstealer,dev sample,MalwareBazaar
-sha256,b729250e5bdf85f81163adc45cfd1b97f1d4e4fe15bfb52bf76925394206146d,wardenstealer,dev sample,MalwareBazaar
-sha256,22249fabdf1cb0c3a41a86f16d93c475e2c21e6df0b7c44c8acba6b416d4d065,wardenstealer,dev sample,MalwareBazaar
-sha256,43004ce76423cfa80018b0f318a7f9d285d0fadde2dba87a1f661ad3d78aaf9a,wardenstealer,dev sample,MalwareBazaar
-sha256,2a3c105d5baf9ef98df9ae0349668d1879a7e71f74015a9996a405207adcf1f9,wardenstealer,dev sample,MalwareBazaar
-sha256,6f2da97e084b3ec946f80e8bff21092556be85b59661a10d0fa354d980d7e05a,wardenstealer,dev sample,MalwareBazaar
-sha256,d76e906a18c04826996d1f30de248e7a0e50c48814c82e9583b36c91fdf66f00,wardenstealer,dev sample,MalwareBazaar
-sha256,aa4f773e9b712d825339f822c0b3511dcb45388a76b4298ef0f7ad85b86a7456,wardenstealer,dev sample,MalwareBazaar
-sha256,7573f14a5c10d49e805887e1ec7009ddabc4bdc3868b57a76ff122dcfba317a1,wardenstealer,dev sample,MalwareBazaar
-sha256,149f22c687faf7332e10000ca4e7f549ec5cf086affd2a7595e9535d9cca75b0,wardenstealer,dev sample,MalwareBazaar
-sha256,9e8ef2bc426a27075d7c7d7304643748ac4be7dec0118e7f4e7ba04bea5caa48,wardenstealer,dev sample,MalwareBazaar
-sha256,e6400ea4ea364afbc1dd39f6836ddcab26b6653d2c22751aac847112874ad45b,wardenstealer,dev sample,MalwareBazaar
-sha256,83ff82311a7e7ba69c4d0c10c26d1e7d37025c08f2aef4deb767f159e1ec43f2,wardenstealer,dev sample,MalwareBazaar
-sha256,5d766bab63f8be7ae2e222402b364c18462ed545cc6898dbf9a0f32c289a90fa,wardenstealer,dev sample,MalwareBazaar
-sha256,49e0b11c6988bf7acb3cad9c3c267a8aabc31bb1dc422ae9811cdd4ea66a25dd,wardenstealer,dev sample,MalwareBazaar
-sha256,4dbce01bb6803fd0a09e06fd4b06d38e87ebf08c44276bc0d686549f993687b7,wardenstealer,dev sample,MalwareBazaar
-sha256,1202486ea139e1f3b8f4add4b4a8e3d016c32c2f219523f2330d02ac7061ba27,wardenstealer,dev sample,MalwareBazaar
-sha256,31e044d3fbf6d6cc21f9fdff9560e058b07a8b3f47b35fa073289a75ee12646f,wardenstealer,dev sample,MalwareBazaar
-sha256,41240211b74040a534e0f3facfddcb4c5b9d3b358dfe66bf119ea1642dc3a8a9,wardenstealer,dev sample,MalwareBazaar
-sha256,00703fb35687d7cf3a0193b1d9c244959fe6482691fc80a00399bed3b77db2a7,wardenstealer,dev sample,MalwareBazaar
-sha256,76e8bd9717fef3598fd0942f4fda3c682837784ae0ba192989f4231778f127ff,wardenstealer,dev sample,MalwareBazaar
-sha256,b654b532e6b25bb06d3b2ad6e65b5d6c7ac8a12a847aee707893518d0c1fc78c,silentnet,dev sample,MalwareBazaar
-sha256,9a9cc78702d4085e9f503105500d7d27fa3d1aba24d6109ae4b2da9ea6805be1,silentnet,dev sample,MalwareBazaar
-sha256,1280ff5f2c4a59e8a9301d8e2eb7c2e9774ec6026a48905c52d23fb1974438bf,silentnet,dev sample,MalwareBazaar
-sha256,6f186acab485604210d3cc03f7582cad8476e938b09664054512d850a1230a00,silentnet,dev sample,MalwareBazaar
-sha256,9910c262ea4d1779036a8dfb81aa013b7c0d64e5cb1b0c37e3136a6ae2914e00,silentnet,dev sample,MalwareBazaar
-sha256,1fdbc53b6039b52a14e23b09668ad01ad0ffe7e0dc41f87b3724c36df0d4efcc,silentnet,dev sample,MalwareBazaar
-sha256,a90ad95d4584ec3f5d432ac0b075ee80ba485dfb6ed5360c0d9909069b353680,silentnet,dev sample,MalwareBazaar
-sha256,dbe586b56376ac96097b76ed353b6ad89977d3345774d80fce846fe97370b86f,silentnet,dev sample,MalwareBazaar
-sha256,058458f1cc63a64159ca8b3384cd8b83969a3879bf3466021e1de15de0d9fc71,silentnet,dev sample,MalwareBazaar
-sha256,0b9186fa35770dc3b4b121a35551d49c6d623c0cd8dafbc5bafbce2d5bdcd7f3,silentnet,dev sample,MalwareBazaar
-sha256,2c252e7ec4f7b0ccb380bf58bce3fa1592f28fbf275eabb2fd29a3958fb11c95,silentnet,dev sample,MalwareBazaar
-sha256,7564375fc4de22673fabf0708a47f06a514fc2a430fd6c6b8f78af2e8b98d262,silentnet,dev sample,MalwareBazaar
-sha256,f6bbc27e48c8e8aeb83dd944086d5ba9655f5c170672241e5d3e1c5d8f6e3d48,silentnet,dev sample,MalwareBazaar
-sha256,bd9db280ad4f24a879d8bd1a8d37c18b28de4b12523c4b1e6d224a4370ed55dc,silentnet,dev sample,MalwareBazaar
-sha256,659fada1cbf0ed66a13bbf11bfc2d7153f10c15c7753c3c9c3579762999cf232,silentnet,dev sample,MalwareBazaar
-sha256,2b3a8ea9a4ba052577e81316826118ad809618450198aeea483989292b663e69,silentnet,dev sample,MalwareBazaar
-sha256,bd983796e38605e4cddb811774d7d6ace89dcc1968ba7dcf29555b0d55ee1ae8,silentnet,dev sample,MalwareBazaar
-sha256,56b649f7d9430c6f77146d767ab7da4f8f5ace5c1de72f794c81c067a49a395b,silentnet,dev sample,MalwareBazaar
-sha256,a60374fcff6c8867967b1e616e62471351e1c2e2249870610d0d8a9d6b7adff3,silentnet,dev sample,MalwareBazaar
-sha256,6b5c3c3ae0da4d2207b0ebfc3d4cf03537622bf624a9753858ca8c2b1757c9e8,silentnet,dev sample,MalwareBazaar
-sha256,0b3581ab2acd2099ec8d7de4f77608a0e9a1b7b4810009c7eb1cc4007d30d487,silentnet,dev sample,MalwareBazaar
-sha256,cf936fca40f4893c08fb2d63095c1efc4a77a934ec0348921c42c687a7cfd1aa,silentnet,dev sample,MalwareBazaar
-sha256,acb170fce322724a198780becc450823aa99d58283efb1a8fc8d7b14e2925549,silentnet,dev sample,MalwareBazaar
-sha256,eabd970c01299dc18e66e65a921b4d9045afd362771baeb0fa89e43257c4e4dd,silentnet,dev sample,MalwareBazaar
-sha256,47a313871b9b4cf0cc3b3897b93ada760884f263f78f8209b296bbd8e4257439,silentnet,dev sample,MalwareBazaar
-sha256,7397de45e59188a1083abb4ecceb22637346a9827efffc3bfb2eb26a6aaa0185,silentnet,dev sample,MalwareBazaar
-sha256,2c2eae5b67dceaa896e309aa805aadb9037d5f258bc3b315109a81fb58bb4f6f,silentnet,dev sample,MalwareBazaar
-sha256,70b99871e391adece1d32a736a9227e5371649df46c11e6abd7f253e812c0457,silentnet,dev sample,MalwareBazaar
-sha256,e27a5045f2660cb54dff7d7e161e87dcb752a50c6ada34941615c0995349f0db,silentnet,dev sample,MalwareBazaar
-sha256,8ac11d5521d22fc6d486457418ecfd866f8d3c4528cbb22438b966cdc2600402,silentnet,dev sample,MalwareBazaar
-sha256,0b349a5b1a1d1d40b3fbaf1a794c94f569770ce5a9a4bdf8cbeb198627a9da12,silentnet,dev sample,MalwareBazaar
-sha256,16e153644094fbba7ec924680c2f8cb203604bee06f3a77cbddb803c147af121,silentnet,dev sample,MalwareBazaar
-sha256,7add757c3f09d52863fcc07948491ad967a7f0a9a51bbabb8567c26b8bfecfda,silentnet,dev sample,MalwareBazaar
-sha256,7b3eb76cf18d4b634cb69ac5e3952fd6d93c4c24e04f80f13936cacfb6e3d338,silentnet,dev sample,MalwareBazaar
-sha256,b46f58cd9bbdcfdec0908e67229b484c6f8482523092dd627e0e97fec62e53a4,silentnet,dev sample,MalwareBazaar
-sha256,091f2baa5dc8a0cacf86dcced5e2804e87e984a8540139b54309853f373bfd24,silentnet,dev sample,MalwareBazaar
-sha256,34757b0ca985cdc0dc7f4921fa9d79a0465d4182d218c4785560b9b3b78b33a5,silentnet,dev sample,MalwareBazaar
-sha256,03402d56a0c9fc9e533d54774182c8b2cda82ba4861a48446d3479dcc4198ae2,silentnet,dev sample,MalwareBazaar
-sha256,a9eb485b6f62f033f3fed6980de570e2077da21bd9776022299657a618ef534c,silentnet,dev sample,MalwareBazaar
-sha256,1ae3e8213b07e1d53eca54a1901e2dc6dc9e27a3ca10377a63e6adec2fe15426,silentnet,dev sample,MalwareBazaar
-sha256,cc785874659a6de1824cabd142c7f6b1c0dd39df023de942d65fa0827e4e780e,easyshell,dev sample,MalwareBazaar
-sha256,d0231454a0d13f0d7c676e18b4f64aab166d98ec933394bb7b28b916669be88a,easyshell,dev sample,MalwareBazaar
-sha256,c7ede3aebb51649eb442cb55c006f5e0ac1ff82a63a776edaf453686b11e6d6c,easyshell,dev sample,MalwareBazaar
-sha256,91f43a99f099cea14860940478bbc7d6084dbab128e045bcf20bbee93b067c18,easyshell,dev sample,MalwareBazaar
-sha256,dd8364ee4d8972a5865f25fbe37dcbc183aee11c4b834e4b5325bab6ce8332de,easyshell,dev sample,MalwareBazaar
-sha256,527516de4dba9dd5558a463474b4a8b709b1a44e06c5c671c08d9d146e289f84,easyshell,dev sample,MalwareBazaar
-sha256,7b2b8dce8c61a9a9e3914c23506a0966c93e5d6ece5a66347e81bca326debc0c,easyshell,dev sample,MalwareBazaar
-sha256,37037af44ac5e1f6957d516616adb8a346b434a7081ed8fbbb046e631e0555e5,easyshell,dev sample,MalwareBazaar
-sha256,56aaa95b27726c2cc81e06fc80b480bda44870c313625fe35eb8075e06042963,easyshell,dev sample,MalwareBazaar
-sha256,f02313f9a0f4a43ee74c37594ce588d8bafd458075991cee870b29559b11ee26,easyshell,dev sample,MalwareBazaar
-sha256,52125aa00e3be6c35ffeea7e3d4036dae8c1068d58d2a354083c25c7fa0a0a8e,easyshell,dev sample,MalwareBazaar
-sha256,d9158b3a40290ecf41d4a855d6d2cb61dc3a7ba58f332d611cf41a9a429d69a7,easyshell,dev sample,MalwareBazaar
-sha256,3fa0f8c7618ee2f2445fe1dc065cdc3c035240205f6ca62d2017e0894f756b5f,easyshell,dev sample,MalwareBazaar
-sha256,99c638f9b15f009b7262eb590b8c1762f102a41986b03e4e4b74fbd6693cd047,easyshell,dev sample,MalwareBazaar
-sha256,089ba7924720ebe38af4566e194c903610d183d3766fe0b3c847c1fdac3bafe9,easyshell,dev sample,MalwareBazaar
-sha256,8027fdba65f68917978d7ce1ff7e0b1fcfe97379b4a031a4b0d0754b5f5ee53a,easyshell,dev sample,MalwareBazaar
-sha256,f83dbfa299d53d832db2f84b8cac16fa58525547436c37e6022676bd674211c8,easyshell,dev sample,MalwareBazaar
-sha256,e0ae105e44ceb50d47a01e7cb394352d08c0c974a7ccb71356559287fa518cbf,easyshell,dev sample,MalwareBazaar
-sha256,61efa178676bd356b83c1bcecdeef71f918748bd626de239e4a536531cd44313,easyshell,dev sample,MalwareBazaar
-sha256,92b11d9f33274c3c72233164f4c338f0ee8535b25b2cbbea09d4dd5e289e7a58,easyshell,dev sample,MalwareBazaar
-sha256,248b0fd54187153e49814aed72b03e52e7378d3af69f2e4e4e99d4abd2ef1f55,easyshell,dev sample,MalwareBazaar
-sha256,791321f66474cd5e57a189ee7e86960c5a7f35cbd67b5834a814cc50c5b97e09,easyshell,dev sample,MalwareBazaar
-sha256,b90f06d3a57e70b583f08c608a758a77b6c2ff814889e4e2df5e8e2e97cf1ee6,easyshell,dev sample,MalwareBazaar
-sha256,5062dfb63f372c263aafe46e67c80d1eb532c1e502872b9016ca1be886249ab6,easyshell,dev sample,MalwareBazaar
-sha256,fa63c70ec9122c5994debacbd81dc19097b278af1a45b0799451571ccd6de69e,easyshell,dev sample,MalwareBazaar
-sha256,383f895d1897ac48271bbd5ac6a9614560d87eacea01ce1fe634848188c1a7c1,easyshell,dev sample,MalwareBazaar
-sha256,90429399cf489e75bfa5b46211f5af2da4ac9c5d50795b9a224e87f106d31f45,easyshell,dev sample,MalwareBazaar
-sha256,4e73ec83c31dc4edbdb14e5c725ead561802c4a2e98536ba105ed0ab180fb7f2,easyshell,dev sample,MalwareBazaar
-sha256,c1ee7cd3317b3ceca0db9573a6ac3b0025ceb808723a7c2cbdf43df1dfd2a49b,easyshell,dev sample,MalwareBazaar
-sha256,43a45d15febbdd5b7bdbda332916386f74e8f8bed10b4fe8cc36e309d393cef5,easyshell,dev sample,MalwareBazaar
-sha256,62bf68bd1a09c86889ce9ef48e7adf267d4bd2961054754cb21307811737e527,easyshell,dev sample,MalwareBazaar
-sha256,8bff5b9510a7005bce7e93a8f037444b990b0d4034700a3d353a0e1ff06b504d,easyshell,dev sample,MalwareBazaar
-sha256,c29bb27e6cec92f941e9e25999ea596e034c0252b9e2d81c77e481cf34ff558c,easyshell,dev sample,MalwareBazaar
-sha256,283bbd4476026660e9f2348604b248dcf14015793e3eea9d2f66055d66976caf,easyshell,dev sample,MalwareBazaar
-sha256,e65deb1a5b64f46b519974071d82aa506e005e10ea8d1bed5a8c494d9c5ed748,easyshell,dev sample,MalwareBazaar
-sha256,ac6c4b597101ee0621921621c2f687595d24a8829176a2cbd0f1a0fc8cefde4b,easyshell,dev sample,MalwareBazaar
-sha256,14a9f4f5b52cb5c0af7f1769916382a1c194fabb931ac954ed3639eb99ba1afd,easyshell,dev sample,MalwareBazaar
-sha256,9e75aac7da30aad714982bdc3b5a78bd8942247670c1454b9cdcc48ee3f94cb8,easyshell,dev sample,MalwareBazaar
-sha256,0ebfe0cfa3e6820cf680c931cb33746b74612ab80b21e65daae34332af2627e3,easyshell,dev sample,MalwareBazaar
-sha256,93209a0ed0b47c9567b646277fdffb7b3994f8ec62339bfe102b4d3372e4b013,easyshell,dev sample,MalwareBazaar
-sha256,0f354172f133dd46ced105d5a0d99bd2b24df56f0636427323ece13f4c9114d9,easyshell,blind held-out,MB EasyShell ('l128'; '2026-11-22')
-sha256,bcd193715c8354e64e938c3c3f35200ce7c5299c94cf5d7eaa6090dc16ecbabe,easyshell,blind held-out,MB EasyShell ('a64'; '2026-11-24')
-sha256,cf78dec68a906753e94192a8c1590ec340863a4c5c3980de1177cf658c88167a,easyshell,blind held-out,MB EasyShell ('l64'; '2026-11-25')
-sha256,2fd7a8bf2dc2a04af0efbb9e470951b0393d5274c58c5a244e6d977bc467625e,easyshell,blind held-out,MB EasyShell ('l64'; '2026-11-21')
-sha256,68c2a547a5ca9323ff9407ac9a26937a000a439d2f6b8d9646bddcb1e383a59e,easyshell,blind held-out,MB EasyShell ('l128'; '2026-11-25')
-sha256,b53cc1d50a81bc1be8868d651efa6929e50450c37362d59f68d0aa6ca6176072,easyshell,blind held-out,MB EasyShell ('a64'; '2026-11-21')
-sha256,79dce3a8d5ad620967936c7a262a314c98d84730765690009e1e71be40fe5602,easyshell,blind held-out,MB EasyShell ('l32'; '2026-11-25')
-sha256,918eb4dd40ff14b8baf5663bce173f6988c75ca5517cb991403fea8f75259b15,easyshell,blind held-out,MB EasyShell ('darwin_arm64'; '2026-11-25')
-sha256,5441d6f6d6e356db48f8c9d3209fe0bf7d9b888f22bd639582c8130b72521ab8,easyshell,blind held-out,MB EasyShell ('a64'; '2026-11-23')
-sha256,7b9d15b646fe09f641b1d95da578afc97b14cec62bccf4155cf0342b0461e0ec,easyshell,blind held-out,MB EasyShell ('darwin_amd64'; '2026-11-24')
-sha256,c7884e3842c4566e338846067c116d80b184093e7b380c40683c817997c8c3f2,easyshell,blind held-out,MB EasyShell ('darwin_arm64'; '2026-11-22')
-sha256,4803340fcda8b3915d33a5d8df47dcf461e585147aa5405b15687f60c35d5e23,easyshell,blind held-out,MB EasyShell ('a32'; '2026-11-24')
-sha256,95ed21f4cd2f39707cc4929a14a733c8354eecd15c5db69d2cd2c6a3badfbe26,easyshell,blind held-out,MB EasyShell ('a32'; '2026-11-23')
-sha256,a51416d393e431b65fe3cd8c20944fe5f4c73886dc213c9dc1ffd46f2dc4ad53,easyshell,blind held-out,MB EasyShell ('a32'; '2026-11-21')
-sha256,288bc6cb583b405283203292105e6a5905a443b26bc7b3e3a2e85f4dc6247dcf,easyshell,blind held-out,MB EasyShell ('darwin_arm64'; '2026-11-24')
-sha256,ef49b7768eb78c310fa952a9679ba9a67d79e93504638b53f3e15481b74212a6,easyshell,blind held-out,MB EasyShell ('a64'; '2026-11-25')
-sha256,1467a95824a3ea48eadc43ca152218af2f6d2ef9880f391a1f7add91450bff1e,easyshell,blind held-out,MB EasyShell ('darwin_arm64'; '2026-11-21')
-sha256,dba9625fec97eb3bac3ffdd2c3036ab2dd5a0b66ee8761cd07e9325cf663bfeb,easyshell,blind held-out,MB EasyShell ('l32'; '2026-11-22')
-sha256,5160440b020329f63c4d033d8cfed55e17ca28c9d776f620e698779cfd622936,easyshell,blind held-out,MB EasyShell ('l32'; '2026-11-24')
-sha256,581abe92dd2db2650e43ab26614595bd82f92be10619d5337afd5ae51d67115e,easyshell,blind held-out,MB EasyShell ('l64'; '2026-11-24')
-sha256,26a6585f7d9dbc3a46f827e333fed07a154000c7403af6f172f45cf153bf9584,easyshell,blind held-out,MB EasyShell ('l32'; '2026-11-21')
-sha256,6ed85fb11ff78e8e76ac1e4fce19319408ddfd7e5e546aef381412310ec31618,easyshell,blind held-out,MB EasyShell ('l128'; '2026-11-24')
-sha256,fc1bcf8b8d9b1012b499976816dc95ee368d3657d3186d0d53c336431e7eacd9,easyshell,blind held-out,MB EasyShell ('darwin_amd64'; '2026-11-22')
-sha256,ed58b8cf9cd5f7438abf1658e5b5cd676cb9bba38d3eb017a8023a358b865c80,easyshell,blind held-out,MB EasyShell ('darwin_amd64'; '2026-11-23')
-sha256,350608d45ad75c3e848a72e2a14a16806561af0d8ace2bcb27788510cf04b05a,easyshell,blind held-out,MB EasyShell ('l128'; '2026-11-23')
-sha256,969fb3a94c1af65a94d808c911499f6c58ba2736c8c9eb71ddcd11a51e0a8d6f,silentnet,blind held-out,tria.ge family:silentnet + MB label jar 2026-09-30
-sha256,0dfb80812249cd40a59e13f9a7203e853eb39a9293f4920ef0aed5f81bcbf06a,silentnet,blind held-out,tria.ge family:silentnet + MB label jar 2026-10-03
-sha256,77bbdba3166915999780ba8e419d0adce2202a5f22e2e23a49bc387d2c827ee6,silentnet,blind held-out,tria.ge family:silentnet + MB label jar 2026-09-08
-sha256,56002b2bf21427afc8d603de500c4f38064e46dacdf9add9381015fdb306a2d0,silentnet,blind held-out,tria.ge family:silentnet + MB label jar 2026-10-16
-sha256,68e2360f43f00f5250ddb74891887fedf4edc96631f3394333d7116522e8dd6c,silentnet,blind held-out,tria.ge family:silentnet + MB label jar 2026-10-08
-sha256,063c4bca354e716e3cea998e32b40400e295d551bd321b235bdcc5d5c29f67e1,silentnet,blind held-out,tria.ge family:silentnet + MB label jar 2026-09-25
-sha256,2c7d7c6f57f3dca672aa1dbbbbfedf1c9ef1ecb00c34de9e343b377f68fb4e0e,silentnet,blind held-out,tria.ge family:silentnet + MB label jar 2026-10-12
-sha256,2ea66bf2303053b22e05be4043f763cee866b8f1fb1a4fa2c8667bf5a5ae3c77,silentnet,blind held-out,tria.ge family:silentnet + MB label jar 2026-09-30
-sha256,a7d7b3644f9b63a1ecfc3c9dccd5c950f4567a54f22bd78c62285875e8b38c7d,silentnet,blind held-out,tria.ge family:silentnet + MB label jar 2026-10-01
-sha256,cee5f222a97fbb1e20f99aad1ec9730aca6ac47c1f65bb5ac7b1fa711af72393,silentnet,blind held-out,tria.ge family:silentnet + MB label jar 2026-10-01
-sha256,db8aef92ec9d765a138ef42f839aea16a6293bdbce6bc8af16e3278cc85c531b,silentnet,blind held-out,tria.ge family:silentnet + MB label jar 2026-10-01
-sha256,899a23e18a1c4e527f63b62dbea9db4a5d1454b720af49ce8c50e6c80a9ca139,silentnet,blind held-out,tria.ge family:silentnet + MB label jar 2026-09-26
-sha256,06abfba55fcb977ef73552d1dd08350194b116a95f2f6d1daa92c6582033a05b,silentnet,blind held-out,tria.ge family:silentnet + MB label jar 2026-10-01
-sha256,8b5669edb9b52f6ba353077edc760792f5421514d1037bfc2395f95889ce7cb8,silentnet,blind held-out,tria.ge family:silentnet + MB label jar 2026-10-01
-sha256,b67be3af4a879cdf814ef724bf523d12aa965bb7c2dc23bd8efad1feccfd8ca1,silentnet,blind held-out,tria.ge family:silentnet + MB label jar 2026-10-09
-sha256,c3ea5fbf23539a81ff338bdf44c1eb3caa7c035ee189b3ebdce31afe91124feb,silentnet,blind held-out,tria.ge family:silentnet + MB label jar 2026-10-01
-sha256,e48501205a47d1699c8199bbdb531eb48519cc111859ba0294fe07c912651bb3,silentnet,blind held-out,tria.ge family:silentnet + MB label jar 2026-09-30
-sha256,9d7bb13d6ceee4ed10a90bd9c260e926613ee05bd5949b71051f40d38883f714,silentnet,blind held-out,tria.ge family:silentnet + MB label jar 2026-10-09
-sha256,3db9ea13be5d61998fd478d4ea5000d2e9d0d3ede3208c94be4546039ec75b1b,silentnet,blind held-out,tria.ge family:silentnet + MB label jar 2026-10-12
-sha256,007670050ec37adce005b51f76bd0d5871c0e72c3a809b9d1e03d986a8c7d586,silentnet,blind held-out,tria.ge family:silentnet + MB label jar 2026-09-23
-sha256,12ff4992ad1692284e09a9007e19b0bc5db5b9dc3b11b906de2df815de4796bb,silentnet,blind held-out,MB label only jar 2026-10-27
-sha256,284ef1ea239e431df6d61be6c2caba3e5a86827f81a15341661de6e7a4d702e3,silentnet,blind held-out,MB label only jar 2026-10-20
-sha256,f5d754554edc1f6fd6e05df45dba0bff26fb9549ce399da54d5d2fddd8446142,silentnet,blind held-out,MB label only jar 2026-09-30
-sha256,e30b8a269cc6cfed83c48393fc6e656b20703d4109580ac584f810910b1afdd9,silentnet,blind held-out,MB label only jar 2026-10-27
-sha256,581cf2c3ef9a29652143f1ff041c6b421e83028094082bf2eff9fd44fa287f10,silentnet,blind held-out,MB label only jar 2026-10-20
-sha256,886eeabd8710c72c6fa4a1f3ffc58af11188c6ec67f33105a7a113e675c44ea5,silentnet,blind held-out,MB label only jar 2026-09-17
-sha256,dbd33973be2475d55f9ffdc5492a17a039b056b61516674fc68cd7e342fd0c1a,silentnet,blind held-out,MB label only jar 2026-11-02
-sha256,edaf15f40bcb45594d4f5efca1f1262ec39adaa662e3015c70f17f3bb813ce98,silentnet,blind held-out,MB label only jar 2026-09-28
-sha256,c28eafb5a0cb3fa5de74887898ab5e19421cfe69ba915817a92f829933bcbad7,silentnet,blind held-out,MB label only jar 2026-09-18
-sha256,abd664eeaba8350a7c4ce64bc06b38d1e235027ccadddc47d81036d614e228a2,silentnet,blind held-out,MB label only jar 2026-09-18
-sha256,6319a8ff4c88f30f247331f95c814dc8d89e53015f275a8e6af71c25a02149df,silentnet,blind held-out,MB label only exe 2026-07-01
-sha256,efa09e17b62960842c08bb306d36e71d17941c00b3c3c091d7f19a3c02b0cb0e,silentnet,blind held-out,MB label only exe 2026-09-08
-sha256,01805651d30a44df6d53dd07e5813e6be2a9b496f9568da8ab4d443e9db7bde6,silentnet,blind held-out,MB label only exe 2026-10-10
-sha256,b13b22c66cd105a2e5a10bbc9339bfa0e4f4cb1faa4cd2d0a7ae854948d2b1c5,silentnet,blind held-out,MB label only exe 2026-10-08
-sha256,4d0ede682087d76920c2e90defd08a60eb47dfd7faca399538d87e414bd08efd,silentnet,blind held-out,MB label only exe 2026-11-15
-sha256,8c9fa2ba4bf9af2a0c2fe9918dbb99f7d2586b7e59884887e9fe85018132e709,silentnet,blind held-out,MB label only exe 2026-11-06
-sha256,8d56988ac897654fee633735d4ccaa80605cfe6d376d1d5593859498c5bfd183,silentnet,blind held-out,MB label only exe 2026-09-08
-sha256,443863fe8aa8b41124569d0b6fbe6ac4c39049652a7ea70bcf82198d64927737,silentnet,blind held-out,MB label only exe 2026-09-08
-sha256,7172334b79d574eb98ab1d58d12754a589d53cfeae4b8c06d574dc53171d2c59,wardenstealer,blind held-out,Gen Digital IOC list (on MB as WARDENStealer)
-sha256,a24930f4cd5e31f065adac70def28a03d6b5b449fd0ba417d3d0f678ead3e4e5,wardenstealer,blind held-out,Gen Digital IOC list (on MB as n/a)
-sha256,55cd3d36fdcc58016a64398357b2c9724a060da9f0d09266e537a61ec9552e4f,wardenstealer,blind held-out,Gen Digital IOC list (on MB as ACRStealer)
-sha256,74a28581cdc96b69d58c1b2f640c2f3c6932d11eb4b53fb5bf9cf2e89ac30dd4,wardenstealer,blind held-out,Gen Digital IOC list (on MB as WARDENStealer)
-sha256,1c852cc5ab0847f57908869ad14b2c1385bec46a8377f67b779aada5a5d59dc0,wardenstealer,blind held-out,Gen Digital IOC list (on MB as WARDENStealer)
-sha256,fdd903d07811d9e1c843a8c4527936468e54d827cf8cfcc4ff896792c9fced76,wardenstealer,blind held-out,Gen Digital IOC list (on MB as n/a)
-sha256,03e0e5a51dc9178f4471dbb764b3c97693be8cfe575c1ad858f565ff727e6565,wardenstealer,blind held-out,MB label 2026-11-08 Tuxxin
-sha256,bba4d2c2baab94a1b31a659327d231aaf5a689f86936a323f62595cf01ac123a,wardenstealer,blind held-out,MB label 2026-10-31 Alex_sev
-sha256,0f614b7b7343596fd42b1aa940264fda4e63ff8e71f7e02226eae2ff839035ae,wardenstealer,blind held-out,MB label 2026-11-18 josie
-sha256,95492246aa4768925a954e928413fc57e50457a29334d35a8fb3591e25b9ff62,wardenstealer,blind held-out,MB label 2026-10-17 Daydream
-sha256,d7766716ce3e0b8f2e4038bc7dc15cd5c3a51aa2a88ec7b937664c31e2c2adb2,wardenstealer,blind held-out,MB label 2026-11-23 abuse_ch
-sha256,c7fd3f91a48fddc1ba61b91c6b059299c809215bff45fd01dbb601ca95242221,wardenstealer,blind held-out,MB label 2026-11-03 AmadeyHunter
-sha256,42856ec3246ea7b03a9fc2d8c82d7dea79c3866ca81c466929561f364cc24309,wardenstealer,blind held-out,MB label 2026-11-07 AmadeyHunter
-sha256,58b6b7a01a4194742b5e56e8298e1c7d85605b2c861e0365057c2d28e22d96be,wardenstealer,blind held-out,MB label 2026-11-27 Tuxxin
-sha256,55c8cf0c1611a1238413b18d22afc720001d5f86f106e98ef4bc8505336307a9,wardenstealer,blind held-out,MB label 2026-11-03 AmadeyHunter
-sha256,a2177d35c8d18476f0e7539b7ef9a151c69270647f39c245cb57f775cc004b9e,wardenstealer,blind held-out,MB label 2026-11-09 adrian__luca
-sha256,985b324d226929ede2015995c514b7b74c85b044f3256baca0080113d3b4008d,wardenstealer,blind held-out,MB label 2026-11-10 abuse_ch
-sha256,01c5ffacf6f500ab473b3f302b2e6f19d08225efbf68853c8b980e1ce7557dbd,wardenstealer,blind held-out,MB label 2026-10-27 Tuxxin
-sha256,b05622a8ae11254a0e2ebed7fb3b7dfbadce25d8752d2016636b26f74bfe4036,wardenstealer,blind held-out,MB label 2026-11-25 aachum
-sha256,9485f6225db1f5745047da05b81d17532d5a116654cabbe2dd1ea6b283d17d4b,wardenstealer,blind held-out,MB label 2026-11-18 AmadeyHunter
-sha256,14ad97a3f11a8472ca0b32425099e97073ff39d974a11ff317a5d0267996e261,wardenstealer,blind held-out,MB label 2026-10-31 AmadeyHunter
-sha256,a86adc5a127ac578b5023143b4ec2a179c9d18f602ab222218bbcf3ec22cce18,wardenstealer,blind held-out,MB label 2026-11-25 abuse_ch
-sha256,d8c0e44f0c3f522f1aff2d14c622ee10c7cf9714afdbfa9ef5a5134847914f1a,wardenstealer,blind held-out,MB label 2026-11-18 AmadeyHunter
-sha256,e66baf53f89f97fc1506584ce6bdebe6658ad0bc830e9664b6f0c9a74085a3e0,wardenstealer,blind held-out,MB label 2026-11-11 aachum
-sha256,61618c5d2b6383dc9154499d9c8582a20f29768656f75aac50bec31c7efe4209,wardenstealer,blind held-out,MB label 2026-11-23 AmadeyHunter
-sha256,d1afb987bfbcebf56cd04762fb37312804560662066bef15cbdf18da53173133,wardenstealer,blind held-out,MB label 2026-11-12 AmadeyHunter
-sha256,dc8cdb6bdb963dfaee562e46536aa55f433e6221017be9aa3cea8fcea6e40fc5,wardenstealer,blind held-out,MB label 2026-11-10 AmadeyHunter
-sha256,768f46d4dc306502ce6b847b1a06509a9301fc44794cc3d70858657278d30ab7,wardenstealer,blind held-out,MB label 2026-11-04 AmadeyHunter
-sha256,07d4b1f763d1d9479635e58980100f90d7fd4fa89808cac1c97e91607e0ad6ca,wardenstealer,blind held-out,MB label 2026-11-07 aachum
-sha256,6b2a818393030f029ab112b754ddc1b35616354fe75f48b705e6fe6552d3b2d0,wardenstealer,blind held-out,MB label 2026-11-14 abuse_ch
-sha256,eb0fd41b879e187d5b13839a61b6f4006d2448c3ac54bd34de6dd1ae7bcf618e,wardenstealer,blind held-out,MB label 2026-11-23 Tuxxin
-ipv4-port,192.3.31[.]148:8443,EasyShell,C2 of all MB EasyShell samples,sample config
+type,value_defanged,first_seen,role,verdict,confidence,source
+sha256,dcbb0f20d29ecc90db8c50ae5ee8d24a8faca5471725138786662aa9d2beecfd,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,56af4268009504cede5f187dae78e48b3ed61a5b989ec28ced24e56432e80729,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,fea9538084b70e9681fd8104b9319792c4d8c2701ae145ec31dc26e7526f2ae0,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,2d2a95ddad86b51aceba55a10dc9d66489e7188f50cb8cd1eff7af115d136966,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,e19f12a1d45ffd44819feb0d1dcfe0ccb2353a1b7bf085b378604cfd5faea2ad,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,c47f0cb5a0c51d908fbcc38be70ade963762e4f4adca8fb32f33440cb9af4376,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,c49cc5bbc848b380426c213df1ae4768ca552eefdb7bc70a0a46961f2bf34a21,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,584df8f6dacf0196bf31f182ae008f52cf81fbe9f95d04cb8d6fa4786c621e35,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,0a0503fbb31ae1eff1c78951f9d707ba45d0cc36c6e4e270f72ca5eb2ae63e00,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,23d4a386f0f030bb0e9c659b238143e1bf279d424743a340b386b603fa7f899d,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,fa4387cbb847d8d36450642b024be7e7af480925cc557770a4174084e1ca4833,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,bb1db61196220e327cd57b2a6f9b2bf6ab0a7ad0bc4a330e94bbe5460327561e,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,eff4b583d6a3e0743b7ad853a8227cc04b83eb4d855cac31bdef4fb0185326a9,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,dffefd3975d07b2381022e189b89aa85b97eb854b2c3ac572304ce8672ef0ca3,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,40e9906f017d9285fcd3ef01d5d87d56784350189734ba78f4260227dbe73b2d,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,0da0c094ce1f1e51bddaa92b59d795fbc8587e5a73ae45547fdd293b9b160a05,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,222566ec14004746626b1d3f8a5d8b52248c232f30754e6fc380c31ee186486b,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,755c02c4980de1020f688412091ec75856fbcf37c652b5ae3c3c0678b21dd29f,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,cf62388164be89edc469cd5d1633b52ac622e092806038fde8812852d7c35e65,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,14dc82bc5ee7c606e862a702666cc1b314179545f3a56fa68fc76b29d5900576,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,b729250e5bdf85f81163adc45cfd1b97f1d4e4fe15bfb52bf76925394206146d,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,22249fabdf1cb0c3a41a86f16d93c475e2c21e6df0b7c44c8acba6b416d4d065,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,43004ce76423cfa80018b0f318a7f9d285d0fadde2dba87a1f661ad3d78aaf9a,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,2a3c105d5baf9ef98df9ae0349668d1879a7e71f74015a9996a405207adcf1f9,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,6f2da97e084b3ec946f80e8bff21092556be85b59661a10d0fa354d980d7e05a,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,d76e906a18c04826996d1f30de248e7a0e50c48814c82e9583b36c91fdf66f00,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,aa4f773e9b712d825339f822c0b3511dcb45388a76b4298ef0f7ad85b86a7456,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,7573f14a5c10d49e805887e1ec7009ddabc4bdc3868b57a76ff122dcfba317a1,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,149f22c687faf7332e10000ca4e7f549ec5cf086affd2a7595e9535d9cca75b0,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,9e8ef2bc426a27075d7c7d7304643748ac4be7dec0118e7f4e7ba04bea5caa48,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,e6400ea4ea364afbc1dd39f6836ddcab26b6653d2c22751aac847112874ad45b,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,83ff82311a7e7ba69c4d0c10c26d1e7d37025c08f2aef4deb767f159e1ec43f2,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,5d766bab63f8be7ae2e222402b364c18462ed545cc6898dbf9a0f32c289a90fa,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,49e0b11c6988bf7acb3cad9c3c267a8aabc31bb1dc422ae9811cdd4ea66a25dd,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,4dbce01bb6803fd0a09e06fd4b06d38e87ebf08c44276bc0d686549f993687b7,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,1202486ea139e1f3b8f4add4b4a8e3d016c32c2f219523f2330d02ac7061ba27,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,31e044d3fbf6d6cc21f9fdff9560e058b07a8b3f47b35fa073289a75ee12646f,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,41240211b74040a534e0f3facfddcb4c5b9d3b358dfe66bf119ea1642dc3a8a9,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,00703fb35687d7cf3a0193b1d9c244959fe6482691fc80a00399bed3b77db2a7,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,76e8bd9717fef3598fd0942f4fda3c682837784ae0ba192989f4231778f127ff,,"WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,b654b532e6b25bb06d3b2ad6e65b5d6c7ac8a12a847aee707893518d0c1fc78c,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,9a9cc78702d4085e9f503105500d7d27fa3d1aba24d6109ae4b2da9ea6805be1,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,1280ff5f2c4a59e8a9301d8e2eb7c2e9774ec6026a48905c52d23fb1974438bf,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,6f186acab485604210d3cc03f7582cad8476e938b09664054512d850a1230a00,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,9910c262ea4d1779036a8dfb81aa013b7c0d64e5cb1b0c37e3136a6ae2914e00,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,1fdbc53b6039b52a14e23b09668ad01ad0ffe7e0dc41f87b3724c36df0d4efcc,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,a90ad95d4584ec3f5d432ac0b075ee80ba485dfb6ed5360c0d9909069b353680,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,dbe586b56376ac96097b76ed353b6ad89977d3345774d80fce846fe97370b86f,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,058458f1cc63a64159ca8b3384cd8b83969a3879bf3466021e1de15de0d9fc71,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,0b9186fa35770dc3b4b121a35551d49c6d623c0cd8dafbc5bafbce2d5bdcd7f3,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,2c252e7ec4f7b0ccb380bf58bce3fa1592f28fbf275eabb2fd29a3958fb11c95,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,7564375fc4de22673fabf0708a47f06a514fc2a430fd6c6b8f78af2e8b98d262,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,f6bbc27e48c8e8aeb83dd944086d5ba9655f5c170672241e5d3e1c5d8f6e3d48,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,bd9db280ad4f24a879d8bd1a8d37c18b28de4b12523c4b1e6d224a4370ed55dc,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,659fada1cbf0ed66a13bbf11bfc2d7153f10c15c7753c3c9c3579762999cf232,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,2b3a8ea9a4ba052577e81316826118ad809618450198aeea483989292b663e69,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,bd983796e38605e4cddb811774d7d6ace89dcc1968ba7dcf29555b0d55ee1ae8,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,56b649f7d9430c6f77146d767ab7da4f8f5ace5c1de72f794c81c067a49a395b,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,a60374fcff6c8867967b1e616e62471351e1c2e2249870610d0d8a9d6b7adff3,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,6b5c3c3ae0da4d2207b0ebfc3d4cf03537622bf624a9753858ca8c2b1757c9e8,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,0b3581ab2acd2099ec8d7de4f77608a0e9a1b7b4810009c7eb1cc4007d30d487,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,cf936fca40f4893c08fb2d63095c1efc4a77a934ec0348921c42c687a7cfd1aa,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,acb170fce322724a198780becc450823aa99d58283efb1a8fc8d7b14e2925549,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,eabd970c01299dc18e66e65a921b4d9045afd362771baeb0fa89e43257c4e4dd,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,47a313871b9b4cf0cc3b3897b93ada760884f263f78f8209b296bbd8e4257439,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,7397de45e59188a1083abb4ecceb22637346a9827efffc3bfb2eb26a6aaa0185,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,2c2eae5b67dceaa896e309aa805aadb9037d5f258bc3b315109a81fb58bb4f6f,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,70b99871e391adece1d32a736a9227e5371649df46c11e6abd7f253e812c0457,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,e27a5045f2660cb54dff7d7e161e87dcb752a50c6ada34941615c0995349f0db,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,8ac11d5521d22fc6d486457418ecfd866f8d3c4528cbb22438b966cdc2600402,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,0b349a5b1a1d1d40b3fbaf1a794c94f569770ce5a9a4bdf8cbeb198627a9da12,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,16e153644094fbba7ec924680c2f8cb203604bee06f3a77cbddb803c147af121,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,7add757c3f09d52863fcc07948491ad967a7f0a9a51bbabb8567c26b8bfecfda,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,7b3eb76cf18d4b634cb69ac5e3952fd6d93c4c24e04f80f13936cacfb6e3d338,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,b46f58cd9bbdcfdec0908e67229b484c6f8482523092dd627e0e97fec62e53a4,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,091f2baa5dc8a0cacf86dcced5e2804e87e984a8540139b54309853f373bfd24,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,34757b0ca985cdc0dc7f4921fa9d79a0465d4182d218c4785560b9b3b78b33a5,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,03402d56a0c9fc9e533d54774182c8b2cda82ba4861a48446d3479dcc4198ae2,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,a9eb485b6f62f033f3fed6980de570e2077da21bd9776022299657a618ef534c,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,1ae3e8213b07e1d53eca54a1901e2dc6dc9e27a3ca10377a63e6adec2fe15426,,"SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,cc785874659a6de1824cabd142c7f6b1c0dd39df023de942d65fa0827e4e780e,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,d0231454a0d13f0d7c676e18b4f64aab166d98ec933394bb7b28b916669be88a,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,c7ede3aebb51649eb442cb55c006f5e0ac1ff82a63a776edaf453686b11e6d6c,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,91f43a99f099cea14860940478bbc7d6084dbab128e045bcf20bbee93b067c18,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,dd8364ee4d8972a5865f25fbe37dcbc183aee11c4b834e4b5325bab6ce8332de,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,527516de4dba9dd5558a463474b4a8b709b1a44e06c5c671c08d9d146e289f84,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,7b2b8dce8c61a9a9e3914c23506a0966c93e5d6ece5a66347e81bca326debc0c,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,37037af44ac5e1f6957d516616adb8a346b434a7081ed8fbbb046e631e0555e5,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,56aaa95b27726c2cc81e06fc80b480bda44870c313625fe35eb8075e06042963,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,f02313f9a0f4a43ee74c37594ce588d8bafd458075991cee870b29559b11ee26,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,52125aa00e3be6c35ffeea7e3d4036dae8c1068d58d2a354083c25c7fa0a0a8e,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,d9158b3a40290ecf41d4a855d6d2cb61dc3a7ba58f332d611cf41a9a429d69a7,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,3fa0f8c7618ee2f2445fe1dc065cdc3c035240205f6ca62d2017e0894f756b5f,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,99c638f9b15f009b7262eb590b8c1762f102a41986b03e4e4b74fbd6693cd047,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,089ba7924720ebe38af4566e194c903610d183d3766fe0b3c847c1fdac3bafe9,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,8027fdba65f68917978d7ce1ff7e0b1fcfe97379b4a031a4b0d0754b5f5ee53a,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,f83dbfa299d53d832db2f84b8cac16fa58525547436c37e6022676bd674211c8,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,e0ae105e44ceb50d47a01e7cb394352d08c0c974a7ccb71356559287fa518cbf,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,61efa178676bd356b83c1bcecdeef71f918748bd626de239e4a536531cd44313,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,92b11d9f33274c3c72233164f4c338f0ee8535b25b2cbbea09d4dd5e289e7a58,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,248b0fd54187153e49814aed72b03e52e7378d3af69f2e4e4e99d4abd2ef1f55,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,791321f66474cd5e57a189ee7e86960c5a7f35cbd67b5834a814cc50c5b97e09,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,b90f06d3a57e70b583f08c608a758a77b6c2ff814889e4e2df5e8e2e97cf1ee6,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,5062dfb63f372c263aafe46e67c80d1eb532c1e502872b9016ca1be886249ab6,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,fa63c70ec9122c5994debacbd81dc19097b278af1a45b0799451571ccd6de69e,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,383f895d1897ac48271bbd5ac6a9614560d87eacea01ce1fe634848188c1a7c1,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,90429399cf489e75bfa5b46211f5af2da4ac9c5d50795b9a224e87f106d31f45,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,4e73ec83c31dc4edbdb14e5c725ead561802c4a2e98536ba105ed0ab180fb7f2,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,c1ee7cd3317b3ceca0db9573a6ac3b0025ceb808723a7c2cbdf43df1dfd2a49b,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,43a45d15febbdd5b7bdbda332916386f74e8f8bed10b4fe8cc36e309d393cef5,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,62bf68bd1a09c86889ce9ef48e7adf267d4bd2961054754cb21307811737e527,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,8bff5b9510a7005bce7e93a8f037444b990b0d4034700a3d353a0e1ff06b504d,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,c29bb27e6cec92f941e9e25999ea596e034c0252b9e2d81c77e481cf34ff558c,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,283bbd4476026660e9f2348604b248dcf14015793e3eea9d2f66055d66976caf,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,e65deb1a5b64f46b519974071d82aa506e005e10ea8d1bed5a8c494d9c5ed748,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,ac6c4b597101ee0621921621c2f687595d24a8829176a2cbd0f1a0fc8cefde4b,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,14a9f4f5b52cb5c0af7f1769916382a1c194fabb931ac954ed3639eb99ba1afd,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,9e75aac7da30aad714982bdc3b5a78bd8942247670c1454b9cdcc48ee3f94cb8,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,0ebfe0cfa3e6820cf680c931cb33746b74612ab80b21e65daae34332af2627e3,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,93209a0ed0b47c9567b646277fdffb7b3994f8ec62339bfe102b4d3372e4b013,,"EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MalwareBazaar
+sha256,0f354172f133dd46ced105d5a0d99bd2b24df56f0636427323ece13f4c9114d9,,"EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MB EasyShell ('l128'; '2026-11-22')
+sha256,bcd193715c8354e64e938c3c3f35200ce7c5299c94cf5d7eaa6090dc16ecbabe,,"EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MB EasyShell ('a64'; '2026-11-24')
+sha256,cf78dec68a906753e94192a8c1590ec340863a4c5c3980de1177cf658c88167a,,"EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MB EasyShell ('l64'; '2026-11-25')
+sha256,2fd7a8bf2dc2a04af0efbb9e470951b0393d5274c58c5a244e6d977bc467625e,,"EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MB EasyShell ('l64'; '2026-11-21')
+sha256,68c2a547a5ca9323ff9407ac9a26937a000a439d2f6b8d9646bddcb1e383a59e,,"EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MB EasyShell ('l128'; '2026-11-25')
+sha256,b53cc1d50a81bc1be8868d651efa6929e50450c37362d59f68d0aa6ca6176072,,"EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MB EasyShell ('a64'; '2026-11-21')
+sha256,79dce3a8d5ad620967936c7a262a314c98d84730765690009e1e71be40fe5602,,"EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MB EasyShell ('l32'; '2026-11-25')
+sha256,918eb4dd40ff14b8baf5663bce173f6988c75ca5517cb991403fea8f75259b15,,"EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MB EasyShell ('darwin_arm64'; '2026-11-25')
+sha256,5441d6f6d6e356db48f8c9d3209fe0bf7d9b888f22bd639582c8130b72521ab8,,"EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MB EasyShell ('a64'; '2026-11-23')
+sha256,7b9d15b646fe09f641b1d95da578afc97b14cec62bccf4155cf0342b0461e0ec,,"EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MB EasyShell ('darwin_amd64'; '2026-11-24')
+sha256,c7884e3842c4566e338846067c116d80b184093e7b380c40683c817997c8c3f2,,"EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MB EasyShell ('darwin_arm64'; '2026-11-22')
+sha256,4803340fcda8b3915d33a5d8df47dcf461e585147aa5405b15687f60c35d5e23,,"EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MB EasyShell ('a32'; '2026-11-24')
+sha256,95ed21f4cd2f39707cc4929a14a733c8354eecd15c5db69d2cd2c6a3badfbe26,,"EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MB EasyShell ('a32'; '2026-11-23')
+sha256,a51416d393e431b65fe3cd8c20944fe5f4c73886dc213c9dc1ffd46f2dc4ad53,,"EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MB EasyShell ('a32'; '2026-11-21')
+sha256,288bc6cb583b405283203292105e6a5905a443b26bc7b3e3a2e85f4dc6247dcf,,"EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MB EasyShell ('darwin_arm64'; '2026-11-24')
+sha256,ef49b7768eb78c310fa952a9679ba9a67d79e93504638b53f3e15481b74212a6,,"EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MB EasyShell ('a64'; '2026-11-25')
+sha256,1467a95824a3ea48eadc43ca152218af2f6d2ef9880f391a1f7add91450bff1e,,"EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MB EasyShell ('darwin_arm64'; '2026-11-21')
+sha256,dba9625fec97eb3bac3ffdd2c3036ab2dd5a0b66ee8761cd07e9325cf663bfeb,,"EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MB EasyShell ('l32'; '2026-11-22')
+sha256,5160440b020329f63c4d033d8cfed55e17ca28c9d776f620e698779cfd622936,,"EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MB EasyShell ('l32'; '2026-11-24')
+sha256,581abe92dd2db2650e43ab26614595bd82f92be10619d5337afd5ae51d67115e,,"EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MB EasyShell ('l64'; '2026-11-24')
+sha256,26a6585f7d9dbc3a46f827e333fed07a154000c7403af6f172f45cf153bf9584,,"EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MB EasyShell ('l32'; '2026-11-21')
+sha256,6ed85fb11ff78e8e76ac1e4fce19319408ddfd7e5e546aef381412310ec31618,,"EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MB EasyShell ('l128'; '2026-11-24')
+sha256,fc1bcf8b8d9b1012b499976816dc95ee368d3657d3186d0d53c336431e7eacd9,,"EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MB EasyShell ('darwin_amd64'; '2026-11-22')
+sha256,ed58b8cf9cd5f7438abf1658e5b5cd676cb9bba38d3eb017a8023a358b865c80,,"EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MB EasyShell ('darwin_amd64'; '2026-11-23')
+sha256,350608d45ad75c3e848a72e2a14a16806561af0d8ace2bcb27788510cf04b05a,,"EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality",test-sample,low,MB EasyShell ('l128'; '2026-11-23')
+sha256,969fb3a94c1af65a94d808c911499f6c58ba2736c8c9eb71ddcd11a51e0a8d6f,,"SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,tria.ge family:silentnet + MB label jar 2026-09-30
+sha256,0dfb80812249cd40a59e13f9a7203e853eb39a9293f4920ef0aed5f81bcbf06a,,"SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,tria.ge family:silentnet + MB label jar 2026-10-03
+sha256,77bbdba3166915999780ba8e419d0adce2202a5f22e2e23a49bc387d2c827ee6,,"SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,tria.ge family:silentnet + MB label jar 2026-09-08
+sha256,56002b2bf21427afc8d603de500c4f38064e46dacdf9add9381015fdb306a2d0,,"SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,tria.ge family:silentnet + MB label jar 2026-10-16
+sha256,68e2360f43f00f5250ddb74891887fedf4edc96631f3394333d7116522e8dd6c,,"SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,tria.ge family:silentnet + MB label jar 2026-10-08
+sha256,063c4bca354e716e3cea998e32b40400e295d551bd321b235bdcc5d5c29f67e1,,"SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,tria.ge family:silentnet + MB label jar 2026-09-25
+sha256,2c7d7c6f57f3dca672aa1dbbbbfedf1c9ef1ecb00c34de9e343b377f68fb4e0e,,"SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,tria.ge family:silentnet + MB label jar 2026-10-12
+sha256,2ea66bf2303053b22e05be4043f763cee866b8f1fb1a4fa2c8667bf5a5ae3c77,,"SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,tria.ge family:silentnet + MB label jar 2026-09-30
+sha256,a7d7b3644f9b63a1ecfc3c9dccd5c950f4567a54f22bd78c62285875e8b38c7d,,"SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,tria.ge family:silentnet + MB label jar 2026-10-01
+sha256,cee5f222a97fbb1e20f99aad1ec9730aca6ac47c1f65bb5ac7b1fa711af72393,,"SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,tria.ge family:silentnet + MB label jar 2026-10-01
+sha256,db8aef92ec9d765a138ef42f839aea16a6293bdbce6bc8af16e3278cc85c531b,,"SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,tria.ge family:silentnet + MB label jar 2026-10-01
+sha256,899a23e18a1c4e527f63b62dbea9db4a5d1454b720af49ce8c50e6c80a9ca139,,"SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,tria.ge family:silentnet + MB label jar 2026-09-26
+sha256,06abfba55fcb977ef73552d1dd08350194b116a95f2f6d1daa92c6582033a05b,,"SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,tria.ge family:silentnet + MB label jar 2026-10-01
+sha256,8b5669edb9b52f6ba353077edc760792f5421514d1037bfc2395f95889ce7cb8,,"SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,tria.ge family:silentnet + MB label jar 2026-10-01
+sha256,b67be3af4a879cdf814ef724bf523d12aa965bb7c2dc23bd8efad1feccfd8ca1,,"SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,tria.ge family:silentnet + MB label jar 2026-10-09
+sha256,c3ea5fbf23539a81ff338bdf44c1eb3caa7c035ee189b3ebdce31afe91124feb,,"SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,tria.ge family:silentnet + MB label jar 2026-10-01
+sha256,e48501205a47d1699c8199bbdb531eb48519cc111859ba0294fe07c912651bb3,,"SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,tria.ge family:silentnet + MB label jar 2026-09-30
+sha256,9d7bb13d6ceee4ed10a90bd9c260e926613ee05bd5949b71051f40d38883f714,,"SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,tria.ge family:silentnet + MB label jar 2026-10-09
+sha256,3db9ea13be5d61998fd478d4ea5000d2e9d0d3ede3208c94be4546039ec75b1b,,"SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,tria.ge family:silentnet + MB label jar 2026-10-12
+sha256,007670050ec37adce005b51f76bd0d5871c0e72c3a809b9d1e03d986a8c7d586,,"SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,tria.ge family:silentnet + MB label jar 2026-09-23
+sha256,12ff4992ad1692284e09a9007e19b0bc5db5b9dc3b11b906de2df815de4796bb,,"SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MB label only jar 2026-10-27
+sha256,284ef1ea239e431df6d61be6c2caba3e5a86827f81a15341661de6e7a4d702e3,,"SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MB label only jar 2026-10-20
+sha256,f5d754554edc1f6fd6e05df45dba0bff26fb9549ce399da54d5d2fddd8446142,,"SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MB label only jar 2026-09-30
+sha256,e30b8a269cc6cfed83c48393fc6e656b20703d4109580ac584f810910b1afdd9,,"SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MB label only jar 2026-10-27
+sha256,581cf2c3ef9a29652143f1ff041c6b421e83028094082bf2eff9fd44fa287f10,,"SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MB label only jar 2026-10-20
+sha256,886eeabd8710c72c6fa4a1f3ffc58af11188c6ec67f33105a7a113e675c44ea5,,"SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MB label only jar 2026-09-17
+sha256,dbd33973be2475d55f9ffdc5492a17a039b056b61516674fc68cd7e342fd0c1a,,"SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MB label only jar 2026-11-02
+sha256,edaf15f40bcb45594d4f5efca1f1262ec39adaa662e3015c70f17f3bb813ce98,,"SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MB label only jar 2026-09-28
+sha256,c28eafb5a0cb3fa5de74887898ab5e19421cfe69ba915817a92f829933bcbad7,,"SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MB label only jar 2026-09-18
+sha256,abd664eeaba8350a7c4ce64bc06b38d1e235027ccadddc47d81036d614e228a2,,"SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MB label only jar 2026-09-18
+sha256,6319a8ff4c88f30f247331f95c814dc8d89e53015f275a8e6af71c25a02149df,,"SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MB label only exe 2026-07-01
+sha256,efa09e17b62960842c08bb306d36e71d17941c00b3c3c091d7f19a3c02b0cb0e,,"SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MB label only exe 2026-09-08
+sha256,01805651d30a44df6d53dd07e5813e6be2a9b496f9568da8ab4d443e9db7bde6,,"SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MB label only exe 2026-10-10
+sha256,b13b22c66cd105a2e5a10bbc9339bfa0e4f4cb1faa4cd2d0a7ae854948d2b1c5,,"SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MB label only exe 2026-10-08
+sha256,4d0ede682087d76920c2e90defd08a60eb47dfd7faca399538d87e414bd08efd,,"SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MB label only exe 2026-11-15
+sha256,8c9fa2ba4bf9af2a0c2fe9918dbb99f7d2586b7e59884887e9fe85018132e709,,"SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MB label only exe 2026-11-06
+sha256,8d56988ac897654fee633735d4ccaa80605cfe6d376d1d5593859498c5bfd183,,"SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MB label only exe 2026-09-08
+sha256,443863fe8aa8b41124569d0b6fbe6ac4c39049652a7ea70bcf82198d64927737,,"SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality",test-sample,low,MB label only exe 2026-09-08
+sha256,7172334b79d574eb98ab1d58d12754a589d53cfeae4b8c06d574dc53171d2c59,,"WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,Gen Digital IOC list (on MB as WARDENStealer)
+sha256,a24930f4cd5e31f065adac70def28a03d6b5b449fd0ba417d3d0f678ead3e4e5,,"WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,Gen Digital IOC list (on MB as n/a)
+sha256,55cd3d36fdcc58016a64398357b2c9724a060da9f0d09266e537a61ec9552e4f,,"WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,Gen Digital IOC list (on MB as ACRStealer)
+sha256,74a28581cdc96b69d58c1b2f640c2f3c6932d11eb4b53fb5bf9cf2e89ac30dd4,,"WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,Gen Digital IOC list (on MB as WARDENStealer)
+sha256,1c852cc5ab0847f57908869ad14b2c1385bec46a8377f67b779aada5a5d59dc0,,"WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,Gen Digital IOC list (on MB as WARDENStealer)
+sha256,fdd903d07811d9e1c843a8c4527936468e54d827cf8cfcc4ff896792c9fced76,,"WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,Gen Digital IOC list (on MB as n/a)
+sha256,03e0e5a51dc9178f4471dbb764b3c97693be8cfe575c1ad858f565ff727e6565,,"WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MB label 2026-11-08 Tuxxin
+sha256,bba4d2c2baab94a1b31a659327d231aaf5a689f86936a323f62595cf01ac123a,,"WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MB label 2026-10-31 Alex_sev
+sha256,0f614b7b7343596fd42b1aa940264fda4e63ff8e71f7e02226eae2ff839035ae,,"WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MB label 2026-11-18 josie
+sha256,95492246aa4768925a954e928413fc57e50457a29334d35a8fb3591e25b9ff62,,"WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MB label 2026-10-17 Daydream
+sha256,d7766716ce3e0b8f2e4038bc7dc15cd5c3a51aa2a88ec7b937664c31e2c2adb2,,"WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MB label 2026-11-23 abuse_ch
+sha256,c7fd3f91a48fddc1ba61b91c6b059299c809215bff45fd01dbb601ca95242221,,"WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MB label 2026-11-03 AmadeyHunter
+sha256,42856ec3246ea7b03a9fc2d8c82d7dea79c3866ca81c466929561f364cc24309,,"WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MB label 2026-11-07 AmadeyHunter
+sha256,58b6b7a01a4194742b5e56e8298e1c7d85605b2c861e0365057c2d28e22d96be,,"WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MB label 2026-11-27 Tuxxin
+sha256,55c8cf0c1611a1238413b18d22afc720001d5f86f106e98ef4bc8505336307a9,,"WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MB label 2026-11-03 AmadeyHunter
+sha256,a2177d35c8d18476f0e7539b7ef9a151c69270647f39c245cb57f775cc004b9e,,"WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MB label 2026-11-09 adrian__luca
+sha256,985b324d226929ede2015995c514b7b74c85b044f3256baca0080113d3b4008d,,"WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MB label 2026-11-10 abuse_ch
+sha256,01c5ffacf6f500ab473b3f302b2e6f19d08225efbf68853c8b980e1ce7557dbd,,"WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MB label 2026-10-27 Tuxxin
+sha256,b05622a8ae11254a0e2ebed7fb3b7dfbadce25d8752d2016636b26f74bfe4036,,"WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MB label 2026-11-25 aachum
+sha256,9485f6225db1f5745047da05b81d17532d5a116654cabbe2dd1ea6b283d17d4b,,"WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MB label 2026-11-18 AmadeyHunter
+sha256,14ad97a3f11a8472ca0b32425099e97073ff39d974a11ff317a5d0267996e261,,"WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MB label 2026-10-31 AmadeyHunter
+sha256,a86adc5a127ac578b5023143b4ec2a179c9d18f602ab222218bbcf3ec22cce18,,"WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MB label 2026-11-25 abuse_ch
+sha256,d8c0e44f0c3f522f1aff2d14c622ee10c7cf9714afdbfa9ef5a5134847914f1a,,"WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MB label 2026-11-18 AmadeyHunter
+sha256,e66baf53f89f97fc1506584ce6bdebe6658ad0bc830e9664b6f0c9a74085a3e0,,"WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MB label 2026-11-11 aachum
+sha256,61618c5d2b6383dc9154499d9c8582a20f29768656f75aac50bec31c7efe4209,,"WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MB label 2026-11-23 AmadeyHunter
+sha256,d1afb987bfbcebf56cd04762fb37312804560662066bef15cbdf18da53173133,,"WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MB label 2026-11-12 AmadeyHunter
+sha256,dc8cdb6bdb963dfaee562e46536aa55f433e6221017be9aa3cea8fcea6e40fc5,,"WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MB label 2026-11-10 AmadeyHunter
+sha256,768f46d4dc306502ce6b847b1a06509a9301fc44794cc3d70858657278d30ab7,,"WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MB label 2026-11-04 AmadeyHunter
+sha256,07d4b1f763d1d9479635e58980100f90d7fd4fa89808cac1c97e91607e0ad6ca,,"WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MB label 2026-11-07 aachum
+sha256,6b2a818393030f029ab112b754ddc1b35616354fe75f48b705e6fe6552d3b2d0,,"WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MB label 2026-11-14 abuse_ch
+sha256,eb0fd41b879e187d5b13839a61b6f4006d2448c3ac54bd34de6dd1ae7bcf618e,,"WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality",test-sample,low,MB label 2026-11-23 Tuxxin
+endpoint,192[.]3[.]31[.]148:8443,,"EasyShell C2 configured in every MalwareBazaar EasyShell sample we checked (959 files, one reporter); read from the sample config",malicious,high,"sample config; MalwareBazaar EasyShell label, November 2026"

@@ -1,0 +1,13 @@
+title: "YARA rules for three MalwareBazaar families without public coverage: EasyShell, SilentNet, WARDENStealer"
+date: 2026-11-27
+families: [EasyShell, SilentNet, WARDENStealer]
+rules: [yara/easyshell, yara/silentnet, yara/wardenstealer]
+related_videos: []
+references:
+  - {source_name: MalwareBazaar EasyShell label, url: "https://bazaar.abuse.ch/browse/signature/EasyShell/"}
+  - {source_name: MalwareBazaar SilentNet label, url: "https://bazaar.abuse.ch/browse/signature/SilentNet/"}
+  - {source_name: MalwareBazaar WARDENStealer label, url: "https://bazaar.abuse.ch/browse/signature/WARDENStealer/"}
+  - {source_name: Gen Digital, url: "https://www.gendigital.com/blog/insights/research/warden-stealer-rust-infostealer-analysis"}
+indicates:
+  - family: EasyShell
+    role_match: 'EasyShell C2'

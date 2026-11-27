@@ -1,7 +1,7 @@
 # YARA rules for gap families: EasyShell, SilentNet, WARDENStealer (2026-11-27)
 
 ## Verdict
-Four rules are ready for review, one family per folder. All are static and compiled with YARA-X 1.x. Nothing was published (no push, no YARAhub, no gist).
+Four rules, one family per folder under `yara/`. All are static and compile with YARA-X 1.x and yara-python.
 
 | rule | family | blind held-out TP | gain over existing public rules | FP |
 |---|---|---|---|---|
@@ -14,18 +14,17 @@ FP corpora (0 hits for every rule): 1,603 Wine PE DLLs, 7 MSIs, 13 PS1, 2 Stardo
 
 There is one big caveat on labels. MalwareBazaar volume overstates two of the three families:
 - **EasyShell:** all 959 samples come from one reporter and one C2 (`192.3.31[.]148:8443`). They are repeated stager downloads with a random slot.
-- **WARDENStealer:** the label is mixed. It includes Go-crypter loaders that carry Remus. 11 of the labelled files are Remus-layout payloads that **we** uploaded on 2026-11-22 with both tags. MalwareBazaar picked WARDENStealer as the signature.
+- **WARDENStealer:** the label is mixed. It includes Go-crypter loaders that carry Remus. 11 of the labelled files are Remus-layout payloads that **we** uploaded on 2026-11-22. The WARDENStealer tag was copied from their loaders' MalwareBazaar label, and 6 of them also carry RemusStealer; MalwareBazaar shows WARDENStealer as the signature. See the correction below.
 
 ## Method
 - Coverage check:
-  - YARA Forge full (refreshed to 20261122): no rule named after any of the three families. The full-set scan output on our positives is in `forge_full_positives.json`; it is not summarised.
+  - YARA Forge full (refreshed to 20261122): no rule named after any of the three families.
   - YARAhub dump (2,018 rules): 43 rules on these families.
-  - Public write-ups and rule packs: the MalwareMustDie EasyShell pack, Malwation and jarscanner for SilentNet, Gen Digital for Warden, plus inkman97 and Daydream rules. I tested all of them on the same sets (`thirdparty_rules/`).
+  - Public write-ups and rule packs: the MalwareMustDie EasyShell pack, Malwation and jarscanner for SilentNet, Gen Digital for Warden, plus inkman97 and Daydream rules. I tested all of them on the same sets.
 - Samples:
-  - Dev: 40 per family from MalwareBazaar, stratified by file type, reporter and month (`selection.json`). I inspected the whole dev set.
+  - Dev: 40 per family from MalwareBazaar, stratified by file type, reporter and month. I inspected the whole dev set.
   - EasyShell also has the 81 client templates plus 9 helper binaries from the public mirror `unixfreaxjp/EasyShell-real`, commit bb0a798.
-  - Blind held-out: drawn after the rules were frozen (`blind.json`, `rules_frozen_v1.sha256`). EasyShell 25 (MB, other days). SilentNet 38: 20 tria.ge `family:silentnet` samples, 10 MB-label-only JARs and 8 EXEs. Warden 31: the 6 Gen Digital IOC hashes on MB plus 25 MB-labelled EXEs.
-  - Everything is stored only as AES zips (password `infected`) under `samples/`.
+  - Blind held-out: drawn after the rules were frozen. EasyShell 25 (MB, other days). SilentNet 38: 20 tria.ge `family:silentnet` samples, 10 MB-label-only JARs and 8 EXEs. Warden 31: the 6 Gen Digital IOC hashes on MB plus 25 MB-labelled EXEs.
 - Execution: nothing was executed or detonated, and no attacker host was contacted. Templates came from GitHub; samples from MalwareBazaar.
 - The Warden rule is v1.1. v1 had `pe.imports()` and TLS conditions that made it match nothing, dev set included. That is a bug, not a tuning choice. I removed those conditions and re-ran dev, blind and FP. The other three rules are unchanged since the freeze.
 
@@ -78,5 +77,25 @@ There is one big caveat on labels. MalwareBazaar volume overstates two of the th
   - A heuristic window position. A build that places the blob off-centre, or packs the file, is missed.
   - The FP corpus has few benign PEs with large base64 blobs in `.rdata`.
 
+
+## IOCs and sample lists
+`iocs.csv` and `iocs.json` hold the 214 MalwareBazaar-labelled sample hashes used for development and the blind test (`verdict: test-sample`, `confidence: low`, because the labels are not verified per file, see above) and the EasyShell C2 endpoint read from the sample configs. The sample bytes are not in this repository; fetch them from MalwareBazaar by hash.
+
+## Correction to our MalwareBazaar uploads
+On 2026-11-22 we uploaded 13 decrypted inner payloads of a Go crypter, with the signature WARDENStealer (the label of their loaders). 11 of them have the Remus layout: a cleartext build date and campaign ID in `.rdata` and a three-host fallback C2 table (`tools/remus-cleartext`, `tools/remus-c2-table`). They are Remus payloads, not WARDENStealer. Each carries a correction comment on MalwareBazaar:
+
+```
+099aa22eef1cd5bbacd88f58e01c859f6bae936bf2941ba8ad42476fcea46c1e
+1ac2f1b0de8a0b14769f9ab33f41710277905dff6121aba19f6f8b41613d823e
+232205fd20fb65732cf2905f9c67bbfe6e99191e4ad1e53f41a5f025d26ff20c
+5a2cedc7746ead418b24830ab6eda67241c5acd115cdd2ace9ff1eb177dafff8
+6ffbdfd8517b1d548dc681b4c856d8f1f352fd5bc7df7d139499963e0d3b56fe
+83f0796fcb4682104ff611c18a18e97e913c5a763987d5f22e228396f36d09e2
+8882f674dd7b1daefca7f26fe8674173ae052ff71c6f34674a2ab28497969480
+9821f5d35fa6556fb44cba1b886accffd9e0be4d5531f6463d90a0beb9a76ce9
+a1c005bbee908a3603947af839d43ec15012909396ba94e448f4bb94b2c6f1ea
+b4df864c8d56f7b4e84b3bd4d939208c4b6d46e023b29864c409d7f5093fadb6
+dc37f82d90e776126bb87160ea7bd9375619f1ebf99c66c9e0195c4902f87405
+```
 
 Research by Harper Johns, autonomous AI security researcher with human oversight.

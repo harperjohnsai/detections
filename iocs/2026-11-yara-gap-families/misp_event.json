@@ -1,0 +1,3288 @@
+{
+  "Event": {
+    "uuid": "5adcc576-984a-5620-9da9-58d3993099aa",
+    "info": "YARA rules for three MalwareBazaar families without public coverage: EasyShell, SilentNet, WARDENStealer",
+    "date": "2026-11-27",
+    "threat_level_id": "2",
+    "analysis": "2",
+    "distribution": "3",
+    "published": false,
+    "timestamp": "1795737600",
+    "Orgc": {
+      "uuid": "b641827b-b56f-53c3-b356-359fddd6e73f",
+      "name": "Harper Johns"
+    },
+    "Tag": [
+      {
+        "name": "tlp:clear"
+      }
+    ],
+    "Attribute": [
+      {
+        "uuid": "8fcbabe7-7f1d-5cb1-a298-7e1ff6474b8a",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "dcbb0f20d29ecc90db8c50ae5ee8d24a8faca5471725138786662aa9d2beecfd",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "235870dc-4ab8-5277-8b84-ba6cc69d96a7",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "56af4268009504cede5f187dae78e48b3ed61a5b989ec28ced24e56432e80729",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "57e1d482-655a-5144-8af6-633fd252abdd",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "fea9538084b70e9681fd8104b9319792c4d8c2701ae145ec31dc26e7526f2ae0",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "f9a9886b-856d-5adc-ba27-7e637b28642e",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "2d2a95ddad86b51aceba55a10dc9d66489e7188f50cb8cd1eff7af115d136966",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "95826138-e42c-5fc1-84b6-109ba91ea005",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "e19f12a1d45ffd44819feb0d1dcfe0ccb2353a1b7bf085b378604cfd5faea2ad",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "d044af96-f0f9-5cfe-a7e5-5cbb09c54f1d",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "c47f0cb5a0c51d908fbcc38be70ade963762e4f4adca8fb32f33440cb9af4376",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "bd84d989-d32d-577d-bcaa-46c259830f35",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "c49cc5bbc848b380426c213df1ae4768ca552eefdb7bc70a0a46961f2bf34a21",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "557061ad-55b7-5445-94dc-ec6cf4264547",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "584df8f6dacf0196bf31f182ae008f52cf81fbe9f95d04cb8d6fa4786c621e35",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "8de6866b-560f-51c7-afc9-e4cc852af2fa",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "0a0503fbb31ae1eff1c78951f9d707ba45d0cc36c6e4e270f72ca5eb2ae63e00",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "499d2e97-5426-5d50-93ad-c0e1f2bb8db8",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "23d4a386f0f030bb0e9c659b238143e1bf279d424743a340b386b603fa7f899d",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "f5a149b9-9a53-5208-af13-994618c940ed",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "fa4387cbb847d8d36450642b024be7e7af480925cc557770a4174084e1ca4833",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "d9e0b15d-61d1-5e9a-b43e-481af01e745d",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "bb1db61196220e327cd57b2a6f9b2bf6ab0a7ad0bc4a330e94bbe5460327561e",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "92f6e123-7cfb-5db9-a825-dfc325b79011",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "eff4b583d6a3e0743b7ad853a8227cc04b83eb4d855cac31bdef4fb0185326a9",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "a8d21dcb-7db7-5aa6-869d-0ad354d3e642",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "dffefd3975d07b2381022e189b89aa85b97eb854b2c3ac572304ce8672ef0ca3",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "d0643d73-fc9a-5830-81b0-2ab3e4317cd0",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "40e9906f017d9285fcd3ef01d5d87d56784350189734ba78f4260227dbe73b2d",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "63822bdb-104a-5e84-a174-911aa3a50706",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "0da0c094ce1f1e51bddaa92b59d795fbc8587e5a73ae45547fdd293b9b160a05",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "90b3ef4c-7e8b-574e-8824-9fa35abb1464",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "222566ec14004746626b1d3f8a5d8b52248c232f30754e6fc380c31ee186486b",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "0db97331-4bd3-580b-bf7d-b5e6784f8716",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "755c02c4980de1020f688412091ec75856fbcf37c652b5ae3c3c0678b21dd29f",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "f0ab0458-07f9-5e6d-a77d-e2cac3f11ff3",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "cf62388164be89edc469cd5d1633b52ac622e092806038fde8812852d7c35e65",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "b887bf21-0b37-563a-86fc-e91430bfc221",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "14dc82bc5ee7c606e862a702666cc1b314179545f3a56fa68fc76b29d5900576",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "c0f1d43f-8dc2-5852-8889-6d6a93ffb283",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "b729250e5bdf85f81163adc45cfd1b97f1d4e4fe15bfb52bf76925394206146d",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "22a60575-6f0c-51ca-aff1-4498989bd517",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "22249fabdf1cb0c3a41a86f16d93c475e2c21e6df0b7c44c8acba6b416d4d065",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "f3f989c1-e818-502e-a948-44c7bb869971",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "43004ce76423cfa80018b0f318a7f9d285d0fadde2dba87a1f661ad3d78aaf9a",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "98d99f1f-c1a4-5d98-9137-f6c66f6c4018",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "2a3c105d5baf9ef98df9ae0349668d1879a7e71f74015a9996a405207adcf1f9",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "cf210240-6a8b-5ffa-adb5-4bbd8f246b6e",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "6f2da97e084b3ec946f80e8bff21092556be85b59661a10d0fa354d980d7e05a",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "73aded9e-6b5d-57d1-96dd-398ef1fc9681",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "d76e906a18c04826996d1f30de248e7a0e50c48814c82e9583b36c91fdf66f00",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "629df8b3-c692-5de3-8bce-d0a4a574ac4e",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "aa4f773e9b712d825339f822c0b3511dcb45388a76b4298ef0f7ad85b86a7456",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "f06399b5-4161-5d9c-8cd5-d06482cb08b3",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "7573f14a5c10d49e805887e1ec7009ddabc4bdc3868b57a76ff122dcfba317a1",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "ac786a4e-e46f-5362-a7c8-3ba11c4ec429",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "149f22c687faf7332e10000ca4e7f549ec5cf086affd2a7595e9535d9cca75b0",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "e0a4e075-d44d-5a54-8d78-9fbadb8f7e92",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "9e8ef2bc426a27075d7c7d7304643748ac4be7dec0118e7f4e7ba04bea5caa48",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "aeaa7ce0-efec-5860-bb1e-8b4c4b3c2036",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "e6400ea4ea364afbc1dd39f6836ddcab26b6653d2c22751aac847112874ad45b",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "9339190b-8f3b-5761-b5c6-79220b771ff8",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "83ff82311a7e7ba69c4d0c10c26d1e7d37025c08f2aef4deb767f159e1ec43f2",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "4012725e-8043-51d8-9288-c76720b8cb13",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "5d766bab63f8be7ae2e222402b364c18462ed545cc6898dbf9a0f32c289a90fa",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "c985fd52-d173-546b-9e28-f84ee21449fa",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "49e0b11c6988bf7acb3cad9c3c267a8aabc31bb1dc422ae9811cdd4ea66a25dd",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "ee381a5e-941d-5b5a-bb85-134e969c3aa0",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "4dbce01bb6803fd0a09e06fd4b06d38e87ebf08c44276bc0d686549f993687b7",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "abed2120-d894-597f-a4c9-10dffcdf0f62",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "1202486ea139e1f3b8f4add4b4a8e3d016c32c2f219523f2330d02ac7061ba27",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "fbca1e9a-f10d-520a-b873-f3945233a438",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "31e044d3fbf6d6cc21f9fdff9560e058b07a8b3f47b35fa073289a75ee12646f",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "5c276e1c-3e0c-51c8-aacc-57b77a0e4560",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "41240211b74040a534e0f3facfddcb4c5b9d3b358dfe66bf119ea1642dc3a8a9",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "1adfeaad-f287-577b-88c1-73de5d55d0e3",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "00703fb35687d7cf3a0193b1d9c244959fe6482691fc80a00399bed3b77db2a7",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "98aa3ab3-89f3-5ed1-84b8-d35a5b397d1c",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "76e8bd9717fef3598fd0942f4fda3c682837784ae0ba192989f4231778f127ff",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (dev sample). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "14e9b7c2-330a-5962-8572-35718d7232e9",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "b654b532e6b25bb06d3b2ad6e65b5d6c7ac8a12a847aee707893518d0c1fc78c",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "165615eb-c197-5b43-894b-510c01276e78",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "9a9cc78702d4085e9f503105500d7d27fa3d1aba24d6109ae4b2da9ea6805be1",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "e5b34aca-7af7-5799-ba6a-9c9aec1453dc",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "1280ff5f2c4a59e8a9301d8e2eb7c2e9774ec6026a48905c52d23fb1974438bf",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "801f92ce-4bbe-5945-9785-f651b4174bbd",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "6f186acab485604210d3cc03f7582cad8476e938b09664054512d850a1230a00",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "65e6985d-7b71-5b93-87ab-5480c5fad7ad",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "9910c262ea4d1779036a8dfb81aa013b7c0d64e5cb1b0c37e3136a6ae2914e00",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "1fc1a8f0-ad84-56e3-9384-9def662aa06d",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "1fdbc53b6039b52a14e23b09668ad01ad0ffe7e0dc41f87b3724c36df0d4efcc",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "b0be237b-77de-5eef-9b86-6183df5aeadf",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "a90ad95d4584ec3f5d432ac0b075ee80ba485dfb6ed5360c0d9909069b353680",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "46a3cb90-6c65-5cdc-abd4-b0ce274d6cfe",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "dbe586b56376ac96097b76ed353b6ad89977d3345774d80fce846fe97370b86f",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "7ca8629c-ee46-5610-8a4d-9b8c72f97e6d",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "058458f1cc63a64159ca8b3384cd8b83969a3879bf3466021e1de15de0d9fc71",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "b5bcaa1e-284a-5abf-b240-fa49e798c442",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "0b9186fa35770dc3b4b121a35551d49c6d623c0cd8dafbc5bafbce2d5bdcd7f3",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "1cff05f0-94f9-5fa2-a9eb-8d6a333c7392",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "2c252e7ec4f7b0ccb380bf58bce3fa1592f28fbf275eabb2fd29a3958fb11c95",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "dab4c63e-b1a3-593d-8157-869c297e1367",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "7564375fc4de22673fabf0708a47f06a514fc2a430fd6c6b8f78af2e8b98d262",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "3aa9fb2f-a518-595d-92c5-5af10b4791f0",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "f6bbc27e48c8e8aeb83dd944086d5ba9655f5c170672241e5d3e1c5d8f6e3d48",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "f69643ff-6eaf-5280-9e4c-9e7e4a884399",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "bd9db280ad4f24a879d8bd1a8d37c18b28de4b12523c4b1e6d224a4370ed55dc",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "da8d3396-4eae-53b0-8881-3ff09a73fef2",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "659fada1cbf0ed66a13bbf11bfc2d7153f10c15c7753c3c9c3579762999cf232",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "8f25ce63-a403-52f1-8c0b-5021c0040384",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "2b3a8ea9a4ba052577e81316826118ad809618450198aeea483989292b663e69",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "41f1a8dd-2dd4-52e5-9099-46da87afdca6",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "bd983796e38605e4cddb811774d7d6ace89dcc1968ba7dcf29555b0d55ee1ae8",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "ee786e01-6afe-5df8-97a5-229bd70bdc32",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "56b649f7d9430c6f77146d767ab7da4f8f5ace5c1de72f794c81c067a49a395b",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "4cc20db9-f1ba-555c-a7d1-a02d8957e7c6",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "a60374fcff6c8867967b1e616e62471351e1c2e2249870610d0d8a9d6b7adff3",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "f96b2931-ad41-5885-a63a-40af4963afb9",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "6b5c3c3ae0da4d2207b0ebfc3d4cf03537622bf624a9753858ca8c2b1757c9e8",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "2c6c4c01-6286-5d74-a50d-cf548dc5fa79",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "0b3581ab2acd2099ec8d7de4f77608a0e9a1b7b4810009c7eb1cc4007d30d487",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "d3956d37-1bf1-5256-9421-383a5d37e21f",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "cf936fca40f4893c08fb2d63095c1efc4a77a934ec0348921c42c687a7cfd1aa",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "42fde77d-52c8-591f-8f2b-e1f935878ddb",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "acb170fce322724a198780becc450823aa99d58283efb1a8fc8d7b14e2925549",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "24c0ef71-cdd2-5481-b2c4-280c1f6a6c84",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "eabd970c01299dc18e66e65a921b4d9045afd362771baeb0fa89e43257c4e4dd",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "a2cbc7c6-fbee-5f17-afca-4f8d8e3a0ce2",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "47a313871b9b4cf0cc3b3897b93ada760884f263f78f8209b296bbd8e4257439",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "8550ef68-b587-5b20-a17f-3a205b53a64b",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "7397de45e59188a1083abb4ecceb22637346a9827efffc3bfb2eb26a6aaa0185",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "327a8078-57e5-5568-ad54-5a9ebcbeee45",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "2c2eae5b67dceaa896e309aa805aadb9037d5f258bc3b315109a81fb58bb4f6f",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "fa0ada60-47e3-57db-ae23-b907a242c37a",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "70b99871e391adece1d32a736a9227e5371649df46c11e6abd7f253e812c0457",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "02508c82-74b7-55bd-bed3-3f1ff2421b91",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "e27a5045f2660cb54dff7d7e161e87dcb752a50c6ada34941615c0995349f0db",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "6da259de-3890-5ab8-9a8e-585989938642",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "8ac11d5521d22fc6d486457418ecfd866f8d3c4528cbb22438b966cdc2600402",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "616ed481-a0a8-5f85-b490-4665511f36a2",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "0b349a5b1a1d1d40b3fbaf1a794c94f569770ce5a9a4bdf8cbeb198627a9da12",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "39402f14-d76b-5cd0-97b0-c0ef195c2f5b",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "16e153644094fbba7ec924680c2f8cb203604bee06f3a77cbddb803c147af121",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "ba084327-c4ba-55d8-ab4c-37eb556f26c7",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "7add757c3f09d52863fcc07948491ad967a7f0a9a51bbabb8567c26b8bfecfda",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "9eb60422-3d1e-538c-9f92-68aebc460668",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "7b3eb76cf18d4b634cb69ac5e3952fd6d93c4c24e04f80f13936cacfb6e3d338",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "56d006f5-d1e6-5cca-8f3b-3f477f374900",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "b46f58cd9bbdcfdec0908e67229b484c6f8482523092dd627e0e97fec62e53a4",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "1110089b-70d1-5d23-ba39-e647c6ddd5e0",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "091f2baa5dc8a0cacf86dcced5e2804e87e984a8540139b54309853f373bfd24",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "5e63071f-78bc-5439-86e8-5c19d418629f",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "34757b0ca985cdc0dc7f4921fa9d79a0465d4182d218c4785560b9b3b78b33a5",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "953f4900-d82b-5a02-97ce-1bd678fadea7",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "03402d56a0c9fc9e533d54774182c8b2cda82ba4861a48446d3479dcc4198ae2",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "5057e8e5-2563-5b60-bd56-197945fe083b",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "a9eb485b6f62f033f3fed6980de570e2077da21bd9776022299657a618ef534c",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "d4da7ae4-d3b2-530c-8fa9-3c3bd7a3bc7b",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "1ae3e8213b07e1d53eca54a1901e2dc6dc9e27a3ca10377a63e6adec2fe15426",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (dev sample). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "7372160f-4157-5be5-bb6c-74a58004251e",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "cc785874659a6de1824cabd142c7f6b1c0dd39df023de942d65fa0827e4e780e",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "ebc090f2-01cf-5ed1-bc4e-abaf7134ca21",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "d0231454a0d13f0d7c676e18b4f64aab166d98ec933394bb7b28b916669be88a",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "a01cb634-c57f-5410-8724-69499d90c665",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "c7ede3aebb51649eb442cb55c006f5e0ac1ff82a63a776edaf453686b11e6d6c",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "9775bd07-829e-59fd-8be8-00fb8ca7bf99",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "91f43a99f099cea14860940478bbc7d6084dbab128e045bcf20bbee93b067c18",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "aaf9436d-1529-560c-ac29-f67021544579",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "dd8364ee4d8972a5865f25fbe37dcbc183aee11c4b834e4b5325bab6ce8332de",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "b91f0ca8-b6b6-5fcc-8a5c-144c2cd89523",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "527516de4dba9dd5558a463474b4a8b709b1a44e06c5c671c08d9d146e289f84",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "28eb65c3-e5f3-5f7a-8cc7-d0f91aaf3039",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "7b2b8dce8c61a9a9e3914c23506a0966c93e5d6ece5a66347e81bca326debc0c",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "8e51cb6e-e3f2-5b29-84bb-a20d1b539af8",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "37037af44ac5e1f6957d516616adb8a346b434a7081ed8fbbb046e631e0555e5",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "6a55d68e-664f-5840-82b2-8dcf8cfca7cb",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "56aaa95b27726c2cc81e06fc80b480bda44870c313625fe35eb8075e06042963",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "809ccb22-003d-5cbb-98b8-19a95d009776",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "f02313f9a0f4a43ee74c37594ce588d8bafd458075991cee870b29559b11ee26",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "dad2b8d0-4a18-58bf-ba70-0fc36af6f590",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "52125aa00e3be6c35ffeea7e3d4036dae8c1068d58d2a354083c25c7fa0a0a8e",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "171b14ce-8ffd-51d0-a3ea-4bde87c51d14",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "d9158b3a40290ecf41d4a855d6d2cb61dc3a7ba58f332d611cf41a9a429d69a7",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "630d4309-6d1f-5c95-befd-7ba454cdce5e",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "3fa0f8c7618ee2f2445fe1dc065cdc3c035240205f6ca62d2017e0894f756b5f",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "0754d8c4-7c8b-549f-ab15-d7ba743557aa",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "99c638f9b15f009b7262eb590b8c1762f102a41986b03e4e4b74fbd6693cd047",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "8e3cbdea-bca7-5313-882f-4f3e528ab673",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "089ba7924720ebe38af4566e194c903610d183d3766fe0b3c847c1fdac3bafe9",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "74e21642-8949-518f-a777-9489f5879a03",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "8027fdba65f68917978d7ce1ff7e0b1fcfe97379b4a031a4b0d0754b5f5ee53a",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "1b4bd721-3dbc-5075-b6d3-163e5361c875",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "f83dbfa299d53d832db2f84b8cac16fa58525547436c37e6022676bd674211c8",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "1c30cb19-71cd-5351-869a-968a705d7baa",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "e0ae105e44ceb50d47a01e7cb394352d08c0c974a7ccb71356559287fa518cbf",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "b06579d3-e844-5c62-8f37-0f28f27371b1",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "61efa178676bd356b83c1bcecdeef71f918748bd626de239e4a536531cd44313",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "63c1f21b-a575-5ea7-9b0e-8283bebf47f7",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "92b11d9f33274c3c72233164f4c338f0ee8535b25b2cbbea09d4dd5e289e7a58",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "4432695d-51fb-5420-91b2-e66a9f3fa39a",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "248b0fd54187153e49814aed72b03e52e7378d3af69f2e4e4e99d4abd2ef1f55",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "09cf1f99-79e9-55b8-8767-660a04cf25f7",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "791321f66474cd5e57a189ee7e86960c5a7f35cbd67b5834a814cc50c5b97e09",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "4d06c4fa-4f2e-5865-8393-75d72e374617",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "b90f06d3a57e70b583f08c608a758a77b6c2ff814889e4e2df5e8e2e97cf1ee6",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "b241edd8-2158-5749-96cd-fe441c115897",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "5062dfb63f372c263aafe46e67c80d1eb532c1e502872b9016ca1be886249ab6",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "6661bc6c-f878-56b5-a240-5d3d35834cd4",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "fa63c70ec9122c5994debacbd81dc19097b278af1a45b0799451571ccd6de69e",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "c819e235-2359-53f9-8669-87b2c6615c4d",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "383f895d1897ac48271bbd5ac6a9614560d87eacea01ce1fe634848188c1a7c1",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "a6951221-b5ec-5989-9a30-ab23d3897aa6",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "90429399cf489e75bfa5b46211f5af2da4ac9c5d50795b9a224e87f106d31f45",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "e1307a6e-8761-5204-84dd-20872824d1bd",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "4e73ec83c31dc4edbdb14e5c725ead561802c4a2e98536ba105ed0ab180fb7f2",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "865664b3-b6d2-5ec8-a737-f2f54bb7ff70",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "c1ee7cd3317b3ceca0db9573a6ac3b0025ceb808723a7c2cbdf43df1dfd2a49b",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "563511f9-c5a1-56e7-9279-3f926aba2dbc",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "43a45d15febbdd5b7bdbda332916386f74e8f8bed10b4fe8cc36e309d393cef5",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "8ef9eef4-909f-5aeb-8b75-ac2a6b26ebed",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "62bf68bd1a09c86889ce9ef48e7adf267d4bd2961054754cb21307811737e527",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "b71eabd2-ba47-57ef-93fc-4ae8dfc6ed19",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "8bff5b9510a7005bce7e93a8f037444b990b0d4034700a3d353a0e1ff06b504d",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "fd258152-14ec-5f17-8316-428c740cb26b",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "c29bb27e6cec92f941e9e25999ea596e034c0252b9e2d81c77e481cf34ff558c",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "74c498e8-e1d9-569e-8397-92b1a9197a7c",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "283bbd4476026660e9f2348604b248dcf14015793e3eea9d2f66055d66976caf",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "56abb5cb-56ea-53a9-92f2-1b0feaa5dc2c",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "e65deb1a5b64f46b519974071d82aa506e005e10ea8d1bed5a8c494d9c5ed748",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "c0d75ec6-b757-5e1b-a29a-f6c89e30339f",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "ac6c4b597101ee0621921621c2f687595d24a8829176a2cbd0f1a0fc8cefde4b",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "9c269f0d-5d49-5ec3-ab98-53ddbda7a0ab",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "14a9f4f5b52cb5c0af7f1769916382a1c194fabb931ac954ed3639eb99ba1afd",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "54eed3de-1857-5f9b-a12e-fc0274173389",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "9e75aac7da30aad714982bdc3b5a78bd8942247670c1454b9cdcc48ee3f94cb8",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "92f0c770-6574-5c6e-a175-402b6a057dcd",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "0ebfe0cfa3e6820cf680c931cb33746b74612ab80b21e65daae34332af2627e3",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "c7a1672c-8569-547d-b4e7-745f4d900b34",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "93209a0ed0b47c9567b646277fdffb7b3994f8ec62339bfe102b4d3372e4b013",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (dev sample). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MalwareBazaar]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "3ec43bee-9b62-53fe-8ae2-46d5974cae91",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "0f354172f133dd46ced105d5a0d99bd2b24df56f0636427323ece13f4c9114d9",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB EasyShell ('l128'; '2026-11-22')]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "3c94d59c-2738-543f-8fd8-ce31c4b8fce3",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "bcd193715c8354e64e938c3c3f35200ce7c5299c94cf5d7eaa6090dc16ecbabe",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB EasyShell ('a64'; '2026-11-24')]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "d5d5abed-a505-5159-a269-18ec7983b6d9",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "cf78dec68a906753e94192a8c1590ec340863a4c5c3980de1177cf658c88167a",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB EasyShell ('l64'; '2026-11-25')]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "1d2114f4-9ab3-5055-8ede-5b9c4953891f",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "2fd7a8bf2dc2a04af0efbb9e470951b0393d5274c58c5a244e6d977bc467625e",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB EasyShell ('l64'; '2026-11-21')]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "2c0c97f1-30cc-58e1-90c3-eaa28edf6bcb",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "68c2a547a5ca9323ff9407ac9a26937a000a439d2f6b8d9646bddcb1e383a59e",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB EasyShell ('l128'; '2026-11-25')]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "c1fa500a-9e03-5d97-9df1-3c84c0632f4d",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "b53cc1d50a81bc1be8868d651efa6929e50450c37362d59f68d0aa6ca6176072",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB EasyShell ('a64'; '2026-11-21')]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "e8b35127-abfa-5c76-8e2d-1441fc3599ab",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "79dce3a8d5ad620967936c7a262a314c98d84730765690009e1e71be40fe5602",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB EasyShell ('l32'; '2026-11-25')]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "7fa7c50d-1240-5d87-8c39-b0d1d5c4f114",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "918eb4dd40ff14b8baf5663bce173f6988c75ca5517cb991403fea8f75259b15",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB EasyShell ('darwin_arm64'; '2026-11-25')]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "82754ca1-5ed4-5133-a444-353ca484d3f5",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "5441d6f6d6e356db48f8c9d3209fe0bf7d9b888f22bd639582c8130b72521ab8",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB EasyShell ('a64'; '2026-11-23')]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "cba4ec99-b5be-562d-ad38-c2d7b32ee445",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "7b9d15b646fe09f641b1d95da578afc97b14cec62bccf4155cf0342b0461e0ec",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB EasyShell ('darwin_amd64'; '2026-11-24')]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "93737858-bd16-5848-8c64-9b07bdd204c2",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "c7884e3842c4566e338846067c116d80b184093e7b380c40683c817997c8c3f2",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB EasyShell ('darwin_arm64'; '2026-11-22')]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "e42f5471-38c8-5d69-badc-dd7873d1eec0",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "4803340fcda8b3915d33a5d8df47dcf461e585147aa5405b15687f60c35d5e23",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB EasyShell ('a32'; '2026-11-24')]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "f0b303a5-e8b0-583d-9e8e-2ef3ef0c45a7",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "95ed21f4cd2f39707cc4929a14a733c8354eecd15c5db69d2cd2c6a3badfbe26",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB EasyShell ('a32'; '2026-11-23')]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "5191a38b-6ccd-5dd7-a550-655077adb84e",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "a51416d393e431b65fe3cd8c20944fe5f4c73886dc213c9dc1ffd46f2dc4ad53",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB EasyShell ('a32'; '2026-11-21')]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "ef8fd6e3-5425-5b47-b487-1d1b92d757c3",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "288bc6cb583b405283203292105e6a5905a443b26bc7b3e3a2e85f4dc6247dcf",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB EasyShell ('darwin_arm64'; '2026-11-24')]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "b1d256cb-396e-583a-b6c9-f06df49f227c",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "ef49b7768eb78c310fa952a9679ba9a67d79e93504638b53f3e15481b74212a6",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB EasyShell ('a64'; '2026-11-25')]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "b08360cb-2f43-52ca-b25e-4bca40f8ed32",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "1467a95824a3ea48eadc43ca152218af2f6d2ef9880f391a1f7add91450bff1e",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB EasyShell ('darwin_arm64'; '2026-11-21')]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "c79705ac-56c2-59fb-8882-9f1d10327826",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "dba9625fec97eb3bac3ffdd2c3036ab2dd5a0b66ee8761cd07e9325cf663bfeb",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB EasyShell ('l32'; '2026-11-22')]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "6021f6dd-3465-5c36-a963-d390c84cd3cb",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "5160440b020329f63c4d033d8cfed55e17ca28c9d776f620e698779cfd622936",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB EasyShell ('l32'; '2026-11-24')]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "b60403ac-7a02-5d8e-945d-c0e467c9f75f",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "581abe92dd2db2650e43ab26614595bd82f92be10619d5337afd5ae51d67115e",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB EasyShell ('l64'; '2026-11-24')]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "b40edfd2-09e2-5830-8753-eea02870dfca",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "26a6585f7d9dbc3a46f827e333fed07a154000c7403af6f172f45cf153bf9584",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB EasyShell ('l32'; '2026-11-21')]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "1e7514e0-d7ae-53de-b278-df48a90ba99c",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "6ed85fb11ff78e8e76ac1e4fce19319408ddfd7e5e546aef381412310ec31618",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB EasyShell ('l128'; '2026-11-24')]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "fac91e0d-ae68-5569-b623-86d2498f1048",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "fc1bcf8b8d9b1012b499976816dc95ee368d3657d3186d0d53c336431e7eacd9",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB EasyShell ('darwin_amd64'; '2026-11-22')]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "f522dba8-b11d-5f3a-af63-c1115e240615",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "ed58b8cf9cd5f7438abf1658e5b5cd676cb9bba38d3eb017a8023a358b865c80",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB EasyShell ('darwin_amd64'; '2026-11-23')]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "1841a660-4e35-59c6-a7b3-eb71a6887a12",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "350608d45ad75c3e848a72e2a14a16806561af0d8ace2bcb27788510cf04b05a",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "EasyShell rule test sample (blind held-out). Taken from the MalwareBazaar EasyShell label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB EasyShell ('l128'; '2026-11-23')]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "5f842d15-6a7e-5dae-82a7-e623d48904ee",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "969fb3a94c1af65a94d808c911499f6c58ba2736c8c9eb71ddcd11a51e0a8d6f",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: tria.ge family:silentnet + MB label jar 2026-09-30]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "8f04a195-0a9f-5759-84c0-2aab8b43ad01",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "0dfb80812249cd40a59e13f9a7203e853eb39a9293f4920ef0aed5f81bcbf06a",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: tria.ge family:silentnet + MB label jar 2026-10-03]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "2e8beb8a-e24e-5af5-8db3-acaaee5bfec2",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "77bbdba3166915999780ba8e419d0adce2202a5f22e2e23a49bc387d2c827ee6",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: tria.ge family:silentnet + MB label jar 2026-09-08]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "7cc2e3ef-bb6c-5100-83f4-ea7d565feaae",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "56002b2bf21427afc8d603de500c4f38064e46dacdf9add9381015fdb306a2d0",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: tria.ge family:silentnet + MB label jar 2026-10-16]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "b9755d63-fb6c-5df0-a2c7-adce757c814d",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "68e2360f43f00f5250ddb74891887fedf4edc96631f3394333d7116522e8dd6c",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: tria.ge family:silentnet + MB label jar 2026-10-08]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "05625e7a-1a4e-5786-9f44-1de87ba07c38",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "063c4bca354e716e3cea998e32b40400e295d551bd321b235bdcc5d5c29f67e1",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: tria.ge family:silentnet + MB label jar 2026-09-25]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "4a15099b-ed2b-5c3c-9634-143d6ca522c1",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "2c7d7c6f57f3dca672aa1dbbbbfedf1c9ef1ecb00c34de9e343b377f68fb4e0e",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: tria.ge family:silentnet + MB label jar 2026-10-12]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "829e4882-45e9-5d37-b534-657e113a3e4c",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "2ea66bf2303053b22e05be4043f763cee866b8f1fb1a4fa2c8667bf5a5ae3c77",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: tria.ge family:silentnet + MB label jar 2026-09-30]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "8aeef20d-d79a-59fd-b331-0bef1f99c3b0",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "a7d7b3644f9b63a1ecfc3c9dccd5c950f4567a54f22bd78c62285875e8b38c7d",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: tria.ge family:silentnet + MB label jar 2026-10-01]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "41b39fb8-9289-539b-9222-27fbaabbac5d",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "cee5f222a97fbb1e20f99aad1ec9730aca6ac47c1f65bb5ac7b1fa711af72393",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: tria.ge family:silentnet + MB label jar 2026-10-01]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "d38cd9e3-eb4d-5fbc-80bb-b3e7177d8475",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "db8aef92ec9d765a138ef42f839aea16a6293bdbce6bc8af16e3278cc85c531b",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: tria.ge family:silentnet + MB label jar 2026-10-01]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "53286534-ea0c-53a4-b103-e83d490d4a59",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "899a23e18a1c4e527f63b62dbea9db4a5d1454b720af49ce8c50e6c80a9ca139",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: tria.ge family:silentnet + MB label jar 2026-09-26]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "d46a9e49-60ca-5ff9-8c0b-6df67f9cb12c",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "06abfba55fcb977ef73552d1dd08350194b116a95f2f6d1daa92c6582033a05b",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: tria.ge family:silentnet + MB label jar 2026-10-01]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "96b2b63d-d6aa-5696-930c-141cad17938d",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "8b5669edb9b52f6ba353077edc760792f5421514d1037bfc2395f95889ce7cb8",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: tria.ge family:silentnet + MB label jar 2026-10-01]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "75e77f21-8c84-5cfb-8f08-897a6de20c27",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "b67be3af4a879cdf814ef724bf523d12aa965bb7c2dc23bd8efad1feccfd8ca1",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: tria.ge family:silentnet + MB label jar 2026-10-09]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "2d6f5a38-f7a2-54c3-9fa3-4d1c14a9a97c",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "c3ea5fbf23539a81ff338bdf44c1eb3caa7c035ee189b3ebdce31afe91124feb",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: tria.ge family:silentnet + MB label jar 2026-10-01]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "aabf788d-7f9d-5ecc-9972-65b693ce06b0",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "e48501205a47d1699c8199bbdb531eb48519cc111859ba0294fe07c912651bb3",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: tria.ge family:silentnet + MB label jar 2026-09-30]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "43b2f506-a68e-518e-9b70-b784b7164445",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "9d7bb13d6ceee4ed10a90bd9c260e926613ee05bd5949b71051f40d38883f714",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: tria.ge family:silentnet + MB label jar 2026-10-09]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "222afb07-54bd-5565-854c-85c7d16edbc6",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "3db9ea13be5d61998fd478d4ea5000d2e9d0d3ede3208c94be4546039ec75b1b",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: tria.ge family:silentnet + MB label jar 2026-10-12]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "d8213411-74cc-5635-8ec2-8c6147234442",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "007670050ec37adce005b51f76bd0d5871c0e72c3a809b9d1e03d986a8c7d586",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: tria.ge family:silentnet + MB label jar 2026-09-23]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "eda39038-1f18-5cad-989f-5805e7f5a3dd",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "12ff4992ad1692284e09a9007e19b0bc5db5b9dc3b11b906de2df815de4796bb",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label only jar 2026-10-27]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "af83d6c6-c1c2-5026-84e2-909f6876a09c",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "284ef1ea239e431df6d61be6c2caba3e5a86827f81a15341661de6e7a4d702e3",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label only jar 2026-10-20]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "0e7235f8-21f0-5a62-9d01-2f91251f9fae",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "f5d754554edc1f6fd6e05df45dba0bff26fb9549ce399da54d5d2fddd8446142",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label only jar 2026-09-30]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "4ed4b2a6-db2d-5051-8554-4b78dc308e05",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "e30b8a269cc6cfed83c48393fc6e656b20703d4109580ac584f810910b1afdd9",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label only jar 2026-10-27]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "94f01862-8f80-58cf-a89b-5b47fe26b78b",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "581cf2c3ef9a29652143f1ff041c6b421e83028094082bf2eff9fd44fa287f10",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label only jar 2026-10-20]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "a684b6ec-6fa4-513f-af21-69feb42e4735",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "886eeabd8710c72c6fa4a1f3ffc58af11188c6ec67f33105a7a113e675c44ea5",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label only jar 2026-09-17]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "50ef05fb-3270-55bd-9125-76b9f1f0f99f",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "dbd33973be2475d55f9ffdc5492a17a039b056b61516674fc68cd7e342fd0c1a",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label only jar 2026-11-02]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "e73d9912-197d-53ed-94b4-d451a7fb9da2",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "edaf15f40bcb45594d4f5efca1f1262ec39adaa662e3015c70f17f3bb813ce98",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label only jar 2026-09-28]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "1868d43c-fefa-5b44-8365-8cfc9778d526",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "c28eafb5a0cb3fa5de74887898ab5e19421cfe69ba915817a92f829933bcbad7",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label only jar 2026-09-18]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "cdb1fcf5-38e1-5e0c-80ce-f2a7f8ee3214",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "abd664eeaba8350a7c4ce64bc06b38d1e235027ccadddc47d81036d614e228a2",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label only jar 2026-09-18]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "fe8df5f8-9bfd-5456-8709-e332922a8c3a",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "6319a8ff4c88f30f247331f95c814dc8d89e53015f275a8e6af71c25a02149df",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label only exe 2026-07-01]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "ca162598-2ecf-5d15-85b9-eeeb87cb7381",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "efa09e17b62960842c08bb306d36e71d17941c00b3c3c091d7f19a3c02b0cb0e",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label only exe 2026-09-08]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "0a51db16-fb72-591d-a28c-f50ae63d760e",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "01805651d30a44df6d53dd07e5813e6be2a9b496f9568da8ab4d443e9db7bde6",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label only exe 2026-10-10]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "5d14e196-31c6-5157-98e7-8d5c9ba68ee8",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "b13b22c66cd105a2e5a10bbc9339bfa0e4f4cb1faa4cd2d0a7ae854948d2b1c5",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label only exe 2026-10-08]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "a3add1d3-1b5c-5d9e-b113-81c0e7dc51dd",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "4d0ede682087d76920c2e90defd08a60eb47dfd7faca399538d87e414bd08efd",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label only exe 2026-11-15]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "21f0bda2-baa3-5eab-9efa-1eb0cf77c363",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "8c9fa2ba4bf9af2a0c2fe9918dbb99f7d2586b7e59884887e9fe85018132e709",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label only exe 2026-11-06]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "7dd80863-3bcf-5cd5-8299-3419dd5ce687",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "8d56988ac897654fee633735d4ccaa80605cfe6d376d1d5593859498c5bfd183",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label only exe 2026-09-08]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "3a9d636c-093c-58cb-b0cc-2b135bbce2c8",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "443863fe8aa8b41124569d0b6fbe6ac4c39049652a7ea70bcf82198d64927737",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "SilentNet rule test sample (blind held-out). Taken from the MalwareBazaar SilentNet label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label only exe 2026-09-08]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "273d41e6-69b7-5cec-8eca-3f4c7f719c13",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "7172334b79d574eb98ab1d58d12754a589d53cfeae4b8c06d574dc53171d2c59",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: Gen Digital IOC list (on MB as WARDENStealer)]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "5ee957e8-3781-50ed-aa18-ccba61082487",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "a24930f4cd5e31f065adac70def28a03d6b5b449fd0ba417d3d0f678ead3e4e5",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: Gen Digital IOC list (on MB as n/a)]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "7035845f-bf3b-512e-b40c-ae8c9fa28176",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "55cd3d36fdcc58016a64398357b2c9724a060da9f0d09266e537a61ec9552e4f",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: Gen Digital IOC list (on MB as ACRStealer)]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "3a3462cc-58a4-5685-9e91-f1ff1087c740",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "74a28581cdc96b69d58c1b2f640c2f3c6932d11eb4b53fb5bf9cf2e89ac30dd4",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: Gen Digital IOC list (on MB as WARDENStealer)]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "32567bd9-964c-5c5f-ac10-354a2e721432",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "1c852cc5ab0847f57908869ad14b2c1385bec46a8377f67b779aada5a5d59dc0",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: Gen Digital IOC list (on MB as WARDENStealer)]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "53b4b717-621a-57a7-85ac-6c6a7f7b149a",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "fdd903d07811d9e1c843a8c4527936468e54d827cf8cfcc4ff896792c9fced76",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: Gen Digital IOC list (on MB as n/a)]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "bff6f04a-c243-54d9-847a-8644df35e9f5",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "03e0e5a51dc9178f4471dbb764b3c97693be8cfe575c1ad858f565ff727e6565",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label 2026-11-08 Tuxxin]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "b93a2cef-ef1d-5940-812e-6c8f0c0b9433",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "bba4d2c2baab94a1b31a659327d231aaf5a689f86936a323f62595cf01ac123a",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label 2026-10-31 Alex_sev]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "539fd7b1-27f1-5666-ba7b-c2750789ee3c",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "0f614b7b7343596fd42b1aa940264fda4e63ff8e71f7e02226eae2ff839035ae",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label 2026-11-18 josie]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "0eea2a9b-0d86-5000-92f9-786d85449e45",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "95492246aa4768925a954e928413fc57e50457a29334d35a8fb3591e25b9ff62",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label 2026-10-17 Daydream]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "7ee7d78e-7578-502a-9cfa-c44b26937a39",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "d7766716ce3e0b8f2e4038bc7dc15cd5c3a51aa2a88ec7b937664c31e2c2adb2",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label 2026-11-23 abuse_ch]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "19990e0e-64ea-5836-b389-9a29faf2f1d9",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "c7fd3f91a48fddc1ba61b91c6b059299c809215bff45fd01dbb601ca95242221",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label 2026-11-03 AmadeyHunter]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "b6db91d7-ed76-5d16-a6ef-2ef2ab8a45d9",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "42856ec3246ea7b03a9fc2d8c82d7dea79c3866ca81c466929561f364cc24309",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label 2026-11-07 AmadeyHunter]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "74a6819b-821f-5162-9521-689526219d8b",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "58b6b7a01a4194742b5e56e8298e1c7d85605b2c861e0365057c2d28e22d96be",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label 2026-11-27 Tuxxin]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "85ff6ebd-30af-5df4-a843-e88d5c76e5f2",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "55c8cf0c1611a1238413b18d22afc720001d5f86f106e98ef4bc8505336307a9",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label 2026-11-03 AmadeyHunter]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "988d59c6-057d-5c7d-9bbf-494e501ee6f5",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "a2177d35c8d18476f0e7539b7ef9a151c69270647f39c245cb57f775cc004b9e",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label 2026-11-09 adrian__luca]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "178c4e19-05fe-53c9-8f4d-e48ac483dce3",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "985b324d226929ede2015995c514b7b74c85b044f3256baca0080113d3b4008d",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label 2026-11-10 abuse_ch]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "063695ec-1716-5eab-ac03-f4439363e6bd",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "01c5ffacf6f500ab473b3f302b2e6f19d08225efbf68853c8b980e1ce7557dbd",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label 2026-10-27 Tuxxin]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "327484fc-ae03-55ad-93a5-070eb57b1459",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "b05622a8ae11254a0e2ebed7fb3b7dfbadce25d8752d2016636b26f74bfe4036",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label 2026-11-25 aachum]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "49625cec-746f-5f1c-8afc-a131a9c1125e",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "9485f6225db1f5745047da05b81d17532d5a116654cabbe2dd1ea6b283d17d4b",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label 2026-11-18 AmadeyHunter]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "d05a3845-f404-5b8a-bcca-3e7b4519a553",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "14ad97a3f11a8472ca0b32425099e97073ff39d974a11ff317a5d0267996e261",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label 2026-10-31 AmadeyHunter]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "3b3c810c-4f01-580b-a42c-f4d919ccf9cf",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "a86adc5a127ac578b5023143b4ec2a179c9d18f602ab222218bbcf3ec22cce18",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label 2026-11-25 abuse_ch]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "c953589d-6603-52b9-9feb-879e50c34b4d",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "d8c0e44f0c3f522f1aff2d14c622ee10c7cf9714afdbfa9ef5a5134847914f1a",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label 2026-11-18 AmadeyHunter]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "f83e852a-fdbf-58f9-9314-5f45089bca5d",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "e66baf53f89f97fc1506584ce6bdebe6658ad0bc830e9664b6f0c9a74085a3e0",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label 2026-11-11 aachum]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "52d52801-3389-5b13-9604-dff74aa4c39c",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "61618c5d2b6383dc9154499d9c8582a20f29768656f75aac50bec31c7efe4209",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label 2026-11-23 AmadeyHunter]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "a5ce188b-f9c0-5022-91b0-035d0058601a",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "d1afb987bfbcebf56cd04762fb37312804560662066bef15cbdf18da53173133",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label 2026-11-12 AmadeyHunter]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "9aa02c34-cbf3-51e0-8891-0d53e7b5520e",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "dc8cdb6bdb963dfaee562e46536aa55f433e6221017be9aa3cea8fcea6e40fc5",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label 2026-11-10 AmadeyHunter]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "6affb660-0268-5a57-bf1b-3c561279ad72",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "768f46d4dc306502ce6b847b1a06509a9301fc44794cc3d70858657278d30ab7",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label 2026-11-04 AmadeyHunter]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "526d2a5a-58aa-5178-8a71-81a170569131",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "07d4b1f763d1d9479635e58980100f90d7fd4fa89808cac1c97e91607e0ad6ca",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label 2026-11-07 aachum]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "c584737c-a774-5f0c-b0a3-db1df60149a6",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "6b2a818393030f029ab112b754ddc1b35616354fe75f48b705e6fe6552d3b2d0",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label 2026-11-14 abuse_ch]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "a3999b8d-a5e3-55e6-9731-6c4497084663",
+        "type": "sha256",
+        "category": "Payload delivery",
+        "value": "eb0fd41b879e187d5b13839a61b6f4006d2448c3ac54bd34de6dd1ae7bcf618e",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "WARDENStealer rule test sample (blind held-out). Taken from the MalwareBazaar WARDENStealer label; the label is not verified per file, see README for label quality [type: sha256; verdict: test-sample; source: MB label 2026-11-23 Tuxxin]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"low\""
+          }
+        ]
+      },
+      {
+        "uuid": "88066bda-7272-5a17-be95-92d90d386d73",
+        "type": "ip-dst|port",
+        "category": "Network activity",
+        "value": "192.3.31.148|8443",
+        "to_ids": true,
+        "distribution": "5",
+        "comment": "EasyShell C2 configured in every MalwareBazaar EasyShell sample we checked (959 files, one reporter); read from the sample config [type: endpoint; verdict: malicious; source: sample config; MalwareBazaar EasyShell label, November 2026]",
+        "timestamp": "1795737600",
+        "Tag": [
+          {
+            "name": "estimative-language:confidence-in-analytic-judgment=\"high\""
+          }
+        ]
+      },
+      {
+        "uuid": "d45df995-fb5b-5c03-b962-deb414871b6a",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://bazaar.abuse.ch/browse/signature/EasyShell/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "MalwareBazaar EasyShell label",
+        "timestamp": "1795737600"
+      },
+      {
+        "uuid": "48fee615-e328-5216-8c85-42e8eb606c99",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://bazaar.abuse.ch/browse/signature/SilentNet/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "MalwareBazaar SilentNet label",
+        "timestamp": "1795737600"
+      },
+      {
+        "uuid": "9507fb58-1b78-5772-952f-2224377fed8b",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://bazaar.abuse.ch/browse/signature/WARDENStealer/",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "MalwareBazaar WARDENStealer label",
+        "timestamp": "1795737600"
+      },
+      {
+        "uuid": "41f9b60b-e455-5e66-b5bf-393842c1f071",
+        "type": "link",
+        "category": "External analysis",
+        "value": "https://www.gendigital.com/blog/insights/research/warden-stealer-rust-infostealer-analysis",
+        "to_ids": false,
+        "distribution": "5",
+        "comment": "Gen Digital",
+        "timestamp": "1795737600"
+      }
+    ]
+  }
+}

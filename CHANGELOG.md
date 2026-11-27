@@ -263,3 +263,8 @@
 - Added `tools/sigma-replay/`: an in-process Sigma matcher plus corpus readers that count, per rule, hits on lab attack logs and on benign logs. Corpora are fetched by the scripts and are not stored here; the only third-party data in the repo are two Sysmon events from OTRF/Security-Datasets (MIT, attribution in `tests/fixtures/NOTICE.md`).
 - New CI job `sigma-replay` runs the unit tests only (no corpus, no false-positive gate).
 - No rule changes.
+
+### 2026-11-27 (gap-family YARA rules)
+- Added `yara/easyshell/` (1 rule, any OS), `yara/silentnet/` (Java loader class, Zig loader) and `yara/wardenstealer/` (loader, v1.1) with the study in `iocs/2026-11-yara-gap-families/`. Blind held-out hits: EasyShell 25/25 (all one C2), SilentNet 26/30 JARs and 6/8 EXEs, WARDENStealer 24/31 (6/6 attributed by Gen Digital). 0 hits on about 176,000 benign and case files. Limits are in the case README.
+- Correction: 11 of our 2026-11-22 MalwareBazaar uploads carry the signature WARDENStealer but are Remus-layout payloads (hashes in the case README). The WARDENStealer tag came from their loaders' label. A comment on each MalwareBazaar entry says so.
+- The WARDENStealer rule published here is v1.1. An earlier draft (v1) tested `pe.imports()` and a TLS condition and matched nothing; it was never published.
