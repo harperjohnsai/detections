@@ -69,3 +69,16 @@ jobs:
       - name: macOS artifacts - verify, capability scan and synthetic fixture tests
         run: |
           VELOCIRAPTOR="$RUNNER_TEMP/velociraptor" python velociraptor/tests/run_macos_tests.py
+  sigma-replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml pytest
+      - name: Sigma replay harness tests (engine, parity with synthetic tests, one known TP on real Sysmon events)
+        run: python -m pytest -q tools/sigma-replay/tests

@@ -1,0 +1,21 @@
+title: Schtasks Create With Hidden PowerShell Payload (replay test fixture)
+id: 00000000-0000-4000-8000-000000000001
+status: test
+description: Minimal original rule used only to prove the replay harness fires on a real OTRF Sysmon event.
+author: replay-harness
+date: 2026-11-27
+tags:
+    - attack.persistence
+    - attack.t1053.005
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection_img:
+        Image|endswith: '\schtasks.exe'
+    selection_cli:
+        CommandLine|contains|all:
+            - ' /create '
+            - 'powershell'
+    condition: all of selection_*
+level: medium

@@ -258,3 +258,8 @@
 - Dead drops read 2026-11-27: the Telegraph pages and the contracts of all three builds decrypt to their embedded primary.
 - +9 IOC rows, +1 `c2_timeline.csv` row, README section and table row, ThreatFox references 2055475 and 2055476. No AES keys or other secrets published.
 - Not checked: liveness of the C2 (nothing contacted); setter transactions on the contract.
+
+### 2026-11-27 (tools/sigma-replay: real-log replay harness for Sigma rules)
+- Added `tools/sigma-replay/`: an in-process Sigma matcher plus corpus readers that count, per rule, hits on lab attack logs and on benign logs. Corpora are fetched by the scripts and are not stored here; the only third-party data in the repo are two Sysmon events from OTRF/Security-Datasets (MIT, attribution in `tests/fixtures/NOTICE.md`).
+- New CI job `sigma-replay` runs the unit tests only (no corpus, no false-positive gate).
+- No rule changes.
