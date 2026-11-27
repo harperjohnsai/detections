@@ -509,6 +509,15 @@
         "indicator--1b9bc04b-5640-59eb-a984-ada1acb33bdd",
         "indicator--80a409dc-e8c7-5e43-8b1b-c3279c460789",
         "indicator--f00e53f8-7a77-543b-ac51-c434381570a3",
+        "indicator--eba7b631-63c9-5923-811e-670908b08f09",
+        "indicator--b6ae742f-7df8-5dce-9436-ac8ae1aa8e20",
+        "indicator--e4e668df-0ed4-5220-bdc2-928aae6e0ca7",
+        "indicator--da57af02-5d72-51aa-9c64-d4aa45c123e9",
+        "indicator--647baebc-db70-5cfe-aab5-e6f778a22bee",
+        "indicator--cf57e83d-fe78-5de6-94a9-fc6dadf8b8eb",
+        "indicator--29191d04-54f2-5bb1-86dc-060382b9abca",
+        "indicator--19b5016b-a810-5296-ab63-47c8600e8aa0",
+        "indicator--60d2902e-1d20-5cb9-98f1-538f79a3be05",
         "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4",
         "malware--46e426e0-0d53-54e2-af3f-ce8a32537771",
         "campaign--c8ce7541-f584-5fbc-bb44-35d0f2d400d9",
@@ -842,7 +851,15 @@
         "relationship--6dc9e6bf-d166-54cd-8fed-fbfd8cfe45cf",
         "relationship--20c18078-efc5-54a9-aadc-5200a7494f6f",
         "relationship--a447f051-c05b-58d5-856a-3a927a528b3c",
-        "relationship--95e91f75-4d07-57a5-b931-23432a9bf763"
+        "relationship--95e91f75-4d07-57a5-b931-23432a9bf763",
+        "relationship--e6748e5b-caa4-53bc-8fd3-92cb91f71b38",
+        "relationship--a8d33b71-9bb7-556e-bede-cd260a290b1c",
+        "relationship--39e6b269-8f1a-59ff-89ff-fd237ea0fb43",
+        "relationship--c6f722d3-ef49-535d-9e8e-03056fb3282b",
+        "relationship--928ab31a-923d-591b-b5cc-515c10c40ce7",
+        "relationship--943449bb-8452-5ac5-a710-ef86b2d9ad8f",
+        "relationship--0bbd30e6-df66-5322-95f9-043baa399403",
+        "relationship--915cf6fa-97fc-5c56-a6ce-fcf19cd5ebf6"
       ],
       "external_references": [
         {
@@ -1154,6 +1171,14 @@
         {
           "source_name": "ThreatFox",
           "url": "https://threatfox.abuse.ch/ioc/2053502/"
+        },
+        {
+          "source_name": "ThreatFox",
+          "url": "https://threatfox.abuse.ch/ioc/2055475/"
+        },
+        {
+          "source_name": "ThreatFox",
+          "url": "https://threatfox.abuse.ch/ioc/2055476/"
         },
         {
           "source_name": "MalwareBazaar",
@@ -12855,6 +12880,235 @@
       ],
       "created": "2026-11-13T00:00:00.000Z",
       "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--eba7b631-63c9-5923-811e-670908b08f09",
+      "name": "task.press-reef.work",
+      "description": "C1 build yh-1118b REVSTEALER primary C2 (HTTPS :443; GET /health must return 'active'); host:port, Polygon contract and Telegraph page all taken from the embedded config of one sandbox sample; contract value and Telegraph page read 2026-11-27 and decrypted: both give the same host:port. Domain registered 2026-11-18T09:05:12Z (Dynadot, Cloudflare name servers, RDAP); the contract was created 43 minutes later. Host never contacted. ThreatFox 2055475 [verdict: malicious; source: YARAify (first seen 2026-11-26 18:53 UTC), static config extraction; eth_call and Telegraph read 2026-11-27; RDAP]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'task.press-reef.work']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "domain"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--b6ae742f-7df8-5dce-9436-ac8ae1aa8e20",
+      "name": "0xFc8676747464d631Aa76E011aB168dF5226bBf0F",
+      "description": "C1 build yh-1118b REVSTEALER EtherHiding dead drop named in the config (3rd C2 source), created 2026-11-18T09:48:07Z by deployer 0x8bAddf05 (nonce 239, tx 0xcdf907823653c80018a515ffcf96cf4adca12519faa0cc47759692ac39bc0a5e); eth_call selector 0xf18976b2 on a public Polygon RPC; value read 2026-11-27 decrypts to task.press-reef.work:443, the embedded primary of this build [verdict: malicious; source: static config extraction; creation tx located by code-history search on public Polygon RPCs; eth_call read 2026-11-27]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[x-polygon-contract:address = '0xFc8676747464d631Aa76E011aB168dF5226bBf0F']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "dead-drop",
+        "polygon-contract"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--e4e668df-0ed4-5220-bdc2-928aae6e0ca7",
+      "name": "https://telegra.ph/Canvas-amber-spring-11-18",
+      "description": "C1 build yh-1118b Telegraph dead drop named in the config (page description holds the AES-encrypted C2); block by path, not by host; page read 2026-11-27 via the Telegraph API, description decrypts to task.press-reef.work:443 (embedded primary) [verdict: malicious; source: YARAify (first seen 2026-11-26 18:53 UTC), static config extraction; eth_call and Telegraph read 2026-11-27]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'https://telegra.ph/Canvas-amber-spring-11-18']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "dead-drop",
+        "url"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--da57af02-5d72-51aa-9c64-d4aa45c123e9",
+      "name": "/apbej/nlsgd.jyfn",
+      "description": "C1 REVSTEALER gate path on C2 (build yh-1118b, task.press-reef.work; role not resolved); suffix rotates per build [verdict: malicious; source: static config extraction]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value LIKE '%/apbej/nlsgd.jyfn']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "gate",
+        "url-path"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--647baebc-db70-5cfe-aab5-e6f778a22bee",
+      "name": "/guotrh/gwcmb/nlsgd.jyfn",
+      "description": "C1 REVSTEALER gate path on C2 (build yh-1118b, task.press-reef.work; role not resolved); suffix rotates per build [verdict: malicious; source: static config extraction]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value LIKE '%/guotrh/gwcmb/nlsgd.jyfn']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "gate",
+        "url-path"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--cf57e83d-fe78-5de6-94a9-fc6dadf8b8eb",
+      "name": "/muux/nlsgd.jyfn",
+      "description": "C1 REVSTEALER gate path on C2 (build yh-1118b, task.press-reef.work; role not resolved); suffix rotates per build [verdict: malicious; source: static config extraction]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value LIKE '%/muux/nlsgd.jyfn']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "gate",
+        "url-path"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--29191d04-54f2-5bb1-86dc-060382b9abca",
+      "name": "/quaxl/qjrd/nlsgd.jyfn",
+      "description": "C1 REVSTEALER gate path on C2 (build yh-1118b, task.press-reef.work; role not resolved); suffix rotates per build [verdict: malicious; source: static config extraction]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value LIKE '%/quaxl/qjrd/nlsgd.jyfn']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "c2",
+        "gate",
+        "url-path"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--19b5016b-a810-5296-ab63-47c8600e8aa0",
+      "name": "Global\\3C722C5F",
+      "description": "C1 REVSTEALER mutex of build yh-1118b (sample db9a70eb) [verdict: malicious; source: static config extraction]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[mutex:name = 'Global\\\\3C722C5F']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "mutex"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "indicator",
+      "id": "indicator--60d2902e-1d20-5cb9-98f1-538f79a3be05",
+      "name": "db9a70eb62b3655997b1b172bc1bcc52ab17504f91c15a39f59b6ea3a2bec1b7",
+      "description": "C1 build yh-1118b REVSTEALER core: sandbox process-memory image (5,829,363 B = SizeOfImage 0x58f2f3; YARAify file name 7ff6d2080000.<uuid>.exe), first seen 2026-11-26 18:53 UTC; matches YARA REVSTEALER_x64_Core_SetupCenter; memory/dump hunting, not a file on disk; ThreatFox 2055476 [verdict: malicious; source: YARAify (first seen); static config extraction]",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = 'db9a70eb62b3655997b1b172bc1bcc52ab17504f91c15a39f59b6ea3a2bec1b7']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-11-13T00:00:00.000Z",
+      "labels": [
+        "sha256"
+      ],
+      "confidence": 85
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
       "type": "malware",
       "id": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4",
       "name": "REVSTEALER",
@@ -17520,6 +17774,118 @@
       "id": "relationship--95e91f75-4d07-57a5-b931-23432a9bf763",
       "relationship_type": "indicates",
       "source_ref": "indicator--f00e53f8-7a77-543b-ac51-c434381570a3",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--e6748e5b-caa4-53bc-8fd3-92cb91f71b38",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--eba7b631-63c9-5923-811e-670908b08f09",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--a8d33b71-9bb7-556e-bede-cd260a290b1c",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--b6ae742f-7df8-5dce-9436-ac8ae1aa8e20",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--39e6b269-8f1a-59ff-89ff-fd237ea0fb43",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--da57af02-5d72-51aa-9c64-d4aa45c123e9",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--c6f722d3-ef49-535d-9e8e-03056fb3282b",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--647baebc-db70-5cfe-aab5-e6f778a22bee",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--928ab31a-923d-591b-b5cc-515c10c40ce7",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--cf57e83d-fe78-5de6-94a9-fc6dadf8b8eb",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--943449bb-8452-5ac5-a710-ef86b2d9ad8f",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--29191d04-54f2-5bb1-86dc-060382b9abca",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--0bbd30e6-df66-5322-95f9-043baa399403",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--19b5016b-a810-5296-ab63-47c8600e8aa0",
+      "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
+    },
+    {
+      "spec_version": "2.1",
+      "created_by_ref": "identity--4406ee2e-dfd1-5ccf-a82b-9856ff586c65",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "created": "2026-11-13T00:00:00.000Z",
+      "modified": "2026-11-13T00:00:00.000Z",
+      "type": "relationship",
+      "id": "relationship--915cf6fa-97fc-5c56-a6ce-fcf19cd5ebf6",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--60d2902e-1d20-5cb9-98f1-538f79a3be05",
       "target_ref": "malware--a54b82fd-bbcd-53ae-bb61-0546999cf7d4"
     }
   ]

@@ -252,3 +252,9 @@
 ### 2026-11-26 (Velociraptor macOS artifacts)
 - Added `velociraptor/macos/` with three artifacts that were checked against the built-in registry and the Artifact Exchange and are not duplicates: `Custom.MacOS.Persistence.BTM` (v2; no BTM parser exists elsewhere), `Custom.MacOS.Browser.Extensions` (overlaps the Chromium part of `Generic.Forensic.SQLiteHunter`; adds Safari, Firefox, native messaging hosts and a verdict) and `Custom.MacOS.TCC.Review` (overlaps built-in `MacOS.System.TCC`; adds the installed-app join and verdict). Browser-history and unified-log artifacts were dropped as duplicates of `SQLiteHunter` and `MacOS.UnifiedLogHunter`.
 - `velociraptor/tests/run_macos_tests.py` (36 checks) with invented synthetic fixtures (`tests/fixtures/mac_fixtures.py`) and a CI step in the `velociraptor` job.
+
+### 2026-11-27 (REVSTEALER: one more build from YARAify hits, new C2 with Polygon contract and Telegraph page)
+- `iocs/2026-11-revstealer-setup-center`: `REVSTEALER_x64_Core_SetupCenter` matched five further samples on YARAify. Static config extraction gives one new build, `yh-1118b` (`task[.]press-reef[.]work`), with its own Polygon contract and Telegraph page, none listed anywhere before. Three samples belong to the already listed builds `yh-1111b` and `yh-1120b`; one Themida-protected original file could not be read statically.
+- Dead drops read 2026-11-27: the Telegraph pages and the contracts of all three builds decrypt to their embedded primary.
+- +9 IOC rows, +1 `c2_timeline.csv` row, README section and table row, ThreatFox references 2055475 and 2055476. No AES keys or other secrets published.
+- Not checked: liveness of the C2 (nothing contacted); setter transactions on the contract.

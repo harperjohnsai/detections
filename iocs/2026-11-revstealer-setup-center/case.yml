@@ -88,6 +88,8 @@ references:
   - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2053500/"}
   - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2053501/"}
   - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2053502/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2055475/"}
+  - {source_name: ThreatFox, url: "https://threatfox.abuse.ch/ioc/2055476/"}
   - {source_name: MalwareBazaar, url: "https://bazaar.abuse.ch/sample/6c705d296e0fe83d0435a5d5c22152c2efeebc1c49c8a35846118834958fb229/"}
   - {source_name: MalwareBazaar, url: "https://bazaar.abuse.ch/sample/2ee9761e96fdaa7eaf56dc8ba8b3c71a9d7a2b5d16ebf2b7559336743a84da45/"}
   - {source_name: ThreatFox (reporter Myrtus0x0), url: "https://threatfox.abuse.ch/ioc/2016383/"}
