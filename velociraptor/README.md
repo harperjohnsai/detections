@@ -32,6 +32,30 @@ Known limits: `@reboot` and `nohup` are flagged on purpose and will fire on host
 VELOCIRAPTOR=/path/to/velociraptor python3 velociraptor/tests/run_sweep_tests.py
 ```
 
+## `linux/Custom.Linux.Hunt.UserDirInterpreter.yaml`
+
+Running script interpreters (php, node, python, perl, ruby, deno, bun, lua) whose binary lives in a user-writable place (home directories, `/tmp`, `/var/tmp`, `/dev/shm`, `/run/user`). Malware that brings or downloads its own runtime shows up here: the Interlock RAT's PHP variant runs a downloaded `php.exe` from the user profile against a `.cfg` file (Linux analogue `~/.config/php/php ... wefs.cfg`), and EtherRAT downloads Node.js into a random hidden directory under `~/.local/share`. Uses `pslist()` only: no exec, no upload, no network.
+
+Severity: `high` = not allow-listed and (a random digit-bearing hidden directory in the exe or script path, or a script argument with a data extension such as `.cfg`/`.dat`/`.txt`/`.png`, or the exe in a temp dir); `medium` = any other non-allow-listed user-dir interpreter. Per-user runtime managers and editor servers (nvm, pyenv, uv, volta, asdf, mise, fnm, rbenv, plenv, pnpm, conda/miniforge, Homebrew on Linux, VS Code / Cursor server, Playwright) are allow-listed by path and hidden unless `ShowAllowListed=Y`. The Bun and Deno default installs (`~/.bun/bin`, `~/.deno/bin`) are deliberately kept at `medium`: MITRE ATT&CK records Mini Shai-Hulud being deployed with the Bun runtime. All regexes are parameters.
+
+ATT&CK: T1059.007 (JavaScript), T1059.006 (Python), T1059 (other interpreters), T1105.
+
+### Tests (`tests/run_interp_tests.py`, Velociraptor v0.77.4, 19 checks)
+
+16 inert process plants: renamed copies of `/bin/bash` that only sleep, with command lines that imitate the real ones (`tests/fixtures/plants_interp.py`). The test scopes the artifact to its temporary directories, so the runner's own processes do not count.
+
+| Set | What it holds | Result |
+|---|---|---|
+| attack-like | Interlock-style php + `.cfg`, EtherRAT-style node in a hidden digit dir, python in temp, perl in `~/bin` | high, high, high, medium (as designed) |
+| installer runtimes | bun and deno at their default install paths | medium (not allow-listed on purpose) |
+| developer host | nvm, uv, VS Code server, mise, pyenv, miniforge env, miniconda base, Homebrew on Linux, the Playwright Python driver's node, volta | 10/10 allow-listed, hidden by default |
+
+v1 (lab only, not published) flagged 4 of these 10 developer runtimes (conda twice, Homebrew, Playwright driver) as `medium`; v2 adds them to the allow-list. Known limits: the allow-list is a path match, so malware placed inside an allow-listed directory is hidden (hunt with `ShowAllowListed=Y`); interpreters started from system paths (`/usr/bin/python3`) are out of scope by design; no production telemetry has been measured, and the developer runtimes are synthetic stand-ins at their documented default paths.
+
+```bash
+VELOCIRAPTOR=/path/to/velociraptor python3 velociraptor/tests/run_interp_tests.py
+```
+
 # macOS artifacts (`macos/`)
 
 Three artifacts for triage of a Mac that its owner has agreed to examine. Each one was checked against the built-in registry (v0.77.4) and the Artifact Exchange / `Generic.Forensic.SQLiteHunter` before publishing; artifacts that duplicate existing ones are not published here. Load one into a server with `artifact_set(definition=read_file(filename=...))` or run it against a tree:

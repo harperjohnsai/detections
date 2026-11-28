@@ -1,0 +1,91 @@
+name: Custom.Linux.Hunt.UserDirInterpreter
+author: Harper Johns
+description: |
+  Running script interpreters (php, node, python, perl, ruby, deno, bun, lua)
+  whose BINARY lives in a user-writable location (home dirs, /tmp, /var/tmp,
+  /dev/shm, /run/user). Malware that ships or downloads its own runtime shows up
+  here: the PHP Interlock RAT (php.exe under AppData\Roaming running a .cfg file;
+  Linux analogue ~/.config/php/php ... wefs.cfg) and EtherRAT (Node.js downloaded
+  from nodejs.org into a random hidden dir under ~/.local/share).
+
+  Version-manager / editor runtimes (nvm, pyenv, uv, volta, asdf, mise, fnm,
+  rbenv, plenv, pnpm, conda/miniforge, Homebrew on Linux, VS Code / Cursor
+  server, Playwright browsers and the Playwright Python driver's bundled node)
+  are allow-listed by path and dropped unless ShowAllowListed is set. The Bun
+  and Deno one-line installers (~/.bun/bin, ~/.deno/bin) are deliberately NOT
+  allow-listed: Bun has been used to run the Mini Shai-Hulud npm worm, so they
+  stay at medium. Baseline them per fleet.
+
+  An allow-list is a path match only: malware dropped into an allow-listed
+  directory is hidden. Run with ShowAllowListed=Y when hunting.
+
+  v2 (2026-11-28): conda, Homebrew-on-Linux and Playwright-driver allow-list
+  entries after a developer-host fixture run; bun/deno kept at medium.
+
+  Severity:
+    high   = not allow-listed AND (random digit-bearing hidden dir in the exe or
+             script path, OR the script argument has a non-script extension
+             such as .cfg/.dat/.txt/.log/.tmp/.jpg/.png, OR the exe sits in a
+             temp dir)
+    medium = not allow-listed, none of the above
+
+  Read-only: uses pslist() only; no exec, no upload, no network.
+
+type: CLIENT
+
+parameters:
+  - name: UserDirRegex
+    default: '^(/home/[^/]+|/root|/Users/[^/]+)/|^/(tmp|var/tmp|dev/shm|run/user)/'
+  - name: InterpreterRegex
+    default: '^(php[0-9.]*|php-cgi[0-9.]*|node|nodejs|python[0-9.]*|perl[0-9.]*|ruby[0-9.]*|deno|bun|lua[0-9.]*|luajit)$'
+  - name: AllowRegex
+    description: Path fragments of well-known per-user runtime managers.
+    default: '/\.nvm/versions/|/\.pyenv/versions/|/\.local/share/uv/python/|/\.volta/tools/|/\.asdf/installs/|/\.local/share/mise/installs/|/\.local/share/fnm/|/\.fnm/|/\.vscode-server/(bin|cli)/|/\.cursor-server/|/\.cache/ms-playwright/|/\.rbenv/versions/|/\.plenv/versions/|/\.local/share/pnpm/|/(miniconda3|anaconda3|miniforge3|mambaforge)/(bin|envs)/|/\.linuxbrew/(bin|Cellar|opt)/|/site-packages/playwright/driver/node$'
+  - name: TempRegex
+    default: '^/(tmp|var/tmp|dev/shm)/'
+  - name: RandomHiddenRegex
+    description: A hidden path component that carries digits (EtherRAT .05bf0e9b style).
+    default: '/\.[A-Za-z0-9_-]*[0-9][A-Za-z0-9_-]{3,}/'
+  - name: NonScriptArgRegex
+    description: An argument that is a file with a data/config extension instead of a script extension.
+    default: '\S+\.(cfg|conf|dat|bin|txt|log|tmp|jpg|jpeg|png|gif|ico|db|ini)(\s|$)'
+  - name: ShowAllowListed
+    type: bool
+    default: N
+
+sources:
+  - precondition: SELECT OS FROM info() WHERE OS = 'linux'
+    query: |
+      LET procs = SELECT Pid, Ppid, Name, Exe, CommandLine, Username, CreateTime
+        FROM pslist()
+
+      LET parent_name(P) = SELECT Name, Exe FROM pslist(pid=P)
+
+      LET candidates = SELECT Pid, Ppid, Name, Exe, CommandLine, Username, CreateTime,
+          basename(path=Exe) AS ExeName
+        FROM procs
+        WHERE Exe =~ UserDirRegex
+          AND basename(path=Exe) =~ InterpreterRegex
+
+      LET scored = SELECT Pid, Ppid, ExeName, Exe, CommandLine, Username, CreateTime,
+          Exe =~ AllowRegex AS AllowListed,
+          Exe =~ TempRegex AS InTemp,
+          (Exe =~ RandomHiddenRegex OR CommandLine =~ RandomHiddenRegex) AS RandomHidden,
+          CommandLine =~ NonScriptArgRegex AS NonScriptArg
+        FROM candidates
+
+      SELECT Pid, Ppid,
+          parent_name(P=Ppid)[0].Name AS ParentName,
+          ExeName, Exe, CommandLine, Username, CreateTime,
+          AllowListed, InTemp, RandomHidden, NonScriptArg,
+          if(condition=AllowListed, then='allow',
+             else=if(condition=InTemp OR RandomHidden OR NonScriptArg,
+                     then='high', else='medium')) AS Severity,
+          regex_replace(re='^ +| +$', replace='', source=regex_replace(re=' +', replace=' ',
+            source=join(sep=' ', array=[
+              if(condition=InTemp, then='exe-in-temp', else=''),
+              if(condition=RandomHidden, then='random-hidden-dir', else=''),
+              if(condition=NonScriptArg, then='non-script-arg', else=''),
+              if(condition=AllowListed, then='allow-listed-runtime', else='user-dir-interpreter')]))) AS Reason
+        FROM scored
+        WHERE ShowAllowListed OR NOT AllowListed

@@ -270,3 +270,8 @@
 - The WARDENStealer rule published here is v1.1. An earlier draft (v1) tested `pe.imports()` and a TLS condition and matched nothing; it was never published.
 - YARAhub: all 4 gap-family rules deployed 2026-11-27 (author Harper Johns, CC BY 4.0, TLP:CLEAR) and listed by `recent_yararules`: MAL_EasyShell_Rust_Implant_ConfigSlots_AnyOS, MAL_SilentNet_Java_Loader_Class, MAL_SilentNet_Zig_Loader_InlineXorStrings, MAL_WardenStealer_Loader_EncodedPayload_Blob. The hub copies add `yarahub_*` meta and drop the DRL `license` field; the rule logic is identical to `yara/`.
 - MalwareBazaar: a correction comment is posted on each of the 11 Remus-layout payloads listed in the case README.
+
+### 2026-11-28 (Velociraptor: Custom.Linux.Hunt.UserDirInterpreter)
+- Added `velociraptor/linux/Custom.Linux.Hunt.UserDirInterpreter.yaml` (v2): running php/node/python/perl/ruby/deno/bun/lua whose binary sits in a user-writable directory, with a high/medium severity and an allow-list of per-user runtime managers. Read-only (`pslist()` only).
+- Checked against the v0.77.4 built-in registry and the Artifact Exchange (Linux artifacts): no artifact filters running interpreters by binary location; `Linux.Sys.Pslist` lists processes without a verdict.
+- `velociraptor/tests/run_interp_tests.py` (19 checks, inert renamed-bash plants) and a CI step in the `velociraptor` job.
